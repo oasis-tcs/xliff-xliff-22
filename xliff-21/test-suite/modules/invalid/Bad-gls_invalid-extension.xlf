@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+ srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="f216">
+      <unit id="xmrk_000_concept">
+         <gls:glossary>
+            <gls:glossEntry id="ge2">
+				<gls:term>failed</gls:term>
+				<gls:translation id="target-term-1">ausgefallen</gls:translation>
+				<mda:metadata>"
+					<mda:metaGroup category="terminology">
+						<mda:meta type="concept-id">15910</mda:meta>
+					</mda:metaGroup>
+				</mda:metadata>"
+            </gls:glossEntry>
+         </gls:glossary>
+         <segment id="xmrk_001_title">
+            <source xml:lang="en-us" xml:space="default">Skiing</source>
+            <target xml:lang="de">Skiing</target>
+         </segment>
+      </unit>
+   </file>
+</xliff>

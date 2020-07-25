@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+<!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
+]>
+<appendix id="mapping12" role="non-normative">
+  <title>Mapping With XLIFF 1.2</title>
+
+  <para>This section shows how XLIFF 1.2 inline elements and their attributes
+  are mapped to their equivalent in XLIFF 2.0.</para>
+
+  <para><emphasis> The &lt;bpt&gt; and &lt;ept&gt;
+  elements:</emphasis></para>
+
+  <para><code>&lt;bpt&gt;</code> and <code>&lt;ept&gt;</code> map to <olink
+  targetdoc="../inline/sc.xml" targetptr="sc"><code>&lt;sc&gt;</code></olink>
+  and <olink targetdoc="../inline/ec.xml"
+  targetptr="ec"><code>&lt;ec&gt;</code></olink> with content.</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>In 2.0 there is no use of <code>id</code> for <olink
+      targetdoc="../inline/ec.xml"
+      targetptr="ec"><code>&lt;ec&gt;</code></olink> as <code>startRef</code> is
+      used to point to the corresponding <olink targetdoc="../inline/sc.xml"
+      targetptr="sc"><code>&lt;sc&gt;</code></olink> and can be identified
+      uniquely this way.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Example:</para>
+
+  <programlisting>&lt;bpt id="1"&gt;&amp;ltb;&gt;&lt;/bpt&gt;text&lt;ept id="2" startRef="1"&gt;&amp;lt;/b&gt;&lt;/ept&gt;</programlisting>
+
+  <para>corresponds to:</para>
+
+  <programlisting>&lt;sc id="1"&gt;&amp;lt;b&gt;&lt;/sc&gt;text&lt;ec startRef="1"&gt;&amp;lt;/b&gt;&lt;/ec&gt;</programlisting>
+
+  <para><emphasis> The &lt;bx/&gt; and &lt;ex/&gt;
+  elements:</emphasis></para>
+
+  <para><code>&lt;bx/&gt;</code> and <code>&lt;ex/&gt;</code> map to
+  &lt;sc/&gt; and &lt;ec/&gt; without content.</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>In 2.0 there is no use of <code>id</code> for <olink
+      targetdoc="../inline/ec.xml"
+      targetptr="ec"><code>&lt;ec&gt;</code></olink> as <code>startRef</code> is
+      used to point to the corresponding <olink targetdoc="../inline/sc.xml"
+      targetptr="sc"><code>&lt;sc&gt;</code></olink> and can be identified
+      uniquely this way.</para>
+    </listitem>
+
+    <listitem>
+      <para>In 2.0 <olink targetdoc="../inline/sc.xml"
+      targetptr="sc"><code>&lt;sc&gt;</code></olink> and <olink
+      targetdoc="../inline/ec.xml"
+      targetptr="ec"><code>&lt;ec&gt;</code></olink> can be associated with
+      its original data in a standard way using <code>dataRef</code>. In 1.2 the
+      <code>&lt;bx/&gt;</code> and <code>&lt;ex/&gt;</code> tags have no
+      standard way to store the original data.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Example:</para>
+
+  <programlisting>&lt;bx id="1"/&gt;text&lt;ex id="2" startRef="1"&gt;</programlisting>
+
+  <para>corresponds to:</para>
+
+  <programlisting>&lt;sc id="1"/&gt;text&lt;ec startRef="1"/&gt;</programlisting>
+
+  <para><emphasis> The &lt;g&gt; element:</emphasis></para>
+
+  <para><code>&lt;g&gt;</code> maps to <olink targetdoc="../inline/pc.xml"
+  targetptr="pc"><code>&lt;pc&gt;</code></olink>.</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>In 2.0 <olink targetdoc="../inline/pc.xml"
+      targetptr="pc"><code>&lt;pc&gt;</code></olink> can be associated with
+      its original data in a standard way using <code>dataRef</code>. In 1.2 the
+      <code>&lt;g&gt;</code> has no standard way to store the original
+      data.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Example:</para>
+
+  <programlisting>&lt;g id="1"&gt;text&lt;/g&gt;</programlisting>
+
+  <para>corresponds to:</para>
+
+  <programlisting>&lt;pc id="1"&gt;text&lt;/pc&gt;</programlisting>
+
+  <para><emphasis> The &lt;x/&gt; element:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The &lt;ph&gt; element:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The &lt;it&gt; element with
+  pos="begin":</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The &lt;it&gt; element with pos="end":</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The &lt;sub&gt; element:</emphasis></para>
+
+  <para>The <code>&lt;sub&gt;</code> has no inline equivalent in 2.0. In 2.0
+  sub-flows are represented as separate <olink
+  targetdoc="../structural/unit.xml"
+  targetptr="unit"><code>&lt;unit&gt;</code></olink> elements. The inline code
+  that holds the position of the sub-flows has a <code>subFlows</code>
+  attribute with the identifiers of the units used for the sub-flows
+  contents.</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>In 1.2 sub-flows can result in a recursive set of
+      <code>&lt;sub&gt;</code> elements inside a single
+      <code>&lt;trans-unit&gt;</code>. In 2.0 each sub-flow corresponds to a
+      separate <olink targetdoc="../structural/unit.xml"
+      targetptr="unit"><code>&lt;unit&gt;</code></olink> element.</para>
+    </listitem>
+
+    <listitem>
+      <para>In 1.2 sub-flows cannot be handled without holding the original
+      data. For example they cannot be used with <code>&lt;g&gt;</code>,
+      <code>&lt;x/&gt;</code>, <code>&lt;bx/&gt;</code>, or
+      <code>&lt;ex/&gt;</code>. In 2.0 sub-flows can exist with all
+      representations, wether or not the original data is stored in XLIFF or
+      not.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Example:</para>
+
+  <programlisting>&lt;trans-unit id="1"&gt;
+ &lt;source&gt;Click &lt;ph id="1"&gt;&amp;lt;img src="img.png" alt=&lt;sub&gt;Click
+me&lt;/sub&gt;"/&amp;gt;&lt;/ph&gt;&lt;/source&gt;
+&lt;/trans-unit&gt;</programlisting>
+
+  <para>corresponds to:</para>
+
+  <programlisting>&lt;unit id="1"&gt;
+ &lt;segment&gt;
+  &lt;source&gt;Click &lt;ph id="1" subFlows="2"&gt;&amp;lt;img src="img.png"
+alt="#2#"/&amp;gt;&lt;/ph&gt;&lt;/source&gt;
+ &lt;/segment&gt;
+&lt;/unit&gt;
+&lt;unit id="2"&gt;
+ &lt;segment&gt;
+  &lt;source&gt;Click me&lt;/source&gt;
+ &lt;/segment&gt;
+&lt;/unit&gt;</programlisting>
+
+  <para>Note that the placeholder "#2#" is only an example of possible
+  representation: XLIFF 2.0 does not provide a standard way to represent
+  sub-flows references in the original data.</para>
+
+  <para>Another possible representation is:</para>
+
+  <programlisting>&lt;unit id="1"&gt;
+ &lt;segment&gt;
+  &lt;source&gt;Click &lt;ph id="1" subFlows="2"/&gt;&lt;/source&gt;
+ &lt;/segment&gt;
+&lt;/unit&gt;
+&lt;unit id="2"&gt;
+ &lt;segment&gt;
+  &lt;source&gt;Click me&lt;/source&gt;
+ &lt;/segment&gt;
+&lt;/unit&gt;</programlisting>
+
+  <para><emphasis> The &lt;mrk&gt; element with
+  mtype="seg":</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The &lt;mrk&gt; element with
+  mtype="protected":</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The &lt;mrk&gt; element with
+  mtype="term":</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The &lt;mrk&gt; element with a comment
+  attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The id attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The ctype attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The clone attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The xid attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The equiv-text attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The startRef attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The crc attribute:</emphasis></para>
+
+  <para>The <code>crc</code> attribute in 1.2 has no equivalent in 2.0.</para>
+
+  <para><emphasis> The assoc attribute:</emphasis></para>
+
+  <para>The <code>assoc</code> attribute in 1.2 has no equivalent in
+  2.0.</para>
+
+  <para><emphasis> The pos attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The datatype attribute:</emphasis></para>
+
+  <para>TODO</para>
+
+  <para><emphasis> The comment attribute:</emphasis></para>
+
+  <para>TODO</para>
+</appendix>

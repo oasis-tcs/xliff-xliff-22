@@ -1,0 +1,34 @@
+﻿cos02-> os special majority motion
+
+XLIFF TC having received comments during the 60 day public review period of XLIFF V2.1 COS01, those comments having resulted in non-material error corrections and editorial improvements in the current working draft labeled in advance as COS02 (http://tools.oasis-open.org/version-control/browse/wsvn/xliff/trunk/xliff-21/xliff-core-v2.1-cos02.html [revision 983]), and the corrections made being described in the error log on our SVN (http://tools.oasis-open.org/version-control/browse/wsvn/xliff/trunk/xliff-21/%21Admin/COS01_CommentsDisposal/Simple-comment-resolution-log_XLIFF_2.1_cos01.pdf), I now move that the TC approve the above identified draft as XLIFF Version 2.1 Candidate OASIS Standard 02 and further request the TC Officers to request that TC Administration open a Special Majority Vote to approve submitting COS02 to the OASIS membership in a call for consent. By this motion, the TC confirms that all changes made were non-material and only made to address the reported issues. 
+
+
+
+Non-material errors in XLIFF V2.1 COS01 having been reported to the TC during the 60 day public review period, those non-material errors having been corrected in working draft 05 contained in <url to wd05>, and the corrections made being described in <where ever you record the changes>, I now move that the TC approve XLIFF V2.1 WD## as Candidate OASIS Standard 02 and further request the Chair to request that TC Administration open a Special Majority Vote to approve submitting COS02 to the OASIS membership in a call for consent. By this motion, the TC confirms that all changes made were non-material and only made to address the reported errors. 
+
+
+cos01->os special majority motion:
+I move to approve, on the condition that no more COS01 comments are received by 23:59 UCT today, the officers of the TC requesting that TC Administration hold a Special Majority Vote to approve continuing with an OASIS Standard Call for Consent for XLIFF Version 2.1 Candidate OASIS Standard 01 (http://docs.oasis-open.org/xliff/xliff-core/v2.1/cos01/xliff-core-v2.1-cos01.html).
+
+
+
+
+cs01 special majority vote Motion:
+
+I move to approve the TC Officers requesting that TC Administration hold a Special Majority Vote to approve XLIFF Version 2.1 the 5th working draft from 08 August 2017 [labelled in advance as Committee Specification 01]  https://tools.oasis-open.org/version-control/browse/wsvn/xliff/trunk/xliff-21/xliff-core-v2.1-cs01.html *.pdf, and *.xml (designating  the html version of the specification as authoritative) and all associated artifacts at https://tools.oasis-open.org/version-control/svn/xliff/trunk/xliff-21/schemas/ [Revision 96X] as a Committee Specification. I further move that the TC affirm that changes have been made since the last public review, that the changes made are documented in <URL for the summary of changes> and that the TC judges these changes to be Non-Material in accordance with the definition in the OASIS TC Process (https://www.oasis-open.org/policies-guidelines/oasis-defined-terms-2017-05-26#dNonmaterialChange).
+
+
+csd01/csprd01 Motion:
+I move that the TC approve XLIFF Version 2.1 Working Draft 01 from 03 October 2016 https://tools.oasis-open.org/version-control/browse/wsvn/xliff/trunk/xliff-21/xliff-core-v2.1-wd01.html *.pdf, and *.xml and all associated artifacts at https://tools.oasis-open.org/version-control/svn/xliff/trunk/xliff-21/schemas/ [Revision 70#] as a Committee Specification Draft, designating  the html version of the specification as authoritative, and that the TC further approve releasing the Committee Specification Draft for a 30 days public review and direct the TC officers to work with OASIS TC Administration on all tasks required to carry out  publishing of the above approved drafts.
+
+csd01/csprd01 Ballot:
+Title:
+Approve XLIFF Version 2.1 Working Draft 01 as CSD/CSPRD
+Question:
+Do you
+1) approve
+A) XLIFF Version 2.1 Working Draft 01 from 03 October 2016 https://tools.oasis-open.org/version-control/browse/wsvn/xliff/trunk/xliff-21/xliff-core-v2.1-wd01.html *.pdf, and *.xml and all associated artifacts at https://tools.oasis-open.org/version-control/svn/xliff/trunk/xliff-21/schemas/ [Revision 70#] as a Committee Specification Draft, designating  the html version of the specification as authoritative
+and
+B) releasing the Committee Specification Draft for a 30 days public review and
+2) direct the TC officers to work with OASIS TC Administration on all tasks required to carry out publishing of the above approved drafts.
+

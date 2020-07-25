@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+<!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
+]>
+<section id="csprd01">
+<title>Tracking of changes in response to the 1st Public Review</title>
+<para>This section tracks major changes made to this specification compared to the Committee
+        Specification Draft 01 / Public Review Draft 01 <ulink
+            url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd01/xliff-core-v2.1-csprd01.html"
+            >http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd01/xliff-core-v2.1-csprd01.html</ulink>.
+        The initial Public Review took place from 26th October 2016 until 25th November 2016.</para>
+<orderedlist>
+<!-- Add new change track items to the bottom of the list -->
+<listitem>
+    <para>Major changes were made in the ITS Module and validation artifacts in response to
+        Comment/Issues <ulink url="https://issues.oasis-open.org/browse/XLIFF-5">https://issues.oasis-open.org/browse/XLIFF-5</ulink> and most importantly <ulink url="https://issues.oasis-open.org/browse/XLIFF-9"
+                    >https://issues.oasis-open.org/browse/XLIFF-9</ulink> and its child issues:
+                    <ulink url="https://issues.oasis-open.org/browse/XLIFF-6"
+                    >https://issues.oasis-open.org/browse/XLIFF-6</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-18"
+                    >https://issues.oasis-open.org/browse/XLIFF-18</ulink>, and <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-19"
+                    >https://issues.oasis-open.org/browse/XLIFF-19</ulink>. </para>
+</listitem>
+        <listitem>
+            <para>Major changes were made in the Change Tracking Module and validation artifacts in
+                response to Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-4">https://issues.oasis-open.org/browse/XLIFF-4</ulink></para>
+        </listitem>
+        <listitem>
+            <para>Clarifications to Core with Advanced Validation impact, non-of which were
+                normative changes were provided in response to Comments/Issues: 
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-10">https://issues.oasis-open.org/browse/XLIFF-10</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-11">https://issues.oasis-open.org/browse/XLIFF-11</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-12">https://issues.oasis-open.org/browse/XLIFF-12</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-13">https://issues.oasis-open.org/browse/XLIFF-13</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-14">https://issues.oasis-open.org/browse/XLIFF-14</ulink>
+                
+                
+            </para>
+        </listitem>
+        <listitem>
+            <para>Material clarification with Advanced Validation Impact was provided for the
+                Translation Candidate Module in response to Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-20">https://issues.oasis-open.org/browse/XLIFF-20</ulink>.</para>
+        </listitem>
+        <listitem>
+            <para>Editorial changes have been made in response to Comments/Issues: <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-1"
+                    >https://issues.oasis-open.org/browse/XLIFF-1</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-2"
+                    >https://issues.oasis-open.org/browse/XLIFF-2</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-3"
+                    >https://issues.oasis-open.org/browse/XLIFF-3</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-7"
+                    >https://issues.oasis-open.org/browse/XLIFF-7</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-15"
+                    >https://issues.oasis-open.org/browse/XLIFF-15</ulink>, and <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-17"
+                    >https://issues.oasis-open.org/browse/XLIFF-17</ulink>. </para>
+        </listitem>
+
+<!-- Add new change track items to the bottom of the list
+<listitem>
+<para>[This is a suggested wording for your change track item:] In response to comment(s) nnn, nnn, and nnn, following changes have been made to
+feature XYZ: [description of changes]... </para>
+</listitem>
+-->
+
+</orderedlist>
+
+</section>

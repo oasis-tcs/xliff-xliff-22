@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+<!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
+]>
+<section id="cos01">
+<title>Tracking of changes in response to the Public Review of the Candidate OASIS Standard
+        01</title>
+<para>This section tracks all changes made to this specification compared to the Candidate OASIS
+        Standard 01 <ulink
+            url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/cos01/xliff-core-v2.1-cos01.html"
+            >http://docs.oasis-open.org/xliff/xliff-core/v2.1/cos01/xliff-core-v2.1-cos01.html</ulink>.
+        This Public Review took place from 20th October 2017 until 19th December 2017.</para>
+<orderedlist>
+<!-- Add new change track items to the bottom of the list -->
+        
+        <listitem>
+            <para>An important typo in several occurrences of the W3C ITS namespace has been fixed
+                in response to Comment/Issue <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-73"
+                    >https://issues.oasis-open.org/browse/XLIFF-73</ulink>. The typo did confuse
+                implementers although the correct namespace had been used throughout the validation
+                artifacts. </para>
+        </listitem>
+        <listitem>
+            <para>A minor editorial improvement was made in response to Comment/Issue <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-72"
+                >https://issues.oasis-open.org/browse/XLIFF-72</ulink>.
+            </para>
+        </listitem>
+                
+               
+
+<!-- Add new change track items to the bottom of the list
+<listitem>
+<para>[This is a suggested wording for your change track item:] In response to comment(s) nnn, nnn, and nnn, following changes have been made to
+feature XYZ: [description of changes]... </para>
+</listitem>
+-->
+
+</orderedlist>
+
+</section>

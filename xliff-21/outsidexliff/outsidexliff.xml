@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+<!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
+]>
+<appendix id="outsidexliff" role="non-normative">
+  <title>Inline Markup Usage Outside XLIFF</title>
+
+    <para>The XLIFF inline markup is designed to be usable as inline markup
+    for other XML formats.</para>
+
+    <para>This is done through two concepts:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>The content container -- The element in the host format that
+        holds the inline markup. This is the equivalent of the <olink
+        targetdoc="../structural/source.xml"
+        targetptr="source"><code>&lt;source&gt;</code></olink> or <olink
+        targetdoc="../structural/target.xml"
+        targetptr="target"><code>&lt;target&gt;</code></olink>
+        elements.</para>
+      </listitem>
+
+      <listitem>
+        <para>The unit -- The higher level element that hold the content
+        container. This is the equivalent of the <olink
+        targetdoc="../structural/unit.xml"
+        targetptr="unit"><code>&lt;unit&gt;</code></olink> element. Depending
+        on the type of usage of the XLIFF inline markup, this element may be
+        needed or not.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Example:</para>
+
+    <para>[[TODO]]</para>
+</appendix>

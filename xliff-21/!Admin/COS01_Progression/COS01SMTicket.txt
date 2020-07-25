@@ -1,0 +1,56 @@
+http://docs.oasis-open.org/xliff/xliff-core/v2.1/cs01/xliff-core-v2.1-cs01.html
+http://docs.oasis-open.org/xliff/xliff-core/v2.1/cs01/
+http://docs.oasis-open.org/xliff/xliff-core/v2.1/cs01/xliff-core-v2.1-cs01.xml
+==
+
+This document defines version 2.1 of the XML Localization Interchange File Format (XLIFF). The purpose of this vocabulary is to store localizable data and carry it from one step of the localization process to the other, while allowing interoperability between and among tools.
+XLIFF is the XML Localization Interchange File Format designed by a group of multilingual content publishers, software providers, localization service providers, localization tools providers and researchers. It is intended to give any multilingual content owner a single interchange file format that can be understood by any localization provider, using any conformant localization tool. While the primary focus is on being a lossless interchange format, usage of XLIFF as a processing format is neither encouraged nor discouraged or prohibited.
+
+===
+
+This specification replaces or supersedes:
+
+XLIFF Version 2.0. Edited by Tom Comerford, David Filip, Rodolfo M. Raya, and Yves Savourel. 05 August 2014. OASIS Standard. http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html
+
+XLIFF Version 2.0 had been submitted to ISO TC 37/SC 5, went through aunanimous DIS ballot and is currently under publication (60.00) as ISO 21720.
+
+OASIS XLIFF OMOS TC https://www.oasis-open.org/committees/xliff-omos works on an XML independent abstract data model, other than XML serializations and mappings to and from related localization interoperability standards including TBX, ISO 30042:2008 that is under review (90.92) at ISO TC 37/SC 3 and will be superseded by ISO/CD 30042.
+
+Usage and profiling of XLIFF and other localization interoperability standards is in scope of ULI TC at the Unicode Consortium.
+
+W3C ITS 2.0 defines internationalization data categories that are useful for extraction of localizable data and XLIFF based roundtrip of translation and localization projects. In fact XLIFF 2.1 provides a detailed specification how to make all of the ITS 2.0 metadata categories available throughout the XLIFF roundtrip reusing the W3C namespace where possible.
+
+TAPICC is a pre-standardization project at GALA - the global trade association of the localization services industry. TAPICC deals with best practices for XLIFF extraction, usage of XLIFF as Localization payload etc. TAPICC Track 1 WGs 3 & 2 are of the highest relevance.
+
+===
+SOUs:
+SDL - OASIS org member - http://markmail.org/message/zynk3yozfrrn5urw
+Council of European Union - outside OASIS - http://markmail.org/message/6tqa2cfh633wk4kg
+Yves Savourel / ENLASO - OASIS Associate member - http://markmail.org/message/6bvhvlmopdkzkavd
+Felix Sasaki - OASIS Individual member - http://markmail.org/message/jc5xapix5qwawaww
+Soroush Saadatfar - individual outside OASIS
+http://markmail.org/message/nm3opae7tsupi75d
+
+===
+Public reviews
+
+csprd01:
+https://www.oasis-open.org/news/announcements/30-day-public-review-for-xliff-v2-1-ends-nov-25th
+csprd01 comments resolution:
+https://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd01/xliff-core-v2.1-csprd01-comment-resolution-log.pdf
+csprd02
+https://www.oasis-open.org/news/announcements/public-review-for-xliff-v2-1-ends-february-24th
+csprd02 comments resolution:
+https://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd02/xliff-core-v2.1-csprd02-comment-resolution-log.pdf
+csprd03
+https://www.oasis-open.org/news/announcements/invitation-to-comment-on-xliff-v2-1-ends-may-1st
+csprd03 comments resolution:
+https://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd03/xliff-core-v2.1-csprd03-comment-resolution-log.pdf
+csprd04
+https://www.oasis-open.org/news/announcements/invitation-to-comment-on-xliff-v2-1-ends-june-20th
+csprd04 comments resolution:
+https://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd04/xliff-core-v2.1-csprd04-comment-resolution-log.pdf
+
+
+Approval link:
+TBD
