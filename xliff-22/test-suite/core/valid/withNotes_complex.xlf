@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <notes>
+   <note id="1">note for file</note>
+   <note id="7" priority="1">another highest priority note for file</note>
+   <note id="2" appliesTo="source">note for all source content within file</note>
+   <note id="3" appliesTo="target">note for all target content within file</note>
+   <note id="4" priority="2">lower priority note for file</note>
+   <note id="5" priority="3" appliesTo="source">lower priority note for all source content within file</note>
+   <note id="6" appliesTo="target" priority="3">lower priority note for all target content within file</note>
+   <note id="8" priority="10">lowest priority note for file</note>
+  </notes>
+  <group id='g1'>
+   <notes>
+    <note id="1">note for group</note>
+    <note id="7" priority="1">another highest priority note for group</note>
+    <note id="2" appliesTo="source">note for all source content within group</note>
+    <note id="3" appliesTo="target">note for all target content within group</note>
+    <note id="4" priority="2">lower priority note for group</note>
+    <note id="5" priority="3" appliesTo="source">lower priority note for all source content within group</note>
+    <note id="6" appliesTo="target" priority="3">lower priority note for all target content within group</note>
+    <note id="8" priority="10">lowest priority note for group</note>
+   </notes>
+   <unit id="1">
+    <notes>
+     <note id="1">note for unit</note>
+     <note id="7" priority="1">another highest priority note for unit</note>
+     <note id="2" appliesTo="source">note for all source content within unit</note>
+     <note id="3" appliesTo="target">note for all target content within unit</note>
+     <note id="4" priority="2">lower priority note for unit</note>
+     <note id="5" priority="3" appliesTo="source">lower priority note for all source content within unit</note>
+     <note id="6" appliesTo="target" priority="3">lower priority note for all target content within unit</note>
+     <note id="8" priority="10">lowest priority note for unit</note>
+     <note id="9" >note content for the inline comment delimited with &lt;mrk id="3"></note>
+     <note id="10" priority="7">lower priority note content for the inline comment delimited with &lt;mrk id="5"></note>
+    </notes>
+    <segment id="s1">
+     <source><mrk id="5" type="comment" ref="#n=10"><sc id='1' isolated='yes'/>Sentence 1.</mrk></source>
+     <target><sc id='1' isolated='yes'/>Phrase 1.</target>
+    </segment>
+    <segment id="s2">
+     <source><mrk id="3" type="comment" ref="#n=9"><sc id='2' isolated='yes'/>Sentence 2.</mrk></source>
+     <target><mrk id="4" type="comment" value="an inline comment applying just to the delimited target span"><sc id='2' isolated='yes'/>Phrase 2.</mrk></target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>
