@@ -51,9 +51,18 @@
         <surname>Schnabel</surname>
         <affiliation>
           <orgname>Individual</orgname>
-          <address format="linespecific"><email>bryan.s.schnabel@tektronix.com</email></address>
+          <address format="linespecific"><email>bschnabel@bschnabel.com</email></address>
         </affiliation>
-        <email>bryan.s.schnabel@tektronix.com</email>
+        <email>bschnabel@bschnabel.com</email>
+      </othercredit>
+      <othercredit role="chair">
+        <firstname>Lucía</firstname>
+        <surname>Morado Vázquez</surname>
+        <affiliation>
+          <orgname>University of Geneva</orgname>
+          <address format="linespecific"><email>lucia.morado@unige.ch</email></address>
+        </affiliation>
+        <email>lucia.morado@unige.ch</email>
       </othercredit>
 
       <editor>
@@ -68,7 +77,7 @@
       </editor>
 
       <editor>
-        <firstname>Rodolfo</firstname>
+        <firstname>Rodolfo M.</firstname>
         <surname>Raya</surname>
         <affiliation>
           <orgname>Individual</orgname>
@@ -84,7 +93,6 @@
 
     <copyright>
       <year>&pubyear;</year>
-
       <holder>OASIS Open, Inc. All Rights Reserved.</holder>
     </copyright>
 
@@ -188,8 +196,9 @@
     <legalnotice role="status">
       <title>Status</title>
 
-      <!--      <para>{Describe the status and stability of the specification
-      here.}</para>-->
+      <!--      
+        <para>{Describe the status and stability of the specificationhere.}</para>
+      -->
 
       <para>This document was last revised or approved by the OASIS XML Localisation Interchange
         File Format (XLIFF) TC on the above date. The level of approval is also listed above. Check
@@ -228,7 +237,7 @@
 
       <para><citation>XLIFF-&version;</citation></para>
 
-      <para><emphasis>XLIFF Version &version;</emphasis>. Edited by Rodolfo Raya and David Filip.
+      <para><emphasis>XLIFF Version &version;</emphasis>. Edited by Rodolfo M. Raya and David Filip.
         &pubdate;. &standard;. <ulink url="&this-loc;/&name;-&stage;.html"
           >&this-loc;/&name;-&stage;.html</ulink>. Latest version: <ulink
           url="&latest-loc;/&name;.html">&latest-loc;/&name;.html</ulink>. </para>
@@ -539,12 +548,6 @@
 
 
           </varlistentry>
-
-
-
-
-
-
         </variablelist>
       </section>
 
@@ -793,8 +796,10 @@
       </bibliography>
     </section>
   </section>
+  
   <xi:include href="conformance/conformance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="fragments/fragments.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
   <section id="core">
     <title>The Core Specification</title>
 
@@ -1008,6 +1013,7 @@ Text content that is important</programlisting>
         >IANA Provisional Standard Media Type Registry</ulink>.</para>
     <para>This Appendix content will be used to seek final media type registration for XLIFF Version
       &pversion; and higher Versions (including this XLIFF Version &version;). </para>
+    
     <xi:include href="mediaType/mediaType.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   </appendix>
@@ -1088,8 +1094,12 @@ Text content that is important</programlisting>
           targetdoc="modules/validation/specification.xml">Validation Module</olink>.</para>
     </warning>
 
-    <!--  <para>[Relax NG schemas of <firstterm>XLIFF Core and Modules</firstterm> are provided. Although the Relax NG schemas are intended as normative validation artifacts, the XML Schema 1.0 [add normative reference] schemas and Schematron [add normative reference] schemas have precedence in case of conflicting validation results.]
-      [This is only relevant if Relax NG is provided.]</para>-->
+    <!--  
+      <para>[Relax NG schemas of <firstterm>XLIFF Core and Modules</firstterm> are provided. Although 
+      the Relax NG schemas are intended as normative validation artifacts, the XML Schema 1.0 [add normative reference] 
+      schemas and Schematron [add normative reference] schemas have precedence in case of conflicting validation results.]
+      [This is only relevant if Relax NG is provided.]</para>
+    -->
 
 
     <xi:include href="core/tree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
