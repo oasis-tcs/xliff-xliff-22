@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
+
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+
+]>
+<section id="ChangeTrackWRT20">
+<title>High Level Summary of Changes made in Comparison to XLIFF Version &pversion;</title>
+<para>This is to facilitate human tracking of changes between XLIFF Versions &version; and &pversion;. </para>
+   
+   
+   <orderedlist>
+      <!-- Add new change track items to the bottom of the list -->
+      <listitem>
+         <para>Two major features are being added in XLIFF Version &version;:</para>
+         <orderedlist>
+            <listitem>
+               <para>Advanced Validation methods</para>
+            </listitem>
+            <listitem>
+               <para>Native Support for ITS 2.0</para>
+            </listitem>
+         </orderedlist>
+      </listitem>
+      <listitem>
+         <para>The Change Tracking Module was demoted to an extension to free hands of the TC and
+            other implementers while working on a new version of the Change Tracking Module for
+            XLIFF 2.2.</para>
+      </listitem>
+      <listitem>
+         <para>A major bug fix was performed on the core xsd. The core xsd now enforces the
+               <code>xs:language</code> data type on the <code>srcLang</code> and
+               <code>trgLang</code> attributes. It was critical to make this fix, because -- as per
+            OASIS policy -- validation artifacts would prevail over the prose provisions that are
+            correct in both XLIFF &version; and XLIFF &pversion;.</para>
+      </listitem>
+      <listitem>
+         <para>Also an erroneously omitted Constraint of the <olink
+               targetdoc="../attributes/xml_lang.xml" targetptr="xml_lang"
+               ><code>xml:lang</code></olink> attribute on the <olink targetptr="source"
+               targetdoc="../elements/structural/source.xml"><code>&lt;source></code></olink>
+            element has been added/restored in the normative text.</para>
+      </listitem>
+      <listitem>
+         <para>Apart from the five (5) major changes mentioned above, numerous editorial bugfixes
+            were made to secure greater clarity, either by fixing example errors or omissions, or by
+            reorganizing normative content, so that the intent becomes clear and unequivocal at some
+            troublesome places highlighted by XLIFF &pversion; implementers. </para>
+      </listitem>
+      <listitem>
+         <para>Importantly, the TC decided to drop informative listings of the validation artifacts
+            that had bloated the spec extent unnecessarily, were hard to keep in sync with the
+            actual normative artifacts, while their actual usability proved rather limited --
+            readers who were able to read schema languages would not actually read them as printed
+            listings and would anyways refer to the actual validation artifacts that are now
+            referenced more prominently.</para>
+      </listitem>
+      
+      
+   
+      
+      <!-- Add new change track items to the bottom of the list
+<listitem>
+<para>[This is a suggested wording for your change track item:] In response to comment(s) nnn, nnn, and nnn, following changes have been made to
+feature XYZ: [description of changes]... </para>
+</listitem>
+-->
+      
+   </orderedlist>
+   <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
+      practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
+      the changes (except the bugfixes under 3 and 4) have affected the core namespace
+         <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code> or the <firstterm>XLIFF
+         Core</firstterm>
+      <olink targetdoc="../xliff21.xml" targetptr="XMLSchema">[XML Schema]</olink>, <ulink
+         url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
+         >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink> that expresses its basic grammar
+      and structure.</para>
+</section>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+                         
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
+
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+]>
+<section id="mediaTypeTemplate">
+    <title>Registration Template</title>
+
+    <itemizedlist>
+        <listitem id="Type_name">
+            <para><emphasis role="emphasis">Type name:</emphasis> application</para>
+        </listitem>
+        <listitem id="Subtype_name">
+            <para><emphasis role="emphasis">Subtype name:</emphasis> xliff+xml</para>
+        </listitem>
+        <listitem>
+            <para><emphasis role="emphasis">Required parameters:</emphasis> N/A</para>
+        </listitem>
+        <listitem>
+            <para><emphasis role="emphasis">Optional parameters:</emphasis> N/A</para>
+        </listitem>
+        <listitem id="Encoding_considerations">
+            <para><emphasis role="emphasis">Encoding considerations:</emphasis></para>
+            <para>Same as encoding considerations of application/xml as specified in <olink
+                    targetdoc="../xliff21.xml" targetptr="rfc7303">[RFC 7303]</olink></para>
+        </listitem>
+        <listitem id="Security_considerations">
+            <para><emphasis role="emphasis">Security considerations:</emphasis></para>
+            <para>Apart from all of the security considerations described in <olink
+                    targetdoc="../xliff21.xml" targetptr="rfc7303">[RFC 7303]</olink>, XLIFF Version
+                &pversion; and higher has the following Security considerations:</para>
+            <para><emphasis>Extensibility:</emphasis> XLIFF permits extensions. Hence it is possible
+                that application xliff+xml may describe content that has security implications
+                beyond those described here. </para>
+            <para><emphasis>Direct external reference mechanisms:</emphasis> An XLIFF document has a
+                number of attributes of the type URI or IRI, all of which may be dereferenced and
+                some of them should be dereferenced. Therefore, the security issues of <olink
+                    targetdoc="../xliff21.xml" targetptr="rfc3987">[RFC 3987]</olink> Section 8
+                should be considered. In addition, the contents of resources identified by
+                    <code>file:</code> URIs can in some cases be accessed, processed and returned as
+                results.</para>
+            <para>More details can be found in the <link linkend="Detailed_Security_Considerations"
+                    >Detailed Security Considerations section</link> of this Appendix.</para>
+        </listitem>
+        <listitem id="Interoperability_considerations">
+            <para><emphasis role="emphasis">Interoperability considerations:</emphasis></para>
+            <para>Same as interoperability considerations described in <olink
+                    targetdoc="../xliff21.xml" targetptr="rfc7303">[RFC 7303]</olink></para>
+            <para>Also, interoperability requirements are specified throughout the specification and
+                summarized in its <olink targetdoc="../../conformance/conformance.xml"
+                    targetptr="Conformance">Conformance Section</olink>.</para>
+        </listitem>
+        <listitem id="Published_specification">
+            <para><emphasis role="emphasis">Published specification:</emphasis></para>
+            <para>XLIFF Version &pversion; (OASIS Standard) <ulink
+                    url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html"
+                    >http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
+                will be superseded by XLIFF Version &version; (OASIS Standard) <ulink
+                    url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html"
+                    >http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
+                that was last published on &pubdate; in the &standard; (&stage;) stage at <ulink
+                    url="&latest-loc;/&name;.html">&latest-loc;/&name;.html</ulink> and is backwards
+                compatible with XLIFF Version &pversion;.</para>
+        </listitem>
+        <listitem id="Applications_that_use_this">
+            <para><emphasis role="emphasis">Applications that use this media type:</emphasis></para>
+            <para>XLIFF conformant applications, according to the <olink
+                    targetdoc="../../conformance/conformance.xml" targetptr="Conformance"
+                    >Conformance Section</olink> of this specification</para>
+        </listitem>
+        <listitem id="Fragment_identifier_considerations">
+            <para><emphasis role="emphasis">Fragment identifier considerations:</emphasis></para>
+            <para>Generic XML processors won't be able to resolve XLIFF fragment identifiers, as the
+                fragment identification syntax is specific for XLIFF and has been defined in its
+                    <olink targetdoc="../../fragmnets/fragments.xml" targetptr="fragid">Fragment
+                    Identification section</olink> as of csd03/csprd03 of XLIFF Version
+                &pversion;.</para>
+        </listitem>
+        <listitem id="Intended_usage">
+            <para><emphasis role="emphasis">Intended usage:</emphasis> COMMON</para>
+        </listitem>
+        <listitem id="Restrictions_on_usage">
+            <para><emphasis role="emphasis">Restrictions on usage:</emphasis> N/A</para>
+        </listitem>
+        <listitem id="Author">
+            <para><emphasis role="emphasis">Author:</emphasis></para>
+            <para>OASIS XML Localisation Interchange File Format (XLIFF) TC Editors: Tom Comerford,
+                        <code>&lt;<ulink url="mailto:tom@supratext.com"
+                    >tom@supratext.com</ulink>></code>; David Filip, <code>&lt;<ulink
+                        url="mailto:david.filip@adaptcentre.ie"
+                    >david.filip@adaptcentre.ie</ulink>></code>; Yves Savourel, <code>&lt;<ulink
+                        url="mailto:ysavourel@enlaso.com"
+                >ysavourel@enlaso.com</ulink>></code></para>
+        </listitem>
+        <listitem>
+            <para><emphasis role="emphasis">Change controller:</emphasis></para>
+            <para>OASIS XML Localisation Interchange File Format (XLIFF) TC <ulink
+                    url="https://www.oasis-open.org/committees/xliff/"
+                    >https://www.oasis-open.org/committees/xliff/</ulink></para>
+            <para>Bryan Schnabel, <code>&lt;<ulink url="mailto:bryan.s.schnabel@tektronix.com"
+                        >bryan.s.schnabel@tektronix.com</ulink>></code>, Chair</para>
+            <para>Tom Comerford, <code>&lt;<ulink url="mailto:tom@supratext.com"
+                        >tom@supratext.com</ulink>></code>, Secretary</para>
+            <para>David Filip, <code>&lt;<ulink url="mailto:david.filip@adaptcentre.ie"
+                        >david.filip@adaptcentre.ie</ulink>></code>, Secretary</para>
+        </listitem>
+        <listitem id="Provisional_registration_q">
+            <para><emphasis role="emphasis">Provisional registration? (standards tree
+                    only):</emphasis> NO</para>
+        </listitem>
+        <listitem id="Additional_information">
+            <para><emphasis role="emphasis">Additional information:</emphasis></para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="emphasis">Deprecated alias names for this type:</emphasis>
+                        N/A</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="emphasis">Magic number(s):</emphasis> N/A</para>
+                </listitem>
+                <listitem id="File_extensions">
+                    <para><emphasis role="emphasis">File extension(s):</emphasis> xlf</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="emphasis">Macintosh file type code(s):</emphasis>
+                        "TEXT"</para>
+                </listitem>
+            </itemizedlist>
+        </listitem>
+        <listitem>
+            <para><emphasis role="emphasis">Person &amp; email address to contact for further
+                    information:</emphasis></para>
+            <para>OASIS Technical Committee administration <code>&lt;<ulink
+                        url="mailto:tc-admin@oasis-open.org"
+                >tc-admin@oasis-open.org</ulink>></code></para>
+        </listitem>
+    </itemizedlist>
+    <section id="Detailed_Security_Considerations">
+        <title>Detailed Security Considerations</title>
+
+        <section>
+            <title>Privacy, trust and integrity</title>
+            <para>XLIFF is a format for localization and translation, privacy, trust and integrity
+                requirements will widely depend on the type of content that is being exchanged
+                translating end user manuals for a dishwasher will have lower privacy requirements
+                than translating clinical tests results for a pharma company.</para>
+            <para>The XLIFF format does not offer any internal mechanisms to provide privacy, convey
+                trust or verify the integrity of XLIFF documents. If such features are needed varies
+                from case to case. Implementations that will process documents in cases where one or
+                more of these features are required need to implement that outside of the XLIFF
+                format. Transport privacy may for example be provided by SSL/TLS. Storage privacy
+                could be implemented by encrypting the XLIFF content using XML encryption or some
+                other appropriate means. Likewise the trust and integrity checks could be
+                implemented using XML signatures or by some other technology that is appropriate for
+                the particular implementation.</para>
+        </section>
+        <section>
+            <title>Core</title>
+            <para><code>&lt;skeleton></code> via attribute <code>href</code></para>
+            <para>There is no requirement that an implementation dereference and load the skeleton.
+                But it must be assumed that some do. An implementation is free to provide any type
+                of resource as the skeleton including executables.</para>
+            <para><code>&lt;mrk></code> via attribute <code>ref</code> for Term Annotations and some
+                custom annotations</para>
+            <para>For term annotations there may be a risk by downloading or directing the user to
+                access an external resource. For custom annotations the same applies but an
+                implementation is not required to process the <code>ref</code> attribute on custom
+                annotations but it must be expected that some will. Especially the term annotation
+                one may be an issue as a reasonable implementation may just launch the URI expecting
+                a web browser or viewer application to handle it.</para>
+
+        </section>
+        <section>
+            <title>Resource Data Module</title>
+            <para><code>&lt;res:source></code> via attribute <code>href</code></para>
+            <para><code>&lt;res:target></code> via attribute <code>href</code></para>
+            <para>Both of these may reference executable or otherwise unsafe external data. Either
+                as a resource that need processing or to present additional information to the user
+                from a resource of arbitrary type. Essentially the same considerations as for the
+                term annotation in core applies here especially for reference material. The intent
+                is to present arbitrary typed data to the user.</para>
+
+        </section>
+        <section>
+            <title>ITS Module</title>
+            <para>As the ITS Module brings a large number of ITS features natively to XLIFF,
+                Security considerations of <code>application/its+xml</code>, as described in <olink
+                    targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+                <ulink url="https://www.w3.org/TR/its20/#its-mime-type"
+                    >https://www.w3.org/TR/its20/#its-mime-type</ulink> should be taken into
+                consideration, albeit largely overlapping with XLIFF general Security considerations
+                described <link linkend="Security_considerations">above</link>. </para>
+        </section>
+        <section>
+            <title>Other potentially security sensitive constructs</title>
+            <section>
+                <title>Extension by arbitrary XML on <code>&lt;file></code>, <code>&lt;group></code>
+                    and <code>&lt;unit></code></title>
+                <para>Allows embedding of arbitrary XML structures at these points.</para>
+            </section>
+            <section>
+                <title>Extension by custom attributes on <code>&lt;xliff></code>,
+                        <code>&lt;file></code>, <code>&lt;group></code>,
+                        <code>&lt;unit></code>,<code>&lt;note></code>,<code>&lt;mrk></code> and
+                        <code>&lt;sm></code></title>
+                <para>Custom attribute extension is likely not as sensitive as embedding of
+                    arbitrary XML structures and will not in itself pose any threat except
+                    potentially for the implementers of the extension.</para>
+
+            </section>
+            <section>
+                <title>Format Style Module</title>
+                <para>Uses HTML element names as values of the attribute <code>fs</code></para>
+                <para>Validating allowed element names may decrease risk, but due to the attribute
+                        <code>subFs</code> cannot eliminate it. Attribute <code>subFs</code> allows
+                    arbitrary additional attributes for injection into HTML elements defined in the
+                        <code>fs</code> attributes. This could be used to inject active content such
+                    as JavaScript into the preview HTML document or reference external resources.
+                    Implementations need to take normal precautions when rendering, as if rendering
+                    an arbitrary page on the web unless it can know for sure it can trust the
+                    document. XLIFF itself does not provide a facility to communicate trust or
+                    protect a document from modification. If such features are needed they must be
+                    implemented external the XLIFF format.</para>
+                <para>Actual consumable HTML is only produced by implementers of this modules via
+                    XSLT or similar.</para>
+            </section>
+
+
+        </section>
+    </section>
+
+</section>

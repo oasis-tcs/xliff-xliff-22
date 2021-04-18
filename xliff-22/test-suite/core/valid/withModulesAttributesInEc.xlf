@@ -7,7 +7,7 @@
     <source><sc id='1' fs:fs="b" slr:sizeInfo="some info"/>text </source>
    </segment>
    <segment>
-    <source><ec isolated='yes' id='2' fs:fs="b" slr:sizeInfo="some info"/>text<ec startRef='1'/></source>
+    <source><ec startRef='1' fs:fs="b" slr:sizeInfo="some info"/></source>
    </segment>
   </unit>
  </file>

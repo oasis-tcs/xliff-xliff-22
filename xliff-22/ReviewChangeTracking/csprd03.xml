@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+<!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
+]>
+<section id="csprd03">
+<title>Tracking of changes in response to the 3rd Public Review</title>
+<para>This section tracks all changes made to this specification compared to the Committee
+        Specification Draft 03 / Public Review Draft 03 <ulink
+            url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd03/xliff-core-v2.1-csprd03.html"
+            >http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd03/xliff-core-v2.1-csprd03.html</ulink>.
+        This subsequent Public Review took place from 17th April 2017 until 1st May 2017.</para>
+<orderedlist>
+<!-- Add new change track items to the bottom of the list -->
+<!-- 
+    <listitem>
+    <para>Major changes were made in the ITS Module and validation artifacts in response to
+        Comment/Issues <ulink url="https://issues.oasis-open.org/browse/XLIFF-5">https://issues.oasis-open.org/browse/XLIFF-5</ulink> and most importantly <ulink url="https://issues.oasis-open.org/browse/XLIFF-9"
+                    >https://issues.oasis-open.org/browse/XLIFF-9</ulink> and its child issues:
+                    <ulink url="https://issues.oasis-open.org/browse/XLIFF-6"
+                    >https://issues.oasis-open.org/browse/XLIFF-6</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-18"
+                    >https://issues.oasis-open.org/browse/XLIFF-18</ulink>, and <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-19"
+                    >https://issues.oasis-open.org/browse/XLIFF-19</ulink>. </para>
+</listitem>
+        <listitem>
+            <para>Major changes were made in the Change Tracking Module and validation artifacts in
+                response to Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-4">https://issues.oasis-open.org/browse/XLIFF-4</ulink></para>
+        </listitem>
+        <listitem>
+            <para>Clarifications to Core with Advanced Validation impact, non-of which were
+                normative changes were provided in response to Comments/Issues: 
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-10">https://issues.oasis-open.org/browse/XLIFF-10</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-11">https://issues.oasis-open.org/browse/XLIFF-11</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-12">https://issues.oasis-open.org/browse/XLIFF-12</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-13">https://issues.oasis-open.org/browse/XLIFF-13</ulink>,
+                <ulink url="https://issues.oasis-open.org/browse/XLIFF-14">https://issues.oasis-open.org/browse/XLIFF-14</ulink>
+                
+                
+            </para>
+        </listitem>
+        <listitem>
+            <para>Material clarification with Advanced Validation Impact was provided for the
+                Translation Candidate Module in response to Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-20">https://issues.oasis-open.org/browse/XLIFF-20</ulink>.</para>
+        </listitem> -->
+        
+        <listitem>
+            <para>Major bug fix of the core Schematron Schema has been made in response to
+                Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-48"
+                    >https://issues.oasis-open.org/browse/XLIFF-48</ulink>. The core Schematron now
+                enforces that non-reorderable sequences start with a code with
+                    <code>canReorder</code> set to <code>firstNo</code> and also enforces the
+                repetition of non-reorderable sequences in <code>&lt;target></code> elements. In
+                connection with this issue, issues <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-10"
+                    >https://issues.oasis-open.org/browse/XLIFF-10</ulink> and <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-11"
+                    >https://issues.oasis-open.org/browse/XLIFF-11</ulink> were reopened and changes
+                in core Schematron made to ensure that the rules for enforcing of editing hints
+                compliance in <code>target</code> elements worked properly in concert with reporting
+                of invalid <code>&lt;segment></code>
+                <code>state</code>.</para>
+        </listitem>
+        <listitem>
+            <para>Another major bug fix was due reopened <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-38"
+                    >https://issues.oasis-open.org/browse/XLIFF-38</ulink>, validation methods had
+                to be adjusted for core and core reused in modules in the NVDL.</para>
+        </listitem>
+        <listitem>
+            <para>An erroneously omitted Constraint of the <olink
+                    targetdoc="../attributes/xml_lang.xml" targetptr="xml_lang"
+                        ><code>xml:lang</code></olink> attribute on the <olink targetptr="source"
+                    targetdoc="../elements/structural/source.xml"><code>&lt;source></code></olink>
+                element has be added/restored in the normative text and check therefore introduced
+                in the Core Schematron Schema in response to Issue/Comment <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-55"
+                    >https://issues.oasis-open.org/browse/XLIFF-55</ulink>.</para>
+        </listitem>
+        <listitem>
+            <para><code>its:version</code> attribute was introduced in response to Issue/Comment <ulink
+                url="https://issues.oasis-open.org/browse/XLIFF-54"
+                >https://issues.oasis-open.org/browse/XLIFF-54</ulink>.</para>
+        </listitem>
+        <listitem>
+            <para>Due to reopening of <ulink url="https://issues.oasis-open.org/browse/XLIFF-38"
+                    >https://issues.oasis-open.org/browse/XLIFF-8</ulink>, mapping of
+                <code>locQualityRatingScore</code> was removed from <code>matchQuality</code>. This eased the implementation
+                of both ITS MT Confidence end Localization Quality Rating considerably.</para>
+        </listitem>
+        <listitem>
+            <para>Changes were made to validation of <code>annotatorsRef</code> attribute in
+                response to Issue/Comment <ulink url="https://issues.oasis-open.org/browse/XLIFF-52"
+                    >https://issues.oasis-open.org/browse/XLIFF-52</ulink>. Examples using
+                    <code>annotatorsRef</code> had be reformatted not to suggest a wrong
+                interpretation of the attribute.</para>
+        </listitem>
+        <listitem>
+            <para>Editorial fixes were made in response to Comments/Issues: <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-47"
+                    >https://issues.oasis-open.org/browse/XLIFF-47</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-50"
+                    >https://issues.oasis-open.org/browse/XLIFF-50</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-51"
+                    >https://issues.oasis-open.org/browse/XLIFF-51</ulink>, <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-53"
+                    >https://issues.oasis-open.org/browse/XLIFF-53</ulink> and <ulink
+                    url="https://issues.oasis-open.org/browse/XLIFF-56"
+                    >https://issues.oasis-open.org/browse/XLIFF-56</ulink>.</para>
+        </listitem>
+                    
+                
+                
+                
+               
+
+<!-- Add new change track items to the bottom of the list
+<listitem>
+<para>[This is a suggested wording for your change track item:] In response to comment(s) nnn, nnn, and nnn, following changes have been made to
+feature XYZ: [description of changes]... </para>
+</listitem>
+-->
+
+</orderedlist>
+
+</section>

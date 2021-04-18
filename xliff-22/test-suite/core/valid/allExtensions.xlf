@@ -26,6 +26,7 @@
 	   <sm id="m1" translate="yes" my:attr="val"/>
 	    text
 		<cp hex="0001"/>
+      <sc id="4" isolated="yes" fs:fs="i" />>
 	   <ec startRef="3"/>
 	  <em startRef="m1"/>
 	  <mrk id="m2" type="my:type" my:attr="val">text</mrk>
@@ -38,8 +39,8 @@
      <note my:attr="val">note</note>
     </notes>
     <segment>
-     <source>text<ec id='1' isolated='yes' fs:fs='b'/></source>
-     <target>texte<ec id='1' isolated='yes' fs:fs='b'/><ph id='trgOnly'/></target>
+     <source>text<ec id="4" isolated="yes" fs:fs="i"/></source>
+     <target>texte<ec id="4" isolated="yes" fs:fs="i"/><ph id="trgOnly"/></target>
 	</segment>
    </unit>
    <unit id="3">
