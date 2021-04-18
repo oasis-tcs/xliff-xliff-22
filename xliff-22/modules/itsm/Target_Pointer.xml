@@ -9,7 +9,7 @@
   <title>Target Pointer</title>
 
   <para>Is used to associate the node of a given source content (i.e., the content to be translated) and the node of its corresponding target content (i.e., the source content translated into a given target language). See <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#target-pointer">Target Pointer</ulink> for
     details.</para>
   <para>This data category is not mapped to XLIFF but used by extracting and merging tools to get the source content from the original document and put back the translated content at its proper location.</para>

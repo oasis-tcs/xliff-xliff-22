@@ -53,7 +53,7 @@ targetptr="subFs"><code>subFs</code></olink> attribute is provided.</para>
 <itemizedlist>
 <title>Constraints</title>
 <listitem>
-<para>The Format Style attributes <glossterm>must</glossterm> be configured in such a way that the HTML <olink targetdoc="../xliff21.xml"
+<para>The Format Style attributes <glossterm>must</glossterm> be configured in such a way that the HTML <olink targetdoc="../xliff22.xml"
 targetptr="HTML5">[HTML5]</olink> snippet resulting at the <olink targetdoc="../../elements/structural/file.xml"
 targetptr="file"><code>&lt;file></code></olink> level is valid.</para>
 </listitem>
@@ -64,11 +64,11 @@ targetptr="file"><code>&lt;file></code></olink> level is valid.</para>
 <para><firstterm>Extractors</firstterm> and <firstterm>Enrichers</firstterm> <glossterm>should</glossterm> use the following method to validate their HTML snippets:</para>
 <orderedlist>
 <listitem>
-<para>Parse the snippet with the <olink targetdoc="../xliff21.xml"
+<para>Parse the snippet with the <olink targetdoc="../xliff22.xml"
 targetptr="HTML5">[HTML5]</olink> fragment parsing algorithm, see <ulink url="http://www.w3.org/TR/html5/syntax.html#parsing-html-fragments">http://www.w3.org/TR/html5/syntax.html#parsing-html-fragments</ulink>.</para>
 </listitem>
 <listitem>
-<para>the result <glossterm>must</glossterm> be a valid DOM tree as per <olink targetdoc="../xliff21.xml"
+<para>the result <glossterm>must</glossterm> be a valid DOM tree as per <olink targetdoc="../xliff22.xml"
 targetptr="HTML5">[HTML5]</olink>, see <ulink url="http://www.w3.org/TR/html5/infrastructure.html#tree-order">http://www.w3.org/TR/html5/infrastructure.html#tree-order</ulink>.
 </para>
 </listitem>

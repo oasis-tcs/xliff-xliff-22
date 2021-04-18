@@ -16,13 +16,13 @@
     <para>This module defines <olink targetdoc="itsmAnnotations.xml" targetptr="itsmAnnotations"
         >Inline Annotations</olink> (normative usage descriptions for attributes on inline
       annotation markers), attributes and elements that are needed to map <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data categories using only
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data categories using only
         <firstterm>XLIFF-defined</firstterm> elements and attributes. The module also defines an
       external rules file to be used by generic ITS processors working with <firstterm>XLIFF
         Documents</firstterm>. This module only defines attributes and annotations that are not
       available through <firstterm>XLIFF Core</firstterm> or other <firstterm>Modules</firstterm>.
       This module specification also contains normative provisions for mapping of <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data categories and features that
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data categories and features that
       are available via XLIFF <firstterm>Core</firstterm> and other modules (<olink
         targetdoc="ITSInCore.xml" targetptr="ITSInCore">ITS data categories available through XLIFF Core
         and other Modules</olink> and <olink targetdoc="ITSPartialOverlap.xml"
@@ -40,7 +40,7 @@
         specification and not broken out into a separate top level section as in other Modules that
         typically introduce up to one custom annotation. </para>
     </note>-->
-    <note><para>This module specification chiefly describes how the <olink targetdoc="../xliff21.xml"
+    <note><para>This module specification chiefly describes how the <olink targetdoc="../xliff22.xml"
           targetptr="ITS20">[ITS]</olink> data categories need to be expressed within
           <firstterm>XLIFF Documents</firstterm>. Some data categories are typically
           <firstterm>Extracted</firstterm> from native source formats, others would be first
@@ -61,7 +61,7 @@
     <warning id="pseudo-spanWarning">
       <para>There is an important scope difference between attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code> as implemented in <firstterm>XLIFF
-          Documents</firstterm> and as defined in the <olink targetdoc="../xliff21.xml"
+          Documents</firstterm> and as defined in the <olink targetdoc="../xliff22.xml"
           targetptr="ITS20">[ITS]</olink> specification itself. This affects all ITS attributes that
         can be used on inline spans. In XLIFF, spans delimited by the well-formed <code><olink
             targetdoc="../elements/inline/mrk.xml" targetptr="mrk">&lt;mrk></olink></code> are
@@ -75,7 +75,7 @@
           >&lt;sm/></olink></code> / <code><olink targetdoc="../elements/inline/em.xml"
             targetptr="em">&lt;em/></olink></code> pairs is always possible and often preferable as
         it allows the spans to persist even through a change of segmentation.</para>
-      <para>However, <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> doesn't
+      <para>However, <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> doesn't
         define a pseudo-span mechanism and thus generic ITS Processors cannot parse pseudo-spans.
         ITS processors will generally identify ITS attributes or their mappings from XLIFF specific
         namespaces on the <code><olink targetdoc="../elements/inline/sm.xml" targetptr="sm"
@@ -83,7 +83,7 @@
         marker itself, whereas the true scope of all attributes on such markers within
           <firstterm>XLIFF Documents</firstterm> is between the start marker <code>&lt;sm
           id="1"/></code> and it's corresponding end marker <code>&lt;em startRef="1"/></code>. </para>
-      <para>Implementers who wish to better access <olink targetdoc="../xliff21.xml"
+      <para>Implementers who wish to better access <olink targetdoc="../xliff22.xml"
           targetptr="ITS20">[ITS]</olink> data categories information within <firstterm>XLIFF
           Documents</firstterm> can implement an additional capability in their ITS Processors to
         detect spans like this one <code>&lt;sm id="1"/>span of text&lt;em startRef="1"/></code>
@@ -119,7 +119,7 @@
         conformance statement is only relevant for data categories for which the usage in XLIFF 2.1
         is normatively defined in this XLIFF 2.1 <link linkend="ITS-module">ITS Module</link>. Like
       in the <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> 2.0 specification, there is no interrelation between data categories.</para></note>
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> 2.0 specification, there is no interrelation between data categories.</para></note>
     
     <!-- The contents of this paragrap should now be covered in the above Note and the below PRs <para>An implementation of the ITS Module needs to implement at least one of the ITS 2.0 data categories for which the usage in XLIFF 2.1 is normatively defined in the ITS Module. Like in the ITS 2.0 specification, there is no interrelation between data categories. The implementation MUST take into account the processing expectations for ITS markup, as defined in the ITS 2.0 specification (link to https://www.w3.org/TR/its20/#conformance-product-processing-expectations) , that is, the conformance clauses 2-1, 2-2, 2-3 and 2-4 in the ITS 2.0 specifications.</para>-->
     <itemizedlist>
@@ -129,7 +129,7 @@
           global rules included in the module's Schematron file <ulink
             url="&this-loc;/schemas/its.sch">&this-loc;/schemas/its.sch</ulink>
           and compute ITS data categories encoded in <firstterm>XLIFF Documents</firstterm> as per
-            <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+            <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
           <ulink url="https://www.w3.org/TR/its20/#conformance-product-processing-expectations"
             >Conformance clauses</ulink> 2-1, 2-2, 2-3, and 2-4.</para>
         <itemizedlist>
@@ -150,10 +150,10 @@
           <glossterm>must</glossterm> be XLIFF Conformant in the sense of XLIFF <olink
             targetptr="ApplicationConformance" targetdoc="../conformance/conformance.xml"
             >Application Conformance</olink> and also implement at least one <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data category defined in the
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data category defined in the
           section <link linkend="itsm_defined_categories">ITS data categories defined in the ITS
             Module</link> of this <link linkend="ITS-module">ITS Module</link> or provide full
-          support for at least one of the <olink targetdoc="../xliff21.xml" targetptr="ITS20"
+          support for at least one of the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
             >[ITS]</olink> custom annotations (<olink targetdoc="itsmAnnotations.xml"
             targetptr="itsmAnnotations">ITS Mapping Annotations</olink>) specified in the Section
             <olink targetdoc="ITSPartialOverlap.xml" targetptr="ITSPartialOverlap">ITS data categories
@@ -201,9 +201,9 @@
       Although mandatory for only MT Confidence and conditionally mandatroy for a few more, it can
       be provided by any other data category, so the mechanism is needed..</para>
     <para>--> <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> <ulink url="http://www.w3.org/TR/2013/REC-its20-20131029/#its-tool-annotation
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> <ulink url="http://www.w3.org/TR/2013/REC-its20-20131029/#its-tool-annotation
         ">Tools Annotation</ulink> mechanism provides a way to record tools that produced <olink
-          targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> metadata.</para>
+          targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> metadata.</para>
     <warning><para>This mechanism is reserved for recording producers of ITS metadata. General provenance
         information can be recorded using the <olink targetdoc="Provenance.xml"
           targetptr="Provenance">Provenance</olink> data category mapping defined in this Module. <!--  CTR demoted: If
@@ -222,7 +222,7 @@
             ><code>its:termConfidence</code></olink> or <olink
           targetdoc="../../attributes/itsm/itsm_taConfidence.xml" targetptr="itsm_taConfidence"
             ><code>its:taConfidence</code></olink> respectively.</para>
-      <para>With all other <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data
+      <para>With all other <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data
         categories, there is no express need to use the <link linkend="itsToolsReferencing">ITS
           Tools Referencing</link> mechanism. It is nevertheless advised that the relevant ITS
         Tooling metadata is <firstterm>Extracted</firstterm> where available and
@@ -239,13 +239,13 @@
           <glossterm>must</glossterm> use the attribute <olink
             targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
               ><code>its:annotatorsRef</code></olink> to express the information provided through
-          the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+          the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
           <ulink url="http://www.w3.org/TR/2013/REC-its20-20131029/#its-tool-annotation">Tools
             Annotation</ulink> mechanism in <firstterm>XLIFF Documents</firstterm>.</para></listitem>
     </itemizedlist>
     <section id="toolsAnnotation">
       <title>ITS Tools Annotation</title>
-      <para>This is used to express the <olink targetdoc="../xliff21.xml"
+      <para>This is used to express the <olink targetdoc="../xliff22.xml"
         targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/2013/REC-its20-20131029/#its-tool-annotation
           ">Tools Annotation</ulink> mechanism on inline markers.</para>
@@ -281,7 +281,7 @@
   <!-- sections reordered as per resolution for JIRA issue XLIFF-2 -->
     <title>ITS data categories defined in the ITS Module</title>
     <para>The following <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data categories are fully specified within this module:</para>
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data categories are fully specified within this module:</para>
     <itemizedlist>
       <!-- moved to non-metadata section
       <listitem><para><olink targetdoc="Elements_Within_Text.xml" targetptr="Elements_Within_Text">Elements Within Text</olink></para></listitem>-->    

@@ -8,7 +8,7 @@
 <section id="Allowed_Characters">
   <title>Allowed Characters</title>
 
-  <para>Used to specify the characters that are permitted in a given piece of content. See <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+  <para>Used to specify the characters that are permitted in a given piece of content. See <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="https://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> for further
     details.</para>
   <itemizedlist>
@@ -16,7 +16,7 @@
     <listitem><para><firstterm>Writers</firstterm>
         <glossterm>must</glossterm> use the <olink targetdoc="specification"
           targetptr="allowedCharactersAnnotation">ITS Allowed Characters Annotation</olink> to express the
-          <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+          <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> data category in
           <firstterm>XLIFF Documents</firstterm>.</para>
       <para>For both structural and inline elements, use <code><olink
@@ -93,14 +93,14 @@
   </section>
   <section id="allowedCharactersAnnotation">
     <title>ITS Allowed Characters Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
       <ulink url="https://www.w3.org/TR/its20/#allowedchars">Alllowed Characters</ulink> data
       category.</para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">
       <listitem>
-        <para>The <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined <olink
+        <para>The <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <olink
             targetdoc="../../attributes/itsm_allowedCharacters.xml"
             targetptr="itsm_allowedCharacters"><code>its:allowedCharacters</code></olink> attribute
           is <glossterm>required</glossterm>.</para>

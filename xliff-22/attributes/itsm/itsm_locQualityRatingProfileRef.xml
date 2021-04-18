@@ -10,7 +10,7 @@
     
     <para>Localization Quality Rating Quality Model Profile Reference - the
             <code>locQualityRatingProfileRef</code> attribute is the <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>locQualityRatingProfileRef</code> attribute. </para>
     <para> This attribute references a quality assessment model that has been used for the rating
         (either scoring or voting).</para>

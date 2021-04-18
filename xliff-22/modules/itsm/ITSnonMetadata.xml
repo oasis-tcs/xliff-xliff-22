@@ -8,7 +8,7 @@
 <section id="ITSnonMetadata">
   <title>ITS data categories not represented in XLIFF</title>
 
-  <para>The following <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data
+  <para>The following <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data
     categories can be represented via <firstterm>Extraction</firstterm> and
       <firstterm>Merging</firstterm> behavior of XLIFF conformant <firstterm>Agents</firstterm>
     without including any ITS specific metadata in the <firstterm>XLIFF
@@ -43,7 +43,7 @@
     <title>Directionality</title>
     <para>The <ulink url="http://www.w3.org/TR/its20#directionality">Directionality</ulink> data
       category allows the user to specify the base writing direction of blocks, embeddings, and
-      overrides for the Unicode bidirectional algorithm <olink targetdoc="../xliff21.xml" targetptr="uax9">[UAX #9]</olink>. In XLIFF the usage
+      overrides for the Unicode bidirectional algorithm <olink targetdoc="../xliff22.xml" targetptr="uax9">[UAX #9]</olink>. In XLIFF the usage
       of this data category along the ITS lines is discouraged, since XLIFF provides its own
       mechanism to specify directionality, see <olink targetptr="BiDi" targetdoc="../inline/inline.xml">Bidirectional Text</olink>.</para>
   </section>
@@ -55,7 +55,7 @@
   <section id="its-locale-filter">
     <title>Locale Filter</title>
     <para>Expresses that a node is only applicable to certain locales. See <olink
-        targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> for further
       details.</para>
     <para>It is <glossterm>recommended</glossterm> that <ulink

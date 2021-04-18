@@ -9,7 +9,7 @@
     <title>mtConfidence</title>
     
     <para>Machine Translation Confidence - the <code>mtConfidence</code> attribute is the <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>mtConfidence</code> attribute.</para>
     
     
@@ -32,7 +32,7 @@
         <listitem><para>When the attribute <link linkend="itsm_mtConfidence"><code>mtConfidence</code></link> is
                 set, the element where it is set <glossterm>must</glossterm> be in the scope of an
                     <olink targetdoc="itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
-                        ><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
+                        ><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
                             >Data category
                             identifier</ulink> part of exactly one list value equal to the string
                     <code>mt-confidence</code>.</para></listitem>
@@ -57,7 +57,7 @@
                     <para>The <olink
                         targetdoc="../candidates/matchQuality.xml" targetptr="matchQuality"
                         ><code>mtc:matchQuality</code></olink> attribute  used by the <firstterm>Writer</firstterm> to express the <link
-                            linkend="itsm_mtConfidence"><code>MTConfidence</code></link> attribute <glossterm>must</glossterm> be in scope of an <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
+                            linkend="itsm_mtConfidence"><code>MTConfidence</code></link> attribute <glossterm>must</glossterm> be in scope of an <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
                                 >Data category
                                 identifier</ulink> part of exactly one list value equal to the string
                         <code>mt-confidence</code>.</para>
@@ -77,7 +77,7 @@
                         ><code>mtc:matchQuality</code></olink> attribute set and in scope of an
                     <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
                     targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with
-                the <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
+                the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
                     >Data category
                     identifier</ulink> part of exactly one list value equal to the string
                     <code>mt-confidence</code>.</para>

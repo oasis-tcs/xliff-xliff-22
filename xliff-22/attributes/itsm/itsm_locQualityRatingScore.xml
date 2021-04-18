@@ -9,7 +9,7 @@
     <title>locQualityRatingScore</title>
     
     <para>Localization Quality Rating Score - the <code>locQualityRatingScore</code> attribute
-        is the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         defined <code>locQualityRatingScore</code> attribute. </para>
     <para> This attribute provides the quality rating score pertaining to a structural or inline portion of target text, the higher the number
         the better the quality rating. Tools are expected to interpret this score within their own quality rating system.</para>

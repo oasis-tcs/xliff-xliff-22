@@ -9,7 +9,7 @@
     <title>provenanceRecordsRef</title>
     
     <para>Provenance Records Standoff Reference - the <code>provenanceRecordsRef</code> attribute
-        is the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         defined <code>provenanceRecordsRef</code> attribute.</para>
     <para>This attribute references the collection of Provenance Records that pertain to the content
         span or structural element content from where the reference is declared.</para>

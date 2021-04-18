@@ -9,14 +9,14 @@
     <title>Allowed Characters</title>
     
     <para>AllowedCharacters - the <code>allowedCharacters</code> attribute is the
-            <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>allowedCharacters</code> attribute. See the <ulink
                 url="https://www.w3.org/TR/its20/#allowedchars-local">allowedCharacters</ulink>
-        definition in the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        definition in the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         specification for details on the purpose of the attribute and permitted values.</para>
     <para><emphasis>Value description:</emphasis> See the <ulink
         url="https://www.w3.org/TR/its20/#allowedchars-local">allowedCharacters</ulink>
-        definition in the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        definition in the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         specification.</para>
     <para><emphasis>Default value:</emphasis> none.</para>
     

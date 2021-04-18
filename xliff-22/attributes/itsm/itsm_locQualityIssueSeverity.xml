@@ -9,7 +9,7 @@
     <title>locQualityIssueSeverity</title>
     
     <para>Localization Quality Issue Severity - the <code>locQualityIssueSeverity</code> attribute
-        is the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         defined <code>locQualityIssueSeverity</code> attribute. </para>
     <para> This attribute provides the severity score for a particular issue, the higher the number
         the higher the severity. Tools are expected to interpret this score within their own severity

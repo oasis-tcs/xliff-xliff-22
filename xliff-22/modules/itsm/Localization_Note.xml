@@ -12,7 +12,7 @@
   <title>Localization Note</title>
 
   <para>Provides a way to communicate notes to localizers about a particular item of content. See
-      <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#locNote-datacat">Localization Note</ulink> for
     details.</para>
   <warning>

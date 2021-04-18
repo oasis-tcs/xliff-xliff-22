@@ -76,7 +76,7 @@ feature XYZ: [description of changes]... </para>
       the changes (except the bugfixes under 3 and 4) have affected the core namespace
          <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code> or the <firstterm>XLIFF
          Core</firstterm>
-      <olink targetdoc="../xliff21.xml" targetptr="XMLSchema">[XML Schema]</olink>, <ulink
+      <olink targetdoc="../xliff22.xml" targetptr="XMLSchema">[XML Schema]</olink>, <ulink
          url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
          >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink> that expresses its basic grammar
       and structure.</para>

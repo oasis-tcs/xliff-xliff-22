@@ -18,7 +18,7 @@
         value <code>preserve</code> indicates the intent that applications preserve all the white
         space. This declared intent is considered to apply to all elements within the content of the
         element where it is specified, unless overridden with another instance of the xml:space
-        attribute. For more information see <ulink url="http://www.w3.org/TR/REC-xml/#sec-white-space">the section on xml:space</ulink> in the <olink targetdoc="../xliff21.xml" targetptr="bib_XML">[XML]</olink> specification. </para>
+        attribute. For more information see <ulink url="http://www.w3.org/TR/REC-xml/#sec-white-space">the section on xml:space</ulink> in the <olink targetdoc="../xliff22.xml" targetptr="bib_XML">[XML]</olink> specification. </para>
     
     <para><emphasis>Default value:</emphasis>  default values for this attribute
         depend on the element in which it is used:</para>

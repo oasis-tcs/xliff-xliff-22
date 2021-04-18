@@ -9,7 +9,7 @@
     <title>locQualityRatingScoreThreshold</title>
     
     <para>Localization Quality Rating Score Threshold - the <code>locQualityRatingScoreThreshold</code> attribute
-        is the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         defined <code>locQualityRatingScoreThreshold</code> attribute. </para>
     <para>This attribute provides the quality rating score threshold pertaining to any
         <olink targetdoc="itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore"><code>locQualityRatingScore</code></olink> 

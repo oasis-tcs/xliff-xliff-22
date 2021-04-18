@@ -9,7 +9,7 @@
     <title>personRef</title>
     
     <para>Person Reference - the <code>personRef</code> attribute is the <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined <code>personRef</code> attribute.</para>
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <code>personRef</code> attribute.</para>
     
     
     <para><emphasis>Value description:</emphasis> IRI</para>

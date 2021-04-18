@@ -9,7 +9,7 @@
 <section id="ITSInCore">
   <title>ITS data categories available through XLIFF Core and other Modules</title>
 
-  <para>The following <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data
+  <para>The following <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data
     categories are fully available via <firstterm>XLIFF Core</firstterm>  and other XLIFF
     modules:</para>
 

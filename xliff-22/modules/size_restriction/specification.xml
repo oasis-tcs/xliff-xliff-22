@@ -187,7 +187,7 @@
                 specified by the Unicode Consortium in <ulink
                     url="http://www.unicode.org/versions/Unicode6.2.0/ch02.pdf">chapter 2.5 of the
                     Unicode Standard</ulink>
-                <olink targetdoc="../xliff21.xml" targetptr="Unicode">[Unicode]</olink>.</para>
+                <olink targetdoc="../xliff22.xml" targetptr="Unicode">[Unicode]</olink>.</para>
             <table>
                 <title>Profiles</title>
                 <tgroup cols="2">

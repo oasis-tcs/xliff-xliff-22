@@ -11,7 +11,7 @@
   <para>Reference - Holds a reference to a single instance of an element that has
     multiple instances within the enclosing element.</para>
 
-  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff21.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para>
+  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 

@@ -9,8 +9,8 @@
     <title>annotatorsRef</title>
     
     <para>Annotators Reference - the <code>annotatorsRef</code> attribute holds provenance
-        information about tools that produced <olink targetdoc="../xliff21.xml" targetptr="ITS20"
-            >[ITS]</olink> metadata. See <olink targetdoc="../xliff21.xml" targetptr="ITS20"
+        information about tools that produced <olink targetdoc="../xliff22.xml" targetptr="ITS20"
+            >[ITS]</olink> metadata. See <olink targetdoc="../xliff22.xml" targetptr="ITS20"
             >[ITS]</olink>
         <ulink
             url="http://www.w3.org/TR/2013/REC-its20-20131029/#its-tool-annotation
@@ -96,7 +96,7 @@
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>All Constraints that follow from <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink> <ulink url="https://www.w3.org/TR/its20/#its-tool-annotation">Tools Annotation</ulink>.</para>
+            <para>All Constraints that follow from <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink> <ulink url="https://www.w3.org/TR/its20/#its-tool-annotation">Tools Annotation</ulink>.</para>
         </listitem> 
         <!--  
         <listitem><para>Values of the <link linkend="itsm_annotatorsRef"><code>annotatorsRef</code></link> <glossterm>must</glossterm> consist of triples of the following parts in the exact order:</para>
@@ -253,7 +253,7 @@
     <itemizedlist>
         <title>Processing Requirements</title>
         <listitem>
-            <para>All Processing Requirements that follow from <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink> <ulink url="https://www.w3.org/TR/its20/#its-tool-annotation">Tools Annotation</ulink>.</para>
+            <para>All Processing Requirements that follow from <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink> <ulink url="https://www.w3.org/TR/its20/#its-tool-annotation">Tools Annotation</ulink>.</para>
         </listitem> 
         <!--  <listitem>
             <para>When resolving any actual local value of the <link linkend="itsm_annotatorsRef"

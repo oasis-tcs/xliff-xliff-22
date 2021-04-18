@@ -9,7 +9,7 @@
     <title>locQualityIssueProfileRef</title>
     
     <para>Localization Quality Issue Quality Model Profile Reference - the <code>locQualityIssueProfileRef</code> attribute
-        is the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         defined <code>locQualityIssueProfileRef</code> attribute. </para>
     <para> This attribute references a quality model that has been used to identify and evaluate a particular issue.</para>
     

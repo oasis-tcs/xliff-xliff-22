@@ -9,7 +9,7 @@
     <title>locQualityRatingVoteThreshold</title>
     
     <para>Localization Quality Rating Vote Threshold - the <code>locQualityRatingVoteThreshold</code>
-        attribute is the <olink targetdoc="../xliff21.xml" targetptr="ITS20"
+        attribute is the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
             >[ITS]</olink> defined <code>locQualityRatingVoteThreshold</code> attribute. </para>
     <para> This attribute provides the minimum passing vote threshold for any Localization Quality Rating Votes that are in scope of
         the <link linkend="itsm_locQualityRatingVoteThreshold"><code>locQualityRatingVoteThreshold</code></link> attribute.</para>

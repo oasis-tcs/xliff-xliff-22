@@ -12,7 +12,7 @@
     attributes were created or modified.</para>
 
   <para><emphasis>Value description:</emphasis> Date in one of the formats defined in <olink
-    targetdoc="../../xliff21.xml" targetptr="bib_datetime">[NOTE-datetime]</olink>.</para>
+    targetdoc="../../xliff22.xml" targetptr="bib_datetime">[NOTE-datetime]</olink>.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 

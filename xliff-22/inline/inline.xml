@@ -59,11 +59,11 @@
       <para>Because the content represented in XLIFF can be extracted from
       anywhere, including software resources and other material that can contain
       control characters, XLIFF needs to be able to represent all Unicode code
-      points <olink targetdoc="../xliff21.xml"
+      points <olink targetdoc="../xliff22.xml"
         targetptr="Unicode">[Unicode]</olink>.</para>
 
       <para>However, XML does not have the capability to represent all Unicode 
-        code points <olink targetdoc="../xliff21.xml"
+        code points <olink targetdoc="../xliff22.xml"
           targetptr="Unicode">[Unicode]</olink>, and does not provide any official mechanism to escape the
       forbidden code points.</para>
 
@@ -75,7 +75,7 @@
       targetdoc="../elements/inline/cp.xml"
       targetptr="cp"><code>&lt;cp&gt;</code></olink> in XLIFF are similar to
       the ones of <code>&lt;cp&gt;</code> in the Unicode Locale Data Markup
-      Language <olink targetdoc="../xliff21.xml"
+      Language <olink targetdoc="../xliff22.xml"
       targetptr="biblio_ldml">[LDML]</olink>.</para>
     </section>
   </section>
@@ -1659,13 +1659,13 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
         targetdoc="../elements/structural/source.xml" targetptr="source"
         ><code>&lt;source></code></olink> and <olink targetdoc="../elements/structural/target.xml"
         targetptr="target"><code>&lt;target></code></olink> elements is fully governed by <olink
-        targetdoc="../xliff21.xml" targetptr="uax9">[UAX #9]</olink>, whereas explicit
+        targetdoc="../xliff22.xml" targetptr="uax9">[UAX #9]</olink>, whereas explicit
         <firstterm>XLIFF-defined</firstterm> structural and directionality markup is a higher-level
-      protocol in the sense of <olink targetdoc="../xliff21.xml" targetptr="uax9">[UAX #9]</olink>.
+      protocol in the sense of <olink targetdoc="../xliff22.xml" targetptr="uax9">[UAX #9]</olink>.
       The <firstterm>XLIFF-defined</firstterm> value <code>auto</code> determines the directionality
       based on the first strong directional character in its scope and
         <firstterm>XLIFF-defined</firstterm> inline directionality markup behaves exactly as
-      Explicit Directional Isolate Characters, see <olink targetdoc="../xliff21.xml"
+      Explicit Directional Isolate Characters, see <olink targetdoc="../xliff22.xml"
         targetptr="uax9">[UAX #9]</olink>, <ulink
         url="http://www.unicode.org/reports/tr9/#Directional_Formatting_Characters"
         >http://www.unicode.org/reports/tr9/#Directional_Formatting_Characters</ulink>.</para>
@@ -1915,7 +1915,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
       <listitem>
         <para>The text nodes are in Unicode Normalized Form C defined in the
         Unicode Annex #15: Unicode Normalization Forms <olink
-        targetdoc="../xliff21.xml" targetptr="uax15">[UAX #15]</olink>.</para>
+        targetdoc="../xliff22.xml" targetptr="uax15">[UAX #15]</olink>.</para>
       </listitem>
 
       <listitem>

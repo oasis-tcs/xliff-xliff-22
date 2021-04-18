@@ -14,7 +14,7 @@
       targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink>
     level.</para>
 
-  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff21.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para> 
+  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para> 
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 

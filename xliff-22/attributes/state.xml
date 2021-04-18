@@ -72,6 +72,6 @@
             roundtrip progresses, hence implementers don't have to make explicit use of the
             attribute. However setting of the attribute is advantageous if a workflow needs to make
             use of Advanced Validation methods. For instance missing non-removable codes will only
-            be reported as an Error by the <olink targetdoc="../xliff21.xml" targetptr="CoreSchematron">XLIFF Core Schematron Schema</olink> when the <link linkend="state"
+            be reported as an Error by the <olink targetdoc="../xliff22.xml" targetptr="CoreSchematron">XLIFF Core Schematron Schema</olink> when the <link linkend="state"
                     ><code>state</code></link> is <code>final</code>.</para></note>
 </section>

@@ -9,7 +9,7 @@
     <title>taClassRef</title>
     
     <para>Text Analysis Class Reference - the <code>taClassRef</code> attribute is the <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined <code>taClassRef</code> attribute.</para>
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <code>taClassRef</code> attribute.</para>
     
     
     <para><emphasis>Value description:</emphasis> IRI</para>

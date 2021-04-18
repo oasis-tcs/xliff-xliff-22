@@ -13,12 +13,12 @@
     managers, to assess how the performance of these agents may impact the quality of the
     translation. Translation and translation revision agents can be identified as a person, a piece
     of software or an organization that has been involved in providing a translation or revision
-    that resulted in the selected content. See <olink targetdoc="../../xliff21.xml"
+    that resulted in the selected content. See <olink targetdoc="../../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> for more details. </para>
   <warning><para>Provenance data category is used to record human, tools or organizational producers of
         <firstterm>Translations</firstterm> or revisions, in other words it records producers of the
-      payload. To record <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> metadata
+      payload. To record <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> metadata
       producers, the <olink targetdoc="specification" targetptr="itsToolsReferencing">ITS Tools
         Referencing</olink> mechanism needs to be used.</para></warning>
   <itemizedlist id="Provenance_Attributes">
@@ -40,7 +40,7 @@
       <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"><code>its:toolRef</code></olink>
       
        to express the <olink
-          targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+          targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> data category in
           <firstterm>XLIFF Documents</firstterm>.</para>
     <itemizedlist>
@@ -82,7 +82,7 @@
               targetdoc="../../attributes/change-tracking/ctr_author.xml" targetptr="ctr_author"
                 ><code>ctr:author</code></olink>
             <glossterm>should</glossterm> reuse information from the corresponding <olink
-              targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+              targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
             <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> attributes as
             follows:</para>
         <itemizedlist>
@@ -206,7 +206,7 @@
   </section>
   <section id="provenanceAnnotation">
     <title>ITS Provenance Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
         targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> data category when used
       inline.</para>

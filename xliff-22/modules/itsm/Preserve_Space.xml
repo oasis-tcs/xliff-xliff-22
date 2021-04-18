@@ -9,7 +9,7 @@
   <title>Preserve Space</title>
 
   <para>Indicates how to handle whitespace in a given content portion. See
-    <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> <ulink url="http://www.w3.org/TR/its20/#preservespace">Preserve Space</ulink> for details.</para>
+    <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> <ulink url="http://www.w3.org/TR/its20/#preservespace">Preserve Space</ulink> for details.</para>
   
 
   <section id="Preserve_Space_Structural">
@@ -36,7 +36,7 @@
   </section>
   <section id="Preserve_Space_Inline">
     <title>Inline Elements</title>
-    <para> It is not possible to use <olink targetdoc="../xliff21.xml" targetptr="xml_namespace"
+    <para> It is not possible to use <olink targetdoc="../xliff22.xml" targetptr="xml_namespace"
         >[XML namespace]</olink> on XLIFF inline elements. It is advised that mixed Preserve Space
       behavior is NOT used inline in source formats. The advised way to extract content with mixed
       Preserve Space behavior is for the <firstterm>Extractor</firstterm> to perform the following:<orderedlist>

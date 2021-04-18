@@ -8,7 +8,7 @@
 <section id="itsm_provenanceRecord">
     <title>provenanceRecord</title>
     <para>Provenance Record - a standoff element to hold information of a single <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined Provenance
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined Provenance
         Record.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>

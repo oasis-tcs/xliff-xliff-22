@@ -8,7 +8,7 @@
 <section id="itsm_version">
     <title>version</title>
     
-    <para>ITS Version - the <code>version</code> attribute is the <olink targetdoc="../xliff21.xml"
+    <para>ITS Version - the <code>version</code> attribute is the <olink targetdoc="../xliff22.xml"
             targetptr="ITS20">[ITS]</olink>
         <ulink url="https://www.w3.org/TR/its20/#its-version-attribute"><code>version</code></ulink>
         attribute.</para>

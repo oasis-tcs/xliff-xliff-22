@@ -9,7 +9,7 @@
     <title>locQualityRatingVote</title>
     
     <para>Localization Quality Rating Vote - the <code>locQualityRatingVote</code> attribute is the
-            <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>locQualityRatingVote</code> attribute. </para>
     <para> This attribute provides the quality rating voting (crowd assessment) results pertaining
         to a structural or inline portion of target text, the higher the number the more positive

@@ -9,7 +9,7 @@
     <title>locQualityIssueComment</title>
     
     <para>Localization Quality Issue Comment - the <code>locQualityIssueComment</code> attribute
-        is the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         defined <code>locQualityIssueComment</code> attribute.</para>
     <para> This attribute is intended for human readable comments pertaining to or guidance how to
         address a specific Localization Quality Issue.</para>

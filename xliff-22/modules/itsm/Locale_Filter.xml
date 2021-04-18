@@ -9,7 +9,7 @@
   <title>Locale Filter</title>
 
   <para>Expresses that a node is only applicable to certain locales. See <olink
-      targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> for further
     details. </para>
   <para>This section describes how the <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale
@@ -25,7 +25,7 @@
       <para><firstterm>Writers</firstterm>
         <glossterm>must</glossterm> use the <olink targetdoc="specification.xml"
           targetptr="localeFilterAnnotation">ITS Locale Filter Annotation</olink> to express the
-          <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+          <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> data category in
           <firstterm>XLIFF Documents</firstterm> that don't have set the target locale.</para>
     </listitem>
@@ -33,7 +33,7 @@
       <para><firstterm>Writers</firstterm>
         <glossterm>must</glossterm> use the <firstterm>XLIFF Core</firstterm>
         <olink targetdoc="../../inline/inline.xml" targetptr="translateAnnotation">Translate
-          Annotation</olink> to express the <olink targetdoc="../xliff21.xml" targetptr="ITS20"
+          Annotation</olink> to express the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
           >[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> data category in
           <firstterm>XLIFF Documents</firstterm> with the target locale set.
@@ -54,13 +54,13 @@
           targetdoc="specification.xml" targetptr="localeFilterAnnotation">ITS Locale Filter
           Annotation</olink> by setting the <olink targetdoc="../../attributes/trgLang.xml"
           targetptr="trgLang"><code>trgLang</code></olink>. Although, this is addressed by the above
-        PR, <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        PR, <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> capable
           <firstterm>Modifiers</firstterm> are strongly advised  to better set the <olink
           targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>
         as soon as known and perform the above specified annotations' transformation rather than to
         assume that other tools downstream will be capable of interpreting the <olink
-          targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+          targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> metadata when
         setting the target locale.</para>
     </warning>For both structural and inline elements, use <code><olink
@@ -200,7 +200,7 @@
   </section>
   <section id="localeFilterAnnotation">
     <title>ITS Locale Filter Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> data
       category.</para>
@@ -210,7 +210,7 @@
         <para>The <olink targetdoc="../../attributes/localeFilterList.xml"
             targetptr="itsm_localeFilterList"><code>localeFilterList</code></olink> attribute is
             <glossterm>required</glossterm> and used to map to and from the <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>localeFilterList</code> attribute.</para>
       </listitem>
       <listitem>
@@ -223,7 +223,7 @@
         <para>The <olink targetdoc="../../attributes/itsm/itsm_localeFilterType.xml"
             targetptr="itsm_localeFilterType"><code>its:localeFilterType</code></olink> attribute
           is <glossterm>optional</glossterm> and used to map to and from the <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>localeFilterList</code> attribute.</para>
       </listitem>
       <listitem>

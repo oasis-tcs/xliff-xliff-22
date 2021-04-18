@@ -9,7 +9,7 @@
   <title>MT Confidence</title>
 
   <para>communicates the confidence score from a machine translation engine for the accuracy of a translation it has provided
-    <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> for details.</para>
+    <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> for details.</para>
   <warning><para>MT Confidence is not intended to provide a score that is comparable among or between Machine
       Translation engines and platforms. This data category does NOT aim to establish any sort of
       correlation between the confidence score and either human evaluation of MT usefulness, or
@@ -27,7 +27,7 @@
         ><code>&lt;target></code></olink> elements with matches.</para>
     <para>In the <olink targetdoc="../../modules/candidates/specification.xml"
         targetptr="candidates">Translation Candidates Module</olink>, there is a partial overlap
-      between the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      between the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> and
         <firstterm>XLIFF-defined</firstterm> features. See the <olink
         targetdoc="../../attributes/itsm/itsm_mtConfidence.xml" targetptr="itsm_mtConfidence"
@@ -85,10 +85,10 @@
 
   <section id="MT_Confidence_Structural">
     <title>Structural Elements</title>
-    <para>It is NOT advised that <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+    <para>It is NOT advised that <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> be used at a
       structural level because meaningful MT Confidence scores will vary from segment to segment. If
-      a structural element of an original document has an <olink targetdoc="../xliff21.xml"
+      a structural element of an original document has an <olink targetdoc="../xliff22.xml"
         targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> annotation, it
         <glossterm>may</glossterm> be represented upon <firstterm>Extraction</firstterm> using the
@@ -129,7 +129,7 @@
   </section>
   <section id="MTConfidenceAnnotation">
     <title>MT Confidence Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
         targetptr="ITS20">[ITS]</olink>
       <ulink url="https://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> data
       category in <firstterm>XLIFF Core</firstterm>.</para>
@@ -145,7 +145,7 @@
             <code>its:generic</code>.</para>
       </listitem>
       <listitem>
-        <para>The the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+        <para>The the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
           attribute <olink targetdoc="../../attributes/itsm/itsm_mtConfidence"
             targetptr="itsm_mtConfidence"><code>its:mtConfidence</code></olink>
           <glossterm>must</glossterm> be set.</para>

@@ -9,7 +9,7 @@
   <title>Domain</title>
 
   <para>Identifies the topic, theme, or subject of the content in scope. See <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#domain">Domain</ulink> for
     details.</para>
   <itemizedlist>
@@ -17,7 +17,7 @@
     <listitem><para><firstterm>Writers</firstterm>
         <glossterm>must</glossterm> use the attribute <olink
           targetdoc="../../attributes/itsm/itsm_domains.xml" targetptr="itsm_domains"
-            ><code>itsm:domains</code></olink> to express the <olink targetdoc="../xliff21.xml"
+            ><code>itsm:domains</code></olink> to express the <olink targetdoc="../xliff22.xml"
           targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#domain">Domain</ulink> data category in
           <firstterm>XLIFF Documents</firstterm>.</para></listitem>
@@ -95,7 +95,7 @@
 
   <section id="domainsAnnotation">
     <title>ITS Domain Annotation</title>
-    <para>This is used to express inline the <olink targetdoc="../xliff21.xml" targetptr="ITS20"
+    <para>This is used to express inline the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
         >[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#domain">Domain</ulink> data category. </para>
     <para>Usage:</para>

@@ -9,7 +9,7 @@
     <title>itsm:domains</title>
     
     <para>Domains - the <code>itsm:domains</code> attribute expresses the <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#domain">Domain</ulink> data category.</para>
     
     

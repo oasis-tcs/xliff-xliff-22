@@ -9,7 +9,7 @@
     <title>locQualityIssuesRef</title>
     
     <para>Localization Quality Standoff Reference - the <code>locQualityIssuesRef</code> attribute
-        is the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         defined <code>locQualityIssuesRef</code> attribute.</para>
     <para>This attribute references the collection of Localization Issues that pertain to the
         content span from where the reference is declared.</para>

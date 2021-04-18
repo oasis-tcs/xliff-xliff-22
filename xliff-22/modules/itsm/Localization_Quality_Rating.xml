@@ -9,14 +9,14 @@
   <title>Localization Quality Rating</title>
 
   <para>Expresses results of localization quality assessment in the form of aggreagated
-    ratings, either as scores or as voting results. See <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+    ratings, either as scores or as voting results. See <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#lqrating">Localization Quality Rating</ulink> for more
     details.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem><para><firstterm>Writers</firstterm> <glossterm>must</glossterm> use the
       <olink targetdoc="specification" targetptr="lqrAnnotation">ITS Localization Quality Rating Annotation</olink> to express the <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqrating"
         >Localization Quality Rating</ulink> data category on inline spans within <firstterm>XLIFF Documents</firstterm>.</para></listitem>
 
@@ -107,7 +107,7 @@
 
   <section id="lqrAnnotation">
     <title>ITS Localization Quality Rating Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqrating"
         >Localization Quality Rating</ulink> data category on inline elements.</para>
@@ -204,7 +204,7 @@
     <title>Translation Candidates</title>
     <para>In the <olink targetdoc="../candidates/specification.xml" targetptr="candidates">Translation Candidates module</olink>,
       the <link linkend="Localization_Quality_Rating">Localization Quality Rating</link>
-      category attributes <glossterm>may</glossterm> be used to express the <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      category attributes <glossterm>may</glossterm> be used to express the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqrating">Localization Quality Rating</ulink> information.</para>
       
       <itemizedlist>

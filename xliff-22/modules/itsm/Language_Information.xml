@@ -9,7 +9,7 @@
   <title>Language Information</title>
 
   <para>Indicates the natural langauge in which content is expressed. See
-    <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+    <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#language-information">Language Information</ulink> for details.</para>
 
 
@@ -46,7 +46,7 @@
   </section>
   <section id="Language_Information_Inline">
     <title>Inline Elements</title>
-    <para> It is not possible to use <olink targetdoc="../xliff21.xml" targetptr="xml_namespace"
+    <para> It is not possible to use <olink targetdoc="../xliff22.xml" targetptr="xml_namespace"
         >[XML namespace]</olink> on XLIFF inline elements. It is advised that content in different
       languages is NOT used inline in source formats. Still there are use cases for mixed language
       use inline, like referencing non-localized UI or hardware elements, discussing foreign
@@ -114,7 +114,7 @@
     </section>
   <section id="langAnnotation">
     <title>ITS Language Information Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#language-information">Language Information</ulink> data category,
       including full inline support that cannot be provided via the <firstterm>XLIFF

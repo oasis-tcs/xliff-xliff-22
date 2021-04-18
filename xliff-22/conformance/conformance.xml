@@ -19,7 +19,7 @@
                     <para>XLIFF is an XML vocabulary, therefore conformant <firstterm>XLIFF
                             Documents</firstterm>
                         <glossterm>must</glossterm> be well formed and valid <olink
-                            targetdoc="../xliff21.xml" targetptr="bib_XML">[XML]</olink>
+                            targetdoc="../xliff22.xml" targetptr="bib_XML">[XML]</olink>
                         documents.</para>
                 </listitem>
                 <listitem>

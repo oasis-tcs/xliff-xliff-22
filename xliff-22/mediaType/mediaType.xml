@@ -26,12 +26,12 @@
         <listitem id="Encoding_considerations">
             <para><emphasis role="emphasis">Encoding considerations:</emphasis></para>
             <para>Same as encoding considerations of application/xml as specified in <olink
-                    targetdoc="../xliff21.xml" targetptr="rfc7303">[RFC 7303]</olink></para>
+                    targetdoc="../xliff22.xml" targetptr="rfc7303">[RFC 7303]</olink></para>
         </listitem>
         <listitem id="Security_considerations">
             <para><emphasis role="emphasis">Security considerations:</emphasis></para>
             <para>Apart from all of the security considerations described in <olink
-                    targetdoc="../xliff21.xml" targetptr="rfc7303">[RFC 7303]</olink>, XLIFF Version
+                    targetdoc="../xliff22.xml" targetptr="rfc7303">[RFC 7303]</olink>, XLIFF Version
                 &pversion; and higher has the following Security considerations:</para>
             <para><emphasis>Extensibility:</emphasis> XLIFF permits extensions. Hence it is possible
                 that application xliff+xml may describe content that has security implications
@@ -39,7 +39,7 @@
             <para><emphasis>Direct external reference mechanisms:</emphasis> An XLIFF document has a
                 number of attributes of the type URI or IRI, all of which may be dereferenced and
                 some of them should be dereferenced. Therefore, the security issues of <olink
-                    targetdoc="../xliff21.xml" targetptr="rfc3987">[RFC 3987]</olink> Section 8
+                    targetdoc="../xliff22.xml" targetptr="rfc3987">[RFC 3987]</olink> Section 8
                 should be considered. In addition, the contents of resources identified by
                     <code>file:</code> URIs can in some cases be accessed, processed and returned as
                 results.</para>
@@ -49,7 +49,7 @@
         <listitem id="Interoperability_considerations">
             <para><emphasis role="emphasis">Interoperability considerations:</emphasis></para>
             <para>Same as interoperability considerations described in <olink
-                    targetdoc="../xliff21.xml" targetptr="rfc7303">[RFC 7303]</olink></para>
+                    targetdoc="../xliff22.xml" targetptr="rfc7303">[RFC 7303]</olink></para>
             <para>Also, interoperability requirements are specified throughout the specification and
                 summarized in its <olink targetdoc="../../conformance/conformance.xml"
                     targetptr="Conformance">Conformance Section</olink>.</para>
@@ -189,7 +189,7 @@
             <title>ITS Module</title>
             <para>As the ITS Module brings a large number of ITS features natively to XLIFF,
                 Security considerations of <code>application/its+xml</code>, as described in <olink
-                    targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+                    targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
                 <ulink url="https://www.w3.org/TR/its20/#its-mime-type"
                     >https://www.w3.org/TR/its20/#its-mime-type</ulink> should be taken into
                 consideration, albeit largely overlapping with XLIFF general Security considerations

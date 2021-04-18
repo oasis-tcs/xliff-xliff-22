@@ -9,7 +9,7 @@
     <title>revOrg</title>
     
     <para>Organization - the <code>revOrg</code> attribute is the <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined <code>revOrg</code> attribute.</para>
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <code>revOrg</code> attribute.</para>
     
     
     <para><emphasis>Value description:</emphasis> Text</para>

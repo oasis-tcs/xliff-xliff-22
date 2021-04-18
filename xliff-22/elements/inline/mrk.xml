@@ -78,7 +78,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>The <olink targetdoc="../../xliff21.xml" targetptr="xml_namespace">[XML
+      <para>The <olink targetdoc="../../xliff22.xml" targetptr="xml_namespace">[XML
           namespace]</olink>
         <glossterm>must not</glossterm> be used at this extension point.</para>
     </listitem>

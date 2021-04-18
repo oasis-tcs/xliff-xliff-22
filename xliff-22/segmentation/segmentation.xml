@@ -22,7 +22,7 @@
 
   <para>XLIFF does not specify how segmentation is carried out, only how to represent its result.
     Material provisions regarding segmentation can be found for instance in the Segmentation Rules
-    eXchange standard <olink targetdoc="../xliff21.xml" targetptr="biblio_srx">[SRX]</olink> or <olink targetdoc="../xliff21.xml" targetptr="uax29">[UAX #29]</olink>.</para>
+    eXchange standard <olink targetdoc="../xliff22.xml" targetptr="biblio_srx">[SRX]</olink> or <olink targetdoc="../xliff22.xml" targetptr="uax29">[UAX #29]</olink>.</para>
 
   <section id="segmentationRepresentation">
     <title>Segments Representation</title>
@@ -547,7 +547,7 @@
                     <olink targetdoc="../attributes/trgdir.xml" targetptr="trgdir"><code>trgDir</code></olink>, or
                     <olink targetdoc="../attributes/dir.xml" targetptr="dir"><code>dir</code></olink>
                     differ the <firstterm>Modifier</firstterm> <glossterm>must</glossterm> insert Unicode bidirectional
-                    control characters <olink targetdoc="../xliff21.xml" targetptr="uax9">[UAX
+                    control characters <olink targetdoc="../xliff22.xml" targetptr="uax9">[UAX
                       #9]</olink> to secure proper directionality in the <olink
                         targetdoc="../elements/structural/segment.xml" targetptr="segment"
                         ><code>&lt;segment&gt;</code></olink> and its children.</para>

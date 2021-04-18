@@ -11,7 +11,7 @@
     <para>Language - The xml:lang attribute specifies the language variant of the text of a given element. 
         For example: <code>xml:lang="fr-FR"</code> indicates the French language as spoken in France.</para>
     
-    <para><emphasis>Value description:</emphasis> A language code as described in <olink targetdoc="../../xliff21.xml"
+    <para><emphasis>Value description:</emphasis> A language code as described in <olink targetdoc="../../xliff22.xml"
         targetptr="bcp47">[BCP 47]</olink>.</para>
     
     <para><emphasis>Default value:</emphasis> undefined</para>

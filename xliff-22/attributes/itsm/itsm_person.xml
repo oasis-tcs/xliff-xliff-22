@@ -9,7 +9,7 @@
     <title>person</title>
     
     <para>Person - the <code>person</code> attribute is the <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined <code>person</code> attribute.</para>
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <code>person</code> attribute.</para>
     
     
     <para><emphasis>Value description:</emphasis> Text</para>

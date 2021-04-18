@@ -9,7 +9,7 @@
     <title>locQualityIssueType</title>
     
     <para>Localization Quality Issue Type - the <code>locQualityIssueType</code> attribute is the
-            <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>locQualityIssueType</code> attribute.</para>
     
     
@@ -50,7 +50,7 @@
         
     </simplelist></para>
     <para>For normative usage description and informative guidance for the above values, see <olink
-            targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+            targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#lqissue-typevalues"
             >http://www.w3.org/TR/its20/#lqissue-typevalues</ulink>.</para>
     

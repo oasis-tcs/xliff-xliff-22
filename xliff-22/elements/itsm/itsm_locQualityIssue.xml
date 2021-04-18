@@ -8,7 +8,7 @@
 <section id="itsm_locQualityIssue">
     <title>locQualityIssue</title>
     <para>Localization Quality Issue - a standoff element to hold information about a single <olink
-        targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined Localization Quality Issue.</para>
+        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined Localization Quality Issue.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
         <member>This element is always empty.</member>

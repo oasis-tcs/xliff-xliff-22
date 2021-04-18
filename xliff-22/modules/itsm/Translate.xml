@@ -9,7 +9,7 @@
   <title>Translate</title>
 
   <para>Indicates whether content is translatable or not. See <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#trans-datacat">Translate</ulink> for
     details.</para>
   <para>ITS data category Translate in source content influences how <firstterm>Extractors</firstterm> prepare source content for <firstterm>Translation</firstterm> via <firstterm>XLIFF Documents</firstterm>.</para>

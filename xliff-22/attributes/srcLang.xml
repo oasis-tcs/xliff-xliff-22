@@ -11,7 +11,7 @@
     <para>Source language - the code of the language, in which the text to be <firstterm>Translated</firstterm> is
         expressed.</para>
     
-    <para><emphasis>Value description:</emphasis> A language code as described in <olink targetdoc="../xliff21.xml"
+    <para><emphasis>Value description:</emphasis> A language code as described in <olink targetdoc="../xliff22.xml"
         targetptr="bcp47">[BCP 47]</olink>.</para>
     
     <para><emphasis>Default value:</emphasis> undefined</para>

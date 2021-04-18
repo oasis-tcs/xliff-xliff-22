@@ -9,7 +9,7 @@
     <title>taConfidence</title>
     
     <para>Text Analysis Confidence - the <code>taConfidence</code> attribute is the <olink
-            targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>taConfidence</code> attribute.</para>
     
     
@@ -31,7 +31,7 @@
         <title>Constraints</title>
         <listitem><para>When the attribute <link linkend="itsm_taConfidence"><code>taConfidence</code></link> is set, the element where it is set <glossterm>must</glossterm> be in the scope of an
             <olink targetdoc="itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef" ><code>its:annotatorsRef</code></olink> attribute with the 
-            <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
+            <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
                 >Data category
                 identifier</ulink> part of exactly one list value equal to the string <code>text-analysis</code>.</para></listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
 <section id="Terminology_datacat">
   <title>Terminology</title>
   <para>Marks terms and optionally associates them with information, such as definitions. See <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> for details.</para>
   <para>ITS Terminology information is useful during <firstterm>Translation</firstterm> and related
     localization processes. Thus it is beneficial when <firstterm>Extractors</firstterm> preserve
@@ -20,7 +20,7 @@
   <warning>
     <para>The <firstterm>XLIFF Core</firstterm>
       <olink targetdoc="../inline/inline.xml" targetptr="termAnnotation">Term Annotation</olink>
-      does not support all aspects of the <olink targetdoc="../xliff21.xml" targetptr="ITS20"
+      does not support all aspects of the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
         >[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> data category. For
       instance, the <firstterm>XLIFF Core</firstterm> Term Annotation cannot be used to mark a span
@@ -88,7 +88,7 @@
   </section>
   <section id="nonTermAnnotation">
     <title>ITS Terminology Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> data category,
       including the aspects that are not supported via the <firstterm>XLIFF Core</firstterm>
@@ -107,12 +107,12 @@
         <itemizedlist spacing="compact">
           <listitem>
             <para>either to <code>its:term-no</code>, which maps to and from the <olink
-              targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+              targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
               <code>term</code> attribute set to <code>no</code>,</para>
           </listitem>
           <listitem>
             <para>or to <code>term</code>, which maps to and from the <olink
-              targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> defined
+              targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
               <code>term</code> attribute set to <code>yes</code>.</para>
           </listitem>
         </itemizedlist>
@@ -127,14 +127,14 @@
             <para>The <olink targetdoc="../../attributes/value.xml" targetptr="value"
               ><code>value</code></olink> attribute is <glossterm>optional</glossterm> and
               contains a short definition of the term that an <firstterm>Extractor</firstterm>
-              obtained by dereferencing the <olink targetdoc="../xliff21.xml" targetptr="ITS20"
+              obtained by dereferencing the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
                 >[ITS]</olink> defined <code>termInfoPointer</code> or added by an
               <firstterm>Enricher</firstterm>.</para>
           </listitem>
           <listitem>
             <para>The <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
               ><code>ref</code></olink> attribute is <glossterm>optional</glossterm> and used to map
-              to and from the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+              to and from the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
               defined <code>termInfoRef</code> attribute.</para>
           </listitem>
         </itemizedlist>
@@ -146,7 +146,7 @@
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_termConfidence.xml"
           targetptr="itsm_termConfidence"><code>its:termConfidence</code></olink> attribute is <glossterm>optional</glossterm> and  used to map
-          to and from the <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+          to and from the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
           defined <code>termConfidence</code> attribute.</para>
       </listitem>
       <listitem>

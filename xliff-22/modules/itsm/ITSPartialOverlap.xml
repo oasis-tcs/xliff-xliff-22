@@ -10,7 +10,7 @@
   <title>ITS data categories that have a partial overlap with XLIFF features</title>
 
   <para>The following <olink
-    targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink> data cetegories are partially covered with <firstterm>XLIFF Core</firstterm> or <firstterm>Modules</firstterm> other than
+    targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data cetegories are partially covered with <firstterm>XLIFF Core</firstterm> or <firstterm>Modules</firstterm> other than
     the <olink targetdoc="../modules/its/specification.xml" targetptr="ITS-module">ITS Module</olink>:</para>
 
   <orderedlist>
@@ -60,7 +60,7 @@
     <itemizedlist>
       <title>Processing Requirements</title>
       <listitem>
-        <para>The <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+        <para>The <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
           <ulink url="https://www.w3.org/TR/its20/#storagesize">Storage Size data
             category</ulink>
           <glossterm>may</glossterm> be expressed as an Extended profile within the <olink

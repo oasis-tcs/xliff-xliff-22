@@ -10,7 +10,7 @@
   <para>The <ulink url="http://www.w3.org/TR#elements-within-text">Elements Within Text</ulink> data
     category reveals if and how an element affects the way text content behaves from a linguistic
     viewpoint. This information is for example relevant to provide basic text segmentation hints for
-    tools such as translation memory systems. See <olink targetdoc="../xliff21.xml"
+    tools such as translation memory systems. See <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR#elements-within-text">Elements Within Text</ulink> for
     details.</para>

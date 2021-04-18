@@ -10,7 +10,7 @@
 
   <para>Reference - holds a reference for the associated annotation.</para>
 
-  <para><emphasis>Value description:</emphasis> A value of the <olink targetdoc="../xliff21.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> type
+  <para><emphasis>Value description:</emphasis> A value of the <olink targetdoc="../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> type
   anyURI. The semantics of the value depends on the type of annotation:</para>
 
   <itemizedlist>

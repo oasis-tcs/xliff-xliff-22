@@ -23,7 +23,7 @@ annotatorsRef had been addressed already for csprd01
     ELEMENTS SHOULD HELP WITH THAT.</para>
   -->
   <para>Expresses information related to localization quality assessment tasks in the form of
-    highlighted issues. See <olink targetdoc="../../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+    highlighted issues. See <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink> for more
     details.
  <!-- Addressed already in csprd01
@@ -38,7 +38,7 @@ annotatorsRef had been addressed already for csprd01
     <title>Processing Requirements</title>
     <listitem><para><firstterm>Writers</firstterm> <glossterm>must</glossterm> use the
       <olink targetdoc="specification" targetptr="lqiAnnotation">ITS Localization Quality Issue Annotation</olink> to express the <olink
-      targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqissue"
         >Localization Quality Issue</ulink> data category in <firstterm>XLIFF Documents</firstterm>.</para></listitem>
 
@@ -48,7 +48,7 @@ annotatorsRef had been addressed already for csprd01
   <section id="Localization_Quality_Issue_Structural">
     <title>Structural Elements</title>
     <para>Localization Quality Issue is not to be used at structural levels. If a structural element
-      of the original document has <olink targetdoc="../xliff21.xml" targetptr="ITS20">[ITS]</olink>
+      of the original document has <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink>
       information associated, it <glossterm>must</glossterm> be anyway
         <firstterm>Extracted</firstterm> using the <olink targetdoc="specification"
@@ -114,7 +114,7 @@ annotatorsRef had been addressed already for csprd01
   </section>
   <section id="lqiAnnotation">
     <title>ITS Localization Quality Issue Annotation</title>
-    <para>This is used to fully map to and from the <olink targetdoc="../xliff21.xml"
+    <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink> data
       category.

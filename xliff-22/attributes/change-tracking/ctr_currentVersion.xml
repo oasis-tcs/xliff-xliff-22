@@ -10,7 +10,7 @@
 
   <para>currentVersion - holds a reference to the most current version of a revision.</para>
 
-  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff21.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para> 
+  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para> 
 
   <para><emphasis>Default value:</emphasis> none</para>
 

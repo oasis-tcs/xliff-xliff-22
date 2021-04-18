@@ -12,7 +12,7 @@
     XML.</para>
 
   <para><emphasis>Value description:</emphasis> A canonical representation of
-    the hexBinary <olink targetdoc="../xliff21.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> data type: Two hexadecimal digits to represent each octet
+    the hexBinary <olink targetdoc="../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> data type: Two hexadecimal digits to represent each octet
   of the Unicode code point. The allowed values are any of the values
   representing code points invalid in XML, between hexadecimal 0000 and 10FFFF
   (both included).</para>
