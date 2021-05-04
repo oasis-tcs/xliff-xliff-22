@@ -40,10 +40,10 @@
 <!-- Entities for XLIFF V2.x publishing.................................... -->
 <!--copy all of these to all *.sch files and also to the Oxygen framework for validating Docbook 4.5 if you use Oxygen -->
 <!ENTITY name "xliff-core-v2.2">
-<!ENTITY pversion "2.0">
+<!ENTITY pversion "2.1">
 <!ENTITY version "2.2">
 <!ENTITY bschversion "2.0">
-<!ENTITY cschversion "2.">
+<!ENTITY cschversion "2.0">
 
 <!ENTITY stage "csprd">
 <!ENTITY pstage "csprd01">
