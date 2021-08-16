@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<signed on="25-Feb-2019 10:20:53 AM">
+<signed on="25-Feb-2019 10:20:54 AM">
   <stylesheets>
-    <stylesheet name="oasis-specification-fo-us.xsl" md5="h8LEH9gorOrAPG30K9r9oQ=="/>
-    <stylesheet name="oasis-specification-fo-a4.xsl" md5="hu2SmQvQmQus4phunSDiVQ=="/>
+    <stylesheet name="oasis-note-fo-us.xsl" md5="wuV/94vsJnQlRcqoUrta2w=="/>
+    <stylesheet name="oasis-note-fo-a4.xsl" md5="XE1rDi3iLtzBmBYfIpBnog=="/>
     <stylesheet name="../../spec-0.8/docbook/xsl/fo/docbook.xsl" md5="aKhcb5dQTWFJ4YNEfir2PQ=="/>
     <stylesheet name="../../spec-0.8/docbook/xsl/VERSION" md5="ENJJ4mjgRncSXSwpw38P9A=="/>
     <stylesheet name="../../spec-0.8/docbook/xsl/fo/param.xsl" md5="ZO2i3Pl9BfVTJifoKx3V0w=="/>
@@ -58,8 +58,8 @@
     <stylesheet name="../../spec-0.8/docbook/xsl/fo/passivetex.xsl" md5="bJ84iPuuEQb0Pze7DYIHrA=="/>
     <stylesheet name="../../spec-0.8/docbook/xsl/fo/xep.xsl" md5="JzUS9GE+d7l97Ce6Dkg19A=="/>
     <stylesheet name="../../spec-0.8/docbook/xsl/fo/axf.xsl" md5="8XF0S30OAldcaafKhYJ7wQ=="/>
-    <stylesheet name="titlepage-fo.xsl" md5="Wpu4FZ960uRC+W9F0FHDzw=="/>
+    <stylesheet name="titlepage-notes-fo.xsl" md5="izoO+9PTrpwZ1q+VWGc3mA=="/>
   </stylesheets>
-  <sig md5="12mIFQBEFDwUT5CBYM1Pxg==" signature="MCwCFEtYt1MRu4C32LsKodBz2137OhipAhQj7sqAIi6k0x0SRdlTssevUbm3QA==">
+  <sig md5="UqZjyixxsXEF8LspMzYnQA==" signature="MC0CFDCmCkv3XYEpqBA/2mzCmX0GJSrWAhUAhz85fLLIbeJ7N96q568waajK2IQ=">
   </sig>
 </signed>

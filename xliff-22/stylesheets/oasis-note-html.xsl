@@ -3,7 +3,7 @@
 [
   <!ENTITY upper 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'>
   <!ENTITY lower 'abcdefghijklmnopqrstuvwxyz'>
-  <!ENTITY oasis-spec 'http://docs.oasis-open.org/templates/DocBook/spec-0.6/'>
+  <!ENTITY oasis-spec 'https://docs.oasis-open.org/templates/DocBook/spec-0.8/'>
   <!ENTITY separator " ">
 ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -13,13 +13,13 @@
                 xmlns:exsl="http://exslt.org/common"
                 extension-element-prefixes="saxon xalanredirect lxslt exsl"
                 version="1.0">
-<!-- $Id: oasis-specification-html.xsl,v 1.34 2012/06/13 14:26:22 admin Exp $ -->
+<!-- $Id: oasis-note-html.xsl,v 1.11 2018/12/06 18:56:15 admin Exp $ -->
 
 <!-- This stylesheet is a customization of the DocBook XSL Stylesheets -->
 <!-- from http://docs.oasis-open.org/templates/ -->
 <!-- See http://sourceforge.net/projects/docbook/ -->
 <xsl:import href="../docbook/xsl/html/docbook.xsl"/>
-<xsl:include href="titlepage-html.xsl"/>
+<xsl:include href="titlepage-notes-html.xsl"/>
 
 <!-- ============================================================ -->
 <!-- Parameters -->
@@ -28,12 +28,12 @@
 <xsl:param name="css.path"
            select="'&oasis-spec;css/'"/>
 <xsl:param name="oasis.logo"
-           select="'&oasis-spec;OASISLogo.jpg'"/>
+           select="'&oasis-spec;OASISLogo.png'"/>
 <xsl:param name="oasis-base" select="'no'"/>
 
 <!--common between offline and online-->
 
-<xsl:param name="css.stylesheet">oasis-spec.css</xsl:param>
+<xsl:param name="css.stylesheet">oasis-note.css</xsl:param>
 <!--No longer changing the style based on the stage of development
   <xsl:choose>
     <xsl:when test="/article/@status='Working Draft'">oasis-wd.css</xsl:when>
@@ -69,6 +69,19 @@
 <xsl:param name="encoding" select="'UTF-8'"/>
 <xsl:param name="automatic-output-filename" select="'no'"/>
 
+<!-- ============================================================ -->
+<!-- Filtering unexpected content -->
+<xsl:template match="*[normalize-space(@condition) and
+                       not(contains(@condition,'oasis'))]" priority="100">
+  <!--not for this process-->
+</xsl:template>
+  
+<xsl:template match="*[normalize-space(@condition) and
+                       not(contains(@condition,'oasis'))]" priority="100"
+              mode="titlepage.mode">
+  <!--not for this process-->
+</xsl:template>
+  
 <!-- ============================================================ -->
 <!-- The document -->
 <xsl:template match="/">
@@ -149,6 +162,8 @@
 <!-- Titlepage -->
 
 <xsl:template match="articleinfo/title" mode="titlepage.mode">
+  <div style="font-size:200%;font-weight:bold;color:#7f7f7f;margin-top:0pt"
+    >OASIS Committee Note</div>
   <hr style="margin-bottom:0pt"/>
   <xsl:apply-imports/>
 </xsl:template>
@@ -532,11 +547,23 @@
                                       |chapterinfo/title
                                       |appendixinfo/title
                                       |title)[1]"/>
+  <xsl:if test="@role='iso-normative'">
+    <xsl:text>(normative) </xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='iso-informative'">
+    <xsl:text>(informative) </xsl:text>
+  </xsl:if>
   <xsl:apply-templates select="$title" mode="title.markup">
     <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
   </xsl:apply-templates>
   <xsl:if test="@role='non-normative'">
     <xsl:text> (Non-Normative)</xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='normative'">
+    <xsl:text> (Normative)</xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='informative'">
+    <xsl:text> (Informative)</xsl:text>
   </xsl:if>
 </xsl:template>
 
@@ -557,12 +584,23 @@
                                       |refsect2info/title
                                       |refsect3info/title
                                       |title)[1]"/>
-
+  <xsl:if test="@role='iso-normative'">
+    <xsl:text>(normative) </xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='iso-informative'">
+    <xsl:text>(informative) </xsl:text>
+  </xsl:if>
   <xsl:apply-templates select="$title" mode="title.markup">
     <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
   </xsl:apply-templates>
   <xsl:if test="@role='non-normative'">
     <xsl:text> (Non-Normative)</xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='normative'">
+    <xsl:text> (Normative)</xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='informative'">
+    <xsl:text> (Informative)</xsl:text>
   </xsl:if>
 </xsl:template>
 
@@ -689,9 +727,21 @@
       </td>
       <td style="text-align:center">
         <br/>
-        <xsl:text>Copyright &#xa9; OASIS </xsl:text>
+        <xsl:text>Copyright &#xa9; </xsl:text>
+        <xsl:choose>
+          <xsl:when test="/*/articleinfo/copyrightyear/holder">
+            <xsl:for-each select="/*/articleinfo/copyrightyear/holder">
+              <xsl:if test="position()>1">, </xsl:if>
+              <xsl:value-of select="."/>
+            </xsl:for-each>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>OASIS Open</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text> </xsl:text>
         <xsl:value-of select="/*/articleinfo/copyright/year"/>
-        <xsl:text>. All rights reserved.</xsl:text>
+        <xsl:text>. All Rights Reserved.</xsl:text>
       </td>
       <td style="text-align:right">
         <xsl:value-of select="/*/articleinfo/pubdate"/>

@@ -81,7 +81,7 @@
 </xsl:template>
 
 <xsl:template name="article.titlepage.before.recto"><fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" text-align="start">
-      <fo:external-graphic src="url(&#34;{$oasis.logo}&#34;)" content-width="55mm" width="55mm"/>
+      <fo:external-graphic src="url(&#34;{$oasis.logo}&#34;)" content-width="65mm" width="65mm"/>
     </fo:block>
 </xsl:template>
 

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE xsl:stylesheet
 [
   <!ENTITY upper 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'>
   <!ENTITY lower 'abcdefghijklmnopqrstuvwxyz'>
-  <!ENTITY logo  SYSTEM '../OASISLogo.jpg' NDATA dummy>
+  <!ENTITY logo  SYSTEM '../OASISLogo.png' NDATA dummy>
   <!NOTATION dummy SYSTEM "">
 ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -12,10 +12,11 @@
                 xmlns:lxslt="http://xml.apache.org/xslt"
                 xmlns:xalanredirect="org.apache.xalan.xslt.extensions.Redirect"
                 xmlns:exsl="http://exslt.org/common"
-                exclude-result-prefixes="saxon lxslt xalanredirect exsl"
+                xmlns:axf="http://www.antennahouse.com/names/XSL/Extensions"
+                exclude-result-prefixes="saxon lxslt xalanredirect exsl axf"
                 extension-element-prefixes="saxon xalanredirect lxslt exsl"
                 version="1.0">
-<!-- $Id: oasis-specification-fo-a4.xsl,v 1.36 2012/06/13 14:27:10 admin Exp $ -->
+<!-- $Id: oasis-specification-fo-a4.xsl,v 1.54 2018/12/02 02:44:17 admin Exp $ -->
 
 <!-- This stylesheet is a customization of the DocBook XSL Stylesheets -->
 <!-- from http://www.oasis-open.org/spectools/stylesheets/oasis-docbook-fo.xsl
@@ -23,7 +24,14 @@
      settings for international paper size (for an international standards
      organization) and body indentation (new with DocBook stylesheets);
      note also that directory locations have been parameterized; a number of
-     changes were made to conform to revised OASIS presentation reqts -->
+     changes were made to conform to revised OASIS presentation reqts
+  
+     Yellow: A09A4F
+     Purple: 3B006F
+     Aqua:   7DCAD6
+     Navy:   446CAA
+     Gray:   7F7F7F
+  -->
 <!-- See http://sourceforge.net/projects/docbook/ -->
 <xsl:import href="../docbook/xsl/fo/docbook.xsl"/>
 <xsl:import href="titlepage-fo.xsl"/>
@@ -44,6 +52,9 @@
 <xsl:param name="variablelist.as.blocks">1</xsl:param>
 <xsl:param name="footer.rule">0</xsl:param>
 <xsl:param name="ulink.hyphenate">&#x200b;</xsl:param>
+<xsl:param name="ulink.show">0</xsl:param>
+<xsl:param name="xep.extensions">1</xsl:param>
+<xsl:param name="axf.extensions">1</xsl:param>
   
 <xsl:param name="local.l10n.xml" select="document('')"/>
 <l:i18n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0">
@@ -84,9 +95,27 @@
 <xsl:param name="generate.component.toc" select="'1'"/>
 
 <xsl:param name="oasis.logo">
-  <xsl:for-each select="document('')">
-    <xsl:value-of select="unparsed-entity-uri('logo')"/>
-  </xsl:for-each>
+  <xsl:variable name="fullname">
+    <xsl:for-each select="document('')">
+      <xsl:value-of select="unparsed-entity-uri('logo')"/>
+    </xsl:for-each>
+  </xsl:variable>
+  <xsl:choose>
+    <xsl:when test="substring-after($fullname,'file://')">
+      <!--assume that the file name is fully qualified for downstream engine-->
+      <xsl:value-of select="$fullname"/>
+    </xsl:when>
+    <xsl:when test="substring-after($fullname,'file:/')">
+      <!--assume that the file name is not properly qualified; add
+          two more slashes to make it sufficiently qualified-->
+      <xsl:value-of select="concat('file:///',
+                                   substring-after($fullname,'file:/'))"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <!--can't tweak the URI so leave it as it is-->
+      <xsl:value-of select="$fullname"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:param>
 
 <xsl:param name="method" select="'xml'"/>
@@ -96,12 +125,12 @@
 <xsl:param name="automatic-output-filename" select="'no'"/>
 
 <xsl:attribute-set name="section.title.properties">
-  <xsl:attribute name="color">#3B006F</xsl:attribute>
+  <xsl:attribute name="color">#446CAA</xsl:attribute>
   <xsl:attribute name="text-align">start</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="component.title.properties">
-  <xsl:attribute name="color">#3B006F</xsl:attribute>
+  <xsl:attribute name="color">#446CAA</xsl:attribute>
   <xsl:attribute name="text-align">start</xsl:attribute>
 </xsl:attribute-set>
   
@@ -121,7 +150,7 @@
   
 <xsl:attribute-set name="table.of.contents.titlepage.recto.style">
   <xsl:attribute name="break-before">page</xsl:attribute>
-  <xsl:attribute name="color">#3B006F</xsl:attribute>
+  <xsl:attribute name="color">#446CAA</xsl:attribute>
   <xsl:attribute name="border-before-color">black</xsl:attribute>
   <xsl:attribute name="border-before-width">1pt</xsl:attribute>
   <xsl:attribute name="border-before-style">solid</xsl:attribute>
@@ -144,6 +173,10 @@
   <xsl:attribute name="space-before.optimum">12pt</xsl:attribute>
 </xsl:attribute-set>
 
+<xsl:attribute-set name="table.table.properties">
+  <xsl:attribute name="axf:line-number">none</xsl:attribute>
+</xsl:attribute-set>
+
 <xsl:template match="article/appendix">
   <fo:block break-after="page"/><!--this appears to get around an XEP bug-->
   <xsl:apply-imports/>
@@ -155,6 +188,19 @@
   </fo:block>
 </xsl:template>
 
+<!-- ============================================================ -->
+<!-- Filtering unexpected content -->
+<xsl:template match="*[normalize-space(@condition) and
+                       not(contains(@condition,'oasis'))]" priority="100">
+  <!--not for this process-->
+</xsl:template>
+  
+<xsl:template match="*[normalize-space(@condition) and
+                       not(contains(@condition,'oasis'))]" priority="100"
+              mode="titlepage.mode">
+  <!--not for this process-->
+</xsl:template>
+  
 <!-- ============================================================ -->
 <!-- The document -->
 <xsl:template match="/">
@@ -346,8 +392,7 @@
       <xsl:call-template name="spec-uri-group">
         <xsl:with-param name="header">Previous version:</xsl:with-param>
         <xsl:with-param name="uris" 
-          select="$locations[starts-with(@role,'OASIS-specification-previous')]"/>
-        <!-- $locations[starts-with(@role,'OASIS-specification-previous')] Needs to go instead of N/A, once there is a previous version-->
+       select="$locations[starts-with(@role,'OASIS-specification-previous')]"/>
       </xsl:call-template>
       <xsl:call-template name="spec-uri-group">
         <xsl:with-param name="header">Latest version:</xsl:with-param>
@@ -609,23 +654,7 @@
 
 <!-- ================================================================= -->
 
-  <!-- support role='informative' -->
-  <xsl:template match="preface|chapter|appendix" mode="title.markup">
-    <xsl:param name="allow-anchors" select="'0'"/>
-    <xsl:variable name="title" select="(docinfo/title
-      |prefaceinfo/title
-      |chapterinfo/title
-      |appendixinfo/title
-      |title)[1]"/>
-    <xsl:apply-templates select="$title" mode="title.markup">
-      <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
-    </xsl:apply-templates>
-    <xsl:if test="@role='informative'">
-      <xsl:text> (Informative)</xsl:text>
-    </xsl:if>
-  </xsl:template>
-  
-<!-- support role='non-normative' 
+<!-- support role='non-normative' -->
 <xsl:template match="preface|chapter|appendix" mode="title.markup">
   <xsl:param name="allow-anchors" select="'0'"/>
   <xsl:variable name="title" select="(docinfo/title
@@ -633,41 +662,27 @@
                                       |chapterinfo/title
                                       |appendixinfo/title
                                       |title)[1]"/>
+  <xsl:if test="@role='iso-normative'">
+    <xsl:text>(normative) </xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='iso-informative'">
+    <xsl:text>(informative) </xsl:text>
+  </xsl:if>
   <xsl:apply-templates select="$title" mode="title.markup">
     <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
   </xsl:apply-templates>
   <xsl:if test="@role='non-normative'">
     <xsl:text> (Non-Normative)</xsl:text>
   </xsl:if>
+  <xsl:if test="@role='normative'">
+    <xsl:text> (Normative)</xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='informative'">
+    <xsl:text> (Informative)</xsl:text>
+  </xsl:if>
 </xsl:template>
--->
-  <!-- support role='informative' -->
-  <xsl:template match="section
-    |sect1|sect2|sect3|sect4|sect5
-    |refsect1|refsect2|refsect3
-    |simplesect"
-    mode="title.markup">
-    <xsl:param name="allow-anchors" select="'0'"/>
-    <xsl:variable name="title" select="(sectioninfo/title
-      |sect1info/title
-      |sect2info/title
-      |sect3info/title
-      |sect4info/title
-      |sect5info/title
-      |refsect1info/title
-      |refsect2info/title
-      |refsect3info/title
-      |title)[1]"/>
-    
-    <xsl:apply-templates select="$title" mode="title.markup">
-      <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
-    </xsl:apply-templates>
-    <xsl:if test="@role='informative'">
-      <xsl:text> (Informative)</xsl:text>
-    </xsl:if>
-  </xsl:template>
 
-<!-- support role='non-normative' 
+<!-- support role='non-normative' -->
 <xsl:template match="section
                      |sect1|sect2|sect3|sect4|sect5
                      |refsect1|refsect2|refsect3
@@ -684,15 +699,25 @@
                                       |refsect2info/title
                                       |refsect3info/title
                                       |title)[1]"/>
-
+  <xsl:if test="@role='iso-normative'">
+    <xsl:text>(normative) </xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='iso-informative'">
+    <xsl:text>(informative) </xsl:text>
+  </xsl:if>
   <xsl:apply-templates select="$title" mode="title.markup">
     <xsl:with-param name="allow-anchors" select="$allow-anchors"/>
   </xsl:apply-templates>
   <xsl:if test="@role='non-normative'">
     <xsl:text> (Non-Normative)</xsl:text>
   </xsl:if>
+  <xsl:if test="@role='normative'">
+    <xsl:text> (Normative)</xsl:text>
+  </xsl:if>
+  <xsl:if test="@role='informative'">
+    <xsl:text> (Informative)</xsl:text>
+  </xsl:if>
 </xsl:template>
--->
 
 <!-- ============================================================ -->
 <!-- Formatting changes for OASIS look&amp;feel -->
@@ -735,17 +760,6 @@
   <fo:block break-before="page"
             border-before-style="solid" border-before-width="1pt"/>
   <xsl:apply-imports/>
-</xsl:template>
-
-
-<!-- Uppercasing normative keywords via <glossterm> -->
-
-<xsl:template match="glossterm">
-   
-   <fo:inline font-style="normal" font-weight="normal"> 
-       <xsl:value-of select="translate(., '&lower;', '&upper;')"/>
-   </fo:inline> 
-   
 </xsl:template>
 
 <!--remove these interim features
@@ -827,7 +841,85 @@
 <xsl:template name="header.content">
   <!--last minute change to remove all header content-->
 </xsl:template>
-<xsl:param name="footer.column.widths">32 36 32</xsl:param>
+  
+<!--replace DocBook footer with custom footer-->
+<xsl:template name="footer.table">
+  <xsl:param name="pageclass" select="''"/>
+  <xsl:param name="sequence" select="''"/>
+  <xsl:param name="gentext-key" select="''"/>
+
+    <!-- Really output a footer? -->
+  <xsl:choose>
+    <xsl:when test="$pageclass='titlepage' and $gentext-key='book'
+                    and $sequence='first'">
+      <!-- no, book titlepages have no footers at all -->
+    </xsl:when>
+    <xsl:when test="$sequence = 'blank' and $footers.on.blank.pages = 0">
+      <!-- no output -->
+    </xsl:when>
+    <xsl:otherwise>
+  <fo:table width="100%">
+    <fo:table-column column-width="proportional-column-width(29)"/>
+    <fo:table-column column-width="proportional-column-width(21)"/>
+    <fo:table-column column-width="proportional-column-width(21)"/>
+    <fo:table-column column-width="proportional-column-width(29)"/>
+    <fo:table-body>
+      <fo:table-row>
+        <fo:table-cell number-columns-spanned="2">
+          <fo:block>
+            <xsl:value-of select="/*/articleinfo/productname"/>
+            <xsl:for-each select="/*/articleinfo/productnumber">
+              <xsl:text/>-<xsl:value-of select="."/>
+            </xsl:for-each>
+          </fo:block>
+        </fo:table-cell>
+        <fo:table-cell number-columns-spanned="2" text-align="end">
+          <fo:block>
+            <xsl:value-of select="/*/articleinfo/pubdate"/>
+          </fo:block>
+        </fo:table-cell>
+      </fo:table-row>
+      <fo:table-row>
+        <fo:table-cell>
+          <fo:block>
+            <xsl:value-of select="/*/articleinfo/releaseinfo[@role='track']"/>
+          </fo:block>
+        </fo:table-cell>
+        <fo:table-cell number-columns-spanned="2" text-align="center">
+          <fo:block>
+            <xsl:text>Copyright &#xa9; </xsl:text>
+            <xsl:choose>
+              <xsl:when test="/*/articleinfo/copyrightyear/holder">
+                <xsl:for-each select="/*/articleinfo/copyrightyear/holder">
+                  <xsl:if test="position()>1">, </xsl:if>
+                  <xsl:value-of select="."/>
+                </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text>OASIS Open</xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="/*/articleinfo/copyright/year"/>
+            <xsl:text>. All&#xa0;rights&#xa0;reserved.</xsl:text>
+          </fo:block>
+        </fo:table-cell>
+        <fo:table-cell text-align="end">
+          <fo:block>
+            Page <fo:page-number/> of
+            <fo:page-number-citation-last ref-id="entire_publication"/>
+          </fo:block>
+        </fo:table-cell>
+      </fo:table-row>
+    </fo:table-body>
+  </fo:table>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>  
+
+<!--the following was using the DocBook footer until project names got too
+    lengthy-->
+<xsl:param name="footer.column.widths">29 42 29</xsl:param>
 
 <xsl:attribute-set name="footer.content.properties">
   <xsl:attribute name="font-size">80%</xsl:attribute>
@@ -842,9 +934,23 @@
   <xsl:choose>
     <xsl:when test="$position='center'">
       <fo:block><fo:leader/></fo:block>
-      <fo:block>Copyright &#xa9; OASIS Open <xsl:text/>
-        <xsl:value-of select="/*/articleinfo/copyright/year"/>.
-        All rights reserved.</fo:block>
+      <fo:block>
+        <xsl:text>Copyright &#xa9; </xsl:text>
+        <xsl:choose>
+          <xsl:when test="/*/articleinfo/copyrightyear/holder">
+            <xsl:for-each select="/*/articleinfo/copyrightyear/holder">
+              <xsl:if test="position()>1">, </xsl:if>
+              <xsl:value-of select="."/>
+            </xsl:for-each>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>OASIS Open</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="/*/articleinfo/copyright/year"/>
+        <xsl:text>. All&#xa0;rights&#xa0;reserved.</xsl:text>
+      </fo:block>
     </xsl:when>
     <xsl:when test="$position='left'">
       <fo:block>
@@ -862,8 +968,8 @@
         <xsl:value-of select="/*/articleinfo/pubdate"/>
       </fo:block>
       <fo:block>
-        Page <fo:page-number/> of 
-             <fo:page-number-citation-last ref-id="entire_publication"/>
+        Page <fo:page-number/> of
+        <fo:page-number-citation-last ref-id="entire_publication"/>
       </fo:block>
     </xsl:when>
   </xsl:choose>  
@@ -880,6 +986,55 @@
       <xsl:apply-templates mode="titlepage.mode"/>
     </fo:table-body>
   </fo:table>
+</xsl:template>
+
+<!-- ============================================================ -->
+
+<xsl:template match="*" mode="running.head.mode">
+  <!--it happens that at the beginning of major sections this happens
+      immediately after adding attributes and before adding content;
+      ideally there would be a dedicated call, but this avoids changing
+      the existing sources; of course this may not work in future DB XSL-->
+  <xsl:for-each select="processing-instruction('axf')">
+    <xsl:call-template name="oasis__common_extension_pi">
+      <xsl:with-param name="ns" 
+                  select="'http://www.antennahouse.com/names/XSL/Extensions'"/>
+      <xsl:with-param name="attr"
+                      select="substring-before(normalize-space(.),' ')"/>
+      <xsl:with-param name="value"
+                      select="substring-after(normalize-space(.),' ')"/>
+    </xsl:call-template>
+  </xsl:for-each>
+  <xsl:for-each select="processing-instruction('rx')">
+    <xsl:call-template name="oasis__common_extension_pi">
+      <xsl:with-param name="ns" 
+                      select="'http://www.renderx.com/XSL/Extensions'"/>
+      <xsl:with-param name="attr"
+                      select="substring-before(normalize-space(.),' ')"/>
+      <xsl:with-param name="value"
+                      select="substring-after(normalize-space(.),' ')"/>
+    </xsl:call-template>
+  </xsl:for-each>
+  <xsl:for-each select="processing-instruction('ext')">
+    <xsl:call-template name="oasis__common_extension_pi">
+      <xsl:with-param name="ns" 
+                      select="substring-before(normalize-space(.),' ')"/>
+      <xsl:with-param name="attr"
+       select="substring-before(substring-after(normalize-space(.),' '),' ')"/>
+      <xsl:with-param name="value"
+        select="substring-after(substring-after(normalize-space(.),' '),' ')"/>
+    </xsl:call-template>
+  </xsl:for-each>
+  <xsl:apply-imports/>
+</xsl:template>
+  
+<xsl:template name="oasis__common_extension_pi">
+  <xsl:param name="ns"/>
+  <xsl:param name="attr"/>
+  <xsl:param name="value"/>
+  <xsl:attribute name="{$attr}" namespace="{$ns}">
+    <xsl:value-of select="$value"/>
+  </xsl:attribute>
 </xsl:template>
 
 <!-- ============================================================ -->
