@@ -3,7 +3,7 @@
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "docbook/docbookx.dtd" >
 <article status="Specification Draft" lang="en-US">
   <articleinfo>
-    <title>XLIFF Version 2.2</title>
+    <title>XLIFF Core Version 2.2</title>
 
     <releaseinfo role="cvs">$Id: spectools-docbook-template-wd03.xml,v 1.4 2010/07/08 12:28:15 admin
       Exp$</releaseinfo>
