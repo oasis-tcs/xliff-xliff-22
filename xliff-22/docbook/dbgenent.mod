@@ -45,12 +45,12 @@
 <!ENTITY bschversion "2.0">
 <!ENTITY cschversion "2.0">
 
-<!ENTITY stage "csprd">
-<!ENTITY pstage "csprd01">
+<!ENTITY stage "wd">
+<!-- <!ENTITY pstage "csprd01"> -->
 <!ENTITY standard "Specification Draft">
-<!ENTITY this-loc "http://docs.oasis-open.org/xliff/xliff-core/v&version;/&stage;">
-<!ENTITY previous-loc "http://docs.oasis-open.org/xliff/xliff-core/v&version;/&pstage;">
-<!ENTITY latest-loc "http://docs.oasis-open.org/xliff/xliff-core/v&version;">
+<!ENTITY this-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&stage;">
+<!ENTITY previous-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&pstage;">
+<!ENTITY latest-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;">
 <!ENTITY pubdate "16 August &pubyear;">
 <!ENTITY pubyear "2021">
 <!ENTITY releaseinfo "Standards Track Work Product">
