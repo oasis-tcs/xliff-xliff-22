@@ -14,20 +14,15 @@ package com.maxprograms.xml;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.StringWriter;
 import java.net.URISyntaxException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -58,7 +53,7 @@ public class Merger {
         input = new File(inputFile);
         output = new File(outputFile);
         builder = DocumentBuilderFactory.newInstance();
-        
+
     }
 
     public void run()
@@ -77,37 +72,31 @@ public class Merger {
 
         recurse(document, document.getDocumentElement(), input.getParentFile());
 
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = transformerFactory.newTransformer();
-        DOMSource source = new DOMSource(document);
-        StreamResult result = new StreamResult(new StringWriter());
-        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-        transformer.transform(source, result);
-
-        try (FileOutputStream fop = new FileOutputStream(output)) {
-            String xmlString = result.getWriter().toString();
-            byte[] contentInBytes = xmlString.getBytes();
-            fop.write(contentInBytes);
+        try (FileOutputStream out = new FileOutputStream(output)) {
+            Writer writer = new Writer(document, out);
+            writer.write();
         }
     }
 
-    private void recurse(Document doc, Node element, File folder) throws SAXException, IOException, ParserConfigurationException {
+    private void recurse(Document doc, Element element, File folder)
+            throws SAXException, IOException, ParserConfigurationException {
         NodeList content = element.getChildNodes();
         int length = content.getLength();
         for (int i = 0; i < length; i++) {
-            Node node = content.item(i);
-            if (node.getNodeType() == Node.ELEMENT_NODE) {
-                if ("xi:include".equals(node.getNodeName())) {
-                    NamedNodeMap attributes = node.getAttributes();
+            Node n = content.item(i);
+            if (n.getNodeType() == Node.ELEMENT_NODE) {
+                Element child = (Element) n;
+                if ("xi:include".equals(child.getTagName())) {
+                    NamedNodeMap attributes = child.getAttributes();
                     String href = attributes.getNamedItem("href").getNodeValue();
                     System.out.println(href);
                     Node include = parse(href, folder);
                     doc.adoptNode(include);
-                    element.insertBefore(include, node);
-                    element.removeChild(node);
+                    element.insertBefore(include, child);
+                    element.removeChild(child);
                 }
+                recurse(doc, child, folder);               
             }
-            recurse(doc, node, folder);
         }
     }
 
@@ -115,7 +104,7 @@ public class Merger {
         File file = new File(folder, inputFile);
         DocumentBuilder db = builder.newDocumentBuilder();
         db.setEntityResolver(resolver);
-        Document document = db.parse(file);        
+        Document document = db.parse(file);
         recurse(document, document.getDocumentElement(), file.getParentFile());
         return document.getDocumentElement();
     }
