@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="compile" name="Merger">
+    <property name="target" value="11" />
+    <property name="source" value="11" />
+    <property name="build.compiler" value="javac10+" />
+    <path id="Merger.classpath">
+    </path>
+    <condition property="isWindows">
+        <os family="windows" />
+    </condition>
+    <target name="init">
+        <mkdir dir="bin" />
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java" />
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin" />
+    </target>
+    <target name="distclean">
+        <delete dir="dist" failonerror="false" />
+    </target>
+    <target name="compile" depends="clean,init">
+        <description>Build jar file</description>
+        <delete file="lib/merger.jar" />
+        <javac srcdir="src" destdir="bin" classpathref="Merger.classpath" modulepathref="Merger.classpath" includeAntRuntime="false">
+            <compilerarg line="-encoding utf-8" />
+        </javac>
+        <jar destfile="lib/merger.jar" basedir="bin" />
+    </target>
+</project>
