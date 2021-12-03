@@ -26,7 +26,7 @@ public class CatalogParser implements EntityResolver {
     Map<String, String> publicMap;
     File base;
 
-    CatalogParser(File catalog) throws ParserConfigurationException, SAXException, IOException {
+    public CatalogParser(File catalog) throws ParserConfigurationException, SAXException, IOException {
         systemMap = new HashMap<>();
         publicMap = new HashMap<>();
         base = catalog.getParentFile();

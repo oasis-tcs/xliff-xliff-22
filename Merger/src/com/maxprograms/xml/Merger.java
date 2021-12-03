@@ -84,6 +84,17 @@ public class Merger {
                     element.insertBefore(include, child);
                     element.removeChild(child);
                 }
+                if ("olink".equals(child.getTagName())) {
+                    String linkend = child.getAttribute("targetptr");
+                    NodeList olinkContent = child.getChildNodes();
+                    Element link = doc.createElement("link");
+                    link.setAttribute("linkend", linkend);
+                    for (int j=0 ; j<olinkContent.getLength() ; j++) {
+                        link.appendChild(olinkContent.item(j));
+                    }
+                    element.insertBefore(link, n);
+                    element.removeChild(n);
+                }
                 recurse(doc, child, folder);               
             }
         }

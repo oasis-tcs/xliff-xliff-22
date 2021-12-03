@@ -46,12 +46,12 @@
 <!ENTITY cschversion "2.0">
 
 <!ENTITY stage "wd">
-<!-- <!ENTITY pstage "csprd01"> -->
+<!ENTITY pstage "wd01"> 
 <!ENTITY standard "Specification Draft">
 <!ENTITY this-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&stage;">
 <!ENTITY previous-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&pstage;">
 <!ENTITY latest-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;">
-<!ENTITY pubdate "16 August &pubyear;">
+<!ENTITY pubdate "3 December &pubyear;">
 <!ENTITY pubyear "2021">
 <!ENTITY releaseinfo "Standards Track Work Product">
 <!-- End of XLIFF V2.x publishing entities -->
