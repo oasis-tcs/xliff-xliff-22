@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.Set;
+import java.util.TreeSet;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,6 +23,7 @@ public class Merger {
 
     private File input;
     private File output;
+    private Set<String> ids;
     private DocumentBuilderFactory builder;
     private CatalogParser resolver;
 
@@ -42,7 +45,7 @@ public class Merger {
         input = new File(inputFile);
         output = new File(outputFile);
         builder = DocumentBuilderFactory.newInstance();
-
+        ids = new TreeSet<>();
     }
 
     public void run()
@@ -60,6 +63,8 @@ public class Merger {
         Document document = db.parse(input);
 
         recurse(document, document.getDocumentElement(), input.getParentFile());
+        harvestIds(document.getDocumentElement());
+        replaceLinks(document, document.getDocumentElement());
 
         try (FileOutputStream out = new FileOutputStream(output)) {
             Writer writer = new Writer(document, out);
@@ -84,18 +89,53 @@ public class Merger {
                     element.insertBefore(include, child);
                     element.removeChild(child);
                 }
+                recurse(doc, child, folder);
+            }
+        }
+    }
+
+    private void harvestIds(Element element) {
+        String id = element.getAttribute("id");
+        if (!id.isEmpty()) {
+            ids.add(id);
+        }
+        NodeList content = element.getChildNodes();
+        int length = content.getLength();
+        for (int i = 0; i < length; i++) {
+            Node n = content.item(i);
+            if (n.getNodeType() == Node.ELEMENT_NODE) {
+                harvestIds((Element) n);
+            }
+        }
+    }
+
+    private void replaceLinks(Document doc, Element element) {
+        NodeList content = element.getChildNodes();
+        int length = content.getLength();
+        for (int i = 0; i < length; i++) {
+            Node n = content.item(i);
+            if (n.getNodeType() == Node.ELEMENT_NODE) {
+                Element child = (Element) n;
                 if ("olink".equals(child.getTagName())) {
                     String linkend = child.getAttribute("targetptr");
                     NodeList olinkContent = child.getChildNodes();
-                    Element link = doc.createElement("link");
-                    link.setAttribute("linkend", linkend);
-                    for (int j=0 ; j<olinkContent.getLength() ; j++) {
-                        link.appendChild(olinkContent.item(j));
+                    if (ids.contains(linkend)) {
+                        Element link = doc.createElement("link");
+                        link.setAttribute("linkend", linkend);
+                        for (int j = 0; j < olinkContent.getLength(); j++) {
+                            link.appendChild(olinkContent.item(j));
+                        }
+                        element.insertBefore(link, n);
+                    } else {
+                        Element remark = doc.createElement("remark");
+                        for (int j = 0; j < olinkContent.getLength(); j++) {
+                            remark.appendChild(olinkContent.item(j));
+                        }
+                        element.insertBefore(remark, n);
                     }
-                    element.insertBefore(link, n);
                     element.removeChild(n);
                 }
-                recurse(doc, child, folder);               
+                replaceLinks(doc, child);
             }
         }
     }
