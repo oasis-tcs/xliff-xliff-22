@@ -9,19 +9,18 @@
     <releaseinfo role="track">Standards Track Work Product</releaseinfo>
 
 
-    <productname class="trade">xliff-core-v2.2</productname>
+    <productname class="trade">xliff-core</productname>
 
     <productnumber>wd</productnumber>
 
     <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.html</releaseinfo>
     <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.xml</releaseinfo>
-
-
-    <releaseinfo role="OASIS-specification-previous-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-v2.2-wd01.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-v2.2-wd01.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-v2.2-wd01.xml</releaseinfo>
-
+    
+    <releaseinfo role="OASIS-specification-previous-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.xml</releaseinfo>
+    
     <releaseinfo role="OASIS-specification-latest-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.html</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.xml</releaseinfo>
@@ -50,6 +49,16 @@
       </othercredit>
 
       <editor>
+        <firstname>Rodolfo M.</firstname>
+        <surname>Raya</surname>
+        <affiliation>
+          <orgname>Individual</orgname>
+          <address format="linespecific"><email>rmraya@maxprograms.com</email></address>
+        </affiliation>
+        <email>rmraya@maxprograms.com</email>
+      </editor>
+      
+      <editor>
         <firstname>David</firstname>
         <surname>Filip</surname>
         <affiliation>
@@ -60,20 +69,9 @@
         <email>david.filip@adaptcentre.ie</email>
       </editor>
 
-      <editor>
-        <firstname>Rodolfo M.</firstname>
-        <surname>Raya</surname>
-        <affiliation>
-          <orgname>Individual</orgname>
-          <address format="linespecific"><email>rmraya@maxprograms.com</email></address>
-        </affiliation>
-        <email>rmraya@maxprograms.com</email>
-      </editor>
-
     </authorgroup>
 
-
-    <pubdate>3 December 2021</pubdate>
+    <pubdate>5 December 2021</pubdate>
 
     <copyright>
       <year>2021</year>
@@ -101,8 +99,7 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para><emphasis>XLIFF Version 2.1.</emphasis> Edited by Tom Comerford, David Filip,
-            Rodolfo M. Raya, and Yves Savourel. 05 August 2014. OASIS Standard. <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink></para>
+          <para><emphasis>XLIFF Version 2.1.</emphasis> Edited by David Filip, Tom Comerford, Soroush Saadatfar, Felix Sasaki and Yves Savourel. 13 February 2018. OASIS Standard. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1.html</ulink></para>
         </listitem>
       </itemizedlist>
 
@@ -194,7 +191,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        3 December 2021. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.html</ulink>. </para>
+        5 December 2021. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -6107,7 +6104,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 3 December 2021 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.html</ulink> and is backwards
+                that was last published on 5 December 2021 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">
