@@ -1516,14 +1516,27 @@
     </simplelist>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-        <member>- <link linkend="id"><code>id</code></link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="id"><code>id</code></link>,
+                <glossterm>optional</glossterm></member>
         <member>- <link linkend="appliesto"><code>appliesTo</code></link>, <glossterm>optional</glossterm></member>
         <member>- <link linkend="category"><code>category</code></link>, <glossterm>optional</glossterm></member>
         <member>- <link linkend="priority"><code>priority</code></link>, <glossterm>optional</glossterm></member>
-
-
+        <member>- <link linkend="ref"><code>ref</code></link>, <glossterm>optional</glossterm></member>
         <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
     </simplelist>
+
+    <para><emphasis>Example:</emphasis></para>
+
+    <programlisting format="linespecific">
+&lt;unit id="18">
+  &lt;notes>
+    &lt;note id="1" ref="#18-0">Change text to lower case&lt;/note>
+  &lt;/notes>
+  &lt;segment state="initial" id="18-0">
+    &lt;source>Create Memories from Existing Translations&lt;/source>
+  &lt;/segment>
+&lt;/unit>        
+    </programlisting>
 
     <itemizedlist>
         <title>Constraints</title>
@@ -1536,6 +1549,11 @@
             </simplelist>
         </listitem>
     </itemizedlist>
+
+    <note>
+        <para>When the <link linkend="ref"><code>ref</code></link> attribute points to a <link linkend="segment"><code>&lt;segment></code></link> element, by default the <link linkend="note"><code>&lt;note></code></link> content applies to its <link linkend="source"><code>&lt;source></code></link> child, unless the optional <link linkend="appliesto">appliesTo</link> attribute is set
+            to <code>target</code>.</para>
+    </note>
 </section>
     
     <section id="originaldata">
@@ -3270,21 +3288,22 @@
     <section id="ref">
   <title>ref</title>
 
-  <para>Reference - holds a reference for the associated annotation.</para>
+  <para>Reference - holds a reference for the associated element.</para>
 
-  <para><emphasis>Value description:</emphasis> A value of the <link linkend="XMLSchema2">[XML Schema Datatypes]</link> type
-  anyURI. The semantics of the value depends on the type of annotation:</para>
+  <para><emphasis>Value description:</emphasis> A value of the <link linkend="XMLSchema2">[XML Schema Datatypes]</link> type anyURI. The semantics of the value
+    depends on where the attribute is used:</para>
 
   <itemizedlist>
     <listitem>
+      <para>When used in a <link linkend="note">&lt;note></link> element, the URI value is referring to a <link linkend="segment"><code>&lt;segment></code></link>, <link linkend="source"><code>&lt;source></code></link> or <link linkend="target"><code>&lt;target></code></link> element within the same enclosing <link linkend="unit"><code>&lt;unit></code></link>.</para>
       <para>When used in a <link linkend="termAnnotation">term
           annotation</link>, the URI value is referring to a resource providing information about
         the term.</para>
     </listitem>
 
     <listitem>
-      <para>When used in a <link linkend="matchAnnotation">translation candidates annotation</link>, the URI value is referring
-        to an external resource providing information about the translation candidate.</para>
+      <para>When used in a <link linkend="matchAnnotation">translation candidates annotation</link>, the URI value is referring to an external
+        resource providing information about the translation candidate.</para>
     </listitem>
 
     <listitem>
@@ -3292,14 +3311,15 @@
     </listitem>
 
     <listitem>
-      <para>When used in a <link linkend="customAnnotation">custom annotation</link>, the value is
-      defined by each custom annotation.</para>
+      <para>When used in a <link linkend="customAnnotation">custom annotation</link>, the value is defined by each custom annotation.</para>
     </listitem>
   </itemizedlist>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis> <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>.</para>
+  <para><emphasis>Used in:</emphasis>
+    <link linkend="mrk"><code>&lt;mrk></code></link>
+    or <link linkend="sm"><code>&lt;sm></code></link>.</para>
 
   <para><emphasis>Example:</emphasis></para>
 
@@ -3314,6 +3334,7 @@
   &lt;/segment>
 &lt;/unit>
 </programlisting>
+
 
 </section>
 

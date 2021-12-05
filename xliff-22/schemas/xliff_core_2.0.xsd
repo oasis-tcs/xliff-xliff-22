@@ -233,6 +233,7 @@
       <xs:attribute name="appliesTo" use="optional" type="xlf:appliesTo"/>
       <xs:attribute name="category" use="optional"/>
       <xs:attribute name="priority" use="optional" type="xlf:priorityValue" default="1"/>
+      <xs:attribute name="ref" use="required" type="xs:anyURI"/>
       <xs:anyAttribute namespace="##other" processContents="lax"/>
     </xs:complexType>
   </xs:element>

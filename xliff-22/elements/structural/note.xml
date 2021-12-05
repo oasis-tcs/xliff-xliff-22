@@ -10,24 +10,41 @@
     <para>This is an XLIFF specific way how to present end user readable comments and annotations. A
         note can contain information about <olink targetdoc="source.xml" targetptr="source"
                 ><code>&lt;source></code></olink>, <olink targetdoc="target.xml" targetptr="target"
-                ><code>&lt;target></code></olink>, <olink targetdoc="unit.xml"
-                    targetptr="unit"><code>&lt;unit></code></olink>, <olink targetdoc="group.xml"
-                        targetptr="group"><code>&lt;group></code></olink>, or <olink targetdoc="file.xml"
-                            targetptr="file"><code>&lt;file></code></olink> elements.</para>
+                ><code>&lt;target></code></olink>, <olink targetdoc="unit.xml" targetptr="unit"
+                ><code>&lt;unit></code></olink>, <olink targetdoc="group.xml" targetptr="group"
+                ><code>&lt;group></code></olink>, or <olink targetdoc="file.xml" targetptr="file"
+                ><code>&lt;file></code></olink> elements.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
         <member>- Text</member>
     </simplelist>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>, <glossterm>optional</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/appliesto.xml" targetptr="appliesto"><code>appliesTo</code></olink>, <glossterm>optional</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/category.xml" targetptr="category"><code>category</code></olink>, <glossterm>optional</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/priority.xml" targetptr="priority"><code>priority</code></olink>, <glossterm>optional</glossterm></member>
-
-
+        <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>,
+                <glossterm>optional</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/appliesto.xml" targetptr="appliesto"
+                    ><code>appliesTo</code></olink>, <glossterm>optional</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/category.xml" targetptr="category"
+                    ><code>category</code></olink>, <glossterm>optional</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/priority.xml" targetptr="priority"
+                    ><code>priority</code></olink>, <glossterm>optional</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
+                ><code>ref</code></olink>, <glossterm>optional</glossterm></member>
         <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
     </simplelist>
+
+    <para><emphasis>Example:</emphasis></para>
+
+    <programlisting>
+&lt;unit id="18">
+  &lt;notes>
+    &lt;note id="1" ref="#18-0">Change text to lower case&lt;/note>
+  &lt;/notes>
+  &lt;segment state="initial" id="18-0">
+    &lt;source>Create Memories from Existing Translations&lt;/source>
+  &lt;/segment>
+&lt;/unit>        
+    </programlisting>
 
     <itemizedlist>
         <title>Constraints</title>
@@ -36,10 +53,22 @@
                 allowed by the wildcard <code>other</code>:</para>
             <simplelist>
                 <member>- <olink targetdoc="../../attributes/fs.xml" targetptr="fs"
-                    ><code>fs:fs</code></olink>, <glossterm>optional</glossterm></member>
+                            ><code>fs:fs</code></olink>, <glossterm>optional</glossterm></member>
                 <member>- <olink targetdoc="../../attributes/subFs.xml" targetptr="subFs"
-                    ><code>fs:subFs</code></olink>, <glossterm>optional</glossterm></member>
+                            ><code>fs:subFs</code></olink>, <glossterm>optional</glossterm></member>
             </simplelist>
         </listitem>
     </itemizedlist>
+
+    <note>
+        <para>When the <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
+                ><code>ref</code></olink> attribute points to a <olink
+                targetdoc="../elements/structural/segment.xml" targetptr="segment"
+                    ><code>&lt;segment></code></olink> element, by default the <link linkend="note"
+                    ><code>&lt;note></code></link> content applies to its <olink
+                targetdoc="../elements/structural/source.xml" targetptr="source"
+                    ><code>&lt;source></code></olink> child, unless the optional <olink
+                targetdoc="appliesto.xml" targetptr="appliesto">appliesTo</olink> attribute is set
+            to <code>target</code>.</para>
+    </note>
 </section>
