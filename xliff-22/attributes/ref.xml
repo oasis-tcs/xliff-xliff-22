@@ -54,9 +54,10 @@
   <para><emphasis>Default value:</emphasis> undefined</para>
 
   <para><emphasis>Used in:</emphasis>
-    <olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"><code>&lt;mrk&gt;</code></olink>
-    or <olink targetdoc="../elements/inline/sm.xml" targetptr="sm"
-    ><code>&lt;sm&gt;</code></olink>.</para>
+    <olink targetdoc="../elements/structural/note.xml" targetptr="note"
+      ><code>&lt;note></code></olink>, <olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
+        ><code>&lt;mrk></code></olink> and <olink targetdoc="../elements/inline/sm.xml"
+      targetptr="sm"><code>&lt;sm></code></olink>.</para>
 
   <para><emphasis>Example:</emphasis></para>
 

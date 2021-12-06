@@ -3315,8 +3315,7 @@
   <para><emphasis>Default value:</emphasis> undefined</para>
 
   <para><emphasis>Used in:</emphasis>
-    <link linkend="mrk"><code>&lt;mrk></code></link>
-    or <link linkend="sm"><code>&lt;sm></code></link>.</para>
+    <link linkend="note"><code>&lt;note></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link> and <link linkend="sm"><code>&lt;sm></code></link>.</para>
 
   <para><emphasis>Example:</emphasis></para>
 
