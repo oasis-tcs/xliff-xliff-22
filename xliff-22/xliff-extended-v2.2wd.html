@@ -585,7 +585,8 @@
     &lt;data id="2"&gt;&amp;lt;/B&amp;gt;&lt;/data&gt;
   &lt;/originalData&gt;
   &lt;segment&gt;
-    &lt;source&gt;&lt;pc id="1" dataRefStart="1" dataRefEnd="2"&gt;Important&lt;/pc&gt; text&lt;/source&gt;
+    &lt;source&gt;&lt;pc id="1" dataRefStart="1" dataRefEnd="2"&gt;Important&lt;/pc&gt;
+      text&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;
 </pre><div class="itemizedlist"><p class="title"><i>Constraints</i></p><ul type="disc"><li><p>The following <em class="firstterm">XLIFF Module</em> attributes are explicitly
@@ -1106,10 +1107,10 @@
         </a>:</p><p>The value  <em class="glossterm">must</em> be set to one of the following values:</p><table class="simplelist" border="0" summary="Simple list"><tr><td><code class="code">fmt</code> - Formatting (e.g. a &lt;b&gt; element in HTML)</td></tr><tr><td><code class="code">ui</code> - User interface element</td></tr><tr><td><code class="code">quote</code> - Inline quotation (as opposed to a block citation)</td></tr><tr><td><code class="code">link</code> - Link (e.g. an &lt;a&gt; element in HTML)</td></tr><tr><td><code class="code">image</code> - Image or graphic</td></tr><tr><td><code class="code">other</code> - Type of element not covered by any of the other top-level types.</td></tr></table><p><span class="emphasis"><em>Example:</em></span>
         </p><pre class="programlisting">
 &lt;segment&gt;
-  &lt;source xml:lang="cs"&gt;&lt;pc type="quote"&gt;<span class="foreignphrase"><span style="font-family: Courier">Bl&aacute;zen,
+  &lt;source&gt;&lt;pc id="q1" type="quote"&gt;<span class="foreignphrase"><span style="font-family: Courier">Bl&aacute;zen,
       chce dob&yacute;t to&#269;nu v takov&eacute;m po&#269;as&iacute;&lt;/pc&gt;, dodal slovy sv&eacute;ho
       obl&iacute;ben&eacute;ho imagin&aacute;rn&iacute;ho autora.</span></span>&lt;/source&gt;
-  &lt;target xml:lang="en"&gt;&lt;pc type="quote"&gt;Madman, he wants to conquer the
+  &lt;target&gt;&lt;pc id="q1" type="quote"&gt;Madman, he wants to conquer the
       pole in this weather&lt;/pc&gt;, offered he the words of his
       favourite imaginary playwright.&lt;/target&gt;
 &lt;/segment&gt;

@@ -1946,7 +1946,8 @@
     &lt;data id="2">&amp;lt;/B&amp;gt;&lt;/data>
   &lt;/originalData>
   &lt;segment>
-    &lt;source>&lt;pc id="1" dataRefStart="1" dataRefEnd="2">Important&lt;/pc> text&lt;/source>
+    &lt;source>&lt;pc id="1" dataRefStart="1" dataRefEnd="2">Important&lt;/pc>
+      text&lt;/source>
   &lt;/segment>
 &lt;/unit>
 </programlisting>
@@ -3736,10 +3737,10 @@
       <para><emphasis>Example:</emphasis>
         <programlisting format="linespecific">
 &lt;segment>
-  &lt;source xml:lang="cs">&lt;pc type="quote"><foreignphrase lang="cs">Blázen,
+  &lt;source>&lt;pc id="q1" type="quote"><foreignphrase lang="cs">Blázen,
       chce dobýt točnu v takovém počasí&lt;/pc>, dodal slovy svého
       oblíbeného imaginárního autora.</foreignphrase>&lt;/source>
-  &lt;target xml:lang="en">&lt;pc type="quote">Madman, he wants to conquer the
+  &lt;target>&lt;pc id="q1" type="quote">Madman, he wants to conquer the
       pole in this weather&lt;/pc>, offered he the words of his
       favourite imaginary playwright.&lt;/target>
 &lt;/segment>
