@@ -123,13 +123,21 @@ public class Merger {
                         Element link = doc.createElement("link");
                         link.setAttribute("linkend", linkend);
                         for (int j = 0; j < olinkContent.getLength(); j++) {
-                            link.appendChild(olinkContent.item(j));
+                            Node childNode = olinkContent.item(j);
+                            if (childNode.getNodeType() == Node.TEXT_NODE) {
+                                childNode.setTextContent(childNode.getTextContent().replace("\n", ""));
+                            }
+                            link.appendChild(childNode);
                         }
                         element.insertBefore(link, n);
                     } else {
                         Element remark = doc.createElement("remark");
                         for (int j = 0; j < olinkContent.getLength(); j++) {
-                            remark.appendChild(olinkContent.item(j));
+                            Node childNode = olinkContent.item(j);
+                            if (childNode.getNodeType() == Node.TEXT_NODE) {
+                                childNode.setTextContent(childNode.getTextContent().replace("\n", ""));
+                            }
+                            remark.appendChild(childNode);
                         }
                         element.insertBefore(remark, n);
                     }
