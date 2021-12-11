@@ -905,8 +905,7 @@
           for example different versions of a given module or extension to use the same
           prefix).</para></listitem>
     </itemizedlist>
-    <para>See also the <link linkend="ext-constraints">constraints related to how IDs need to be specified in
-      extensions</link> (which applies for modules as well).</para>
+    <para>See also the <link linkend="ext-constraints">constraints related to how IDs need to be specified in      extensions</link> (which applies for modules as well).</para>
   </section>
   <section>
     <title>Relative References</title>
@@ -1311,13 +1310,11 @@
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <link linkend="size_restriction_module">Size and Length Restriction
-                        Module</link> are met.</member>
+                    the <link linkend="size_restriction_module">Size and Length Restriction                        Module</link> are met.</member>
                 <member>- attributes from the namespace
                         <code>http://www.w3.org/2005/11/its</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <link linkend="ITS-module">ITS
-                        Module</link> are met.</member>
+                    the <link linkend="ITS-module">ITS                        Module</link> are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
@@ -1419,13 +1416,11 @@
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <link linkend="size_restriction_module">Size and Length Restriction
-                        Module</link> are met.</member>
+                    the <link linkend="size_restriction_module">Size and Length Restriction                        Module</link> are met.</member>
                 <member>- attributes from the namespace
                         <code>http://www.w3.org/2005/11/its</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <link linkend="ITS-module">ITS
-                        Module</link> are met.</member>
+                    the <link linkend="ITS-module">ITS                        Module</link> are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
@@ -1841,8 +1836,7 @@
       <para><emphasis>Rationale:</emphasis> Using a standalone placeholder code for a spanning code
         does not allow for controlling the span (for instance tag order and data integrity) when
           <firstterm>Modifying</firstterm> inline content and is in <emphasis>direct
-            contradiction</emphasis> to the business logic described in <link linkend="representingcodes">Representation of the
-              codes</link> and normative statements included in <link linkend="spanningcodeusage">Usage of &lt;pc> and &lt;sc>/&lt;ec></link>
+            contradiction</emphasis> to the business logic described in <link linkend="representingcodes">Representation of the              codes</link> and normative statements included in <link linkend="spanningcodeusage">Usage of &lt;pc> and &lt;sc>/&lt;ec></link>
       </para>
     </listitem>
   </itemizedlist>
@@ -1850,8 +1844,7 @@
       translatable inline content. The preferred way of protecting portions of inline content from
       translation is the <firstterm>Core</firstterm>
       <link linkend="translateAnnotation">Translate Annotation</link>. See also discussion in
-      the <link linkend="Translate_Inline">ITS Module section on representing translatability
-        inline.</link>. </para></note>
+      the <link linkend="Translate_Inline">ITS Module section on representing translatability        inline.</link>. </para></note>
 </section>
 
     <section id="pc">
@@ -2294,8 +2287,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>The <link linkend="xml_namespace">[XML
-          namespace]</link>
+      <para>The <link linkend="xml_namespace">[XML          namespace]</link>
         <glossterm>must not</glossterm> be used at this extension point.</para>
     </listitem>
     <listitem>
@@ -2309,16 +2301,13 @@
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <link linkend="size_restriction_module">Size and Length Restriction
-            Module</link> are met.</member>
+          the <link linkend="size_restriction_module">Size and Length Restriction            Module</link> are met.</member>
         <member>- attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <link linkend="ITS-module">ITS
-            Module</link> are met.</member>
+          the <link linkend="ITS-module">ITS            Module</link> are met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <link linkend="ITS-module">ITS
-            Module</link> are met.</member>
+            <glossterm>optional</glossterm>, provided that the Constraints specified in the <link linkend="ITS-module">ITS            Module</link> are met.</member>
       </simplelist>
     </listitem>
     
@@ -2368,8 +2357,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>The <link linkend="xml_namespace">[XML
-          namespace]</link>
+      <para>The <link linkend="xml_namespace">[XML          namespace]</link>
         <glossterm>must not</glossterm> be used at this extension point.</para>
     </listitem>
     <listitem>
@@ -2383,16 +2371,13 @@
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <link linkend="size_restriction_module">Size and Length Restriction
-            Module</link> are met.</member>
+          the <link linkend="size_restriction_module">Size and Length Restriction            Module</link> are met.</member>
         <member>- attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <link linkend="ITS-module">ITS
-            Module</link> are met.</member>
+          the <link linkend="ITS-module">ITS            Module</link> are met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <link linkend="ITS-module">ITS
-            Module</link> are met.</member>
+            <glossterm>optional</glossterm>, provided that the Constraints specified in the <link linkend="ITS-module">ITS            Module</link> are met.</member>
       </simplelist>
     </listitem>
     
@@ -3253,8 +3238,7 @@
                 <link linkend="unit"><code>&lt;unit></code></link> element.</para>
         </listitem>
 </itemizedlist>    
-<para>See the <link linkend="segorder">Segments
-            Order</link> section for the normative usage description.</para>
+<para>See the <link linkend="segorder">Segments            Order</link> section for the normative usage description.</para>
 </section>
 
     <section id="original">
@@ -3298,8 +3282,7 @@
   <itemizedlist>
     <listitem>
       <para>When used in a <link linkend="note">&lt;note></link> element, the URI value is referring to a <link linkend="segment"><code>&lt;segment></code></link>, <link linkend="source"><code>&lt;source></code></link> or <link linkend="target"><code>&lt;target></code></link> element within the same enclosing <link linkend="unit"><code>&lt;unit></code></link>.</para>
-      <para>When used in a <link linkend="termAnnotation">term
-          annotation</link>, the URI value is referring to a resource providing information about
+      <para>When used in a <link linkend="termAnnotation">term          annotation</link>, the URI value is referring to a resource providing information about
         the term.</para>
     </listitem>
 
@@ -3716,15 +3699,7 @@
     element in which it is used.</para>
   <itemizedlist>
     <listitem>
-      <para>When used in <link linkend="pc">
-          
-        </link>, <link linkend="sc">
-          
-        </link>, <link linkend="ec">
-          
-        </link> or <link linkend="ph">
-          
-        </link>:</para>
+      <para>When used in <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link> or <link linkend="ph">                  </link>:</para>
       <para>The value  <glossterm>must</glossterm> be set to one of the following values:</para>
       <simplelist type="vert">
         <member><code>fmt</code> - Formatting (e.g. a &lt;b> element in HTML)</member>
@@ -3746,18 +3721,12 @@
 &lt;/segment>
 </programlisting>
       </para>
-      <para>One can further specify the type of a code using the <link linkend="subtype">
-          
-        </link>
+      <para>One can further specify the type of a code using the <link linkend="subtype">                  </link>
       attribute.</para>
       <para><emphasis>Default value:</emphasis> Undefined</para>
     </listitem>
     <listitem>
-      <para>When used in <link linkend="mrk">
-          
-        </link> or <link linkend="sm">
-          
-        </link>:</para>
+      <para>When used in <link linkend="mrk">                  </link> or <link linkend="sm">                  </link>:</para>
       <para>One of the following values: <code>generic</code>, <code>comment</code>,
           <code>term</code>, or a user-defined value that is composed of a prefix and a sub-value
         separated by a character <code>:</code> (U+003A).</para>
@@ -3766,11 +3735,7 @@
       <para><emphasis>Default value:</emphasis> <code>generic</code></para>
     </listitem>
     <listitem>
-      <para>When used in <link linkend="group">
-          
-        </link> or <link linkend="unit">
-          
-        </link>:</para>
+      <para>When used in <link linkend="group">                  </link> or <link linkend="unit">                  </link>:</para>
       <para>A value that is composed of a prefix and a sub-value
         separated by a character <code>:</code> (U+003A).</para>
       <para>The prefix is a string uniquely identifying a collection of sub-values for a specific authority.
@@ -3778,41 +3743,15 @@
       <para><emphasis>Default value:</emphasis> Undefined</para>
     </listitem>
   </itemizedlist>
-  <para><emphasis>Used in:</emphasis> <link linkend="group">
-      
-    </link>, <link linkend="unit">
-      
-    </link>, <link linkend="pc">
-      
-    </link>, <link linkend="sc">
-      
-    </link>, <link linkend="ec">
-      
-    </link>, <link linkend="mrk">
-      
-    </link>,  <link linkend="ph">
-      
-    </link> and <link linkend="sm">
-      
-    </link>.</para>
+  <para><emphasis>Used in:</emphasis> <link linkend="group">          </link>, <link linkend="unit">          </link>, <link linkend="pc">          </link>, <link linkend="sc">          </link>, <link linkend="ec">          </link>, <link linkend="mrk">          </link>,  <link linkend="ph">          </link> and <link linkend="sm">          </link>.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
       <para><firstterm>Modifiers</firstterm> updating the attribute <link linkend="type">
           <code>type</code>
-        </link> on <link linkend="pc">
-          
-        </link>, <link linkend="sc">
-          
-        </link>, <link linkend="ec">
-          
-        </link>, or
-          <link linkend="ph">
-          
-        </link>
-        <glossterm>must</glossterm> also update or delete <link linkend="subtype">
-          
-        </link>.</para>
+        </link> on <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link>, or
+          <link linkend="ph">                  </link>
+        <glossterm>must</glossterm> also update or delete <link linkend="subtype">                  </link>.</para>
     </listitem>
   </itemizedlist>
 </section>
@@ -5075,8 +5014,7 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
           Requirements within <firstterm>Translations</firstterm> can only be checked on existing
             <link linkend="target"><code>&lt;target></code></link> elements, i.e. non-conformance is not reported on
             <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link> elements without <link linkend="target"><code>&lt;target></code></link> children.</para>
-        <para>The <link linkend="CoreSchematron">XLIFF Core Schematron
-            Schema</link> will throw <emphasis>Warnings</emphasis> for all existing <link linkend="target"><code>&lt;target></code></link> elements where codes don't conform to the <link linkend="editinghints">Editing Hints</link> Processing Requirements, except for <link linkend="target"><code>&lt;target></code></link> children of <link linkend="segment"><code>&lt;segment></code></link> elements with the <link linkend="state"><code>state</code></link> attribute set to
+        <para>The <link linkend="CoreSchematron">XLIFF Core Schematron            Schema</link> will throw <emphasis>Warnings</emphasis> for all existing <link linkend="target"><code>&lt;target></code></link> elements where codes don't conform to the <link linkend="editinghints">Editing Hints</link> Processing Requirements, except for <link linkend="target"><code>&lt;target></code></link> children of <link linkend="segment"><code>&lt;segment></code></link> elements with the <link linkend="state"><code>state</code></link> attribute set to
             <code>final</code>, where it will throw <emphasis>Errors</emphasis>.</para>
       </note>
       
@@ -5718,8 +5656,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 
   <para>In the context of XLIFF, other types representations sometimes called
   "segmentation" can be represented using annotations. For example: the terms
-  in a segment can be identified and marked up using the <link linkend="termAnnotation">term
-  annotation</link>.</para>
+  in a segment can be identified and marked up using the <link linkend="termAnnotation">term  annotation</link>.</para>
 
   <para>XLIFF does not specify how segmentation is carried out, only how to represent its result.
     Material provisions regarding segmentation can be found for instance in the Segmentation Rules
@@ -5973,8 +5910,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       attribute is strictly optional with the default <code>initial</code>, yet it is advisable for
       a corporate localization operation to request that their service providers progress that
       attribute through <code>translated</code> and <code>reviewed</code> to <code>final</code>.
-      This attribute cannot be progressed from the <code>initial</code> state without a <link linkend="target"><code>&lt;target></code></link> child and all violations of <link linkend="editinghints">Editing
-        Hints</link> will become validation errors only in the <code>final</code> state. Usage of
+      This attribute cannot be progressed from the <code>initial</code> state without a <link linkend="target"><code>&lt;target></code></link> child and all violations of <link linkend="editinghints">Editing        Hints</link> will become validation errors only in the <code>final</code> state. Usage of
         <link linkend="state"><code>state</code></link> also
       allows for fine-tuning of a specific workflow <emphasis>State Machine</emphasis> with the
       dependent <link linkend="substate"><code>subState</code></link> attribute. With the attribute <link linkend="substate"><code>subState</code></link>,
@@ -5983,8 +5919,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       their documentation.</para>
     <para>When <firstterm>Mergers</firstterm> need to perform the <firstterm>Merge</firstterm> in a
       non-final state, when the presence of targets cannot be guaranteed, they are free to create
-      preliminary targets again following the <link linkend="contentmodificationwithouttarget">Processing Requirements for
-        Content Modification Without Target</link></para>
+      preliminary targets again following the <link linkend="contentmodificationwithouttarget">Processing Requirements for        Content Modification Without Target</link></para>
   </section>
   
 </section>
@@ -5993,8 +5928,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     <para>XLIFF 2.0 offers two mechanisms for storing custom data in an XLIFF document:</para>
     <orderedlist continuation="restarts" inheritnum="ignore">
         <listitem>
-            <para>Using the <link linkend="metadata_module">Metadata 
-                module</link> for storing custom data in elements defined by the official XLIFF 
+            <para>Using the <link linkend="metadata_module">Metadata                 module</link> for storing custom data in elements defined by the official XLIFF 
                 specification.</para>
         </listitem>
         <listitem>
@@ -6287,8 +6221,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <glossterm>optional</glossterm>, provided that the Constraints specified in the <link linkend="ITS-module">ITS Module</link> are
           met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <link linkend="ITS-module">ITS
-            Module</link> are met.</member>
+            <glossterm>optional</glossterm>, provided that the Constraints specified in the <link linkend="ITS-module">ITS            Module</link> are met.</member>
       </simplelist>
     </listitem>
       
@@ -6663,13 +6596,11 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
       <member>
-      - <link linkend="gls_id">
-        
-        </link>, <glossterm>optional</glossterm>
+      - <link linkend="gls_id"><code>id</code></link>, <glossterm>optional</glossterm>
       </member>
-        <member> - <link linkend="gls_ref">
-                
-            </link>, <glossterm>optional</glossterm></member>
+        <member>
+            - <link linkend="gls_ref"><code>ref</code></link>, <glossterm>optional</glossterm>
+        </member>
       <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
     </simplelist>
 
@@ -6708,9 +6639,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
   </para>
   <simplelist type="vert">
     <member>
-      - <link linkend="gls_source">
-        
-      </link>, <glossterm>optional</glossterm>
+      - <link linkend="gls_source"><code>source</code></link>, <glossterm>optional</glossterm>
     </member>
     <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
   </simplelist>
@@ -6749,9 +6678,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
   </para>
   <simplelist type="vert">
     <member>
-      - <link linkend="gls_source">
-        
-      </link>, <glossterm>optional</glossterm>
+      - <link linkend="gls_source"><code>source</code></link>, <glossterm>optional</glossterm>
     </member>
     <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
   </simplelist>
@@ -9633,15 +9560,11 @@ backslash (<code>\</code>).</para>
         Documents</firstterm>. This module only defines attributes and annotations that are not
       available through <firstterm>XLIFF Core</firstterm> or other <firstterm>Modules</firstterm>.
       This module specification also contains normative provisions for mapping of <link linkend="ITS20">[ITS]</link> data categories and features that
-      are available via XLIFF <firstterm>Core</firstterm> and other modules (<link linkend="ITSInCore">ITS data categories available through XLIFF Core
-        and other Modules</link> and <link linkend="ITSPartialOverlap">ITS data categories that have a partial overlap with XLIFF
-        features</link>) or other <firstterm>Modules</firstterm> outside of the ITS Module (<link linkend="ITSPartialOverlap">ITS data categories that have a
-        partial overlap with XLIFF features</link>). Finally an overview of data categories is
+      are available via XLIFF <firstterm>Core</firstterm> and other modules (<link linkend="ITSInCore">ITS data categories available through XLIFF Core        and other Modules</link> and <link linkend="ITSPartialOverlap">ITS data categories that have a partial overlap with XLIFF        features</link>) or other <firstterm>Modules</firstterm> outside of the ITS Module (<link linkend="ITSPartialOverlap">ITS data categories that have a        partial overlap with XLIFF features</link>). Finally an overview of data categories is
       provided where the information is or can be fully expressed by
         <firstterm>Extraction</firstterm> behavior and therefore those categories or their parts
       (sub-categories) cannot be represented as metadata within <firstterm>XLIFF
-        Documents</firstterm> (<link linkend="ITSnonMetadata">ITS data categories that do not represent metadata after Extraction of content into
-      XLIFF</link>).</para>
+        Documents</firstterm> (<link linkend="ITSnonMetadata">ITS data categories that do not represent metadata after Extraction of content into      XLIFF</link>).</para>
     
     <note><para>This module specification chiefly describes how the <link linkend="ITS20">[ITS]</link> data categories need to be expressed within
           <firstterm>XLIFF Documents</firstterm>. Some data categories are typically
@@ -9733,8 +9656,7 @@ backslash (<code>\</code>).</para>
           section <link linkend="itsm_defined_categories">ITS data categories defined in the ITS
             Module</link> of this <link linkend="ITS-module">ITS Module</link> or provide full
           support for at least one of the <link linkend="ITS20">[ITS]</link> custom annotations (<link linkend="itsmAnnotations">ITS Mapping Annotations</link>) specified in the Section
-            <link linkend="ITSPartialOverlap">ITS data categories
-            that have a partial overlap with XLIFF features</link>.</para>
+            <link linkend="ITSPartialOverlap">ITS data categories            that have a partial overlap with XLIFF features</link>.</para>
         <para>In particular:</para>
         <itemizedlist>
           <listitem>
@@ -9777,8 +9699,7 @@ backslash (<code>\</code>).</para>
     <warning><para>This mechanism is reserved for recording producers of ITS metadata. General provenance
         information can be recorded using the <link linkend="Provenance">Provenance</link> data category mapping defined in this Module. <link linkend="Provenance">Provenance</link> metadata. </para></warning>
     <note><para>The <link linkend="itsToolsReferencing">ITS Tools Referencing</link> mechanism has to be
-        always used with the <link linkend="MT_Confidence">MT
-          Confidence</link> data category. The <link linkend="Terminology_datacat">Terminology</link> and <link linkend="Text_Analysis">Text Analysis</link> data
+        always used with the <link linkend="MT_Confidence">MT          Confidence</link> data category. The <link linkend="Terminology_datacat">Terminology</link> and <link linkend="Text_Analysis">Text Analysis</link> data
         categories have to use <link linkend="itsToolsReferencing">ITS Tools Referencing</link>
         conditionally, i.e. whenever they specify <link linkend="itsm_termConfidence"><code>its:termConfidence</code></link> or <link linkend="itsm_taConfidence"><code>its:taConfidence</code></link> respectively.</para>
       <para>With all other <link linkend="ITS20">[ITS]</link> data
@@ -10104,8 +10025,7 @@ backslash (<code>\</code>).</para>
       Filter</ulink> information can be represented inline in <firstterm>XLIFF Documents</firstterm>
     if necessary. However, it is preferable that this data category is fully consumed by
       <firstterm>Extraction</firstterm>/<firstterm>Merge</firstterm> behavior as
-      <glossterm>recommended</glossterm> in the section on <link linkend="its-locale-filter">ITS data categories that are not explicitly
-      represented</link> in <firstterm>XLIFF Documents</firstterm>.</para>
+      <glossterm>recommended</glossterm> in the section on <link linkend="its-locale-filter">ITS data categories that are not explicitly      represented</link> in <firstterm>XLIFF Documents</firstterm>.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
@@ -10118,8 +10038,7 @@ backslash (<code>\</code>).</para>
     <listitem>
       <para><firstterm>Writers</firstterm>
         <glossterm>must</glossterm> use the <firstterm>XLIFF Core</firstterm>
-        <link linkend="translateAnnotation">Translate
-          Annotation</link> to express the <link linkend="ITS20">[ITS]</link>
+        <link linkend="translateAnnotation">Translate          Annotation</link> to express the <link linkend="ITS20">[ITS]</link>
         <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> data category in
           <firstterm>XLIFF Documents</firstterm> with the target locale set.
         </para>
@@ -10128,13 +10047,11 @@ backslash (<code>\</code>).</para>
       <para><firstterm>Modifiers</firstterm>
         <glossterm>must</glossterm> remove the <link linkend="localeFilterAnnotation">ITS Locale Filter Annotation</link> and replace it
         with the <firstterm>XLIFF Core</firstterm>
-        <link linkend="translateAnnotation">Translate
-          Annotation</link>  when setting the <link linkend="trgLang"><code>trgLang</code></link> or when receiving an <firstterm>XLIFF Documents</firstterm> with <link linkend="trgLang"><code>trgLang</code></link> set.</para>
+        <link linkend="translateAnnotation">Translate          Annotation</link>  when setting the <link linkend="trgLang"><code>trgLang</code></link> or when receiving an <firstterm>XLIFF Documents</firstterm> with <link linkend="trgLang"><code>trgLang</code></link> set.</para>
     </listitem>
   </itemizedlist>
       <para><warning>
-      <para>Core only <firstterm>Modifiers</firstterm> might have invalidated the <link linkend="localeFilterAnnotation">ITS Locale Filter
-          Annotation</link> by setting the <link linkend="trgLang"><code>trgLang</code></link>. Although, this is addressed by the above
+      <para>Core only <firstterm>Modifiers</firstterm> might have invalidated the <link linkend="localeFilterAnnotation">ITS Locale Filter          Annotation</link> by setting the <link linkend="trgLang"><code>trgLang</code></link>. Although, this is addressed by the above
         PR, <link linkend="ITS20">[ITS]</link>
         <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> capable
           <firstterm>Modifiers</firstterm> are strongly advised  to better set the <link linkend="trgLang"><code>trgLang</code></link>
@@ -10331,13 +10248,7 @@ backslash (<code>\</code>).</para>
     <title>Inline Elements</title>
 
     <para> Use <code><link linkend="mrk">&lt;mrk></link></code> or an <code><link linkend="sm">&lt;sm/></link></code> / <code><link linkend="em">&lt;em/></link></code> pair with
-      the attributes: <link linkend="itsm_locQualityIssueComment">
-        </link>, <link linkend="itsm_locQualityIssueEnabled">
-        </link>, <link linkend="itsm_locQualityIssueProfileRef">
-        </link>, <link linkend="itsm_locQualityIssuesRef">
-        </link>, <link linkend="itsm_locQualityIssueSeverity">
-        </link>, and <link linkend="itsm_locQualityIssueType">
-        </link>. </para>
+      the attributes: <link linkend="itsm_locQualityIssueComment">        </link>, <link linkend="itsm_locQualityIssueEnabled">        </link>, <link linkend="itsm_locQualityIssueProfileRef">        </link>, <link linkend="itsm_locQualityIssuesRef">        </link>, <link linkend="itsm_locQualityIssueSeverity">        </link>, and <link linkend="itsm_locQualityIssueType">        </link>. </para>
     <para>See the <link linkend="lqiAnnotation">ITS Localization
         Quality Issue Annotation</link> for the normative usage description of those attributes.
       </para>
@@ -10345,8 +10256,7 @@ backslash (<code>\</code>).</para>
       than one quality issue, this category provides its own elements that are to be used at the
       unit level as an alternative to the inline only annotations, especially in cases the inline
       only annotations would not be expressive enough to capture the issues to be reported. If more than one quality issue applies to the same content the particulars of those issues need to be stored in standoff annotations.</para>
-    <para> For specifics of the standoff annotation, see the <link linkend="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></link> and <link linkend="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></link> elements and the attributes <link linkend="itsm_locQualityIssuesRef">
-        </link> and <link linkend="itsm_id"><code>id</code></link>.</para>
+    <para> For specifics of the standoff annotation, see the <link linkend="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></link> and <link linkend="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></link> elements and the attributes <link linkend="itsm_locQualityIssuesRef">        </link> and <link linkend="itsm_id"><code>id</code></link>.</para>
   </section>
   <section id="lqiAnnotation">
     <title>ITS Localization Quality Issue Annotation</title>
@@ -10370,8 +10280,7 @@ backslash (<code>\</code>).</para>
         <itemizedlist>
           <listitem>
 
-            <para><link linkend="itsm_locQualityIssuesRef">
-              </link>.</para>
+            <para><link linkend="itsm_locQualityIssuesRef">              </link>.</para>
           </listitem>
 
           <listitem>
@@ -10381,13 +10290,11 @@ backslash (<code>\</code>).</para>
               <para>At least one of the following <glossterm>must</glossterm> be set:</para>
               <listitem>
 
-                <para><link linkend="itsm_locQualityIssueType">
-                  </link>,</para>
+                <para><link linkend="itsm_locQualityIssueType">                  </link>,</para>
               </listitem>
               <listitem>
 
-                <para><link linkend="itsm_locQualityIssueComment">
-                  </link>.</para></listitem>
+                <para><link linkend="itsm_locQualityIssueComment">                  </link>.</para></listitem>
             </itemizedlist>
 
           </listitem>
@@ -10398,21 +10305,17 @@ backslash (<code>\</code>).</para>
       <listitem>
         <para>The <link linkend="translate"><code>translate</code></link> attribute is <glossterm>optional</glossterm>.</para>
       </listitem>
-      <listitem><para>The following attributes <glossterm>must not</glossterm> be set if and only if <link linkend="itsm_locQualityIssuesRef">
-        </link> is declared, otherwise all of the following
+      <listitem><para>The following attributes <glossterm>must not</glossterm> be set if and only if <link linkend="itsm_locQualityIssuesRef">        </link> is declared, otherwise all of the following
         are <glossterm>optional</glossterm>:</para>
         <itemizedlist>
           <listitem>
-            <para><link linkend="itsm_locQualityIssueSeverity">
-              </link>,</para>
+            <para><link linkend="itsm_locQualityIssueSeverity">              </link>,</para>
           </listitem>
           <listitem>
-            <para><link linkend="itsm_locQualityIssueProfileRef">
-              </link>, and</para>
+            <para><link linkend="itsm_locQualityIssueProfileRef">              </link>, and</para>
           </listitem>
           <listitem>
-            <para><link linkend="itsm_locQualityIssueEnabled">
-              </link>.</para>
+            <para><link linkend="itsm_locQualityIssueEnabled">              </link>.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -10421,8 +10324,7 @@ backslash (<code>\</code>).</para>
 
 
 
-    <warning><para>Usage of the <link linkend="itsm_locQualityIssuesRef">
-          </link> attribute implies usage of Localization
+    <warning><para>Usage of the <link linkend="itsm_locQualityIssuesRef">          </link> attribute implies usage of Localization
         Quality Issue standoff elements. See <link linkend="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></link> and <link linkend="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></link> for related Constraints and Processing
         Requirements.</para></warning>
     <example>
@@ -10519,23 +10421,17 @@ backslash (<code>\</code>).</para>
 
 
           <listitem>
-            <para><link linkend="itsm_locQualityRatingScore">
-              </link>:</para>
+            <para><link linkend="itsm_locQualityRatingScore">              </link>:</para>
             <itemizedlist>
-              <listitem><para><link linkend="itsm_locQualityRatingScoreThreshold">
-                </link> <glossterm>may</glossterm> be set or inherited if and only if <link linkend="itsm_locQualityRatingScore">
-                  </link> is set.</para></listitem>
+              <listitem><para><link linkend="itsm_locQualityRatingScoreThreshold">                </link> <glossterm>may</glossterm> be set or inherited if and only if <link linkend="itsm_locQualityRatingScore">                  </link> is set.</para></listitem>
             </itemizedlist>
           </listitem>
 
 
           <listitem>
-            <para><link linkend="itsm_locQualityRatingVote">
-              </link>:</para>
+            <para><link linkend="itsm_locQualityRatingVote">              </link>:</para>
             <itemizedlist>
-              <listitem><para><link linkend="itsm_locQualityRatingVoteThreshold">
-                </link> <glossterm>may</glossterm> be set or inherited if and only if <link linkend="itsm_locQualityRatingScore">
-                  </link> is set or inherited.</para></listitem>
+              <listitem><para><link linkend="itsm_locQualityRatingVoteThreshold">                </link> <glossterm>may</glossterm> be set or inherited if and only if <link linkend="itsm_locQualityRatingScore">                  </link> is set or inherited.</para></listitem>
             </itemizedlist>
           </listitem>
         </itemizedlist>
@@ -10544,8 +10440,7 @@ backslash (<code>\</code>).</para>
       </listitem>
 
       <listitem>
-        <para>The <link linkend="itsm_locQualityRatingProfileRef">
-          </link> attribute is <glossterm>optional</glossterm>.</para>
+        <para>The <link linkend="itsm_locQualityRatingProfileRef">          </link> attribute is <glossterm>optional</glossterm>.</para>
       </listitem>
     </itemizedlist>
 
@@ -10559,17 +10454,12 @@ backslash (<code>\</code>).</para>
     <para> Use <code><link linkend="mrk">&lt;mrk></link></code> or an <code><link linkend="sm">&lt;sm/></link></code> / <code><link linkend="em">&lt;em/></link></code> pair with the following attributes:
 
 
-      <link linkend="itsm_locQualityRatingProfileRef">
-        </link>,
+      <link linkend="itsm_locQualityRatingProfileRef">        </link>,
 
-      <link linkend="itsm_locQualityRatingScore">
-        </link>,
-      <link linkend="itsm_locQualityRatingScoreThreshold">
-        </link>,
-      <link linkend="itsm_locQualityRatingVote">
-        </link>,
-      <link linkend="itsm_locQualityRatingVoteThreshold">
-        </link>.
+      <link linkend="itsm_locQualityRatingScore">        </link>,
+      <link linkend="itsm_locQualityRatingScoreThreshold">        </link>,
+      <link linkend="itsm_locQualityRatingVote">        </link>,
+      <link linkend="itsm_locQualityRatingVoteThreshold">        </link>.
    </para>
     <para>See the <link linkend="lqrAnnotation">ITS Localization Quality Rating Annotation</link>
       for the normative usage description of those attributes inline.</para>
@@ -10600,24 +10490,18 @@ backslash (<code>\</code>).</para>
 
 
           <listitem>
-            <para><link linkend="itsm_locQualityRatingScore">
-              </link>:</para>
+            <para><link linkend="itsm_locQualityRatingScore">              </link>:</para>
             <itemizedlist>
-              <listitem><para><link linkend="itsm_locQualityRatingScoreThreshold">
-                </link> <glossterm>may</glossterm> be set or inherited if and only if <link linkend="itsm_locQualityRatingScore">
-                  </link> is set.</para></listitem>
+              <listitem><para><link linkend="itsm_locQualityRatingScoreThreshold">                </link> <glossterm>may</glossterm> be set or inherited if and only if <link linkend="itsm_locQualityRatingScore">                  </link> is set.</para></listitem>
             </itemizedlist>
           </listitem>
 
 
           <listitem>
-            <para><link linkend="itsm_locQualityRatingVote">
-              </link>:</para>
+            <para><link linkend="itsm_locQualityRatingVote">              </link>:</para>
             <itemizedlist>
-              <listitem><para><link linkend="itsm_locQualityRatingVoteThreshold">
-                </link> <glossterm>may</glossterm> be set or inherited if and only if
-                <link linkend="itsm_locQualityRatingScore">
-                  </link> is set or inherited.</para></listitem>
+              <listitem><para><link linkend="itsm_locQualityRatingVoteThreshold">                </link> <glossterm>may</glossterm> be set or inherited if and only if
+                <link linkend="itsm_locQualityRatingScore">                  </link> is set or inherited.</para></listitem>
             </itemizedlist>
           </listitem>
         </itemizedlist>
@@ -10626,8 +10510,7 @@ backslash (<code>\</code>).</para>
       </listitem>
 
       <listitem>
-        <para>The <link linkend="itsm_locQualityRatingProfileRef">
-          </link> attribute is <glossterm>optional</glossterm>.</para>
+        <para>The <link linkend="itsm_locQualityRatingProfileRef">          </link> attribute is <glossterm>optional</glossterm>.</para>
       </listitem>
 
       <listitem>
@@ -10705,8 +10588,7 @@ backslash (<code>\</code>).</para>
   <warning><para>Provenance data category is used to record human, tools or organizational producers of
         <firstterm>Translations</firstterm> or revisions, in other words it records producers of the
       payload. To record <link linkend="ITS20">[ITS]</link> metadata
-      producers, the <link linkend="itsToolsReferencing">ITS Tools
-        Referencing</link> mechanism needs to be used.</para></warning>
+      producers, the <link linkend="itsToolsReferencing">ITS Tools        Referencing</link> mechanism needs to be used.</para></warning>
   <itemizedlist id="Provenance_Attributes">
     <title>Processing Requirements</title>
     <listitem><para><firstterm>Writers</firstterm>
@@ -10843,8 +10725,7 @@ backslash (<code>\</code>).</para>
       
     </example>
     <para>If standoff Provenance elements are used at structural levels, these need to occur on the
-      same or an ancestor element of the element where the standoff reference is used. See the <link linkend="itsm_provenanceRecordsRef">
-        </link> </para>
+      same or an ancestor element of the element where the standoff reference is used. See the <link linkend="itsm_provenanceRecordsRef">        </link> </para>
     
     
   </section>
@@ -10860,8 +10741,7 @@ backslash (<code>\</code>).</para>
       than one Provenance record, for instance over time, this category provides its own elements
       that are to be used at the unit level as a more expressive alternative to the inline only
       annotations.</para>
-    <para> For specifics of the standoff annotation, see the <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link> and <link linkend="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></link> elements and the attributes <link linkend="itsm_provenanceRecordsRef">
-          </link> and <link linkend="itsm_id"><code>id</code></link>.</para>  
+    <para> For specifics of the standoff annotation, see the <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link> and <link linkend="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></link> elements and the attributes <link linkend="itsm_provenanceRecordsRef">          </link> and <link linkend="itsm_id"><code>id</code></link>.</para>  
   </section>
   <section id="provenanceAnnotation">
     <title>ITS Provenance Annotation</title>
@@ -10882,11 +10762,9 @@ backslash (<code>\</code>).</para>
         <para>The <link linkend="translate"><code>translate</code></link> attribute is <glossterm>optional</glossterm>.</para>
       </listitem>
       <listitem>
-        <para>The <link linkend="itsm_provenanceRecordsRef">
-          </link> attribute is <glossterm>optional</glossterm>.</para>
+        <para>The <link linkend="itsm_provenanceRecordsRef">          </link> attribute is <glossterm>optional</glossterm>.</para>
       </listitem>
-      <listitem><para>The following attributes <glossterm>must not</glossterm> be set if and only if <link linkend="itsm_provenanceRecordsRef">
-        </link> is declared, otherwise at least one the following
+      <listitem><para>The following attributes <glossterm>must not</glossterm> be set if and only if <link linkend="itsm_provenanceRecordsRef">        </link> is declared, otherwise at least one the following
          <glossterm>must</glossterm> be set:</para>
         <itemizedlist>
           <listitem><para>	<link linkend="itsm_org"><code>its:org</code></link>,	</para></listitem>
@@ -10909,8 +10787,7 @@ backslash (<code>\</code>).</para>
     
     
     
-    <warning><para>Usage of the <link linkend="itsm_provenanceRecordsRef">
-      </link> attribute implies usage of Provenance standoff elements.
+    <warning><para>Usage of the <link linkend="itsm_provenanceRecordsRef">      </link> attribute implies usage of Provenance standoff elements.
       See <link linkend="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></link>
       and <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>
       for related Constraints and Processing Requirements.</para></warning>
@@ -11144,8 +11021,7 @@ backslash (<code>\</code>).</para>
   <orderedlist continuation="restarts" inheritnum="ignore">
     
     <listitem>
-      <para><link linkend="Localization_Note">Localization
-          Note</link>,</para>
+      <para><link linkend="Localization_Note">Localization          Note</link>,</para>
     </listitem>
     
     <listitem>
@@ -11393,8 +11269,7 @@ backslash (<code>\</code>).</para>
     <para>This is used to fully map to and from the <link linkend="ITS20">[ITS]</link>
       <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> data category,
       including the aspects that are not supported via the <firstterm>XLIFF Core</firstterm>
-      <link linkend="termAnnotation">Term
-        Annotation</link>.</para>
+      <link linkend="termAnnotation">Term        Annotation</link>.</para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">
       <listitem>
@@ -11512,8 +11387,7 @@ backslash (<code>\</code>).</para>
     <para>In case the inline elements in other than the main language are not supposed to be
       translated (e.g. referenced non localized UI or hardware elements), they can be marked as not
       translatable using the <firstterm>XLIFF Core</firstterm>
-      <link linkend="translateAnnotation">Translate
-        annotation</link>. However, the specific Language Information would not be readily
+      <link linkend="translateAnnotation">Translate        annotation</link>. However, the specific Language Information would not be readily
       accessible during the roundtrip if not combined with the Language Information Annotation
       defined here in the ITS Module.</para>
     <note>
@@ -12194,8 +12068,7 @@ backslash (<code>\</code>).</para>
       <para><link linkend="its-directionality">Directionality</link>,</para>
     </listitem>
     <listitem>
-      <para><link linkend="Elements_Within_Text">Elements
-          Within Text</link>,</para>
+      <para><link linkend="Elements_Within_Text">Elements          Within Text</link>,</para>
     </listitem>
     <listitem>
       <para><link linkend="its-locale-filter">Locale Filter</link>,</para>
@@ -12397,8 +12270,7 @@ backslash (<code>\</code>).</para>
     <para>Dependent on workflow specifics and business requirements, this data category can be most
       of the times fully represented by <firstterm>Extraction</firstterm> and
         <firstterm>Merging</firstterm> behavior without explicitly representing <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> metadata in
-        <firstterm>XLIFF Documents</firstterm>. See the <link linkend="Locale_Filter">Locale Filter</link> section within the <link linkend="itsm_defined_categories">defined categories
-        section</link> for the normative description of how this metadata can be explicitly
+        <firstterm>XLIFF Documents</firstterm>. See the <link linkend="Locale_Filter">Locale Filter</link> section within the <link linkend="itsm_defined_categories">defined categories        section</link> for the normative description of how this metadata can be explicitly
       represented if necessary.
       </para>
   </section>
@@ -12462,8 +12334,7 @@ backslash (<code>\</code>).</para>
     <link linkend="annotations">Annotations</link> or other
     module specific annotations. Use of <firstterm>XLIFF Core</firstterm>
     <link linkend="annotations">Annotations</link> for the ITS
-    Mapping purposes is described in sections <link linkend="ITSInCore">ITS data categories available through XLIFF Core</link> and <link linkend="ITSPartialOverlap">ITS data categories that have a
-      partial overlap with XLIFF features</link> sections of this ITS Module.</para>
+    Mapping purposes is described in sections <link linkend="ITSInCore">ITS data categories available through XLIFF Core</link> and <link linkend="ITSPartialOverlap">ITS data categories that have a      partial overlap with XLIFF features</link> sections of this ITS Module.</para>
   <para>The following is the summary of internal links to all relevant Annotations:</para>
     
     
@@ -12570,39 +12441,26 @@ backslash (<code>\</code>).</para>
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-      <member>- <link linkend="itsm_locQualityIssueType">
-                </link>, <glossterm>optional</glossterm>
+      <member>- <link linkend="itsm_locQualityIssueType">                </link>, <glossterm>optional</glossterm>
         </member>
-        <member>- <link linkend="itsm_locQualityIssueComment">
-            </link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="itsm_locQualityIssueComment">            </link>, <glossterm>optional</glossterm></member>
         
-        <member>- <link linkend="itsm_locQualityIssueSeverity">
-            </link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="itsm_locQualityIssueProfileRef">
-            </link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="itsm_locQualityIssueEnabled">
-            </link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="itsm_locQualityIssueSeverity">            </link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="itsm_locQualityIssueProfileRef">            </link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="itsm_locQualityIssueEnabled">            </link>, <glossterm>optional</glossterm></member>
         
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>At least one of the attributes <link linkend="itsm_locQualityIssueType">
-                </link> or <link linkend="itsm_locQualityIssueComment">
-                    </link> <glossterm>must</glossterm> be set.</para>
+            <para>At least one of the attributes <link linkend="itsm_locQualityIssueType">                </link> or <link linkend="itsm_locQualityIssueComment">                    </link> <glossterm>must</glossterm> be set.</para>
         </listitem>
     </itemizedlist>
     <itemizedlist>
         <title>Processing Requirements</title>
-        <listitem><para> For all <firstterm>Agents</firstterm>, when any of the attributes <link linkend="itsm_locQualityIssueType">
-                    </link>, <link linkend="itsm_locQualityIssueComment">
-                    </link>, <link linkend="itsm_locQualityIssueSeverity">
-                    </link>, <link linkend="itsm_locQualityIssueProfileRef">
-                    </link>, or <link linkend="itsm_locQualityIssueEnabled">
-                    </link> are declared on the <link linkend="itsm_locQualityIssue"><code>&lt;locQualityIssue</code></link> element,
-                these apply to the respective marker delimited inline spans of <link linkend="lqiAnnotation">ITS
-                    Localization Issue Annotation</link>, from which their enclosing <link linkend="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></link> element is referenced. </para></listitem>
+        <listitem><para> For all <firstterm>Agents</firstterm>, when any of the attributes <link linkend="itsm_locQualityIssueType">                    </link>, <link linkend="itsm_locQualityIssueComment">                    </link>, <link linkend="itsm_locQualityIssueSeverity">                    </link>, <link linkend="itsm_locQualityIssueProfileRef">                    </link>, or <link linkend="itsm_locQualityIssueEnabled">                    </link> are declared on the <link linkend="itsm_locQualityIssue"><code>&lt;locQualityIssue</code></link> element,
+                these apply to the respective marker delimited inline spans of <link linkend="lqiAnnotation">ITS                    Localization Issue Annotation</link>, from which their enclosing <link linkend="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></link> element is referenced. </para></listitem>
     </itemizedlist>
 </section>
     <section id="itsm_locQualityIssues">
@@ -12625,9 +12483,7 @@ backslash (<code>\</code>).</para>
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-      <member>- <link linkend="itsm_id">
-        
-      </link>, <glossterm>required</glossterm>
+      <member>- <link linkend="itsm_id">              </link>, <glossterm>required</glossterm>
     </member>
       
         
@@ -12744,9 +12600,7 @@ backslash (<code>\</code>).</para>
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-      <member>- <link linkend="itsm_id">
-        
-      </link>, <glossterm>required</glossterm>
+      <member>- <link linkend="itsm_id">              </link>, <glossterm>required</glossterm>
     </member>
       
         
@@ -12776,14 +12630,7 @@ backslash (<code>\</code>).</para>
   <section>
     <title>Module Attributes</title>
     <para>The <link linkend="ITS-module">ITS Module</link> uses the following attributes from the
-        <code>http://www.w3.org/2005/11/its</code> namespace: <link linkend="itsm_allowedCharacters"><code>allowedCharacters</code></link>, <link linkend="itsm_annotatorsRef"><code>annotatorsRef</code></link>, <link linkend="itsm_localeFilterList">
-        </link>, <link linkend="itsm_localeFilterType">
-        </link>, <link linkend="itsm_locQualityIssueComment">
-        </link>, <link linkend="itsm_locQualityIssueEnabled">
-        </link>, <link linkend="itsm_locQualityIssueProfileRef">
-        </link>, <link linkend="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></link>, <link linkend="itsm_locQualityIssueSeverity">
-        </link>, <link linkend="itsm_locQualityIssueType">
-        </link>, <link linkend="itsm_locQualityRatingProfileRef"><code>locQualityRatingProfileRef</code></link>,
+        <code>http://www.w3.org/2005/11/its</code> namespace: <link linkend="itsm_allowedCharacters"><code>allowedCharacters</code></link>, <link linkend="itsm_annotatorsRef"><code>annotatorsRef</code></link>, <link linkend="itsm_localeFilterList">        </link>, <link linkend="itsm_localeFilterType">        </link>, <link linkend="itsm_locQualityIssueComment">        </link>, <link linkend="itsm_locQualityIssueEnabled">        </link>, <link linkend="itsm_locQualityIssueProfileRef">        </link>, <link linkend="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></link>, <link linkend="itsm_locQualityIssueSeverity">        </link>, <link linkend="itsm_locQualityIssueType">        </link>, <link linkend="itsm_locQualityRatingProfileRef"><code>locQualityRatingProfileRef</code></link>,
         <link linkend="itsm_locQualityRatingScore"><code>locQualityRatingScore</code></link>, <link linkend="itsm_locQualityRatingScoreThreshold"><code>locQualityRatingScoreThreshold</code></link>, <link linkend="itsm_locQualityRatingVote"><code>locQualityRatingVote</code></link>, <link linkend="itsm_locQualityRatingVoteThreshold"><code>locQualityRatingVoteThreshold</code></link>, 
       <link linkend="itsm_mtConfidence"><code>mtConfidence</code></link>, <link linkend="itsm_org"><code>org</code></link>, <link linkend="itsm_orgRef"><code>orgRef</code></link>, <link linkend="itsm_person"><code>person</code></link>, <link linkend="itsm_personRef"><code>personRef</code></link>, <link linkend="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></link>, <link linkend="itsm_revOrg"><code>revOrg</code></link>, <link linkend="itsm_revOrgRef"><code>revOrgRef</code></link>, <link linkend="itsm_revPerson"><code>revPerson</code></link>, <link linkend="itsm_revPersonRef"><code>revPersonRef</code></link>, <link linkend="itsm_revTool"><code>revTool</code></link>, <link linkend="itsm_revToolRef"><code>revToolRef</code></link>, <link linkend="itsm_taClassRef"><code>taClassRef</code></link>, <link linkend="itsm_taConfidence"><code>taConfidence</code></link>, <link linkend="itsm_taIdent"><code>taIdent</code></link>, <link linkend="itsm_taIdentRef"><code>taIdentRef</code></link>, <link linkend="itsm_taSource"><code>taSource</code></link>, <link linkend="itsm_termConfidence"><code>termConfidence</code></link>,
       <link linkend="itsm_tool"><code>tool</code></link>,
@@ -12844,8 +12691,7 @@ backslash (<code>\</code>).</para>
         </listitem>
         <listitem>
             <para>When used in any other admissible structural element (<link linkend="group"><code>&lt;group></code></link> or <link linkend="unit"><code>&lt;unit></code></link>) or any of the elements defined in the
-                    <link linkend="ITS-module">ITS
-                    Module</link>:</para>
+                    <link linkend="ITS-module">ITS                    Module</link>:</para>
             <para>The value of the <link linkend="itsm_annotatorsRef"><code>annotatorsRef</code></link> attribute of its parent element
                 (which can be undefined).</para>
         </listitem>
@@ -13033,8 +12879,7 @@ backslash (<code>\</code>).</para>
                 <code>itsm:lang</code> is an attribute analogical to <link linkend="xml_lang"><code>xml:lang</code></link>.
                 Unlike <link linkend="xml_lang"><code>xml:lang</code></link>, it is allowed on XLIFF inline <link linkend="annotations">Annotations</link>.
                 The normative behavior of this attribute results from the <firstterm>XLIFF
-                    Core</firstterm> behavior as further specified by the <link linkend="langAnnotation">ITS
-                    Language Information Annotation</link>.</para>
+                    Core</firstterm> behavior as further specified by the <link linkend="langAnnotation">ITS                    Language Information Annotation</link>.</para>
       </note>
       <warning>
           <para>This attribute belongs to the <code>urn:oasis:names:tc:xliff:itsm:2.1</code>
@@ -13510,11 +13355,9 @@ backslash (<code>\</code>).</para>
     <para>See the <link linkend="lqrAnnotation">ITS Localization Quality Rating Annotation</link> for the normative usage description of this
         attribute when used inline; advanced Constraints follow from that normative usage
         description.</para>
-    <para>See <link linkend="Localization_Quality_Rating_Structural">Localization Quality Rating on
-                Structural Elements</link> for advanced Constraints when used on strcutural
+    <para>See <link linkend="Localization_Quality_Rating_Structural">Localization Quality Rating on                Structural Elements</link> for advanced Constraints when used on strcutural
         elements (<link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, and <link linkend="unit"><code>&lt;unit></code></link>).</para>
-    <para>See <link linkend="Localization_Quality_Rating_Matches">Localization Quality Rating in
-                Translation Candidates Module</link> for advanced Constraints when used
+    <para>See <link linkend="Localization_Quality_Rating_Matches">Localization Quality Rating in                Translation Candidates Module</link> for advanced Constraints when used
         within the <link linkend="candidates">Translation Candidates Module</link>.</para>
     
 
@@ -15074,8 +14917,7 @@ Date: 04 April 2017 -->
             <para><emphasis role="emphasis">Fragment identifier considerations:</emphasis></para>
             <para>Generic XML processors won't be able to resolve XLIFF fragment identifiers, as the
                 fragment identification syntax is specific for XLIFF and has been defined in its
-                    <link linkend="fragid">Fragment
-                    Identification section</link> as of csd03/csprd03 of XLIFF Version
+                    <link linkend="fragid">Fragment                    Identification section</link> as of csd03/csprd03 of XLIFF Version
                 2.1.</para>
         </listitem>
         <listitem id="Intended_usage">

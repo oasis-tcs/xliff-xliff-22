@@ -902,8 +902,7 @@
           for example different versions of a given module or extension to use the same
           prefix).</para></listitem>
     </itemizedlist>
-    <para>See also the <link linkend="ext-constraints">constraints related to how IDs need to be specified in
-      extensions</link> (which applies for modules as well).</para>
+    <para>See also the <link linkend="ext-constraints">constraints related to how IDs need to be specified in      extensions</link> (which applies for modules as well).</para>
   </section>
   <section>
     <title>Relative References</title>
@@ -1308,13 +1307,11 @@
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <remark>Size and Length Restriction
-                        Module</remark> are met.</member>
+                    the <remark>Size and Length Restriction                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>http://www.w3.org/2005/11/its</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS
-                        Module</remark> are met.</member>
+                    the <remark>ITS                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
@@ -1416,13 +1413,11 @@
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <remark>Size and Length Restriction
-                        Module</remark> are met.</member>
+                    the <remark>Size and Length Restriction                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>http://www.w3.org/2005/11/its</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS
-                        Module</remark> are met.</member>
+                    the <remark>ITS                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
                         <glossterm>optional</glossterm>, provided that the Constraints specified in
@@ -1838,8 +1833,7 @@
       <para><emphasis>Rationale:</emphasis> Using a standalone placeholder code for a spanning code
         does not allow for controlling the span (for instance tag order and data integrity) when
           <firstterm>Modifying</firstterm> inline content and is in <emphasis>direct
-            contradiction</emphasis> to the business logic described in <link linkend="representingcodes">Representation of the
-              codes</link> and normative statements included in <link linkend="spanningcodeusage">Usage of &lt;pc> and &lt;sc>/&lt;ec></link>
+            contradiction</emphasis> to the business logic described in <link linkend="representingcodes">Representation of the              codes</link> and normative statements included in <link linkend="spanningcodeusage">Usage of &lt;pc> and &lt;sc>/&lt;ec></link>
       </para>
     </listitem>
   </itemizedlist>
@@ -1847,8 +1841,7 @@
       translatable inline content. The preferred way of protecting portions of inline content from
       translation is the <firstterm>Core</firstterm>
       <link linkend="translateAnnotation">Translate Annotation</link>. See also discussion in
-      the <remark>ITS Module section on representing translatability
-        inline.</remark>. </para></note>
+      the <remark>ITS Module section on representing translatability        inline.</remark>. </para></note>
 </section>
 
     <section id="pc">
@@ -2291,8 +2284,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>The <link linkend="xml_namespace">[XML
-          namespace]</link>
+      <para>The <link linkend="xml_namespace">[XML          namespace]</link>
         <glossterm>must not</glossterm> be used at this extension point.</para>
     </listitem>
     <listitem>
@@ -2306,16 +2298,13 @@
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <remark>Size and Length Restriction
-            Module</remark> are met.</member>
+          the <remark>Size and Length Restriction            Module</remark> are met.</member>
         <member>- attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <remark>ITS
-            Module</remark> are met.</member>
+          the <remark>ITS            Module</remark> are met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>ITS
-            Module</remark> are met.</member>
+            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>ITS            Module</remark> are met.</member>
       </simplelist>
     </listitem>
     
@@ -2365,8 +2354,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>The <link linkend="xml_namespace">[XML
-          namespace]</link>
+      <para>The <link linkend="xml_namespace">[XML          namespace]</link>
         <glossterm>must not</glossterm> be used at this extension point.</para>
     </listitem>
     <listitem>
@@ -2380,16 +2368,13 @@
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <remark>Size and Length Restriction
-            Module</remark> are met.</member>
+          the <remark>Size and Length Restriction            Module</remark> are met.</member>
         <member>- attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code>,
           <glossterm>optional</glossterm>, provided that the Constraints specified in
-          the <remark>ITS
-            Module</remark> are met.</member>
+          the <remark>ITS            Module</remark> are met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>ITS
-            Module</remark> are met.</member>
+            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>ITS            Module</remark> are met.</member>
       </simplelist>
     </listitem>
     
@@ -3250,8 +3235,7 @@
                 <link linkend="unit"><code>&lt;unit></code></link> element.</para>
         </listitem>
 </itemizedlist>    
-<para>See the <link linkend="segorder">Segments
-            Order</link> section for the normative usage description.</para>
+<para>See the <link linkend="segorder">Segments            Order</link> section for the normative usage description.</para>
 </section>
 
     <section id="original">
@@ -3295,8 +3279,7 @@
   <itemizedlist>
     <listitem>
       <para>When used in a <link linkend="note">&lt;note></link> element, the URI value is referring to a <link linkend="segment"><code>&lt;segment></code></link>, <link linkend="source"><code>&lt;source></code></link> or <link linkend="target"><code>&lt;target></code></link> element within the same enclosing <link linkend="unit"><code>&lt;unit></code></link>.</para>
-      <para>When used in a <link linkend="termAnnotation">term
-          annotation</link>, the URI value is referring to a resource providing information about
+      <para>When used in a <link linkend="termAnnotation">term          annotation</link>, the URI value is referring to a resource providing information about
         the term.</para>
     </listitem>
 
@@ -3713,15 +3696,7 @@
     element in which it is used.</para>
   <itemizedlist>
     <listitem>
-      <para>When used in <link linkend="pc">
-          
-        </link>, <link linkend="sc">
-          
-        </link>, <link linkend="ec">
-          
-        </link> or <link linkend="ph">
-          
-        </link>:</para>
+      <para>When used in <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link> or <link linkend="ph">                  </link>:</para>
       <para>The value  <glossterm>must</glossterm> be set to one of the following values:</para>
       <simplelist type="vert">
         <member><code>fmt</code> - Formatting (e.g. a &lt;b> element in HTML)</member>
@@ -3743,18 +3718,12 @@
 &lt;/segment>
 </programlisting>
       </para>
-      <para>One can further specify the type of a code using the <link linkend="subtype">
-          
-        </link>
+      <para>One can further specify the type of a code using the <link linkend="subtype">                  </link>
       attribute.</para>
       <para><emphasis>Default value:</emphasis> Undefined</para>
     </listitem>
     <listitem>
-      <para>When used in <link linkend="mrk">
-          
-        </link> or <link linkend="sm">
-          
-        </link>:</para>
+      <para>When used in <link linkend="mrk">                  </link> or <link linkend="sm">                  </link>:</para>
       <para>One of the following values: <code>generic</code>, <code>comment</code>,
           <code>term</code>, or a user-defined value that is composed of a prefix and a sub-value
         separated by a character <code>:</code> (U+003A).</para>
@@ -3763,11 +3732,7 @@
       <para><emphasis>Default value:</emphasis> <code>generic</code></para>
     </listitem>
     <listitem>
-      <para>When used in <link linkend="group">
-          
-        </link> or <link linkend="unit">
-          
-        </link>:</para>
+      <para>When used in <link linkend="group">                  </link> or <link linkend="unit">                  </link>:</para>
       <para>A value that is composed of a prefix and a sub-value
         separated by a character <code>:</code> (U+003A).</para>
       <para>The prefix is a string uniquely identifying a collection of sub-values for a specific authority.
@@ -3775,41 +3740,15 @@
       <para><emphasis>Default value:</emphasis> Undefined</para>
     </listitem>
   </itemizedlist>
-  <para><emphasis>Used in:</emphasis> <link linkend="group">
-      
-    </link>, <link linkend="unit">
-      
-    </link>, <link linkend="pc">
-      
-    </link>, <link linkend="sc">
-      
-    </link>, <link linkend="ec">
-      
-    </link>, <link linkend="mrk">
-      
-    </link>,  <link linkend="ph">
-      
-    </link> and <link linkend="sm">
-      
-    </link>.</para>
+  <para><emphasis>Used in:</emphasis> <link linkend="group">          </link>, <link linkend="unit">          </link>, <link linkend="pc">          </link>, <link linkend="sc">          </link>, <link linkend="ec">          </link>, <link linkend="mrk">          </link>,  <link linkend="ph">          </link> and <link linkend="sm">          </link>.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
       <para><firstterm>Modifiers</firstterm> updating the attribute <link linkend="type">
           <code>type</code>
-        </link> on <link linkend="pc">
-          
-        </link>, <link linkend="sc">
-          
-        </link>, <link linkend="ec">
-          
-        </link>, or
-          <link linkend="ph">
-          
-        </link>
-        <glossterm>must</glossterm> also update or delete <link linkend="subtype">
-          
-        </link>.</para>
+        </link> on <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link>, or
+          <link linkend="ph">                  </link>
+        <glossterm>must</glossterm> also update or delete <link linkend="subtype">                  </link>.</para>
     </listitem>
   </itemizedlist>
 </section>
@@ -5072,8 +5011,7 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
           Requirements within <firstterm>Translations</firstterm> can only be checked on existing
             <link linkend="target"><code>&lt;target></code></link> elements, i.e. non-conformance is not reported on
             <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link> elements without <link linkend="target"><code>&lt;target></code></link> children.</para>
-        <para>The <link linkend="CoreSchematron">XLIFF Core Schematron
-            Schema</link> will throw <emphasis>Warnings</emphasis> for all existing <link linkend="target"><code>&lt;target></code></link> elements where codes don't conform to the <link linkend="editinghints">Editing Hints</link> Processing Requirements, except for <link linkend="target"><code>&lt;target></code></link> children of <link linkend="segment"><code>&lt;segment></code></link> elements with the <link linkend="state"><code>state</code></link> attribute set to
+        <para>The <link linkend="CoreSchematron">XLIFF Core Schematron            Schema</link> will throw <emphasis>Warnings</emphasis> for all existing <link linkend="target"><code>&lt;target></code></link> elements where codes don't conform to the <link linkend="editinghints">Editing Hints</link> Processing Requirements, except for <link linkend="target"><code>&lt;target></code></link> children of <link linkend="segment"><code>&lt;segment></code></link> elements with the <link linkend="state"><code>state</code></link> attribute set to
             <code>final</code>, where it will throw <emphasis>Errors</emphasis>.</para>
       </note>
       
@@ -5715,8 +5653,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 
   <para>In the context of XLIFF, other types representations sometimes called
   "segmentation" can be represented using annotations. For example: the terms
-  in a segment can be identified and marked up using the <link linkend="termAnnotation">term
-  annotation</link>.</para>
+  in a segment can be identified and marked up using the <link linkend="termAnnotation">term  annotation</link>.</para>
 
   <para>XLIFF does not specify how segmentation is carried out, only how to represent its result.
     Material provisions regarding segmentation can be found for instance in the Segmentation Rules
@@ -5970,8 +5907,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       attribute is strictly optional with the default <code>initial</code>, yet it is advisable for
       a corporate localization operation to request that their service providers progress that
       attribute through <code>translated</code> and <code>reviewed</code> to <code>final</code>.
-      This attribute cannot be progressed from the <code>initial</code> state without a <link linkend="target"><code>&lt;target></code></link> child and all violations of <link linkend="editinghints">Editing
-        Hints</link> will become validation errors only in the <code>final</code> state. Usage of
+      This attribute cannot be progressed from the <code>initial</code> state without a <link linkend="target"><code>&lt;target></code></link> child and all violations of <link linkend="editinghints">Editing        Hints</link> will become validation errors only in the <code>final</code> state. Usage of
         <link linkend="state"><code>state</code></link> also
       allows for fine-tuning of a specific workflow <emphasis>State Machine</emphasis> with the
       dependent <link linkend="substate"><code>subState</code></link> attribute. With the attribute <link linkend="substate"><code>subState</code></link>,
@@ -5980,8 +5916,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       their documentation.</para>
     <para>When <firstterm>Mergers</firstterm> need to perform the <firstterm>Merge</firstterm> in a
       non-final state, when the presence of targets cannot be guaranteed, they are free to create
-      preliminary targets again following the <link linkend="contentmodificationwithouttarget">Processing Requirements for
-        Content Modification Without Target</link></para>
+      preliminary targets again following the <link linkend="contentmodificationwithouttarget">Processing Requirements for        Content Modification Without Target</link></para>
   </section>
   
 </section>
@@ -5990,8 +5925,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     <para>XLIFF 2.0 offers two mechanisms for storing custom data in an XLIFF document:</para>
     <orderedlist continuation="restarts" inheritnum="ignore">
         <listitem>
-            <para>Using the <remark>Metadata 
-                module</remark> for storing custom data in elements defined by the official XLIFF 
+            <para>Using the <remark>Metadata                 module</remark> for storing custom data in elements defined by the official XLIFF 
                 specification.</para>
         </listitem>
         <listitem>
@@ -6137,8 +6071,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para><emphasis role="emphasis">Fragment identifier considerations:</emphasis></para>
             <para>Generic XML processors won't be able to resolve XLIFF fragment identifiers, as the
                 fragment identification syntax is specific for XLIFF and has been defined in its
-                    <link linkend="fragid">Fragment
-                    Identification section</link> as of csd03/csprd03 of XLIFF Version
+                    <link linkend="fragid">Fragment                    Identification section</link> as of csd03/csprd03 of XLIFF Version
                 2.1.</para>
         </listitem>
         <listitem id="Intended_usage">
