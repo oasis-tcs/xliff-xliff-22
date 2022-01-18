@@ -2,12 +2,14 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified"
     xmlns:xlf="urn:oasis:names:tc:xliff:document:2.0"
+    xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
     targetNamespace="urn:oasis:names:tc:xliff:document:2.0">
 
   <!-- Import -->
 
   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
       schemaLocation="informativeCopiesOf3rdPartySchemas/w3c/xml.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:xliff:metadata:2.0" schemaLocation="matches.xsd"/>Ï
 
   <!-- Element Group -->
 
@@ -106,6 +108,8 @@
   <xs:element name="xliff">
     <xs:complexType mixed="false">
       <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="xlf:notes"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="mda:metadata"/>
         <xs:element minOccurs="1" maxOccurs="unbounded" ref="xlf:file"/>
       </xs:sequence>
       <xs:attribute name="version" use="required"/>

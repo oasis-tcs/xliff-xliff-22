@@ -72,10 +72,10 @@
     </authorgroup>
 
 
-    <pubdate>11 December 2021</pubdate>
+    <pubdate>18 January 2022</pubdate>
 
     <copyright>
-      <year>2021</year>
+      <year>2022</year>
       <holder>OASIS Open, Inc. All Rights Reserved.</holder>
     </copyright>
 
@@ -194,7 +194,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        11 December 2021. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        18 January 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -203,7 +203,7 @@
     <legalnotice role="notices">
       <title>Notices</title>
 
-      <para>Copyright © OASIS Open 2021. All Rights Reserved.</para>
+      <para>Copyright © OASIS Open 2022. All Rights Reserved.</para>
 
       <para>All capitalized terms in the following text have the meanings assigned to them in the
         OASIS Intellectual Property Rights Policy (the "OASIS IPR Policy"). The full <ulink url="https://www.oasis-open.org/policies-guidelines/ipr">Policy</ulink> may be found at
@@ -1004,6 +1004,12 @@
   <programlisting format="linespecific">
 <link linkend="xliff"><code>&lt;xliff></code></link>
 |
++---<link linkend="notes"><code>&lt;notes></code></link> ?
+| |
+| +---<link linkend="note"><code>&lt;note></code></link> +
+|
++---&lt;other> ?
+|
 +---<link linkend="file"><code>&lt;file></code></link> +
   |
   +---<link linkend="skeleton"><code>&lt;skeleton></code></link> ?
@@ -1080,11 +1086,11 @@
     <para>Root element for XLIFF documents.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist type="vert">
-        <member>- One or more <link linkend="file"><code>&lt;file></code></link> 
-            elements</member>
+        <member>- Zero or one <link linkend="notes"><code>&lt;notes></code></link></member>
+        <member>- Zero or one <link linkend="metadata"><code>&lt;mda:metadata></code></link></member>
+        <member>- One or more <link linkend="file"><code>&lt;file></code></link> elements</member>
     </simplelist>
-    
-    
+
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
         <member>- <link linkend="version"><code>version</code></link>, <glossterm>required</glossterm></member>
@@ -1093,19 +1099,19 @@
         <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm></member>
         <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
     </simplelist>
-    
+
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
             <para>The <link linkend="trgLang"><code>trgLang</code></link> attribute is <glossterm>required</glossterm>
-                if and only if the <firstterm>XLIFF Document</firstterm> contains <link linkend="target"><code>&lt;target></code></link> elements that are children
-                of <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link>. </para>
+                if and only if the <firstterm>XLIFF Document</firstterm> contains <link linkend="target"><code>&lt;target></code></link>
+                elements that are children of <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link>. </para>
         </listitem>
         <listitem>
             <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
                 allowed by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
-                <member>- the <code><link linkend="itsm_version">its:version</link></code>attribute from the
+                <member>- the <code><link linkend="itsm_version">its:version</link></code> attribute from the
                     namespace <code>http://www.w3.org/2005/11/its</code>,
                         <glossterm>optional</glossterm>.</member>
             </simplelist>
@@ -1504,7 +1510,7 @@
     <section id="note">
     <title>note</title>
     <para>This is an XLIFF specific way how to present end user readable comments and annotations. A
-        note can contain information about <link linkend="source"><code>&lt;source></code></link>, <link linkend="target"><code>&lt;target></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="group"><code>&lt;group></code></link>, or <link linkend="file"><code>&lt;file></code></link> elements.</para>
+        note can contain information about <link linkend="source"><code>&lt;source></code></link>, <link linkend="target"><code>&lt;target></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="file"><code>&lt;file></code></link> or <link linkend="xliff"><code>&lt;xliff></code></link> elements.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist type="vert">
         <member>- Text</member>
@@ -14906,7 +14912,7 @@ Date: 04 April 2017 -->
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 11 December 2021 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
+                that was last published on 18 January 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">

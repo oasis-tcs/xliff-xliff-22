@@ -12,8 +12,8 @@
                 ><code>&lt;source></code></olink>, <olink targetdoc="target.xml" targetptr="target"
                 ><code>&lt;target></code></olink>, <olink targetdoc="unit.xml" targetptr="unit"
                 ><code>&lt;unit></code></olink>, <olink targetdoc="group.xml" targetptr="group"
-                ><code>&lt;group></code></olink>, or <olink targetdoc="file.xml" targetptr="file"
-                ><code>&lt;file></code></olink> elements.</para>
+                ><code>&lt;group></code></olink>, <olink targetdoc="file.xml" targetptr="file"
+                ><code>&lt;file></code></olink> or <olink targetdoc="xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink> elements.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
         <member>- Text</member>
