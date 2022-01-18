@@ -10,8 +10,8 @@
     <para>Root element for XLIFF documents.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
-        <member>- Zero or one <olink targetdoc="structural" targetptr="notes"><code>&lt;notes></code></olink></member>
-        <member>- Zero or one <olink targetdoc="../metadata/" targetptr="metadata"><code>&lt;mda:metadata></code></olink></member>
+        <member>- Zero or one <olink targetdoc="structural" targetptr="notes"><code>&lt;notes></code></olink> element followed by</member>
+        <member>- Zero or one <olink targetdoc="../metadata/" targetptr="metadata"><code>&lt;mda:metadata></code></olink> element followed by</member>
         <member>- One or more <olink targetdoc="structural" targetptr="file"><code>&lt;file></code></olink> elements</member>
     </simplelist>
 

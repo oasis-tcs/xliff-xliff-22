@@ -1083,8 +1083,8 @@
     <para>Root element for XLIFF documents.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist type="vert">
-        <member>- Zero or one <link linkend="notes"><code>&lt;notes></code></link></member>
-        <member>- Zero or one <remark><code>&lt;mda:metadata></code></remark></member>
+        <member>- Zero or one <link linkend="notes"><code>&lt;notes></code></link> element followed by</member>
+        <member>- Zero or one <remark><code>&lt;mda:metadata></code></remark> element followed by</member>
         <member>- One or more <link linkend="file"><code>&lt;file></code></link> elements</member>
     </simplelist>
 
