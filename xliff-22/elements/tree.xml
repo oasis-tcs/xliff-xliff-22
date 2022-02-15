@@ -17,6 +17,12 @@
   <programlisting format="linespecific">
 <olink targetdoc="structural/xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink>
 |
++---<olink targetdoc="structural/notes.xml" targetptr="notes"><code>&lt;notes></code></olink> ?
+| |
+| +---<olink targetdoc="structural/note.xml" targetptr="note"><code>&lt;note></code></olink> +
+|
++---&lt;other> ?
+|
 +---<olink targetdoc="structural/file.xml" targetptr="file"><code>&lt;file></code></olink> +
   |
   +---<olink targetdoc="structural/skeleton.xml" targetptr="skeleton"><code>&lt;skeleton></code></olink> ?

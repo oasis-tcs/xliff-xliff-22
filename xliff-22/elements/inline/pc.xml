@@ -16,28 +16,28 @@
     <member>- Text</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/cp.xml"
-    targetptr="cp"><code>&lt;cp&gt;</code></olink> elements</member>
+    targetptr="cp"><code>&lt;cp></code></olink> elements</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/ph.xml"
-    targetptr="ph"><code>&lt;ph&gt;</code></olink> elements</member>
+    targetptr="ph"><code>&lt;ph></code></olink> elements</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/pc.xml"
-    targetptr="pc"><code>&lt;pc&gt;</code></olink> elements</member>
+    targetptr="pc"><code>&lt;pc></code></olink> elements</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/cs.xml"
-    targetptr="sc"><code>&lt;sc&gt;</code></olink> elements</member>
+    targetptr="sc"><code>&lt;sc></code></olink> elements</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/cs.xml"
-    targetptr="ec"><code>&lt;ec&gt;</code></olink> elements</member>
+    targetptr="ec"><code>&lt;ec></code></olink> elements</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/mrk.xml"
-    targetptr="mrk"><code>&lt;mrk&gt;</code></olink> elements</member>
+    targetptr="mrk"><code>&lt;mrk></code></olink> elements</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/sm.xml"
-    targetptr="sm"><code>&lt;sm&gt;</code></olink> elements</member>
+    targetptr="sm"><code>&lt;sm></code></olink> elements</member>
 
     <member>- Zero, one or more <olink targetdoc="../inline/em.xml"
-    targetptr="em"><code>&lt;em&gt;</code></olink> elements</member>
+    targetptr="em"><code>&lt;em></code></olink> elements</member>
   </simplelist>
 
   <para>Text and inline elements may appear in any order.</para>
@@ -46,13 +46,13 @@
 
   <simplelist>
     <member>- <olink targetdoc="structural/source.xml"
-    targetptr="source"><code>&lt;source&gt;</code></olink></member>
+    targetptr="source"><code>&lt;source></code></olink></member>
     <member>- <olink
     targetdoc="structural/target.xml"
-    targetptr="target"><code>&lt;target&gt;</code></olink></member>
+    targetptr="target"><code>&lt;target></code></olink></member>
     <member>- <link
-    linkend="pc"><code>&lt;pc&gt;</code></link></member>
-    <member>-<olink targetdoc="mrk.xml" targetptr="mrk"><code>&lt;mrk&gt;</code></olink></member>
+    linkend="pc"><code>&lt;pc></code></link></member>
+    <member>-<olink targetdoc="mrk.xml" targetptr="mrk"><code>&lt;mrk></code></olink></member>
   </simplelist>
 
   <para><emphasis>Attributes:</emphasis></para>
@@ -120,14 +120,16 @@
   <para><emphasis>Example:</emphasis></para>
 
   <programlisting format="linespecific">
-&lt;unit id="1"&gt;
-  &lt;originalData&gt;
-    &lt;data id="1"&gt;&amp;lt;B&amp;gt;&lt;/data&gt;
-    &lt;data id="2"&gt;&amp;lt;/B&amp;gt;&lt;/data&gt;
-  &lt;/originalData&gt;
-  &lt;segment&gt;&lt;pc id="1" dataRefStart="1" dataRefEnd="2"&gt;
-      Important&lt;/pc&gt; text&lt;/source&gt;&lt;/segment&gt;
-&lt;/unit&gt;
+&lt;unit id="1">
+  &lt;originalData>
+    &lt;data id="1">&amp;lt;B&amp;gt;&lt;/data>
+    &lt;data id="2">&amp;lt;/B&amp;gt;&lt;/data>
+  &lt;/originalData>
+  &lt;segment>
+    &lt;source>&lt;pc id="1" dataRefStart="1" dataRefEnd="2">Important&lt;/pc>
+      text&lt;/source>
+  &lt;/segment>
+&lt;/unit>
 </programlisting>
 
   <itemizedlist>
@@ -159,7 +161,7 @@
     <listitem>
       <para><firstterm>Extractors</firstterm>
         <glossterm>must not</glossterm> use the <olink targetdoc="../inline/pc.xml"
-          targetptr="pc"><code>&lt;pc&gt;</code></olink> element to represent standalone codes.</para>
+          targetptr="pc"><code>&lt;pc></code></olink> element to represent standalone codes.</para>
       <para>Rationale: Using a spanning code for a standalone code can easily result in having
         text inside a span where the original format does not allow it.</para>
           </listitem>

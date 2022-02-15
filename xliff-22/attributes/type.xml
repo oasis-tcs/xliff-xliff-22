@@ -33,10 +33,10 @@
       <para><emphasis>Example:</emphasis>
         <programlisting>
 &lt;segment&gt;
-  &lt;source xml:lang="cs">&lt;pc type="quote"><foreignphrase lang="cs">Blázen,
+  &lt;source>&lt;pc id="q1" type="quote"><foreignphrase lang="cs">Blázen,
       chce dobýt točnu v takovém počasí&lt;/pc>, dodal slovy svého
       oblíbeného imaginárního autora.</foreignphrase>&lt;/source>
-  &lt;target xml:lang="en">&lt;pc type="quote">Madman, he wants to conquer the
+  &lt;target>&lt;pc id="q1" type="quote">Madman, he wants to conquer the
       pole in this weather&lt;/pc&gt;, offered he the words of his
       favourite imaginary playwright.&lt;/target&gt;
 &lt;/segment&gt;

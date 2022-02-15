@@ -52,17 +52,17 @@
                 <para> When the <olink targetdoc="../attributes/id.xml" targetptr="id"
                             ><code>xlf:id</code></olink> attribute is used on <olink
                         targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
-                            ><code>&lt;xlf:mrk&gt;</code></olink>, <olink
+                            ><code>&lt;xlf:mrk></code></olink>, <olink
                         targetdoc="../elements/inline/sm.xml" targetptr="sm"
-                            ><code>&lt;xlf:sm&gt;</code></olink>, <olink
+                            ><code>&lt;xlf:sm></code></olink>, <olink
                         targetdoc="../elements/inline/pc.xml" targetptr="pc"
-                            ><code>&lt;xlf:pc&gt;</code></olink>, <olink
+                            ><code>&lt;xlf:pc></code></olink>, <olink
                         targetdoc="../elements/inline/sc.xml" targetptr="sc"
-                            ><code>&lt;xlf:sc&gt;</code></olink>, <olink
+                            ><code>&lt;xlf:sc></code></olink>, <olink
                         targetdoc="../elements/inline/ec.xml" targetptr="ec"
-                            ><code>&lt;xlf:ec&gt;</code></olink>, or <olink
+                            ><code>&lt;xlf:ec></code></olink>, or <olink
                         targetdoc="../elements/inline/ph.xml" targetptr="ph"
-                            ><code>&lt;xlf:ph&gt;</code></olink> elements reused within the <link
+                            ><code>&lt;xlf:ph></code></olink> elements reused within the <link
                         linkend="candidates">Translation Candidates Module</link>:</para>
                 <itemizedlist>
                     <listitem>
@@ -105,22 +105,22 @@
                         targetdoc="../attributes/datarefend.xml" targetptr="datarefend"
                             ><code>xlf:dataRefEnd</code></olink> attributes are used on <olink
                         targetdoc="../elements/inline/pc.xml" targetptr="pc"
-                            ><code>&lt;xlf:pc&gt;</code></olink>, <olink
+                            ><code>&lt;xlf:pc></code></olink>, <olink
                         targetdoc="../elements/inline/sc.xml" targetptr="sc"
-                            ><code>&lt;xlf:sc&gt;</code></olink>, <olink
+                            ><code>&lt;xlf:sc></code></olink>, <olink
                         targetdoc="../elements/inline/ec.xml" targetptr="ec"
-                            ><code>&lt;xlf:ec&gt;</code></olink>, or <olink
+                            ><code>&lt;xlf:ec></code></olink>, or <olink
                         targetdoc="../elements/inline/ph.xml" targetptr="ph"
-                            ><code>&lt;xlf:ph&gt;</code></olink> elements reused within the <link
+                            ><code>&lt;xlf:ph></code></olink> elements reused within the <link
                         linkend="candidates">Translation Candidates Module</link>, their
                         <code>NMTOKEN</code> values <glossterm>must</glossterm> identify <olink
                         targetdoc="../elements/structural/data.xml" targetptr="data"
-                            ><code>&lt;data&gt;</code></olink> elements within the enclosing <olink
+                            ><code>&lt;data></code></olink> elements within the enclosing <olink
                         targetdoc="../elements/candidates/match.xml" targetptr="match"
                             ><code>&lt;match></code></olink> element. Those attributes
                         <glossterm>must not</glossterm> be used without corresponding <olink
                         targetdoc="../elements/structural/data.xml" targetptr="data"
-                            ><code>&lt;data&gt;</code></olink> elements within the enclosing <olink
+                            ><code>&lt;data></code></olink> elements within the enclosing <olink
                         targetdoc="../elements/candidates/match.xml" targetptr="match"
                             ><code>&lt;match></code></olink> element. </para>
             </listitem>
@@ -167,24 +167,24 @@
         <para>For example:</para>
 
         <programlisting>
-&lt;unit id="1"&gt;
-  &lt;mtc:matches&gt;
-    &lt;mtc:match ref="#m1"&gt;
-      &lt;source&gt;He is my friend.&lt;/source&gt;
-      &lt;target&gt;Il est mon ami.&lt;/target&gt;
-    &lt;/mtc:match&gt;
-    &lt;mtc:match ref="#m1"&gt;
-      &lt;source&gt;He is my best friend.&lt;/source&gt;
-      &lt;target&gt;Il est mon meilleur ami.&lt;/target&gt;
-    &lt;/mtc:match&gt;
-  &lt;/mtc:matches&gt;
-  &lt;segment&gt;
-    &lt;source&gt;&lt;mrk id="m1" type="mtc:match"&gt;He is my friend.&lt;/mrk&gt;&lt;/source&gt;
-  &lt;/segment&gt;
-  &lt;segment&gt;
-    &lt;source&gt;Yet, I barely see him.&lt;/source&gt;
-  &lt;/segment&gt;
-&lt;/unit&gt;
+&lt;unit id="1">
+  &lt;mtc:matches>
+    &lt;mtc:match ref="#m1" similarity="68">
+      &lt;source>He is my friend.&lt;/source>
+      &lt;target>Il est mon ami.&lt;/target>
+    &lt;/mtc:match>
+    &lt;mtc:match ref="#m1" similarity="60">
+      &lt;source>He is my best friend.&lt;/source>
+      &lt;target>Il est mon meilleur ami.&lt;/target>
+    &lt;/mtc:match>
+  &lt;/mtc:matches>
+  &lt;segment>
+    &lt;source>Paul &lt;mrk id="m1" type="mtc:match">is my friend&lt;/mrk>.&lt;/source>
+  &lt;/segment>
+  &lt;segment>
+    &lt;source>Yet, I barely see him.&lt;/source>
+  &lt;/segment>
+&lt;/unit>
 </programlisting>
     </section>
 
@@ -285,26 +285,34 @@
         <title>Example</title>
 
         <programlisting format="linespecific">
-&lt;mtc:matches&gt;
-  &lt;mtc:match id="[NMTOKEN]"&gt;
-    &lt;xlf:source&gt;&lt;!-- text data --&gt;&lt;/xlf:source&gt;
-    &lt;xlf:target&gt;&lt;!-- text data --&gt;&lt;/xlf:target&gt;
-    &lt;xlf:originalData&gt;
-      &lt;xlf:data id="[NMTOKEN]"&gt;
-        &lt;xlf:cp hex="[required]"&gt;&lt;!-- text data --&gt;&lt;/xlf:cp&gt;
-      &lt;/xlf:data&gt;
-    &lt;/xlf:originalData&gt;
-    &lt;mda:metadata&gt;
-      &lt;mda:metagroup&gt;&lt;!-- One or more of mda:metagroup or mda:meta --&gt;
-          &lt;/mda:metagroup&gt;
-    &lt;/mda:metadata&gt;
-    &lt;!-- Zero, one or more elements from any namespace --&gt;
-  &lt;/mtc:match&gt;
-&lt;/mtc:matches&gt;
+&lt;unit id="2">
+  &lt;mtc:matches>
+    &lt;mtc:match origin="Self" type="tm" ref="#2-0" matchQuality="74">
+      &lt;source xml:lang="es">Esta es una línea de
+        &lt;ph id="ph1"/>texto&lt;ph id="ph2"/> que necesita traducción.&lt;/source>
+      &lt;target xml:lang="en">This is a line of
+        &lt;ph id="ph1"/>text&lt;ph id="ph2"/> that needs translation.&lt;/target>
+    &lt;/mtc:match>
+    &lt;mtc:match origin="Self" type="tm" ref="#2-0" matchQuality="66">
+      &lt;source xml:lang="es">Esta es la primera línea de texto que 
+        necesita traducción.&lt;/source>
+      &lt;target xml:lang="en">This is the first line of text that needs 
+        translation.&lt;/target>
+    &lt;/mtc:match>
+  &lt;/mtc:matches>
+  &lt;originalData>
+    &lt;data id="ph1">&amp;lt;start/>&lt;/data>
+    &lt;data id="ph2">&amp;lt;end/>&lt;/data>
+  &lt;/originalData>
+  &lt;segment state="final" id="2-0">
+    &lt;source>Otra línea de &lt;ph id="ph1"/>texto&lt;ph id="ph2"/> que 
+      necesita traducción.&lt;/source>
+    &lt;target>Another line of &lt;ph id="ph1"/>text&lt;ph id="ph2"/> that 
+      needs translation.&lt;/target>
+  &lt;/segment>
+&lt;/unit>
  </programlisting>
 
     </section>
-
-
 
 </section>

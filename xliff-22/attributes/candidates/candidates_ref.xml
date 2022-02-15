@@ -32,4 +32,15 @@
       
     </listitem>
   </itemizedlist>
+  
+  <note>
+    <para>When the <olink targetdoc="candidates_ref.xml" targetptr="candidates_ref"
+      ><code>ref</code></olink> attribute points to a <olink
+        targetdoc="../elements/structural/segment.xml" targetptr="segment"
+        ><code>&lt;segment></code></olink> element, by default the <olink
+          targetdoc="../elements/candidates/match.xml" targetptr="match"
+          ><code>&lt;match></code></olink> content applies to its <olink
+            targetdoc="../elements/structural/source.xml" targetptr="source"
+            ><code>&lt;source></code></olink> child.</para>
+  </note>
 </section>

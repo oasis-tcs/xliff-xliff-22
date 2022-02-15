@@ -39,20 +39,21 @@
 
 <!-- Entities for XLIFF V2.x publishing.................................... -->
 <!--copy all of these to all *.sch files and also to the Oxygen framework for validating Docbook 4.5 if you use Oxygen -->
-<!ENTITY name "xliff-core-v2.2">
+<!ENTITY name "xliff-core">
+<!ENTITY exname "xliff-extended">
 <!ENTITY pversion "2.1">
 <!ENTITY version "2.2">
 <!ENTITY bschversion "2.0">
 <!ENTITY cschversion "2.0">
 
 <!ENTITY stage "wd">
-<!-- <!ENTITY pstage "csprd01"> -->
+<!ENTITY pstage "os"> 
 <!ENTITY standard "Specification Draft">
 <!ENTITY this-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&stage;">
-<!ENTITY previous-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&pstage;">
+<!ENTITY previous-loc "https://docs.oasis-open.org/xliff/xliff-core/v&pversion;/&pstage;">
 <!ENTITY latest-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;">
-<!ENTITY pubdate "16 August &pubyear;">
-<!ENTITY pubyear "2021">
+<!ENTITY pubdate "18 January &pubyear;">
+<!ENTITY pubyear "2022">
 <!ENTITY releaseinfo "Standards Track Work Product">
 <!-- End of XLIFF V2.x publishing entities -->
 
