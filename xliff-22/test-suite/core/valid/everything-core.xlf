@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr" xmlns:my="myNamespace" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0" my:attr="value1">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.1" srcLang="en" trgLang="fr" xmlns:my="myNamespace" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0" my:attr="value1">
  <file id="f1" canResegment="no" translate="no" srcDir="rtl" trgDir="rtl" original="myfile" my:attr="value2" xml:space="preserve">
   <skeleton>
    Some non-standard data
