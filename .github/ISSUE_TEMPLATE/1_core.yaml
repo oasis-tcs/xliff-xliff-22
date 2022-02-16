@@ -1,0 +1,34 @@
+name: XLIFF Core Proposal
+description: File a XLIFF core specification change proposal
+title: "[Core Proposal] <title>"
+labels: [core-proposal]
+body:
+- type: input
+  id: authors
+  attributes:
+    label: Authors
+    description: List authors of this proposal
+- type: checkboxes
+  attributes:
+    label: Area of Changes
+    description: Check all applicable change areas affected by this proposal
+    options:
+      - label: XLIFF specification document
+      - label: XLIFF schema
+      - label: XLIFF validator
+      - label: Example files
+- type: textarea
+  id: proposal-description
+  attributes:
+    label: Detailed Description
+    description: Describe the change proposal in detail
+- type: textarea
+  id: use-case
+  attributes:
+    label: Example Use Case
+    description: Provide example use case if any
+- type: textarea
+  id: compatibility
+  attributes:
+    label: Compatibility Impacts
+    description: Describe any potential compatibility issues affectign existing users and tools

@@ -1,0 +1,10 @@
+name: XLIFF TC Task
+description: File a generic issue for XLIFF TC tasks
+title: "[Task] <title>"
+labels: [task]
+body:
+- type: textarea
+  id: task-description
+  attributes:
+    label: Detailed Description
+    description: Describe the task details
