@@ -1,0 +1,21 @@
+name: XLIFF Specification Erratum
+description: File a XLIFF specification erratum proposal
+title: "[Erratum] <title>"
+labels: [erratum]
+body:
+- type: dropdown
+  attributes:
+    label: Specification Type
+    description: Check all applicable change areas affected by this proposal
+    options:
+      - XLIFF core specification
+      - XLIFF extended specification
+- type: input
+  id: spec-revision
+  attributes:
+    label: Revision
+- type: textarea
+  id: erratum-description
+  attributes:
+    label: Detailed Description
+    description: Describe the proposed correction
