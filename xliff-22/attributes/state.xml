@@ -39,7 +39,7 @@
         <listitem>
             <para>When the optional <link linkend="state"><code>state</code></link> attribute is
                 added to a <olink targetdoc="../elements/structural/segment.xml" targetptr="segment"
-                        ><code>&lt;segment></code></olink> element, it's value must be set to
+                        ><code>&lt;segment></code></olink> element, it's value MUST be set to
                     <code>initial</code> if the element doesn't have a <olink
                     targetdoc="../elements/structural/target.xml" targetptr="target"
                         ><code>&lt;target></code></olink> child. All valid values can be used when a
