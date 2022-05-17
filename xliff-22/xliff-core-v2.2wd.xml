@@ -71,7 +71,7 @@
 
     </authorgroup>
 
-    <pubdate>18 January 2022</pubdate>
+    <pubdate>17 May 2022</pubdate>
 
     <copyright>
       <year>2022</year>
@@ -191,7 +191,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        18 January 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        17 May 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -3397,51 +3397,54 @@
 </programlisting>
 </section>
     <section id="state">
-  <title>state</title>
+    <title>state</title>
 
-  <para>State - indicates the state of the translation of a segment.</para>
+    <para>State - indicates the state of the translation of a segment.</para>
 
-    <para><emphasis>Value description:</emphasis> The value <glossterm>must</glossterm> be set to one of the following values:</para>
+    <para><emphasis>Value description:</emphasis> The value <glossterm>must</glossterm> be set to
+        one of the following values:</para>
 
-  <simplelist type="vert">
-   <member><code>initial</code> - indicates the segment is in its initial state.</member>
-   <member><code>translated</code> - indicates the segment has been translated.</member>
-   <member><code>reviewed</code> - indicates the segment has been reviewed.</member>
-   <member><code>final</code> - indicates the segment is finalized and ready to be used.</member>
-  </simplelist>
-  <para>The 4 defined states constitute a simple linear state machine that advances in the above
+    <simplelist type="vert">
+        <member><code>initial</code> - indicates the segment is in its initial state.</member>
+        <member><code>translated</code> - indicates the segment has been translated.</member>
+        <member><code>reviewed</code> - indicates the segment has been reviewed.</member>
+        <member><code>final</code> - indicates the segment is finalized and ready to be
+            used.</member>
+    </simplelist>
+    <para>The 4 defined states constitute a simple linear state machine that advances in the above
         given order. No particular workflow or process is prescribed, except that the three states
         more advanced than the default <code>initial</code> assume the existence of a
             <firstterm>Translation</firstterm> within the segment. One can further specify the state
         of the <firstterm>Translation</firstterm> using the <link linkend="substate"><code>subState</code></link> attribute.</para>
 
-    <para><emphasis>Default value:</emphasis> <code>initial</code></para>
+    <para><emphasis>Default value:</emphasis>
+        <code>initial</code></para>
 
-  <para><emphasis>Used in:</emphasis> <link linkend="segment"><code>&lt;segment></code></link></para>
+    <para><emphasis>Used in:</emphasis>
+        <link linkend="segment"><code>&lt;segment></code></link></para>
 
-    
     <itemizedlist>
         <title>Processing Requirements</title>
         <listitem>
-            <para><firstterm>Writers</firstterm>
-                <glossterm>must not</glossterm> set the <link linkend="state"><code>state</code></link> attribute values to other than the default
-                    <code>initial</code> if and only if the <link linkend="segment"><code>&lt;segment></code></link> element where the attribute is set
-                doesn't have the <link linkend="target"><code>&lt;target></code></link> child. </para>
+            <para>When the optional <link linkend="state"><code>state</code></link> attribute is
+                added to a <link linkend="segment"><code>&lt;segment></code></link> element, it's value must be set to
+                    <code>initial</code> if the element doesn't have a <link linkend="target"><code>&lt;target></code></link> child. All valid values can be used when a
+                    <link linkend="target"><code>&lt;target></code></link> child is present. </para>
         </listitem>
-
-
         <listitem>
-            <para><firstterm>Writers</firstterm> updating the attribute <link linkend="state"><code>state</code></link> <glossterm>must</glossterm> also update or delete
-                <link linkend="substate"><code>subState</code></link>.</para>
+            <para><firstterm>Writers</firstterm> updating the attribute <link linkend="state"><code>state</code></link>
+                <glossterm>must</glossterm> also update or delete <link linkend="substate"><code>subState</code></link>.</para>
         </listitem>
     </itemizedlist>
-    
-    <note><para><link linkend="state"><code>state</code></link> is an <glossterm>optional</glossterm>
+
+    <note>
+        <para><link linkend="state"><code>state</code></link> is an <glossterm>optional</glossterm>
             attribute of segments with a default value and segmentation can change as the XLIFF
             roundtrip progresses, hence implementers don't have to make explicit use of the
             attribute. However setting of the attribute is advantageous if a workflow needs to make
             use of Advanced Validation methods. For instance missing non-removable codes will only
-            be reported as an Error by the <link linkend="CoreSchematron">XLIFF Core Schematron Schema</link> when the <link linkend="state"><code>state</code></link> is <code>final</code>.</para></note>
+            be reported as an Error by the <link linkend="CoreSchematron">XLIFF Core Schematron Schema</link> when the <link linkend="state"><code>state</code></link> is <code>final</code>.</para>
+    </note>
 </section>
 
 
@@ -6066,7 +6069,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 18 January 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
+                that was last published on 17 May 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">
@@ -6369,59 +6372,24 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     <title>Specification Change Tracking</title>
 
     <section id="ChangeTrackWRT20">
-<title>High Level Summary of Changes made in Comparison to XLIFF Version 2.1</title>
-<para>This is to facilitate human tracking of changes between XLIFF Versions 2.2 and 2.1. </para>
-   
-   
+   <title>High Level Summary of Changes made in Comparison to XLIFF Version 2.1</title>
+   <para>This is to facilitate human tracking of changes between XLIFF Versions 2.2 and
+      2.1. </para>
+
+
    <orderedlist continuation="restarts" inheritnum="ignore">
       
       <listitem>
-         <para>Two major features are being added in XLIFF Version 2.2:</para>
-         <orderedlist continuation="restarts" inheritnum="ignore">
-            <listitem>
-               <para>Advanced Validation methods</para>
-            </listitem>
-            <listitem>
-               <para>Native Support for ITS 2.0</para>
-            </listitem>
-         </orderedlist>
+         <para>Produced two versions of the specification: </para>
+         <simplelist type="vert">
+            <member><emphasis>Core</emphasis>: simplified version that does not include optional
+               modules.</member>
+            <member><emphasis>Extended</emphasis>: complete version, including all modules.</member>
+         </simplelist>
       </listitem>
       <listitem>
-         <para>The Change Tracking Module was demoted to an extension to free hands of the TC and
-            other implementers while working on a new version of the Change Tracking Module for
-            XLIFF 2.2.</para>
+         <para>Added an optional ref attribute to note element</para>
       </listitem>
-      <listitem>
-         <para>A major bug fix was performed on the core xsd. The core xsd now enforces the
-               <code>xs:language</code> data type on the <code>srcLang</code> and
-               <code>trgLang</code> attributes. It was critical to make this fix, because -- as per
-            OASIS policy -- validation artifacts would prevail over the prose provisions that are
-            correct in both XLIFF 2.2 and XLIFF 2.1.</para>
-      </listitem>
-      <listitem>
-         <para>Also an erroneously omitted Constraint of the <link linkend="xml_lang"><code>xml:lang</code></link> attribute on the <link linkend="source"><code>&lt;source></code></link>
-            element has been added/restored in the normative text.</para>
-      </listitem>
-      <listitem>
-         <para>Apart from the five (5) major changes mentioned above, numerous editorial bugfixes
-            were made to secure greater clarity, either by fixing example errors or omissions, or by
-            reorganizing normative content, so that the intent becomes clear and unequivocal at some
-            troublesome places highlighted by XLIFF 2.1 implementers. </para>
-      </listitem>
-      <listitem>
-         <para>Importantly, the TC decided to drop informative listings of the validation artifacts
-            that had bloated the spec extent unnecessarily, were hard to keep in sync with the
-            actual normative artifacts, while their actual usability proved rather limited --
-            readers who were able to read schema languages would not actually read them as printed
-            listings and would anyways refer to the actual validation artifacts that are now
-            referenced more prominently.</para>
-      </listitem>
-      
-      
-   
-      
-      
-      
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
       practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
@@ -6432,219 +6400,6 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       and structure.</para>
 </section>
     
-    <section id="ReviewChangeTrack">
-<title>Tracking of changes made in response to Public Reviews</title>
-<para>This is to facilitate human tracking of changes in the specification made since the first
-      Public Review publication on 26th October 2016. </para>
- 
-   <section id="cos01">
-<title>Tracking of changes in response to the Public Review of the Candidate OASIS Standard
-        01</title>
-<para>This section tracks all changes made to this specification compared to the Candidate OASIS
-        Standard 01 <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/cos01/xliff-core-v2.1-cos01.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/cos01/xliff-core-v2.1-cos01.html</ulink>.
-        This Public Review took place from 20th October 2017 until 19th December 2017.</para>
-<orderedlist continuation="restarts" inheritnum="ignore">
-
-        
-        <listitem>
-            <para>An important typo in several occurrences of the W3C ITS namespace has been fixed
-                in response to Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-73">https://issues.oasis-open.org/browse/XLIFF-73</ulink>. The typo did confuse
-                implementers although the correct namespace had been used throughout the validation
-                artifacts. </para>
-        </listitem>
-        <listitem>
-            <para>A minor editorial improvement was made in response to Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-72">https://issues.oasis-open.org/browse/XLIFF-72</ulink>.
-            </para>
-        </listitem>
-                
-               
-
-
-
-</orderedlist>
-
-</section>
-   <section id="csprd04">
-<title>Tracking of changes in response to the 4th Public Review</title>
-<para>This section tracks all changes made to this specification compared to the Committee
-        Specification Draft 04 / Public Review Draft 04 <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd04/xliff-core-v2.1-csprd04.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd04/xliff-core-v2.1-csprd04.html</ulink>.
-        This subsequent Public Review took place from 5th June 2017 until 20th June 2017.</para>
-<orderedlist continuation="restarts" inheritnum="ignore">
-
-        
-        <listitem>
-            <para>Xpath expressions have been fixed in ITS Rules in response to
-                Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-58">https://issues.oasis-open.org/browse/XLIFF-58</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Minor editorial fixes and improvements were made in response to Comments/Issues <ulink url="https://issues.oasis-open.org/browse/XLIFF-57">https://issues.oasis-open.org/browse/XLIFF-57</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-62">https://issues.oasis-open.org/browse/XLIFF-62</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-63">https://issues.oasis-open.org/browse/XLIFF-63</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-64">https://issues.oasis-open.org/browse/XLIFF-64</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-65">https://issues.oasis-open.org/browse/XLIFF-65</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-66">https://issues.oasis-open.org/browse/XLIFF-66</ulink>, and <ulink url="https://issues.oasis-open.org/browse/XLIFF-70">https://issues.oasis-open.org/browse/XLIFF-70</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Trivial editorial fixes and improvements  were made in response to Comments/Issues <ulink url="https://issues.oasis-open.org/browse/XLIFF-59">https://issues.oasis-open.org/browse/XLIFF-59</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-60">https://issues.oasis-open.org/browse/XLIFF-60</ulink>, and <ulink url="https://issues.oasis-open.org/browse/XLIFF-61">https://issues.oasis-open.org/browse/XLIFF-61</ulink>.</para>
-        </listitem>
-                
-               
-
-
-
-</orderedlist>
-
-</section>
-   <section id="csprd03">
-<title>Tracking of changes in response to the 3rd Public Review</title>
-<para>This section tracks all changes made to this specification compared to the Committee
-        Specification Draft 03 / Public Review Draft 03 <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd03/xliff-core-v2.1-csprd03.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd03/xliff-core-v2.1-csprd03.html</ulink>.
-        This subsequent Public Review took place from 17th April 2017 until 1st May 2017.</para>
-<orderedlist continuation="restarts" inheritnum="ignore">
-
-
-        
-        <listitem>
-            <para>Major bug fix of the core Schematron Schema has been made in response to
-                Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-48">https://issues.oasis-open.org/browse/XLIFF-48</ulink>. The core Schematron now
-                enforces that non-reorderable sequences start with a code with
-                    <code>canReorder</code> set to <code>firstNo</code> and also enforces the
-                repetition of non-reorderable sequences in <code>&lt;target></code> elements. In
-                connection with this issue, issues <ulink url="https://issues.oasis-open.org/browse/XLIFF-10">https://issues.oasis-open.org/browse/XLIFF-10</ulink> and <ulink url="https://issues.oasis-open.org/browse/XLIFF-11">https://issues.oasis-open.org/browse/XLIFF-11</ulink> were reopened and changes
-                in core Schematron made to ensure that the rules for enforcing of editing hints
-                compliance in <code>target</code> elements worked properly in concert with reporting
-                of invalid <code>&lt;segment></code>
-                <code>state</code>.</para>
-        </listitem>
-        <listitem>
-            <para>Another major bug fix was due reopened <ulink url="https://issues.oasis-open.org/browse/XLIFF-38">https://issues.oasis-open.org/browse/XLIFF-38</ulink>, validation methods had
-                to be adjusted for core and core reused in modules in the NVDL.</para>
-        </listitem>
-        <listitem>
-            <para>An erroneously omitted Constraint of the <link linkend="xml_lang"><code>xml:lang</code></link> attribute on the <link linkend="source"><code>&lt;source></code></link>
-                element has be added/restored in the normative text and check therefore introduced
-                in the Core Schematron Schema in response to Issue/Comment <ulink url="https://issues.oasis-open.org/browse/XLIFF-55">https://issues.oasis-open.org/browse/XLIFF-55</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para><code>its:version</code> attribute was introduced in response to Issue/Comment <ulink url="https://issues.oasis-open.org/browse/XLIFF-54">https://issues.oasis-open.org/browse/XLIFF-54</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Due to reopening of <ulink url="https://issues.oasis-open.org/browse/XLIFF-38">https://issues.oasis-open.org/browse/XLIFF-8</ulink>, mapping of
-                <code>locQualityRatingScore</code> was removed from <code>matchQuality</code>. This eased the implementation
-                of both ITS MT Confidence end Localization Quality Rating considerably.</para>
-        </listitem>
-        <listitem>
-            <para>Changes were made to validation of <code>annotatorsRef</code> attribute in
-                response to Issue/Comment <ulink url="https://issues.oasis-open.org/browse/XLIFF-52">https://issues.oasis-open.org/browse/XLIFF-52</ulink>. Examples using
-                    <code>annotatorsRef</code> had be reformatted not to suggest a wrong
-                interpretation of the attribute.</para>
-        </listitem>
-        <listitem>
-            <para>Editorial fixes were made in response to Comments/Issues: <ulink url="https://issues.oasis-open.org/browse/XLIFF-47">https://issues.oasis-open.org/browse/XLIFF-47</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-50">https://issues.oasis-open.org/browse/XLIFF-50</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-51">https://issues.oasis-open.org/browse/XLIFF-51</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-53">https://issues.oasis-open.org/browse/XLIFF-53</ulink> and <ulink url="https://issues.oasis-open.org/browse/XLIFF-56">https://issues.oasis-open.org/browse/XLIFF-56</ulink>.</para>
-        </listitem>
-                    
-                
-                
-                
-               
-
-
-
-</orderedlist>
-
-</section>
-   <section id="csprd02">
-<title>Tracking of changes in response to the 2nd Public Review</title>
-<para>This section tracks major changes made to this specification compared to the Committee
-        Specification Draft 02 / Public Review Draft 02 <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd02/xliff-core-v2.1-csprd02.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd02/xliff-core-v2.1-csprd02.html</ulink>.
-        This subsequent Public Review took place from 10th February 2017 until 24th February
-        2017.</para>
-<orderedlist continuation="restarts" inheritnum="ignore">
-
-
-        <listitem>
-            <para>The Change Tracking Module has been demoted to an Extension and the update of the
-                Change Tracking Module has been postponed for XLIFF 2.2 in response to the
-                Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-32">https://issues.oasis-open.org/browse/XLIFF-32</ulink>. This radical move
-                obsoleted the dependent Comments/Issues: <ulink url="https://issues.oasis-open.org/browse/XLIFF-22">https://issues.oasis-open.org/browse/XLIFF-21</ulink>
-                <ulink url="https://issues.oasis-open.org/browse/XLIFF-22">https://issues.oasis-open.org/browse/XLIFF-22</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-22">https://issues.oasis-open.org/browse/XLIFF-30</ulink>,  and <ulink url="https://issues.oasis-open.org/browse/XLIFF-44">https://issues.oasis-open.org/browse/XLIFF-44</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Major bugfix of the core XML Schema has been made in response to Comment/Issue
-                    <ulink url="https://issues.oasis-open.org/browse/XLIFF-46">https://issues.oasis-open.org/browse/XLIFF-46</ulink>. The core xsd now
-                enforces the <code>xs:language</code> type on the <code>srcLang</code> and
-                    <code>trgLang</code> attributes.</para>
-        </listitem>
-        <listitem>
-            <para>Major fix to the NVDL Schema has been made in response to Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-38">https://issues.oasis-open.org/browse/XLIFF-38</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Erroneous namespace, data type, and/or rules provisions have been fixed in the ITS
-                Module prose and validation artifacts in response to Comments/Issues: <ulink url="https://issues.oasis-open.org/browse/XLIFF-33">https://issues.oasis-open.org/browse/XLIFF-33</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-34">https://issues.oasis-open.org/browse/XLIFF-34</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-34">https://issues.oasis-open.org/browse/XLIFF-35</ulink> and <ulink url="https://issues.oasis-open.org/browse/XLIFF-45">https://issues.oasis-open.org/browse/XLIFF-45</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Material changes have been made to the Locale Filter data category in the ITS
-                Module in response to Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-43">https://issues.oasis-open.org/browse/XLIFF-43</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Major editorial changes have been made in response to Comments/Issues: <ulink url="https://issues.oasis-open.org/browse/XLIFF-23">https://issues.oasis-open.org/browse/XLIFF-23</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-24">https://issues.oasis-open.org/browse/XLIFF-24</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-37">https://issues.oasis-open.org/browse/XLIFF-37</ulink>, and <ulink url="https://issues.oasis-open.org/browse/XLIFF-42">https://issues.oasis-open.org/browse/XLIFF-42</ulink>. </para>
-        </listitem>
-                <listitem>
-                    <para>Minor editorial changes have been made in response to Comments/Issues:
-                    <ulink url="https://issues.oasis-open.org/browse/XLIFF-26">https://issues.oasis-open.org/browse/XLIFF-26</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-28">https://issues.oasis-open.org/browse/XLIFF-28</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-31">https://issues.oasis-open.org/browse/XLIFF-31</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-36">https://issues.oasis-open.org/browse/XLIFF-36</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-39">https://issues.oasis-open.org/browse/XLIFF-39</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-40">https://issues.oasis-open.org/browse/XLIFF-40</ulink>, and <ulink url="https://issues.oasis-open.org/browse/XLIFF-41">https://issues.oasis-open.org/browse/XLIFF-41</ulink>. </para>
-                </listitem>
-    <listitem>
-        <para>Trivial editorial changes have been made in response to Comments/Issues: <ulink url="https://issues.oasis-open.org/browse/XLIFF-25">https://issues.oasis-open.org/browse/XLIFF-25</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-27">https://issues.oasis-open.org/browse/XLIFF-27</ulink>, and <ulink url="https://issues.oasis-open.org/browse/XLIFF-29">https://issues.oasis-open.org/browse/XLIFF-29</ulink>. </para>
-    </listitem>
-    
-                
-                
-                
-                
-               
-
-
-
-</orderedlist>
-
-</section>
-   <section id="csprd01">
-<title>Tracking of changes in response to the 1st Public Review</title>
-<para>This section tracks major changes made to this specification compared to the Committee
-        Specification Draft 01 / Public Review Draft 01 <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd01/xliff-core-v2.1-csprd01.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/csprd01/xliff-core-v2.1-csprd01.html</ulink>.
-        The initial Public Review took place from 26th October 2016 until 25th November 2016.</para>
-<orderedlist continuation="restarts" inheritnum="ignore">
-
-<listitem>
-    <para>Major changes were made in the ITS Module and validation artifacts in response to
-        Comment/Issues <ulink url="https://issues.oasis-open.org/browse/XLIFF-5">https://issues.oasis-open.org/browse/XLIFF-5</ulink> and most importantly <ulink url="https://issues.oasis-open.org/browse/XLIFF-9">https://issues.oasis-open.org/browse/XLIFF-9</ulink> and its child issues:
-                    <ulink url="https://issues.oasis-open.org/browse/XLIFF-6">https://issues.oasis-open.org/browse/XLIFF-6</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-18">https://issues.oasis-open.org/browse/XLIFF-18</ulink>, and <ulink url="https://issues.oasis-open.org/browse/XLIFF-19">https://issues.oasis-open.org/browse/XLIFF-19</ulink>. </para>
-</listitem>
-        <listitem>
-            <para>Major changes were made in the Change Tracking Module and validation artifacts in
-                response to Comment/Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-4">https://issues.oasis-open.org/browse/XLIFF-4</ulink></para>
-        </listitem>
-        <listitem>
-            <para>Clarifications to Core with Advanced Validation impact, non-of which were
-                normative changes were provided in response to Comments/Issues: 
-                <ulink url="https://issues.oasis-open.org/browse/XLIFF-10">https://issues.oasis-open.org/browse/XLIFF-10</ulink>,
-                <ulink url="https://issues.oasis-open.org/browse/XLIFF-11">https://issues.oasis-open.org/browse/XLIFF-11</ulink>,
-                <ulink url="https://issues.oasis-open.org/browse/XLIFF-12">https://issues.oasis-open.org/browse/XLIFF-12</ulink>,
-                <ulink url="https://issues.oasis-open.org/browse/XLIFF-13">https://issues.oasis-open.org/browse/XLIFF-13</ulink>,
-                <ulink url="https://issues.oasis-open.org/browse/XLIFF-14">https://issues.oasis-open.org/browse/XLIFF-14</ulink>
-                
-                
-            </para>
-        </listitem>
-        <listitem>
-            <para>Material clarification with Advanced Validation Impact was provided for the
-                Translation Candidate Module in response to Issue <ulink url="https://issues.oasis-open.org/browse/XLIFF-20">https://issues.oasis-open.org/browse/XLIFF-20</ulink>.</para>
-        </listitem>
-        <listitem>
-            <para>Editorial changes have been made in response to Comments/Issues: <ulink url="https://issues.oasis-open.org/browse/XLIFF-1">https://issues.oasis-open.org/browse/XLIFF-1</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-2">https://issues.oasis-open.org/browse/XLIFF-2</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-3">https://issues.oasis-open.org/browse/XLIFF-3</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-7">https://issues.oasis-open.org/browse/XLIFF-7</ulink>, <ulink url="https://issues.oasis-open.org/browse/XLIFF-15">https://issues.oasis-open.org/browse/XLIFF-15</ulink>, and <ulink url="https://issues.oasis-open.org/browse/XLIFF-17">https://issues.oasis-open.org/browse/XLIFF-17</ulink>. </para>
-        </listitem>
-
-
-
-</orderedlist>
-
-</section>
-</section>
   </appendix>
 
   <appendix id="acknowledgements" role="informative">
@@ -6653,45 +6408,21 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       gratefully acknowledged:</para>
 
     <itemizedlist spacing="compact">
-
-      <listitem>
-        <para>Comerford, Tom - Individual </para>
-      </listitem>
-      <listitem>
-        <para>Estreen, Fredrik - Lionbridge </para>
-      </listitem>
       <listitem>
         <para>Filip, David - TCD, ADAPT Centre (formerly Localisation Research Centre)</para>
-      </listitem>
-      <listitem>
-        <para>King, Ryan - Microsoft </para>
-      </listitem>
-      <listitem>
-        <para>Loomis, Steven - IBM </para>
       </listitem>
       <listitem>
         <para>Morado Vázquez, Lucía - University of Geneva </para>
       </listitem>
       <listitem>
-        <para>Ritchie, Phil - Vistatec </para>
-      </listitem>
-      <listitem>
-        <para>Soroush Saadatfar, Localisation Research Centre</para>
-      </listitem>
-      <listitem>
-        <para>Felix Sasaki - Individual</para>
-      </listitem>
-      <listitem>
-        <para>Savourel, Yves - ENLASO Corporation </para>
+        <para>Raya, Rodolfo M. - Individual </para>
       </listitem>
       <listitem>
         <para>Schnabel, Bryan - Individual </para>
-      </listitem>
+      </listitem>      
       <listitem>
-        <para>Tingley, Chase - Spartan Software Inc.</para>
-      </listitem>
-
-
+        <para>Umaoka, Yoshito - IBM </para>
+      </listitem>      
     </itemizedlist>
 
   </appendix>

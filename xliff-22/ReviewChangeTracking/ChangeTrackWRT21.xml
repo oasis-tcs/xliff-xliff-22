@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd"[
+
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
+
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+
+]>
+<section id="ChangeTrackWRT20">
+   <title>High Level Summary of Changes made in Comparison to XLIFF Version &pversion;</title>
+   <para>This is to facilitate human tracking of changes between XLIFF Versions &version; and
+      &pversion;. </para>
+
+
+   <orderedlist>
+      <!-- Add new change track items to the bottom of the list -->
+      <listitem>
+         <para>Produced two versions of the specification: </para>
+         <simplelist>
+            <member><emphasis>Core</emphasis>: simplified version that does not include optional
+               modules.</member>
+            <member><emphasis>Extended</emphasis>: complete version, including all modules.</member>
+         </simplelist>
+      </listitem>
+      <listitem>
+         <para>Added an optional ref attribute to note element</para>
+      </listitem>
+   </orderedlist>
+   <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
+      practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
+      the changes (except the bugfixes under 3 and 4) have affected the core namespace
+         <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code> or the <firstterm>XLIFF
+         Core</firstterm>
+      <olink targetdoc="../xliff22.xml" targetptr="XMLSchema">[XML Schema]</olink>, <ulink
+         url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
+         >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink> that expresses its basic grammar
+      and structure.</para>
+</section>
