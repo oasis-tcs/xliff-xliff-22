@@ -27,21 +27,21 @@
     <simplelist>
       <member>- <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueType.xml"
                 targetptr="itsm_locQualityIssueType">
-                <code>locQualityIssueType</code></olink>, <glossterm>optional</glossterm>
+                <code>locQualityIssueType</code></olink>, <glossterm>OPTIONAL</glossterm>
         </member>
         <member>- <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueComment.xml" targetptr="itsm_locQualityIssueComment">
-            <code>locQualityIssueComment</code></olink>, <glossterm>optional</glossterm></member>
+            <code>locQualityIssueComment</code></olink>, <glossterm>OPTIONAL</glossterm></member>
         
         <member>- <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueSeverity.xml" targetptr="itsm_locQualityIssueSeverity">
-            <code>locQualityIssueSeverity</code></olink>, <glossterm>optional</glossterm></member>
+            <code>locQualityIssueSeverity</code></olink>, <glossterm>OPTIONAL</glossterm></member>
         <member>- <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueProfileRef.xml" targetptr="itsm_locQualityIssueProfileRef">
-            <code>locQualityIssueProfileRef</code></olink>, <glossterm>optional</glossterm></member>
+            <code>locQualityIssueProfileRef</code></olink>, <glossterm>OPTIONAL</glossterm></member>
         <member>- <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueEnabled.xml" targetptr="itsm_locQualityIssueEnabled">
-            <code>locQualityIssueEnabled</code></olink>, <glossterm>optional</glossterm></member>
+            <code>locQualityIssueEnabled</code></olink>, <glossterm>OPTIONAL</glossterm></member>
         <!--  not allowed on ITS stand off elements <member>-<olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
             targetptr="itsm_annotatorsRef">
             <code>annotatorsRef</code></olink>,
-            <glossterm>optional</glossterm></member>-->
+            <glossterm>OPTIONAL</glossterm></member>-->
     </simplelist>
 
     <itemizedlist>
@@ -49,7 +49,7 @@
         <listitem>
             <para>At least one of the attributes <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueType" targetptr="itsm_locQualityIssueType">
                 <code>locQualityIssueType</code></olink> or <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueComment" targetptr="itsm_locQualityIssueComment">
-                    <code>locQualityIssueComment</code></olink> <glossterm>must</glossterm> be set.</para>
+                    <code>locQualityIssueComment</code></olink> <glossterm>MUST</glossterm> be set.</para>
         </listitem>
     </itemizedlist>
     <itemizedlist>

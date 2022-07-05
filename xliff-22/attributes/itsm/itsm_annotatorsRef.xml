@@ -99,18 +99,18 @@
             <para>All Constraints that follow from <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink> <ulink url="https://www.w3.org/TR/its20/#its-tool-annotation">Tools Annotation</ulink>.</para>
         </listitem> 
         <!--  
-        <listitem><para>Values of the <link linkend="itsm_annotatorsRef"><code>annotatorsRef</code></link> <glossterm>must</glossterm> consist of triples of the following parts in the exact order:</para>
+        <listitem><para>Values of the <link linkend="itsm_annotatorsRef"><code>annotatorsRef</code></link> <glossterm>MUST</glossterm> consist of triples of the following parts in the exact order:</para>
         <orderedlist>
             <listitem><para>ITS Data category identifier, see the table below for admissible values. No other values
-                            <glossterm>must</glossterm> be used.</para></listitem>
+                            <glossterm>MUST</glossterm> be used.</para></listitem>
             <listitem><para>character | VERTICAL LINE (U+007C) as the separator</para></listitem>
             <listitem><para>IRI</para></listitem>
         </orderedlist>
         </listitem>
-                <listitem><para>The text string <glossterm>must</glossterm> be composed from space separated triples or
+                <listitem><para>The text string <glossterm>MUST</glossterm> be composed from space separated triples or
                 comprise exactly one triple.</para></listitem>
-        <listitem><para>Each ITS data category identifier <glossterm>must not</glossterm> be used more than once.</para></listitem>
-        <listitem><para>The space separated triples <glossterm>must</glossterm> be ordered alphabetically as per the
+        <listitem><para>Each ITS data category identifier <glossterm>MUST NOT</glossterm> be used more than once.</para></listitem>
+        <listitem><para>The space separated triples <glossterm>MUST</glossterm> be ordered alphabetically as per the
                 ITS Data category identifier.</para></listitem>-->
     </itemizedlist>    
     <!--          
@@ -259,7 +259,7 @@
             <para>When resolving any actual local value of the <link linkend="itsm_annotatorsRef"
                         ><code>annotatorsRef</code></link> attribute,
                     <firstterm>Modifiers</firstterm> and <firstterm>Enrichers</firstterm>
-                <glossterm>must</glossterm> combine the actual set value with all default values
+                <glossterm>MUST</glossterm> combine the actual set value with all default values
                 inherited from higher levels as follows:</para>
             <para>On any given node, the information provided by this mechanism is a space-separated
                 list of the accumulated references found in the <link linkend="itsm_annotatorsRef"

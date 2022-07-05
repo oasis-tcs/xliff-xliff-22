@@ -44,16 +44,16 @@ targetdoc="../../attributes/fs.xml" targetptr="fs"
 targetptr="subFs"><code>subFs</code></olink>. It does not specify any elements.</para>
 <para>Format Style allows most structural and inline XLIFF core elements to convey basic formatting
 information using a predefined subset of HTML formatting elements. It primarily enables the
-generation of HTML pages or snippets for preview and review purposes. It <glossterm>must not</glossterm>
+generation of HTML pages or snippets for preview and review purposes. It <glossterm>MUST NOT</glossterm>
 be used to prescribe a roundtrip to a source document format.</para>
 <para>The <olink targetdoc="../../attributes/fs.xml" targetptr="fs"
 ><code>fs</code></olink> attribute holds the name of an HTML formatting element. If additional style
-information is needed, the <glossterm>optional</glossterm> <olink targetdoc="../../attributes/subFs.xml"
+information is needed, the <glossterm>OPTIONAL</glossterm> <olink targetdoc="../../attributes/subFs.xml"
 targetptr="subFs"><code>subFs</code></olink> attribute is provided.</para>
 <itemizedlist>
 <title>Constraints</title>
 <listitem>
-<para>The Format Style attributes <glossterm>must</glossterm> be configured in such a way that the HTML <olink targetdoc="../xliff22.xml"
+<para>The Format Style attributes <glossterm>MUST</glossterm> be configured in such a way that the HTML <olink targetdoc="../xliff22.xml"
 targetptr="HTML5">[HTML5]</olink> snippet resulting at the <olink targetdoc="../../elements/structural/file.xml"
 targetptr="file"><code>&lt;file></code></olink> level is valid.</para>
 </listitem>
@@ -61,14 +61,14 @@ targetptr="file"><code>&lt;file></code></olink> level is valid.</para>
 <itemizedlist>
 <title>Processing Requirements</title>
 <listitem>
-<para><firstterm>Extractors</firstterm> and <firstterm>Enrichers</firstterm> <glossterm>should</glossterm> use the following method to validate their HTML snippets:</para>
+<para><firstterm>Extractors</firstterm> and <firstterm>Enrichers</firstterm> <glossterm>SHOULD</glossterm> use the following method to validate their HTML snippets:</para>
 <orderedlist>
 <listitem>
 <para>Parse the snippet with the <olink targetdoc="../xliff22.xml"
 targetptr="HTML5">[HTML5]</olink> fragment parsing algorithm, see <ulink url="http://www.w3.org/TR/html5/syntax.html#parsing-html-fragments">http://www.w3.org/TR/html5/syntax.html#parsing-html-fragments</ulink>.</para>
 </listitem>
 <listitem>
-<para>the result <glossterm>must</glossterm> be a valid DOM tree as per <olink targetdoc="../xliff22.xml"
+<para>the result <glossterm>MUST</glossterm> be a valid DOM tree as per <olink targetdoc="../xliff22.xml"
 targetptr="HTML5">[HTML5]</olink>, see <ulink url="http://www.w3.org/TR/html5/infrastructure.html#tree-order">http://www.w3.org/TR/html5/infrastructure.html#tree-order</ulink>.
 </para>
 </listitem>

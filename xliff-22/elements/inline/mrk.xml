@@ -56,22 +56,22 @@
 
   <simplelist>
     <member>- <olink targetdoc="../../attributes/id.xml"
-    targetptr="id"><code>id</code></olink>, <glossterm>required</glossterm></member>
+    targetptr="id"><code>id</code></olink>, <glossterm>REQUIRED</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/translate.xml"
-    targetptr="translate"><code>translate</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="translate"><code>translate</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/type.xml"
-    targetptr="type"><code>type</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="type"><code>type</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/ref.xml"
-    targetptr="ref"><code>ref</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="ref"><code>ref</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/value.xml"
-    targetptr="value"><code>value</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="value"><code>value</code></olink>, <glossterm>OPTIONAL</glossterm></member>
     
     
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
   </simplelist>
   
@@ -80,30 +80,30 @@
     <listitem>
       <para>The <olink targetdoc="../../xliff22.xml" targetptr="xml_namespace">[XML
           namespace]</olink>
-        <glossterm>must not</glossterm> be used at this extension point.</para>
+        <glossterm>MUST NOT</glossterm> be used at this extension point.</para>
     </listitem>
     <listitem>
       <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
         allowed by the wildcard <code>other</code>:</para>
       <simplelist>
         <member>- attributes from the namespace
-          <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>optional</glossterm>,
+          <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
           provided that the Constraints specified in the <olink
             targetdoc="modules/fs/fs.xml" targetptr="fs-mod">Format Style Module</olink>
           are met.</member>
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
           the <olink targetdoc="modules/size_restriction/specification.xml"
             targetptr="size_restriction_module">Size and Length Restriction
             Module</olink> are met.</member>
         <member>- attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
           the <olink targetdoc="modules/itsm/specification.xml" targetptr="ITS-module">ITS
             Module</olink> are met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <olink
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
             targetdoc="../../modules/itsm/specification.xml" targetptr="ITS-module">ITS
             Module</olink> are met.</member>
       </simplelist>

@@ -15,7 +15,7 @@
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem><para><firstterm>Writers</firstterm>
-        <glossterm>must</glossterm> use the attribute <olink
+        <glossterm>MUST</glossterm> use the attribute <olink
           targetdoc="../../attributes/itsm/itsm_domains.xml" targetptr="itsm_domains"
             ><code>itsm:domains</code></olink> to express the <olink targetdoc="../xliff22.xml"
           targetptr="ITS20">[ITS]</olink>
@@ -102,17 +102,17 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>required</glossterm>.</para>
+          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_domains.xml" targetptr="itsm_domains"
               ><code>itsm:domains</code></olink> attribute is
-          <glossterm>required</glossterm>.</para>
+          <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
 
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>optional</glossterm> and set to
+          ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
           <code>its:generic</code>.</para>
 
       </listitem>
@@ -120,7 +120,7 @@
 
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>optional</glossterm>.</para>
+          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
     </itemizedlist>
     <example>

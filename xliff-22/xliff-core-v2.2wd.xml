@@ -16,11 +16,11 @@
     <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.html</releaseinfo>
     <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.xml</releaseinfo>
-    
+
     <releaseinfo role="OASIS-specification-previous-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</releaseinfo>
     <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.xml</releaseinfo>
-    
+
     <releaseinfo role="OASIS-specification-latest-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.html</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2.xml</releaseinfo>
@@ -57,7 +57,7 @@
         </affiliation>
         <email>rmraya@maxprograms.com</email>
       </editor>
-      
+
       <editor>
         <firstname>David</firstname>
         <surname>Filip</surname>
@@ -71,7 +71,7 @@
 
     </authorgroup>
 
-    <pubdate>17 May 2022</pubdate>
+    <pubdate>5 July 2022</pubdate>
 
     <copyright>
       <year>2022</year>
@@ -99,7 +99,9 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para><emphasis>XLIFF Version 2.1.</emphasis> Edited by David Filip, Tom Comerford, Soroush Saadatfar, Felix Sasaki and Yves Savourel. 13 February 2018. OASIS Standard. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1.html</ulink></para>
+          <para><emphasis>XLIFF Version 2.1.</emphasis> Edited by David Filip, Tom Comerford,
+            Soroush Saadatfar, Felix Sasaki and Yves Savourel. 13 February 2018. OASIS Standard.
+              <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1.html</ulink></para>
         </listitem>
       </itemizedlist>
 
@@ -191,7 +193,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        17 May 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        5 July 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -292,11 +294,11 @@
       <section>
         <title>Key words</title>
 
-        <para>The key words <glossterm>must</glossterm>, <glossterm>must not</glossterm>,
-            <glossterm>required</glossterm>, <glossterm>shall</glossterm>, <glossterm>shall
-            not</glossterm>, <glossterm>should</glossterm>, <glossterm>should not</glossterm>,
-            <glossterm>recommended</glossterm>, <glossterm>may</glossterm>, and
-            <glossterm>optional</glossterm> are to be interpreted as described in <xref linkend="rfc2119"/>.</para>
+        <para>The key words <glossterm>MUST</glossterm>, <glossterm>MUST NOT</glossterm>,
+            <glossterm>REQUIRED</glossterm>, <glossterm>SHALL</glossterm>, <glossterm>SHALL
+            NOT</glossterm>, <glossterm>SHOULD</glossterm>, <glossterm>SHOULD NOT</glossterm>,
+            <glossterm>RECOMMENDED</glossterm>, <glossterm>MAY</glossterm>, and
+            <glossterm>OPTIONAL</glossterm> are to be interpreted as described in <xref linkend="bcp14"/>.</para>
       </section>
 
       <section id="definitions">
@@ -328,7 +330,7 @@
                 <listitem>
                   <para>
                     <firstterm>Enriching</firstterm>
-                    <glossterm>may</glossterm> happen at the time of
+                    <glossterm>MAY</glossterm> happen at the time of
                       <firstterm>Extraction</firstterm>. </para>
                 </listitem>
               </itemizedlist>
@@ -413,7 +415,7 @@
               <itemizedlist>
                 <title>Processing Requirements</title>
                 <listitem>
-                  <para> XLIFF elements <glossterm>may</glossterm> be
+                  <para> XLIFF elements <glossterm>MAY</glossterm> be
                       <firstterm>Modified</firstterm> and <firstterm>Enriched</firstterm> at the
                     same time. </para>
                 </listitem>
@@ -536,7 +538,7 @@
             <term>XLIFF Module</term>
 
             <listitem>
-              <para>A module is an <glossterm>optional</glossterm> set of XML elements and
+              <para>A module is an <glossterm>OPTIONAL</glossterm> set of XML elements and
                 attributes that stores information about a process applied to an <firstterm>XLIFF
                   Document</firstterm> and the data incorporated into the document as result of that
                 process.</para>
@@ -590,9 +592,9 @@
           </citetitle> ISO, June 1, 2006.</bibliomixed>
 
 
-        <bibliomixed id="rfc2119"><abbrev>RFC 2119</abbrev> S. Bradner, <title>Key words for use in
-            RFCs to Indicate Requirement Levels</title>, <citetitle>
-            <ulink url="https://www.ietf.org/rfc/rfc2119.txt">https://www.ietf.org/rfc/rfc2119.txt</ulink>
+        <bibliomixed id="bcp14"><abbrev>BCP 14</abbrev> S. Bradner, <title>Key words for use in RFCs
+            to Indicate Requirement Levels</title>, <citetitle>
+            <ulink url="https://tools.ietf.org/search/bcp14">https://tools.ietf.org/search/bcp14</ulink>
           </citetitle> IETF (Internet Engineering Task Force) RFC 2119, March 1997.</bibliomixed>
 
         <bibliomixed id="rfc3987"><abbrev>RFC 3987</abbrev> M. Duerst and M. Suignard,
@@ -701,7 +703,7 @@
       </bibliography>
     </section>
   </section>
-  
+
   <section id="Conformance">
     <title>Conformance</title>
 
@@ -712,13 +714,13 @@
                 <listitem>
                     <para>XLIFF is an XML vocabulary, therefore conformant <firstterm>XLIFF
                             Documents</firstterm>
-                        <glossterm>must</glossterm> be well formed and valid <link linkend="bib_XML">[XML]</link>
+                        <glossterm>MUST</glossterm> be well formed and valid <link linkend="bib_XML">[XML]</link>
                         documents.</para>
                 </listitem>
                 <listitem>
 
                     <para>Conformant <firstterm>XLIFF Documents</firstterm>
-                        <glossterm>must</glossterm> be valid instances of the official Core XML
+                        <glossterm>MUST</glossterm> be valid instances of the official Core XML
                         Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink>) that is a part
                         of this multipart Work Product.</para>
                 </listitem>
@@ -726,13 +728,13 @@
 
                     <para> As not all aspects of the XLIFF specification can be expressed in terms
                         of XML Schemas, conformant <firstterm>XLIFF Documents</firstterm>
-                        <glossterm>must</glossterm> also comply with all relevant elements and
+                        <glossterm>MUST</glossterm> also comply with all relevant elements and
                         attributes definitions, normative usage descriptions, and Constraints
                         specified in this specification document.</para>
                 </listitem>
                 <listitem>
                     <para><firstterm>XLIFF Documents</firstterm>
-                        <glossterm>may</glossterm> contain custom extensions, as defined in the
+                        <glossterm>MAY</glossterm> contain custom extensions, as defined in the
                             <link linkend="extensions">Extension Mechanisms</link> section. </para>
                 </listitem>
             </orderedlist>
@@ -742,16 +744,16 @@
                 <title> Application Conformance</title>
                 <listitem>
                     <para>XLIFF <firstterm>Writers</firstterm>
-                        <glossterm>must</glossterm> create conformant <firstterm>XLIFF
+                        <glossterm>MUST</glossterm> create conformant <firstterm>XLIFF
                             Documents</firstterm> to be considered XLIFF compliant.</para>
                 </listitem>
                 <listitem>
                     <para>
                         <firstterm>Agents</firstterm> processing conformant <firstterm>XLIFF
                             Documents</firstterm> that contain custom extensions are not
-                            <glossterm>required</glossterm> to understand and process non-XLIFF
+                            <glossterm>REQUIRED</glossterm> to understand and process non-XLIFF
                         elements or attributes. However, conformant applications
-                            <glossterm>should</glossterm> preserve existing custom extensions when
+                            <glossterm>SHOULD</glossterm> preserve existing custom extensions when
                         processing conformant <firstterm>XLIFF Documents</firstterm>, provided that
                         the elements that contain custom extensions are not removed according to
                         XLIFF Processing Requirements or the extension's own processing
@@ -759,7 +761,7 @@
                 </listitem>
                 <listitem>
                     <para>All <firstterm>Agents</firstterm>
-                        <glossterm>must</glossterm> comply with Processing Requirements for
+                        <glossterm>MUST</glossterm> comply with Processing Requirements for
                         otherwise unspecified <firstterm>Agents</firstterm> or without a
                         specifically set target <firstterm>Agent</firstterm>.</para>
                 </listitem>
@@ -769,7 +771,7 @@
                         this is <firstterm>Extractor</firstterm>, <firstterm>Merger</firstterm>,
                             <firstterm>Writer</firstterm>, <firstterm>Modifier</firstterm>, and
                             <firstterm>Enricher</firstterm>
-                        <firstterm>Agents</firstterm> - <glossterm>must</glossterm> comply with the
+                        <firstterm>Agents</firstterm> - <glossterm>MUST</glossterm> comply with the
                         Processing Requirements targeting their specifically defined type of
                             <firstterm>Agent</firstterm> on top of Processing Requirements targeting
                         all <firstterm>Agents</firstterm> as per point c. above.</para>
@@ -777,7 +779,7 @@
                 <listitem>
                     <para>XLIFF is a format explicitly designed for exchanging data among various
                             <firstterm>Agents</firstterm>. Thus, a conformant XLIFF application
-                            <glossterm>must</glossterm> be able to accept <firstterm>XLIFF
+                            <glossterm>MUST</glossterm> be able to accept <firstterm>XLIFF
                             Documents</firstterm> it had written after those <firstterm>XLIFF
                             Documents</firstterm> were <firstterm>Modified</firstterm> or
                             <firstterm>Enriched</firstterm> by a different application, provided
@@ -802,11 +804,11 @@
             <orderedlist continuation="restarts" inheritnum="ignore">
                 <title> Backwards Compatibility</title>
                 <listitem>
-                    <para>Conformant applications are <glossterm>required</glossterm> to support
+                    <para>Conformant applications are <glossterm>REQUIRED</glossterm> to support
                         XLIFF 2.1.</para>
                 </listitem>
                 <listitem>
-                    <para>Conformant applications are NOT <glossterm>required</glossterm> to support
+                    <para>Conformant applications are NOT <glossterm>REQUIRED</glossterm> to support
                         XLIFF 1.2 or previous Versions. </para>
                 </listitem>
             </orderedlist>
@@ -823,7 +825,7 @@
   <section id="fragid">
   <title>Fragment Identification</title>
   <para>Because <firstterm>XLIFF Documents</firstterm> do not follow the usual behavior of XML documents when it comes to element identifiers, this specification
-    defines how <firstterm>Agents</firstterm> <glossterm>must</glossterm> interpret the fragment identifiers in IRIs pointing to <firstterm>XLIFF Documents</firstterm>.</para>
+    defines how <firstterm>Agents</firstterm> <glossterm>MUST</glossterm> interpret the fragment identifiers in IRIs pointing to <firstterm>XLIFF Documents</firstterm>.</para>
   <note>
     <para>Note that some identifiers may change during the localization process. For example <link linkend="data"><code>&lt;data></code></link> elements may be re-grouped or not depending on how tools treat
      identical original data.</para>
@@ -831,7 +833,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>A fragment identifier <glossterm>must</glossterm> match the following format:</para>
+      <para>A fragment identifier <glossterm>MUST</glossterm> match the following format:</para>
       <programlisting format="linespecific">
 &lt;expression>      ::= "#" ["/"] &lt;selector>
                       {&lt;selectorSeparator> &lt;selector>}
@@ -842,17 +844,17 @@
 &lt;selectorSeparator>  ::= "/"</programlisting>
     </listitem>
     <listitem>
-      <para>There <glossterm>must not</glossterm> be two identical prefixes in the expression.</para>
+      <para>There <glossterm>MUST NOT</glossterm> be two identical prefixes in the expression.</para>
     </listitem>
     <listitem>
-      <para>When used, the following selectors <glossterm>must</glossterm> be declared in this order: file selector, group selector and unit selector.</para>
+      <para>When used, the following selectors <glossterm>MUST</glossterm> be declared in this order: file selector, group selector and unit selector.</para>
     </listitem>
     <listitem>
       <para>The selectors for modules or extensions, <link linkend="note"><code>&lt;note></code></link>, <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link> or source inline elements, target inline elements and
         <link linkend="data"><code>&lt;data></code></link> have the following constraints:</para>
       <itemizedlist>
-        <listitem><para>Only one of them <glossterm>may</glossterm> be used in the expression.</para></listitem>
-        <listitem><para>The one used <glossterm>must</glossterm> be the last selector of the expression.</para></listitem>
+        <listitem><para>Only one of them <glossterm>MAY</glossterm> be used in the expression.</para></listitem>
+        <listitem><para>The one used <glossterm>MUST</glossterm> be the last selector of the expression.</para></listitem>
       </itemizedlist>
     </listitem>
   </itemizedlist>
@@ -892,13 +894,13 @@
       <link linkend="group"><code>&lt;group></code></link> or <link linkend="unit"><code>&lt;unit></code></link> element.</para>
     <itemizedlist>
       <title>Constraints</title>
-      <listitem><para>The prefix of a module or an extension <glossterm>must</glossterm> be an NMTOKEN longer than 1
-          character and <glossterm>must</glossterm> be defined in the module or extension
+      <listitem><para>The prefix of a module or an extension <glossterm>MUST</glossterm> be an NMTOKEN longer than 1
+          character and <glossterm>MUST</glossterm> be defined in the module or extension
           specification.</para></listitem>
-      <listitem><para>The prefix of a module or an extension <glossterm>must</glossterm> be registered with the
+      <listitem><para>The prefix of a module or an extension <glossterm>MUST</glossterm> be registered with the
           XLIFF TC.</para></listitem>
-      <listitem><para>A given module or extension namespace URI <glossterm>must</glossterm> be associated with a single prefix.</para></listitem>
-      <listitem><para>A prefix <glossterm>may</glossterm> be associated with more than one namespace URI (to allow
+      <listitem><para>A given module or extension namespace URI <glossterm>MUST</glossterm> be associated with a single prefix.</para></listitem>
+      <listitem><para>A prefix <glossterm>MAY</glossterm> be associated with more than one namespace URI (to allow
           for example different versions of a given module or extension to use the same
           prefix).</para></listitem>
     </itemizedlist>
@@ -948,7 +950,7 @@
   </section>
 
 </section>
-  
+
   <section id="core">
     <title>The Core Specification</title>
 
@@ -957,8 +959,8 @@
       makes the <firstterm>Translation</firstterm> process possible.</para>
 
     <para>At creation time, an <firstterm>XLIFF Document</firstterm>
-      <glossterm>may</glossterm> contain only text in the source language. Translations expressed in
-      the target language <glossterm>may</glossterm> be added at a later time.</para>
+      <glossterm>MAY</glossterm> contain only text in the source language. Translations expressed in
+      the target language <glossterm>MAY</glossterm> be added at a later time.</para>
 
     <para>The root element of an <firstterm>XLIFF Document</firstterm> is <link linkend="xliff"><code>&lt;xliff></code></link>. It contains a collection of <link linkend="file"><code>&lt;file></code></link>
       elements. Typically, each <link linkend="file"><code>&lt;file></code></link> element contains a set of <link linkend="unit"><code>&lt;unit></code></link>
@@ -974,13 +976,13 @@
         <listitem>
           <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
               Document</firstterm> that contains <firstterm>XLIFF-defined</firstterm> elements and
-            attributes that it cannot handle <glossterm>must</glossterm> preserve those elements and
+            attributes that it cannot handle <glossterm>MUST</glossterm> preserve those elements and
             attributes.</para>
         </listitem>
         <listitem>
           <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
               Document</firstterm> that contains custom elements and attributes that it cannot
-            handle <glossterm>should</glossterm> preserve those elements and attributes.</para>
+            handle <glossterm>SHOULD</glossterm> preserve those elements and attributes.</para>
         </listitem>
 
       </itemizedlist>
@@ -1090,17 +1092,17 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-        <member>- <link linkend="version"><code>version</code></link>, <glossterm>required</glossterm></member>
-        <member>- <link linkend="srcLang"><code>srcLang</code></link>, <glossterm>required</glossterm></member>
-        <member>- <link linkend="trgLang"><code>trgLang</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm></member>
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="version"><code>version</code></link>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <link linkend="srcLang"><code>srcLang</code></link>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <link linkend="trgLang"><code>trgLang</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>The <link linkend="trgLang"><code>trgLang</code></link> attribute is <glossterm>required</glossterm>
+            <para>The <link linkend="trgLang"><code>trgLang</code></link> attribute is <glossterm>REQUIRED</glossterm>
                 if and only if the <firstterm>XLIFF Document</firstterm> contains <link linkend="target"><code>&lt;target></code></link>
                 elements that are children of <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link>. </para>
         </listitem>
@@ -1110,7 +1112,7 @@
             <simplelist type="vert">
                 <member>- the <code><remark>its:version</remark></code> attribute from the
                     namespace <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>optional</glossterm>.</member>
+                        <glossterm>OPTIONAL</glossterm>.</member>
             </simplelist>
         </listitem>
     </itemizedlist>
@@ -1135,7 +1137,7 @@
     <simplelist type="vert">
         <member>- Zero or one <link linkend="skeleton"><code>&lt;skeleton></code></link> element
         followed by</member>
-        <member>- elements from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- elements from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
         <member>- Zero or one
             <link linkend="notes"><code>&lt;notes></code></link>
@@ -1149,14 +1151,14 @@
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
         <member>- <link linkend="id"><code>id</code></link>,
-                <glossterm>required</glossterm></member>
-        <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="original"><code>original</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="srcdir"><code>srcDir</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="trgdir"><code>trgDir</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm></member>
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+                <glossterm>REQUIRED</glossterm></member>
+        <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="original"><code>original</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="srcdir"><code>srcDir</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="trgdir"><code>trgDir</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
@@ -1178,7 +1180,7 @@
             </simplelist>
         </listitem>
         <listitem>
-            <para><firstterm>Module</firstterm> and Extension elements <glossterm>may</glossterm> be
+            <para><firstterm>Module</firstterm> and Extension elements <glossterm>MAY</glossterm> be
                 used in any order.</para>
         </listitem>
         <listitem>
@@ -1186,20 +1188,20 @@
                 allowed by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
                 <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>optional</glossterm>,
+                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
                     provided that the Constraints specified in the <remark>Format Style Module</remark>
                     are met.</member>
                 <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>, <glossterm>optional</glossterm>,
+                    <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>, <glossterm>OPTIONAL</glossterm>,
                     provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark>
                     are met.</member>
                 <member>- attributes from the namespace
                         <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS Module</remark> are met.</member>
             </simplelist>
         </listitem>
@@ -1224,21 +1226,21 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-        <member>- <link linkend="href"><code>href</code></link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="href"><code>href</code></link>, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
-    <listitem><para> The attribute <link linkend="href"><code>href</code></link> is <glossterm>required</glossterm> if and only if the
+    <listitem><para> The attribute <link linkend="href"><code>href</code></link> is <glossterm>REQUIRED</glossterm> if and only if the
                     <link linkend="skeleton"><code>&lt;skeleton></code></link> element is empty. </para></listitem>
     </itemizedlist>
     <itemizedlist>
         <title>Processing Requirements</title>
         <listitem><para><firstterm>Modifiers</firstterm> and <firstterm>Enrichers</firstterm> processing an
-                    <firstterm>XLIFF Document</firstterm> that contains a <link linkend="skeleton"><code>&lt;skeleton></code></link> element <glossterm>must not</glossterm>
+                    <firstterm>XLIFF Document</firstterm> that contains a <link linkend="skeleton"><code>&lt;skeleton></code></link> element <glossterm>MUST NOT</glossterm>
                 change that element, its attributes, or its content. </para></listitem>
         <listitem><para><firstterm>Extractors</firstterm> creating an <firstterm>XLIFF Document</firstterm> with a <link linkend="skeleton"><code>&lt;skeleton></code></link> element
-                    <glossterm>must</glossterm> leave the <link linkend="skeleton"><code>&lt;skeleton></code></link> element empty if and only if they specify
+                    <glossterm>MUST</glossterm> leave the <link linkend="skeleton"><code>&lt;skeleton></code></link> element empty if and only if they specify
                 the attribute <link linkend="href"><code>href</code></link>.</para></listitem>
     </itemizedlist>
 </section>
@@ -1251,7 +1253,7 @@
 
     <para><emphasis>Contains:</emphasis></para>
     <simplelist type="vert">
-        <member>- elements from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- elements from other namespaces, <glossterm>OPTIONAL</glossterm></member>
         <member>- Zero or one
             <link linkend="notes"><code>&lt;notes></code></link>
             element followed by</member>
@@ -1268,16 +1270,16 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-      <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm></member>
-        <member>- <link linkend="name"><code>name</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="srcdir"><code>srcDir</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="trgdir"><code>trgDir</code></link>, <glossterm>optional</glossterm></member>
-		<member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm></member>
+      <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <link linkend="name"><code>name</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="srcdir"><code>srcDir</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="trgdir"><code>trgDir</code></link>, <glossterm>OPTIONAL</glossterm></member>
+		<member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
@@ -1299,7 +1301,7 @@
             </simplelist>
         </listitem>
         <listitem>
-            <para><firstterm>Module</firstterm> and Extension elements <glossterm>may</glossterm> be
+            <para><firstterm>Module</firstterm> and Extension elements <glossterm>MAY</glossterm> be
                 used in any order.</para>
         </listitem>
         <listitem>
@@ -1307,20 +1309,20 @@
                 allowed by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
                 <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>optional</glossterm>,
+                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
                     provided that the Constraints specified in the <remark>Format Style Module</remark>
                     are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>Size and Length Restriction                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS Module</remark> are met.</member>
             </simplelist>
         </listitem>
@@ -1334,7 +1336,7 @@
 
     <para><emphasis>Contains:</emphasis></para>
     <simplelist type="vert">
-        <member>- elements from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- elements from other namespaces, <glossterm>OPTIONAL</glossterm></member>
         <member>- Zero or one
             <link linkend="notes"><code>&lt;notes></code></link>
             elements followed by</member>
@@ -1355,25 +1357,25 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-        <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm></member>
-        <member>- <link linkend="name"><code>name</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="srcdir"><code>srcDir</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="trgdir"><code>trgDir</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <link linkend="name"><code>name</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="srcdir"><code>srcDir</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="trgdir"><code>trgDir</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
 
 
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>A <link linkend="unit"><code>&lt;unit></code></link> <glossterm>must</glossterm> contain at least one
+            <para>A <link linkend="unit"><code>&lt;unit></code></link> <glossterm>MUST</glossterm> contain at least one
                 <link linkend="segment"><code>&lt;segment></code></link>
                 element.
             </para>
@@ -1405,7 +1407,7 @@
             </simplelist>
         </listitem>
         <listitem>
-            <para><firstterm>Module</firstterm> and Extension elements <glossterm>may</glossterm> be
+            <para><firstterm>Module</firstterm> and Extension elements <glossterm>MAY</glossterm> be
                 used in any order.</para>
         </listitem>
         <listitem>
@@ -1413,20 +1415,20 @@
                 allowed by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
                 <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>optional</glossterm>,
+                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
                     provided that the Constraints specified in the <remark>Format Style Module</remark>
                     are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>Size and Length Restriction                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS                        Module</remark> are met.</member>
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-                        <glossterm>optional</glossterm>, provided that the Constraints specified in
+                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS Module</remark> are met.</member>
             </simplelist>
         </listitem>
@@ -1455,15 +1457,15 @@
   <simplelist type="vert">
     
     
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>OPTIONAL</glossterm></member>
     
-    <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
     
     
-    <member>- <link linkend="state"><code>state</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="state"><code>state</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="substate"><code>subState</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="substate"><code>subState</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
   </simplelist>
 
@@ -1486,7 +1488,7 @@
     
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-        <member>- <link linkend="id"><code>id</code></link>, <glossterm>optional</glossterm></member>
+        <member>- <link linkend="id"><code>id</code></link>, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
     
     
@@ -1515,12 +1517,12 @@
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
         <member>- <link linkend="id"><code>id</code></link>,
-                <glossterm>optional</glossterm></member>
-        <member>- <link linkend="appliesto"><code>appliesTo</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="category"><code>category</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="priority"><code>priority</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="ref"><code>ref</code></link>, <glossterm>optional</glossterm></member>
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+                <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="appliesto"><code>appliesTo</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="category"><code>category</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="priority"><code>priority</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="ref"><code>ref</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <para><emphasis>Example:</emphasis></para>
@@ -1542,8 +1544,8 @@
             <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
                 allowed by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
-                <member>- <remark><code>fs:fs</code></remark>, <glossterm>optional</glossterm></member>
-                <member>- <remark><code>fs:subFs</code></remark>, <glossterm>optional</glossterm></member>
+                <member>- <remark><code>fs:fs</code></remark>, <glossterm>OPTIONAL</glossterm></member>
+                <member>- <remark><code>fs:subFs</code></remark>, <glossterm>OPTIONAL</glossterm></member>
             </simplelist>
         </listitem>
     </itemizedlist>
@@ -1581,17 +1583,17 @@
     <member>- Zero, one or more <link linkend="cp"><code>&lt;cp></code></link> elements.</member>
   </simplelist>
 
-  <para>Non-translatable text and <link linkend="cp"><code>&lt;cp></code></link> elements <glossterm>may</glossterm> appear in any
+  <para>Non-translatable text and <link linkend="cp"><code>&lt;cp></code></link> elements <glossterm>MAY</glossterm> appear in any
     order.</para>
 
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm></member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
 
-    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>OPTIONAL</glossterm></member>
     
-    <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm>, the value is restricted
+    <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm>, the value is restricted
       to <code>preserve</code> on this element</member>
 	
 	
@@ -1619,8 +1621,8 @@
     <para>Text and inline elements may appear in any order.</para>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-        <member>- <link linkend="xml_lang"><code>xml:lang</code></link>, <glossterm>optional</glossterm></member>
-        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm></member>    
+        <member>- <link linkend="xml_lang"><code>xml:lang</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm></member>    
         
     </simplelist>
     
@@ -1631,9 +1633,9 @@
             <para>When a <link linkend="source"><code>&lt;source></code></link> element is a child of 
                 <link linkend="segment"><code>&lt;segment></code></link> or 
                 <link linkend="ignorable"><code>&lt;ignorable></code></link>, 
-              the explicit or inherited value of the <glossterm>optional</glossterm>
+              the explicit or inherited value of the <glossterm>OPTIONAL</glossterm>
                 <link linkend="xml_lang"><code>xml:lang</code></link> 
-                attribute <glossterm>must</glossterm> be equal to the value of the
+                attribute <glossterm>MUST</glossterm> be equal to the value of the
                 <link linkend="srcLang"><code>srcLang</code></link> attribute 
                 of the enclosing 
                 <link linkend="xliff"><code>&lt;xliff></code></link> 
@@ -1661,10 +1663,10 @@
   <para>Text and inline elements may appear in any order.</para>
   <para><emphasis>Attributes:</emphasis></para>
   <simplelist type="vert">
-    <member>- <link linkend="xml_lang"><code>xml:lang</code></link>, <glossterm>optional</glossterm></member>
-    <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>optional</glossterm></member>    
+    <member>- <link linkend="xml_lang"><code>xml:lang</code></link>, <glossterm>OPTIONAL</glossterm></member>
+    <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm></member>    
     
-    <member>- <link linkend="order"><code>order</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="order"><code>order</code></link>, <glossterm>OPTIONAL</glossterm></member>
   </simplelist>  
   <itemizedlist>
     <title>Constraints</title>
@@ -1672,9 +1674,9 @@
       <para>When a <link linkend="target"><code>&lt;target></code></link> element is a child of 
         <link linkend="segment"><code>&lt;segment></code></link> or 
         <link linkend="ignorable"><code>&lt;ignorable></code></link>, 
-        the explicit or inherited value of the <glossterm>optional</glossterm>
+        the explicit or inherited value of the <glossterm>OPTIONAL</glossterm>
         <link linkend="xml_lang"><code>xml:lang</code></link> 
-        <glossterm>must</glossterm> be equal to the value of the 
+        <glossterm>MUST</glossterm> be equal to the value of the 
         <link linkend="trgLang"><code>trgLang</code></link> 
         attribute of the enclosing 
         <link linkend="xliff"><code>&lt;xliff></code></link> 
@@ -1716,7 +1718,7 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="hex"><code>hex</code></link>, <glossterm>required</glossterm></member>
+    <member>- <link linkend="hex"><code>hex</code></link>, <glossterm>REQUIRED</glossterm></member>
 
 
   </simplelist>
@@ -1738,12 +1740,12 @@
     <title>Processing Requirements</title>
 
     <listitem>
-      <para><firstterm>Writers</firstterm> <glossterm>must</glossterm> encode all invalid XML characters of the content
+      <para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> encode all invalid XML characters of the content
       using <link linkend="cp"><code>&lt;cp></code></link>.</para>
     </listitem>
 
     <listitem>
-      <para><firstterm>Writers</firstterm> <glossterm>must not</glossterm> encode valid XML characters of the content using
+      <para><firstterm>Writers</firstterm> <glossterm>MUST NOT</glossterm> encode valid XML characters of the content using
       <link linkend="cp"><code>&lt;cp></code></link>.</para>
     </listitem>
   </itemizedlist>
@@ -1770,28 +1772,28 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="disp"><code>disp</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="disp"><code>disp</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="equiv"><code>equiv</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="equiv"><code>equiv</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm>.</member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm>.</member>
 
-    <member>- <link linkend="dataref"><code>dataRef</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dataref"><code>dataRef</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="subflows"><code>subFlows</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="subflows"><code>subFlows</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
 
   </simplelist>
@@ -1819,23 +1821,23 @@
         allowed by the wildcard <code>other</code>:</para>
       <simplelist type="vert">
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:fs:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
           met.</member>
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
           met.</member>
         
       </simplelist>
     </listitem>
-    <listitem><para>No other attributes <glossterm>must</glossterm> be used.</para></listitem>
+    <listitem><para>No other attributes <glossterm>MUST</glossterm> be used.</para></listitem>
 
   </itemizedlist>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
       <para><firstterm>Extractors</firstterm>
-        <glossterm>must not</glossterm> use the <link linkend="ph"><code>&lt;ph></code></link> element to represent spanning codes.</para>
+        <glossterm>MUST NOT</glossterm> use the <link linkend="ph"><code>&lt;ph></code></link> element to represent spanning codes.</para>
       <para><emphasis>Rationale:</emphasis> Using a standalone placeholder code for a spanning code
         does not allow for controlling the span (for instance tag order and data integrity) when
           <firstterm>Modifying</firstterm> inline content and is in <emphasis>direct
@@ -1891,42 +1893,42 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="canoverlap"><code>canOverlap</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canoverlap"><code>canOverlap</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="dispend"><code>dispEnd</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dispend"><code>dispEnd</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="dispstart"><code>dispStart</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dispstart"><code>dispStart</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="equivend"><code>equivEnd</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="equivend"><code>equivEnd</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="equivstart"><code>equivStart</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="equivstart"><code>equivStart</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm></member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
 
-    <member>- <link linkend="datarefend"><code>dataRefEnd</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="datarefend"><code>dataRefEnd</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="datarefstart"><code>dataRefStart</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="datarefstart"><code>dataRefStart</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <link linkend="subflowsend"><code>subFlowsEnd</code></link>,
-    <glossterm>optional</glossterm></member>
+    <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <link linkend="subflowsstart"><code>subFlowsStart</code></link>,
-    <glossterm>optional</glossterm></member>
+    <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>optional</glossterm></member>
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>OPTIONAL</glossterm></member>
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
 
 
@@ -1955,16 +1957,16 @@
         allowed by the wildcard <code>other</code>:</para>
       <simplelist type="vert">
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:fs:2.0</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
           met.</member>
         <member>- attributes from the namespace
             <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
           met.</member>
         
       </simplelist>
     </listitem>
-    <listitem><para>No other attributes <glossterm>must</glossterm> be used.</para></listitem>
+    <listitem><para>No other attributes <glossterm>MUST</glossterm> be used.</para></listitem>
 
   </itemizedlist>
 
@@ -1973,7 +1975,7 @@
 
     <listitem>
       <para><firstterm>Extractors</firstterm>
-        <glossterm>must not</glossterm> use the <link linkend="pc"><code>&lt;pc></code></link> element to represent standalone codes.</para>
+        <glossterm>MUST NOT</glossterm> use the <link linkend="pc"><code>&lt;pc></code></link> element to represent standalone codes.</para>
       <para>Rationale: Using a spanning code for a standalone code can easily result in having
         text inside a span where the original format does not allow it.</para>
           </listitem>
@@ -2001,38 +2003,38 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="canoverlap"><code>canOverlap</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canoverlap"><code>canOverlap</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="dataref"><code>dataRef</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dataref"><code>dataRef</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="disp"><code>disp</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="disp"><code>disp</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="equiv"><code>equiv</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="equiv"><code>equiv</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm></member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
 
-    <member>- <link linkend="isolated"><code>isolated</code></link>, <glossterm>optional</glossterm></member>
-
-
-    <member>- <link linkend="subflows"><code>subFlows</code></link>, <glossterm>optional</glossterm></member>
-
-    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>optional</glossterm></member>
-
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="isolated"><code>isolated</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
 
+    <member>- <link linkend="subflows"><code>subFlows</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>OPTIONAL</glossterm></member>
+
+    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
+
+
+
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
 
 
@@ -2063,26 +2065,26 @@
 
         <simplelist type="vert">
           <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:fs:2.0</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
             met.</member>
           <member>- attributes from the namespace
             <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
             met.</member>
           
         </simplelist>
 
     </listitem>
-    <listitem><para>No other attributes <glossterm>must</glossterm> be used.</para></listitem>
+    <listitem><para>No other attributes <glossterm>MUST</glossterm> be used.</para></listitem>
 
     <listitem>
       <para>The values of the attributes <link linkend="cancopy"><code>canCopy</code></link>, <link linkend="candelete"><code>canDelete</code></link>, <link linkend="canreorder"><code>canReorder</code></link> and <link linkend="canoverlap"><code>canOverlap</code></link>
-        <glossterm>must</glossterm> be the same as the values the ones in the <link linkend="ec"><code>&lt;ec></code></link> element
+        <glossterm>MUST</glossterm> be the same as the values the ones in the <link linkend="ec"><code>&lt;ec></code></link> element
         corresponding to this start code.</para>
     </listitem>
 
     <listitem>
-      <para>The attribute <link linkend="isolated"><code>isolated</code></link> <glossterm>must</glossterm> be set to
+      <para>The attribute <link linkend="isolated"><code>isolated</code></link> <glossterm>MUST</glossterm> be set to
       <code>yes</code> if and only if the <link linkend="ec"><code>&lt;ec></code></link> element corresponding to
       this start marker is not in the same <link linkend="unit"><code>&lt;unit></code></link>, and set to
       <code>no</code> otherwise.</para>
@@ -2093,7 +2095,7 @@
 
     <listitem>
       <para><firstterm>Extractors</firstterm>
-        <glossterm>must not</glossterm> use the <link linkend="sc"><code>&lt;sc></code></link> / <link linkend="ec"><code>&lt;ec></code></link> pair to represent standalone codes.</para>
+        <glossterm>MUST NOT</glossterm> use the <link linkend="sc"><code>&lt;sc></code></link> / <link linkend="ec"><code>&lt;ec></code></link> pair to represent standalone codes.</para>
         <para>Rationale: Using a spanning code for a standalone code can easily result in having
         text inside a span where the original format does not allow it.</para>
     </listitem>
@@ -2121,37 +2123,37 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canCopy</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="cancopy"><code>canDelete</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="canoverlap"><code>canOverlap</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canoverlap"><code>canOverlap</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="canreorder"><code>canReorder</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="copyof"><code>copyOf</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="dataref"><code>dataRef</code></link>, <glossterm>optional</glossterm></member>
-    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="dataref"><code>dataRef</code></link>, <glossterm>OPTIONAL</glossterm></member>
+    <member>- <link linkend="dir"><code>dir</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="disp"><code>disp</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="disp"><code>disp</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="equiv"><code>equiv</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="equiv"><code>equiv</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="isolated"><code>isolated</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="isolated"><code>isolated</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
 
-    <member>- <link linkend="startref"><code>startRef</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="startref"><code>startRef</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="subflows"><code>subFlows</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="subflows"><code>subFlows</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="subtype"><code>subType</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
 
     </simplelist>
@@ -2181,46 +2183,46 @@
         allowed by the wildcard <code>other</code>:</para>
       <simplelist type="vert">
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:fs:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Format Style Module</remark> are
           met.</member>
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark> are
           met.</member>
         
       </simplelist>
     </listitem>
-    <listitem><para>No other attributes <glossterm>must</glossterm> be used.</para></listitem>
+    <listitem><para>No other attributes <glossterm>MUST</glossterm> be used.</para></listitem>
 
 
 
     <listitem>
-      <para>The values of the attributes <link linkend="cancopy"><code>canCopy</code></link>, <link linkend="candelete"><code>canDelete</code></link> and <link linkend="canoverlap"><code>canOverlap</code></link> <glossterm>must</glossterm> be the same
+      <para>The values of the attributes <link linkend="cancopy"><code>canCopy</code></link>, <link linkend="candelete"><code>canDelete</code></link> and <link linkend="canoverlap"><code>canOverlap</code></link> <glossterm>MUST</glossterm> be the same
         as the values the ones in the <link linkend="sc"><code>&lt;sc></code></link> element corresponding to
         this end code.</para>
     </listitem>
 
     <listitem>
-      <para>The value of the attribute <link linkend="canreorder"><code>canReorder</code></link> <glossterm>must</glossterm> be <code>no</code>
+      <para>The value of the attribute <link linkend="canreorder"><code>canReorder</code></link> <glossterm>MUST</glossterm> be <code>no</code>
         if the value of <link linkend="canreorder"><code>canReorder</code></link> is <code>firstNo</code> in the <link linkend="sc"><code>&lt;sc></code></link> element corresponding to
         this end code.</para>
     </listitem>
 
     <listitem>
       <para>The attribute <link linkend="isolated"><code>isolated</code></link>
-        <glossterm>must</glossterm> be set to <code>yes</code> if and only if the <link linkend="sc"><code>&lt;sc></code></link> element
+        <glossterm>MUST</glossterm> be set to <code>yes</code> if and only if the <link linkend="sc"><code>&lt;sc></code></link> element
         corresponding to this end code is not in the same <link linkend="unit"><code>&lt;unit></code></link> and set to <code>no</code> otherwise.</para>
     </listitem>
 
     <listitem id="ecIFF">
       <para>If and only if the attribute <link linkend="isolated"><code>isolated</code></link> is set to <code>yes</code>, the
         attribute <link linkend="id"><code>id</code></link>
-        <glossterm>must</glossterm> be used instead of the attribute <link linkend="startref"><code>startRef</code></link> that <glossterm>must</glossterm> be used otherwise.</para>
+        <glossterm>MUST</glossterm> be used instead of the attribute <link linkend="startref"><code>startRef</code></link> that <glossterm>MUST</glossterm> be used otherwise.</para>
     </listitem>
     <listitem>
       <para> If and only if the attribute <link linkend="isolated"><code>isolated</code></link> is set to <code>yes</code>, the attribute <link linkend="dir"><code>dir</code></link>
-        <glossterm>may</glossterm> be used, otherwise the attribute <link linkend="dir"><code>dir</code></link>
-        <glossterm>must not</glossterm> be used on the <link linkend="ec"><code>&lt;ec></code></link> element. </para>
+        <glossterm>MAY</glossterm> be used, otherwise the attribute <link linkend="dir"><code>dir</code></link>
+        <glossterm>MUST NOT</glossterm> be used on the <link linkend="ec"><code>&lt;ec></code></link> element. </para>
     </listitem>
   </itemizedlist>
     <itemizedlist>
@@ -2228,7 +2230,7 @@
 
     <listitem>
       <para><firstterm>Extractors</firstterm>
-        <glossterm>must not</glossterm> use the <link linkend="sc"><code>&lt;sc></code></link> / <link linkend="ec"><code>&lt;ec></code></link> pair to represent standalone codes.</para>
+        <glossterm>MUST NOT</glossterm> use the <link linkend="sc"><code>&lt;sc></code></link> / <link linkend="ec"><code>&lt;ec></code></link> pair to represent standalone codes.</para>
       <para>Rationale: Using a spanning code for a standalone code can easily result in having
         text inside a span where the original format does not allow it.</para>
     </listitem>
@@ -2272,18 +2274,18 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm></member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
 
-    <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="ref"><code>ref</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="ref"><code>ref</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="value"><code>value</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="value"><code>value</code></link>, <glossterm>OPTIONAL</glossterm></member>
     
     
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
   </simplelist>
   
@@ -2291,26 +2293,26 @@
     <title>Constraints</title>
     <listitem>
       <para>The <link linkend="xml_namespace">[XML          namespace]</link>
-        <glossterm>must not</glossterm> be used at this extension point.</para>
+        <glossterm>MUST NOT</glossterm> be used at this extension point.</para>
     </listitem>
     <listitem>
       <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
         allowed by the wildcard <code>other</code>:</para>
       <simplelist type="vert">
         <member>- attributes from the namespace
-          <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>optional</glossterm>,
+          <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
           provided that the Constraints specified in the <remark>Format Style Module</remark>
           are met.</member>
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
           the <remark>Size and Length Restriction            Module</remark> are met.</member>
         <member>- attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
           the <remark>ITS            Module</remark> are met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>ITS            Module</remark> are met.</member>
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>ITS            Module</remark> are met.</member>
       </simplelist>
     </listitem>
     
@@ -2342,18 +2344,18 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="id"><code>id</code></link>, <glossterm>required</glossterm></member>
+    <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
 
-    <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="ref"><code>ref</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="ref"><code>ref</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="value"><code>value</code></link>, <glossterm>optional</glossterm></member>
+    <member>- <link linkend="value"><code>value</code></link>, <glossterm>OPTIONAL</glossterm></member>
     
     
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
   </simplelist>
   
@@ -2361,26 +2363,26 @@
     <title>Constraints</title>
     <listitem>
       <para>The <link linkend="xml_namespace">[XML          namespace]</link>
-        <glossterm>must not</glossterm> be used at this extension point.</para>
+        <glossterm>MUST NOT</glossterm> be used at this extension point.</para>
     </listitem>
     <listitem>
       <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly allowed by
         the wildcard <code>other</code>:</para>
       <simplelist type="vert">
         <member>- attributes from the namespace
-          <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>optional</glossterm>,
+          <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
           provided that the Constraints specified in the <remark>Format Style Module</remark>
           are met.</member>
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
           the <remark>Size and Length Restriction            Module</remark> are met.</member>
         <member>- attributes from the namespace
           <code>http://www.w3.org/2005/11/its</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
           the <remark>ITS            Module</remark> are met.</member>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-            <glossterm>optional</glossterm>, provided that the Constraints specified in the <remark>ITS            Module</remark> are met.</member>
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <remark>ITS            Module</remark> are met.</member>
       </simplelist>
     </listitem>
     
@@ -2412,7 +2414,7 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist type="vert">
-    <member>- <link linkend="startref"><code>startRef</code></link>, <glossterm>required</glossterm></member>
+    <member>- <link linkend="startref"><code>startRef</code></link>, <glossterm>REQUIRED</glossterm></member>
     
   </simplelist>
 
@@ -2684,7 +2686,7 @@
     element that contains the original data for a given inline code.</para>
 
   <para><emphasis>Value description:</emphasis> An <link linkend="XMLSchema2">[XML Schema Datatypes]</link> NMTOKEN that
-    <glossterm>must</glossterm> be the value of the <link linkend="id"><code>id</code></link> attribute of
+    <glossterm>MUST</glossterm> be the value of the <link linkend="id"><code>id</code></link> attribute of
   one of the <link linkend="data"><code>&lt;data></code></link> element listed in the
   same <link linkend="unit"><code>&lt;unit></code></link> element.</para>
 
@@ -2717,7 +2719,7 @@
   <para>Original data reference - holds the identifier of the <link linkend="data"><code>&lt;data></code></link>
     element that contains the original data for the end marker of a given inline code.</para>
 
-  <para><emphasis>Value description:</emphasis> An <link linkend="XMLSchema2">[XML Schema Datatypes]</link> NMTOKEN that <glossterm>must</glossterm> be
+  <para><emphasis>Value description:</emphasis> An <link linkend="XMLSchema2">[XML Schema Datatypes]</link> NMTOKEN that <glossterm>MUST</glossterm> be
   the value of the <link linkend="id"><code>id</code></link> attribute of one of the <link linkend="data"><code>&lt;data></code></link> element listed in the
   same <link linkend="unit"><code>&lt;unit></code></link> element.</para>
 
@@ -2752,7 +2754,7 @@
   <para>Original data reference - holds the identifier of the <link linkend="data"><code>&lt;data></code></link>
     element that contains the original data for the start marker of a given inline code.</para>
 
-  <para><emphasis>Value description:</emphasis> An <link linkend="XMLSchema2">[XML Schema Datatypes]</link> NMTOKEN that <glossterm>must</glossterm> be
+  <para><emphasis>Value description:</emphasis> An <link linkend="XMLSchema2">[XML Schema Datatypes]</link> NMTOKEN that <glossterm>MUST</glossterm> be
   the value of the <link linkend="id"><code>id</code></link> attribute of one of the <link linkend="data"><code>&lt;data></code></link> element listed in the
   same <link linkend="unit"><code>&lt;unit></code></link> element.</para>
 
@@ -3091,22 +3093,22 @@
   <itemizedlist>
     <listitem>
       <para>When used in a <link linkend="file"><code>&lt;file></code></link> element:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <link linkend="file"><code>&lt;file></code></link> <code>id</code> attribute values within the enclosing  <link linkend="xliff"><code>&lt;xliff></code></link> element.</para>
+      <para>The value <glossterm>MUST</glossterm> be unique among all <link linkend="file"><code>&lt;file></code></link> <code>id</code> attribute values within the enclosing  <link linkend="xliff"><code>&lt;xliff></code></link> element.</para>
     </listitem>
 
     <listitem>
       <para>When used in <link linkend="group"><code>&lt;group></code></link> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <link linkend="group"><code>&lt;group></code></link> <code>id</code> attribute values within the enclosing  <link linkend="file"><code>&lt;file></code></link> element.</para>
+      <para>The value <glossterm>MUST</glossterm> be unique among all <link linkend="group"><code>&lt;group></code></link> <code>id</code> attribute values within the enclosing  <link linkend="file"><code>&lt;file></code></link> element.</para>
     </listitem>
     
     <listitem>
       <para>When used in <link linkend="unit"><code>&lt;unit></code></link> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <link linkend="unit"><code>&lt;unit></code></link> <code>id</code> attribute values within the enclosing <link linkend="file"><code>&lt;file></code></link> element.</para>
+      <para>The value <glossterm>MUST</glossterm> be unique among all <link linkend="unit"><code>&lt;unit></code></link> <code>id</code> attribute values within the enclosing <link linkend="file"><code>&lt;file></code></link> element.</para>
     </listitem>
     
     <listitem>
       <para>When used in <link linkend="note"><code>&lt;note></code></link> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <link linkend="note"><code>&lt;note></code></link> <code>id</code> attribute values within the immediate enclosing 
+      <para>The value <glossterm>MUST</glossterm> be unique among all <link linkend="note"><code>&lt;note></code></link> <code>id</code> attribute values within the immediate enclosing 
         <link linkend="file"><code>&lt;file></code></link>,
         <link linkend="group"><code>&lt;group></code></link>, or
         <link linkend="unit"><code>&lt;unit></code></link> element.</para>
@@ -3114,7 +3116,7 @@
     
     <listitem>
       <para>When used in <link linkend="data"><code>&lt;data></code></link> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <link linkend="data"><code>&lt;data></code></link> <code>id</code> attribute values within the enclosing 
+      <para>The value <glossterm>MUST</glossterm> be unique among all <link linkend="data"><code>&lt;data></code></link> <code>id</code> attribute values within the enclosing 
         <link linkend="unit"><code>&lt;unit></code></link> element.</para>
     </listitem>
     
@@ -3129,9 +3131,9 @@
         <link linkend="ec"><code>&lt;ec></code></link>,
         or <link linkend="ph"><code>&lt;ph></code></link> elements:</para>
       <itemizedlist>
-        <listitem><para>The inline elements enclosed by a <link linkend="target"><code>&lt;target></code></link> element <glossterm>must</glossterm> use the duplicate <code>id</code> values
+        <listitem><para>The inline elements enclosed by a <link linkend="target"><code>&lt;target></code></link> element <glossterm>MUST</glossterm> use the duplicate <code>id</code> values
       of their corresponding inline elements enclosed within the sibling <link linkend="source"><code>&lt;source></code></link> element if and only if those corresponding elements exist.</para></listitem>
-        <listitem><para>Except for the above exception, the value <glossterm>must</glossterm> be unique among all of the above within the
+        <listitem><para>Except for the above exception, the value <glossterm>MUST</glossterm> be unique among all of the above within the
           enclosing <link linkend="unit"><code>&lt;unit></code></link> 
           element.</para></listitem>
       </itemizedlist>
@@ -3231,11 +3233,11 @@
     <para><emphasis>Used in:</emphasis> <link linkend="target"><code>&lt;target></code></link>.</para>
 <itemizedlist>
     <title>Constraints</title>
-    <listitem><para>The value of the <link linkend="order"><code>order</code></link> attribute <glossterm>must</glossterm> be unique
+    <listitem><para>The value of the <link linkend="order"><code>order</code></link> attribute <glossterm>MUST</glossterm> be unique
         within the enclosing <link linkend="unit"><code>&lt;unit></code></link> element.</para></listitem>
         <listitem>
             <para>The value of each of the <link linkend="order"><code>order</code></link> attributes used within a 
-                <link linkend="unit"><code>&lt;unit></code></link> element <glossterm>must not</glossterm> be higher than N,
+                <link linkend="unit"><code>&lt;unit></code></link> element <glossterm>MUST NOT</glossterm> be higher than N,
                 where N is the number of all current <link linkend="segment"><code>&lt;segment></code></link>
                 and <link linkend="ignorable"><code>&lt;ignorable></code></link> children of the said
                 <link linkend="unit"><code>&lt;unit></code></link> element.</para>
@@ -3401,7 +3403,7 @@
 
     <para>State - indicates the state of the translation of a segment.</para>
 
-    <para><emphasis>Value description:</emphasis> The value <glossterm>must</glossterm> be set to
+    <para><emphasis>Value description:</emphasis> The value <glossterm>MUST</glossterm> be set to
         one of the following values:</para>
 
     <simplelist type="vert">
@@ -3427,18 +3429,18 @@
         <title>Processing Requirements</title>
         <listitem>
             <para>When the optional <link linkend="state"><code>state</code></link> attribute is
-                added to a <link linkend="segment"><code>&lt;segment></code></link> element, it's value must be set to
-                    <code>initial</code> if the element doesn't have a <link linkend="target"><code>&lt;target></code></link> child. All valid values can be used when a
+                added to a <link linkend="segment"><code>&lt;segment></code></link> element, it's value <glossterm>MUST</glossterm> be set to
+                    <code>initial</code> if the element doesn't have a <link linkend="target"><code>&lt;target></code></link> child. All valid values <glossterm>MAY</glossterm> be used when a
                     <link linkend="target"><code>&lt;target></code></link> child is present. </para>
         </listitem>
         <listitem>
             <para><firstterm>Writers</firstterm> updating the attribute <link linkend="state"><code>state</code></link>
-                <glossterm>must</glossterm> also update or delete <link linkend="substate"><code>subState</code></link>.</para>
+                <glossterm>MUST</glossterm> also update or delete <link linkend="substate"><code>subState</code></link>.</para>
         </listitem>
     </itemizedlist>
 
     <note>
-        <para><link linkend="state"><code>state</code></link> is an <glossterm>optional</glossterm>
+        <para><link linkend="state"><code>state</code></link> is an <glossterm>OPTIONAL</glossterm>
             attribute of segments with a default value and segmentation can change as the XLIFF
             roundtrip progresses, hence implementers don't have to make explicit use of the
             attribute. However setting of the attribute is advantageous if a workflow needs to make
@@ -3518,7 +3520,7 @@
 
   <para>The prefix <code>xlf</code> is reserved for this specification.</para>
 
-  <para>Other prefixes and sub-values <glossterm>may</glossterm> be defined by the users.</para>
+  <para>Other prefixes and sub-values <glossterm>MAY</glossterm> be defined by the users.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
@@ -3529,7 +3531,7 @@
 
     <listitem>
       <para>If the attribute <link linkend="substate"><code>subState</code></link> is used, the attribute <link linkend="state"><code>state</code></link>
-        <glossterm>must</glossterm> be explicitly set.</para>
+        <glossterm>MUST</glossterm> be explicitly set.</para>
     </listitem>
     </itemizedlist>
     <itemizedlist>
@@ -3537,7 +3539,7 @@
       
   
     <listitem>
-      <para><firstterm>Writers</firstterm> updating the attribute <link linkend="state"><code>state</code></link> <glossterm>must</glossterm> also update or delete <link linkend="substate"><code>subState</code></link>.</para>
+      <para><firstterm>Writers</firstterm> updating the attribute <link linkend="state"><code>state</code></link> <glossterm>MUST</glossterm> also update or delete <link linkend="substate"><code>subState</code></link>.</para>
       </listitem>
   </itemizedlist>
 </section>
@@ -3571,7 +3573,7 @@
     <member><code>xlf:var</code> - Variable</member>
   </simplelist>
 
-  <para>Other prefixes and sub-values <glossterm>may</glossterm> be defined by the users.</para>
+  <para>Other prefixes and sub-values <glossterm>MAY</glossterm> be defined by the users.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
@@ -3582,16 +3584,16 @@
 
     <listitem>
       <para>If the attribute <link linkend="subtype"><code>subType</code></link> is used, the attribute <link linkend="type"><code>type</code></link>
-        <glossterm>must</glossterm> be specified as well.</para>
+        <glossterm>MUST</glossterm> be specified as well.</para>
     </listitem>
     <listitem>
       <para>The reserved <code>xlf:</code> prefixed values map onto the <link linkend="type"><code>type</code></link> attribute values as follows:</para>
       <simplelist type="vert">
         <member> For <code>xlf:b</code>, <code>xlf:i</code>, <code>xlf:u</code>,
-          <code>xlf:lb</code>, and <code>xlf:pb</code>, the <glossterm>required</glossterm> value of
+          <code>xlf:lb</code>, and <code>xlf:pb</code>, the <glossterm>REQUIRED</glossterm> value of
           the <link linkend="type"><code>type</code></link> attribute is
             <code>fmt</code>.</member>
-        <member> For <code>xlf:var</code>, the <glossterm>required</glossterm> value of the <link linkend="type"><code>type</code></link> attribute is
+        <member> For <code>xlf:var</code>, the <glossterm>REQUIRED</glossterm> value of the <link linkend="type"><code>type</code></link> attribute is
             <code>ui</code>.</member>
       </simplelist>
     </listitem>
@@ -3602,7 +3604,7 @@
     
     <listitem>
       <para><firstterm>Modifiers</firstterm> updating the attribute <link linkend="type"><code>type</code></link>
-        <glossterm>must</glossterm> also update or delete <link linkend="subtype"><code>subType</code></link>.</para>
+        <glossterm>MUST</glossterm> also update or delete <link linkend="subtype"><code>subType</code></link>.</para>
     </listitem>
   </itemizedlist>
 </section>
@@ -3706,7 +3708,7 @@
   <itemizedlist>
     <listitem>
       <para>When used in <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link> or <link linkend="ph">                  </link>:</para>
-      <para>The value  <glossterm>must</glossterm> be set to one of the following values:</para>
+      <para>The value  <glossterm>MUST</glossterm> be set to one of the following values:</para>
       <simplelist type="vert">
         <member><code>fmt</code> - Formatting (e.g. a &lt;b> element in HTML)</member>
         <member><code>ui</code> - User interface element</member>
@@ -3757,7 +3759,7 @@
           <code>type</code>
         </link> on <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link>, or
           <link linkend="ph">                  </link>
-        <glossterm>must</glossterm> also update or delete <link linkend="subtype">                  </link>.</para>
+        <glossterm>MUST</glossterm> also update or delete <link linkend="subtype">                  </link>.</para>
     </listitem>
   </itemizedlist>
 </section>
@@ -3902,7 +3904,7 @@
       <title>CDATA sections</title>
 
       <para>CDATA sections (<code>&lt;![CDATA[...]]&gt;</code>) are allowed in XLIFF content, but on
-        output they <glossterm>may</glossterm> be changed into normal escaped content.</para>
+        output they <glossterm>MAY</glossterm> be changed into normal escaped content.</para>
 
       <para>Note that avoiding CDATA sections is considered a best practice from the
         internationalization viewpoint <link linkend="biblio_xmli18nbp">[XML I18N BP]</link>.</para>
@@ -3912,12 +3914,12 @@
 
         <listitem>
           <para><firstterm>Agents</firstterm>
-            <glossterm>must</glossterm> process CDATA sections.</para>
+            <glossterm>MUST</glossterm> process CDATA sections.</para>
         </listitem>
 
         <listitem>
           <para><firstterm>Writers</firstterm>
-            <glossterm>may</glossterm> preserve the original CDATA sections.</para>
+            <glossterm>MAY</glossterm> preserve the original CDATA sections.</para>
         </listitem>
       </itemizedlist>
     </section>
@@ -3953,13 +3955,13 @@ Text content that is important</programlisting>
 
         <listitem>
           <para><firstterm>Agents</firstterm>
-            <glossterm>must</glossterm> ignore XML comments. That is the XLIFF parsed content is the
+            <glossterm>MUST</glossterm> ignore XML comments. That is the XLIFF parsed content is the
             same whether or not there is an XML comment in the document.</para>
         </listitem>
 
         <listitem>
           <para><firstterm>Writers</firstterm>
-            <glossterm>may</glossterm> preserve XML comments on output.</para>
+            <glossterm>MAY</glossterm> preserve XML comments on output.</para>
         </listitem>
       </itemizedlist>
     </section>
@@ -3974,13 +3976,13 @@ Text content that is important</programlisting>
         <title>Processing Requirements</title>
         <listitem>
           <para><firstterm>Agents</firstterm>
-            <glossterm>must not</glossterm> use Processing Instructions as a means to implement a
+            <glossterm>MUST NOT</glossterm> use Processing Instructions as a means to implement a
             feature already specified in <firstterm>XLIFF Core</firstterm> or
               <firstterm>Modules</firstterm>.</para>
         </listitem>
         <listitem>
           <para><firstterm>Writers</firstterm>
-            <glossterm>should</glossterm> preserve XML Processing Instructions in an
+            <glossterm>SHOULD</glossterm> preserve XML Processing Instructions in an
               <firstterm>XLIFF Document</firstterm>.</para>
         </listitem>
       </itemizedlist>
@@ -4035,14 +4037,14 @@ Text content that is important</programlisting>
 
   <para>There are two elements that contain inline markup in XLIFF: <link linkend="source"><code>&lt;source></code></link> and <link linkend="target"><code>&lt;target></code></link>.</para>
 
-  <para>In some cases, data directly associated with inline elements <glossterm>may</glossterm> also
+  <para>In some cases, data directly associated with inline elements <glossterm>MAY</glossterm> also
     be stored at the <link linkend="unit"><code>&lt;unit></code></link> level in an <link linkend="originaldata"><code>&lt;originalData></code></link> element.</para>
 
   <section id="text">
     <title>Text</title>
 
     <para>The XLIFF inline markup does not prescribe how to represent normal
-    text, besides that it <glossterm>must</glossterm> be valid XML.</para>
+    text, besides that it <glossterm>MUST</glossterm> be valid XML.</para>
 
     <section>
       <title>Characters invalid in XML</title>
@@ -4245,7 +4247,7 @@ Fuzzy match = "&lt;b>Warning found: "</programlisting>
     <section id="spanningcodeusage">
       <title>Usage of &lt;pc> and &lt;sc>/&lt;ec></title>
 
-      <para>A spanning code <glossterm>must</glossterm> be represented using a <link linkend="sc"><code>&lt;sc></code></link> element and a <link linkend="ec"><code>&lt;ec></code></link> element if the code is
+      <para>A spanning code <glossterm>MUST</glossterm> be represented using a <link linkend="sc"><code>&lt;sc></code></link> element and a <link linkend="ec"><code>&lt;ec></code></link> element if the code is
       not well-formed or orphan.</para>
 
       <para>For example, the following RTF content has two spans of
@@ -4272,7 +4274,7 @@ Text in \b bold \i and\b0  italics\i0</programlisting>
 &lt;/unit>
 </programlisting>
 
-      <para>If the spanning code is well-formed it <glossterm>may</glossterm> be represented using
+      <para>If the spanning code is well-formed it <glossterm>MAY</glossterm> be represented using
       either a single <link linkend="pc"><code>&lt;pc></code></link> element or using a pair
       of <link linkend="sc"><code>&lt;sc></code></link> and a <link linkend="ec"><code>&lt;ec></code></link> elements.</para>
 
@@ -4296,14 +4298,14 @@ Text in &lt;sc id="1" dataRef="c1"/>bold&lt;ec startRef="1" dataRef="c2"/>.</pro
 
         <listitem>
           <para>When both the <link linkend="pc"><code>&lt;pc></code></link> and the <link linkend="sc"><code>&lt;sc></code></link>/<link linkend="ec"><code>&lt;ec></code></link> representations are
-            possible, <firstterm>Extractors</firstterm> and <firstterm>Modifiers</firstterm> <glossterm>may</glossterm> use either one as long as all the information
+            possible, <firstterm>Extractors</firstterm> and <firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> use either one as long as all the information
           of the inline code (e.g. original data, sub-flow indicators, etc.)
           are preserved.</para>
         </listitem>
 
         <listitem>
           <para>When converting representation between a pair of <link linkend="sc"><code>&lt;sc></code></link> and <link linkend="ec"><code>&lt;ec></code></link> elements and a <link linkend="pc"><code>&lt;pc></code></link> element or
-            vice-versa, <firstterm>Modifiers</firstterm> <glossterm>must</glossterm> map their attributes as shown in
+            vice-versa, <firstterm>Modifiers</firstterm> <glossterm>MUST</glossterm> map their attributes as shown in
           the following table:</para>
 
           <table>
@@ -4471,7 +4473,7 @@ Text in &lt;sc id="1" dataRef="c1"/>bold&lt;ec startRef="1" dataRef="c2"/>.</pro
         </listitem>
 
         <listitem>
-          <para><firstterm>Agents</firstterm> <glossterm>must</glossterm> be able to handle any of the above two types of inline code
+          <para><firstterm>Agents</firstterm> <glossterm>MUST</glossterm> be able to handle any of the above two types of inline code
           representation.</para>
         </listitem>
       </itemizedlist>
@@ -4605,17 +4607,17 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
         <title>Processing Requirements</title>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add inline codes.</para>
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add inline codes.</para>
         </listitem>
 
         <listitem>
-          <para>The <link linkend="id"><code>id</code></link> value of the added code <glossterm>must</glossterm>
+          <para>The <link linkend="id"><code>id</code></link> value of the added code <glossterm>MUST</glossterm>
           be different from all <link linkend="id"><code>id</code></link> values in both source and
           target content of the unit where the new code is added.</para>
         </listitem>
 
         <listitem>
-          <para><firstterm>Mergers</firstterm> <glossterm>may</glossterm> ignore added inline codes when <firstterm>Merging</firstterm>
+          <para><firstterm>Mergers</firstterm> <glossterm>MAY</glossterm> ignore added inline codes when <firstterm>Merging</firstterm>
           the <firstterm>Translated</firstterm> content back into the original format.</para>
         </listitem>
       </itemizedlist>
@@ -4650,7 +4652,7 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
 &lt;/unit>
 </programlisting>
 
-        <para>If the base code has no associated data, the new code <glossterm>must</glossterm> use
+        <para>If the base code has no associated data, the new code <glossterm>MUST</glossterm> use
         the <link linkend="copyof"><code>copyOf</code></link> attribute to indicate
         the <code>id</code> of the base code. This allows the merging tool to
         know what original data to re-use.</para>
@@ -4673,12 +4675,12 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
           <title>Processing Requirements</title>
 
           <listitem>
-            <para><firstterm>Modifiers</firstterm> <glossterm>must not</glossterm> clone a code that has its <link linkend="cancopy"><code>canCopy</code></link> attribute is set
+            <para><firstterm>Modifiers</firstterm> <glossterm>MUST NOT</glossterm> clone a code that has its <link linkend="cancopy"><code>canCopy</code></link> attribute is set
             to <code>no</code>.</para>
           </listitem>
 
           <listitem>
-            <para>The <link linkend="copyof"><code>copyOf</code></link> attribute <glossterm>must</glossterm> be
+            <para>The <link linkend="copyof"><code>copyOf</code></link> attribute <glossterm>MUST</glossterm> be
             used when, and only when, the base code has no associated original
             data.</para>
           </listitem>
@@ -4798,12 +4800,12 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
         <title>Processing Requirements</title>
 
         <listitem>
-          <para>User agents <glossterm>may</glossterm> remove a given inline code only if its <link linkend="candelete"><code>canDelete</code></link> attribute is
+          <para>User agents <glossterm>MAY</glossterm> remove a given inline code only if its <link linkend="candelete"><code>canDelete</code></link> attribute is
           set to <code>yes</code>.</para>
         </listitem>
 
         <listitem>
-          <para>When removing a given inline code, the user agents <glossterm>must</glossterm> remove
+          <para>When removing a given inline code, the user agents <glossterm>MUST</glossterm> remove
           its associated original data, except if the original data is shared
           with another inline code that remains in the unit.</para>
           <para>Note that having
@@ -4959,16 +4961,16 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
         <listitem>
           <para>When the attribute <link linkend="canreorder"><code>canReorder</code></link> is set to <code>no</code> or <code>firstNo</code>,
             the attributes <link linkend="cancopy"><code>canCopy</code></link> and <link linkend="candelete"><code>canDelete</code></link>
-            <glossterm>must</glossterm> also be set to <code>no</code>.</para>
+            <glossterm>MUST</glossterm> also be set to <code>no</code>.</para>
         </listitem>
 		<listitem>
           <para>Inline codes re-ordering within a source or target content
-              <glossterm>may</glossterm> be limited by defining non-reorderable sequences. Such
+              <glossterm>MAY</glossterm> be limited by defining non-reorderable sequences. Such
             sequence is made of a first inline code with the attribute <link linkend="canreorder"><code>canReorder</code></link> set to <code>firstNo</code> and zero or more
             following codes with <link linkend="canreorder"><code>canReorder</code></link> set to <code>no</code>.</para>
         </listitem>
         <listitem>
-          <para>A non-reorderable sequence of codes <glossterm>must not</glossterm> start with a code with the attribute <link linkend="canreorder"><code>canReorder</code></link> set to <code>No</code> and zero or more
+          <para>A non-reorderable sequence of codes <glossterm>MUST NOT</glossterm> start with a code with the attribute <link linkend="canreorder"><code>canReorder</code></link> set to <code>No</code> and zero or more
             following codes with <link linkend="canreorder"><code>canReorder</code></link> set to <code>no</code></para>
           <note>
             <para>A non-reorderable sequence made of a single code with <link linkend="canreorder"><code>canReorder</code></link> set to <code>firstNo</code> are allowed just for
@@ -4981,18 +4983,18 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
         <itemizedlist>
           <title>Processing Requirements</title>
         <listitem>
-          <para><firstterm>Extractors</firstterm> <glossterm>should</glossterm> set the <link linkend="candelete"><code>canDelete</code></link>, <link linkend="cancopy"><code>canCopy</code></link> and <link linkend="canreorder"><code>canReorder</code></link> attributes
+          <para><firstterm>Extractors</firstterm> <glossterm>SHOULD</glossterm> set the <link linkend="candelete"><code>canDelete</code></link>, <link linkend="cancopy"><code>canCopy</code></link> and <link linkend="canreorder"><code>canReorder</code></link> attributes
           for the codes that need to be treated differently than with the
           default settings.</para>
         </listitem>
         <listitem>
           <para><firstterm>Modifiers</firstterm>
-            <glossterm>must not</glossterm> change the number and order of the inline codes making
+            <glossterm>MUST NOT</glossterm> change the number and order of the inline codes making
             up a non-reorderable sequence.</para>
         </listitem>
           <listitem>
             <para><firstterm>Modifiers</firstterm>
-            <glossterm>may</glossterm> move a whole non-reorderable sequence before or after another
+            <glossterm>MAY</glossterm> move a whole non-reorderable sequence before or after another
             non-reorderable sequence.</para>
           </listitem>
           <listitem>
@@ -5002,14 +5004,14 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
             change its value to <code>yes</code>.</para>
           </listitem>
           <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>must not</glossterm> delete inline codes that have their
+          <para><firstterm>Modifiers</firstterm> <glossterm>MUST NOT</glossterm> delete inline codes that have their
           attribute <link linkend="candelete"><code>canDelete</code></link> set to
           <code>no</code>.</para>
         </listitem>
 
         <listitem>
           <para><firstterm>Modifiers</firstterm>
-            <glossterm>must not</glossterm> replicate inline codes that have their attribute <link linkend="cancopy"><code>canCopy</code></link>
+            <glossterm>MUST NOT</glossterm> replicate inline codes that have their attribute <link linkend="cancopy"><code>canCopy</code></link>
             set to <code>no</code>.</para>
         </listitem>
 
@@ -5033,7 +5035,7 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
     <para>An annotation is an element that associates a section of the content
     with some metadata information.</para>
 
-    <para>Annotations <glossterm>may</glossterm> be created by an <firstterm>Extractor</firstterm>
+    <para>Annotations <glossterm>MAY</glossterm> be created by an <firstterm>Extractor</firstterm>
       that generated the initial <firstterm>XLIFF Document</firstterm>, or by any other
       <firstterm>Modifier</firstterm> or <firstterm>Enricher</firstterm> later in the process. For
       example, after an <firstterm>Extractor</firstterm> creates the document, an <firstterm>Enricher</firstterm> can
@@ -5058,16 +5060,16 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
         <itemizedlist spacing="compact">
           <listitem>
             <para>The <link linkend="id"><code>id</code></link> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
             <para>The <link linkend="translate"><code>translate</code></link> attribute is
-            <glossterm>required</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>REQUIRED</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
 
           <listitem>
-            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>optional</glossterm>
+            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>OPTIONAL</glossterm>
             and set to <code>generic</code> (this is the default value)</para>
           </listitem>
         </itemizedlist>
@@ -5105,27 +5107,27 @@ He saw his &lt;mrk id="m1" translate="no" type="term">doppelgänger
         <itemizedlist spacing="compact">
           <listitem>
             <para>The <link linkend="id"><code>id</code></link> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
-            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>required</glossterm>
+            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>REQUIRED</glossterm>
             and set to <code>term</code></para>
           </listitem>
 
           <listitem>
-            <para>The <link linkend="value"><code>value</code></link> attribute is <glossterm>optional</glossterm>
+            <para>The <link linkend="value"><code>value</code></link> attribute is <glossterm>OPTIONAL</glossterm>
             and contains a short definition of the term</para>
           </listitem>
 
           <listitem>
-            <para>The <link linkend="ref"><code>ref</code></link> attribute is <glossterm>optional</glossterm> and
+            <para>The <link linkend="ref"><code>ref</code></link> attribute is <glossterm>OPTIONAL</glossterm> and
             contains a URI pointing to information on the term</para>
           </listitem>
 
           <listitem>
             <para>The <link linkend="translate"><code>translate</code></link> attribute is
-            <glossterm>optional</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>OPTIONAL</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
         </itemizedlist>
         
@@ -5157,23 +5159,23 @@ He saw his &lt;mrk id="m1" translate="no" type="term">doppelgänger
         <itemizedlist spacing="compact">
           <listitem>
             <para>The <link linkend="id"><code>id</code></link> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
-            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>required</glossterm>
+            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>REQUIRED</glossterm>
             and set to <code>comment</code></para>
           </listitem>
 
           <listitem>
             <para>If the <link linkend="value"><code>value</code></link> attribute is present it contains the text of the
               comment. If and only if the <link linkend="value"><code>value</code></link> attribute is not present, the <link linkend="ref"><code>ref</code></link>
-              attribute <glossterm>must</glossterm> be present and contain the URI of a <link linkend="note"><code>&lt;note></code></link> element within the same enclosing <link linkend="unit"><code>&lt;unit></code></link> element that holds the comment.</para>
+              attribute <glossterm>MUST</glossterm> be present and contain the URI of a <link linkend="note"><code>&lt;note></code></link> element within the same enclosing <link linkend="unit"><code>&lt;unit></code></link> element that holds the comment.</para>
           </listitem>
 
           <listitem>
             <para>The <link linkend="translate"><code>translate</code></link> attribute is
-            <glossterm>optional</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>OPTIONAL</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
         </itemizedlist>
 
@@ -5209,7 +5211,7 @@ has been enabled.</programlisting>
         <para>The <link linkend="mrk"><code>&lt;mrk></code></link> element can be used
         to implement custom annotations.</para>
 
-        <para>A custom annotation <glossterm>must not</glossterm> provide the same functionality as a
+        <para>A custom annotation <glossterm>MUST NOT</glossterm> provide the same functionality as a
         pre-defined annotation.</para>
 
         <para>Usage:</para>
@@ -5217,17 +5219,17 @@ has been enabled.</programlisting>
         <itemizedlist spacing="compact">
           <listitem>
             <para>The <link linkend="id"><code>id</code></link> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
-            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>required</glossterm>
+            <para>The <link linkend="type"><code>type</code></link> attribute is <glossterm>REQUIRED</glossterm>
             and set to a unique user-defined value.</para>
           </listitem>
 
           <listitem>
             <para>The <link linkend="translate"><code>translate</code></link> attribute is
-            <glossterm>optional</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>OPTIONAL</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
 
           <listitem>
@@ -5337,10 +5339,10 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       <title>Constraints</title>
       <listitem>
         <para>An inline code containing or delimiting one or more sub-flows
-            <glossterm>must</glossterm> have an attribute <link linkend="subflows"><code>subFlows</code></link> that holds a list of the identifiers of the <link linkend="unit"><code>&lt;unit></code></link> elements where the sub-flows are stored.</para>
+            <glossterm>MUST</glossterm> have an attribute <link linkend="subflows"><code>subFlows</code></link> that holds a list of the identifiers of the <link linkend="unit"><code>&lt;unit></code></link> elements where the sub-flows are stored.</para>
       </listitem>
       <listitem>
-        <para>Sub-flows <glossterm>must</glossterm> be in the same <link linkend="file"><code>&lt;file></code></link> element as the <link linkend="unit"><code>&lt;unit></code></link> element from which they are referenced.</para>
+        <para>Sub-flows <glossterm>MUST</glossterm> be in the same <link linkend="file"><code>&lt;file></code></link> element as the <link linkend="unit"><code>&lt;unit></code></link> element from which they are referenced.</para>
       </listitem>
     </itemizedlist>
     
@@ -5348,14 +5350,14 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       <title>Processing Requirements</title>
 
       <listitem>
-        <para><firstterm>Extractors</firstterm> <glossterm>should</glossterm> store each sub-flow in its own <link linkend="unit"><code>&lt;unit></code></link> element.</para>
+        <para><firstterm>Extractors</firstterm> <glossterm>SHOULD</glossterm> store each sub-flow in its own <link linkend="unit"><code>&lt;unit></code></link> element.</para>
       </listitem>
 
       
 
       <listitem>
         <para><firstterm>Extractors</firstterm>
-          <glossterm>may</glossterm> order the <link linkend="unit"><code>&lt;unit></code></link> elements of the sub-flows and the
+          <glossterm>MAY</glossterm> order the <link linkend="unit"><code>&lt;unit></code></link> elements of the sub-flows and the
             <link linkend="unit"><code>&lt;unit></code></link> element, from where the sub-flows are referenced,
           as they see fit. </para>
       </listitem>
@@ -5379,9 +5381,9 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 
       <listitem>
         <para>For the inline content and all non empty inline elements: The white spaces
-            <glossterm>must</glossterm> be preserved if the value for <code>xml:space</code> set or
+            <glossterm>MUST</glossterm> be preserved if the value for <code>xml:space</code> set or
           inherited at the enclosing <link linkend="unit"><code>&lt;unit></code></link> level is <code>preserve</code>, and
-          they <glossterm>may</glossterm> be preserved if the value is <code>default</code>.</para>
+          they <glossterm>MAY</glossterm> be preserved if the value is <code>default</code>.</para>
       </listitem>
     </itemizedlist>
   </section>
@@ -5393,18 +5395,18 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     Source and target content can have different directionality.</para>
 
     <para>The initial directionality for both the source and the target content is defined in the
-        <link linkend="file"><code>&lt;file></code></link> element, using the <glossterm>optional</glossterm>
+        <link linkend="file"><code>&lt;file></code></link> element, using the <glossterm>OPTIONAL</glossterm>
       attributes <link linkend="srcdir"><code>srcDir</code></link> for the source and <link linkend="trgdir"><code>trgDir</code></link> for
       the target. The default value for both attributes is <code>auto</code>.</para>
 
     <para>The <link linkend="group"><code>&lt;group></code></link> and <link linkend="unit"><code>&lt;unit></code></link> elements also have the two
-        <glossterm>optional</glossterm> attributes <link linkend="srcdir"><code>srcDir</code></link> and <link linkend="trgdir"><code>trgDir</code></link>. The
+        <glossterm>OPTIONAL</glossterm> attributes <link linkend="srcdir"><code>srcDir</code></link> and <link linkend="trgdir"><code>trgDir</code></link>. The
       default value of the <link linkend="srcdir"><code>srcDir</code></link> is inherited from the value of the <link linkend="srcdir"><code>srcDir</code></link>
       attribute of the respective parent element. The default value of the <link linkend="trgdir"><code>trgDir</code></link>
       attribute is inherited from the value of the <link linkend="trgdir"><code>trgDir</code></link> attribute of the respective parent
       element.</para>
 
-    <para>The <link linkend="pc"><code>&lt;pc></code></link>, <link linkend="sc"><code>&lt;sc></code></link>, and isolated <link linkend="ec"><code>&lt;ec></code></link> elements have an <glossterm>optional</glossterm>
+    <para>The <link linkend="pc"><code>&lt;pc></code></link>, <link linkend="sc"><code>&lt;sc></code></link>, and isolated <link linkend="ec"><code>&lt;ec></code></link> elements have an <glossterm>OPTIONAL</glossterm>
       attribute <link linkend="dir"><code>dir</code></link>
       with a value <code>ltr</code>, <code>rtl</code>, or <code>auto</code>. The default value is
       inherited from the parent <link linkend="pc"><code>&lt;pc></code></link> element. In case the inline element is a child of a
@@ -5416,7 +5418,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         that unlike directionality set on the <link linkend="pc"><code>&lt;pc></code></link> and <link linkend="sc"><code>&lt;sc></code></link> , this
         method decreases the stack level as per [UAX #9].</para>
     </warning>
-    <para>In addition, the <link linkend="data"><code>&lt;data></code></link> element has an <glossterm>optional</glossterm>
+    <para>In addition, the <link linkend="data"><code>&lt;data></code></link> element has an <glossterm>OPTIONAL</glossterm>
       attribute <link linkend="dir"><code>dir</code></link>
       with a value <code>ltr</code>, <code>rtl</code>, or <code>auto</code> that is not inherited.
       The default value is <code>auto</code>.</para>
@@ -5455,7 +5457,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     with the target content of a given segment in order to provide
     interoperability throughout the whole process.</para>
 
-    <para>The <firstterm>Extractor</firstterm> <glossterm>may</glossterm> create the initial target content as it sees
+    <para>The <firstterm>Extractor</firstterm> <glossterm>MAY</glossterm> create the initial target content as it sees
     fit.</para>
 
     <para>The <firstterm>Merger</firstterm> is assumed to have the same level of processing and
@@ -5479,48 +5481,48 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         <title>Processing Requirements</title>
 
         <listitem>
-          <para><firstterm>Writers</firstterm> <glossterm>may</glossterm> leave the segment without a target.</para>
+          <para><firstterm>Writers</firstterm> <glossterm>MAY</glossterm> leave the segment without a target.</para>
         </listitem>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> create a new target as follows:</para>
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> create a new target as follows:</para>
 
           <itemizedlist>
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add translation of the source text.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add translation of the source text.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>must</glossterm> put all <link linkend="editinghints">non-removable</link> inline codes in the
+              <para><firstterm>Modifiers</firstterm> <glossterm>MUST</glossterm> put all <link linkend="editinghints">non-removable</link> inline codes in the
               target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>must</glossterm> preserve the order of all the <link linkend="editinghints">non-reorderable</link> inline
+              <para><firstterm>Modifiers</firstterm> <glossterm>MUST</glossterm> preserve the order of all the <link linkend="editinghints">non-reorderable</link> inline
               codes.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> put any <link linkend="editinghints">removable</link> inline code in the
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> put any <link linkend="editinghints">removable</link> inline code in the
               target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add inline codes.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add inline codes.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add or remove annotations.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add or remove annotations.</para>
             </listitem>
 
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert any <link linkend="pc"><code>&lt;pc></code></link> element into a
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert any <link linkend="pc"><code>&lt;pc></code></link> element into a
               pair of <link linkend="sc"><code>&lt;sc></code></link> and <link linkend="ec"><code>&lt;ec></code></link> elements.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert, if it is possible, any pair of
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert, if it is possible, any pair of
               <link linkend="sc"><code>&lt;sc></code></link> and <link linkend="ec"><code>&lt;ec></code></link> elements into a
               <link linkend="pc"><code>&lt;pc></code></link> element.</para>
             </listitem>
@@ -5533,62 +5535,62 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       <title>With an Existing Target</title>
 
       <para>When working with a segment with content already in the target,
-        <firstterm>Writers</firstterm> <glossterm>must</glossterm> choose one of the three behaviors described below:</para>
+        <firstterm>Writers</firstterm> <glossterm>MUST</glossterm> choose one of the three behaviors described below:</para>
 
       <itemizedlist>
         <title>Processing Requirements</title>
 
         <listitem>
-          <para><firstterm>Writers</firstterm> <glossterm>may</glossterm> leave the existing target unchanged.</para>
+          <para><firstterm>Writers</firstterm> <glossterm>MAY</glossterm> leave the existing target unchanged.</para>
         </listitem>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> modify the existing target as follow:</para>
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> modify the existing target as follow:</para>
 
           <itemizedlist>
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add or <firstterm>Modify</firstterm> translatable text.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add or <firstterm>Modify</firstterm> translatable text.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Writers</firstterm> <glossterm>must</glossterm> preserve all <link linkend="editinghints">non-removable</link> inline codes,
+              <para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> preserve all <link linkend="editinghints">non-removable</link> inline codes,
               regardless whether or not they exist in the source.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Writers</firstterm> <glossterm>must</glossterm> preserve any <link linkend="editinghints">non-reorderable</link> inline codes in
+              <para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> preserve any <link linkend="editinghints">non-reorderable</link> inline codes in
               the existing target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Writers</firstterm> <glossterm>must not</glossterm> add any <link linkend="editinghints">non-reorderable</link> inline codes to
+              <para><firstterm>Writers</firstterm> <glossterm>MUST NOT</glossterm> add any <link linkend="editinghints">non-reorderable</link> inline codes to
               the target.</para>
             </listitem>
 
             
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> remove any <link linkend="editinghints">removable</link> inline codes in the
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> remove any <link linkend="editinghints">removable</link> inline codes in the
               target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add inline codes (including copying any
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add inline codes (including copying any
               <link linkend="editinghints">cloneable</link> inline codes of
               the existing target).</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add or remove annotations.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add or remove annotations.</para>
             </listitem>
             
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert any <link linkend="pc"><code>&lt;pc></code></link> element into a
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert any <link linkend="pc"><code>&lt;pc></code></link> element into a
               pair of <link linkend="sc"><code>&lt;sc></code></link> and <link linkend="ec"><code>&lt;ec></code></link> elements.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert, if it is possible, any pair of
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert, if it is possible, any pair of
               <link linkend="sc"><code>&lt;sc></code></link> and <link linkend="ec"><code>&lt;ec></code></link> elements into a
               <link linkend="pc"><code>&lt;pc></code></link> element.</para>
             </listitem>
@@ -5596,7 +5598,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         </listitem>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> delete the existing target and start over as
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> delete the existing target and start over as
           if working without an existing target.</para>
         </listitem>
       </itemizedlist>
@@ -5677,7 +5679,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 
     <para>Each <link linkend="segment"><code>&lt;segment></code></link> element has one
     <link linkend="source"><code>&lt;source></code></link> element that
-    contains the source content and one <glossterm>optional</glossterm> <link linkend="target"><code>&lt;target></code></link> element that can be
+    contains the source content and one <glossterm>OPTIONAL</glossterm> <link linkend="target"><code>&lt;target></code></link> element that can be
     empty or contain the translation of the source content at a given
     state.</para>
 
@@ -5708,7 +5710,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     <para>Some <firstterm>Agents</firstterm> (e.g. aligner tools) can segment content, so that
     the target segments are not in the same order as the source segments.</para>
 
-    <para>To be able to map order differences, the <link linkend="target"><code>&lt;target></code></link> element has an <glossterm>optional</glossterm> <link linkend="order"><code>order</code></link> attribute
+    <para>To be able to map order differences, the <link linkend="target"><code>&lt;target></code></link> element has an <glossterm>OPTIONAL</glossterm> <link linkend="order"><code>order</code></link> attribute
       that indicates its position in the sequence of segments (and inter-segments). Its value is an
       integer from 1 to N, where N is the sum of the numbers of the <link linkend="segment"><code>&lt;segment></code></link> and <link linkend="ignorable"><code>&lt;ignorable></code></link> elements within the given enclosing <link linkend="unit"><code>&lt;unit></code></link> element.</para>
     <warning><para>When <firstterm>Writers</firstterm> set explicit <code><link linkend="order">order</link></code> on <link linkend="target"><code>&lt;target></code></link> elements,
@@ -5752,15 +5754,15 @@ Palouse horses&lt;fn>A Palouse horse is the same as
   <section id="segmentationModification">
     <title>Segmentation Modification</title>
     <para>When <firstterm>Modifying</firstterm> segmentation of a <link linkend="unit"><code>&lt;unit></code></link>,
-      <firstterm>Modifiers</firstterm> <glossterm>must</glossterm> meet the Constraints and follow the Processing Requirements defined below:</para>
+      <firstterm>Modifiers</firstterm> <glossterm>MUST</glossterm> meet the Constraints and follow the Processing Requirements defined below:</para>
     <itemizedlist>
       <title>Constraints</title>
       <listitem>
-        <para>Integrity of the inline codes <glossterm>must</glossterm> be preserved. See the section on <link linkend="inlineCodes">Inline Codes</link> and on <link linkend="annotations">Annotations</link> for details.</para>
+        <para>Integrity of the inline codes <glossterm>MUST</glossterm> be preserved. See the section on <link linkend="inlineCodes">Inline Codes</link> and on <link linkend="annotations">Annotations</link> for details.</para>
       </listitem>
       <listitem>
         <para>The entire source content of any one <link linkend="unit"><code>&lt;unit></code></link> element
-          <glossterm>must</glossterm> remain logically unchanged: <link linkend="segment"><code>&lt;segment></code></link> elements or their data <glossterm>must not</glossterm> be moved or joined across units.</para>
+          <glossterm>MUST</glossterm> remain logically unchanged: <link linkend="segment"><code>&lt;segment></code></link> elements or their data <glossterm>MUST NOT</glossterm> be moved or joined across units.</para>
       </listitem>
     </itemizedlist>
     <warning><para>Note that when splitting or joining segments that have both source and target content it is advisable
@@ -5778,13 +5780,13 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para>Only <link linkend="segment"><code>&lt;segment></code></link> or
               <link linkend="ignorable"><code>&lt;ignorable></code></link> elements
               that have their <link linkend="canResegment"><code>canResegment</code></link> value resolved to <code>yes</code>
-              <glossterm>may</glossterm> be split.</para>
+              <glossterm>MAY</glossterm> be split.</para>
           </listitem>
           <listitem>
             <para>All new <link linkend="segment"><code>&lt;segment></code></link> or
               <link linkend="ignorable"><code>&lt;ignorable></code></link> elements
               created and their <link linkend="source"><code>&lt;source></code></link> and
-              <link linkend="target"><code>&lt;target></code></link> children <glossterm>must</glossterm> have
+              <link linkend="target"><code>&lt;target></code></link> children <glossterm>MUST</glossterm> have
               the same attribute values as the original elements they were
               created from, as applicable, except for the <link linkend="id"><code>id</code></link> attributes and, possibly, for the
               <link linkend="order"><code>order</code></link>,
@@ -5792,7 +5794,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
               <link linkend="substate"><code>subState</code></link> attributes.</para>
           </listitem>
           <listitem>
-            <para>Any new <link linkend="id"><code>id</code></link> attributes <glossterm>must</glossterm> follow the
+            <para>Any new <link linkend="id"><code>id</code></link> attributes <glossterm>MUST</glossterm> follow the
               <link linkend="segment"><code>&lt;segment></code></link> or
               <link linkend="ignorable"><code>&lt;ignorable></code></link>
               <link linkend="id"><code>id</code></link> constraints.</para>
@@ -5801,8 +5803,8 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para>If there was a target content in the original segment and if the <link linkend="state"><code>state</code></link> attribute
               of the original segment was not <code>initial</code>, the <link linkend="state"><code>state</code></link> attributes of the
               segments resulting from the split (and possibly their corresponding <link linkend="substate"><code>subState</code></link>
-              attributes) <glossterm>may</glossterm> be
-              changed to reflect the fact that the target content <glossterm>may</glossterm> need to be verified as the new segmentation <glossterm>may</glossterm> have desynchronized the alignment between
+              attributes) <glossterm>MAY</glossterm> be
+              changed to reflect the fact that the target content <glossterm>MAY</glossterm> need to be verified as the new segmentation <glossterm>MAY</glossterm> have desynchronized the alignment between
               the source and target contents.</para>
           </listitem>
         </itemizedlist>
@@ -5815,7 +5817,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para>Only <link linkend="segment"><code>&lt;segment></code></link> or
               <link linkend="ignorable"><code>&lt;ignorable></code></link> elements
               that have their <link linkend="canResegment"><code>canResegment</code></link> value resolved to
-              <code>yes</code> <glossterm>may</glossterm> be join with other elements.</para>
+              <code>yes</code> <glossterm>MAY</glossterm> be join with other elements.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -5826,7 +5828,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
           <listitem>
             <para>Two elements (<link linkend="segment"><code>&lt;segment></code></link> or
               <link linkend="ignorable"><code>&lt;ignorable></code></link>)
-              <glossterm>must not</glossterm> be joined if their <link linkend="target"><code>&lt;target></code></link> have
+              <glossterm>MUST NOT</glossterm> be joined if their <link linkend="target"><code>&lt;target></code></link> have
               resolved <link linkend="order"><code>order</code></link> values that are not consecutive.</para>
           </listitem>
           <listitem>
@@ -5834,38 +5836,38 @@ Palouse horses&lt;fn>A Palouse horse is the same as
               <link linkend="ignorable"><code>&lt;ignorable></code></link>) and the attributes of their
               <link linkend="source"><code>&lt;source></code></link> and
               <link linkend="target"><code>&lt;target></code></link>
-              <glossterm>must</glossterm> be carried over in the resulting joined elements.</para>
+              <glossterm>MUST</glossterm> be carried over in the resulting joined elements.</para>
           </listitem>
           <listitem>
             <para>If attributes of elements to be joined (<link linkend="segment"><code>&lt;segment></code></link> or
               <link linkend="ignorable"><code>&lt;ignorable></code></link>) differ, or if the attributes of their
               <link linkend="source"><code>&lt;source></code></link> or
               <link linkend="target"><code>&lt;target></code></link> differ,
-              the resulting joined elements <glossterm>must</glossterm> comply with following rules:</para>
+              the resulting joined elements <glossterm>MUST</glossterm> comply with following rules:</para>
             <itemizedlist>
               <listitem>
                 <para>If the <link linkend="state"><code>state</code></link> attributes of the
                   <link linkend="segment"><code>&lt;segment></code></link> elements
                   differ: the <link linkend="state"><code>state</code></link> attribute of the joined
                   <link linkend="segment"><code>&lt;segment></code></link>
-                  <glossterm>must</glossterm> be set
+                  <glossterm>MUST</glossterm> be set
                   to the "earliest" of the values specified in the original <link linkend="segment"><code>&lt;segment></code></link> elements. The sequence of
                   <link linkend="state"><code>state</code></link> values are defined in the following order:
                   1: <code>initial</code>, 2: <code>translated</code>, 3: <code>reviewed</code>, and 4: <code>final</code>.</para>
               </listitem>
               <listitem>
-                <para>The <link linkend="substate"><code>subState</code></link> attribute <glossterm>must</glossterm> be the one
+                <para>The <link linkend="substate"><code>subState</code></link> attribute <glossterm>MUST</glossterm> be the one
                   associated with the
                   <link linkend="state"><code>state</code></link> attribute selected to be used in the joined <link linkend="segment"><code>&lt;segment></code></link>.
                   If no <link linkend="substate"><code>subState</code></link> attribute is associated with that
                   <link linkend="state"><code>state</code></link>, the joined
-                  <link linkend="segment"><code>&lt;segment></code></link> <glossterm>must not</glossterm>
+                  <link linkend="segment"><code>&lt;segment></code></link> <glossterm>MUST NOT</glossterm>
                   have a <link linkend="substate"><code>subState</code></link>.</para>
               </listitem>
               <listitem>
                 <para>If the <link linkend="xml_space"><code>xml:space</code></link> attributes differ:
                   The <link linkend="source"><code>&lt;source></code></link> and
-                  <link linkend="target"><code>&lt;target></code></link> of the joined element <glossterm>must</glossterm> be
+                  <link linkend="target"><code>&lt;target></code></link> of the joined element <glossterm>MUST</glossterm> be
                   set to <code>xml:space="preserve"</code>.</para>
               </listitem>
               
@@ -5880,7 +5882,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
           <listitem>
             <para>If any <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link> element of the <link linkend="unit"><code>&lt;unit></code></link> had a <link linkend="target"><code>&lt;target></code></link> child with an <link linkend="order"><code>order</code></link>
               attribute prior to the segmentation modification, the <link linkend="target"><code>&lt;target></code></link> child of all <link linkend="segment"><code>&lt;segment></code></link> and <link linkend="ignorable"><code>&lt;ignorable></code></link> elements in the <link linkend="unit"><code>&lt;unit></code></link>
-              <glossterm>must</glossterm> be examined and if necessary their <link linkend="order"><code>order</code></link>
+              <glossterm>MUST</glossterm> be examined and if necessary their <link linkend="order"><code>order</code></link>
               attributes updated to preserve the ordering of the target content prior the
               segmentation modification.</para>
           </listitem>
@@ -5975,12 +5977,12 @@ Palouse horses&lt;fn>A Palouse horse is the same as
   <section id="ext-constraints">
     <title>Constraints</title>
     <itemizedlist>
-      <listitem><para>When using identifiers, an extension <glossterm>must</glossterm> use either an attribute named <code>id</code> or the attribute
+      <listitem><para>When using identifiers, an extension <glossterm>MUST</glossterm> use either an attribute named <code>id</code> or the attribute
         <code>xml:id</code> to specify them.</para></listitem>
-      <listitem><para>Extensions identifiers <glossterm>must</glossterm> be unique within their immediate <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link> 
+      <listitem><para>Extensions identifiers <glossterm>MUST</glossterm> be unique within their immediate <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link> 
         or <link linkend="unit"><code>&lt;unit></code></link> 
         enclosing element.</para></listitem>
-      <listitem><para>Identifier values used in extensions <glossterm>must</glossterm> be of type <code>xs:NMTOKEN</code> or compatible with <code>xs:NMTOKEN</code>
+      <listitem><para>Identifier values used in extensions <glossterm>MUST</glossterm> be of type <code>xs:NMTOKEN</code> or compatible with <code>xs:NMTOKEN</code>
         (e.g. <code>xs:NAME</code> and <code>xs:ID</code> are compatible).</para></listitem>
     </itemizedlist>
     <para>These constraints are needed for the <link linkend="fragid">fragment identification mechanism</link>.</para>
@@ -5991,20 +5993,20 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         <itemizedlist>
             <listitem>
                 <para>A user extension, whether implemented using <remark><code>&lt;mda:metadata></code></remark> or using a custom namespace,
-                        <glossterm>must not</glossterm> provide the same functionality as an
-                    existing XLIFF core or module feature, however it <glossterm>may</glossterm>
+                        <glossterm>MUST NOT</glossterm> provide the same functionality as an
+                    existing XLIFF core or module feature, however it <glossterm>MAY</glossterm>
                     complement an extensible XLIFF core feature or module feature or provide a new
                     functionality at the provided extension points.</para>
             </listitem>
             
             <listitem>
-                <para><firstterm>Mergers</firstterm> <glossterm>must not</glossterm> rely on custom namespace extensions, other than the ones possibly defined in <link linkend="skeleton"><code>&lt;skeleton></code></link>, to create the <firstterm>Translated</firstterm> version of
+                <para><firstterm>Mergers</firstterm> <glossterm>MUST NOT</glossterm> rely on custom namespace extensions, other than the ones possibly defined in <link linkend="skeleton"><code>&lt;skeleton></code></link>, to create the <firstterm>Translated</firstterm> version of
                     the original document. </para>
             </listitem>
             
             <listitem>
                 <para><firstterm>Writers</firstterm> that do not support a given custom namespace based user extension
-                        <glossterm>should</glossterm> preserve that extension without
+                        <glossterm>SHOULD</glossterm> preserve that extension without
                     <firstterm>Modification</firstterm>.</para>
             </listitem>
         </itemizedlist>
@@ -6023,7 +6025,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       was provisionally registered as <code>application/xliff+xml</code> in the <ulink url="https://www.iana.org/assignments/provisional-standard-media-types/provisional-standard-media-types.xhtml">IANA Provisional Standard Media Type Registry</ulink>.</para>
     <para>This Appendix content will be used to seek final media type registration for XLIFF Version
       2.1 and higher Versions (including this XLIFF Version 2.2). </para>
-    
+
     <section id="mediaTypeTemplate">
     <title>Registration Template</title>
 
@@ -6069,7 +6071,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 17 May 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
+                that was last published on 5 July 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">
@@ -6419,10 +6421,10 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       </listitem>
       <listitem>
         <para>Schnabel, Bryan - Individual </para>
-      </listitem>      
+      </listitem>
       <listitem>
         <para>Umaoka, Yoshito - IBM </para>
-      </listitem>      
+      </listitem>
     </itemizedlist>
 
   </appendix>

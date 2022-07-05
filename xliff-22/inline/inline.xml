@@ -43,7 +43,7 @@
   targetdoc="../elements/structural/target.xml"
   targetptr="target"><code>&lt;target&gt;</code></olink>.</para>
 
-  <para>In some cases, data directly associated with inline elements <glossterm>may</glossterm> also
+  <para>In some cases, data directly associated with inline elements <glossterm>MAY</glossterm> also
     be stored at the <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"
       ><code>&lt;unit&gt;</code></olink> level in an <olink targetdoc="../elements/structural/originaldata.xml" targetptr="originaldata"><code>&lt;originalData&gt;</code></olink> element.</para>
 
@@ -51,7 +51,7 @@
     <title>Text</title>
 
     <para>The XLIFF inline markup does not prescribe how to represent normal
-    text, besides that it <glossterm>must</glossterm> be valid XML.</para>
+    text, besides that it <glossterm>MUST</glossterm> be valid XML.</para>
 
     <section>
       <title>Characters invalid in XML</title>
@@ -272,7 +272,7 @@ Fuzzy match = "&lt;b&gt;Warning found: "</programlisting>
     <section id="spanningcodeusage">
       <title>Usage of &lt;pc&gt; and &lt;sc&gt;/&lt;ec&gt;</title>
 
-      <para>A spanning code <glossterm>must</glossterm> be represented using a <olink
+      <para>A spanning code <glossterm>MUST</glossterm> be represented using a <olink
       targetdoc="../elements/inline/sc.xml"
       targetptr="sc"><code>&lt;sc&gt;</code></olink> element and a <olink
       targetdoc="../elements/inline/ec.xml"
@@ -307,7 +307,7 @@ Text in \b bold \i and\b0  italics\i0</programlisting>
 &lt;/unit&gt;
 </programlisting>
 
-      <para>If the spanning code is well-formed it <glossterm>may</glossterm> be represented using
+      <para>If the spanning code is well-formed it <glossterm>MAY</glossterm> be represented using
       either a single <olink targetdoc="../elements/inline/pc.xml"
       targetptr="pc"><code>&lt;pc&gt;</code></olink> element or using a pair
       of <olink targetdoc="../elements/inline/sc.xml"
@@ -340,7 +340,7 @@ Text in &lt;sc id="1" dataRef="c1"/&gt;bold&lt;ec startRef="1" dataRef="c2"/&gt;
           targetptr="sc"><code>&lt;sc&gt;</code></olink>/<olink
           targetdoc="../elements/inline/ec.xml"
           targetptr="ec"><code>&lt;ec&gt;</code></olink> representations are
-            possible, <firstterm>Extractors</firstterm> and <firstterm>Modifiers</firstterm> <glossterm>may</glossterm> use either one as long as all the information
+            possible, <firstterm>Extractors</firstterm> and <firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> use either one as long as all the information
           of the inline code (e.g. original data, sub-flow indicators, etc.)
           are preserved.</para>
         </listitem>
@@ -353,7 +353,7 @@ Text in &lt;sc id="1" dataRef="c1"/&gt;bold&lt;ec startRef="1" dataRef="c2"/&gt;
           targetptr="ec"><code>&lt;ec&gt;</code></olink> elements and a <olink
           targetdoc="../elements/inline/pc.xml"
           targetptr="pc"><code>&lt;pc&gt;</code></olink> element or
-            vice-versa, <firstterm>Modifiers</firstterm> <glossterm>must</glossterm> map their attributes as shown in
+            vice-versa, <firstterm>Modifiers</firstterm> <glossterm>MUST</glossterm> map their attributes as shown in
           the following table:</para>
 
           <table>
@@ -524,7 +524,7 @@ Text in &lt;sc id="1" dataRef="c1"/&gt;bold&lt;ec startRef="1" dataRef="c2"/&gt;
         </listitem>
 
         <listitem>
-          <para><firstterm>Agents</firstterm> <glossterm>must</glossterm> be able to handle any of the above two types of inline code
+          <para><firstterm>Agents</firstterm> <glossterm>MUST</glossterm> be able to handle any of the above two types of inline code
           representation.</para>
         </listitem>
       </itemizedlist>
@@ -676,19 +676,19 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
         <title>Processing Requirements</title>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add inline codes.</para>
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add inline codes.</para>
         </listitem>
 
         <listitem>
           <para>The <olink targetdoc="../attributes/id.xml"
-          targetptr="id"><code>id</code></olink> value of the added code <glossterm>must</glossterm>
+          targetptr="id"><code>id</code></olink> value of the added code <glossterm>MUST</glossterm>
           be different from all <olink targetdoc="../attributes/id.xml"
           targetptr="id"><code>id</code></olink> values in both source and
           target content of the unit where the new code is added.</para>
         </listitem>
 
         <listitem>
-          <para><firstterm>Mergers</firstterm> <glossterm>may</glossterm> ignore added inline codes when <firstterm>Merging</firstterm>
+          <para><firstterm>Mergers</firstterm> <glossterm>MAY</glossterm> ignore added inline codes when <firstterm>Merging</firstterm>
           the <firstterm>Translated</firstterm> content back into the original format.</para>
         </listitem>
       </itemizedlist>
@@ -723,7 +723,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
 &lt;/unit&gt;
 </programlisting>
 
-        <para>If the base code has no associated data, the new code <glossterm>must</glossterm> use
+        <para>If the base code has no associated data, the new code <glossterm>MUST</glossterm> use
         the <olink targetdoc="../elements/inline/copyof.xml"
         targetptr="copyof"><code>copyOf</code></olink> attribute to indicate
         the <code>id</code> of the base code. This allows the merging tool to
@@ -747,7 +747,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
           <title>Processing Requirements</title>
 
           <listitem>
-            <para><firstterm>Modifiers</firstterm> <glossterm>must not</glossterm> clone a code that has its <olink
+            <para><firstterm>Modifiers</firstterm> <glossterm>MUST NOT</glossterm> clone a code that has its <olink
             targetdoc="../attributes/cancopy.xml"
             targetptr="cancopy"><code>canCopy</code></olink> attribute is set
             to <code>no</code>.</para>
@@ -755,7 +755,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
 
           <listitem>
             <para>The <olink targetdoc="../attributes/copyof.xml"
-            targetptr="copyof"><code>copyOf</code></olink> attribute <glossterm>must</glossterm> be
+            targetptr="copyof"><code>copyOf</code></olink> attribute <glossterm>MUST</glossterm> be
             used when, and only when, the base code has no associated original
             data.</para>
           </listitem>
@@ -875,14 +875,14 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
         <title>Processing Requirements</title>
 
         <listitem>
-          <para>User agents <glossterm>may</glossterm> remove a given inline code only if its <olink
+          <para>User agents <glossterm>MAY</glossterm> remove a given inline code only if its <olink
           targetdoc="../attributes/candelete.xml"
           targetptr="candelete"><code>canDelete</code></olink> attribute is
           set to <code>yes</code>.</para>
         </listitem>
 
         <listitem>
-          <para>When removing a given inline code, the user agents <glossterm>must</glossterm> remove
+          <para>When removing a given inline code, the user agents <glossterm>MUST</glossterm> remove
           its associated original data, except if the original data is shared
           with another inline code that remains in the unit.</para>
           <para>Note that having
@@ -1047,11 +1047,11 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
             the attributes <olink targetdoc="../attributes/cancopy.xml" targetptr="cancopy"
                 ><code>canCopy</code></olink> and <olink targetdoc="../attributes/candelete.xml"
               targetptr="candelete"><code>canDelete</code></olink>
-            <glossterm>must</glossterm> also be set to <code>no</code>.</para>
+            <glossterm>MUST</glossterm> also be set to <code>no</code>.</para>
         </listitem>
 		<listitem>
           <para>Inline codes re-ordering within a source or target content
-              <glossterm>may</glossterm> be limited by defining non-reorderable sequences. Such
+              <glossterm>MAY</glossterm> be limited by defining non-reorderable sequences. Such
             sequence is made of a first inline code with the attribute <olink
               targetdoc="../attributes/canreorder.xml" targetptr="canreorder"
                 ><code>canReorder</code></olink> set to <code>firstNo</code> and zero or more
@@ -1059,7 +1059,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
               targetptr="canreorder"><code>canReorder</code></olink> set to <code>no</code>.</para>
         </listitem>
         <listitem>
-          <para>A non-reorderable sequence of codes <glossterm>must not</glossterm> start with a code with the attribute <olink
+          <para>A non-reorderable sequence of codes <glossterm>MUST NOT</glossterm> start with a code with the attribute <olink
             targetdoc="../attributes/canreorder.xml" targetptr="canreorder"
             ><code>canReorder</code></olink> set to <code>No</code> and zero or more
             following codes with <olink targetdoc="../attributes/canreorder.xml"
@@ -1078,7 +1078,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
         <itemizedlist>
           <title>Processing Requirements</title>
         <listitem>
-          <para><firstterm>Extractors</firstterm> <glossterm>should</glossterm> set the <olink
+          <para><firstterm>Extractors</firstterm> <glossterm>SHOULD</glossterm> set the <olink
           targetdoc="../attributes/candelete.xml"
           targetptr="candelete"><code>canDelete</code></olink>, <olink
           targetdoc="../attributes/cancopy.xml"
@@ -1090,12 +1090,12 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
         </listitem>
         <listitem>
           <para><firstterm>Modifiers</firstterm>
-            <glossterm>must not</glossterm> change the number and order of the inline codes making
+            <glossterm>MUST NOT</glossterm> change the number and order of the inline codes making
             up a non-reorderable sequence.</para>
         </listitem>
           <listitem>
             <para><firstterm>Modifiers</firstterm>
-            <glossterm>may</glossterm> move a whole non-reorderable sequence before or after another
+            <glossterm>MAY</glossterm> move a whole non-reorderable sequence before or after another
             non-reorderable sequence.</para>
           </listitem>
           <listitem>
@@ -1106,7 +1106,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
             change its value to <code>yes</code>.</para>
           </listitem>
           <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>must not</glossterm> delete inline codes that have their
+          <para><firstterm>Modifiers</firstterm> <glossterm>MUST NOT</glossterm> delete inline codes that have their
           attribute <olink targetdoc="../attributes/candelete.xml"
           targetptr="candelete"><code>canDelete</code></olink> set to
           <code>no</code>.</para>
@@ -1114,7 +1114,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
 
         <listitem>
           <para><firstterm>Modifiers</firstterm>
-            <glossterm>must not</glossterm> replicate inline codes that have their attribute <olink
+            <glossterm>MUST NOT</glossterm> replicate inline codes that have their attribute <olink
               targetdoc="../attributes/cancopy.xml" targetptr="cancopy"><code>canCopy</code></olink>
             set to <code>no</code>.</para>
         </listitem>
@@ -1154,7 +1154,7 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
     <para>An annotation is an element that associates a section of the content
     with some metadata information.</para>
 
-    <para>Annotations <glossterm>may</glossterm> be created by an <firstterm>Extractor</firstterm>
+    <para>Annotations <glossterm>MAY</glossterm> be created by an <firstterm>Extractor</firstterm>
       that generated the initial <firstterm>XLIFF Document</firstterm>, or by any other
       <firstterm>Modifier</firstterm> or <firstterm>Enricher</firstterm> later in the process. For
       example, after an <firstterm>Extractor</firstterm> creates the document, an <firstterm>Enricher</firstterm> can
@@ -1186,18 +1186,18 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
           <listitem>
             <para>The <olink targetdoc="../../attributes/id.xml"
             targetptr="id"><code>id</code></olink> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/translate.xml"
             targetptr="translate"><code>translate</code></olink> attribute is
-            <glossterm>required</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>REQUIRED</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/type.xml"
-            targetptr="type"><code>type</code></olink> attribute is <glossterm>optional</glossterm>
+            targetptr="type"><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm>
             and set to <code>generic</code> (this is the default value)</para>
           </listitem>
         </itemizedlist>
@@ -1240,31 +1240,31 @@ He saw his &lt;mrk id="m1" translate="no" type="term"&gt;doppelgänger
           <listitem>
             <para>The <olink targetdoc="../../attributes/id.xml"
             targetptr="id"><code>id</code></olink> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/type.xml"
-            targetptr="type"><code>type</code></olink> attribute is <glossterm>required</glossterm>
+            targetptr="type"><code>type</code></olink> attribute is <glossterm>REQUIRED</glossterm>
             and set to <code>term</code></para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/value.xml"
-            targetptr="value"><code>value</code></olink> attribute is <glossterm>optional</glossterm>
+            targetptr="value"><code>value</code></olink> attribute is <glossterm>OPTIONAL</glossterm>
             and contains a short definition of the term</para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/ref.xml"
-            targetptr="ref"><code>ref</code></olink> attribute is <glossterm>optional</glossterm> and
+            targetptr="ref"><code>ref</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and
             contains a URI pointing to information on the term</para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/translate.xml"
             targetptr="translate"><code>translate</code></olink> attribute is
-            <glossterm>optional</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>OPTIONAL</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
         </itemizedlist>
         
@@ -1297,12 +1297,12 @@ He saw his &lt;mrk id="m1" translate="no" type="term"&gt;doppelgänger
           <listitem>
             <para>The <olink targetdoc="../../attributes/id.xml"
             targetptr="id"><code>id</code></olink> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/type.xml"
-            targetptr="type"><code>type</code></olink> attribute is <glossterm>required</glossterm>
+            targetptr="type"><code>type</code></olink> attribute is <glossterm>REQUIRED</glossterm>
             and set to <code>comment</code></para>
           </listitem>
 
@@ -1312,7 +1312,7 @@ He saw his &lt;mrk id="m1" translate="no" type="term"&gt;doppelgänger
               comment. If and only if the <olink targetdoc="../../attributes/value.xml"
                 targetptr="value"><code>value</code></olink> attribute is not present, the <olink
                 targetdoc="../../attributes/ref.xml" targetptr="ref"><code>ref</code></olink>
-              attribute <glossterm>must</glossterm> be present and contain the URI of a <olink
+              attribute <glossterm>MUST</glossterm> be present and contain the URI of a <olink
                 targetdoc="../elements/structural/note.xml" targetptr="note"
                   ><code>&lt;note&gt;</code></olink> element within the same enclosing <olink
                 targetdoc="../elements/structural/unit.xml" targetptr="unit"
@@ -1322,7 +1322,7 @@ He saw his &lt;mrk id="m1" translate="no" type="term"&gt;doppelgänger
           <listitem>
             <para>The <olink targetdoc="../../attributes/translate.xml"
             targetptr="translate"><code>translate</code></olink> attribute is
-            <glossterm>optional</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>OPTIONAL</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
         </itemizedlist>
 
@@ -1362,7 +1362,7 @@ has been enabled.</programlisting>
         targetptr="mrk"><code>&lt;mrk&gt;</code></olink> element can be used
         to implement custom annotations.</para>
 
-        <para>A custom annotation <glossterm>must not</glossterm> provide the same functionality as a
+        <para>A custom annotation <glossterm>MUST NOT</glossterm> provide the same functionality as a
         pre-defined annotation.</para>
 
         <para>Usage:</para>
@@ -1371,19 +1371,19 @@ has been enabled.</programlisting>
           <listitem>
             <para>The <olink targetdoc="../../attributes/id.xml"
             targetptr="id"><code>id</code></olink> attribute is
-            <glossterm>required</glossterm></para>
+            <glossterm>REQUIRED</glossterm></para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/type.xml"
-            targetptr="type"><code>type</code></olink> attribute is <glossterm>required</glossterm>
+            targetptr="type"><code>type</code></olink> attribute is <glossterm>REQUIRED</glossterm>
             and set to a unique user-defined value.</para>
           </listitem>
 
           <listitem>
             <para>The <olink targetdoc="../../attributes/translate.xml"
             targetptr="translate"><code>translate</code></olink> attribute is
-            <glossterm>optional</glossterm> and set to <code>yes</code> or <code>no</code></para>
+            <glossterm>OPTIONAL</glossterm> and set to <code>yes</code> or <code>no</code></para>
           </listitem>
 
           <listitem>
@@ -1509,14 +1509,14 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
       <title>Constraints</title>
       <listitem>
         <para>An inline code containing or delimiting one or more sub-flows
-            <glossterm>must</glossterm> have an attribute <olink
+            <glossterm>MUST</glossterm> have an attribute <olink
             targetdoc="../../attributes/subflows.xml" targetptr="subflows"
             ><code>subFlows</code></olink> that holds a list of the identifiers of the <olink
             targetdoc="../elements/structural/unit.xml" targetptr="unit"
             ><code>&lt;unit&gt;</code></olink> elements where the sub-flows are stored.</para>
       </listitem>
       <listitem>
-        <para>Sub-flows <glossterm>must</glossterm> be in the same <olink targetdoc="../elements/structural/file.xml"
+        <para>Sub-flows <glossterm>MUST</glossterm> be in the same <olink targetdoc="../elements/structural/file.xml"
           targetptr="file"><code>&lt;file></code></olink> element as the <olink targetdoc="../elements/structural/unit.xml"
             targetptr="unit"><code>&lt;unit></code></olink> element from which they are referenced.</para>
       </listitem>
@@ -1526,7 +1526,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
       <title>Processing Requirements</title>
 
       <listitem>
-        <para><firstterm>Extractors</firstterm> <glossterm>should</glossterm> store each sub-flow in its own <olink
+        <para><firstterm>Extractors</firstterm> <glossterm>SHOULD</glossterm> store each sub-flow in its own <olink
         targetdoc="../elements/structural/unit.xml"
         targetptr="unit"><code>&lt;unit&gt;</code></olink> element.</para>
       </listitem>
@@ -1535,7 +1535,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
 
       <listitem>
         <para><firstterm>Extractors</firstterm>
-          <glossterm>may</glossterm> order the <olink targetdoc="../elements/structural/unit.xml"
+          <glossterm>MAY</glossterm> order the <olink targetdoc="../elements/structural/unit.xml"
             targetptr="unit"><code>&lt;unit&gt;</code></olink> elements of the sub-flows and the
             <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"
               ><code>&lt;unit&gt;</code></olink> element, from where the sub-flows are referenced,
@@ -1545,7 +1545,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
         XLIFF principle that the static structure of the document must not be changed, therfore this is transformed into an informative warning calling this principle
       <listitem>
         <para><firstterm>Writers</firstterm>
-          <glossterm>must</glossterm> preserve the order of <olink
+          <glossterm>MUST</glossterm> preserve the order of <olink
             targetdoc="../elements/structural/unit.xml" targetptr="unit"
             ><code>&lt;unit&gt;</code></olink> elements as initially set by the
             <firstterm>Extractor</firstterm>.</para>
@@ -1579,17 +1579,17 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
         targetptr="ph"><code>&lt;ph&gt;</code></olink> and <olink
         targetdoc="../elements/structural/data.xml"
         targetptr="data"><code>&lt;data&gt;</code></olink>: The white spaces
-        of their content <glossterm>must</glossterm> be preserved in all cases, even if the value for
+        of their content <glossterm>MUST</glossterm> be preserved in all cases, even if the value for
         <code>xml:space</code> is set or inherited as
         <code>default</code>.</para>
       </listitem>  -->
 
       <listitem>
         <para>For the inline content and all non empty inline elements: The white spaces
-            <glossterm>must</glossterm> be preserved if the value for <code>xml:space</code> set or
+            <glossterm>MUST</glossterm> be preserved if the value for <code>xml:space</code> set or
           inherited at the enclosing <olink targetdoc="../elements/structural/unit.xml"
             targetptr="unit"><code>&lt;unit&gt;</code></olink> level is <code>preserve</code>, and
-          they <glossterm>may</glossterm> be preserved if the value is <code>default</code>.</para>
+          they <glossterm>MAY</glossterm> be preserved if the value is <code>default</code>.</para>
       </listitem>
     </itemizedlist>
   </section>
@@ -1602,7 +1602,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
 
     <para>The initial directionality for both the source and the target content is defined in the
         <olink targetdoc="../elements/structural/file.xml" targetptr="file"
-          ><code>&lt;file&gt;</code></olink> element, using the <glossterm>optional</glossterm>
+          ><code>&lt;file&gt;</code></olink> element, using the <glossterm>OPTIONAL</glossterm>
       attributes <olink targetdoc="../../attributes/srcdir.xml" targetptr="srcdir"
           ><code>srcDir</code></olink> for the source and <olink
         targetdoc="../../attributes/trgdir.xml" targetptr="trgdir"><code>trgDir</code></olink> for
@@ -1611,7 +1611,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
     <para>The <olink targetdoc="../elements/structural/group.xml" targetptr="group"
           ><code>&lt;group&gt;</code></olink> and <olink targetdoc="../elements/structural/unit.xml"
         targetptr="unit"><code>&lt;unit&gt;</code></olink> elements also have the two
-        <glossterm>optional</glossterm> attributes <olink targetdoc="../../attributes/srcdir.xml"
+        <glossterm>OPTIONAL</glossterm> attributes <olink targetdoc="../../attributes/srcdir.xml"
         targetptr="srcdir"><code>srcDir</code></olink> and <olink
         targetdoc="../../attributes/trgdir.xml" targetptr="trgdir"><code>trgDir</code></olink>. The
       default value of the <olink targetdoc="../../attributes/srcdir.xml" targetptr="srcdir"
@@ -1626,7 +1626,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
     <para>The <olink targetdoc="../elements/inline/pc.xml" targetptr="pc"
         ><code>&lt;pc></code></olink>, <olink targetdoc="../elements/inline/sc.xml" targetptr="sc"
           ><code>&lt;sc></code></olink>, and isolated <olink targetdoc="../elements/inline/ec.xml"
-        targetptr="ec"><code>&lt;ec></code></olink> elements have an <glossterm>optional</glossterm>
+        targetptr="ec"><code>&lt;ec></code></olink> elements have an <glossterm>OPTIONAL</glossterm>
       attribute <olink targetdoc="../../attributes/dir.xml" targetptr="dir"><code>dir</code></olink>
       with a value <code>ltr</code>, <code>rtl</code>, or <code>auto</code>. The default value is
       inherited from the parent <olink targetdoc="../elements/inline/pc.xml" targetptr="pc"
@@ -1650,7 +1650,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
         method decreases the stack level as per [UAX #9].</para>
     </warning>
     <para>In addition, the <olink targetdoc="../elements/structural/data.xml" targetptr="data"
-          ><code>&lt;data&gt;</code></olink> element has an <glossterm>optional</glossterm>
+          ><code>&lt;data&gt;</code></olink> element has an <glossterm>OPTIONAL</glossterm>
       attribute <olink targetdoc="../../attributes/dir.xml" targetptr="dir"><code>dir</code></olink>
       with a value <code>ltr</code>, <code>rtl</code>, or <code>auto</code> that is not inherited.
       The default value is <code>auto</code>.</para>
@@ -1696,7 +1696,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
     with the target content of a given segment in order to provide
     interoperability throughout the whole process.</para>
 
-    <para>The <firstterm>Extractor</firstterm> <glossterm>may</glossterm> create the initial target content as it sees
+    <para>The <firstterm>Extractor</firstterm> <glossterm>MAY</glossterm> create the initial target content as it sees
     fit.</para>
 
     <para>The <firstterm>Merger</firstterm> is assumed to have the same level of processing and
@@ -1720,56 +1720,56 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
         <title>Processing Requirements</title>
 
         <listitem>
-          <para><firstterm>Writers</firstterm> <glossterm>may</glossterm> leave the segment without a target.</para>
+          <para><firstterm>Writers</firstterm> <glossterm>MAY</glossterm> leave the segment without a target.</para>
         </listitem>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> create a new target as follows:</para>
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> create a new target as follows:</para>
 
           <itemizedlist>
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add translation of the source text.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add translation of the source text.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>must</glossterm> put all <link
+              <para><firstterm>Modifiers</firstterm> <glossterm>MUST</glossterm> put all <link
               linkend="editinghints">non-removable</link> inline codes in the
               target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>must</glossterm> preserve the order of all the <link
+              <para><firstterm>Modifiers</firstterm> <glossterm>MUST</glossterm> preserve the order of all the <link
               linkend="editinghints">non-reorderable</link> inline
               codes.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> put any <link
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> put any <link
               linkend="editinghints">removable</link> inline code in the
               target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add inline codes.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add inline codes.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add or remove annotations.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add or remove annotations.</para>
             </listitem>
 
 <!-- This is now handled in the Resegmentation section 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> split the segment into two
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> split the segment into two
               segments.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> join the segment with the following
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> join the segment with the following
               one.</para>
             </listitem>
 -->
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert any <olink
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert any <olink
               targetdoc="../elements/inline/pc.xml"
               targetptr="pc"><code>&lt;pc&gt;</code></olink> element into a
               pair of <olink targetdoc="../elements/inline/sc.xml"
@@ -1779,7 +1779,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert, if it is possible, any pair of
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert, if it is possible, any pair of
               <olink targetdoc="../elements/inline/sc.xml"
               targetptr="sc"><code>&lt;sc&gt;</code></olink> and <olink
               targetdoc="../elements/inline/ec.xml"
@@ -1796,44 +1796,44 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
       <title>With an Existing Target</title>
 
       <para>When working with a segment with content already in the target,
-        <firstterm>Writers</firstterm> <glossterm>must</glossterm> choose one of the three behaviors described below:</para>
+        <firstterm>Writers</firstterm> <glossterm>MUST</glossterm> choose one of the three behaviors described below:</para>
 
       <itemizedlist>
         <title>Processing Requirements</title>
 
         <listitem>
-          <para><firstterm>Writers</firstterm> <glossterm>may</glossterm> leave the existing target unchanged.</para>
+          <para><firstterm>Writers</firstterm> <glossterm>MAY</glossterm> leave the existing target unchanged.</para>
         </listitem>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> modify the existing target as follow:</para>
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> modify the existing target as follow:</para>
 
           <itemizedlist>
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add or <firstterm>Modify</firstterm> translatable text.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add or <firstterm>Modify</firstterm> translatable text.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Writers</firstterm> <glossterm>must</glossterm> preserve all <link
+              <para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> preserve all <link
               linkend="editinghints">non-removable</link> inline codes,
               regardless whether or not they exist in the source.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Writers</firstterm> <glossterm>must</glossterm> preserve any <link
+              <para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> preserve any <link
               linkend="editinghints">non-reorderable</link> inline codes in
               the existing target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Writers</firstterm> <glossterm>must not</glossterm> add any <link
+              <para><firstterm>Writers</firstterm> <glossterm>MUST NOT</glossterm> add any <link
               linkend="editinghints">non-reorderable</link> inline codes to
               the target.</para>
             </listitem>
 
             <!--Resegmentation can now be prevented via the canResegment flag if target conent needs protection 
             <listitem>
-              <para>User agents <glossterm>must not</glossterm> split the segment. The reason to not
+              <para>User agents <glossterm>MUST NOT</glossterm> split the segment. The reason to not
               allow splitting of segments with content in the target node is
               because there is no guarantee that the content in the two nodes
               are linguistically in the same order, performing that operation
@@ -1841,28 +1841,28 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
             </listitem> -->
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> remove any <link
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> remove any <link
               linkend="editinghints">removable</link> inline codes in the
               target.</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add inline codes (including copying any
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add inline codes (including copying any
               <link linkend="editinghints">cloneable</link> inline codes of
               the existing target).</para>
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> add or remove annotations.</para>
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> add or remove annotations.</para>
             </listitem>
             <!-- This is now handled in the Resegmentation section
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> join the segment with the following
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> join the segment with the following
               segment.</para>
             </listitem>
 -->
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert any <olink
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert any <olink
               targetdoc="../elements/inline/pc.xml"
               targetptr="pc"><code>&lt;pc&gt;</code></olink> element into a
               pair of <olink targetdoc="../elements/inline/sc.xml"
@@ -1872,7 +1872,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
             </listitem>
 
             <listitem>
-              <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> convert, if it is possible, any pair of
+              <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> convert, if it is possible, any pair of
               <olink targetdoc="../elements/inline/sc.xml"
               targetptr="sc"><code>&lt;sc&gt;</code></olink> and <olink
               targetdoc="../elements/inline/ec.xml"
@@ -1884,7 +1884,7 @@ Palouse horses&lt;fn&gt;A Palouse horse is the same as
         </listitem>
 
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>may</glossterm> delete the existing target and start over as
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> delete the existing target and start over as
           if working without an existing target.</para>
         </listitem>
       </itemizedlist>

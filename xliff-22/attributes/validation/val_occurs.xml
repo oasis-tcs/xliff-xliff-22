@@ -10,8 +10,8 @@
 
   <para>This rule attribute is used with the <olink targetdoc="../../attributes/val_isPresent.xml"
       targetptr="val_isPresent"><code>isPresent</code></olink> rule attribute to specify the exact
-    number of times a string <glossterm>must</glossterm> be present in the target text. When this
-    rule attribute is not used, then the string <glossterm>must</glossterm> be present in the target
+    number of times a string <glossterm>MUST</glossterm> be present in the target text. When this
+    rule attribute is not used, then the string <glossterm>MUST</glossterm> be present in the target
     text <emphasis>at least once</emphasis>.</para>
 
    <para>For example, the following is valid:</para>

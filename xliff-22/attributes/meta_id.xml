@@ -26,7 +26,7 @@
 <itemizedlist>
   <title>Constraints</title>
   <listitem>
-    <para>The values of <link linkend="meta_id"><code>id</code></link> attributes <glossterm>must</glossterm> be unique among all <olink
+    <para>The values of <link linkend="meta_id"><code>id</code></link> attributes <glossterm>MUST</glossterm> be unique among all <olink
       targetdoc="../elements/metadata/metagroup.xml" targetptr="metagroup"
       ><code>&lt;metaGroup></code></olink> 
       and <olink

@@ -23,7 +23,7 @@
   targetptr="match"><code>&lt;match&gt;</code></olink>.</para>
 <itemizedlist>
   <title>Constraints</title>
-  <listitem><para>The <link linkend="candidates_id"><code>id</code></link> value <glossterm>must</glossterm> be unique within the enclosing <olink
+  <listitem><para>The <link linkend="candidates_id"><code>id</code></link> value <glossterm>MUST</glossterm> be unique within the enclosing <olink
     targetdoc="../elements/structural/matches.xml"
     targetptr="matches"><code>&lt;matches&gt;</code></olink> element.</para></listitem>
 </itemizedlist>

@@ -17,7 +17,7 @@
     <listitem>
       <para>When used in a <olink targetdoc="../elements/structural/file.xml"
         targetptr="file"><code>&lt;file></code></olink> element:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <olink targetdoc="../elements/structural/file.xml"
+      <para>The value <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../elements/structural/file.xml"
         targetptr="file"><code>&lt;file></code></olink> <code>id</code> attribute values within the enclosing  <olink
               targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
               ><code>&lt;xliff></code></olink> element.</para>
@@ -26,7 +26,7 @@
     <listitem>
       <para>When used in <olink targetdoc="../elements/structural/group.xml"
         targetptr="group"><code>&lt;group></code></olink> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <olink targetdoc="../elements/structural/group.xml"
+      <para>The value <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../elements/structural/group.xml"
         targetptr="group"><code>&lt;group></code></olink> <code>id</code> attribute values within the enclosing  <olink
           targetdoc="../elements/structural/file.xml" targetptr="file"
           ><code>&lt;file></code></olink> element.</para>
@@ -35,7 +35,7 @@
     <listitem>
       <para>When used in <olink targetdoc="../elements/structural/unit.xml"
         targetptr="unit"><code>&lt;unit></code></olink> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <olink targetdoc="../elements/structural/unit.xml"
+      <para>The value <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../elements/structural/unit.xml"
         targetptr="unit"><code>&lt;unit></code></olink> <code>id</code> attribute values within the enclosing <olink
           targetdoc="../elements/structural/file.xml" targetptr="file"
           ><code>&lt;file></code></olink> element.</para>
@@ -44,7 +44,7 @@
     <listitem>
       <para>When used in <olink targetdoc="../elements/structural/note.xml"
         targetptr="note"><code>&lt;note></code></olink> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <olink targetdoc="../elements/structural/note.xml"
+      <para>The value <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../elements/structural/note.xml"
         targetptr="note"><code>&lt;note></code></olink> <code>id</code> attribute values within the immediate enclosing 
         <olink targetdoc="../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink>,
         <olink targetdoc="../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink>, or
@@ -54,7 +54,7 @@
     <listitem>
       <para>When used in <olink targetdoc="../elements/structural/data.xml"
         targetptr="data"><code>&lt;data></code></olink> elements:</para>
-      <para>The value <glossterm>must</glossterm> be unique among all <olink targetdoc="../elements/structural/data.xml"
+      <para>The value <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../elements/structural/data.xml"
         targetptr="data"><code>&lt;data></code></olink> <code>id</code> attribute values within the enclosing 
         <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> element.</para>
     </listitem>
@@ -71,10 +71,10 @@
         or <olink targetdoc="../elements/inline/ph.xml" targetptr="ph"><code>&lt;ph&gt;</code></olink> elements:</para>
       <itemizedlist>
         <listitem><para>The inline elements enclosed by a <olink targetdoc="../elements/structural/target.xml"
-      targetptr="target"><code>&lt;target></code></olink> element <glossterm>must</glossterm> use the duplicate <code>id</code> values
+      targetptr="target"><code>&lt;target></code></olink> element <glossterm>MUST</glossterm> use the duplicate <code>id</code> values
       of their corresponding inline elements enclosed within the sibling <olink targetdoc="../elements/structural/source.xml"
         targetptr="source"><code>&lt;source></code></olink> element if and only if those corresponding elements exist.</para></listitem>
-        <listitem><para>Except for the above exception, the value <glossterm>must</glossterm> be unique among all of the above within the
+        <listitem><para>Except for the above exception, the value <glossterm>MUST</glossterm> be unique among all of the above within the
           enclosing <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> 
           element.</para></listitem>
       </itemizedlist>

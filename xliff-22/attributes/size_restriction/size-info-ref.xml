@@ -17,7 +17,7 @@
 
   <para><emphasis>Value description:</emphasis> a reference to data that provide the same information that could be otherwise put in a
     <olink targetdoc="size-info.xml" targetptr="slr_size_info"><code>sizeInfo</code></olink> attribute. 
-  The reference <glossterm>must</glossterm> point to an element in a
+  The reference <glossterm>MUST</glossterm> point to an element in a
     <olink targetdoc="../../elements/size_restriction/data.xml" targetptr="slr_data"><code>&lt;data></code></olink> element
     that is a sibling to the element this attribute is attached to or a sibling to one of its ancestors. </para>
 
@@ -37,8 +37,8 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>This attribute <glossterm>must not</glossterm> be specified
-        if and only if <olink targetdoc="size-info.xml" targetptr="slr_size_info"><code>sizeInfo</code></olink> is used. They <glossterm>must not</glossterm> be specified at the same time.</para>
+      <para>This attribute <glossterm>MUST NOT</glossterm> be specified
+        if and only if <olink targetdoc="size-info.xml" targetptr="slr_size_info"><code>sizeInfo</code></olink> is used. They <glossterm>MUST NOT</glossterm> be specified at the same time.</para>
     </listitem></itemizedlist> 
   
   

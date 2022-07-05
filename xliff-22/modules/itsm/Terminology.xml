@@ -58,7 +58,7 @@
   </section>
   <section id="Terminology_Inline">
     <title>Inline Elements</title>
-    <para> Inline Terminology information <glossterm>may</glossterm> be <firstterm>Extracted</firstterm> using the
+    <para> Inline Terminology information <glossterm>MAY</glossterm> be <firstterm>Extracted</firstterm> using the
         <firstterm>XLIFF Core</firstterm>
       <olink targetdoc="../inline/inline.xml" targetptr="annotations">Annotations</olink> mechanism.
       Use <code><olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
@@ -98,11 +98,11 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>required</glossterm>.</para>
+          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>required</glossterm> and
+          ><code>type</code></olink> attribute is <glossterm>REQUIRED</glossterm> and
           set:</para>
         <itemizedlist spacing="compact">
           <listitem>
@@ -118,14 +118,14 @@
         </itemizedlist>
       </listitem>
       <listitem>
-        <para>Not more than one of the following two attributes <glossterm>may</glossterm> be
+        <para>Not more than one of the following two attributes <glossterm>MAY</glossterm> be
           set:</para>
 
         <itemizedlist>
           <listitem>
 
             <para>The <olink targetdoc="../../attributes/value.xml" targetptr="value"
-              ><code>value</code></olink> attribute is <glossterm>optional</glossterm> and
+              ><code>value</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and
               contains a short definition of the term that an <firstterm>Extractor</firstterm>
               obtained by dereferencing the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
                 >[ITS]</olink> defined <code>termInfoPointer</code> or added by an
@@ -133,7 +133,7 @@
           </listitem>
           <listitem>
             <para>The <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
-              ><code>ref</code></olink> attribute is <glossterm>optional</glossterm> and used to map
+              ><code>ref</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and used to map
               to and from the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
               defined <code>termInfoRef</code> attribute.</para>
           </listitem>
@@ -141,23 +141,23 @@
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>optional</glossterm>.</para>
+          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_termConfidence.xml"
-          targetptr="itsm_termConfidence"><code>its:termConfidence</code></olink> attribute is <glossterm>optional</glossterm> and  used to map
+          targetptr="itsm_termConfidence"><code>its:termConfidence</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and  used to map
           to and from the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
           defined <code>termConfidence</code> attribute.</para>
       </listitem>
       <listitem>
         <para> The <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
           targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute is
-          <glossterm>required</glossterm> if and only if the <olink targetdoc="../../attributes/itsm/itsm_termConfidence.xml"
+          <glossterm>REQUIRED</glossterm> if and only if the <olink targetdoc="../../attributes/itsm/itsm_termConfidence.xml"
             targetptr="itsm_termConfidence"><code>its:termConfidence</code></olink> attribute is
           present and NOT in scope of another relevant <olink
             targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
             targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute, in
-          all other cases it is <glossterm>optional</glossterm>. </para>
+          all other cases it is <glossterm>OPTIONAL</glossterm>. </para>
       </listitem>
     </itemizedlist>
     <!-- removed by ballot for https://issues.oasis-open.org/browse/XLIFF-57

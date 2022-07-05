@@ -33,7 +33,7 @@
 
   <simplelist>
     <member>- <olink targetdoc="../../attributes/startref.xml"
-    targetptr="startref"><code>startRef</code></olink>, <glossterm>required</glossterm></member>
+    targetptr="startref"><code>startRef</code></olink>, <glossterm>REQUIRED</glossterm></member>
     <!-- Since markers do not have a provision for appeareing isolated, it does not seem to make sense to allow fs formatting on the end marker..  
     <member>- <olink targetdoc="../../attributes/fs.xml" targetptr="fs"><code>fs:fs</code></olink>,
       optional</member>

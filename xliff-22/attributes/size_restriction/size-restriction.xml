@@ -10,7 +10,7 @@
 
   <para>This attribute specifies the size restriction to apply to the collection descendants of the element it is defined on.</para>
 
-  <para><emphasis>Value description:</emphasis> Interpretation of the value is dependent on selected <olink targetdoc="general-profile.xml" targetptr="slr_general_profile"><code>generalProfile</code></olink>. It <glossterm>must</glossterm> represent the restriction to apply to the indicated sub part of the document.</para>
+  <para><emphasis>Value description:</emphasis> Interpretation of the value is dependent on selected <olink targetdoc="general-profile.xml" targetptr="slr_general_profile"><code>generalProfile</code></olink>. It <glossterm>MUST</glossterm> represent the restriction to apply to the indicated sub part of the document.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 

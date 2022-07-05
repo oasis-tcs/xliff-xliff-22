@@ -30,7 +30,7 @@
     <itemizedlist>
         <title>Constraints</title>
         <listitem><para>When the attribute <link linkend="itsm_mtConfidence"><code>mtConfidence</code></link> is
-                set, the element where it is set <glossterm>must</glossterm> be in the scope of an
+                set, the element where it is set <glossterm>MUST</glossterm> be in the scope of an
                     <olink targetdoc="itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
                         ><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
                             >Data category
@@ -42,7 +42,7 @@
         <title>Processing Requirements</title>
         <listitem>
             <para><firstterm>Writers</firstterm>
-                <glossterm>must</glossterm> use the <olink
+                <glossterm>MUST</glossterm> use the <olink
                     targetdoc="../candidates/matchQuality.xml" targetptr="matchQuality"
                         ><code>mtc:matchQuality</code></olink> attribute to express the <link
                     linkend="itsm_mtConfidence"><code>MTConfidence</code></link> attribute on an
@@ -50,14 +50,14 @@
                         ><code>&lt;mtc:match></code></olink> element.</para>
             <itemizedlist>
                 <listitem>
-                    <para>The floating point number between 0 and 1 <glossterm>must</glossterm> be expressed as
+                    <para>The floating point number between 0 and 1 <glossterm>MUST</glossterm> be expressed as
                         a decimal number between 0.0 and 100.0 [%].</para>
                 </listitem>
                 <listitem>
                     <para>The <olink
                         targetdoc="../candidates/matchQuality.xml" targetptr="matchQuality"
                         ><code>mtc:matchQuality</code></olink> attribute  used by the <firstterm>Writer</firstterm> to express the <link
-                            linkend="itsm_mtConfidence"><code>MTConfidence</code></link> attribute <glossterm>must</glossterm> be in scope of an <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
+                            linkend="itsm_mtConfidence"><code>MTConfidence</code></link> attribute <glossterm>MUST</glossterm> be in scope of an <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
                                 >Data category
                                 identifier</ulink> part of exactly one list value equal to the string
                         <code>mt-confidence</code>.</para>
@@ -66,7 +66,7 @@
         </listitem>
         <listitem>
             <para><firstterm>Modifiers</firstterm>
-                <glossterm>may</glossterm> use this <link linkend="itsm_mtConfidence"
+                <glossterm>MAY</glossterm> use this <link linkend="itsm_mtConfidence"
                         ><code>MTConfidence</code></link> attribute, when populating the
                     <firstterm>XLIFF Core</firstterm>
                 <olink targetdoc="../../structural/target.xml" targetptr="target"
@@ -83,7 +83,7 @@
                     <code>mt-confidence</code>.</para>
             <itemizedlist>
                 <listitem>
-                    <para>The decimal number between 0.0 and 100.0 [%] <glossterm>must</glossterm> be expressed as
+                    <para>The decimal number between 0.0 and 100.0 [%] <glossterm>MUST</glossterm> be expressed as
                         a floating point number between 0 and 1.</para>
                 </listitem>
             </itemizedlist>

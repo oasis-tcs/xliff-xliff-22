@@ -314,11 +314,10 @@ href="file:///Users/admin/z/oasis/spec-0.8/stylesheets/oasis-specification-html-
       <title>Terminology</title>
       <section id="S-KEY-WORDS">
         <title> Key words</title>
-        <para>The key words <glossterm>must</glossterm>, <glossterm>must not</glossterm>,
-            <glossterm>required</glossterm>, <glossterm>shall</glossterm>, <glossterm>shall
-            not</glossterm>, <glossterm>should</glossterm>, <glossterm>should not</glossterm>,
-            <glossterm>recommended</glossterm>, <glossterm>may</glossterm>, and
-            <glossterm>optional</glossterm> are to be interpreted as described in <xref
+        <para>The key words <glossterm>MUST</glossterm>, <glossterm>MUST NOT</glossterm>,
+            <glossterm>REQUIRED</glossterm>, <glossterm>SHALL</glossterm>, <glossterm>SHALL NOT</glossterm>, <glossterm>SHOULD</glossterm>, <glossterm>SHOULD NOT</glossterm>,
+            <glossterm>RECOMMENDED</glossterm>, <glossterm>MAY</glossterm>, and
+            <glossterm>OPTIONAL</glossterm> are to be interpreted as described in <xref
             linkend="rfc2119"/>. Note that for reasons of style, these words are not capitalized in
           this document.</para>
       </section>

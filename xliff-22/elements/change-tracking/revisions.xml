@@ -17,10 +17,10 @@
     
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>- <olink targetdoc="../../attributes/change-tracking/ctr_appliesTo.xml" targetptr="ctr_appliesTo"><code>appliesTo</code></olink>, <glossterm>required</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/change-tracking/ctr_ref.xml" targetptr="ctr_ref"><code>ref</code></olink>, <glossterm>optional</glossterm></member> 
-        <member>- <olink targetdoc="../../attributes/change-tracking/ctr_currentVersion.xml" targetptr="ctr_currentVersion"><code>currentVersion</code></olink>, <glossterm>optional</glossterm></member> 
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/change-tracking/ctr_appliesTo.xml" targetptr="ctr_appliesTo"><code>appliesTo</code></olink>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/change-tracking/ctr_ref.xml" targetptr="ctr_ref"><code>ref</code></olink>, <glossterm>OPTIONAL</glossterm></member> 
+        <member>- <olink targetdoc="../../attributes/change-tracking/ctr_currentVersion.xml" targetptr="ctr_currentVersion"><code>currentVersion</code></olink>, <glossterm>OPTIONAL</glossterm></member> 
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
   <!-- <itemizedlist>
@@ -31,7 +31,7 @@
         the wildcard <code>other</code>:</para>
       <simplelist>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in the <olink
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
             targetdoc="../../modules/itsm/specification.xml" targetptr="ITS-module">ITS Module</olink> are
           met.</member>
       </simplelist>
@@ -43,22 +43,22 @@
     <title>Processing Requirements</title>
 
     <listitem>
-      <para>Modifying agents <glossterm>may</glossterm> create <olink targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"><code>&lt;revisions></code></olink> elements with attributes.</para>
+      <para>Modifying agents <glossterm>MAY</glossterm> create <olink targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"><code>&lt;revisions></code></olink> elements with attributes.</para>
     </listitem>
 
     <listitem>
-      <para>Modifying agents <glossterm>should not</glossterm> modify <olink
+      <para>Modifying agents <glossterm>SHOULD NOT</glossterm> modify <olink
           targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"
             ><code>&lt;revisions></code></olink> and its attributes defined in this extension,
         except in the case where the <olink
           targetdoc="../../elements/change-tracking/ctr_currentVersion.xml"
           targetptr="ctr_currentVersion"><code>currentVersion</code></olink> attribute is used. This
-        attribute <glossterm>should</glossterm> be updated when a new revision becomes the most
+        attribute <glossterm>SHOULD</glossterm> be updated when a new revision becomes the most
         current.</para>
      </listitem>
     
      <listitem>
-       <para>Modifying agents <glossterm>should not</glossterm> remove <olink
+       <para>Modifying agents <glossterm>SHOULD NOT</glossterm> remove <olink
           targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"
             ><code>&lt;revisions></code></olink> and its attributes defined in this
         extension.</para>
@@ -66,7 +66,7 @@
 
     <listitem>
       <para>When the <olink targetdoc="../../elements/change-tracking/ctr_appliesTo.xml" targetptr="ctr_appliesTo"><code>appliesTo</code></olink> attribute refers to an element that is a multiple instance within
-        the enclosing element, the <olink targetdoc="../../elements/change-tracking/ctr_ref.xml" targetptr="ctr_ref"><code>ref</code></olink> attribute <glossterm>must</glossterm> be used to reference an individual
+        the enclosing element, the <olink targetdoc="../../elements/change-tracking/ctr_ref.xml" targetptr="ctr_ref"><code>ref</code></olink> attribute <glossterm>MUST</glossterm> be used to reference an individual
         instance if and only if the referenced instance has an id. Using <olink targetdoc="../../elements/structural/notes.xml" targetptr="notes"><code>&lt;notes></code></olink> as an example:</para>
       <programlisting>
       &lt;notes&gt;

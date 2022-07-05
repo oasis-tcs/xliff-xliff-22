@@ -12,7 +12,7 @@
     This attribute is only allowed on the <olink targetdoc="../../elements/inline/ec.xml" targetptr="ec"><code>&lt;ec></code></olink> element if that element has the <olink targetdoc="../isolated.xml" targetptr="isolated"><code>isolated</code></olink> attribute set to <code>yes</code>. Otherwise the attribute on the paired <olink targetdoc="../../elements/inline/sc.xml" targetptr="sc"><code>&lt;sc></code></olink>
     element also cover its partner <olink targetdoc="../../elements/inline/ec.xml" targetptr="ec"><code>&lt;ec></code></olink> element.</para>
 
-  <para><emphasis>Value description:</emphasis> Interpretation of the value is dependent on selected <olink targetdoc="storage-profile.xml" targetptr="slr_storage_profile"><code>storageProfile</code></olink>. It <glossterm>must</glossterm> represent the equivalent storage size represented by the inline element.</para>
+  <para><emphasis>Value description:</emphasis> Interpretation of the value is dependent on selected <olink targetdoc="storage-profile.xml" targetptr="slr_storage_profile"><code>storageProfile</code></olink>. It <glossterm>MUST</glossterm> represent the equivalent storage size represented by the inline element.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 

@@ -53,7 +53,7 @@
       <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para><code>xml:lang</code> <glossterm>must not</glossterm> be set on either the <olink targetdoc="../elements/structural/file.xml"
+            <para><code>xml:lang</code> <glossterm>MUST NOT</glossterm> be set on either the <olink targetdoc="../elements/structural/file.xml"
                 targetptr="file"><code>&lt;file></code></olink>, <olink targetdoc="../elements/structural/group.xml"
                     targetptr="group"><code>&lt;group></code></olink> , or <olink targetdoc="../elements/structural/unit.xml"
                         targetptr="unit"><code>&lt;unit></code></olink> element.</para>

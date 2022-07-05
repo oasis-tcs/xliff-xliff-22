@@ -33,7 +33,7 @@
         <title>Constraints</title>
         <listitem>
             <para>The IRI value of the <link linkend="itsm_locQualityIssuesRef"
-                    >locQualityIssuesRef</link> attribute <glossterm>must</glossterm> be an
+                    >locQualityIssuesRef</link> attribute <glossterm>MUST</glossterm> be an
                     IRI referencing a <olink
                     targetdoc="../../elements/itsm/itsm_locQualityIssues.xml"
                     targetptr="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></olink>
@@ -42,7 +42,7 @@
         </listitem>
         <listitem>
             <para>Multiple <link linkend="itsm_locQualityIssuesRef">locQualityIssuesRef</link>
-                attributes <glossterm>may</glossterm> reference the same <olink
+                attributes <glossterm>MAY</glossterm> reference the same <olink
                     targetdoc="../../elements/itsm/itsm_locQualityIssues.xml"
                     targetptr="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></olink>
                 element.</para>
@@ -55,7 +55,7 @@
                 linkend="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></link>
                 attribute referencing a <olink targetptr="itsm_locQualityIssues"
                     targetdoc="../../elements/itsm/itsm_locQualityIssues.xml"
-                    ><code>locQualityIssues</code></olink> element <glossterm>must</glossterm>
+                    ><code>locQualityIssues</code></olink> element <glossterm>MUST</glossterm>
                 delete that <olink targetptr="itsm_provenanceRecords"
                     targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                     ><code>locQualityIssues</code></olink> element.</para>

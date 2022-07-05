@@ -21,7 +21,7 @@
       content life cycle is during the XLIFF roundtrip, when the <firstterm>XLIFF
         Document</firstterm> is being <firstterm>Enriched</firstterm> with Translation Candidates
       from a specific MT Service or via an MT Services broker. The MT Confidence metadata included
-      with the MT provided matches <glossterm>may</glossterm> be used by human or machine
+      with the MT provided matches <glossterm>MAY</glossterm> be used by human or machine
         <firstterm>Modifiers</firstterm> who populate the <firstterm>XLIFF Core</firstterm>
       <olink targetdoc="../../structural/target.xml" targetptr="target"
         ><code>&lt;target></code></olink> elements with matches.</para>
@@ -91,9 +91,9 @@
       a structural element of an original document has an <olink targetdoc="../xliff22.xml"
         targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> annotation, it
-        <glossterm>may</glossterm> be represented upon <firstterm>Extraction</firstterm> using the
+        <glossterm>MAY</glossterm> be represented upon <firstterm>Extraction</firstterm> using the
         <link linkend="MTConfidenceAnnotation">MT Confidence Inline Annotation</link>.  The whole
-      unit source content <glossterm>must</glossterm> be enclosed within the annotation in such a case, possibly spanning multiple segments.</para>
+      unit source content <glossterm>MUST</glossterm> be enclosed within the annotation in such a case, possibly spanning multiple segments.</para>
   </section>
   
   <section id="MT_Confidence_Inline">
@@ -137,28 +137,28 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
-          attribute is <glossterm>required</glossterm>.</para>
+          attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>optional</glossterm> and set to
+            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
             <code>its:generic</code>.</para>
       </listitem>
       <listitem>
         <para>The the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
           attribute <olink targetdoc="../../attributes/itsm/itsm_mtConfidence"
             targetptr="itsm_mtConfidence"><code>its:mtConfidence</code></olink>
-          <glossterm>must</glossterm> be set.</para>
+          <glossterm>MUST</glossterm> be set.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-              ><code>translate</code></olink> attribute is <glossterm>optional</glossterm>.</para>
+              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
       
       <listitem>
         <para> The <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
             targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute is
-          <glossterm>required</glossterm> if and only if the <olink targetdoc="../../attributes/itsm/itsm_mtConfidence"
+          <glossterm>REQUIRED</glossterm> if and only if the <olink targetdoc="../../attributes/itsm/itsm_mtConfidence"
             targetptr="itsm_mtConfidence"><code>its:mtConfidence</code></olink> attribute is not in scope of
           another relevant <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
             targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute.</para>
@@ -217,7 +217,7 @@
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Modifiers</firstterm> populating <firstterm>XLIFF Core</firstterm> <olink targetdoc="../../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink> elements with unmodified MT suggestions <glossterm>may</glossterm> annotate the exact unmodified target spans with <link linkend="MTConfidenceAnnotation">MT Confidence Annotations</link>.</para>
+      <para><firstterm>Modifiers</firstterm> populating <firstterm>XLIFF Core</firstterm> <olink targetdoc="../../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink> elements with unmodified MT suggestions <glossterm>MAY</glossterm> annotate the exact unmodified target spans with <link linkend="MTConfidenceAnnotation">MT Confidence Annotations</link>.</para>
       
       
     </listitem>

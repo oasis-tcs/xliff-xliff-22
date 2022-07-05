@@ -25,19 +25,19 @@
       <tbody>
         <row>
           <entry>none</entry>
-          <entry>No additional normalization <glossterm>should</glossterm> be done, content
-              <glossterm>should</glossterm> be used as represented in the document. It is possible
+          <entry>No additional normalization <glossterm>SHOULD</glossterm> be done, content
+              <glossterm>SHOULD</glossterm> be used as represented in the document. It is possible
             that other <firstterm>Agents</firstterm> have already done some type of normalization when <firstterm>Modifying</firstterm> content.
             This means that this setting could give different results depending on what <firstterm>Agents</firstterm> are
             used to perform a specific action on the <firstterm>XLIFF Document</firstterm>.</entry>
         </row>
         <row>
           <entry>nfc</entry>
-          <entry>Normalization Form C <glossterm>must</glossterm> be used</entry>
+          <entry>Normalization Form C <glossterm>MUST</glossterm> be used</entry>
         </row>
         <row>
           <entry>nfd</entry>
-          <entry>Normalization Form D <glossterm>must</glossterm> be used</entry>
+          <entry>Normalization Form D <glossterm>MUST</glossterm> be used</entry>
         </row>
       </tbody>
     </tgroup>

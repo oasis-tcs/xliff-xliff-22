@@ -48,7 +48,7 @@
 <itemizedlist>
   <title>Constraints</title>
   <listitem>
-    <para>This <link linkend="ctr_id"><code>id</code></link> attribute <glossterm>must</glossterm>
+    <para>This <link linkend="ctr_id"><code>id</code></link> attribute <glossterm>MUST</glossterm>
         be unique within each <olink targetdoc="../../elements/change-tracking/changeTrack.xml"
           targetptr="changeTrack"><code>&lt;changeTrack></code></olink> element.</para>
   </listitem>

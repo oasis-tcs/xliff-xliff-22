@@ -8,7 +8,7 @@
 <section id="val_isNotPresent">
   <title>isNotPresent</title>
 
-  <para>This rule attribute specifies that a string <glossterm>must not</glossterm> be present in the target text.</para>
+  <para>This rule attribute specifies that a string <glossterm>MUST NOT</glossterm> be present in the target text.</para>
   <para>For example, the following is valid:</para>
 <programlisting>
 &lt;unit id="1"&gt;

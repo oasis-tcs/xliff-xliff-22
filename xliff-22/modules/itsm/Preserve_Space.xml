@@ -66,7 +66,7 @@
       language within the same <code><olink targetdoc="../elements/structural/segment.xml"
           targetptr="segment">&lt;segment></olink></code> or <code><olink
           targetdoc="../elements/structural/ignorable.xml" targetptr="ignorable"
-          >&lt;ignorable></olink></code> element using the <glossterm>optional</glossterm>
+          >&lt;ignorable></olink></code> element using the <glossterm>OPTIONAL</glossterm>
       <code><olink targetdoc="../attributes/xml_space.xml" targetptr="xml_space"
         >xml:space</olink></code> attribute at the <code><olink
           targetdoc="../elements/structural/source.xml" targetptr="source"

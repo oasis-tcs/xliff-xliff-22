@@ -19,24 +19,24 @@
     </simplelist>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink>, <glossterm>optional</glossterm></member>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id"><code>id</code></olink>, <glossterm>optional</glossterm></member>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_context.xml" targetptr="res_context"><code>context</code></olink>, <glossterm>optional</glossterm></member>
-       <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+      <member>- <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+      <member>- <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+      <member>- <olink targetdoc="../../attributes/resourceData/res_context.xml" targetptr="res_context"><code>context</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+       <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
     </simplelist>
   <itemizedlist>
     <title>Constraints</title>
     <listitem><para>The <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"
-            ><code>mimeType</code></olink> attribute is <glossterm>required</glossterm> if <olink
+            ><code>mimeType</code></olink> attribute is <glossterm>REQUIRED</glossterm> if <olink
           targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
             ><code>&lt;target></code></olink> and <olink
           targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"
             ><code>&lt;source></code></olink> child elements are empty, otherwise it is
-          <glossterm>optional</glossterm>.</para></listitem>
+          <glossterm>OPTIONAL</glossterm>.</para></listitem>
     <listitem>
-      <para>The value of the <glossterm>optional</glossterm> <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id">id</olink> attribute
-        <glossterm>must</glossterm> be unique among all <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink>
+      <para>The value of the <glossterm>OPTIONAL</glossterm> <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id">id</olink> attribute
+        <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink>
         and <olink targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink>
         elements of the enclosing <olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
     </listitem>
@@ -46,12 +46,12 @@
     <title>Processing Requirements</title>
 
     <listitem>
-      <para>If a <firstterm>Modifier</firstterm> does not understand how to process the <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink> attribute, or the file it references, the <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> element <glossterm>may</glossterm>
-        be ignored, but still <glossterm>must</glossterm> be preserved.</para>
+      <para>If a <firstterm>Modifier</firstterm> does not understand how to process the <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink> attribute, or the file it references, the <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> element <glossterm>MAY</glossterm>
+        be ignored, but still <glossterm>MUST</glossterm> be preserved.</para>
     </listitem>
 
     <listitem>
-      <para>The <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink> attribute <glossterm>should</glossterm> only be modified or removed if the referenced files are modified or removed.</para>
+      <para>The <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink> attribute <glossterm>SHOULD</glossterm> only be modified or removed if the referenced files are modified or removed.</para>
     </listitem>
 
     <listitem>
@@ -60,9 +60,9 @@
         <itemizedlist>
           <listitem>
             <para><firstterm>Modifiers</firstterm>
-            <glossterm>may</glossterm> leave <olink
+            <glossterm>MAY</glossterm> leave <olink
               targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
-                ><code>&lt;resourceItem></code></olink> unchanged, i.e. they are not <glossterm>required</glossterm> to
+                ><code>&lt;resourceItem></code></olink> unchanged, i.e. they are not <glossterm>REQUIRED</glossterm> to
             create <olink targetdoc="../../elements/resourceData/res_target.xml"
               targetptr="res_target"><code>&lt;target></code></olink> or <olink
               targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"
@@ -70,7 +70,7 @@
           </listitem>
           <listitem>
             <para><firstterm>Modifiers</firstterm>
-            <glossterm>may</glossterm> create <olink
+            <glossterm>MAY</glossterm> create <olink
               targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
                 ><code>&lt;target></code></olink> or <olink
               targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"

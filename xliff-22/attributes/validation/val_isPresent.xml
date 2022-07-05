@@ -8,7 +8,7 @@
 <section id="val_isPresent">
   <title>isPresent</title>
 
-  <para>This rule attribute specifies that a string <glossterm>must</glossterm> be present in the target text <emphasis>at least once</emphasis>.</para>
+  <para>This rule attribute specifies that a string <glossterm>MUST</glossterm> be present in the target text <emphasis>at least once</emphasis>.</para>
   <para>For example, the following is valid:</para>
 
   <programlisting>

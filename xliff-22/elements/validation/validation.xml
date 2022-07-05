@@ -15,7 +15,7 @@
   
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
     
   <itemizedlist>
@@ -23,7 +23,7 @@
 
      <listitem>
       <para>When the <olink targetdoc="../../elements/validation/validation.xml" targetptr="validation"><code>&lt;validation></code></olink> element occurs at the 
-        <olink targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink> level, rules <glossterm>must</glossterm> be applied to all 
+        <olink targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink> level, rules <glossterm>MUST</glossterm> be applied to all 
       <olink targetdoc="../../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink> elements within the scope of that  
       <olink targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink> element, except where overrides are specified at the 
       <olink targetdoc="../../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink> or 
@@ -32,7 +32,7 @@
     
     <listitem>
       <para>When <olink targetdoc="../../elements/validation/validation.xml" targetptr="validation"><code>&lt;validation></code></olink> occurs at the 
-        <olink targetdoc="../../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink> level, rules <glossterm>must</glossterm> be applied to all 
+        <olink targetdoc="../../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink> level, rules <glossterm>MUST</glossterm> be applied to all 
       <olink targetdoc="../../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink> elements within the scope of that 
       <olink targetdoc="../../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink>, except where overrides are specified in a nested 
       <olink targetdoc="../../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink> element, or at the 
@@ -41,7 +41,7 @@
     
     <listitem>
       <para>When <olink targetdoc="../../elements/validation/validation.xml" targetptr="validation"><code>&lt;validation></code></olink> occurs at the 
-        <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> level, rules <glossterm>must</glossterm> be applied to all 
+        <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> level, rules <glossterm>MUST</glossterm> be applied to all 
       <olink targetdoc="../../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink> elements within the scope of that 
       <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink>.</para>
     </listitem>

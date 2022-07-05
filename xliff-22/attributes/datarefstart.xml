@@ -12,7 +12,7 @@
       targetdoc="../elements/structural/data.xml" targetptr="data"><code>&lt;data&gt;</code></olink>
     element that contains the original data for the start marker of a given inline code.</para>
 
-  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN that <glossterm>must</glossterm> be
+  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN that <glossterm>MUST</glossterm> be
   the value of the <olink targetdoc="id.xml"
   targetptr="id"><code>id</code></olink> attribute of one of the <olink
   targetdoc="../elements/structural/data.xml"

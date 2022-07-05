@@ -37,7 +37,7 @@
     <title>Constraints</title>
   <listitem>
     <para>Any value of this <link linkend="itsm_id"><code>id</code></link> attribute
-          <glossterm>must</glossterm> be unique either among all <olink
+          <glossterm>MUST</glossterm> be unique either among all <olink
           targetdoc="../../elements/itsm/itsm_locQualityIssues.xml"
           targetptr="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></olink> and
       <olink

@@ -15,24 +15,24 @@
             elements followed by </member>
         <member>- Zero or one <olink targetdoc="definition.xml" targetptr="definition"><code>&lt;definition></code></olink>
             element followed by </member>
-        <member>- elements from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- elements from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
       <member>
-      - <olink targetdoc="../../attributes/glossary/gls_id.xml" targetptr="gls_id"><code>id</code></olink>, <glossterm>optional</glossterm>
+      - <olink targetdoc="../../attributes/glossary/gls_id.xml" targetptr="gls_id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm>
       </member>
         <member>
-            - <olink targetdoc="../../attributes/glossary/gls_ref.xml" targetptr="gls_ref"><code>ref</code></olink>, <glossterm>optional</glossterm>
+            - <olink targetdoc="../../attributes/glossary/gls_ref.xml" targetptr="gls_ref"><code>ref</code></olink>, <glossterm>OPTIONAL</glossterm>
         </member>
-      <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+      <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>A <link linkend="glossentry"><code>&lt;glossEntry></code></link> element <glossterm>must</glossterm> contain a
+            <para>A <link linkend="glossentry"><code>&lt;glossEntry></code></link> element <glossterm>MUST</glossterm> contain a
                 <olink targetdoc="translation.xml" targetptr="translation"><code>&lt;translation></code></olink>  or a
                 <olink targetdoc="definition.xml" targetptr="definition"><code>&lt;definition></code></olink> element
                 to be valid.</para>

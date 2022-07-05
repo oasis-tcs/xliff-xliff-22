@@ -16,7 +16,7 @@
  <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
 	     <member>- <olink targetdoc="../../attributes/meta_id.xml" targetptr="meta_id"><code>id</code></olink>,
-                <glossterm>optional</glossterm></member>
+                <glossterm>OPTIONAL</glossterm></member>
 
   </simplelist>
     <para><emphasis>Example:</emphasis> Metadata can be used to store XML attribute names and values

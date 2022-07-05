@@ -8,8 +8,7 @@
 <section id="val_disabled">
   <title>disabled</title>
 
-  <para>This rule attribute determines whether a rule <glossterm>must</glossterm> or <glossterm>must
-      not</glossterm> be applied within the scope of its enclosing element. For example, a rule
+  <para>This rule attribute determines whether a rule <glossterm>MUST</glossterm> or <glossterm>MUST NOT</glossterm> be applied within the scope of its enclosing element. For example, a rule
     defined at the <olink targetdoc="../../elements/structural/file.xml" targetptr="file"
         ><code>&lt;file></code></olink> level can be disabled at the <olink
       targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink>

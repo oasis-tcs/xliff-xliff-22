@@ -8,7 +8,7 @@
 <section id="fragid">
   <title>Fragment Identification</title>
   <para>Because <firstterm>XLIFF Documents</firstterm> do not follow the usual behavior of XML documents when it comes to element identifiers, this specification
-    defines how <firstterm>Agents</firstterm> <glossterm>must</glossterm> interpret the fragment identifiers in IRIs pointing to <firstterm>XLIFF Documents</firstterm>.</para>
+    defines how <firstterm>Agents</firstterm> <glossterm>MUST</glossterm> interpret the fragment identifiers in IRIs pointing to <firstterm>XLIFF Documents</firstterm>.</para>
   <note>
     <para>Note that some identifiers may change during the localization process. For example <olink targetdoc="../elements/structural/data.xml"
       targetptr="data"><code>&lt;data></code></olink> elements may be re-grouped or not depending on how tools treat
@@ -17,7 +17,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>A fragment identifier <glossterm>must</glossterm> match the following format:</para>
+      <para>A fragment identifier <glossterm>MUST</glossterm> match the following format:</para>
       <programlisting>
 &lt;expression>      ::= "#" ["/"] &lt;selector>
                       {&lt;selectorSeparator> &lt;selector>}
@@ -28,10 +28,10 @@
 &lt;selectorSeparator>  ::= "/"</programlisting>
     </listitem>
     <listitem>
-      <para>There <glossterm>must not</glossterm> be two identical prefixes in the expression.</para>
+      <para>There <glossterm>MUST NOT</glossterm> be two identical prefixes in the expression.</para>
     </listitem>
     <listitem>
-      <para>When used, the following selectors <glossterm>must</glossterm> be declared in this order: file selector, group selector and unit selector.</para>
+      <para>When used, the following selectors <glossterm>MUST</glossterm> be declared in this order: file selector, group selector and unit selector.</para>
     </listitem>
     <listitem>
       <para>The selectors for modules or extensions, <olink targetdoc="../elements/structural/note.xml"
@@ -41,8 +41,8 @@
         <olink targetdoc="../elements/structural/data.xml"
           targetptr="data"><code>&lt;data></code></olink> have the following constraints:</para>
       <itemizedlist>
-        <listitem><para>Only one of them <glossterm>may</glossterm> be used in the expression.</para></listitem>
-        <listitem><para>The one used <glossterm>must</glossterm> be the last selector of the expression.</para></listitem>
+        <listitem><para>Only one of them <glossterm>MAY</glossterm> be used in the expression.</para></listitem>
+        <listitem><para>The one used <glossterm>MUST</glossterm> be the last selector of the expression.</para></listitem>
       </itemizedlist>
     </listitem>
   </itemizedlist>
@@ -105,13 +105,13 @@
         ><code>&lt;unit&gt;</code></olink> element.</para>
     <itemizedlist>
       <title>Constraints</title>
-      <listitem><para>The prefix of a module or an extension <glossterm>must</glossterm> be an NMTOKEN longer than 1
-          character and <glossterm>must</glossterm> be defined in the module or extension
+      <listitem><para>The prefix of a module or an extension <glossterm>MUST</glossterm> be an NMTOKEN longer than 1
+          character and <glossterm>MUST</glossterm> be defined in the module or extension
           specification.</para></listitem>
-      <listitem><para>The prefix of a module or an extension <glossterm>must</glossterm> be registered with the
+      <listitem><para>The prefix of a module or an extension <glossterm>MUST</glossterm> be registered with the
           XLIFF TC.</para></listitem>
-      <listitem><para>A given module or extension namespace URI <glossterm>must</glossterm> be associated with a single prefix.</para></listitem>
-      <listitem><para>A prefix <glossterm>may</glossterm> be associated with more than one namespace URI (to allow
+      <listitem><para>A given module or extension namespace URI <glossterm>MUST</glossterm> be associated with a single prefix.</para></listitem>
+      <listitem><para>A prefix <glossterm>MAY</glossterm> be associated with more than one namespace URI (to allow
           for example different versions of a given module or extension to use the same
           prefix).</para></listitem>
     </itemizedlist>

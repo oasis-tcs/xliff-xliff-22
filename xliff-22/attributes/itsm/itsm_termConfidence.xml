@@ -30,7 +30,7 @@
     <itemizedlist>
         <title>Constraints</title>
         <listitem><para>When the attribute <link linkend="itsm_termConfidence"><code>termConfidence</code></link> is
-                set, the element where it is set <glossterm>must</glossterm> be in the scope of an
+                set, the element where it is set <glossterm>MUST</glossterm> be in the scope of an
                     <olink targetdoc="itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
                         ><code>its:annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
                             >Data category

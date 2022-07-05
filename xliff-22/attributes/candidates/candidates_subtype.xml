@@ -17,7 +17,7 @@
     prefix is a string uniquely identifying a collection of values for a specific authority. The
     sub-value is any string value defined by an authority. </para>
   <para>The prefix <code>xlf</code> is reserved for this specification, but no sub-values are defined for it at
-    this time. Other prefixes and sub-values <glossterm>may</glossterm> be defined by the users.</para>
+    this time. Other prefixes and sub-values <glossterm>MAY</glossterm> be defined by the users.</para>
   <itemizedlist>
     <listitem>
       <para><emphasis>Default value:</emphasis> undefined</para>
@@ -32,14 +32,14 @@
       <para>If the attribute <olink targetdoc="candidates_subtype.xml"
           targetptr="candidates_subtype"><code>subType</code></olink> is used, the attribute <olink
           targetdoc="candidates_type.xml" targetptr="candidates_type"><code>type</code></olink>
-        <glossterm>must</glossterm> be explicitly set.</para>
+        <glossterm>MUST</glossterm> be explicitly set.</para>
     </listitem>
   </itemizedlist>
     <itemizedlist>
             <title>Processing Requirements</title>
     <listitem>
       <para><firstterm>Writers</firstterm> updating the attribute <olink targetdoc="candidates_type.xml"
-        targetptr="candidates_type"><code>type</code></olink> <glossterm>must</glossterm> also update or delete <olink
+        targetptr="candidates_type"><code>type</code></olink> <glossterm>MUST</glossterm> also update or delete <olink
           targetdoc="candidates_subtype.xml" targetptr="candidates_subtype"
           ><code>subType</code></olink> .</para>
     </listitem>

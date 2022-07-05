@@ -12,7 +12,7 @@
   <title>Resource Data Module</title>
     <section>
       <title>Introduction</title>
-      <para>The Resource Data module provides a mechanism for referencing external resource data that <glossterm>may</glossterm> need
+      <para>The Resource Data module provides a mechanism for referencing external resource data that <glossterm>MAY</glossterm> need
         to be modified or used as contextual reference during translation.</para>
     </section>
   <section>

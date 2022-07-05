@@ -26,24 +26,24 @@
 
   <simplelist>
     <!-- This flag got killed in the August 20 2013 meeting <member>- <olink targetdoc="../../attributes/approved.xml"
-      targetptr="approved"><code>approved</code></olink>, <glossterm>required</glossterm></member>-->
+      targetptr="approved"><code>approved</code></olink>, <glossterm>REQUIRED</glossterm></member>-->
     
     <member>- <olink targetdoc="../../attributes/id.xml"
-    targetptr="id"><code>id</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
     
     <member>- <olink targetdoc="../../attributes/canResegment.xml"
-      targetptr="canResegment"><code>canResegment</code></olink>, <glossterm>optional</glossterm></member>
+      targetptr="canResegment"><code>canResegment</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 <!-- translate was killed on segment to simplify translatability state algorithm and to simplify re-segmentation PRs,
       the expressivity is the same due to inline markers
     <member>- <olink targetdoc="../../attributes/translate.xml"
-    targetptr="translate"><code>translate</code></olink>, <glossterm>optional</glossterm></member>-->
+    targetptr="translate"><code>translate</code></olink>, <glossterm>OPTIONAL</glossterm></member>-->
     
     
     <member>- <olink targetdoc="../../attributes/state.xml"
-    targetptr="state"><code>state</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="state"><code>state</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/subState.xml"
-    targetptr="substate"><code>subState</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="substate"><code>subState</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
   </simplelist>
 
@@ -52,9 +52,9 @@
     <title>Constraints</title>
 
     <listitem>
-      <para>The value of the <glossterm>optional</glossterm> <olink
+      <para>The value of the <glossterm>OPTIONAL</glossterm> <olink
       targetdoc="../../attributes/id.xml"
-      targetptr="id"><code>id</code></olink> attribute <glossterm>must</glossterm> be unique among
+      targetptr="id"><code>id</code></olink> attribute <glossterm>MUST</glossterm> be unique among
       all <link linkend="segment"><code>&lt;segment&gt;</code></link> and
       <olink targetdoc="ignorable.xml"
       targetptr="ignorable"><code>&lt;ignorable&gt;</code></olink> children of
@@ -69,7 +69,7 @@
     <title>Processing Requirements</title>
     
     <listitem>
-      <para><firstterm>Mergers</firstterm> <glossterm>must not</glossterm> <firstterm>Merge</firstterm> back into the original format
+      <para><firstterm>Mergers</firstterm> <glossterm>MUST NOT</glossterm> <firstterm>Merge</firstterm> back into the original format
         <link linkend="segment"><code>&lt;segment></code></link> elements with the <olink targetdoc="../../attributes/approved.xml" targetptr="approved"><code>approved</code></olink> flag set to <code>no</code>.</para>
     </listitem>
     

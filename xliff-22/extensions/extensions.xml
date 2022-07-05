@@ -68,13 +68,13 @@
   <section id="ext-constraints">
     <title>Constraints</title>
     <itemizedlist>
-      <listitem><para>When using identifiers, an extension <glossterm>must</glossterm> use either an attribute named <code>id</code> or the attribute
+      <listitem><para>When using identifiers, an extension <glossterm>MUST</glossterm> use either an attribute named <code>id</code> or the attribute
         <code>xml:id</code> to specify them.</para></listitem>
-      <listitem><para>Extensions identifiers <glossterm>must</glossterm> be unique within their immediate <olink targetdoc="../elements/structural/file.xml"
+      <listitem><para>Extensions identifiers <glossterm>MUST</glossterm> be unique within their immediate <olink targetdoc="../elements/structural/file.xml"
         targetptr="file"><code>&lt;file></code></olink>, <olink targetdoc="../elements/structural/group.xml" targetptr="group"><code>&lt;group&gt;</code></olink> 
         or <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit&gt;</code></olink> 
         enclosing element.</para></listitem>
-      <listitem><para>Identifier values used in extensions <glossterm>must</glossterm> be of type <code>xs:NMTOKEN</code> or compatible with <code>xs:NMTOKEN</code>
+      <listitem><para>Identifier values used in extensions <glossterm>MUST</glossterm> be of type <code>xs:NMTOKEN</code> or compatible with <code>xs:NMTOKEN</code>
         (e.g. <code>xs:NAME</code> and <code>xs:ID</code> are compatible).</para></listitem>
     </itemizedlist>
     <para>These constraints are needed for the <olink targetdoc="../fragments/fragments.xml" targetptr="fragid">fragment identification mechanism</olink>.</para>
@@ -87,14 +87,14 @@
                 <para>A user extension, whether implemented using <olink
                         targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
                             ><code>&lt;mda:metadata></code></olink> or using a custom namespace,
-                        <glossterm>must not</glossterm> provide the same functionality as an
-                    existing XLIFF core or module feature, however it <glossterm>may</glossterm>
+                        <glossterm>MUST NOT</glossterm> provide the same functionality as an
+                    existing XLIFF core or module feature, however it <glossterm>MAY</glossterm>
                     complement an extensible XLIFF core feature or module feature or provide a new
                     functionality at the provided extension points.</para>
             </listitem>
             
             <listitem>
-                <para><firstterm>Mergers</firstterm> <glossterm>must not</glossterm> rely on custom namespace extensions, other than the ones possibly defined in <olink
+                <para><firstterm>Mergers</firstterm> <glossterm>MUST NOT</glossterm> rely on custom namespace extensions, other than the ones possibly defined in <olink
                         targetdoc="../elements/structural/skeleton.xml" targetptr="skeleton"
                     ><code>&lt;skeleton></code></olink>, to create the <firstterm>Translated</firstterm> version of
                     the original document. </para>
@@ -102,7 +102,7 @@
             
             <listitem>
                 <para><firstterm>Writers</firstterm> that do not support a given custom namespace based user extension
-                        <glossterm>should</glossterm> preserve that extension without
+                        <glossterm>SHOULD</glossterm> preserve that extension without
                     <firstterm>Modification</firstterm>.</para>
             </listitem>
         </itemizedlist>

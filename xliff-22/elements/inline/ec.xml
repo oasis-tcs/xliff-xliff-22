@@ -32,51 +32,51 @@
 
   <simplelist>
     <member>- <olink targetdoc="../../attributes/cancopy.xml"
-    targetptr="cancopy"><code>canCopy</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="cancopy"><code>canCopy</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/candelete.xml"
-    targetptr="cancopy"><code>canDelete</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="cancopy"><code>canDelete</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/canoverlap.xml"
-    targetptr="canoverlap"><code>canOverlap</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="canoverlap"><code>canOverlap</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/canreorder.xml"
-    targetptr="canreorder"><code>canReorder</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="canreorder"><code>canReorder</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/copyof.xml"
-    targetptr="copyof"><code>copyOf</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="copyof"><code>copyOf</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/dataref.xml"
-      targetptr="dataref"><code>dataRef</code></olink>, <glossterm>optional</glossterm></member>
+      targetptr="dataref"><code>dataRef</code></olink>, <glossterm>OPTIONAL</glossterm></member>
     <member><!-- pending discussion with Fredrik -->- <olink targetdoc="../../attributes/dir.xml"
-        targetptr="dir"><code>dir</code></olink>, <glossterm>optional</glossterm></member>
+        targetptr="dir"><code>dir</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/disp.xml"
-    targetptr="disp"><code>disp</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="disp"><code>disp</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/equiv.xml"
-    targetptr="equiv"><code>equiv</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="equiv"><code>equiv</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/id.xml"
-    targetptr="id"><code>id</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/isolated.xml"
-    targetptr="isolated"><code>isolated</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="isolated"><code>isolated</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
 
     <member>- <olink targetdoc="../../attributes/startref.xml"
-    targetptr="startref"><code>startRef</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="startref"><code>startRef</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/subflows.xml"
-    targetptr="subflows"><code>subFlows</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="subflows"><code>subFlows</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/subtype.xml"
-    targetptr="subtype"><code>subType</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="subtype"><code>subType</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <olink targetdoc="../../attributes/type.xml"
-    targetptr="type"><code>type</code></olink>, <glossterm>optional</glossterm></member>
+    targetptr="type"><code>type</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
 
 
     </simplelist>
@@ -106,19 +106,19 @@
         allowed by the wildcard <code>other</code>:</para>
       <simplelist>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:fs:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in the <olink
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
             targetdoc="modules/fs/fs.xml" targetptr="fs-mod">Format Style Module</olink> are
           met.</member>
         <member>- attributes from the namespace
           <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-          <glossterm>optional</glossterm>, provided that the Constraints specified in the <olink
+          <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
             targetdoc="modules/size_restriction/specification.xml"
             targetptr="size_restriction_module">Size and Length Restriction Module</olink> are
           met.</member>
         <!-- may need to allow ITSM at a later stage, but not needed by now 7th Aug, 2015. -->
       </simplelist>
     </listitem>
-    <listitem><para>No other attributes <glossterm>must</glossterm> be used.</para></listitem>
+    <listitem><para>No other attributes <glossterm>MUST</glossterm> be used.</para></listitem>
 
 
 
@@ -129,7 +129,7 @@
           targetdoc="../../attributes/candelete.xml"
           targetptr="candelete"><code>canDelete</code></olink> and <olink
               targetdoc="../../attributes/canoverlap.xml"
-              targetptr="canoverlap"><code>canOverlap</code></olink> <glossterm>must</glossterm> be the same
+              targetptr="canoverlap"><code>canOverlap</code></olink> <glossterm>MUST</glossterm> be the same
         as the values the ones in the <olink targetdoc="../inline/sc.xml"
           targetptr="sc"><code>&lt;sc&gt;</code></olink> element corresponding to
         this end code.</para>
@@ -138,7 +138,7 @@
     <listitem>
       <para>The value of the attribute <olink
             targetdoc="../../attributes/canreorder.xml"
-            targetptr="canreorder"><code>canReorder</code></olink> <glossterm>must</glossterm> be <code>no</code>
+            targetptr="canreorder"><code>canReorder</code></olink> <glossterm>MUST</glossterm> be <code>no</code>
         if the value of <olink
           targetdoc="../../attributes/canreorder.xml"
           targetptr="canreorder"><code>canReorder</code></olink> is <code>firstNo</code> in the <olink targetdoc="../inline/sc.xml"
@@ -149,7 +149,7 @@
     <listitem>
       <para>The attribute <olink targetdoc="../../attributes/isolated.xml" targetptr="isolated"
             ><code>isolated</code></olink>
-        <glossterm>must</glossterm> be set to <code>yes</code> if and only if the <olink
+        <glossterm>MUST</glossterm> be set to <code>yes</code> if and only if the <olink
           targetdoc="../inline/sc.xml" targetptr="sc"><code>&lt;sc&gt;</code></olink> element
         corresponding to this end code is not in the same <olink
           targetdoc="../../elements/structural/unit.xml" targetptr="unit"
@@ -160,18 +160,18 @@
       <para>If and only if the attribute <olink targetdoc="../../attributes/isolated.xml"
           targetptr="isolated"><code>isolated</code></olink> is set to <code>yes</code>, the
         attribute <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
-        <glossterm>must</glossterm> be used instead of the attribute <olink
+        <glossterm>MUST</glossterm> be used instead of the attribute <olink
           targetdoc="../../attributes/startref.xml" targetptr="startref"
-          ><code>startRef</code></olink> that <glossterm>must</glossterm> be used otherwise.</para>
+          ><code>startRef</code></olink> that <glossterm>MUST</glossterm> be used otherwise.</para>
     </listitem>
     <listitem>
       <para><!-- pending discussion with Fredrik --> If and only if the attribute <olink
           targetdoc="../../attributes/isolated.xml" targetptr="isolated"
           ><code>isolated</code></olink> is set to <code>yes</code>, the attribute <olink
           targetdoc="../../attributes/dir.xml" targetptr="dir"><code>dir</code></olink>
-        <glossterm>may</glossterm> be used, otherwise the attribute <olink
+        <glossterm>MAY</glossterm> be used, otherwise the attribute <olink
           targetdoc="../../attributes/dir.xml" targetptr="dir"><code>dir</code></olink>
-        <glossterm>must not</glossterm> be used on the <link linkend="ec"><code>&lt;ec></code></link> element. </para>
+        <glossterm>MUST NOT</glossterm> be used on the <link linkend="ec"><code>&lt;ec></code></link> element. </para>
     </listitem>
   </itemizedlist>
     <itemizedlist>
@@ -179,7 +179,7 @@
 
     <listitem>
       <para><firstterm>Extractors</firstterm>
-        <glossterm>must not</glossterm> use the <olink targetdoc="../inline/sc.xml" targetptr="sc"
+        <glossterm>MUST NOT</glossterm> use the <olink targetdoc="../inline/sc.xml" targetptr="sc"
           ><code>&lt;sc&gt;</code></olink> / <olink targetdoc="../inline/ec.xml" targetptr="ec"
             ><code>&lt;ec&gt;</code></olink> pair to represent standalone codes.</para>
       <para>Rationale: Using a spanning code for a standalone code can easily result in having

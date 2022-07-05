@@ -16,7 +16,7 @@ with the <olink targetdoc="../attributes/fs.xml" targetptr="fs"><code>fs</code><
         name and the value of a pair are separated with a comma (,). Both literal backslash and
         comma characters are escaped with a backslash prefix.
         <!-- was
- The subFs <glossterm>must</glossterm> only be used to carry attribute name/value
+ The subFs <glossterm>MUST</glossterm> only be used to carry attribute name/value
 comma-delimited pairs for attributes that are valid for the HTML element identified by the
 accompanied <olink targetdoc="../attributes/fs.xml" targetptr="fs"><code>fs</code></olink> attribute.
 -->
@@ -65,15 +65,15 @@ targetptr="sm"><code>&lt;sm&gt;</code></olink>. </para>
 
 <itemizedlist>
 <title>Constraints</title>
-<listitem><para>Commas (<code>,</code>) and backslashes (<code>\</code>) in the value parts of the <link linkend="subFs"><code>subFs</code></link> <glossterm>must</glossterm> be escaped with a
+<listitem><para>Commas (<code>,</code>) and backslashes (<code>\</code>) in the value parts of the <link linkend="subFs"><code>subFs</code></link> <glossterm>MUST</glossterm> be escaped with a
 backslash (<code>\</code>).</para>
 </listitem>
 <listitem>
 <para>If the attribute <link  linkend="subFs"><code>subFs</code></link> is used, the attribute <olink
 targetdoc="../attributes/fs.xml" targetptr="fs"><code>fs</code></olink>
-<glossterm>must</glossterm> be specified as well.</para>
+<glossterm>MUST</glossterm> be specified as well.</para>
 </listitem>
-<listitem><para>The <link linkend="subFs"><code>subFs</code></link> <glossterm>must</glossterm> only be used with <olink targetdoc="../elements/inline/ec.xml"
+<listitem><para>The <link linkend="subFs"><code>subFs</code></link> <glossterm>MUST</glossterm> only be used with <olink targetdoc="../elements/inline/ec.xml"
 targetptr="ec"><code>&lt;ec&gt;</code></olink> in cases where the <code>isolated</code> attribute is set to 'yes'.</para>
 </listitem>
 </itemizedlist>
@@ -81,7 +81,7 @@ targetptr="ec"><code>&lt;ec&gt;</code></olink> in cases where the <code>isolated
 <title>Processing Requirements</title>
 <listitem>
 <para><firstterm>Writers</firstterm> updating the attribute <olink
-targetdoc="fs.xml" targetptr="fs"><code>fs</code></olink> <glossterm>must</glossterm> also update or delete <link  linkend="subFs"><code>subFs</code></link>.</para>
+targetdoc="fs.xml" targetptr="fs"><code>fs</code></olink> <glossterm>MUST</glossterm> also update or delete <link  linkend="subFs"><code>subFs</code></link>.</para>
 </listitem>
 
 
@@ -90,7 +90,7 @@ targetdoc="fs.xml" targetptr="fs"><code>fs</code></olink> <glossterm>must</gloss
 
 
 
-<para><emphasis>Example: </emphasis>For complex HTML previews that require more than one attribute on an HTML preview element, attribute pairs are separated by backslashes (\). Any literal comma or backslash in an attribute value <glossterm>must</glossterm> be escaped with a backslash.</para>
+<para><emphasis>Example: </emphasis>For complex HTML previews that require more than one attribute on an HTML preview element, attribute pairs are separated by backslashes (\). Any literal comma or backslash in an attribute value <glossterm>MUST</glossterm> be escaped with a backslash.</para>
 
 <para>For example, we would use this convention:</para>
 

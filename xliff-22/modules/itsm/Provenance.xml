@@ -24,7 +24,7 @@
   <itemizedlist id="Provenance_Attributes">
     <title>Processing Requirements</title>
     <listitem><para><firstterm>Writers</firstterm>
-      <glossterm>must</glossterm> use the attributes
+      <glossterm>MUST</glossterm> use the attributes
       <olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"><code>its:org</code></olink>,
       <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"><code>its:orgRef</code></olink>,
       <olink targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"><code>its:person</code></olink>,
@@ -47,7 +47,7 @@
       <listitem>
           <para>Within the <olink targetdoc="../candidates/specification.xml" targetptr="candidates"
               >Translation Candidates Module</olink>, <firstterm>Enrichers</firstterm>
-            <glossterm>must</glossterm> map the <olink
+            <glossterm>MUST</glossterm> map the <olink
               targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
                 ><code>its:tool</code></olink> attribute onto the <olink
               targetdoc="../../attributes/candidates/candidates_origin.xml"
@@ -65,7 +65,7 @@
                      </para>
           <itemizedlist>
             <listitem><para>The <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"><code>its:tool</code></olink> attribute value 
-              <glossterm>must</glossterm> be the same as the originating <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"><code>&lt;mtc:match></code></olink> 
+              <glossterm>MUST</glossterm> be the same as the originating <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"><code>&lt;mtc:match></code></olink> 
               <olink targetdoc="../../attributes/candidates/candidates_origin.xml"
                 targetptr="candidates_origin"><code>mtc:origin</code></olink> value if this is the case.
             </para></listitem>
@@ -73,15 +73,15 @@
         </listitem>
       <listitem>
         <para><firstterm>Modifiers</firstterm>
-            <glossterm>may</glossterm> store previous versions of subunit content and attributes and
+            <glossterm>MAY</glossterm> store previous versions of subunit content and attributes and
             notes content and attributes in the <olink
               targetdoc="../change-tracking/specification.xml" targetptr="changeTracking_module"
               >Change Tracking Module</olink> elements according to the data model, Constraints,
             Processing Requirements, and usage descriptions of that module.</para>
-        <para>If this was the case the <olink targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"><code>&lt;revision></code></olink> element <glossterm>must</glossterm> be extended by the Provenance attributes defined in the ITS Module as needed and the <olink
+        <para>If this was the case the <olink targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"><code>&lt;revision></code></olink> element <glossterm>MUST</glossterm> be extended by the Provenance attributes defined in the ITS Module as needed and the <olink
               targetdoc="../../attributes/change-tracking/ctr_author.xml" targetptr="ctr_author"
                 ><code>ctr:author</code></olink>
-            <glossterm>should</glossterm> reuse information from the corresponding <olink
+            <glossterm>SHOULD</glossterm> reuse information from the corresponding <olink
               targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
             <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> attributes as
             follows:</para>
@@ -214,28 +214,28 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>required</glossterm>.</para>
+          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>optional</glossterm> and set to
+          ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
           <code>its:generic</code>.</para>
         
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>optional</glossterm>.</para>
+          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
             targetptr="itsm_provenanceRecordsRef">
-          <code>its:provenanceRecordsRef</code></olink> attribute is <glossterm>optional</glossterm>.</para>
+          <code>its:provenanceRecordsRef</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
-      <listitem><para>The following attributes <glossterm>must not</glossterm> be set if and only if <olink
+      <listitem><para>The following attributes <glossterm>MUST NOT</glossterm> be set if and only if <olink
         targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
         targetptr="itsm_provenanceRecordsRef">
         <code>its:provenanceRecordsRef</code></olink> is declared, otherwise at least one the following
-         <glossterm>must</glossterm> be set:</para>
+         <glossterm>MUST</glossterm> be set:</para>
         <itemizedlist>
           <listitem><para>	<olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"><code>its:org</code></olink>,	</para></listitem>
           <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"><code>its:orgRef</code></olink>,	</para></listitem>

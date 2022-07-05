@@ -18,7 +18,7 @@
 
 <itemizedlist>
   <title>Constraints</title>
-  <listitem><para>The value of the <link linkend="ctr_currentVersion"><code>currentVersion</code></link> attribute <glossterm>must</glossterm> be 
+  <listitem><para>The value of the <link linkend="ctr_currentVersion"><code>currentVersion</code></link> attribute <glossterm>MUST</glossterm> be 
     the value of the <olink targetdoc="../../attributes/change-tracking/ctr_version.xml" targetptr="ctr_version"><code>version</code></olink> attribute of one 
     of the <olink targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"><code>&lt;revision></code></olink> elements 
     listed in the same <olink targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"><code>&lt;revisions></code></olink> element.</para></listitem>

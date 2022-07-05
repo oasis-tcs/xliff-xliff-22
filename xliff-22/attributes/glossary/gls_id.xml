@@ -22,7 +22,7 @@
 <itemizedlist>
   <title>Constraints</title>
   <listitem>
-    <para>The values of <link linkend="gls_id"><code>id</code></link> attributes <glossterm>must</glossterm> be unique among all <olink targetdoc="../../elements/glossary/glossentry.xml" targetptr="glossentry"><code>&lt;glossEntry></code></olink> 
+    <para>The values of <link linkend="gls_id"><code>id</code></link> attributes <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../../elements/glossary/glossentry.xml" targetptr="glossentry"><code>&lt;glossEntry></code></olink> 
     and <olink targetdoc="../../elements/glossary/translation.xml" targetptr="translation"><code>&lt;translation></code></olink> elements within the given enclosing 
       <olink targetdoc="../../elements/glossary/glossary.xml" targetptr="glossary"><code>&lt;glossary></code></olink> element.
     </para>

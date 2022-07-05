@@ -125,7 +125,7 @@
     <itemizedlist>
       <title>Processing Requirements</title>
       <listitem>
-        <para>Conformant ITS Processors <glossterm>must</glossterm> be able to use the external
+        <para>Conformant ITS Processors <glossterm>MUST</glossterm> be able to use the external
           global rules included in the module's Schematron file <ulink
             url="&this-loc;/schemas/its.sch">&this-loc;/schemas/its.sch</ulink>
           and compute ITS data categories encoded in <firstterm>XLIFF Documents</firstterm> as per
@@ -136,7 +136,7 @@
           <listitem>
             <para>In cases where any of the above specified global rules identifies an empty <olink
                 targetdoc="../../elements/inline/sm.xml" targetptr="sm"><code>&lt;sm></code></olink>
-              element, conformant ITS Processors <glossterm>should</glossterm> be able identify the
+              element, conformant ITS Processors <glossterm>SHOULD</glossterm> be able identify the
               closing <olink targetdoc="../../elements/inline/em.xml" targetptr="em"
                   ><code>&lt;em></code></olink> marker and process the relevant ITS data category as
               applied on the span delimited by those corresponding empty markers.</para>
@@ -147,7 +147,7 @@
       
       <listitem>
         <para>Conformant <firstterm>Agents</firstterm>
-          <glossterm>must</glossterm> be XLIFF Conformant in the sense of XLIFF <olink
+          <glossterm>MUST</glossterm> be XLIFF Conformant in the sense of XLIFF <olink
             targetptr="ApplicationConformance" targetdoc="../conformance/conformance.xml"
             >Application Conformance</olink> and also implement at least one <olink
             targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data category defined in the
@@ -162,26 +162,26 @@
         <itemizedlist>
           <listitem>
             <para>Conformant <firstterm>Extractors</firstterm>
-              <glossterm>must</glossterm> be capable of <firstterm>Extracting</firstterm> at least
+              <glossterm>MUST</glossterm> be capable of <firstterm>Extracting</firstterm> at least
               one of the above specified ITS data categories from a source format and encode it in a
               resulting conformant <firstterm>XLIFF Document</firstterm> with ITS Module based
               metadata. </para>
           </listitem>
           <listitem>
             <para> Conformant <firstterm>Enrichers</firstterm>
-              <glossterm>must</glossterm> be capable of <firstterm>Enriching</firstterm>
+              <glossterm>MUST</glossterm> be capable of <firstterm>Enriching</firstterm>
               <firstterm>XLIFF Documents</firstterm> with at least one of the above specified ITS
               data categories.</para>
           </listitem>
           <listitem>
             <para>Conformant <firstterm>Modifiers</firstterm>
-              <glossterm>must</glossterm> be capable of updating at least one of the above specified
+              <glossterm>MUST</glossterm> be capable of updating at least one of the above specified
               ITS data categories according to its own Constraints and Processing Requirements as
               specified in the ITS Module.</para>
           </listitem>
           <listitem>
             <para>Conformant <firstterm>Mergers</firstterm>
-              <glossterm>must</glossterm> be capable of <firstterm>Merging</firstterm> metadata of
+              <glossterm>MUST</glossterm> be capable of <firstterm>Merging</firstterm> metadata of
               at least one of the above specified ITS data categories back to the respective native
               format (with full knowledge of the <firstterm>Extraction</firstterm> mechanism) in the target natural
               language.</para>
@@ -236,7 +236,7 @@
     <itemizedlist>
       <title>Processing Requirements</title>
       <listitem><para><firstterm>Writers</firstterm>
-          <glossterm>must</glossterm> use the attribute <olink
+          <glossterm>MUST</glossterm> use the attribute <olink
             targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
               ><code>its:annotatorsRef</code></olink> to express the information provided through
           the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
@@ -253,16 +253,16 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-            ><code>id</code></olink> attribute is <glossterm>required</glossterm>.</para>
+            ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
         </listitem>
         <listitem>
           <para>The <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
-            ><code>its:annotatorsRef</code></olink> attribute is <glossterm>required</glossterm>.</para>
+            ><code>its:annotatorsRef</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
         </listitem>
         
         <listitem>
           <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>optional</glossterm> and set to
+            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
             <code>its:generic</code>.</para>
           
         </listitem>
@@ -270,7 +270,7 @@
         
         <listitem>
           <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-            ><code>translate</code></olink> attribute is <glossterm>optional</glossterm>.</para>
+            ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
         </listitem>
       </itemizedlist>
       

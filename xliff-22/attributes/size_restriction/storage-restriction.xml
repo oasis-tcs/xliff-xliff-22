@@ -10,7 +10,7 @@
 
   <para>This attribute specifies the storage restriction to apply to the collection descendants of the element it is defined on.</para>
 
-  <para><emphasis>Value description:</emphasis> Interpretation of the value is dependent on selected <olink targetdoc="strorage-profile.xml" targetptr="slr_storage_profile"><code>storageProfile</code></olink>. It <glossterm>must</glossterm> represent the restriction to apply to the indicated sub part of the document.</para>
+  <para><emphasis>Value description:</emphasis> Interpretation of the value is dependent on selected <olink targetdoc="strorage-profile.xml" targetptr="slr_storage_profile"><code>storageProfile</code></olink>. It <glossterm>MUST</glossterm> represent the restriction to apply to the indicated sub part of the document.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 

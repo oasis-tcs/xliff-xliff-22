@@ -33,7 +33,7 @@
 
   <simplelist>
     <member>- <olink targetdoc="../../attributes/hex.xml"
-    targetptr="hex"><code>hex</code></olink>, <glossterm>required</glossterm></member>
+    targetptr="hex"><code>hex</code></olink>, <glossterm>REQUIRED</glossterm></member>
 
 
   </simplelist>
@@ -55,12 +55,12 @@
     <title>Processing Requirements</title>
 
     <listitem>
-      <para><firstterm>Writers</firstterm> <glossterm>must</glossterm> encode all invalid XML characters of the content
+      <para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> encode all invalid XML characters of the content
       using <link linkend="cp"><code>&lt;cp&gt;</code></link>.</para>
     </listitem>
 
     <listitem>
-      <para><firstterm>Writers</firstterm> <glossterm>must not</glossterm> encode valid XML characters of the content using
+      <para><firstterm>Writers</firstterm> <glossterm>MUST NOT</glossterm> encode valid XML characters of the content using
       <link linkend="cp"><code>&lt;cp&gt;</code></link>.</para>
     </listitem>
   </itemizedlist>

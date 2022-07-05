@@ -17,18 +17,18 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>- <olink targetdoc="../../attributes/version.xml" targetptr="version"><code>version</code></olink>, <glossterm>required</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/srcLang.xml" targetptr="srcLang"><code>srcLang</code></olink>, <glossterm>required</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>, <glossterm>optional</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/xml_space.xml" targetptr="xml_space"><code>xml:space</code></olink>, <glossterm>optional</glossterm></member>
-        <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/version.xml" targetptr="version"><code>version</code></olink>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/srcLang.xml" targetptr="srcLang"><code>srcLang</code></olink>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/xml_space.xml" targetptr="xml_space"><code>xml:space</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
             <para>The <olink targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"
-                        ><code>trgLang</code></olink> attribute is <glossterm>required</glossterm>
+                        ><code>trgLang</code></olink> attribute is <glossterm>REQUIRED</glossterm>
                 if and only if the <firstterm>XLIFF Document</firstterm> contains <olink
                     targetdoc="target.xml" targetptr="target"><code>&lt;target></code></olink>
                 elements that are children of <olink targetdoc="segment.xml" targetptr="segment"
@@ -42,7 +42,7 @@
                 <member>- the <code><olink targetdoc="../../attributes/itsm/itsm_version.xml"
                             targetptr="itsm_version">its:version</olink></code> attribute from the
                     namespace <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>optional</glossterm>.</member>
+                        <glossterm>OPTIONAL</glossterm>.</member>
             </simplelist>
         </listitem>
     </itemizedlist>

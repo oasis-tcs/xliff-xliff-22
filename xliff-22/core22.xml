@@ -24,15 +24,22 @@
 
     <productnumber>&stage;</productnumber>
 
-    <releaseinfo role="OASIS-specification-this-authoritative">&this-loc;/&name;-v&version;-&stage;.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">&this-loc;/&name;-v&version;-&stage;.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">&this-loc;/&name;-v&version;-&stage;.xml</releaseinfo>
-    
-    <releaseinfo role="OASIS-specification-previous-authoritative">&previous-loc;/&name;-v&pversion;-&pstage;.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-previous">&previous-loc;/&name;-v&pversion;-&pstage;.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-previous">&previous-loc;/&name;-v&pversion;-&pstage;.xml</releaseinfo>
-    
-    <releaseinfo role="OASIS-specification-latest-authoritative">&latest-loc;/&name;-v&version;.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-this-authoritative"
+      >&this-loc;/&name;-v&version;-&stage;.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-this"
+      >&this-loc;/&name;-v&version;-&stage;.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-this"
+      >&this-loc;/&name;-v&version;-&stage;.xml</releaseinfo>
+
+    <releaseinfo role="OASIS-specification-previous-authoritative"
+      >&previous-loc;/&name;-v&pversion;-&pstage;.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous"
+      >&previous-loc;/&name;-v&pversion;-&pstage;.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous"
+      >&previous-loc;/&name;-v&pversion;-&pstage;.xml</releaseinfo>
+
+    <releaseinfo role="OASIS-specification-latest-authoritative"
+      >&latest-loc;/&name;-v&version;.html</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">&latest-loc;/&name;-v&version;.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">&latest-loc;/&name;-v&version;.xml</releaseinfo>
 
@@ -68,7 +75,7 @@
         </affiliation>
         <email>rmraya@maxprograms.com</email>
       </editor>
-      
+
       <editor>
         <firstname>David</firstname>
         <surname>Filip</surname>
@@ -111,8 +118,9 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para><emphasis>XLIFF Version &pversion;.</emphasis> Edited by David Filip, Tom Comerford, Soroush Saadatfar, Felix Sasaki and Yves Savourel. 13 February 2018. OASIS Standard. <ulink
-              url="https://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html"
+          <para><emphasis>XLIFF Version &pversion;.</emphasis> Edited by David Filip, Tom Comerford,
+            Soroush Saadatfar, Felix Sasaki and Yves Savourel. 13 February 2018. OASIS Standard.
+              <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html"
               >https://docs.oasis-open.org/xliff/xliff-core/v&pversion;/os/xliff-core-v&pversion;.html</ulink></para>
         </listitem>
       </itemizedlist>
@@ -339,12 +347,12 @@
       <section>
         <title>Key words</title>
 
-        <para>The key words <glossterm>must</glossterm>, <glossterm>must not</glossterm>,
-            <glossterm>required</glossterm>, <glossterm>shall</glossterm>, <glossterm>shall
-            not</glossterm>, <glossterm>should</glossterm>, <glossterm>should not</glossterm>,
-            <glossterm>recommended</glossterm>, <glossterm>may</glossterm>, and
-            <glossterm>optional</glossterm> are to be interpreted as described in <xref
-            linkend="rfc2119"/>.</para>
+        <para>The key words <glossterm>MUST</glossterm>, <glossterm>MUST NOT</glossterm>,
+            <glossterm>REQUIRED</glossterm>, <glossterm>SHALL</glossterm>, <glossterm>SHALL
+            NOT</glossterm>, <glossterm>SHOULD</glossterm>, <glossterm>SHOULD NOT</glossterm>,
+            <glossterm>RECOMMENDED</glossterm>, <glossterm>MAY</glossterm>, and
+            <glossterm>OPTIONAL</glossterm> are to be interpreted as described in <xref
+            linkend="bcp14"/>.</para>
       </section>
 
       <section id="definitions">
@@ -376,7 +384,7 @@
                 <listitem>
                   <para>
                     <firstterm>Enriching</firstterm>
-                    <glossterm>may</glossterm> happen at the time of
+                    <glossterm>MAY</glossterm> happen at the time of
                       <firstterm>Extraction</firstterm>. </para>
                 </listitem>
               </itemizedlist>
@@ -461,7 +469,7 @@
               <itemizedlist>
                 <title>Processing Requirements</title>
                 <listitem>
-                  <para> XLIFF elements <glossterm>may</glossterm> be
+                  <para> XLIFF elements <glossterm>MAY</glossterm> be
                       <firstterm>Modified</firstterm> and <firstterm>Enriched</firstterm> at the
                     same time. </para>
                 </listitem>
@@ -604,7 +612,7 @@
             <term>XLIFF Module</term>
 
             <listitem>
-              <para>A module is an <glossterm>optional</glossterm> set of XML elements and
+              <para>A module is an <glossterm>OPTIONAL</glossterm> set of XML elements and
                 attributes that stores information about a process applied to an <firstterm>XLIFF
                   Document</firstterm> and the data incorporated into the document as result of that
                 process.</para>
@@ -661,10 +669,10 @@
           </citetitle> ISO, June 1, 2006.</bibliomixed>
 
 
-        <bibliomixed id="rfc2119"><abbrev>RFC 2119</abbrev> S. Bradner, <title>Key words for use in
-            RFCs to Indicate Requirement Levels</title>, <citetitle>
-            <ulink url="https://www.ietf.org/rfc/rfc2119.txt"
-              >https://www.ietf.org/rfc/rfc2119.txt</ulink>
+        <bibliomixed id="bcp14"><abbrev>BCP 14</abbrev> S. Bradner, <title>Key words for use in RFCs
+            to Indicate Requirement Levels</title>, <citetitle>
+            <ulink url="https://tools.ietf.org/search/bcp14"
+              >https://tools.ietf.org/search/bcp14</ulink>
           </citetitle> IETF (Internet Engineering Task Force) RFC 2119, March 1997.</bibliomixed>
 
         <bibliomixed id="rfc3987"><abbrev>RFC 3987</abbrev> M. Duerst and M. Suignard,
@@ -788,10 +796,10 @@
       </bibliography>
     </section>
   </section>
-  
+
   <xi:include href="conformance/conformance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="fragments/fragments.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+
   <section id="core">
     <title>The Core Specification</title>
 
@@ -800,8 +808,8 @@
       makes the <firstterm>Translation</firstterm> process possible.</para>
 
     <para>At creation time, an <firstterm>XLIFF Document</firstterm>
-      <glossterm>may</glossterm> contain only text in the source language. Translations expressed in
-      the target language <glossterm>may</glossterm> be added at a later time.</para>
+      <glossterm>MAY</glossterm> contain only text in the source language. Translations expressed in
+      the target language <glossterm>MAY</glossterm> be added at a later time.</para>
 
     <para>The root element of an <firstterm>XLIFF Document</firstterm> is <olink
         targetdoc="elements/structural/xliff.xml" targetptr="xliff"
@@ -830,13 +838,13 @@
         <listitem>
           <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
               Document</firstterm> that contains <firstterm>XLIFF-defined</firstterm> elements and
-            attributes that it cannot handle <glossterm>must</glossterm> preserve those elements and
+            attributes that it cannot handle <glossterm>MUST</glossterm> preserve those elements and
             attributes.</para>
         </listitem>
         <listitem>
           <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
               Document</firstterm> that contains custom elements and attributes that it cannot
-            handle <glossterm>should</glossterm> preserve those elements and attributes.</para>
+            handle <glossterm>SHOULD</glossterm> preserve those elements and attributes.</para>
         </listitem>
 
       </itemizedlist>
@@ -850,7 +858,7 @@
       <title>CDATA sections</title>
 
       <para>CDATA sections (<code>&lt;![CDATA[...]]&gt;</code>) are allowed in XLIFF content, but on
-        output they <glossterm>may</glossterm> be changed into normal escaped content.</para>
+        output they <glossterm>MAY</glossterm> be changed into normal escaped content.</para>
 
       <para>Note that avoiding CDATA sections is considered a best practice from the
         internationalization viewpoint <link linkend="biblio_xmli18nbp">[XML I18N BP]</link>.</para>
@@ -860,12 +868,12 @@
 
         <listitem>
           <para><firstterm>Agents</firstterm>
-            <glossterm>must</glossterm> process CDATA sections.</para>
+            <glossterm>MUST</glossterm> process CDATA sections.</para>
         </listitem>
 
         <listitem>
           <para><firstterm>Writers</firstterm>
-            <glossterm>may</glossterm> preserve the original CDATA sections.</para>
+            <glossterm>MAY</glossterm> preserve the original CDATA sections.</para>
         </listitem>
       </itemizedlist>
     </section>
@@ -903,13 +911,13 @@ Text content that is important</programlisting>
 
         <listitem>
           <para><firstterm>Agents</firstterm>
-            <glossterm>must</glossterm> ignore XML comments. That is the XLIFF parsed content is the
+            <glossterm>MUST</glossterm> ignore XML comments. That is the XLIFF parsed content is the
             same whether or not there is an XML comment in the document.</para>
         </listitem>
 
         <listitem>
           <para><firstterm>Writers</firstterm>
-            <glossterm>may</glossterm> preserve XML comments on output.</para>
+            <glossterm>MAY</glossterm> preserve XML comments on output.</para>
         </listitem>
       </itemizedlist>
     </section>
@@ -925,13 +933,13 @@ Text content that is important</programlisting>
         <title>Processing Requirements</title>
         <listitem>
           <para><firstterm>Agents</firstterm>
-            <glossterm>must not</glossterm> use Processing Instructions as a means to implement a
+            <glossterm>MUST NOT</glossterm> use Processing Instructions as a means to implement a
             feature already specified in <firstterm>XLIFF Core</firstterm> or
               <firstterm>Modules</firstterm>.</para>
         </listitem>
         <listitem>
           <para><firstterm>Writers</firstterm>
-            <glossterm>should</glossterm> preserve XML Processing Instructions in an
+            <glossterm>SHOULD</glossterm> preserve XML Processing Instructions in an
               <firstterm>XLIFF Document</firstterm>.</para>
         </listitem>
       </itemizedlist>
@@ -977,7 +985,7 @@ Text content that is important</programlisting>
         >IANA Provisional Standard Media Type Registry</ulink>.</para>
     <para>This Appendix content will be used to seek final media type registration for XLIFF Version
       &pversion; and higher Versions (including this XLIFF Version &version;). </para>
-    
+
     <xi:include href="mediaType/mediaType.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   </appendix>
@@ -1152,10 +1160,10 @@ Text content that is important</programlisting>
       </listitem>
       <listitem>
         <para>Schnabel, Bryan - Individual </para>
-      </listitem>      
+      </listitem>
       <listitem>
         <para>Umaoka, Yoshito - IBM </para>
-      </listitem>      
+      </listitem>
     </itemizedlist>
 
   </appendix>

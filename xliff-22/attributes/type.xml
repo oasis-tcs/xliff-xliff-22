@@ -21,7 +21,7 @@
         </olink> or <olink targetdoc="../elements/inline/ph.xml" targetptr="ph">
           <code>&lt;ph&gt;</code>
         </olink>:</para>
-      <para>The value  <glossterm>must</glossterm> be set to one of the following values:</para>
+      <para>The value  <glossterm>MUST</glossterm> be set to one of the following values:</para>
       <simplelist>
         <member><code>fmt</code> - Formatting (e.g. a &lt;b&gt; element in HTML)</member>
         <member><code>ui</code> - User interface element</member>
@@ -106,7 +106,7 @@
           <olink targetdoc="../elements/inline/ph.xml" targetptr="ph">
           <code>&lt;ph&gt;</code>
         </olink>
-        <glossterm>must</glossterm> also update or delete <olink targetdoc="subType.xml" targetptr="subtype">
+        <glossterm>MUST</glossterm> also update or delete <olink targetdoc="subType.xml" targetptr="subtype">
           <code>subType</code>
         </olink>.</para>
     </listitem>

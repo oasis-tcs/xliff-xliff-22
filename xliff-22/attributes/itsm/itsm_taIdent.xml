@@ -29,7 +29,7 @@
 
     <itemizedlist>
         <title>Constraints</title>
-        <listitem><para>When the attribute <link linkend="itsm_taIdent"><code>taIdent</code></link> is set, the <olink targetdoc="itsm_taSource.xml" targetptr="itsm_taSource" ><code>taSource</code></olink> attribute <glossterm>must</glossterm> be set as well.</para></listitem>
+        <listitem><para>When the attribute <link linkend="itsm_taIdent"><code>taIdent</code></link> is set, the <olink targetdoc="itsm_taSource.xml" targetptr="itsm_taSource" ><code>taSource</code></olink> attribute <glossterm>MUST</glossterm> be set as well.</para></listitem>
     </itemizedlist>
     <para>See the <olink targetdoc="../../modules/itsm/Text_Analysis.xml" targetptr="taAnnotation">ITS Text Analysis Annotation</olink> for the full normative usage description of this attribute. Other advanced Constraints follow from that normative usage description.</para>
 

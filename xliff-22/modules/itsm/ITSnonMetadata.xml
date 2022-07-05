@@ -58,7 +58,7 @@
         targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> for further
       details.</para>
-    <para>It is <glossterm>recommended</glossterm> that <ulink
+    <para>It is <glossterm>RECOMMENDED</glossterm> that <ulink
         url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> metadata is fully
       consumed on <firstterm>Extraction</firstterm>, so that only the relevant source content is
       present in each <firstterm>XLIFF Document</firstterm> with the <olink

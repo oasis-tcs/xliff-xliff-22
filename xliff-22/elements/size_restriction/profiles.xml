@@ -12,22 +12,22 @@
     <simplelist>
         <member>- Zero or one <olink targetdoc="../../elements/size_restriction/normalization.xml" targetptr="slr_normalization"><code>&lt;normalization></code></olink> element
             followed by</member>
-        <member>- elements from other namespaces, <glossterm>optional</glossterm></member>
+        <member>- elements from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>- <olink targetdoc="../../attributes/size_restriction/general-profile.xml" targetptr="slr_general_profile"><code>generalProfile</code></olink>, <glossterm>optional</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/size_restriction/storage-profile.xml" targetptr="slr_storage_profile"><code>storageProfile</code></olink>, <glossterm>optional</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/size_restriction/general-profile.xml" targetptr="slr_general_profile"><code>generalProfile</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/size_restriction/storage-profile.xml" targetptr="slr_storage_profile"><code>storageProfile</code></olink>, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para>Any overall configuration or settings related to the selected profile <glossterm>must</glossterm> be placed in child elements of this element.</para>
+      <para>Any overall configuration or settings related to the selected profile <glossterm>MUST</glossterm> be placed in child elements of this element.</para>
     </listitem>
         <listitem>
-      <para>Data not related to the configuration of the selected profiles <glossterm>must not</glossterm> be placed in this element.</para>
+      <para>Data not related to the configuration of the selected profiles <glossterm>MUST NOT</glossterm> be placed in this element.</para>
     </listitem>
   </itemizedlist>
 

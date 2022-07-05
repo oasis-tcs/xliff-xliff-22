@@ -13,7 +13,7 @@
     MIME specification; e.g. mimeType="text/xml" indicates the resource data is a text file of XML
     format.</para>
 
-  <para><emphasis>Value description:</emphasis> A MIME type. An existing MIME type <glossterm>must</glossterm> be used from
+  <para><emphasis>Value description:</emphasis> A MIME type. An existing MIME type <glossterm>MUST</glossterm> be used from
     a <ulink url="http://www.iana.org/assignments/media-types">list of standard values</ulink>.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>

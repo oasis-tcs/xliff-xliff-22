@@ -76,7 +76,7 @@
     <title>Processing Requirements</title>
     <listitem>
       <para><firstterm>Writers</firstterm> updating the attribute <link
-        linkend="candidates_type"><code>type</code></link> <glossterm>must</glossterm> also update or delete <olink
+        linkend="candidates_type"><code>type</code></link> <glossterm>MUST</glossterm> also update or delete <olink
           targetdoc="candidates_subtype.xml" targetptr="candidates_subtype"
           ><code>subType</code></olink> .</para>
     </listitem>

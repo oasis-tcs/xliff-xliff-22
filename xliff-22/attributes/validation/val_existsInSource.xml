@@ -9,7 +9,7 @@
   <title>existsInSource</title>
 
   <para>When this rule attribute is used with another rule attribute and is set to <code>yes</code>, it specifies that for the rule to succeed, the condition
-  <glossterm>must</glossterm> be satisfied in both source and target text. This rule attribute is valid only when used with one of the following rule attributes:
+  <glossterm>MUST</glossterm> be satisfied in both source and target text. This rule attribute is valid only when used with one of the following rule attributes:
       <olink targetdoc="../../attributes/validation/val_isPresent.xml" targetptr="val_isPresent"><code>isPresent</code></olink>,
       <olink targetdoc="../../attributes/validation/val_startsWith.xml" targetptr="val_startsWith"><code>startsWith</code></olink>, or
       <olink targetdoc="../../attributes/validation/val_endsWith.xml" targetptr="val_endsWith"><code>endsWith</code></olink>.</para>
@@ -65,7 +65,7 @@
         <listitem><para><olink targetdoc="../../attributes/validation/val_startsWith.xml" targetptr="val_startsWith"><code>startsWith</code></olink></para></listitem>
         <listitem><para><olink targetdoc="../../attributes/validation/val_endsWith.xml" targetptr="val_endsWith"><code>endsWith</code></olink></para></listitem>
       </itemizedlist>
-      is <glossterm>required</glossterm> in the same <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;val:rule></code></olink> element.
+      is <glossterm>REQUIRED</glossterm> in the same <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;val:rule></code></olink> element.
     </para></listitem>
     <!--
     <listitem><para>When one of the following:
@@ -73,7 +73,7 @@
         <listitem><para><olink targetdoc="../../attributes/validation/val_mustLoc.xml" targetptr="val_mustLoc"><code>mustLoc</code></olink></para></listitem>
         <listitem><para><olink targetdoc="../../attributes/validation/val_noLoc.xml" targetptr="val_noLoc"><code>noLoc</code></olink></para></listitem>
       </itemizedlist>
-      is specified, the attribute <link linkend="val_existsInSource"><code>existsInSource</code></link> <glossterm>must not</glossterm>
+      is specified, the attribute <link linkend="val_existsInSource"><code>existsInSource</code></link> <glossterm>MUST NOT</glossterm>
       occur in the same <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;val:rule></code></olink> element.
       </para></listitem>
       -->

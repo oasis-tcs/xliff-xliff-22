@@ -14,17 +14,17 @@
     </simplelist>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id"><code>id</code></olink>, <glossterm>optional</glossterm></member>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_ref.xml" targetptr="res_ref"><code>ref</code></olink>, <glossterm>required</glossterm></member>
-      <member>- attributes from other namespaces, <glossterm>optional</glossterm></member>
+      <member>- <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+      <member>- <olink targetdoc="../../attributes/resourceData/res_ref.xml" targetptr="res_ref"><code>ref</code></olink>, <glossterm>REQUIRED</glossterm></member>
+      <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
   <itemizedlist>
     <title>Constraints</title>
 
     <listitem>
-      <para>The value of the <glossterm>optional</glossterm> <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id">id</olink> attribute
-        <glossterm>must</glossterm> be unique among all <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink>
+      <para>The value of the <glossterm>OPTIONAL</glossterm> <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id">id</olink> attribute
+        <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink>
         and <olink targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink>
         elements of the enclosing <olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
     </listitem>
@@ -35,7 +35,7 @@
       
     <listitem>
       <para><firstterm>Modifiers</firstterm>
-        <glossterm>must</glossterm> remove <olink
+        <glossterm>MUST</glossterm> remove <olink
           targetdoc="../../elements/resourceData/resourceItemRef.xml"
           targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink> when removing
         the referenced <olink targetdoc="../../elements/resourceData/resourcItem.xml"

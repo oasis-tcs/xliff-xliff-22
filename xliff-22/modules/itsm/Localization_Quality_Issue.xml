@@ -36,7 +36,7 @@ annotatorsRef had been addressed already for csprd01
   </para>
   <itemizedlist>
     <title>Processing Requirements</title>
-    <listitem><para><firstterm>Writers</firstterm> <glossterm>must</glossterm> use the
+    <listitem><para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> use the
       <olink targetdoc="specification" targetptr="lqiAnnotation">ITS Localization Quality Issue Annotation</olink> to express the <olink
       targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqissue"
@@ -50,7 +50,7 @@ annotatorsRef had been addressed already for csprd01
     <para>Localization Quality Issue is not to be used at structural levels. If a structural element
       of the original document has <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink>
-      information associated, it <glossterm>must</glossterm> be anyway
+      information associated, it <glossterm>MUST</glossterm> be anyway
         <firstterm>Extracted</firstterm> using the <olink targetdoc="specification"
         targetptr="lqiAnnotation">ITS Localization Quality Issue Annotation</olink>.
       <!-- This has been addressed by using xml:id becuase of the switch to the W3C its: for csprd02
@@ -125,16 +125,16 @@ annotatorsRef had been addressed already for csprd01
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>required</glossterm>.</para>
+          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>optional</glossterm> and set to
+          ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
           <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
-        <para>Exactly one of the following <glossterm>must</glossterm> be set:</para>
+        <para>Exactly one of the following <glossterm>MUST</glossterm> be set:</para>
 
         <itemizedlist>
           <listitem>
@@ -147,7 +147,7 @@ annotatorsRef had been addressed already for csprd01
 
             <itemizedlist>
 
-              <para>At least one of the following <glossterm>must</glossterm> be set:</para>
+              <para>At least one of the following <glossterm>MUST</glossterm> be set:</para>
               <listitem>
 
                 <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueType" targetptr="itsm_locQualityIssueType">
@@ -167,13 +167,13 @@ annotatorsRef had been addressed already for csprd01
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>optional</glossterm>.</para>
+          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
-      <listitem><para>The following attributes <glossterm>must not</glossterm> be set if and only if <olink
+      <listitem><para>The following attributes <glossterm>MUST NOT</glossterm> be set if and only if <olink
         targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
         targetptr="itsm_locQualityIssuesRef">
         <code>its:locQualityIssuesRef</code></olink> is declared, otherwise all of the following
-        are <glossterm>optional</glossterm>:</para>
+        are <glossterm>OPTIONAL</glossterm>:</para>
         <itemizedlist>
           <listitem>
             <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueSeverity.xml" targetptr="itsm_locQualityIssueSeverity">

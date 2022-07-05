@@ -9,7 +9,7 @@
 <para>Format style attribute, fs - allows most structural and inline XLIFF core elements to convey
 basic formatting information using a predefined subset of HTML formatting elements (for example,
 HTML elements names like &lt;script&gt; are not included). It enables the generation of HTML pages
-or snippets for preview and review purposes. If additional style information is needed, the <glossterm>optional</glossterm>
+or snippets for preview and review purposes. If additional style information is needed, the <glossterm>OPTIONAL</glossterm>
 <olink targetdoc="subFs.xml" targetptr="subFs"><code>subFs</code></olink> attribute is
 provided.</para>
 <para><emphasis>Value description:</emphasis><table>
@@ -291,7 +291,7 @@ targetptr="sm"><code>&lt;sm&gt;</code></olink>. </para>
 
 <itemizedlist>
 <title>Constraints</title>
-<listitem><para>The <link linkend="fs"><code>fs</code></link> <glossterm>must</glossterm> only be used with <olink targetdoc="../elements/inline/ec.xml"
+<listitem><para>The <link linkend="fs"><code>fs</code></link> <glossterm>MUST</glossterm> only be used with <olink targetdoc="../elements/inline/ec.xml"
 targetptr="ec"><code>&lt;ec&gt;</code></olink> in cases where the <code>isolated</code> attribute is set to 'yes'.</para>
 </listitem>
 
@@ -302,7 +302,7 @@ targetptr="ec"><code>&lt;ec&gt;</code></olink> in cases where the <code>isolated
 <title>Processing Requirements</title>
 <listitem>
 <para><firstterm>Writers</firstterm> updating the attribute <link
- linkend="fs"><code>fs</code></link> <glossterm>must</glossterm> also update or delete <olink targetdoc="subFs.xml" targetptr="subFs"><code>subFs</code></olink>.</para>
+ linkend="fs"><code>fs</code></link> <glossterm>MUST</glossterm> also update or delete <olink targetdoc="subFs.xml" targetptr="subFs"><code>subFs</code></olink>.</para>
 </listitem>
 </itemizedlist>
 
@@ -366,7 +366,7 @@ targetptr="ec"><code>&lt;ec&gt;</code></olink> in cases where the <code>isolated
 </programlisting>
 
 <!-- move to subFS
-<para>For complex HTML previews that require more than one attribute on an HTML preview element, attribute pairs are separated by backslashes (\). Any literal comma or backslash in an attribute value <glossterm>must</glossterm> be escaped with a backslash.</para>
+<para>For complex HTML previews that require more than one attribute on an HTML preview element, attribute pairs are separated by backslashes (\). Any literal comma or backslash in an attribute value <glossterm>MUST</glossterm> be escaped with a backslash.</para>
 
 <para>For example, we would use this convention:</para>
 

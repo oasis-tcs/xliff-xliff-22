@@ -44,7 +44,7 @@
             module's namespace. For clarity the prefix "xlf" will be used for <firstterm>XLIFF
                 Core</firstterm> elements and attributes. Profile names use the same namespace-like
             naming convention as user defined values in the <firstterm>XLIFF Core</firstterm>
-            specification. The names <glossterm>should</glossterm> be composed of two components
+            specification. The names <glossterm>SHOULD</glossterm> be composed of two components
             separated by a colon. &lt;authority>:&lt;name>. The authority "xliff" is reserved for
             profiles defined by the OASIS XLIFF Technical Committee.</para>
     </section>
@@ -147,7 +147,7 @@
         <section>
             <title>General restriction profile ”xliff:codepoints”</title>
             <para>This profile implements a simple string length restriction based on the number of
-                Unicode code points. It is <glossterm>optional</glossterm> to specify if
+                Unicode code points. It is <glossterm>OPTIONAL</glossterm> to specify if
                 normalization is to be applied using the <olink
                     targetdoc="../../elements/size_restriction/normalization.xml"
                     targetptr="slr_normalization"><code>&lt;normalization></code></olink> element
@@ -157,11 +157,11 @@
             <section>
                 <title>sizeRestriction</title>
                 <para>The value of this attribute holds the ”maximum” or ”minimum and maximum” size
-                    of the string. Either size <glossterm>must</glossterm> be an integer. The
-                    maximum size <glossterm>may</glossterm> also be ’*’ to denote that there is no
+                    of the string. Either size <glossterm>MUST</glossterm> be an integer. The
+                    maximum size <glossterm>MAY</glossterm> also be ’*’ to denote that there is no
                     maximum restriction. If only a maximum is specified it is implied that the
                     minimum is 0 (empty string). The format of the value is the
-                        <glossterm>optional</glossterm> minimum size and a coma followed by a
+                        <glossterm>OPTIONAL</glossterm> minimum size and a coma followed by a
                     maximum size (”[minsize,]maxsize”). The default value is ’*’ which evaluates to
                     a string with unbounded size.</para>
             </section>
@@ -176,7 +176,7 @@
             <title>Storage restriction profiles ”xliff:utf8”, ”xliff:utf16” and
                 ”xliff:utf32”</title>
             <para>These three profiles define the standard size restriction profiles for the common
-                Unicode character encoding schemes. It is <glossterm>optional</glossterm> to specify
+                Unicode character encoding schemes. It is <glossterm>OPTIONAL</glossterm> to specify
                 if normalization is to be applied using the <olink
                     targetdoc="../../elements/size_restriction/normalization.xml"
                     targetptr="slr_normalization"><code>&lt;normalization></code></olink>element and
@@ -220,11 +220,11 @@
             <section>
                 <title>storageRestriction</title>
                 <para>The value of this attribute holds the ”maximum” or ”minimum and maximum” size
-                    of the string. Either size <glossterm>must</glossterm> be an integer. The
-                    maximum size <glossterm>may</glossterm> also be ’*’ to denote that there is no
+                    of the string. Either size <glossterm>MUST</glossterm> be an integer. The
+                    maximum size <glossterm>MAY</glossterm> also be ’*’ to denote that there is no
                     maximum restriction. If only a maximum is specified it is implied that the
                     minimum is 0 (empty string). The format of the value is the
-                        <glossterm>optional</glossterm> minimum size and a coma followed by a
+                        <glossterm>OPTIONAL</glossterm> minimum size and a coma followed by a
                     maximum size (”[minsize,]maxsize”). The default value is ’*’ which evaluates to
                     a string with unbounded size.</para>
             </section>
@@ -256,32 +256,32 @@
         <title>Conformance</title>
         <para>To claim conformance to the XLIFF size and length restriction module an
                 <firstterm>Agent</firstterm>
-            <glossterm>must</glossterm> meet the following criteria:</para>
+            <glossterm>MUST</glossterm> meet the following criteria:</para>
         <itemizedlist spacing="compact">
             <listitem>
-                <para><glossterm>must</glossterm> be compliant with the schema of the
+                <para><glossterm>MUST</glossterm> be compliant with the schema of the
                         <firstterm>XLIFF Core</firstterm> specification and its extensions provided
                     in this module.</para>
             </listitem>
             <listitem>
-                <para><glossterm>must</glossterm> follow all processing requirements set forth in
+                <para><glossterm>MUST</glossterm> follow all processing requirements set forth in
                     this module specification regarding the general use of elements and
                     attributes.</para>
             </listitem>
             <listitem>
-                <para><glossterm>must</glossterm> support all standard profiles with normalization
+                <para><glossterm>MUST</glossterm> support all standard profiles with normalization
                     set to <code>none</code>.</para>
             </listitem>
             <listitem>
-                <para><glossterm>should</glossterm> support all standard profiles with all modes of
+                <para><glossterm>SHOULD</glossterm> support all standard profiles with all modes of
                     normalization.</para>
             </listitem>
             <listitem>
-                <para><glossterm>may</glossterm> support additional third party profiles for storage
+                <para><glossterm>MAY</glossterm> support additional third party profiles for storage
                     or general restrictions.</para>
             </listitem>
             <listitem>
-                <para><glossterm>must</glossterm> provide at least one of the following:</para>
+                <para><glossterm>MUST</glossterm> provide at least one of the following:</para>
                 <itemizedlist spacing="compact">
                     <listitem>
                         <para>add size and length restriction information to an <firstterm>XLIFF
@@ -289,7 +289,7 @@
                     </listitem>
                     <listitem>
                         <para>if it supports the profile(s) specified in the <firstterm>XLIFF
-                                Document</firstterm> it <glossterm>must</glossterm> provide a way to
+                                Document</firstterm> it <glossterm>MUST</glossterm> provide a way to
                             check if the size and length restrictions in the document are met
                             according to the profile(s) requirements.</para>
                     </listitem>

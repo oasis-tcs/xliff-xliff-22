@@ -19,7 +19,7 @@
   
 <itemizedlist>
   <title>Constraints</title>
-  <listitem><para> The value of the <link linkend="ctr_ref"><code>ref</code></link> attribute <glossterm>must</glossterm> be the value of the <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink> attribute of a single instance of an element that is a multiple instance within the enclosing element.</para></listitem>
+  <listitem><para> The value of the <link linkend="ctr_ref"><code>ref</code></link> attribute <glossterm>MUST</glossterm> be the value of the <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink> attribute of a single instance of an element that is a multiple instance within the enclosing element.</para></listitem>
 </itemizedlist>
   
 </section>

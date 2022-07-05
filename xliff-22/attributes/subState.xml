@@ -23,7 +23,7 @@
 
   <para>The prefix <code>xlf</code> is reserved for this specification.</para>
 
-  <para>Other prefixes and sub-values <glossterm>may</glossterm> be defined by the users.</para>
+  <para>Other prefixes and sub-values <glossterm>MAY</glossterm> be defined by the users.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
@@ -38,7 +38,7 @@
       <para>If the attribute <olink targetdoc="subState.xml" targetptr="substate"
             ><code>subState</code></olink> is used, the attribute <olink targetdoc="state.xml"
           targetptr="state"><code>state</code></olink>
-        <glossterm>must</glossterm> be explicitly set.</para>
+        <glossterm>MUST</glossterm> be explicitly set.</para>
     </listitem>
     </itemizedlist>
     <itemizedlist>
@@ -47,7 +47,7 @@
   
     <listitem>
       <para><firstterm>Writers</firstterm> updating the attribute <olink targetdoc="state.xml"
-        targetptr="state"><code>state</code></olink> <glossterm>must</glossterm> also update or delete <link  linkend="substate"><code>subState</code></link>.</para>
+        targetptr="state"><code>state</code></olink> <glossterm>MUST</glossterm> also update or delete <link  linkend="substate"><code>subState</code></link>.</para>
       </listitem>
   </itemizedlist>
 </section>

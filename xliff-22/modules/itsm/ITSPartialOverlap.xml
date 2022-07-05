@@ -63,10 +63,10 @@
         <para>The <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
           <ulink url="https://www.w3.org/TR/its20/#storagesize">Storage Size data
             category</ulink>
-          <glossterm>may</glossterm> be expressed as an Extended profile within the <olink
+          <glossterm>MAY</glossterm> be expressed as an Extended profile within the <olink
             targetdoc="../size_restriction/specification.xml" targetptr="size_restriction_module"
             >Size and Length Restriction Module</olink>. No other parts of XLIFF
-          <glossterm>must</glossterm> be extended to support this data category.</para>
+          <glossterm>MUST</glossterm> be extended to support this data category.</para>
       </listitem>
     </itemizedlist>
     <note><para>An <firstterm>XLIFF-defined</firstterm> common profile could be made part of this module in a future Version of

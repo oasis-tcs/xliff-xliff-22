@@ -26,15 +26,15 @@
       <tbody>
         <row>
           <entry>none</entry>
-          <entry>No normalization <glossterm>should</glossterm> be done.</entry>
+          <entry>No normalization <glossterm>SHOULD</glossterm> be done.</entry>
         </row>
         <row>
           <entry>nfc</entry>
-          <entry>Normalization Form C <glossterm>must</glossterm> be used.</entry>
+          <entry>Normalization Form C <glossterm>MUST</glossterm> be used.</entry>
         </row>
         <row>
           <entry>nfd</entry>
-          <entry>Normalization Form D <glossterm>must</glossterm> be used.</entry>
+          <entry>Normalization Form D <glossterm>MUST</glossterm> be used.</entry>
         </row>
      </tbody>
     </tgroup>

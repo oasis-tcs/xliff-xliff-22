@@ -39,7 +39,7 @@
         <title>Constraints</title>
         <listitem>
             <para>Multiple <link linkend="itsm_provenanceRecordsRef">provenanceRecordsRef</link>
-                attributes <glossterm>may</glossterm> reference the same <olink targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
+                attributes <glossterm>MAY</glossterm> reference the same <olink targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                     targetptr="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></olink>
                 element.</para>
         </listitem>
@@ -51,7 +51,7 @@
                     ><code>&lt;sm></code></olink> element, <itemizedlist>
                     <listitem>
                         <para>The value of the <link linkend="itsm_provenanceRecordsRef"
-                                >provenanceRecordsRef</link> attribute <glossterm>must</glossterm>
+                                >provenanceRecordsRef</link> attribute <glossterm>MUST</glossterm>
                             be an IRI referencing a <olink
                                 targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                                 targetptr="itsm_provenanceRecords"
@@ -78,7 +78,7 @@
                         ><code>&lt;unit></code></olink> element, <itemizedlist>
                     <listitem>
                         <para>The value of the <link linkend="itsm_provenanceRecordsRef"
-                                >provenanceRecordsRef</link> attribute <glossterm>must</glossterm>
+                                >provenanceRecordsRef</link> attribute <glossterm>MUST</glossterm>
                             be an IRI referencing a <olink
                                 targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                                 targetptr="itsm_provenanceRecords"
@@ -97,7 +97,7 @@
                     linkend="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></link>
                 attribute referencing a <olink targetptr="itsm_provenanceRecords"
                     targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
-                        ><code>provenanceRecords</code></olink> element <glossterm>must</glossterm>
+                        ><code>provenanceRecords</code></olink> element <glossterm>MUST</glossterm>
                 delete that <olink targetptr="itsm_provenanceRecords"
                     targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                         ><code>provenanceRecords</code></olink> element.</para>

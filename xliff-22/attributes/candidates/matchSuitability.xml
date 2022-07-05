@@ -38,7 +38,7 @@
     <itemizedlist>
         <title>Processing Requirements</title>
         <listitem>
-            <para><firstterm>Agents</firstterm> processing this module <glossterm>must</glossterm> make use of <olink targetdoc="../../attributes/candidates/matchSuitability.xml" 
+            <para><firstterm>Agents</firstterm> processing this module <glossterm>MUST</glossterm> make use of <olink targetdoc="../../attributes/candidates/matchSuitability.xml" 
             targetptr="matchSuitability"><code>matchSuitability</code></olink> for match ordering purposes if the attribute is specified.
             </para>
         </listitem>
