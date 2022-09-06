@@ -21,7 +21,11 @@
 | |
 | +---<olink targetdoc="structural/note.xml" targetptr="note"><code>&lt;note></code></olink> +
 |
-+---&lt;other> ?
++---<olink targetdoc="metadata/metadata.xml" targetptr="metadata"><code>&lt;mda:metadata></code></olink> ?
+| |
+| +---<olink targetdoc="metadata/metagroup.xml" targetptr="metagroup"><code>&lt;mda:metagroup></code></olink> +
+|   |
+|   +---At least one of (<olink  targetdoc="metadata/metagroup.xml" targetptr="metagroup"><code>&lt;mda:metagroup></code></olink> OR <olink targetdoc="metadata.meta.xml" targetptr="meta"><code>&lt;mda:meta></code></olink>) 
 |
 +---<olink targetdoc="structural/file.xml" targetptr="file"><code>&lt;file></code></olink> +
   |

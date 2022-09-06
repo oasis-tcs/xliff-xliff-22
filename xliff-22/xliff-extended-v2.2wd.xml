@@ -72,7 +72,7 @@
     </authorgroup>
 
 
-    <pubdate>5 July 2022</pubdate>
+    <pubdate>6 September 2022</pubdate>
 
     <copyright>
       <year>2022</year>
@@ -114,7 +114,7 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para>urn:oasis:names:tc:xliff:document:2.0</para>
+          <para>urn:oasis:names:tc:xliff:document:2.2</para>
         </listitem>
 
         <listitem>
@@ -194,7 +194,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        5 July 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        6 September 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -721,7 +721,7 @@
 
                     <para>Conformant <firstterm>XLIFF Documents</firstterm>
                         <glossterm>MUST</glossterm> be valid instances of the official Core XML
-                        Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink>) that is a part
+                        Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink>) that is a part
                         of this multipart Work Product.</para>
                 </listitem>
                 <listitem>
@@ -1007,7 +1007,11 @@
 | |
 | +---<link linkend="note"><code>&lt;note></code></link> +
 |
-+---&lt;other> ?
++---<link linkend="metadata"><code>&lt;mda:metadata></code></link> ?
+| |
+| +---<link linkend="metagroup"><code>&lt;mda:metagroup></code></link> +
+|   |
+|   +---At least one of (<link linkend="metagroup"><code>&lt;mda:metagroup></code></link> OR <link linkend="meta"><code>&lt;mda:meta></code></link>) 
 |
 +---<link linkend="file"><code>&lt;file></code></link> +
   |
@@ -2092,7 +2096,6 @@
         the same <link linkend="unit"><code>&lt;unit></code></link>. When the corresponding <link linkend="ec"><code>&lt;ec></code></link> element is
         present in the same <link linkend="unit"><code>&lt;unit></code></link>, the attribute value <glossterm>MUST</glossterm> be
         set to <code>no</code>.</para>
-      
     </listitem>
   </itemizedlist>
   <itemizedlist>
@@ -14919,7 +14922,7 @@ Date: 04 April 2017 -->
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 5 July 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
+                that was last published on 6 September 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">
@@ -15238,7 +15241,21 @@ Date: 04 April 2017 -->
          </simplelist>
       </listitem>
       <listitem>
-         <para>Added an optional ref attribute to note element</para>
+         <para>Changed namespace for the core module to
+               <code>urn:oasis:names:tc:xliff:document:2.2</code></para>
+      </listitem>
+      <listitem>
+         <para>Added an optional <link linkend="ref"><code>ref</code></link> attribute to <link linkend="note"><code>&lt;note></code></link> element</para>
+      </listitem>
+      <listitem>
+         <para>Changed the type of <link linkend="version"><code>version</code></link> attribute to an enumeration containing 2.0, 2.1 and
+            2.2 as valid values.</para>
+      </listitem>
+      <listitem>
+         <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>.</para>
+      </listitem>
+      <listitem>
+         <para>Allowed an optional <link linkend="metadata"><code>&lt;mda:metadata></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>.</para>
       </listitem>
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the

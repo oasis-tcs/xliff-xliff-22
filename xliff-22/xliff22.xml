@@ -144,7 +144,7 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para>urn:oasis:names:tc:xliff:document:&bschversion;</para>
+          <para>urn:oasis:names:tc:xliff:document:&version;</para>
         </listitem>
 
         <listitem>

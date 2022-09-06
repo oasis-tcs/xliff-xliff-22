@@ -147,15 +147,6 @@
         present in the same <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"
             ><code>&lt;unit&gt;</code></olink>, the attribute value <glossterm>MUST</glossterm> be
         set to <code>no</code>.</para>
-      <!-- 
-      <para>The attribute <olink targetdoc="../../attributes/isolated.xml" targetptr="isolated"
-            ><code>isolated</code></olink>
-        <glossterm>MUST</glossterm> be set to <code>yes</code> if and only if the <olink
-          targetdoc="../inline/cs.xml" targetptr="ec"><code>&lt;ec&gt;</code></olink> element
-        corresponding to this start marker is not in the same <olink
-          targetdoc="../../elements/structural/unit.xml" targetptr="unit"
-          ><code>&lt;unit&gt;</code></olink>, and set to <code>no</code> otherwise.</para>
-          -->
     </listitem>
   </itemizedlist>
   <itemizedlist>

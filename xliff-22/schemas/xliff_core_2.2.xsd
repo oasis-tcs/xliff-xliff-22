@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified"
-    xmlns:xlf="urn:oasis:names:tc:xliff:document:2.0"
-    targetNamespace="urn:oasis:names:tc:xliff:document:2.0">
+    xmlns:xlf="urn:oasis:names:tc:xliff:document:2.2"
+    xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+    targetNamespace="urn:oasis:names:tc:xliff:document:2.2">
 
   <!-- Import -->
 
   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
       schemaLocation="informativeCopiesOf3rdPartySchemas/w3c/xml.xsd"/>
+  <xs:import namespace="urn:oasis:names:tc:xliff:metadata:2.0" 
+      schemaLocation="metadata.xsd"/>
 
   <!-- Element Group -->
 
@@ -101,14 +104,27 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="versionValues">
+    <xs:annotation>
+      <xs:documentation>Version values: 2.0 and 2.1 are allowed for backward compatibility.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="2.0"/>
+      <xs:enumeration value="2.1"/>
+      <xs:enumeration value="2.2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
   <!-- Structural Elements -->
 
   <xs:element name="xliff">
     <xs:complexType mixed="false">
       <xs:sequence>
+        <xs:element ref="xlf:notes" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="mda:metadata" minOccurs="0" maxOccurs="1"/>
         <xs:element minOccurs="1" maxOccurs="unbounded" ref="xlf:file"/>
       </xs:sequence>
-      <xs:attribute name="version" use="required"/>
+      <xs:attribute name="version" use="required" type="xlf:versionValues"/>
       <xs:attribute name="srcLang" use="required" type="xs:language"/>
       <xs:attribute name="trgLang" use="optional" type="xs:language"/>
       <xs:attribute ref="xml:space" use="optional" default="default"/>
