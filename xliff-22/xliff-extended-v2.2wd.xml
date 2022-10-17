@@ -703,7 +703,6 @@
       </bibliography>
     </section>
   </section>
-
   <section id="Conformance">
     <title>Conformance</title>
 
@@ -950,42 +949,43 @@
   </section>
 
 </section>
-
+  
   <section id="core">
     <title>The Core Specification</title>
 
     <para>XLIFF is a bilingual document format designed for containing text that needs
-        <firstterm>Translation</firstterm>, its corresponding translations and auxiliary data that
-      makes the <firstterm>Translation</firstterm> process possible.</para>
+            <firstterm>Translation</firstterm>, its corresponding translations and auxiliary data
+        that makes the <firstterm>Translation</firstterm> process possible.</para>
 
     <para>At creation time, an <firstterm>XLIFF Document</firstterm>
-      <glossterm>MAY</glossterm> contain only text in the source language. Translations expressed in
-      the target language <glossterm>MAY</glossterm> be added at a later time.</para>
+        <glossterm>MAY</glossterm> contain only text in the source language. Translations expressed
+        in the target language <glossterm>MAY</glossterm> be added at a later time.</para>
 
-    <para>The root element of an <firstterm>XLIFF Document</firstterm> is <link linkend="xliff"><code>&lt;xliff></code></link>. It contains a collection of <link linkend="file"><code>&lt;file></code></link>
-      elements. Typically, each <link linkend="file"><code>&lt;file></code></link> element contains a set of <link linkend="unit"><code>&lt;unit></code></link>
-      elements that contain the text to be translated in the <link linkend="source"><code>&lt;source></code></link> child of one or more <link linkend="segment"><code>&lt;segment></code></link> elements. Translations are stored in the <link linkend="target"><code>&lt;target></code></link> child of each <link linkend="segment"><code>&lt;segment></code></link> element.</para>
+    <para>The root element of an <firstterm>XLIFF Document</firstterm> is <link linkend="xliff"><code>&lt;xliff></code></link>. It contains a collection of <link linkend="file"><code>&lt;file></code></link> elements. Typically, each <link linkend="file"><code>&lt;file></code></link> element contains a set of <link linkend="unit"><code>&lt;unit></code></link> elements that contain the text to be translated in
+        the <link linkend="source"><code>&lt;source></code></link> child of one or more <link linkend="segment"><code>&lt;segment></code></link> elements. Translations are stored in the
+            <link linkend="target"><code>&lt;target></code></link> child of each <link linkend="segment"><code>&lt;segment></code></link> element.</para>
 
     <section>
-      <title>General Processing Requirements</title>
+        <title>General Processing Requirements</title>
 
 
-      <itemizedlist>
-        <title/>
+        <itemizedlist>
+            <title/>
 
-        <listitem>
-          <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
-              Document</firstterm> that contains <firstterm>XLIFF-defined</firstterm> elements and
-            attributes that it cannot handle <glossterm>MUST</glossterm> preserve those elements and
-            attributes.</para>
-        </listitem>
-        <listitem>
-          <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
-              Document</firstterm> that contains custom elements and attributes that it cannot
-            handle <glossterm>SHOULD</glossterm> preserve those elements and attributes.</para>
-        </listitem>
+            <listitem>
+                <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
+                        Document</firstterm> that contains <firstterm>XLIFF-defined</firstterm>
+                    elements and attributes that it cannot handle <glossterm>MUST</glossterm>
+                    preserve those elements and attributes.</para>
+            </listitem>
+            <listitem>
+                <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
+                        Document</firstterm> that contains custom elements and attributes that it
+                    cannot handle <glossterm>SHOULD</glossterm> preserve those elements and
+                    attributes.</para>
+            </listitem>
 
-      </itemizedlist>
+        </itemizedlist>
     </section>
 
     <section>
@@ -2432,7 +2432,6 @@
 </section>
  </section>
 </section>
-
     <section>
   <title>Attributes</title>
 
@@ -3910,105 +3909,107 @@
 </section>
 
     <section>
-      <title>CDATA sections</title>
+        <title>CDATA sections</title>
 
-      <para>CDATA sections (<code>&lt;![CDATA[...]]&gt;</code>) are allowed in XLIFF content, but on
-        output they <glossterm>MAY</glossterm> be changed into normal escaped content.</para>
+        <para>CDATA sections (<code>&lt;![CDATA[...]]&gt;</code>) are allowed in XLIFF content, but
+            on output they <glossterm>MAY</glossterm> be changed into normal escaped content.</para>
 
-      <para>Note that avoiding CDATA sections is considered a best practice from the
-        internationalization viewpoint <link linkend="biblio_xmli18nbp">[XML I18N BP]</link>.</para>
+        <para>Note that avoiding CDATA sections is considered a best practice from the
+            internationalization viewpoint <link linkend="biblio_xmli18nbp">[XML I18N BP]</link> .</para>
 
-      <itemizedlist>
-        <title>Processing Requirements</title>
+        <itemizedlist>
+            <title>Processing Requirements</title>
 
-        <listitem>
-          <para><firstterm>Agents</firstterm>
-            <glossterm>MUST</glossterm> process CDATA sections.</para>
-        </listitem>
+            <listitem>
+                <para><firstterm>Agents</firstterm>
+                    <glossterm>MUST</glossterm> process CDATA sections.</para>
+            </listitem>
 
-        <listitem>
-          <para><firstterm>Writers</firstterm>
-            <glossterm>MAY</glossterm> preserve the original CDATA sections.</para>
-        </listitem>
-      </itemizedlist>
+            <listitem>
+                <para><firstterm>Writers</firstterm>
+                    <glossterm>MAY</glossterm> preserve the original CDATA sections.</para>
+            </listitem>
+        </itemizedlist>
     </section>
 
     <section>
-      <title>XML Comments</title>
+        <title>XML Comments</title>
 
-      <para>XML comments (<code>&lt;!--...--!></code>) are allowed in XLIFF content, but they are
-        ignored in the parsed content.</para>
+        <para>XML comments (<code>&lt;!--...--!></code>) are allowed in XLIFF content, but they
+            are ignored in the parsed content.</para>
 
-      <para>For example:</para>
+        <para>For example:</para>
 
-      <programlisting format="linespecific">
+        <programlisting format="linespecific">
 &lt;source>Text content &lt;!--IMPORTANT-->that is important&lt;/source>
 </programlisting>
 
-      <para>and</para>
+        <para>and</para>
 
-      <programlisting format="linespecific">
+        <programlisting format="linespecific">
 &lt;source>Text content that is important&lt;/source>
 </programlisting>
 
-      <para>are identical after parsing and correspond to the same following parsed content:</para>
+        <para>are identical after parsing and correspond to the same following parsed
+            content:</para>
 
-      <programlisting format="linespecific">
+        <programlisting format="linespecific">
 Text content that is important</programlisting>
 
-      <para>To annotate a section of the content with a comment that is recognized and preserved by
-        XLIFF user agents, use the <link linkend="note"><code>&lt;note></code></link> element, or the <link linkend="commentAnnotation"><code>&lt;mrk></code></link> element.</para>
+        <para>To annotate a section of the content with a comment that is recognized and preserved
+            by XLIFF user agents, use the <link linkend="note"><code>&lt;note></code></link> element, or the <link linkend="commentAnnotation"><code>&lt;mrk></code></link> element.</para>
 
-      <itemizedlist>
-        <title>Processing Requirements</title>
+        <itemizedlist>
+            <title>Processing Requirements</title>
 
-        <listitem>
-          <para><firstterm>Agents</firstterm>
-            <glossterm>MUST</glossterm> ignore XML comments. That is the XLIFF parsed content is the
-            same whether or not there is an XML comment in the document.</para>
-        </listitem>
+            <listitem>
+                <para><firstterm>Agents</firstterm>
+                    <glossterm>MUST</glossterm> ignore XML comments. That is the XLIFF parsed
+                    content is the same whether or not there is an XML comment in the
+                    document.</para>
+            </listitem>
 
-        <listitem>
-          <para><firstterm>Writers</firstterm>
-            <glossterm>MAY</glossterm> preserve XML comments on output.</para>
-        </listitem>
-      </itemizedlist>
+            <listitem>
+                <para><firstterm>Writers</firstterm>
+                    <glossterm>MAY</glossterm> preserve XML comments on output.</para>
+            </listitem>
+        </itemizedlist>
     </section>
     <section>
-      <title>XML Processing Instructions</title>
+        <title>XML Processing Instructions</title>
 
-      <para>XML Processing Instructions <link linkend="bib_XML">[XML]</link> (see specifically
-          <ulink url="http://www.w3.org/TR/REC-xml/#sec-pi">http://www.w3.org/TR/REC-xml/#sec-pi</ulink>) are an XML mechanism to "allow documents to
-        contain instructions for applications." XML Processing Instructions are allowed in XLIFF
-        content but they are ignored in the parsed content in the same sense as XML Comments.</para>
-      <itemizedlist>
-        <title>Processing Requirements</title>
-        <listitem>
-          <para><firstterm>Agents</firstterm>
-            <glossterm>MUST NOT</glossterm> use Processing Instructions as a means to implement a
-            feature already specified in <firstterm>XLIFF Core</firstterm> or
-              <firstterm>Modules</firstterm>.</para>
-        </listitem>
-        <listitem>
-          <para><firstterm>Writers</firstterm>
-            <glossterm>SHOULD</glossterm> preserve XML Processing Instructions in an
-              <firstterm>XLIFF Document</firstterm>.</para>
-        </listitem>
-      </itemizedlist>
+        <para>XML Processing Instructions <link linkend="bib_XML">[XML]</link> (see specifically <ulink url="http://www.w3.org/TR/REC-xml/#sec-pi">http://www.w3.org/TR/REC-xml/#sec-pi</ulink>) are an XML mechanism to "allow
+            documents to contain instructions for applications." XML Processing Instructions are
+            allowed in XLIFF content but they are ignored in the parsed content in the same sense as
+            XML Comments.</para>
+        <itemizedlist>
+            <title>Processing Requirements</title>
+            <listitem>
+                <para><firstterm>Agents</firstterm>
+                    <glossterm>MUST NOT</glossterm> use Processing Instructions as a means to
+                    implement a feature already specified in <firstterm>XLIFF Core</firstterm> or
+                        <firstterm>Modules</firstterm>.</para>
+            </listitem>
+            <listitem>
+                <para><firstterm>Writers</firstterm>
+                    <glossterm>SHOULD</glossterm> preserve XML Processing Instructions in an
+                        <firstterm>XLIFF Document</firstterm>.</para>
+            </listitem>
+        </itemizedlist>
 
-      <warning>
-        <para> Please note that <firstterm>Agents</firstterm> using Processing Instructions to
-          implement <firstterm>XLIFF Core</firstterm> or <firstterm>Module</firstterm> features are
-          not compliant XLIFF applications disregarding whether they are otherwise conformant.
-        </para>
-      </warning>
-      <warning>
-        <para>Although this specification encourages XLIFF <firstterm>Agents</firstterm> to preserve
-          XML Processing Instructions, it is not and cannot be, for valid processing reasons, an
-          absolute protection and it is for instance highly unlikely that Processing Instructions
-          could survive an XLIFF roundtrip at the <link linkend="segment"><code>&lt;segment></code></link> level or lower. Hence implementers
-          are discouraged from using XML Processing Instructions at the <link linkend="segment"><code>&lt;segment></code></link> and lower levels.</para>
-      </warning>
+        <warning>
+            <para> Please note that <firstterm>Agents</firstterm> using Processing Instructions to
+                implement <firstterm>XLIFF Core</firstterm> or <firstterm>Module</firstterm>
+                features are not compliant XLIFF applications disregarding whether they are
+                otherwise conformant. </para>
+        </warning>
+        <warning>
+            <para>Although this specification encourages XLIFF <firstterm>Agents</firstterm> to
+                preserve XML Processing Instructions, it is not and cannot be, for valid processing
+                reasons, an absolute protection and it is for instance highly unlikely that
+                Processing Instructions could survive an XLIFF roundtrip at the <link linkend="segment"><code>&lt;segment></code></link> level or lower. Hence implementers are
+                discouraged from using XML Processing Instructions at the <link linkend="segment"><code>&lt;segment></code></link> and lower levels.</para>
+        </warning>
 
     </section>
 
@@ -6022,9 +6023,8 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     </section>
 </section>
 
-
-
-  </section>
+</section>
+  
   <section id="modules">
     <title>The Modules Specifications</title>
     <para>This section specifies the <glossterm>OPTIONAL</glossterm>
@@ -15286,6 +15286,9 @@ Date: 04 April 2017 -->
       </listitem>
       <listitem>
         <para>Schnabel, Bryan - Individual </para>
+      </listitem> 
+      <listitem>
+        <para>Souto Pico, Manuel - cApStAn SA</para>
       </listitem>
       <listitem>
         <para>Umaoka, Yoshito - IBM </para>
