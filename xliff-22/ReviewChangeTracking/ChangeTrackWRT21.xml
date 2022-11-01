@@ -32,7 +32,10 @@
          <para>Added an optional <olink targetdoc="../attributes/ref.xml" targetptr="ref"
                   ><code>ref</code></olink> attribute to <olink
                targetdoc="./elements/structural/note.xml" targetptr="note"
-               ><code>&lt;note></code></olink> element</para>
+               ><code>&lt;note></code></olink> element. Change approved on March
+               15<superscript>th</superscript>, 2022. See <ulink
+               url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3690"
+               >https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3690</ulink></para>
       </listitem>
       <listitem>
          <para>Changed the type of <olink targetdoc="../attributes/version.xml" targetptr="version"
@@ -43,22 +46,35 @@
          <para>Allowed an optional <olink targetdoc="../elements/structural/notes.xml"
                targetptr="notes"><code>&lt;notes></code></olink> element at the start of <olink
                targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
-                  ><code>&lt;xliff></code></olink>.</para>
+                  ><code>&lt;xliff></code></olink>. Change approved during the meeting held on
+            August 2<superscript>nd</superscript>, 2022.</para>
       </listitem>
       <listitem>
          <para>Allowed an optional <olink targetdoc="../elements/metadata/metadata.xml"
-            targetptr="metadata"><code>&lt;mda:metadata></code></olink> element at the start of <olink
-               targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
-               ><code>&lt;xliff></code></olink>.</para>
+               targetptr="metadata"><code>&lt;mda:metadata></code></olink> element at the start of
+               <olink targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
+                  ><code>&lt;xliff></code></olink>. Change approved during the meeting held on
+            August 2<superscript>nd</superscript>, 2022.</para>
+      </listitem>
+      <listitem>
+         <para>Removed references to Schematron, NVDL and Test Suite from this specification. Change
+            approved on September 20<superscript>th</superscript>, 2022. See <ulink
+               url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727"
+               >https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727</ulink>.</para>
+
       </listitem>
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
       practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
-      the changes (except the bugfixes under 3 and 4) have affected the core namespace
+      the changes have affected the core namespace
          <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code> or the <firstterm>XLIFF
          Core</firstterm>
       <olink targetdoc="../xliff22.xml" targetptr="XMLSchema">[XML Schema]</olink>, <ulink
          url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
          >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink> that expresses its basic grammar
-      and structure.</para>
+      and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes introduced in
+      version 2.2 are designed to preserve compatibility with versions 2.0 and 2.1.</para>
+   <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink
+         url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21"
+         >https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
 </section>

@@ -187,28 +187,6 @@
 
           </varlistentry>
 
-
-          <!-- The Reader defintion was not really needed, since such an Agent (that ONLY reads) practically does not exist and the PR for Redaers are well covered by the use of Agent
-          <varlistentry>
-            <term>Reader</term>
-            <term>Reader Agent</term>
-
-            <listitem>
-              <para>an <firstterm>Agent</firstterm> that only renders <firstterm>XLIFF Documents</firstterm> provided by other <firstterm>Writers</firstterm>.
-
-              </para>
-
-              <note><para> Since XLIFF is intended as an exchange format rather than a processing format, many
-              applications will need to generate <firstterm>XLIFF Documents</firstterm> from
-              their internal processing formats, even in cases when they are processing
-              <firstterm>XLIFF Documents</firstterm> created by another
-              <firstterm>Extractor</firstterm>. </para></note>
-
-             </listitem>
-
-          </varlistentry>
-          -->
-
           <varlistentry>
             <term>Translation</term>
             <term>Translate</term>
@@ -352,15 +330,6 @@
               >http://www.w3.org/TR/NOTE-datetime</ulink>
           </citetitle> W3C Note, 15th Setember 1997.</bibliomixed>
 
-        <bibliomixed id="NVDL"><abbrev>NVDL</abbrev> International Standards Organization,
-            <title>ISO/IEC 19757-4, Information Technology - Document Schema Definition Languages
-            (DSDL) - Part 4: Namespace-based Validation Dispatching Language (NVDL)</title>, <citetitle>
-            <ulink
-              url="http://standards.iso.org/ittf/PubliclyAvailableStandards/c038615_ISO_IEC_19757-4_2006(E).zip"
-              >
-              http://standards.iso.org/ittf/PubliclyAvailableStandards/c038615_ISO_IEC_19757-4_2006(E).zip</ulink>
-          </citetitle> ISO, June 1, 2006.</bibliomixed>
-
         <bibliomixed id="bcp14"><abbrev>BCP 14</abbrev> S. Bradner, <title>Key words for use in RFCs
             to Indicate Requirement Levels</title>, <citetitle>
             <ulink url="https://tools.ietf.org/search/bcp14"
@@ -378,17 +347,6 @@
             <ulink url="https://www.tools.ietf.org/html/rfc7303">
               https://www.tools.ietf.org/html/rfc7303</ulink>
           </citetitle> IETF (Internet Engineering Task Force) RFC 7303, July 2014.</bibliomixed>
-
-
-        <bibliomixed id="Schematron"><abbrev>Schematron</abbrev> International Standards
-          Organization, <title>ISO/IEC 19757-3, Information Technology - Document Schema Definition
-            Languages (DSDL) - Part 3: Rule-Based Validation — Schematron (Second Edition)</title>, <citetitle>
-            <ulink
-              url="http://standards.iso.org/ittf/PubliclyAvailableStandards/c055982_ISO_IEC_19757-3_2016.zip"
-              >
-              http://standards.iso.org/ittf/PubliclyAvailableStandards/c055982_ISO_IEC_19757-3_2016.zip</ulink>
-          </citetitle> ISO, January 15, 2016.</bibliomixed>
-
 
         <bibliomixed id="uax9"><abbrev>UAX #9</abbrev> M. Davis, A. Lanin, A. Glass, <title>UNICODE
             BIDIRECTIONAL ALGORITHM</title>, <citetitle>

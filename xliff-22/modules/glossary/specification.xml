@@ -22,9 +22,8 @@
     <title>Module Namespace and Validation Artifacts</title>
     <para>The namespace for the Glossary module is:
         <code>urn:oasis:names:tc:xliff:glossary:2.0</code></para>
-    <para>Schema and Schematron for this module are available at <ulink
-        url="&this-loc;/schemas/glossary.xsd">&this-loc;/schemas/glossary.xsd</ulink> and <ulink
-        url="&this-loc;/schemas/glossary.sch">&this-loc;/schemas/glossary.sch</ulink></para>
+    <para>XML Schema for this module is available at <ulink
+        url="&this-loc;/schemas/glossary.xsd">&this-loc;/schemas/glossary.xsd</ulink>.</para>
   </section>
 
   <section>

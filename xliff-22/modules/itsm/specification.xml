@@ -95,10 +95,9 @@
     <title>Module Namespace and Validation Artifacts</title>
     <para>The namespaces for the ITS module are: <code>http://www.w3.org/2005/11/its</code> and
       <code>urn:oasis:names:tc:xliff:itsm:2.1</code>.</para>
-    <para>Schemas and Schematron for this module are available at <ulink
-        url="&this-loc;/schemas/its.xsd">&this-loc;/schemas/its.xsd</ulink>, <ulink
-        url="&this-loc;/schemas/itsm.xsd">&this-loc;/schemas/itsm.xsd</ulink>, and <ulink
-        url="&this-loc;/schemas/its.sch">&this-loc;/schemas/its.sch</ulink>. </para>
+    <para>XML Schemas for this module are available at <ulink
+        url="&this-loc;/schemas/its.xsd">&this-loc;/schemas/its.xsd</ulink> and <ulink
+        url="&this-loc;/schemas/itsm.xsd">&this-loc;/schemas/itsm.xsd</ulink>. </para>
       <note>
         <para>Although setting and usage of prefixes for namespaces in XML is arbitrary, we are using
           <code>its:</code> for the <code>http://www.w3.org/2005/11/its</code> namespace and <code>itsm:</code> for the <code>urn:oasis:names:tc:xliff:itsm:2.1</code> namespace throughout this specification.</para>
@@ -124,14 +123,7 @@
     <!-- The contents of this paragrap should now be covered in the above Note and the below PRs <para>An implementation of the ITS Module needs to implement at least one of the ITS 2.0 data categories for which the usage in XLIFF 2.1 is normatively defined in the ITS Module. Like in the ITS 2.0 specification, there is no interrelation between data categories. The implementation MUST take into account the processing expectations for ITS markup, as defined in the ITS 2.0 specification (link to https://www.w3.org/TR/its20/#conformance-product-processing-expectations) , that is, the conformance clauses 2-1, 2-2, 2-3 and 2-4 in the ITS 2.0 specifications.</para>-->
     <itemizedlist>
       <title>Processing Requirements</title>
-      <listitem>
-        <para>Conformant ITS Processors <glossterm>MUST</glossterm> be able to use the external
-          global rules included in the module's Schematron file <ulink
-            url="&this-loc;/schemas/its.sch">&this-loc;/schemas/its.sch</ulink>
-          and compute ITS data categories encoded in <firstterm>XLIFF Documents</firstterm> as per
-            <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-          <ulink url="https://www.w3.org/TR/its20/#conformance-product-processing-expectations"
-            >Conformance clauses</ulink> 2-1, 2-2, 2-3, and 2-4.</para>
+      <listitem>        
         <itemizedlist>
           <listitem>
             <para>In cases where any of the above specified global rules identifies an empty <olink

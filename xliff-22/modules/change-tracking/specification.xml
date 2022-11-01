@@ -23,11 +23,7 @@
         <code>urn:oasis:names:tc:xliff:changetracking:2.0</code></para>
     <para>Schema for this extension is available at <ulink
         url="&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/extensions/change_tracking.xsd"
-        >&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/extensions/change_tracking.xsd</ulink>
-      <!--Schematron schema won't be provide for the extension, but for the 2.2 module if and when available
-          and <ulink
-        url="&this-loc;/schemas/modules/change_tracking.sch"
-        >&this-loc;/schemas/modules/change_tracking.sch</ulink> -->.</para>
+        >&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/extensions/change_tracking.xsd</ulink>.</para>
   </section>
 
   <section>

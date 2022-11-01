@@ -18,11 +18,9 @@
   <section>
         <title>Module Namespace and Validation Artifacts</title>
         <para>The namespace for the Resource Data module is: <code>urn:oasis:names:tc:xliff:resourcedata:2.0</code></para>
-    <para>Schema and Schematron for this module are available at <ulink
+    <para>XML Schema for this module is available at <ulink
       url="&this-loc;/schemas/resource_data.xsd"
-      >&this-loc;/schemas/resource_data.xsd</ulink> and <ulink
-        url="&this-loc;/schemas/resource_data.sch"
-        >&this-loc;/schemas/resource_data.sch</ulink>.</para>
+      >&this-loc;/schemas/resource_data.xsd</ulink>.</para>
     </section>
 
   <section>

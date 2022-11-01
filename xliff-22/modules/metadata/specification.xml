@@ -19,10 +19,8 @@
         <title>Module Namespace and Validation Artifacts</title>
         <para>The namespace for the Metadata module is:
                 <code>urn:oasis:names:tc:xliff:metadata:2.0</code></para>
-        <para>Schema and Schematron for this module are available at <ulink
-                url="&this-loc;/schemas/metadata.xsd">&this-loc;/schemas/metadata.xsd</ulink> and
-                <ulink url="&this-loc;/schemas/metadata.sch"
-            >&this-loc;/schemas/metadata.sch</ulink>.</para>
+        <para>XML Schema for this module is available at <ulink
+                url="&this-loc;/schemas/metadata.xsd">&this-loc;/schemas/metadata.xsd</ulink>.</para>
     </section>
     <section>
         <title>Module Fragment Identification Prefix</title>

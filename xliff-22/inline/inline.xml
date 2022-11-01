@@ -1132,17 +1132,6 @@ Do &lt;b&gt;cats&lt;/b&gt; eat &lt;b&gt;mice&lt;/b&gt;?</programlisting>
               ><code>&lt;ignorable></code></olink> elements without <olink
             targetdoc="../elements/structural/target.xml" targetptr="target"
               ><code>&lt;target></code></olink> children.</para>
-        <para>The <olink targetdoc="xliff21.xml" targetptr="CoreSchematron">XLIFF Core Schematron
-            Schema</olink> will throw <emphasis>Warnings</emphasis> for all existing <olink
-            targetdoc="../elements/structural/target.xml" targetptr="target"
-              ><code>&lt;target></code></olink> elements where codes don't conform to the <link
-            linkend="editinghints">Editing Hints</link> Processing Requirements, except for <olink
-            targetdoc="../elements/structural/target.xml" targetptr="target"
-              ><code>&lt;target></code></olink> children of <olink
-            targetdoc="../elements/structural/segment.xml" targetptr="segment"
-              ><code>&lt;segment></code></olink> elements with the <olink targetptr="state"
-            targetdoc="../attributes/state.xml"><code>state</code></olink> attribute set to
-            <code>final</code>, where it will throw <emphasis>Errors</emphasis>.</para>
       </note>
       
     </section>

@@ -23,11 +23,7 @@ a quick at a glance HTML preview of XLIFF content using a predefined set of simp
 <section>
     <title>Module Namespace and Validation Artifacts</title>
 <para>The namespace for the Format style module is: <code>urn:oasis:names:tc:xliff:fs:2.0</code></para>
-<para>Schema and Schematron for this module are available at <ulink
-        url="&this-loc;/schemas/fs.xsd"
-        >&this-loc;/schemas/fs.xsd</ulink> and <ulink
-            url="&this-loc;/schemas/fs.sch"
-            >&this-loc;/schemas/fs.sch</ulink>.</para>
+<para>XML Schema is available at <ulink         url="&this-loc;/schemas/fs.xsd"         >&this-loc;/schemas/fs.xsd</ulink> .</para>
     
 </section>
 <section>

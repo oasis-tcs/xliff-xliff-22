@@ -21,9 +21,8 @@
     <title>Module Namespace and Validation Artifacts</title>
     <para>The namespace for the Validation module is:
         <code>urn:oasis:names:tc:xliff:validation:2.0</code></para>
-    <para>Schema and Schematron for this module are available at <ulink
-        url="&this-loc;/schemas/validation.xsd">&this-loc;/schemas/validation.xsd</ulink> and <ulink
-        url="&this-loc;/schemas/validation.sch">&this-loc;/schemas/validation.sch</ulink>.</para>
+    <para>XML Schema for this module is available at <ulink
+        url="&this-loc;/schemas/validation.xsd">&this-loc;/schemas/validation.xsd</ulink>.</para>
   </section>
 
   <section>

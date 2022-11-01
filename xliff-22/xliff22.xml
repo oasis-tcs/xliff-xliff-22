@@ -107,7 +107,6 @@
           <para> Declarative validation artifacts accessible from <ulink url="&this-loc;/schemas/"
               >&this-loc;/schemas/</ulink>
           </para>
-          <!-- Instead of listing Schematron rules, NVDL master file, Catalogue and XML Schema, subsumed everything under Declarative Validation Artifacts -->
         </listitem>
       </itemizedlist>
     </legalnotice>
@@ -387,80 +386,19 @@
           <para><ulink url="&this-loc;/schemas/catalog.xml"
             >&this-loc;/schemas/catalog.xml</ulink></para>
         </listitem>
-        <listitem id="XLIFFNVDL">
-          <para>Master <link linkend="NVDL">[NVDL]</link> file governing validation of all
-              <firstterm>XLIFF Defined</firstterm> namespaces by XML Schemas, Schematron Schemas and
-            other rules if and as required,</para>
-          <para><ulink url="&this-loc;/schemas/xliff_2_advanced_validation.nvdl"
-              >&this-loc;/schemas/xliff_2_advanced_validation.nvdl</ulink></para>
-        </listitem>
-        <listitem id="CoreSchematron">
-          <para><firstterm>XLIFF Core</firstterm>
-            <link linkend="Schematron">[Schematron]</link> Schema, </para>
-          <para><ulink url="&this-loc;/schemas/xliff_core_&cschversion;.sch"
-              >&this-loc;/schemas/xliff_core_&cschversion;.sch</ulink></para>
-        </listitem>
+        
         <listitem>
-          <para>XML and Schematron Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
+          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
             from those modules.</para>
         </listitem>
       </orderedlist>
     </para>
     <para>The basic grammar and structure of XLIFF &version; is defined using ten (10) XML Schemas
       and one (1) XML catalog. The module schemas are specifically referenced from their respective
-      modules.</para>
-    <para>Advanced static <firstterm>Constraints</firstterm> and dynamic <firstterm>Processing
-        Requirements</firstterm> that could not be expressed using <link linkend="XMLSchema">[XML
-        Schema]</link> 1.0 are expressed in nine (9) <link linkend="Schematron">Schematron</link>
-      schemas.</para>
-    <para>Relationships among all of the above mentioned machine readable validation artifacts
-      provided as part of this multipart product is expressed using one (1) <link linkend="NVDL"
-        >NVDL</link> schema.</para>
-    <warning>
-      <para>Albeit the TC has made effort to cover the prose specification with standardized
-        declarative validation artifacts to the maximum possible extent, there are some inherent
-        limitations to the Schema languages employed to perform the validation. The informative
-          <ulink
-          url="http://tools.oasis-open.org/version-control/browse/wsvn/xliff/trunk/xliff-21/test-suite/#_trunk_xliff-21_test-suite_"
-          >Test Suite</ulink> provided through the XLIFF TC SVN does contain a number of invalid
-        files that cannot be caught using only the normative validation artifacts that are
-        distributed as part of this multipart Standard product. For instance <link linkend="bcp47"
-          >[BCP47]</link> compliance of <olink targetdoc="attributes/srcLang.xml"
-          targetptr="srcLang"><code>srcLang</code></olink>, <olink
-          targetdoc="attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>, or
-          <olink targetdoc="attributes/xml_lang.xml" targetptr="xml_lang"
-          ><code>xml:lang</code></olink> cannot be fully validated by either W3C XML Schema or
-        Schematron. Custom code is required to check this.</para>
-    </warning>
-    <warning>
-      <para>NVDL is not capable of discerning Schemtaron Warnings from Schematron Errors. Therefore
-        all Schematron Warnings will be reported as Errors when initiating the validation from the
-        NVDL schema. Also most of the existing Schematron implementations are not capable of
-        discerning Warnings from Errors, thus implementers are encouraged to re-use the provided
-        Schematron schemas in custom made validation services that can make this distinction.
-        Currently, the Warning/Error distinction is only important when evaluating adherence to
-        Processing Requirements for <olink targetdoc="inline/inline.xml" targetptr="editinghints"
-          >Editing Hints</olink> in relation to segment <olink targetdoc="attributes/state.xml"
-          targetptr="state"><code>state</code></olink>. It will be also beneficial for implementers
-        who want to add project specific rules based on the <olink targetptr="validation_module"
-          targetdoc="modules/validation/specification.xml">Validation Module</olink>.</para>
-    </warning>
-
-    <!--  
-      <para>[Relax NG schemas of <firstterm>XLIFF Core and Modules</firstterm> are provided. Although 
-      the Relax NG schemas are intended as normative validation artifacts, the XML Schema 1.0 [add normative reference] 
-      schemas and Schematron [add normative reference] schemas have precedence in case of conflicting validation results.]
-      [This is only relevant if Relax NG is provided.]</para>
-    -->
-
-
+      modules.</para> 
+    
     <xi:include href="core/tree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-    <!-- TC agreed not to include the schema listings
-    <xi:include href="core/catalog.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-   
-    <xi:include href="core/schema.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
--->
     <section>
       <title>Support Schemas</title>
       <para>Third party support schemas that are normatively referenced from this specification or

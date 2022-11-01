@@ -71,7 +71,7 @@
 
     </authorgroup>
 
-    <pubdate>6 September 2022</pubdate>
+    <pubdate>1 November 2022</pubdate>
 
     <copyright>
       <year>2022</year>
@@ -87,7 +87,6 @@
         <listitem>
           <para> Declarative validation artifacts accessible from <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/</ulink>
           </para>
-          
         </listitem>
       </itemizedlist>
     </legalnotice>
@@ -193,7 +192,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        6 September 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        1 November 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -440,9 +439,6 @@
 
           </varlistentry>
 
-
-          
-
           <varlistentry>
             <term>Translation</term>
             <term>Translate</term>
@@ -584,13 +580,6 @@
             <ulink url="http://www.w3.org/TR/NOTE-datetime">http://www.w3.org/TR/NOTE-datetime</ulink>
           </citetitle> W3C Note, 15th Setember 1997.</bibliomixed>
 
-        <bibliomixed id="NVDL"><abbrev>NVDL</abbrev> International Standards Organization,
-            <title>ISO/IEC 19757-4, Information Technology - Document Schema Definition Languages
-            (DSDL) - Part 4: Namespace-based Validation Dispatching Language (NVDL)</title>, <citetitle>
-            <ulink url="http://standards.iso.org/ittf/PubliclyAvailableStandards/c038615_ISO_IEC_19757-4_2006(E).zip">
-              http://standards.iso.org/ittf/PubliclyAvailableStandards/c038615_ISO_IEC_19757-4_2006(E).zip</ulink>
-          </citetitle> ISO, June 1, 2006.</bibliomixed>
-
         <bibliomixed id="bcp14"><abbrev>BCP 14</abbrev> S. Bradner, <title>Key words for use in RFCs
             to Indicate Requirement Levels</title>, <citetitle>
             <ulink url="https://tools.ietf.org/search/bcp14">https://tools.ietf.org/search/bcp14</ulink>
@@ -606,15 +595,6 @@
             <ulink url="https://www.tools.ietf.org/html/rfc7303">
               https://www.tools.ietf.org/html/rfc7303</ulink>
           </citetitle> IETF (Internet Engineering Task Force) RFC 7303, July 2014.</bibliomixed>
-
-
-        <bibliomixed id="Schematron"><abbrev>Schematron</abbrev> International Standards
-          Organization, <title>ISO/IEC 19757-3, Information Technology - Document Schema Definition
-            Languages (DSDL) - Part 3: Rule-Based Validation — Schematron (Second Edition)</title>, <citetitle>
-            <ulink url="http://standards.iso.org/ittf/PubliclyAvailableStandards/c055982_ISO_IEC_19757-3_2016.zip">
-              http://standards.iso.org/ittf/PubliclyAvailableStandards/c055982_ISO_IEC_19757-3_2016.zip</ulink>
-          </citetitle> ISO, January 15, 2016.</bibliomixed>
-
 
         <bibliomixed id="uax9"><abbrev>UAX #9</abbrev> M. Davis, A. Lanin, A. Glass, <title>UNICODE
             BIDIRECTIONAL ALGORITHM</title>, <citetitle>
@@ -3451,8 +3431,7 @@
             attribute of segments with a default value and segmentation can change as the XLIFF
             roundtrip progresses, hence implementers don't have to make explicit use of the
             attribute. However setting of the attribute is advantageous if a workflow needs to make
-            use of Advanced Validation methods. For instance missing non-removable codes will only
-            be reported as an Error by the <link linkend="CoreSchematron">XLIFF Core Schematron Schema</link> when the <link linkend="state"><code>state</code></link> is <code>final</code>.</para>
+            use of Advanced Validation methods.</para>
     </note>
 </section>
 
@@ -5031,8 +5010,6 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
           Requirements within <firstterm>Translations</firstterm> can only be checked on existing
             <link linkend="target"><code>&lt;target></code></link> elements, i.e. non-conformance is not reported on
             <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link> elements without <link linkend="target"><code>&lt;target></code></link> children.</para>
-        <para>The <link linkend="CoreSchematron">XLIFF Core Schematron            Schema</link> will throw <emphasis>Warnings</emphasis> for all existing <link linkend="target"><code>&lt;target></code></link> elements where codes don't conform to the <link linkend="editinghints">Editing Hints</link> Processing Requirements, except for <link linkend="target"><code>&lt;target></code></link> children of <link linkend="segment"><code>&lt;segment></code></link> elements with the <link linkend="state"><code>state</code></link> attribute set to
-            <code>final</code>, where it will throw <emphasis>Errors</emphasis>.</para>
       </note>
       
     </section>
@@ -6080,7 +6057,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 6 September 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
+                that was last published on 1 November 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">
@@ -6245,121 +6222,60 @@ Palouse horses&lt;fn>A Palouse horse is the same as
           <para><firstterm>XLIFF Core</firstterm>
             <link linkend="XMLSchema">[XML Schema]</link>,</para>
           <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink></para>
-
+          
         </listitem>
         <listitem id="XLIFFCatalog">
           <para><link linkend="XMLCatalogs">[XML Catalog]</link> of <firstterm>XLIFF
-              Defined</firstterm> XML Schemas,</para>
+            Defined</firstterm> XML Schemas,</para>
           <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml</ulink></para>
         </listitem>
-        <listitem id="XLIFFNVDL">
-          <para>Master <link linkend="NVDL">[NVDL]</link> file governing validation of all
-              <firstterm>XLIFF Defined</firstterm> namespaces by XML Schemas, Schematron Schemas and
-            other rules if and as required,</para>
-          <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_2_advanced_validation.nvdl">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_2_advanced_validation.nvdl</ulink></para>
-        </listitem>
-        <listitem id="CoreSchematron">
-          <para><firstterm>XLIFF Core</firstterm>
-            <link linkend="Schematron">[Schematron]</link> Schema, </para>
-          <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.sch">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.sch</ulink></para>
-        </listitem>
+        
         <listitem>
-          <para>XML and Schematron Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
+          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
             from those modules.</para>
         </listitem>
       </orderedlist>
     </para>
     <para>The basic grammar and structure of XLIFF 2.2 is defined using ten (10) XML Schemas
       and one (1) XML catalog. The module schemas are specifically referenced from their respective
-      modules.</para>
-    <para>Advanced static <firstterm>Constraints</firstterm> and dynamic <firstterm>Processing
-        Requirements</firstterm> that could not be expressed using <link linkend="XMLSchema">[XML
-        Schema]</link> 1.0 are expressed in nine (9) <link linkend="Schematron">Schematron</link>
-      schemas.</para>
-    <para>Relationships among all of the above mentioned machine readable validation artifacts
-      provided as part of this multipart product is expressed using one (1) <link linkend="NVDL">NVDL</link> schema.</para>
-    <warning>
-      <para>Albeit the TC has made effort to cover the prose specification with standardized
-        declarative validation artifacts to the maximum possible extent, there are some inherent
-        limitations to the Schema languages employed to perform the validation. The informative
-          <ulink url="http://tools.oasis-open.org/version-control/browse/wsvn/xliff/trunk/xliff-21/test-suite/#_trunk_xliff-21_test-suite_">Test Suite</ulink> provided through the XLIFF TC SVN does contain a number of invalid
-        files that cannot be caught using only the normative validation artifacts that are
-        distributed as part of this multipart Standard product. For instance <link linkend="bcp47">[BCP47]</link> compliance of <link linkend="srcLang"><code>srcLang</code></link>, <link linkend="trgLang"><code>trgLang</code></link>, or
-          <link linkend="xml_lang"><code>xml:lang</code></link> cannot be fully validated by either W3C XML Schema or
-        Schematron. Custom code is required to check this.</para>
-    </warning>
-    <warning>
-      <para>NVDL is not capable of discerning Schemtaron Warnings from Schematron Errors. Therefore
-        all Schematron Warnings will be reported as Errors when initiating the validation from the
-        NVDL schema. Also most of the existing Schematron implementations are not capable of
-        discerning Warnings from Errors, thus implementers are encouraged to re-use the provided
-        Schematron schemas in custom made validation services that can make this distinction.
-        Currently, the Warning/Error distinction is only important when evaluating adherence to
-        Processing Requirements for <link linkend="editinghints">Editing Hints</link> in relation to segment <link linkend="state"><code>state</code></link>. It will be also beneficial for implementers
-        who want to add project specific rules based on the <remark>Validation Module</remark>.</para>
-    </warning>
-
+      modules.</para> 
     
-
-
     <section id="schema_tree">
     <title>XML Schemas Tree</title>
 
 <programlisting format="linespecific">
     
-<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_2_advanced_validation.nvdl"><code>Master NVDL Schema</code></ulink>
-   |      |
-   |    <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd"><code>Core XML Schema</code></ulink>|
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/glossary.xsd"><code>Glossary Module XML Schema</code></ulink>
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/fs.xsd"><code>Format Style Module XML Schema</code></ulink>
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/metadata.xsd"><code>Metadata Module XML Schema</code></ulink>
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/resource_data.xsd"><code>Resource Data Module XML Schema</code></ulink>
-   
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/size_restriction.xsd"><code>Size and Length Restriction Module XML Schema</code></ulink>
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/validation.xsd"><code>Validation Module XML Schema</code></ulink>
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
-   |      |
-   |      +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
-   |
-   +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.sch"><code>Core constraints</code></ulink>
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/matches.sch"><code>Candidates Module Constraints</code></ulink>
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/glossary.sch"><code>Glossary Module Constraints</code></ulink>
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/fs.sch"><code>Format Style Module Constraints</code></ulink>
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/resource_data.sch"><code>Resource Data Module Constraints</code></ulink>
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/size_restriction.sch"><code>Size and Length Restriction Module Constraints</code></ulink>
-         
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/metadata.sch"><code>Metadata Module Constraints</code></ulink>
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/validation.sch"><code>Validation Module Constraints</code></ulink>
-         |
-         +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/its.sch"><code>ITS Module Constraints</code></ulink>
+<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd"><code>Core XML Schema</code></ulink>|
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/glossary.xsd"><code>Glossary Module XML Schema</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/fs.xsd"><code>Format Style Module XML Schema</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/metadata.xsd"><code>Metadata Module XML Schema</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/resource_data.xsd"><code>Resource Data Module XML Schema</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/size_restriction.xsd"><code>Size and Length Restriction Module XML Schema</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/validation.xsd"><code>Validation Module XML Schema</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
+    |
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
+  
  
 </programlisting>
 
 </section>
-
     
     <section>
       <title>Support Schemas</title>
       <para>Third party support schemas that are normatively referenced from this specification or
         from the machine readable artifacts that are a part of this multipart product are
         distributed along with the <firstterm>XLIFF-defined</firstterm> schemas in a subfolder named
-          <code>informativeCopiesOf3rdPartySchemas</code> and further subdivided in folders
+        <code>informativeCopiesOf3rdPartySchemas</code> and further subdivided in folders
         according to the owner/maintainer of the schema.</para>
       <warning>
         <para>Schema copies in this sub-folder are provided solely for implementers convenience and
@@ -6369,15 +6285,13 @@ Palouse horses&lt;fn>A Palouse horse is the same as
           responsibility to ensure that their local copies of all schemas are the appropriate up to
           date versions.</para>
       </warning>
-
+      
       <para>Currently the only included third party support schema is <ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>] at
-          <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
+        <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
         distribution.</para>
     </section>
-
+    
   </appendix>
-
-  
 
   <appendix id="specChangeTracking" role="informative">
     <title>Specification Change Tracking</title>
@@ -6403,26 +6317,37 @@ Palouse horses&lt;fn>A Palouse horse is the same as
                <code>urn:oasis:names:tc:xliff:document:2.2</code></para>
       </listitem>
       <listitem>
-         <para>Added an optional <link linkend="ref"><code>ref</code></link> attribute to <link linkend="note"><code>&lt;note></code></link> element</para>
+         <para>Added an optional <link linkend="ref"><code>ref</code></link> attribute to <link linkend="note"><code>&lt;note></code></link> element. Change approved on March
+               15<superscript>th</superscript>, 2022. See <ulink url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3690">https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3690</ulink></para>
       </listitem>
       <listitem>
          <para>Changed the type of <link linkend="version"><code>version</code></link> attribute to an enumeration containing 2.0, 2.1 and
             2.2 as valid values.</para>
       </listitem>
       <listitem>
-         <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>.</para>
+         <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
+            August 2<superscript>nd</superscript>, 2022.</para>
       </listitem>
       <listitem>
-         <para>Allowed an optional <remark><code>&lt;mda:metadata></code></remark> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>.</para>
+         <para>Allowed an optional <remark><code>&lt;mda:metadata></code></remark> element at the start of
+               <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
+            August 2<superscript>nd</superscript>, 2022.</para>
+      </listitem>
+      <listitem>
+         <para>Removed references to Schematron, NVDL and Test Suite from this specification. Change
+            approved on September 20<superscript>th</superscript>, 2022. See <ulink url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727">https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727</ulink>.</para>
+
       </listitem>
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
       practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
-      the changes (except the bugfixes under 3 and 4) have affected the core namespace
+      the changes have affected the core namespace
          <code>"urn:oasis:names:tc:xliff:document:2.0"</code> or the <firstterm>XLIFF
          Core</firstterm>
       <link linkend="XMLSchema">[XML Schema]</link>, <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink> that expresses its basic grammar
-      and structure.</para>
+      and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes introduced in
+      version 2.2 are designed to preserve compatibility with versions 2.0 and 2.1.</para>
+   <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21">https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
 </section>
     
   </appendix>

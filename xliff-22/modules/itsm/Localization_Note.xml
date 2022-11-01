@@ -26,16 +26,7 @@
         <firstterm>Merged</firstterm> back to the native format or even round-tripped. However,
       generic ITS Processors won't be able to fully access the <ulink
         url="http://www.w3.org/TR/its20/#locNote-datacat">Localization Note</ulink> information
-      encoded in <firstterm>XLIFF Documents</firstterm>. The <ulink
-        url="http://www.w3.org/TR/its20/#locNote-datacat">Localization Note</ulink> rules contained
-      in the ITS Module Schematron Schema (<ulink url="&this-loc;/schemas/its.sch"
-        >&this-loc;/schemas/its.sch</ulink>) won't be able to parse <firstterm>XLIFF
-        Core</firstterm>
-      <code><olink targetdoc="../elements/structural/note.xml" targetptr="note"
-        >&lt;note></olink></code> elements placed on <olink
-        targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink>
-      unless they have set the attribute <olink targetdoc="../../attributes/appliesto.xml"
-        targetptr="appliesto"><code>appliesTo</code></olink>.</para>
+      encoded in <firstterm>XLIFF Documents</firstterm>.</para>
   </warning>
 
 
