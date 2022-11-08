@@ -162,12 +162,7 @@
         <listitem>
           <para>urn:oasis:names:tc:xliff:resourcedata:&bschversion;</para>
         </listitem>
-        <!-- No CTR namestace given in XLIFF 2.1 as per resolution to https://issues.oasis-open.org/browse/XLIFF-32
-        <listitem>
-          <para>urn:oasis:names:tc:xliff:changetracking:&cschversion;</para>
-        </listitem>
--->
-
+        
         <listitem>
           <para>urn:oasis:names:tc:xliff:sizerestriction:&bschversion;</para>
         </listitem>
@@ -318,9 +313,9 @@
   <xi:include href="introduction/introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="conformance/conformance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="fragments/fragments.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+
   <xi:include href="core/core.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+
   <section id="modules">
     <title>The Modules Specifications</title>
     <para>This section specifies the <glossterm>OPTIONAL</glossterm>
@@ -336,9 +331,10 @@
     <xi:include href="modules/metadata/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="modules/resourcedata/specification.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <!-- CTR deprecated in XLIFF 2.1 but still listed as an Extension until it can be replaced with CTR 2.2-->
+    <!-- CTR deprecated in XLIFF 2.1, discarded for XLIFF 2.2
     <xi:include href="modules/change-tracking/specification.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    -->
     <xi:include href="modules/size_restriction/specification.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="modules/validation/specification.xml"
@@ -386,17 +382,17 @@
           <para><ulink url="&this-loc;/schemas/catalog.xml"
             >&this-loc;/schemas/catalog.xml</ulink></para>
         </listitem>
-        
+
         <listitem>
-          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
-            from those modules.</para>
+          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced from those
+            modules.</para>
         </listitem>
       </orderedlist>
     </para>
     <para>The basic grammar and structure of XLIFF &version; is defined using ten (10) XML Schemas
       and one (1) XML catalog. The module schemas are specifically referenced from their respective
-      modules.</para> 
-    
+      modules.</para>
+
     <xi:include href="core/tree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
     <section>
@@ -478,7 +474,7 @@
       </listitem>
       <listitem>
         <para>Schnabel, Bryan - Individual </para>
-      </listitem> 
+      </listitem>
       <listitem>
         <para>Souto Pico, Manuel - cApStAn SA</para>
       </listitem>

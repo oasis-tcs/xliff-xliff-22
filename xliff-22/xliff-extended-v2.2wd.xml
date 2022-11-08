@@ -133,7 +133,6 @@
           <para>urn:oasis:names:tc:xliff:resourcedata:2.0</para>
         </listitem>
         
-
         <listitem>
           <para>urn:oasis:names:tc:xliff:sizerestriction:2.0</para>
         </listitem>
@@ -490,7 +489,7 @@
                   <firstterm>Translated</firstterm> versions of the original document.</para>
 
               <para>The XML namespace that corresponds to the core subset of XLIFF 2.2 is
-                  <code>"urn:oasis:names:tc:xliff:document:2.0"</code>.</para>
+                  <code>"urn:oasis:names:tc:xliff:document:2.2"</code>.</para>
             </listitem>
           </varlistentry>
 
@@ -511,7 +510,6 @@
                 <member><code>urn:oasis:names:tc:xliff:document:1.0</code></member>
                 <member><code>urn:oasis:names:tc:xliff:document:1.1</code></member>
                 <member><code>urn:oasis:names:tc:xliff:document:1.2</code></member>
-                <member><code>urn:oasis:names:tc:xliff:changetracking:2.0</code></member>
               </simplelist>
               <para>Elements and attributes from other namespaces are not
                   <firstterm>XLIFF-defined</firstterm>.</para>
@@ -895,7 +893,7 @@
     <title>Examples</title>
     <para>Given the following XLIFF document:</para>
     <programlisting format="linespecific">
-&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0"
+&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" version="2.2"
     srcLang="en" trgLang="fr">
   &lt;file id="f1">
     &lt;notes>
@@ -929,7 +927,7 @@
   </section>
 
 </section>
-  
+
   <section id="core">
     <title>The Core Specification</title>
 
@@ -5937,11 +5935,11 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         <para>The following <firstterm>XLIFF Core</firstterm> elements allow storing custom data in <link linkend="metadata"><code>&lt;mda:metadata></code></link> elements or in elements from a custom
             XML namespace:</para>
         <simplelist type="vert">
+            <member>- <link linkend="xliff"><code>&lt;xliff></code></link></member>
             <member>- <link linkend="file"><code>&lt;file></code></link></member>
             <member>- <link linkend="group"><code>&lt;group></code></link></member>
             <member>- <link linkend="unit"><code>&lt;unit></code></link></member>
-        </simplelist>
-            
+        </simplelist> 
         <para>The following <firstterm>XLIFF Core</firstterm> elements accept custom
             attributes:</para>
         <simplelist type="vert">
@@ -5949,7 +5947,6 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <member>- <link linkend="file"><code>&lt;file></code></link></member>
             <member>- <link linkend="group"><code>&lt;group></code></link></member>
             <member>- <link linkend="unit"><code>&lt;unit></code></link></member>
-            
             <member>- <link linkend="note"><code>&lt;note></code></link></member>
             <member>- <link linkend="mrk"><code>&lt;mrk></code></link></member>
             <member>- <link linkend="sm"><code>&lt;sm></code></link></member>
@@ -6001,7 +5998,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 </section>
 
 </section>
-  
+
   <section id="modules">
     <title>The Modules Specifications</title>
     <para>This section specifies the <glossterm>OPTIONAL</glossterm>
@@ -7343,9 +7340,9 @@ backslash (<code>\</code>).</para>
       using a skeleton:</para>
     <programlisting format="linespecific">
 &lt;?xml version="1.0" encoding="utf-8"?>
-&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:2.2"
     xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
-    xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0" version="2.0"
+    xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0" version="2.2"
     srcLang="en">
   &lt;file id="f1">
     &lt;group id="g1" name="document">
@@ -8068,387 +8065,6 @@ backslash (<code>\</code>).</para>
 
 </section>
     
-    <section id="changeTracking_module" role="Informative">
-  <title>Change Tracking Extension (Informative)</title>
-  <section>
-    <title>Introduction</title>
-    <para>The Change Tracking extension is used to store revision information for XLIFF elements and
-      attributes. The Change Tracking extension is in place as informative material until the TC
-      will be able to replace it with a revised Change Tracking Module hopefully for XLIFF Version
-      2.2.</para>
-  </section>
-  <section>
-    <title>Module Namespace and Validation Artifacts</title>
-    <para>The namespace for the Change Tracking extension is:
-        <code>urn:oasis:names:tc:xliff:changetracking:2.0</code></para>
-    <para>Schema for this extension is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/extensions/change_tracking.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/extensions/change_tracking.xsd</ulink>.</para>
-  </section>
-
-  <section>
-    <title>Module Fragment Identification Prefix</title>
-    <para>The fragment identification prefix for the Change Tracking module or extension is:
-        <code>ctr</code></para>
-  </section>
-
-  <section>
-    <title>Module Elements</title>
-    <para>The elements defined in the Change Tracking extension are: <link linkend="changeTrack"><code>&lt;changeTrack></code></link>, <link linkend="revisions"><code>&lt;revisions></code></link>, <link linkend="revision"><code>&lt;revision></code></link>, and <link linkend="item"><code>&lt;item></code></link>.</para>
-    <section>
-      
-      <title>Tree Structure</title>
-      <para>Legend:</para>
-      <simplelist type="vert">
-        <member>+ = one or more</member>
-      </simplelist>
-      <programlisting format="linespecific">
-<link linkend="changeTrack"><code>&lt;changeTrack></code></link>
-|
-+---<link linkend="revisions"><code>&lt;revisions></code></link> +
-  |
-  +---<link linkend="revision"><code>&lt;revision></code></link> +
-    |
-    +---<link linkend="item"><code>&lt;item></code></link> +
-
-
-  </programlisting>
-    </section>
-    <section id="changeTrack">
-    <title>changeTrack</title>
-    <para>Parent container for change tracking information associated with a sibling element, or a
-        child of a sibling element, to the change track extension within the scope of the enclosing
-        element.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <simplelist type="vert">
-        <member>- One or more <link linkend="revisions"><code>&lt;revisions></code></link> elements.</member>
-    </simplelist>
-    
-    <para><emphasis>Parents:</emphasis></para>
-    
-    <simplelist type="vert">
-        <member>- <link linkend="file"><code>&lt;file></code></link></member>
-        <member>- <link linkend="group"><code>&lt;group></code></link></member>
-        <member>- <link linkend="unit"><code>&lt;unit></code></link></member>
-        
-    </simplelist>
-</section>
-    <section id="revisions">
-    <title>revisions</title>
-    <para>Container for logical groups of revisions associated with a sibling element, or a child of
-    a sibling element, to the change track extension within the scope of the enclosing
-    element.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <simplelist type="vert">
-        <member>- One or more <link linkend="revision"><code>&lt;revision></code></link> elements.</member>
-    </simplelist>
-    
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist type="vert">
-        <member>- <link linkend="ctr_appliesTo"><code>appliesTo</code></link>, <glossterm>REQUIRED</glossterm></member>
-        <member>- <link linkend="ctr_ref"><code>ref</code></link>, <glossterm>OPTIONAL</glossterm></member> 
-        <member>- <link linkend="ctr_currentVersion"><code>currentVersion</code></link>, <glossterm>OPTIONAL</glossterm></member> 
-        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
-    </simplelist>
-
-  
-
-  <itemizedlist>
-    <title>Processing Requirements</title>
-
-    <listitem>
-      <para>Modifying agents <glossterm>MAY</glossterm> create <link linkend="revisions"><code>&lt;revisions></code></link> elements with attributes.</para>
-    </listitem>
-
-    <listitem>
-      <para>Modifying agents <glossterm>SHOULD NOT</glossterm> modify <link linkend="revisions"><code>&lt;revisions></code></link> and its attributes defined in this extension,
-        except in the case where the <link linkend="ctr_currentVersion"><code>currentVersion</code></link> attribute is used. This
-        attribute <glossterm>SHOULD</glossterm> be updated when a new revision becomes the most
-        current.</para>
-     </listitem>
-    
-     <listitem>
-       <para>Modifying agents <glossterm>SHOULD NOT</glossterm> remove <link linkend="revisions"><code>&lt;revisions></code></link> and its attributes defined in this
-        extension.</para>
-     </listitem>
-
-    <listitem>
-      <para>When the <link linkend="ctr_appliesTo"><code>appliesTo</code></link> attribute refers to an element that is a multiple instance within
-        the enclosing element, the <link linkend="ctr_ref"><code>ref</code></link> attribute <glossterm>MUST</glossterm> be used to reference an individual
-        instance if and only if the referenced instance has an id. Using <link linkend="notes"><code>&lt;notes></code></link> as an example:</para>
-      <programlisting format="linespecific">
-      &lt;notes>
-        &lt;note id="n1">new note&lt;/note>
-        &lt;note id="n2">another note&lt;/note>  
-      &lt;/notes>
-      &lt;ctr:changeTrack>
-        &lt;ctr:revisions appliesTo="note" ref="n1">
-          &lt;ctr:revision>
-            &lt;ctr:item property="content">old note&lt;/ctr:item>
-          &lt;/ctr:revision>
-        &lt;/ctr:revisions>
-      &lt;/ctr:changeTrack>
-      </programlisting>
-     </listitem>  
-    
-  </itemizedlist>
-</section>
-    <section id="revision">
-    <title>revision</title>
-    <para>Container for specific revisions associated with a sibling element, or a child of a sibling element, to the change track extension within the scope of the enclosing element.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <simplelist type="vert">
-        <member>- One or more <link linkend="item"><code>&lt;item></code></link> elements.</member>
-    </simplelist>
-    
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist type="vert">
-        <member>- <link linkend="ctr_author"><code>author</code></link>, <glossterm>OPTIONAL</glossterm></member>
-        <member>- <link linkend="ctr_datetime"><code>datetime</code></link>, <glossterm>OPTIONAL</glossterm></member> 
-        <member>- <link linkend="ctr_version"><code>version</code></link>, <glossterm>OPTIONAL</glossterm></member> 
-        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
-    </simplelist>
-
-  
-  
-  <itemizedlist>
-    <title>Processing Requirements</title>
-
-    <listitem>
-      <para>Modifying agents <glossterm>MAY</glossterm> create <link linkend="revision"><code>&lt;revision></code></link> elements with attributes.</para>
-    </listitem>
-    
-    <listitem>
-      <para>Modifying agents <glossterm>SHOULD NOT</glossterm> modify <link linkend="revision"><code>&lt;revision></code></link> and its attributes defined in this extension.</para>
-    </listitem>
-
-    <listitem>
-      <para>Modifying agents <glossterm>MAY</glossterm> remove <link linkend="revision"><code>&lt;revision></code></link> and its attributes defined in this extension 
-        if and only if there is more than one instance of <link linkend="revision"><code>&lt;revision></code></link> present. For example, a user agent can decide
-        to preserve only the most current revision.</para>
-    </listitem>
-
-  </itemizedlist>
-</section>
-    <section id="item">
-    <title>item</title>
-    <para>Container for a specific revision associated with a sibling element, or a child of a
-    sibling element, to the change track extension within the scope of the enclosing element.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <simplelist type="vert">
-        <member>- Text</member>
-    </simplelist>
-
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist type="vert">
-        <member>- <link linkend="ctr_property"><code>property</code></link>, <glossterm>REQUIRED</glossterm></member>
-        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
-    </simplelist>
-
-  <itemizedlist>
-    <title>Processing Requirements</title>
-
-    <listitem>
-      <para>Modifying agents <glossterm>MAY</glossterm> create <link linkend="item"><code>&lt;item></code></link> elements with attributes.</para>
-    </listitem>
-
-    <listitem>
-      <para>Modifying agents <glossterm>SHOULD NOT</glossterm> modify <link linkend="item"><code>&lt;item></code></link> and its attribute defined in this extension.</para>
-    </listitem>
-
-    <listitem>
-      <para>Modifying agents <glossterm>SHOULD NOT</glossterm> remove <link linkend="item"><code>&lt;item></code></link> and its attribute defined in this extension, unless they
-        are removed as part of a <link linkend="revision"><code>&lt;revision></code></link> element removed according to its
-        own processing requirements.</para>
-     </listitem>
-
-  </itemizedlist>
-</section>
-  </section>
-
-  <section>
-    <title>Module Attributes</title>
-    <para>The attributes defined in the Change Tracking extension are: <link linkend="ctr_appliesTo"><code>appliesTo</code></link>, <link linkend="ctr_author"><code>author</code></link>, <link linkend="ctr_currentVersion"><code>currentVersion</code></link>, <link linkend="ctr_datetime"><code>datetime</code></link>, <link linkend="ctr_ref"><code>ref</code></link>, <link linkend="ctr_property"><code>property</code></link>, and <link linkend="ctr_version"><code>version</code></link>. </para>
-    <section id="ctr_appliesTo">
-  <title>appliesTo</title>
-
-  <para>appliesTo – Indicates a specific XLIFF element which is a sibling, or a child of a sibling
-    element, to the change track extension within the scope of the enclosing element.</para>
-
-  <para><emphasis>Value description:</emphasis> NMTOKEN name of any valid XLIFF element which is a
-    sibling, or a child of a sibling element, to the change track extension within the scope of the
-    enclosing element. </para>
-
-  <para><emphasis>Default value:</emphasis> undefined</para>
-
-  <para><emphasis>Used in:</emphasis><link linkend="revisions"><code>&lt;revisions></code></link></para>
-  
-</section>
-    <section id="ctr_author">
-  <title>author</title>
-
-  <para>author - Indicates the user or agent that created or modified the referenced element or its
-    attributes.</para>
-
-  <para><emphasis>Value description:</emphasis> Text.</para>
-
-  <para><emphasis>Default value:</emphasis> undefined</para>
-
-  <para><emphasis>Used in:</emphasis><link linkend="revision"><code>&lt;revision></code></link>.</para>
-  
-</section>
-    <section id="ctr_currentVersion">
-  <title>currentVersion</title>
-
-  <para>currentVersion - holds a reference to the most current version of a revision.</para>
-
-  <para><emphasis>Value description:</emphasis> An <link linkend="XMLSchema2">[XML Schema Datatypes]</link> NMTOKEN</para> 
-
-  <para><emphasis>Default value:</emphasis> none</para>
-
-  <para><emphasis>Used in:</emphasis><link linkend="revisions"><code>&lt;revisions></code></link>.</para>
-
-<itemizedlist>
-  <title>Constraints</title>
-  <listitem><para>The value of the <link linkend="ctr_currentVersion"><code>currentVersion</code></link> attribute <glossterm>MUST</glossterm> be 
-    the value of the <link linkend="ctr_version"><code>version</code></link> attribute of one 
-    of the <link linkend="revision"><code>&lt;revision></code></link> elements 
-    listed in the same <link linkend="revisions"><code>&lt;revisions></code></link> element.</para></listitem>
-</itemizedlist>
-  
-</section>
-    <section id="ctr_datetime">
-  <title>datetime</title>
-
-  <para>Date and Time, datetime - Indicates the date and time the referenced element or its
-    attributes were created or modified.</para>
-
-  <para><emphasis>Value description:</emphasis> Date in one of the formats defined in <link linkend="bib_datetime">[NOTE-datetime]</link>.</para>
-
-  <para><emphasis>Default value:</emphasis> undefined</para>
-
-  <para><emphasis>Used in:</emphasis><link linkend="revision"><code>&lt;revision></code></link>.</para>
-  
-</section>
-    <section id="ctr_ref">
-  <title>ref</title>
-
-  <para>Reference - Holds a reference to a single instance of an element that has
-    multiple instances within the enclosing element.</para>
-
-  <para><emphasis>Value description:</emphasis> An <link linkend="XMLSchema2">[XML Schema Datatypes]</link> NMTOKEN</para>
-
-  <para><emphasis>Default value:</emphasis> undefined</para>
-
-  <para><emphasis>Used in:</emphasis><link linkend="revisions"><code>&lt;revisions></code></link></para>
-  
-<itemizedlist>
-  <title>Constraints</title>
-  <listitem><para> The value of the <link linkend="ctr_ref"><code>ref</code></link> attribute <glossterm>MUST</glossterm> be the value of the <link linkend="id"><code>id</code></link> attribute of a single instance of an element that is a multiple instance within the enclosing element.</para></listitem>
-</itemizedlist>
-  
-</section>
-    <section id="ctr_property">
-  <title>property</title>
-
-  <para>property – Indicates the type of revision data.</para>
-
-  <para><emphasis>Value description:</emphasis> The value <glossterm>MUST</glossterm> be either <code>content</code> to signify the content of an element, or the name of the attribute relating to the revision data.</para>
-
-  <para><emphasis>Default value:</emphasis> none</para>
-
-  <para><emphasis>Used in:</emphasis><link linkend="item"><code>&lt;item></code></link>.</para>
-  
-</section>
-    <section id="ctr_version">
-  <title>version</title>
-
-  <para>version - Indicates the version of the referenced element or its attributes that were
-    created or modified.</para>
-
-  <para><emphasis>Value description:</emphasis> NMTOKEN.</para>
-
-  <para><emphasis>Default value:</emphasis> undefined</para>
-
-  <para><emphasis>Used in:</emphasis><link linkend="revision"><code>&lt;revision></code></link>.</para>
-  
-</section>
-  </section>
-
-  <section>
-    <title>Example</title>
-
-    <para>The following example shows change tracking for <link linkend="source"><code>&lt;source></code></link>, <link linkend="target"><code>&lt;target></code></link>, and <link linkend="notes"><code>&lt;notes></code></link>. Current and previous versions are both stored in the
-      Change Tracking extension.</para>
-
-    <programlisting format="linespecific">
-  
-     &lt;unit id="1">
-     &lt;ctr:changeTrack>
-       &lt;ctr:revisions appliesTo="source" currentVersion="r1">
-         &lt;ctr:revision author="system" datetime="2013-07-15T10:00:00+8:00"
-             version="r1">
-           &lt;ctr:item property="content">Hello World&lt;/ctr:item>
-         &lt;/ctr:revision>
-         &lt;ctr:revision author="system" datetime="2013-06-15T10:00:00+8:00"
-             version="r2">
-           &lt;ctr:item property="content">Hello&lt;/ctr:item>
-         &lt;/ctr:revision>
-         &lt;ctr:revision author="system" datetime="2013-05-15T10:00:00+8:00"
-             version="r3">
-           &lt;ctr:item property="content">Hi&lt;/ctr:item>
-         &lt;/ctr:revision>
-       &lt;/ctr:revisions>
-       &lt;ctr:revisions appliesTo="target" currentVersion="r1">
-         &lt;ctr:revision author="Frank" datetime="2013-07-17T11:00:00+8:00"
-             version="r1">
-           &lt;ctr:item property="content">Guten Tag Welt&lt;/ctr:item>
-         &lt;/ctr:revision>
-         &lt;ctr:revision author="Frank" datetime="2013-06-17T11:00:00+8:00"
-             version="r2">
-           &lt;ctr:item property="content">Hallo&lt;/ctr:item>
-         &lt;/ctr:revision>
-         &lt;ctr:revision author="Frank" datetime="2013-05-17T11:00:00+8:00"
-             version="r3">
-           &lt;ctr:item property="content">Grüsse&lt;/ctr:item>
-         &lt;/ctr:revision>
-       &lt;/ctr:revisions>
-       &lt;ctr:revisions appliesTo="note" ref="n1" currentVersion="r1">
-         &lt;ctr:revision author="Bob" datetime="2013-07-16T10:30:00+8:00"
-             version="r1">
-           &lt;ctr:item property="content">The translation should be formal
-           &lt;/ctr:item>
-           &lt;ctr:item property="category">instruction&lt;/ctr:item>
-         &lt;/ctr:revision>
-         &lt;ctr:revision author="Bob" datetime="2013-05-16T10:30:00+8:00"
-             version="r2">
-           &lt;ctr:item property="content">The translation should be informal
-           &lt;/ctr:item>
-           &lt;ctr:item property="category">comment&lt;/ctr:item>
-         &lt;/ctr:revision>
-       &lt;/ctr:revisions>
-       &lt;ctr:revisions appliesTo="note" ref="n2" currentVersion="r1">
-         &lt;ctr:revision author="Bob" datetime="2013-07-18T10:30:00+8:00"
-             version="r1">
-           &lt;ctr:item property="content">Please Review my translation
-           &lt;/ctr:item>
-         &lt;/ctr:revision>
-       &lt;/ctr:revisions>
-     &lt;/ctr:changeTrack>
-     &lt;notes>
-       &lt;note category="instruction" id="n1">The translation should be
-       formal&lt;/note>
-       &lt;note category="comment" id="n2">Please Review my translation&lt;/note>
-     &lt;/notes>
-     &lt;segment>
-       &lt;source>Hello World&lt;/source>
-       &lt;target>Guten Tag Welt&lt;/target>
-     &lt;/segment>
-   &lt;/unit>
-</programlisting>
-
-  </section>
-
-
-</section>
     <section id="size_restriction_module">
     <title>Size and Length Restriction Module</title>
 
@@ -8990,8 +8606,8 @@ backslash (<code>\</code>).</para>
         <para>A short example on how this module can be used is provided here with inline XML
             comments explaining the usage of the module features. <programlisting format="linespecific">
 &lt;xliff version="2.0" srcLang="en-us"
-    xmlns="urn:oasis:names:tc:xliff:document:2.0"
-    xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0">
+    xmlns="urn:oasis:names:tc:xliff:document:2.2"
+    xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.2">
   &lt;file id="f1">
     &lt;slr:profiles generalProfile="xliff:codepoints"
         storageProfile="xliff:utf8">
@@ -10618,9 +10234,9 @@ backslash (<code>\</code>).</para>
       <listitem>
         <para><firstterm>Modifiers</firstterm>
             <glossterm>MAY</glossterm> store previous versions of subunit content and attributes and
-            notes content and attributes in the <link linkend="changeTracking_module">Change Tracking Module</link> elements according to the data model, Constraints,
+            notes content and attributes in the <remark>Change Tracking Module</remark> elements according to the data model, Constraints,
             Processing Requirements, and usage descriptions of that module.</para>
-        <para>If this was the case the <link linkend="revision"><code>&lt;revision></code></link> element <glossterm>MUST</glossterm> be extended by the Provenance attributes defined in the ITS Module as needed and the <link linkend="ctr_author"><code>ctr:author</code></link>
+        <para>If this was the case the <remark><code>&lt;revision></code></remark> element <glossterm>MUST</glossterm> be extended by the Provenance attributes defined in the ITS Module as needed and the <remark><code>ctr:author</code></remark>
             <glossterm>SHOULD</glossterm> reuse information from the corresponding <link linkend="ITS20">[ITS]</link>
             <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> attributes as
             follows:</para>
@@ -11512,9 +11128,9 @@ backslash (<code>\</code>).</para>
     <example>
       <title>MT Confidence as Translation Candidates metadata</title>
       <programlisting format="linespecific">
-&lt;xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0"
+&lt;xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.2"
     xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
-    xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0"
+    xmlns:its="http://www.w3.org/2005/11/its" its:version="2.2"
     srcLang="en" trgLang="fr">
   &lt;file id="f1" its:annotatorsRef="mt-confidence|MTServices-XYZ">
     &lt;unit id="1">
@@ -12721,7 +12337,7 @@ backslash (<code>\</code>).</para>
         <link linkend="group"><code>&lt;group></code></link>
         <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="sm"><code>&lt;sm></code></link>,
             <link linkend="match"><code>&lt;mtc:match></code></link>,
-         <link linkend="revisions"><code>&lt;ctr:revisions></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link> .</para>
+         <remark><code>&lt;ctr:revisions></code></remark>, or <remark><code>&lt;ctr:revision></code></remark> .</para>
     
     <itemizedlist>
         <title>Processing Requirements</title>
@@ -13594,7 +13210,7 @@ backslash (<code>\</code>).</para>
             
     <itemizedlist>
         <listitem>
-            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
             
             <para>The value is undefined.</para>
         </listitem>
@@ -13606,7 +13222,7 @@ backslash (<code>\</code>).</para>
         <listitem>
             <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
             <para>The value of the <link linkend="itsm_org"><code>org</code></link> attribute
-                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
         </listitem>
@@ -13625,7 +13241,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -13662,7 +13278,7 @@ backslash (<code>\</code>).</para>
             
             <itemizedlist>
                 <listitem>
-                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
                     
                     <para>The value is undefined.</para>
                 </listitem>
@@ -13673,7 +13289,7 @@ backslash (<code>\</code>).</para>
                 </listitem>
                 <listitem>
                     <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
-                    <para>The value of the <link linkend="itsm_orgRef"><code>orgRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                    <para>The value of the <link linkend="itsm_orgRef"><code>orgRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
                 </listitem>
@@ -13692,7 +13308,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -13727,7 +13343,7 @@ backslash (<code>\</code>).</para>
             
     <itemizedlist>
         <listitem>
-            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
             
             <para>The value is undefined.</para>
         </listitem>
@@ -13739,7 +13355,7 @@ backslash (<code>\</code>).</para>
         <listitem>
             <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
             <para>The value of the <link linkend="itsm_person"><code>person</code></link> attribute
-                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
         </listitem>
@@ -13758,7 +13374,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -13792,7 +13408,7 @@ backslash (<code>\</code>).</para>
             
             <itemizedlist>
                 <listitem>
-                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
                     
                     <para>The value is undefined.</para>
                 </listitem>
@@ -13803,7 +13419,7 @@ backslash (<code>\</code>).</para>
                 </listitem>
                 <listitem>
                     <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
-                    <para>The value of the <link linkend="itsm_personRef"><code>personRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                    <para>The value of the <link linkend="itsm_personRef"><code>personRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
                 </listitem>
@@ -13822,7 +13438,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -13846,7 +13462,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
         
     </para>
     
@@ -13865,7 +13481,7 @@ backslash (<code>\</code>).</para>
                     <listitem>
                         <para>The value of the <link linkend="itsm_provenanceRecordsRef">provenanceRecordsRef</link> attribute <glossterm>MUST</glossterm>
                             be an IRI referencing a <link linkend="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></link> element within the
-                            innermost enclosing <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>element. </para>
+                            innermost enclosing <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>element. </para>
                     </listitem>
                 </itemizedlist></para>
             
@@ -13921,7 +13537,7 @@ backslash (<code>\</code>).</para>
             
     <itemizedlist>
         <listitem>
-            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
             
             <para>The value is undefined.</para>
         </listitem>
@@ -13933,7 +13549,7 @@ backslash (<code>\</code>).</para>
         <listitem>
             <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
             <para>The value of the <link linkend="itsm_revOrg"><code>revOrg</code></link> attribute
-                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
         </listitem>
@@ -13952,7 +13568,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -13988,7 +13604,7 @@ backslash (<code>\</code>).</para>
             
             <itemizedlist>
                 <listitem>
-                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
                     
                     <para>The value is undefined.</para>
                 </listitem>
@@ -13999,7 +13615,7 @@ backslash (<code>\</code>).</para>
                 </listitem>
                 <listitem>
                     <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
-                    <para>The value of the <link linkend="itsm_revOrgRef"><code>revOrgRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                    <para>The value of the <link linkend="itsm_revOrgRef"><code>revOrgRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
                 </listitem>
@@ -14018,7 +13634,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -14054,7 +13670,7 @@ backslash (<code>\</code>).</para>
             
     <itemizedlist>
         <listitem>
-            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
             
             <para>The value is undefined.</para>
         </listitem>
@@ -14066,7 +13682,7 @@ backslash (<code>\</code>).</para>
         <listitem>
             <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
             <para>The value of the <link linkend="itsm_revPerson"><code>revPerson</code></link> attribute
-                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
         </listitem>
@@ -14085,7 +13701,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -14121,7 +13737,7 @@ backslash (<code>\</code>).</para>
             
             <itemizedlist>
                 <listitem>
-                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
                     
                     <para>The value is undefined.</para>
                 </listitem>
@@ -14132,7 +13748,7 @@ backslash (<code>\</code>).</para>
                 </listitem>
                 <listitem>
                     <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
-                    <para>The value of the <link linkend="itsm_revPersonRef"><code>revPersonRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                    <para>The value of the <link linkend="itsm_revPersonRef"><code>revPersonRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
                 </listitem>
@@ -14151,7 +13767,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -14188,7 +13804,7 @@ backslash (<code>\</code>).</para>
             
     <itemizedlist>
         <listitem>
-            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
             
             <para>The value is undefined.</para>
         </listitem>
@@ -14200,7 +13816,7 @@ backslash (<code>\</code>).</para>
         <listitem>
             <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
             <para>The value of the <link linkend="itsm_revTool"><code>revTool</code></link> attribute
-                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
         </listitem>
@@ -14219,7 +13835,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -14256,7 +13872,7 @@ backslash (<code>\</code>).</para>
             
             <itemizedlist>
                 <listitem>
-                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
                     
                     <para>The value is undefined.</para>
                 </listitem>
@@ -14267,7 +13883,7 @@ backslash (<code>\</code>).</para>
                 </listitem>
                 <listitem>
                     <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
-                    <para>The value of the <link linkend="itsm_revToolRef"><code>revToolRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                    <para>The value of the <link linkend="itsm_revToolRef"><code>revToolRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
                 </listitem>
@@ -14286,7 +13902,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -14482,7 +14098,7 @@ backslash (<code>\</code>).</para>
             
     <itemizedlist>
         <listitem>
-            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+            <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
             
             <para>The value is undefined.</para>
         </listitem>
@@ -14494,7 +14110,7 @@ backslash (<code>\</code>).</para>
         <listitem>
             <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
             <para>The value of the <link linkend="itsm_tool"><code>tool</code></link> attribute
-                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                        of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
         </listitem>
@@ -14513,7 +14129,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -14549,7 +14165,7 @@ backslash (<code>\</code>).</para>
             
             <itemizedlist>
                 <listitem>
-                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <link linkend="revision"><code>&lt;its:provencanceRecord></code></link>:</para>
+                    <para>When used in <link linkend="file"><code>&lt;file></code></link> or <remark><code>&lt;its:provencanceRecord></code></remark>:</para>
                     
                     <para>The value is undefined.</para>
                 </listitem>
@@ -14560,7 +14176,7 @@ backslash (<code>\</code>).</para>
                 </listitem>
                 <listitem>
                     <para>When used in annotations markers <link linkend="mrk"><code>&lt;mrk></code></link> or <link linkend="sm"><code>&lt;sm></code></link>:</para>
-                    <para>The value of the <link linkend="itsm_toolRef"><code>toolRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <link linkend="revision"><code>&lt;ctr:revision></code></link>
+                    <para>The value of the <link linkend="itsm_toolRef"><code>toolRef</code></link> attribute of the innermost <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, or <remark><code>&lt;ctr:revision></code></remark>
                         element, in which the marker in question is located (which can be
                         undefined).</para>
                 </listitem>
@@ -14579,7 +14195,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Used in:</emphasis>
         <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <link linkend="revision"><code>&lt;ctr:revision></code></link>.
+        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
     
     
@@ -14659,9 +14275,9 @@ using ITS 2.0 as part of XLIFF 2.1
 Version: 0.2.1 
 Date: 04 April 2017 -->
 
-&lt;xliff version="2.1" xmlns="urn:oasis:names:tc:xliff:document:2.0"
+&lt;xliff version="2.1" xmlns="urn:oasis:names:tc:xliff:document:2.2"
     srcLang="en" trgLang="fr"
-    xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0"
+    xmlns:its="http://www.w3.org/2005/11/its" its:version="2.2"
     xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1">
   &lt;!-- Each unit in the file element shows one ITS data category. -->
   &lt;!-- The its:annotatorsRef attribute inherits through the whole file
@@ -15059,23 +14675,23 @@ Date: 04 April 2017 -->
               Defined</firstterm> XML Schemas,</para>
           <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml</ulink></para>
         </listitem>
-        
+
         <listitem>
-          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
-            from those modules.</para>
+          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced from those
+            modules.</para>
         </listitem>
       </orderedlist>
     </para>
     <para>The basic grammar and structure of XLIFF 2.2 is defined using ten (10) XML Schemas
       and one (1) XML catalog. The module schemas are specifically referenced from their respective
-      modules.</para> 
-    
+      modules.</para>
+
     <section id="schema_tree">
     <title>XML Schemas Tree</title>
 
 <programlisting format="linespecific">
     
-<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd"><code>Core XML Schema</code></ulink>|
+<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd"><code>Core XML Schema</code></ulink>
     |
     +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
     |
@@ -15170,6 +14786,10 @@ Date: 04 April 2017 -->
             approved on September 20<superscript>th</superscript>, 2022. See <ulink url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727">https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727</ulink>.</para>
 
       </listitem>
+      <listitem>
+         <para>Removed the informative Change Tracking Extension. Change approved on November
+               2<superscript>nd</superscript>, 2022. See <ulink url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731">https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731</ulink>.</para>
+      </listitem>
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
       practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
@@ -15177,8 +14797,9 @@ Date: 04 April 2017 -->
          <code>"urn:oasis:names:tc:xliff:document:2.0"</code> or the <firstterm>XLIFF
          Core</firstterm>
       <link linkend="XMLSchema">[XML Schema]</link>, <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink> that expresses its basic grammar
-      and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes introduced in
-      version 2.2 are designed to preserve compatibility with versions 2.0 and 2.1.</para>
+      and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes
+      introduced in version 2.2 are designed to preserve compatibility with versions 2.0 and
+      2.1.</para>
    <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21">https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
 </section>
     
@@ -15201,7 +14822,7 @@ Date: 04 April 2017 -->
       </listitem>
       <listitem>
         <para>Schnabel, Bryan - Individual </para>
-      </listitem> 
+      </listitem>
       <listitem>
         <para>Souto Pico, Manuel - cApStAn SA</para>
       </listitem>

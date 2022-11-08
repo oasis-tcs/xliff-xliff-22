@@ -128,7 +128,7 @@
     <title>Examples</title>
     <para>Given the following XLIFF document:</para>
     <programlisting>
-&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0"
+&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" version="2.2"
     srcLang="en" trgLang="fr">
   &lt;file id="f1">
     &lt;notes>

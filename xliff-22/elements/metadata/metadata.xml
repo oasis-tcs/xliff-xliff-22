@@ -45,9 +45,9 @@
       using a skeleton:</para>
     <programlisting>
 &lt;?xml version="1.0" encoding="utf-8"?>
-&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:&version;"
     xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
-    xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0" version="2.0"
+    xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0" version="&version;"
     srcLang="en">
   &lt;file id="f1">
     &lt;group id="g1" name="document">

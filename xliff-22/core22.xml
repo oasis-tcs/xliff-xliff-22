@@ -161,12 +161,7 @@
         <listitem>
           <para>urn:oasis:names:tc:xliff:resourcedata:&bschversion;</para>
         </listitem>
-        <!-- No CTR namestace given in XLIFF 2.1 as per resolution to https://issues.oasis-open.org/browse/XLIFF-32
-        <listitem>
-          <para>urn:oasis:names:tc:xliff:changetracking:&cschversion;</para>
-        </listitem>
--->
-
+       
         <listitem>
           <para>urn:oasis:names:tc:xliff:sizerestriction:&bschversion;</para>
         </listitem>

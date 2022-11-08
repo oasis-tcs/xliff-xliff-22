@@ -237,7 +237,7 @@
                   <firstterm>Translated</firstterm> versions of the original document.</para>
 
               <para>The XML namespace that corresponds to the core subset of XLIFF &version; is
-                  <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code>.</para>
+                  <code>"urn:oasis:names:tc:xliff:document:&version;"</code>.</para>
             </listitem>
           </varlistentry>
 
@@ -258,7 +258,6 @@
                 <member><code>urn:oasis:names:tc:xliff:document:1.0</code></member>
                 <member><code>urn:oasis:names:tc:xliff:document:1.1</code></member>
                 <member><code>urn:oasis:names:tc:xliff:document:1.2</code></member>
-                <member><code>urn:oasis:names:tc:xliff:changetracking:&bschversion;</code></member>
               </simplelist>
               <para>Elements and attributes from other namespaces are not
                   <firstterm>XLIFF-defined</firstterm>.</para>

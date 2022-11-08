@@ -535,7 +535,7 @@ using ITS 2.0 as part of XLIFF 2.1
 Version: 0.2.1 
 Date: 04 April 2017 -->
 
-&lt;xliff version="2.1" xmlns="urn:oasis:names:tc:xliff:document:2.0"
+&lt;xliff version="&version;" xmlns="urn:oasis:names:tc:xliff:document:&version;"
     srcLang="en" trgLang="fr"
     xmlns:its="http://www.w3.org/2005/11/its" its:version="2.0"
     xmlns:itsm="urn:oasis:names:tc:xliff:itsm:2.1">

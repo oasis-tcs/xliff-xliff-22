@@ -27,20 +27,11 @@
                     ><code>&lt;mda:metadata></code></olink> elements or in elements from a custom
             XML namespace:</para>
         <simplelist>
+            <member>- <olink targetdoc="../elements/structural/xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink></member>
             <member>- <olink targetdoc="../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink></member>
             <member>- <olink targetdoc="../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink></member>
             <member>- <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink></member>
-        </simplelist>
-        <!-- The June F2F meeting decided to allow cusotm elements wherever mda is allowed and vice versa, all modules and custom elements were removed from segment and lower to allow for resegmentation 
-            <para>Custom extensions using 
-            <olink targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"><code>&lt;mda:metadata></code></olink> 
-            are allowed in:</para>
-        <simplelist>
-            <member>- <olink targetdoc="../elements/structural/segment.xml" targetptr="segment"><code>&lt;segment></code></olink></member>
-            <member>- <olink targetdoc="../elements/structural/ignorable.xml" targetptr="ignorable"><code>&lt;ignorable></code></olink></member>            
-            <member>- <olink targetdoc="../elements/candidates/match.xml" targetptr="match"><code>&lt;mtc:match></code></olink></member>
-        </simplelist>
-        -->    
+        </simplelist> 
         <para>The following <firstterm>XLIFF Core</firstterm> elements accept custom
             attributes:</para>
         <simplelist>
@@ -48,12 +39,6 @@
             <member>- <olink targetdoc="../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink></member>
             <member>- <olink targetdoc="../elements/structural/group.xml" targetptr="group"><code>&lt;group></code></olink></member>
             <member>- <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink></member>
-            <!-- Extensions points have been removed from segment and lower structural levels to allow for resegmentation 
-            <member>- <olink targetdoc="../elements/structural/segment.xml" targetptr="segment"><code>&lt;segment></code></olink></member>
-            <member>- <olink targetdoc="../elements/structural/ignorable.xml" targetptr="ignorable"><code>&lt;ignorable></code></olink></member>            
-            <member>- <olink targetdoc="../elements/structural/source.xml" targetptr="source"><code>&lt;source></code></olink></member>
-            <member>- <olink targetdoc="../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink></member>
-            -->
             <member>- <olink targetdoc="../elements/structural/note.xml" targetptr="note"><code>&lt;note></code></olink></member>
             <member>- <olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"><code>&lt;mrk></code></olink></member>
             <member>- <olink targetdoc="../elements/inline/sm.xml" targetptr="sm"><code>&lt;sm></code></olink></member>

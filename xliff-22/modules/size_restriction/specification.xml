@@ -299,8 +299,8 @@
         <title>Example</title>
         <para>A short example on how this module can be used is provided here with inline XML
             comments explaining the usage of the module features. <programlisting>
-&lt;xliff version="2.0" srcLang="en-us"
-    xmlns="urn:oasis:names:tc:xliff:document:2.0"
+&lt;xliff version="&version;" srcLang="en-us"
+    xmlns="urn:oasis:names:tc:xliff:document:&version;"
     xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"&gt;
   &lt;file id="f1"&gt;
     &lt;slr:profiles generalProfile="xliff:codepoints"

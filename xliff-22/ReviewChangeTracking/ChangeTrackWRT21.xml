@@ -63,6 +63,12 @@
                >https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727</ulink>.</para>
 
       </listitem>
+      <listitem>
+         <para>Removed the informative Change Tracking Extension. Change approved on November
+               2<superscript>nd</superscript>, 2022. See <ulink
+               url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731"
+               >https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731</ulink>.</para>
+      </listitem>
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
       practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
@@ -72,8 +78,9 @@
       <olink targetdoc="../xliff22.xml" targetptr="XMLSchema">[XML Schema]</olink>, <ulink
          url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
          >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink> that expresses its basic grammar
-      and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes introduced in
-      version 2.2 are designed to preserve compatibility with versions 2.0 and 2.1.</para>
+      and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes
+      introduced in version 2.2 are designed to preserve compatibility with versions 2.0 and
+      2.1.</para>
    <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink
          url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21"
          >https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
