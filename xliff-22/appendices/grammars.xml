@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+                         
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
+
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+]>
+<appendix role="normative" id="coreValidation">
+    <title>XLIFF Grammar Files (Normative)</title>
+    <para>The basic grammar and structure of XLIFF &version; is defined using ten (10) XML Schemas
+        and one (1) XML catalog. The module schemas are specifically referenced from their respective
+        modules.</para>
+    
+    <orderedlist>
+        <listitem id="CoreSchema">
+            <para><firstterm>XLIFF Core</firstterm>
+                <link linkend="XMLSchema">[XML Schema]</link>,</para>
+            <para><ulink url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
+                >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink></para>
+            
+        </listitem>
+        <listitem id="XLIFFCatalog">
+            <para><link linkend="XMLCatalogs">[XML Catalog]</link> of <firstterm>XLIFF
+                Defined</firstterm> XML Schemas,</para>
+            <para><ulink url="&this-loc;/schemas/catalog.xml"
+                >&this-loc;/schemas/catalog.xml</ulink></para>
+        </listitem>
+        
+        <listitem>
+            <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced from those
+                modules.</para>
+        </listitem>
+    </orderedlist>
+    
+    
+    <xi:include href="../core/tree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    
+    <section>
+        <title>Support Schemas</title>
+        <para>Third party support schemas that are normatively referenced from this specification or
+            from the machine readable artifacts that are a part of this multipart product are
+            distributed along with the <firstterm>XLIFF-defined</firstterm> schemas in a subfolder named
+            <code>informativeCopiesOf3rdPartySchemas</code> and further subdivided in folders
+            according to the owner/maintainer of the schema.</para>
+        <warning>
+            <para>Schema copies in this sub-folder are provided solely for implementers convenience and
+                are NOT a part of the OASIS multipart product. These schemas belong to their respective
+                owners and their use is governed by their owners' respective IPR policies. The support
+                schemas are organized in folders per owner/maintainer. It is the implementer's sole
+                responsibility to ensure that their local copies of all schemas are the appropriate up to
+                date versions.</para>
+        </warning>
+        
+        <para>Currently the only included third party support schema is <ulink
+            url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink
+                url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>] at
+            <ulink url="&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd"
+                >&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
+            distribution.</para>
+    </section>
+</appendix>
+

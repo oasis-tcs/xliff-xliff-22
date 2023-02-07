@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+                         
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
+
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+]>
+<appendix role="informative" id="acknowledgements">
+    <title>Acknowledgements</title>
+    <para>The following individuals have participated in the creation of this specification and are
+        gratefully acknowledged:</para>
+    
+    <itemizedlist spacing="compact">
+        <listitem>
+            <para>Filip, David - TCD, ADAPT Centre (formerly Localisation Research Centre)</para>
+        </listitem>
+        <listitem>
+            <para>Morado Vázquez, Lucía - University of Geneva </para>
+        </listitem>
+        <listitem>
+            <para>Raya, Rodolfo M. - Individual </para>
+        </listitem>
+        <listitem>
+            <para>Schnabel, Bryan - Individual </para>
+        </listitem>
+        <listitem>
+            <para>Souto Pico, Manuel - cApStAn SA</para>
+        </listitem>
+        <listitem>
+            <para>Umaoka, Yoshito - IBM </para>
+        </listitem>
+    </itemizedlist>
+    
+</appendix>

@@ -71,10 +71,10 @@
 
     </authorgroup>
 
-    <pubdate>1 November 2022</pubdate>
+    <pubdate>7 February 2023</pubdate>
 
     <copyright>
-      <year>2022</year>
+      <year>2023</year>
       <holder>OASIS Open, Inc. All Rights Reserved.</holder>
     </copyright>
 
@@ -131,7 +131,7 @@
         <listitem>
           <para>urn:oasis:names:tc:xliff:resourcedata:2.0</para>
         </listitem>
-       
+
         <listitem>
           <para>urn:oasis:names:tc:xliff:sizerestriction:2.0</para>
         </listitem>
@@ -191,7 +191,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        1 November 2022. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        7 February 2023. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -200,7 +200,7 @@
     <legalnotice role="notices">
       <title>Notices</title>
 
-      <para>Copyright © OASIS Open 2022. All Rights Reserved.</para>
+      <para>Copyright © OASIS Open 2023. All Rights Reserved.</para>
 
       <para>All capitalized terms in the following text have the meanings assigned to them in the
         OASIS Intellectual Property Rights Policy (the "OASIS IPR Policy"). The full <ulink url="https://www.oasis-open.org/policies-guidelines/ipr">Policy</ulink> may be found at
@@ -3780,12 +3780,12 @@
     <section id="version">
     <title>version</title>
 
-    <para>XLIFF Version - is used to specify the Version of the <firstterm>XLIFF Document</firstterm>. This corresponds to
-        the Version number of the XLIFF specification that the <firstterm>XLIFF Document</firstterm> adheres to.</para>
+    <para>XLIFF Version - is used to specify the Version of the <firstterm>XLIFF
+            Document</firstterm>. This corresponds to the Version number of the XLIFF specification
+        that the <firstterm>XLIFF Document</firstterm> adheres to. For this specification, the
+        version is <emphasis>2.2</emphasis>.</para>
 
-    <para><emphasis>Value description:</emphasis> Text.</para>
-
-    <para><emphasis>Default value:</emphasis> undefined</para>
+    <para><emphasis>Value description:</emphasis> 2.0, 2.1 or 2.2</para>
 
     <para><emphasis>Used in:</emphasis> <link linkend="xliff"><code>&lt;xliff></code></link>.</para>
 
@@ -5998,17 +5998,19 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 
 </section>
 
+  
+  
   <appendix id="mediaType" role="normative">
     <title>Media Type Registration Template for XLIFF Version 2.0 and higher Versions</title>
     <para>This Appendix is based on the Committee Specification 01 of the <ulink url="http://docs.oasis-open.org/xliff/xliff-media/v2.0/cs01/xliff-media-v2.0-cs01.html">Media Type Registration Template for XLIFF Version 2.0</ulink> published on 22 September
-      2014, which is also the latest version of the Registration Template, as the TC decided to
-      merge the template (with some necessary editorial updates) with this XLIFF Version 2.2
-      specification. Additionally, the Security Considerations have been substantially expanded
-      based on an IESG Expert feedback, as per this archived conversation <ulink url="https://lists.oasis-open.org/archives/xliff/201502/msg00004.html">https://lists.oasis-open.org/archives/xliff/201502/msg00004.html</ulink>. XLIFF 2.1
-      was provisionally registered as <code>application/xliff+xml</code> in the <ulink url="https://www.iana.org/assignments/provisional-standard-media-types/provisional-standard-media-types.xhtml">IANA Provisional Standard Media Type Registry</ulink>.</para>
+        2014, which is also the latest version of the Registration Template, as the TC decided to
+        merge the template (with some necessary editorial updates) with this XLIFF Version 2.2
+        specification. Additionally, the Security Considerations have been substantially expanded
+        based on an IESG Expert feedback, as per this archived conversation <ulink url="https://lists.oasis-open.org/archives/xliff/201502/msg00004.html">https://lists.oasis-open.org/archives/xliff/201502/msg00004.html</ulink>. XLIFF 2.1
+        was provisionally registered as <code>application/xliff+xml</code> in the <ulink url="https://www.iana.org/assignments/provisional-standard-media-types/provisional-standard-media-types.xhtml">IANA Provisional Standard Media Type Registry</ulink>.</para>
     <para>This Appendix content will be used to seek final media type registration for XLIFF Version
-      2.1 and higher Versions (including this XLIFF Version 2.2). </para>
-
+        2.1 and higher Versions (including this XLIFF Version 2.2). </para>
+    
     <section id="mediaTypeTemplate">
     <title>Registration Template</title>
 
@@ -6054,7 +6056,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 1 November 2022 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
+                that was last published on 7 February 2023 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">
@@ -6208,41 +6210,40 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     </section>
 
 </section>
-
-  </appendix>
-
-  <appendix id="coreValidation" role="informative">
-    <title>Machine Readable Validation Artifacts</title>
-    <para>This appendix summarizes information on machine readable validation artifacts for XLIFF
-      Version 2.2<orderedlist continuation="restarts" inheritnum="ignore">
+    
+</appendix>
+  <appendix id="coreValidation" role="normative">
+    <title>XLIFF Grammar Files (Normative)</title>
+    <para>The basic grammar and structure of XLIFF 2.2 is defined using ten (10) XML Schemas
+        and one (1) XML catalog. The module schemas are specifically referenced from their respective
+        modules.</para>
+    
+    <orderedlist continuation="restarts" inheritnum="ignore">
         <listitem id="CoreSchema">
-          <para><firstterm>XLIFF Core</firstterm>
-            <link linkend="XMLSchema">[XML Schema]</link>,</para>
-          <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink></para>
-          
+            <para><firstterm>XLIFF Core</firstterm>
+                <link linkend="XMLSchema">[XML Schema]</link>,</para>
+            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink></para>
+            
         </listitem>
         <listitem id="XLIFFCatalog">
-          <para><link linkend="XMLCatalogs">[XML Catalog]</link> of <firstterm>XLIFF
-            Defined</firstterm> XML Schemas,</para>
-          <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml</ulink></para>
+            <para><link linkend="XMLCatalogs">[XML Catalog]</link> of <firstterm>XLIFF
+                Defined</firstterm> XML Schemas,</para>
+            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml</ulink></para>
         </listitem>
         
         <listitem>
-          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
-            from those modules.</para>
+            <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced from those
+                modules.</para>
         </listitem>
-      </orderedlist>
-    </para>
-    <para>The basic grammar and structure of XLIFF 2.2 is defined using ten (10) XML Schemas
-      and one (1) XML catalog. The module schemas are specifically referenced from their respective
-      modules.</para> 
+    </orderedlist>
+    
     
     <section id="schema_tree">
     <title>XML Schemas Tree</title>
 
 <programlisting format="linespecific">
     
-<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd"><code>Core XML Schema</code></ulink>
+<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd"><code>Core XML Schema</code></ulink>
     |
     +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
     |
@@ -6268,119 +6269,120 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 </section>
     
     <section>
-      <title>Support Schemas</title>
-      <para>Third party support schemas that are normatively referenced from this specification or
-        from the machine readable artifacts that are a part of this multipart product are
-        distributed along with the <firstterm>XLIFF-defined</firstterm> schemas in a subfolder named
-        <code>informativeCopiesOf3rdPartySchemas</code> and further subdivided in folders
-        according to the owner/maintainer of the schema.</para>
-      <warning>
-        <para>Schema copies in this sub-folder are provided solely for implementers convenience and
-          are NOT a part of the OASIS multipart product. These schemas belong to their respective
-          owners and their use is governed by their owners' respective IPR policies. The support
-          schemas are organized in folders per owner/maintainer. It is the implementer's sole
-          responsibility to ensure that their local copies of all schemas are the appropriate up to
-          date versions.</para>
-      </warning>
-      
-      <para>Currently the only included third party support schema is <ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>] at
-        <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
-        distribution.</para>
+        <title>Support Schemas</title>
+        <para>Third party support schemas that are normatively referenced from this specification or
+            from the machine readable artifacts that are a part of this multipart product are
+            distributed along with the <firstterm>XLIFF-defined</firstterm> schemas in a subfolder named
+            <code>informativeCopiesOf3rdPartySchemas</code> and further subdivided in folders
+            according to the owner/maintainer of the schema.</para>
+        <warning>
+            <para>Schema copies in this sub-folder are provided solely for implementers convenience and
+                are NOT a part of the OASIS multipart product. These schemas belong to their respective
+                owners and their use is governed by their owners' respective IPR policies. The support
+                schemas are organized in folders per owner/maintainer. It is the implementer's sole
+                responsibility to ensure that their local copies of all schemas are the appropriate up to
+                date versions.</para>
+        </warning>
+        
+        <para>Currently the only included third party support schema is <ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>] at
+            <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
+            distribution.</para>
     </section>
-    
-  </appendix>
-
+</appendix>
   <appendix id="specChangeTracking" role="informative">
     <title>Specification Change Tracking</title>
 
-    <section id="ChangeTrackWRT20">
-   <title>High Level Summary of Changes made in Comparison to XLIFF Version 2.1</title>
-   <para>This is to facilitate human tracking of changes between XLIFF Versions 2.2 and
-      2.1. </para>
+    <para>This is to facilitate human tracking of changes between XLIFF Versions 2.2 and
+        2.1. </para>
 
 
-   <orderedlist continuation="restarts" inheritnum="ignore">
-      
-      <listitem>
-         <para>Produced two versions of the specification: </para>
-         <simplelist type="vert">
-            <member><emphasis>Core</emphasis>: simplified version that does not include optional
-               modules.</member>
-            <member><emphasis>Extended</emphasis>: complete version, including all modules.</member>
-         </simplelist>
-      </listitem>
-      <listitem>
-         <para>Changed namespace for the core module to
-               <code>urn:oasis:names:tc:xliff:document:2.2</code></para>
-      </listitem>
-      <listitem>
-         <para>Added an optional <link linkend="ref"><code>ref</code></link> attribute to <link linkend="note"><code>&lt;note></code></link> element. Change approved on March
-               15<superscript>th</superscript>, 2022. See <ulink url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3690">https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3690</ulink></para>
-      </listitem>
-      <listitem>
-         <para>Changed the type of <link linkend="version"><code>version</code></link> attribute to an enumeration containing 2.0, 2.1 and
-            2.2 as valid values.</para>
-      </listitem>
-      <listitem>
-         <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
-            August 2<superscript>nd</superscript>, 2022.</para>
-      </listitem>
-      <listitem>
-         <para>Allowed an optional <remark><code>&lt;mda:metadata></code></remark> element at the start of
-               <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
-            August 2<superscript>nd</superscript>, 2022.</para>
-      </listitem>
-      <listitem>
-         <para>Removed references to Schematron, NVDL and Test Suite from this specification. Change
-            approved on September 20<superscript>th</superscript>, 2022. See <ulink url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727">https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3727</ulink>.</para>
+    <orderedlist continuation="restarts" inheritnum="ignore">
+        
+        <listitem>
+            <para>Produced two versions of the specification: </para>
+            <simplelist type="vert">
+                <member><emphasis>Core</emphasis>: simplified version that does not include optional
+                    modules.</member>
+                <member><emphasis>Extended</emphasis>: complete version, including all
+                    modules.</member>
+            </simplelist>
+        </listitem>
+        <listitem>
+            <para>Changed namespace for the core module to
+                    <code>urn:oasis:names:tc:xliff:document:2.2</code></para>
+        </listitem>
+        <listitem>
+            <para>Added an optional <link linkend="ref"><code>ref</code></link> attribute to <link linkend="note"><code>&lt;note></code></link> element. Change approved on March
+                    15<superscript>th</superscript>, 2022.</para>
+        </listitem>
+        <listitem>
+            <para>Changed the type of <link linkend="version"><code>version</code></link> attribute to an enumeration
+                containing 2.0, 2.1 and 2.2 as valid values.</para>
+        </listitem>
+        <listitem>
+            <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
+                August 2<superscript>nd</superscript>, 2022.</para>
+        </listitem>
+        <listitem>
+            <para>Allowed an optional <remark><code>&lt;mda:metadata></code></remark> element at the start
+                of <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
+                August 2<superscript>nd</superscript>, 2022.</para>
+        </listitem>
+        <listitem>
+            <para>Removed references to Schematron, NVDL and Test Suite from this specification.
+                Change approved on September 20<superscript>th</superscript>, 2022.</para>
 
-      </listitem>
-      <listitem>
-         <para>Removed the informative Change Tracking Extension. Change approved on November
-               2<superscript>nd</superscript>, 2022. See <ulink url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731">https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731</ulink>.</para>
-      </listitem>
-   </orderedlist>
-   <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
-      practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
-      the changes have affected the core namespace
-         <code>"urn:oasis:names:tc:xliff:document:2.0"</code> or the <firstterm>XLIFF
-         Core</firstterm>
-      <link linkend="XMLSchema">[XML Schema]</link>, <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink> that expresses its basic grammar
-      and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes
-      introduced in version 2.2 are designed to preserve compatibility with versions 2.0 and
-      2.1.</para>
-   <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21">https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
-</section>
-    
-  </appendix>
-
+        </listitem>
+        <listitem>
+            <para>Removed the informative Change Tracking Extension. Change approved on November
+                    2<superscript>nd</superscript>, 2022.</para>
+        </listitem>
+        <listitem>
+            <para>Renamed Appendix B to "XLIFF Grammar Files (Normative)". Change approved on
+                January 3<superscript>rd</superscript>, 2023.</para>
+        </listitem>
+        <listitem>
+            <para>Clarified values for <link linkend="version"><code>version</code></link> attribute. Change approved on
+                January 17<superscript>th</superscript>, 2023.</para>
+        </listitem>
+    </orderedlist>
+    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
+        practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
+        the changes have affected the core namespace
+            <code>"urn:oasis:names:tc:xliff:document:2.0"</code> or the <firstterm>XLIFF
+            Core</firstterm>
+        <link linkend="XMLSchema">[XML Schema]</link>, <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink> that expresses its basic
+        grammar and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The
+        changes introduced in version 2.2 are designed to preserve compatibility with versions 2.0
+        and 2.1.</para>
+    <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21">https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
+</appendix>
   <appendix id="acknowledgements" role="informative">
     <title>Acknowledgements</title>
     <para>The following individuals have participated in the creation of this specification and are
-      gratefully acknowledged:</para>
-
+        gratefully acknowledged:</para>
+    
     <itemizedlist spacing="compact">
-      <listitem>
-        <para>Filip, David - TCD, ADAPT Centre (formerly Localisation Research Centre)</para>
-      </listitem>
-      <listitem>
-        <para>Morado Vázquez, Lucía - University of Geneva </para>
-      </listitem>
-      <listitem>
-        <para>Raya, Rodolfo M. - Individual </para>
-      </listitem>
-      <listitem>
-        <para>Schnabel, Bryan - Individual </para>
-      </listitem>
-      <listitem>
-        <para>Souto Pico, Manuel - cApStAn SA</para>
-      </listitem>
-      <listitem>
-        <para>Umaoka, Yoshito - IBM </para>
-      </listitem>
+        <listitem>
+            <para>Filip, David - TCD, ADAPT Centre (formerly Localisation Research Centre)</para>
+        </listitem>
+        <listitem>
+            <para>Morado Vázquez, Lucía - University of Geneva </para>
+        </listitem>
+        <listitem>
+            <para>Raya, Rodolfo M. - Individual </para>
+        </listitem>
+        <listitem>
+            <para>Schnabel, Bryan - Individual </para>
+        </listitem>
+        <listitem>
+            <para>Souto Pico, Manuel - cApStAn SA</para>
+        </listitem>
+        <listitem>
+            <para>Umaoka, Yoshito - IBM </para>
+        </listitem>
     </itemizedlist>
-
-  </appendix>
-
+    
+</appendix>
 
 </article>

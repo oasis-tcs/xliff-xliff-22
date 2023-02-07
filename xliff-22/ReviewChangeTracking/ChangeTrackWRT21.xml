@@ -69,6 +69,19 @@
                url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731"
                >https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3731</ulink>.</para>
       </listitem>
+      <listitem>
+         <para>Renamed Appendix B to "XLIFF Grammar Files (Normative)". Change approved on January
+               3<superscript>rd</superscript>, 2023. See <ulink
+               url="https://lists.oasis-open.org/archives/xliff/202301/msg00000.html"
+               >https://lists.oasis-open.org/archives/xliff/202301/msg00000.html</ulink>.</para>
+      </listitem>
+      <listitem>
+         <para>Clarified values for <olink targetdoc="../attributes/version.xml" targetptr="version"
+                  ><code>version</code></olink> attribute. Change approved on January
+               17<superscript>th</superscript>, 2023. See <ulink
+               url="https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3745"
+               >https://www.oasis-open.org/apps/org/workgroup/xliff/ballot.php?id=3745</ulink></para>
+      </listitem>
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
       practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of

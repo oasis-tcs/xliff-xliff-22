@@ -161,7 +161,7 @@
         <listitem>
           <para>urn:oasis:names:tc:xliff:resourcedata:&bschversion;</para>
         </listitem>
-       
+
         <listitem>
           <para>urn:oasis:names:tc:xliff:sizerestriction:&bschversion;</para>
         </listitem>
@@ -315,122 +315,11 @@
 
   <xi:include href="core/core.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <appendix role="normative" id="mediaType">
-    <title>Media Type Registration Template for XLIFF Version 2.0 and higher Versions</title>
-    <para>This Appendix is based on the Committee Specification 01 of the <ulink
-        url="http://docs.oasis-open.org/xliff/xliff-media/v2.0/cs01/xliff-media-v2.0-cs01.html"
-        >Media Type Registration Template for XLIFF Version 2.0</ulink> published on 22 September
-      2014, which is also the latest version of the Registration Template, as the TC decided to
-      merge the template (with some necessary editorial updates) with this XLIFF Version &version;
-      specification. Additionally, the Security Considerations have been substantially expanded
-      based on an IESG Expert feedback, as per this archived conversation <ulink
-        url="https://lists.oasis-open.org/archives/xliff/201502/msg00004.html"
-        >https://lists.oasis-open.org/archives/xliff/201502/msg00004.html</ulink>. XLIFF &pversion;
-      was provisionally registered as <code>application/xliff+xml</code> in the <ulink
-        url="https://www.iana.org/assignments/provisional-standard-media-types/provisional-standard-media-types.xhtml"
-        >IANA Provisional Standard Media Type Registry</ulink>.</para>
-    <para>This Appendix content will be used to seek final media type registration for XLIFF Version
-      &pversion; and higher Versions (including this XLIFF Version &version;). </para>
-
-    <xi:include href="mediaType/mediaType.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-  </appendix>
-
-  <appendix role="informative" id="coreValidation">
-    <title>Machine Readable Validation Artifacts</title>
-    <para>This appendix summarizes information on machine readable validation artifacts for XLIFF
-      Version &version;<orderedlist>
-        <listitem id="CoreSchema">
-          <para><firstterm>XLIFF Core</firstterm>
-            <link linkend="XMLSchema">[XML Schema]</link>,</para>
-          <para><ulink url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
-            >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink></para>
-          
-        </listitem>
-        <listitem id="XLIFFCatalog">
-          <para><link linkend="XMLCatalogs">[XML Catalog]</link> of <firstterm>XLIFF
-            Defined</firstterm> XML Schemas,</para>
-          <para><ulink url="&this-loc;/schemas/catalog.xml"
-            >&this-loc;/schemas/catalog.xml</ulink></para>
-        </listitem>
-        
-        <listitem>
-          <para>XML Schemas of <firstterm>XLIFF Modules</firstterm> are referenced
-            from those modules.</para>
-        </listitem>
-      </orderedlist>
-    </para>
-    <para>The basic grammar and structure of XLIFF &version; is defined using ten (10) XML Schemas
-      and one (1) XML catalog. The module schemas are specifically referenced from their respective
-      modules.</para> 
-    
-    <xi:include href="core/tree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    
-    <section>
-      <title>Support Schemas</title>
-      <para>Third party support schemas that are normatively referenced from this specification or
-        from the machine readable artifacts that are a part of this multipart product are
-        distributed along with the <firstterm>XLIFF-defined</firstterm> schemas in a subfolder named
-        <code>informativeCopiesOf3rdPartySchemas</code> and further subdivided in folders
-        according to the owner/maintainer of the schema.</para>
-      <warning>
-        <para>Schema copies in this sub-folder are provided solely for implementers convenience and
-          are NOT a part of the OASIS multipart product. These schemas belong to their respective
-          owners and their use is governed by their owners' respective IPR policies. The support
-          schemas are organized in folders per owner/maintainer. It is the implementer's sole
-          responsibility to ensure that their local copies of all schemas are the appropriate up to
-          date versions.</para>
-      </warning>
-      
-      <para>Currently the only included third party support schema is <ulink
-        url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink
-          url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>] at
-        <ulink url="&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd"
-          >&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
-        distribution.</para>
-    </section>
-    
-  </appendix>
-
-  <appendix role="informative" id="specChangeTracking">
-    <title>Specification Change Tracking</title>
-
-    <xi:include href="ReviewChangeTracking/ChangeTrackWRT21.xml"
-      xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <!--  This appendix will further contain tracked changes after the csprd01 phase will have been
-      
-    <xi:include href="ReviewChangeTracking/ReviewChangeTrack.xml"
-      xmlns:xi="http://www.w3.org/2001/XInclude"/>
-      reached.-->
-  </appendix>
-
-  <appendix role="informative" id="acknowledgements">
-    <title>Acknowledgements</title>
-    <para>The following individuals have participated in the creation of this specification and are
-      gratefully acknowledged:</para>
-
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>Filip, David - TCD, ADAPT Centre (formerly Localisation Research Centre)</para>
-      </listitem>
-      <listitem>
-        <para>Morado Vázquez, Lucía - University of Geneva </para>
-      </listitem>
-      <listitem>
-        <para>Raya, Rodolfo M. - Individual </para>
-      </listitem>
-      <listitem>
-        <para>Schnabel, Bryan - Individual </para>
-      </listitem>
-      <listitem>
-        <para>Souto Pico, Manuel - cApStAn SA</para>
-      </listitem>
-      <listitem>
-        <para>Umaoka, Yoshito - IBM </para>
-      </listitem>
-    </itemizedlist>
-
-  </appendix>
-
+  <!-- Appendices -->
+  
+  <xi:include href="appendices/mediaType.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="appendices/grammars.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="appendices/changeTracking.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="appendices/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 </article>

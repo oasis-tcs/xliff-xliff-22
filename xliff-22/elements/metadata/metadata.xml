@@ -4,26 +4,27 @@
                          <!ENTITY % xinclude SYSTEM "../../docbook/xinclude.mod" >
                          %xinclude;
                          <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED" >
+                         <!ENTITY % base SYSTEM "../../docbook/dbgenent.mod">
+                        %base;
                          ]>
 <section id="metadata">
-    <title>metadata</title>
-    <para>Container for metadata associated with the enclosing element.</para>
-   <para><emphasis>Contains:</emphasis></para>
-   <simplelist>
-      <member>- One or more <olink targetdoc="metagroup.xml" targetptr="metagroup"
-               ><code>&lt;metaGroup></code></olink> elements</member>
-   </simplelist>
- <para><emphasis>Attributes:</emphasis></para>
-    <simplelist>
-	     <member>- <olink targetdoc="../../attributes/meta_id.xml" targetptr="meta_id"><code>id</code></olink>,
-                <glossterm>OPTIONAL</glossterm></member>
+  <title>metadata</title>
+  <para>Container for metadata associated with the enclosing element.</para>
+  <para><emphasis>Contains:</emphasis></para>
+  <simplelist>
+    <member>- One or more <olink targetdoc="metagroup.xml" targetptr="metagroup"
+          ><code>&lt;metaGroup></code></olink> elements</member>
+  </simplelist>
+  <para><emphasis>Attributes:</emphasis></para>
+  <simplelist>
+    <member>- <olink targetdoc="../../attributes/meta_id.xml" targetptr="meta_id"
+        ><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
   </simplelist>
-    <para><emphasis>Example:</emphasis> Metadata can be used to store XML attribute names and values
-      for <firstterm>XLIFF Documents</firstterm> that do not use a skeleton. The following XML
-      sample contains attributes on the<code> &lt;document></code> and <code>&lt;row></code>
-      elements.</para>
-    <programlisting>
+  <para><emphasis>Example:</emphasis> Metadata can be used to store XML attribute names and values
+    for <firstterm>XLIFF Documents</firstterm> that do not use a skeleton. The following XML sample
+    contains attributes on the<code> &lt;document></code> and <code>&lt;row></code> elements.</para>
+  <programlisting>
 &lt;document version="3" phase="draft">
   &lt;table>
     &lt;row style="head">
@@ -41,9 +42,9 @@
   &lt;/table>
 &lt;/document>
 </programlisting>
-    <para>The Metadata module can be used to preserve these attributes for a round trip without
-      using a skeleton:</para>
-    <programlisting>
+  <para>The Metadata module can be used to preserve these attributes for a round trip without using
+    a skeleton:</para>
+  <programlisting>
 &lt;?xml version="1.0" encoding="utf-8"?>
 &lt;xliff xmlns="urn:oasis:names:tc:xliff:document:&version;"
     xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
