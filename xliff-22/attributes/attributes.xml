@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
 <!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
 %xinclude;
 <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
@@ -13,7 +15,8 @@
   <section>
     <title>XLIFF Attributes</title>
 
-    <para>The attributes defined in XLIFF 2.0 are: <olink targetdoc="appliesto.xml"
+    <para>The attributes defined in XLIFF &version; are: 
+      <olink targetdoc="appliesto.xml"
       targetptr="appliesto"><code>appliesTo</code></olink>,
       <!-- This falg got killed in the August 20 2013 meeting <olink targetdoc="approved.xml"
         targetptr="approved"><code>approved</code></olink>,-->
@@ -217,7 +220,7 @@
   <section>
     <title>XML namespace</title>
 
-    <para>The attributes from XML namespace used in XLIFF 2.0 are: <olink
+    <para>The attributes from XML namespace used in XLIFF &version; are: <olink
     targetdoc="xml_lang.xml" targetptr="xml_lang">xml:lang</olink> and <olink
     targetdoc="xml_space.xml" targetptr="xml_space">xml:space</olink>.</para>
 

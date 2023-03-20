@@ -8,9 +8,9 @@
 <section id="href">
     <title>href</title>
     
-    <para>href - a pointer to the location of an external skeleton file pertaining to the
-        enclosing <olink targetdoc="../elements/structural/file.xml" targetptr="file"
-                ><code>&lt;file></code></olink> element..</para>
+    <para>Hyperlink reference - a pointer to the location of an external skeleton file pertaining to
+        the enclosing <olink targetdoc="../elements/structural/file.xml" targetptr="file"
+                ><code>&lt;file></code></olink> element.</para>
     
     <para><emphasis>Value description:</emphasis> IRI.</para>
         

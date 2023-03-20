@@ -125,5 +125,5 @@
       translation is the <firstterm>Core</firstterm>
       <olink targetptr="translateAnnotation">Translate Annotation</olink>. See also discussion in
       the <olink targetptr="Translate_Inline">ITS Module section on representing translatability
-        inline.</olink>. </para></note>
+        inline</olink>. </para></note>
 </section>

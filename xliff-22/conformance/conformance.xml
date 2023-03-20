@@ -27,7 +27,7 @@
                     <para>Conformant <firstterm>XLIFF Documents</firstterm>
                         <glossterm>MUST</glossterm> be valid instances of the official Core XML
                         Schema (<ulink url="&this-loc;/schemas/xliff_core_&version;.xsd"
-                            >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink>) that is a part
+                            >&this-loc;/schemas/xliff_core_2.2.xsd</ulink>) that is a part
                         of this multipart Work Product.</para>
                 </listitem>
                 <listitem>
@@ -112,7 +112,7 @@
                 <title> Backwards Compatibility</title>
                 <listitem>
                     <para>Conformant applications are <glossterm>REQUIRED</glossterm> to support
-                        XLIFF &pversion;.</para>
+                        XLIFF 2.0 and 2.1.</para>
                 </listitem>
                 <listitem>
                     <para>Conformant applications are NOT <glossterm>REQUIRED</glossterm> to support

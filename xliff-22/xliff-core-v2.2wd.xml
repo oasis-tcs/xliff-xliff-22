@@ -71,7 +71,7 @@
 
     </authorgroup>
 
-    <pubdate>7 February 2023</pubdate>
+    <pubdate>20 March 2023</pubdate>
 
     <copyright>
       <year>2023</year>
@@ -191,7 +191,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and David Filip.
-        7 February 2023. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        20 March 2023. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -697,7 +697,7 @@
 
                     <para>Conformant <firstterm>XLIFF Documents</firstterm>
                         <glossterm>MUST</glossterm> be valid instances of the official Core XML
-                        Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink>) that is a part
+                        Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd</ulink>) that is a part
                         of this multipart Work Product.</para>
                 </listitem>
                 <listitem>
@@ -781,7 +781,7 @@
                 <title> Backwards Compatibility</title>
                 <listitem>
                     <para>Conformant applications are <glossterm>REQUIRED</glossterm> to support
-                        XLIFF 2.1.</para>
+                        XLIFF 2.0 and 2.1.</para>
                 </listitem>
                 <listitem>
                     <para>Conformant applications are NOT <glossterm>REQUIRED</glossterm> to support
@@ -1830,7 +1830,7 @@
       translatable inline content. The preferred way of protecting portions of inline content from
       translation is the <firstterm>Core</firstterm>
       <link linkend="translateAnnotation">Translate Annotation</link>. See also discussion in
-      the <remark>ITS Module section on representing translatability        inline.</remark>. </para></note>
+      the <remark>ITS Module section on representing translatability        inline</remark>. </para></note>
 </section>
 
     <section id="pc">
@@ -2417,7 +2417,8 @@
   <section>
     <title>XLIFF Attributes</title>
 
-    <para>The attributes defined in XLIFF 2.0 are: <link linkend="appliesto"><code>appliesTo</code></link>,
+    <para>The attributes defined in XLIFF 2.2 are: 
+      <link linkend="appliesto"><code>appliesTo</code></link>,
       
       <link linkend="cancopy"><code>canCopy</code></link>,
       <link linkend="candelete"><code>canDelete</code></link>,
@@ -3056,8 +3057,8 @@
     <section id="href">
     <title>href</title>
     
-    <para>href - a pointer to the location of an external skeleton file pertaining to the
-        enclosing <link linkend="file"><code>&lt;file></code></link> element..</para>
+    <para>Hyperlink reference - a pointer to the location of an external skeleton file pertaining to
+        the enclosing <link linkend="file"><code>&lt;file></code></link> element.</para>
     
     <para><emphasis>Value description:</emphasis> IRI.</para>
         
@@ -3691,7 +3692,10 @@
     element in which it is used.</para>
   <itemizedlist>
     <listitem>
-      <para>When used in <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link> or <link linkend="ph">                  </link>:</para>
+      <para>When used in <link linkend="pc"><code>&lt;pc></code></link>, 
+        <link linkend="sc"><code>&lt;sc></code></link>, 
+        <link linkend="ec"><code>&lt;ec></code></link> or 
+        <link linkend="ph"><code>&lt;ph></code></link>:</para>
       <para>The value  <glossterm>MUST</glossterm> be set to one of the following values:</para>
       <simplelist type="vert">
         <member><code>fmt</code> - Formatting (e.g. a &lt;b> element in HTML)</member>
@@ -3718,7 +3722,8 @@
       <para><emphasis>Default value:</emphasis> Undefined</para>
     </listitem>
     <listitem>
-      <para>When used in <link linkend="mrk">                  </link> or <link linkend="sm">                  </link>:</para>
+      <para>When used in <link linkend="mrk"><code>&lt;mrk></code></link> or 
+        <link linkend="sm"><code>&lt;sm></code></link>:</para>
       <para>One of the following values: <code>generic</code>, <code>comment</code>,
           <code>term</code>, or a user-defined value that is composed of a prefix and a sub-value
         separated by a character <code>:</code> (U+003A).</para>
@@ -3727,7 +3732,8 @@
       <para><emphasis>Default value:</emphasis> <code>generic</code></para>
     </listitem>
     <listitem>
-      <para>When used in <link linkend="group">                  </link> or <link linkend="unit">                  </link>:</para>
+      <para>When used in <link linkend="group"><code>&lt;group></code></link> or 
+        <link linkend="unit"><code>&lt;unit></code></link>:</para>
       <para>A value that is composed of a prefix and a sub-value
         separated by a character <code>:</code> (U+003A).</para>
       <para>The prefix is a string uniquely identifying a collection of sub-values for a specific authority.
@@ -3735,15 +3741,23 @@
       <para><emphasis>Default value:</emphasis> Undefined</para>
     </listitem>
   </itemizedlist>
-  <para><emphasis>Used in:</emphasis> <link linkend="group">          </link>, <link linkend="unit">          </link>, <link linkend="pc">          </link>, <link linkend="sc">          </link>, <link linkend="ec">          </link>, <link linkend="mrk">          </link>,  <link linkend="ph">          </link> and <link linkend="sm">          </link>.</para>
+  <para><emphasis>Used in:</emphasis> <link linkend="group"><code>&lt;group></code></link>, 
+    <link linkend="unit"><code>&lt;unit></code></link>, 
+    <link linkend="pc"><code>&lt;pc></code></link>, 
+    <link linkend="sc"><code>&lt;sc></code></link>, 
+    <link linkend="ec"><code>&lt;ec></code></link>, 
+    <link linkend="mrk"><code>&lt;mrk></code></link>,  
+    <link linkend="ph"><code>&lt;ph></code></link> and 
+    <link linkend="sm"><code>&lt;sm></code></link>.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Modifiers</firstterm> updating the attribute <link linkend="type">
-          <code>type</code>
-        </link> on <link linkend="pc">                  </link>, <link linkend="sc">                  </link>, <link linkend="ec">                  </link>, or
-          <link linkend="ph">                  </link>
-        <glossterm>MUST</glossterm> also update or delete <link linkend="subtype">                  </link>.</para>
+      <para><firstterm>Modifiers</firstterm> updating the attribute <link linkend="type"><code>type</code></link> on 
+        <link linkend="pc"><code>&lt;pc></code></link>, 
+        <link linkend="sc"><code>&lt;sc></code></link>, 
+        <link linkend="ec"><code>&lt;ec></code></link>, or
+          <link linkend="ph"><code>&lt;ph></code></link>
+        <glossterm>MUST</glossterm> also update or delete <link linkend="subtype"><code>subType</code></link>.</para>
     </listitem>
   </itemizedlist>
 </section>
@@ -3795,7 +3809,7 @@
   <section>
     <title>XML namespace</title>
 
-    <para>The attributes from XML namespace used in XLIFF 2.0 are: <link linkend="xml_lang">xml:lang</link> and <link linkend="xml_space">xml:space</link>.</para>
+    <para>The attributes from XML namespace used in XLIFF 2.2 are: <link linkend="xml_lang">xml:lang</link> and <link linkend="xml_space">xml:space</link>.</para>
 
     <section id="xml_lang">
     <title>xml:lang</title>
@@ -6056,7 +6070,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
             <para><emphasis role="emphasis">Published specification:</emphasis></para>
             <para>XLIFF Version 2.1 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html</ulink>
                 will be superseded by XLIFF Version 2.2 (OASIS Standard) <ulink url="http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html">http://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</ulink>
-                that was last published on 7 February 2023 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
+                that was last published on 20 March 2023 in the Specification Draft (wd) stage at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink> and is backwards
                 compatible with XLIFF Version 2.1.</para>
         </listitem>
         <listitem id="Applications_that_use_this">
