@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
 <!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
 %xinclude;
 <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
 ]>
 <section id="extensions">
     <title>Extension Mechanisms</title>
-    <para>XLIFF 2.0 offers two mechanisms for storing custom data in an XLIFF document:</para>
+    <para>XLIFF &version; offers two mechanisms for storing custom data in an XLIFF document:</para>
     <orderedlist>
         <listitem>
             <para>Using the <olink targetdoc="../modules/metadata/metadata.xml" targetptr="metadata_module">Metadata 

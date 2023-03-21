@@ -5931,7 +5931,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 </section>
     <section id="extensions">
     <title>Extension Mechanisms</title>
-    <para>XLIFF 2.0 offers two mechanisms for storing custom data in an XLIFF document:</para>
+    <para>XLIFF 2.2 offers two mechanisms for storing custom data in an XLIFF document:</para>
     <orderedlist continuation="restarts" inheritnum="ignore">
         <listitem>
             <para>Using the <remark>Metadata                 module</remark> for storing custom data in elements defined by the official XLIFF 
