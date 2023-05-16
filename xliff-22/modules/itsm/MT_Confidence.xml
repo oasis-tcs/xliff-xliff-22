@@ -36,7 +36,7 @@
     <example>
       <title>MT Confidence as Translation Candidates metadata</title>
       <programlisting>
-&lt;xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.2"
+&lt;xliff version="2.2" xmlns="urn:oasis:names:tc:xliff:document:2.2"
     xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
     xmlns:its="http://www.w3.org/2005/11/its" its:version="2.2"
     srcLang="en" trgLang="fr">

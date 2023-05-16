@@ -48,15 +48,6 @@
 
     <authorgroup>
       <othercredit role="chair">
-        <firstname>Bryan</firstname>
-        <surname>Schnabel</surname>
-        <affiliation>
-          <orgname>Individual</orgname>
-          <address format="linespecific"><email>bschnabel@bschnabel.com</email></address>
-        </affiliation>
-        <email>bschnabel@bschnabel.com</email>
-      </othercredit>
-      <othercredit role="chair">
         <firstname>Lucía</firstname>
         <surname>Morado Vázquez</surname>
         <affiliation>
@@ -65,7 +56,15 @@
         </affiliation>
         <email>lucia.morado@unige.ch</email>
       </othercredit>
-
+      <othercredit role="chair">
+        <firstname>Yoshito</firstname>
+        <surname>Umaoka</surname>
+        <affiliation>
+          <orgname>IBM</orgname>
+          <address format="linespecific"><email>yoshito_umaoka@us.ibm.com</email></address>
+        </affiliation>
+        <email>yoshito_umaoka@us.ibm.com</email>
+      </othercredit>
       <editor>
         <firstname>Rodolfo M.</firstname>
         <surname>Raya</surname>
@@ -75,18 +74,6 @@
         </affiliation>
         <email>rmraya@maxprograms.com</email>
       </editor>
-
-      <editor>
-        <firstname>David</firstname>
-        <surname>Filip</surname>
-        <affiliation>
-          <orgname><ulink url="http://www.adaptcentre.ie/">Trinity College Dublin
-            (ADAPT)</ulink></orgname>
-          <address format="linespecific"><email>david.filip@adaptcentre.ie</email></address>
-        </affiliation>
-        <email>david.filip@adaptcentre.ie</email>
-      </editor>
-
     </authorgroup>
 
 
@@ -232,7 +219,7 @@
 
       <para><citation>XLIFF-&version;</citation></para>
 
-      <para><emphasis>XLIFF Version &version;</emphasis>. Edited by Rodolfo M. Raya and David Filip.
+      <para><emphasis>XLIFF Version &version;</emphasis>. Edited by Rodolfo M. Raya.
         &pubdate;. &standard;. <ulink url="&this-loc;/&name;-&stage;.html"
           >&this-loc;/&name;-&stage;.html</ulink>. Latest version: <ulink
           url="&latest-loc;/&name;.html">&latest-loc;/&name;.html</ulink>. </para>

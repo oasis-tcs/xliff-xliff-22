@@ -271,7 +271,7 @@
 
             <listitem>
               <para>Any XML document that declares the namespace
-                  <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code> as its main
+                  <code>"urn:oasis:names:tc:xliff:document:&version;"</code> as its main
                 namespace, has <olink targetdoc="elements/structural/xliff.xml" targetptr="xliff"
                     ><code>&lt;xliff></code></olink> as the root element and complies with the XML
                 Schemas and the declared Constraints that are part of this specification.</para>
