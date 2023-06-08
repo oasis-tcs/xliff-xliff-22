@@ -11550,6 +11550,7 @@ backslash (<code>\</code>).</para>
           xmlns:h="http://www.w3.org/1999/xhtml">
         &lt;its:externalResourceRefRule selector="//h:img"
             externalResourceRefPointer="@src"/>
+        &lt;its:translateRule selector="//h:*/@alt" translate="yes"/>
       &lt;/its:rules>
     &lt;/script>
   &lt;/head>
@@ -11565,6 +11566,11 @@ backslash (<code>\</code>).</para>
 
     <programlisting format="linespecific">
 &lt;unit id="1">
+  &lt;segment>
+    &lt;source>Text for the image&lt;/source>
+  &lt;/segment>
+&lt;/unit>
+&lt;unit id="2">
   &lt;res:resourceData>
     &lt;res:resourceItem id="r1" mimeType="image/png" context="no">
       &lt;res:source href="example.png" />
@@ -11572,7 +11578,7 @@ backslash (<code>\</code>).</para>
   &lt;/res:resourceData>
   &lt;segment>
     &lt;source>Image: &lt;ph id="ph1" fs="img"
-        subFs="src,example.png\alt,Text for the image" />&lt;/source>
+        subFs="src,example.png" subFlows="1"/>&lt;/source>
   &lt;/segment>
 &lt;/unit>
 </programlisting>
