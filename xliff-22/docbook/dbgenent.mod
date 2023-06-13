@@ -52,7 +52,7 @@
 <!ENTITY this-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&stage;">
 <!ENTITY previous-loc "https://docs.oasis-open.org/xliff/xliff-core/v&pversion;/&pstage;">
 <!ENTITY latest-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;">
-<!ENTITY pubdate "16 May &pubyear;">
+<!ENTITY pubdate "13 June &pubyear;">
 <!ENTITY pubyear "2023">
 <!ENTITY releaseinfo "Standards Track Work Product">
 <!-- End of XLIFF V2.x publishing entities -->

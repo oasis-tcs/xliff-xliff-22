@@ -1,4 +1,3 @@
 .DS_Store
 *.xpr
 xliff-22/out
-xliff-22/lib/saxon*
