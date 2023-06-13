@@ -3962,6 +3962,7 @@ backslash (<code class="code">\</code>).</p></li><li><p>If the attribute <a href
           xmlns:h="http://www.w3.org/1999/xhtml"&gt;
         &lt;its:externalResourceRefRule selector="//h:img"
             externalResourceRefPointer="@src"/&gt;
+        &lt;its:translateRule selector="//h:*/@alt" translate="yes"/&gt;
       &lt;/its:rules&gt;
     &lt;/script&gt;
   &lt;/head&gt;
@@ -3971,6 +3972,11 @@ backslash (<code class="code">\</code>).</p></li><li><p>If the attribute <a href
 &lt;/html&gt;
  </pre><p>Extraction:</p><pre class="programlisting">
 &lt;unit id="1"&gt;
+  &lt;segment&gt;
+    &lt;source&gt;Text for the image&lt;/source&gt;
+  &lt;/segment&gt;
+&lt;/unit&gt;
+&lt;unit id="2"&gt;
   &lt;res:resourceData&gt;
     &lt;res:resourceItem id="r1" mimeType="image/png" context="no"&gt;
       &lt;res:source href="example.png" /&gt;
@@ -3978,7 +3984,7 @@ backslash (<code class="code">\</code>).</p></li><li><p>If the attribute <a href
   &lt;/res:resourceData&gt;
   &lt;segment&gt;
     &lt;source&gt;Image: &lt;ph id="ph1" fs="img"
-        subFs="src,example.png\alt,Text for the image" /&gt;&lt;/source&gt;
+        subFs="src,example.png" subFlows="1"/&gt;&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;
 </pre></div></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h5 class="title"><a name="Preserve_Space"></a>5.8.8.3 Preserve Space</h5></div></div></div><p>Indicates how to handle whitespace in a given content portion. See
