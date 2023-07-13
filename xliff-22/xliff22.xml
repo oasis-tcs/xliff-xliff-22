@@ -329,6 +329,7 @@
     <!-- 2.1 modules -->
     <xi:include href="modules/itsm/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <!-- 2.2 and 2.n+1 modules -->
+    <xi:include href="modules/plural_gender_select/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </section>
 
   <!-- Appendices -->

@@ -23,17 +23,17 @@
 
   <para><emphasis>Example:</emphasis> <programlisting>&lt;group id="g1" <emphasis
         role="bold">pgs:switch="plural:count gender:host_gender"</emphasis>&gt;
-   &lt;unit id="tu1" pgs:case="1 feminine"&gt;...&lt;/unit&gt;
+   &lt;unit id="tu1" <emphasis role="bold">pgs:case="1 feminine"</emphasis>&gt;...&lt;/unit&gt;
 &lt;/group&gt;</programlisting></para>
 
   <para><emphasis>Constraints:</emphasis> the number of comma-separated items
-  (variables) in the <code>switch</code> attribute of the group MUST match the
-  number of comma-separated values in the <code>case</code> attribute.</para>
+  (variables) in the <code>switch</code> attribute of the group <glossterm>MUST</glossterm>
+  match the number of comma-separated values in the <code>case</code> attribute.</para>
 
   <para>Also, each value in case should also match the type of selector in the
   <code>switch</code> attribute.</para>
 
-  <para><emphasis>Valid “matching”:</emphasis> <itemizedlist>
+  <para><emphasis>Valid matching:</emphasis> <itemizedlist>
       <listitem>
         <para><code>plural</code> and <code>ordinal</code>: a
         <emphasis>numeric_value</emphasis> or a
@@ -56,7 +56,7 @@
         <code>masculine</code>, <code>other</code>, anything else (to handle
         languages with <ulink
         url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#Masculine,_feminine,_and_neuter">more
-        than 3 grammatical genders</ulink>).</para>
+        than 3 grammatical genders</ulink>)</para>
       </listitem>
 
       <listitem>

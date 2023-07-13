@@ -3,6 +3,7 @@
     elementFormDefault="qualified"
     xmlns:xlf="urn:oasis:names:tc:xliff:document:2.2"
     xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+    xmlns:pgs="urn:oasis:names:tc:xliff:pgs:1.0"
     targetNamespace="urn:oasis:names:tc:xliff:document:2.2">
 
   <!-- Import -->

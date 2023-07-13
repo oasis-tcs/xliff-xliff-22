@@ -14,7 +14,7 @@
   <para><emphasis>Value description:</emphasis> Text.</para>
 
   <para>The text contains a comma-separated list of items, each item
-  containing a selector keyword, followed by <code>:</code>, and followed by
+  containing a selector keyword, followed by colon (<code>:</code>), and followed by
   the variable name used for selection.</para>
 
   <para><emphasis>List of allowed selector keywords:</emphasis>
@@ -25,7 +25,7 @@
   targetdoc="../elements/structural/group.xml"
   targetptr="group"><code>&lt;group&gt;</code></olink>.</para>
 
-  <para><emphasis>Example:</emphasis> <programlisting>&lt;group id="g1" pgs:switch="plural:count,gender:host_gender"&gt;
+  <para><emphasis>Example:</emphasis> <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:count,gender:host_gender"</emphasis>&gt;
 ...
 &lt;/group&gt;</programlisting></para>
 </section>

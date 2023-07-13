@@ -20,8 +20,8 @@
   <section>
     <title>Module Namespace and Validation Artifacts</title>
 
-    <para>The namespace for the Plural / Gender / Select module is:
-    <code>urn:oasis:names:tc:xliff:pgsm:1.0</code></para>
+    <para>The namespace for the Plural, Gender, and Select module is:
+    <code>urn:oasis:names:tc:xliff:pgsm:1.0</code>.</para>
 
     <para>XML Schema for this module is available at <ulink
     url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd">&this-loc;/schemas/plural_gender_select.xsd</ulink>.</para>
@@ -31,7 +31,7 @@
     <title>Module Fragment Identification Prefix</title>
 
     <para>The fragment identification prefix for the Plural, Gender, and
-    Select module is: <code>pgs</code></para>
+    Select module is: <code>pgs</code>.</para>
   </section>
 
   <section>
