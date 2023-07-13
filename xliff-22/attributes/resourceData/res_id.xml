@@ -8,12 +8,12 @@
 <section id="res_id">
   <title>id</title>
 
-  <para>Identifier - A character string used to identify a <olink targetdoc="../../elements/resourcedata/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
+  <para>Identifier - A character string used to identify a <olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
 
   <para><emphasis>Value description:</emphasis> NMTOKEN</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/resourcedata/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> and <olink targetdoc="../../elements/resourcedata/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink></para>
+  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> and <olink targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink></para>
   
 </section>

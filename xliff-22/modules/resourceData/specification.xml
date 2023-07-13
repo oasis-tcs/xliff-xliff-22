@@ -31,17 +31,17 @@
     <section>
     <title>Module Elements</title>
     <para>The elements defined in the Resource Data module are: <olink
-        targetdoc="../../elements/resourcedata/resourceData.xml" targetptr="res_resourceData"
+        targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"
           ><code>&lt;resourceData></code></olink>, <olink
-        targetdoc="../../elements/resourcedata/resourceItemRef.xml" targetptr="res_resourceItemRef"
+        targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"
           ><code>&lt;resourceItemRef></code></olink>, <olink
-        targetdoc="../../elements/resourcedata/resourceItem.xml" targetptr="res_resourceItem"
+        targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
           ><code>&lt;resourceItem></code></olink>, <olink
-        targetdoc="../../elements/resourcedata/res_source.xml" targetptr="res_source"
+        targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"
           ><code>&lt;source></code></olink>, <olink
-        targetdoc="../../elements/resourcedata/res_target.xml" targetptr="res_target"
+        targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
           ><code>&lt;target></code></olink>, and <olink
-        targetdoc="../../elements/resourcedata/reference.xml" targetptr="res_reference"
+        targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"
           ><code>&lt;reference></code></olink>. </para>
 <section><!-- gen. 20140318 -->
   <title>Tree Structure</title>
@@ -51,36 +51,36 @@
     <member>* = zero, one or more</member>
   </simplelist>
   <programlisting format="linespecific">
-<olink targetdoc="../../elements/resourcedata/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
+<olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
 |
-+---<olink targetdoc="../../elements/resourcedata/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink> *
++---<olink targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink> *
 |
-+---<olink targetdoc="../../elements/resourcedata/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> *
++---<olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> *
   |
-  +---<olink targetdoc="../../elements/resourcedata/source.xml" targetptr="res_source"><code>&lt;source></code></olink> ?
+  +---<olink targetdoc="../../elements/resourceData/source.xml" targetptr="res_source"><code>&lt;source></code></olink> ?
   | |
   | +---&lt;other> *
   |
-  +---<olink targetdoc="../../elements/resourcedata/target.xml" targetptr="res_target"><code>&lt;target></code></olink> ?
+  +---<olink targetdoc="../../elements/resourceData/target.xml" targetptr="res_target"><code>&lt;target></code></olink> ?
   | |
   | +---&lt;other> *
   |
-  +---<olink targetdoc="../../elements/resourcedata/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink> *
+  +---<olink targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink> *
 
 
   </programlisting>
 </section>
-    <xi:include href="../../elements/resourcedata/resourceData.xml"
+    <xi:include href="../../elements/resourceData/resourceData.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
-          <xi:include href="../../elements/resourcedata/resourceItemRef.xml"
+          <xi:include href="../../elements/resourceData/resourceItemRef.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="../../elements/resourcedata/resourceItem.xml"
+    <xi:include href="../../elements/resourceData/resourceItem.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="../../elements/resourcedata/res_source.xml"
+    <xi:include href="../../elements/resourceData/res_source.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="../../elements/resourcedata/res_target.xml"
+    <xi:include href="../../elements/resourceData/res_target.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="../../elements/resourcedata/reference.xml"
+    <xi:include href="../../elements/resourceData/reference.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </section>
 
@@ -122,8 +122,8 @@
       element contained in the <olink targetdoc="../../elements/resourceData/res_resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
       module at <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> level provides the reference between them.
       The name attribute of the <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> element could serve as the key for
-      an editor to associate <olink targetdoc="../../elements/resourcedata/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink> and
-      <olink targetdoc="../../elements/resourcedata/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> text with the resource data contained in the referenced
+      an editor to associate <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink> and
+      <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> text with the resource data contained in the referenced
       XML and display it for modification.</para>
 
 <programlisting>

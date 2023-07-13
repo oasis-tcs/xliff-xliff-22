@@ -9,7 +9,7 @@
   <title>ref</title>
 
   <para>Resource Item Reference - holds a reference to an associated <olink
-      targetdoc="../../elements/resourcedata/resourceItem.xml" targetptr="res_resourceItem"
+      targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
         ><code>&lt;resourceItem></code></olink> element located at the <olink
       targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink>
     level.</para>
@@ -18,11 +18,11 @@
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/resourcedata/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink></para>
+  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink></para>
   
 <itemizedlist>
   <title>Constraints</title>
-  <listitem><para>The <link linkend="res_ref"><code>ref</code></link> attribute value <glossterm>MUST</glossterm> be the value of the <olink targetdoc="res_id.xml" targetptr="res_id"><code>id</code></olink> attribute of the <olink targetdoc="../../elements/resourcedata/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> element being referenced.</para></listitem>
+  <listitem><para>The <link linkend="res_ref"><code>ref</code></link> attribute value <glossterm>MUST</glossterm> be the value of the <olink targetdoc="res_id.xml" targetptr="res_id"><code>id</code></olink> attribute of the <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> element being referenced.</para></listitem>
 </itemizedlist>
   
 </section>
