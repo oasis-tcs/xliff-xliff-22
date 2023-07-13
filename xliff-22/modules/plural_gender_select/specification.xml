@@ -67,31 +67,207 @@
     <section>
       <title>Plural</title>
 
-      <para>Lore ipsum</para>
+      <para>ICU: <programlisting>{file_count, plural,
+       =0 {You deleted no file.}
+       =1 {You deleted one file.}
+    other {You deleted # files.}
+}</programlisting></para>
+
+      <para>XLIFF: <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted no file.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted one file.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>A more compact form (non-XLIFF), to understand what is going on:
+      <programlisting>group @switch(plural:file_count)
+    unit "You deleted no files."                       @case(0)
+    unit "You deleted one file."                       @case(1)
+    unit "You deleted &lt;ph disp="file_count"/&gt; files."  @case(other)</programlisting></para>
     </section>
 
     <section>
       <title>Ordinal</title>
 
-      <para>Lore ipsum</para>
+      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="ordinal:place"</emphasis>&gt;
+  &lt;!-- For English ordinals "one" is NOT the same as "1" --&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="one"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;st place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="two"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;nd place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="few"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;rd place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu4" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;th place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>In a more compact form (non-XLIFF), to understand what is going
+      on: <programlisting>group @switch(ordinal:place)
+    unit "You won #st place"  @case(one)
+    unit "You won #nd place"  @case(two)
+    unit "You won #rd place"  @case(few)
+    unit "You won #th place"  @case(other)</programlisting></para>
     </section>
 
     <section>
       <title>Gender</title>
 
-      <para>Lore ipsum</para>
+      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="gender:host_gender"</emphasis>&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="feminine"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You are invited to her party&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="masculine"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You are invited to his party&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You are invited to their party&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>In a more compact form (non-XLIFF), to understand what is going
+      on: <programlisting>group @switch(gender:host_gender)
+    unit "You are invited to her party"    @case(feminine)
+    unit "You are invited to his party"    @case(masculine)
+    unit "You are invited to their party"  @case(other)</programlisting></para>
+
+      <para>Gender also allows for cases other than <code>feminine</code> /
+      <code>masculine</code> / <code>other</code> in order to support
+      languages with <ulink
+      url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#Masculine,_feminine,_and_neuter">more
+      than 3 genders</ulink>.</para>
     </section>
 
     <section>
       <title>Combinations</title>
 
-      <para>Lore ipsum</para>
+      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="gender:host_gender plural:guest_count"</emphasis>&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="feminine 0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to her party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="feminine 1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to her party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="feminine other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to her party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu4" <emphasis role="bold">pgs:case="masculine 0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to his party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu5" <emphasis role="bold">pgs:case="masculine 1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to his party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu6" <emphasis role="bold">pgs:case="masculine other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="gssssssssssssssssssssssssssssssssssuest_count"/&gt; guests to his party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu7" <emphasis role="bold">pgs:case="other 0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to their party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu8" <emphasis role="bold">pgs:case="other 1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to their party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu9" <emphasis role="bold">pgs:case="other other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to their party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>In a more compact form (non-XLIFF), to understand what is going
+      on: <programlisting>switch ( [gender:host_gender, plural:guest_count] ) {
+  case [ feminine,     0]: "$host_name did not invite anyone to her party."
+  case [ feminine,     1]: "$host_name invited one guest to her party."
+  case [ feminine, other]: "$host_name invited $guest_count guests to her party."
+  case [masculine,     0]: "$host_name did not invite anyone to his party."
+  case [masculine,     1]: "$host_name invited one guest to his party."
+  case [masculine, other]: "$host_name invited $guest_count guests to his party."
+  case [    other,     0]: "$host_name did not invite anyone to their party."
+  case [    other,     1]: "$host_name invited one guest to their party."
+  case [    other, other]: "$host_name invited $guest_count guests to their party."
+}</programlisting></para>
     </section>
 
     <section>
       <title>Using the example attribute</title>
 
-      <para>Lore ipsum</para>
+      <para>This is very helpful for translating the plural forms.</para>
+
+      <para>Most speakers will now necessarily know the “technical names” for
+      the various plural forms (<code>zero</code>, <code>one</code>,
+      <code>two</code>, <code>few</code>, <code>many</code>,
+      <code>others</code>).</para>
+
+      <para>So giving an example will make it very clear what is the desired
+      form. <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="1"</emphasis> <emphasis
+            role="bold">pgs:example="1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted one file&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="few"</emphasis> <emphasis
+            role="bold">pgs:example="0, 2~16, 101, 1001, …
+0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis> <emphasis
+            role="bold">pgs:example="20~35, 100, 1000, 10000, 100000, 1000000, …"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>The examples can come directly from the CLDR data and are locale
+      dependent (the examples for Russian would be different from the ones for
+      Romanian)</para>
     </section>
   </section>
 
@@ -107,8 +283,8 @@
       <para>This can be done by combining a “normal” message ID with
       information from the case.</para>
 
-      <para>Using the short representation (and # for identifiers):
-      <programlisting>unit "$host_name invited @subFlow(tu2 tu3) to @subFlow(tu4 tu5 tu6) party." <emphasis
+      <para>Using the short representation (and <code>#</code> for
+      identifiers): <programlisting>unit "$host_name invited @subFlow(tu2 tu3) to @subFlow(tu4 tu5 tu6) party." <emphasis
             role="bold">#msgid</emphasis>
 group <emphasis role="bold">#g_msgid_plural_gender</emphasis> @switch(plural:guest_count gender:host_gender)
     group <emphasis role="bold">#g_msgid_plural_guest_count</emphasis> @switch(plural:guest_count)
