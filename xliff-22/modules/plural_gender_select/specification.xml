@@ -45,19 +45,14 @@
 
     <para>The attributes defined in the Plural, Gender, and Select module are:
     <olink targetdoc="../../attributes/plural_gender_select/switch.xml"
-    targetptr="pgs_switch"><code>switch</code></olink>, <olink
+    targetptr="pgs_switch"><code>switch</code></olink>, and <olink
     targetdoc="../../attributes/plural_gender_select/case.xml"
-    targetptr="pgs_case"><code>case</code></olink>, and <olink
-    targetdoc="../../attributes/plural_gender_select/example.xml"
-    targetptr="pgs_example"><code>example</code></olink>.</para>
+    targetptr="pgs_case"><code>case</code></olink>.</para>
 
     <xi:include href="../../attributes/plural_gender_select/switch.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
     <xi:include href="../../attributes/plural_gender_select/case.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-    <xi:include href="../../attributes/plural_gender_select/example.xml"
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </section>
 
@@ -230,44 +225,6 @@
   case [    other,     1]: "$host_name invited one guest to their party."
   case [    other, other]: "$host_name invited $guest_count guests to their party."
 }</programlisting></para>
-    </section>
-
-    <section>
-      <title>Using the example attribute</title>
-
-      <para>This is very helpful for translating the plural forms.</para>
-
-      <para>Most speakers will now necessarily know the “technical names” for
-      the various plural forms (<code>zero</code>, <code>one</code>,
-      <code>two</code>, <code>few</code>, <code>many</code>,
-      <code>others</code>).</para>
-
-      <para>So giving an example will make it very clear what is the desired
-      form. <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
-  &lt;unit id="tu1" <emphasis role="bold">pgs:case="1"</emphasis> <emphasis
-            role="bold">pgs:example="1"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted one file&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu2" <emphasis role="bold">pgs:case="few"</emphasis> <emphasis
-            role="bold">pgs:example="0, 2~16, 101, 1001, …
-0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis> <emphasis
-            role="bold">pgs:example="20~35, 100, 1000, 10000, 100000, 1000000, …"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-&lt;/group&gt;</programlisting></para>
-
-      <para>The examples can come directly from the CLDR data and are locale
-      dependent (the examples for Russian would be different from the ones for
-      Romanian)</para>
     </section>
   </section>
 
