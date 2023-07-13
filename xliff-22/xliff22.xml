@@ -316,7 +316,7 @@
     <xi:include href="modules/glossary/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="modules/fs/fs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="modules/metadata/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="modules/resourcedata/specification.xml"
+    <xi:include href="modules/resourceData/specification.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <!-- CTR deprecated in XLIFF 2.1, discarded for XLIFF 2.2
     <xi:include href="modules/change-tracking/specification.xml"

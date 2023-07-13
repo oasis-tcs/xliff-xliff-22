@@ -53,7 +53,7 @@
         is set to <code>yes</code>:</para>
       <itemizedlist>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> create <olink targetdoc="../../elements/resourcedata/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> if not already present.</para>
+          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> create <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> if not already present.</para>
         </listitem>
         <listitem>
           <para><firstterm>Modifiers</firstterm> <glossterm>SHOULD NOT</glossterm> change <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink>.</para>
@@ -71,7 +71,7 @@
       <itemizedlist>
         <listitem>
           <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> create
-            <olink targetdoc="../../elements/resourcedata/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink>
+            <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink>
             if not already present.</para>
         </listitem>
         <listitem>

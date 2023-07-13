@@ -31,11 +31,11 @@
       <title>Processing Requirements</title>
       
     <listitem>
-      <para><firstterm>Writers</firstterm> <glossterm>MAY</glossterm> create <olink targetdoc="../../elements/resourcedata/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink> if not already present.</para>
+      <para><firstterm>Writers</firstterm> <glossterm>MAY</glossterm> create <olink targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink> if not already present.</para>
     </listitem>
 
     <listitem>
-      <para><firstterm>Modifiers</firstterm> <glossterm>SHOULD NOT</glossterm> change <olink targetdoc="../../elements/resourcedata/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink>.</para>
+      <para><firstterm>Modifiers</firstterm> <glossterm>SHOULD NOT</glossterm> change <olink targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink>.</para>
     </listitem>
   
     <listitem>
