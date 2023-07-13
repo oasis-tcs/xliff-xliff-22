@@ -7,7 +7,7 @@
                          ]>
 <section id="res_resourceItemRef">
     <title>resourceItemRef</title>
-    <para>Specifies a reference to an associated <olink targetdoc="../../elements/resourcedata/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> element located at the <olink targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink> level.</para>
+    <para>Specifies a reference to an associated <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> element located at the <olink targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink> level.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
         <member>This element is always empty.</member>

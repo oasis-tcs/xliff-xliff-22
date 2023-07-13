@@ -8,9 +8,9 @@
 <section id="res_resourceDataId">
   <title>resourceDataId</title>
 
-  <para>Resopurce Data Reference - Holds a reference to an associated <olink targetdoc="../../elements/resourcedata/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
+  <para>Resopurce Data Reference - Holds a reference to an associated <olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
 
-  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN that must be the value of the id attribute of the <olink targetdoc="../../elements/resourcedata/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element being referenced.</para>
+  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN that must be the value of the id attribute of the <olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element being referenced.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
