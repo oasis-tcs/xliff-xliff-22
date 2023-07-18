@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="compile" name="Merger">
-    <property name="target" value="11" />
-    <property name="source" value="11" />
+    <property name="target" value="17" />
+    <property name="source" value="17" />
     <property name="build.compiler" value="javac10+" />
     <path id="Merger.classpath">
     </path>
