@@ -163,6 +163,9 @@
         <listitem>
           <para>urn:oasis:names:tc:xliff:itsm:&cschversion;</para>
         </listitem>
+        <listitem>
+          <para>urn:oasis:names:tc:xliff:pgs:1.0</para>
+        </listitem>
 
       </itemizedlist>
     </legalnotice>

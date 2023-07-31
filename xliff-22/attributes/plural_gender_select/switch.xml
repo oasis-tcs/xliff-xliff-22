@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % xinclude SYSTEM "../../docbook/xinclude.mod">
+%xinclude;
+<!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
+]>
+<section id="pgs_switch">
+  <title>switch</title>
+
+  <para>Indicates the variable(s) used to select the message variant, and the
+  kind of “selector” that will be used.</para>
+
+  <para><emphasis>Value description:</emphasis> Text.</para>
+
+  <para>The text contains a comma-separated list of items, each item
+  containing a selector keyword, followed by colon (<code>:</code>), and followed by
+  the variable name used for selection.</para>
+
+  <para><emphasis>List of allowed selector keywords:</emphasis>
+  <code>plural</code>, <code>ordinal</code>, <code>gender</code>,
+  <code>select</code>. No other selector keywords are allowed.</para>
+
+  <para><emphasis>Used in:</emphasis> <olink
+  targetdoc="../elements/structural/group.xml"
+  targetptr="group"><code>&lt;group&gt;</code></olink>.</para>
+
+  <para><emphasis>Example:</emphasis> <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:count,gender:host_gender"</emphasis>&gt;
+...
+&lt;/group&gt;</programlisting></para>
+</section>

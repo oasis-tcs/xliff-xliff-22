@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.docbook.org/xml/4.5/docbookx.dtd" [
+<!ENTITY % base SYSTEM "../../docbook/dbgenent.mod">
+%base;
+<!ENTITY % xinclude SYSTEM "../../docbook/xinclude.mod">
+%xinclude;
+]>
+<section id="plural_gender_select_module">
+  <title>Plural, Gender, and Select Module</title>
+
+  <section>
+    <title>Introduction</title>
+
+    <para>This module provides an XLIFF capability to store information needed
+    to represent and process messages with variants. This includes plural
+    &amp; gender variants, and a generic select.</para>
+  </section>
+
+  <section>
+    <title>Module Namespace and Validation Artifacts</title>
+
+    <para>The namespace for the Plural, Gender, and Select module is:
+    <code>urn:oasis:names:tc:xliff:pgsm:1.0</code>.</para>
+
+    <para>XML Schema for this module is available at <ulink
+    url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd">&this-loc;/schemas/plural_gender_select.xsd</ulink>.</para>
+  </section>
+
+  <section>
+    <title>Module Fragment Identification Prefix</title>
+
+    <para>The fragment identification prefix for the Plural, Gender, and
+    Select module is: <code>pgs</code>.</para>
+  </section>
+
+  <section>
+    <title>Module Elements</title>
+
+    <para>None.</para>
+  </section>
+
+  <section>
+    <title>Module Attributes</title>
+
+    <para>The attributes defined in the Plural, Gender, and Select module are:
+    <olink targetdoc="../../attributes/plural_gender_select/switch.xml"
+    targetptr="pgs_switch"><code>switch</code></olink>, and <olink
+    targetdoc="../../attributes/plural_gender_select/case.xml"
+    targetptr="pgs_case"><code>case</code></olink>.</para>
+
+    <xi:include href="../../attributes/plural_gender_select/switch.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+    <xi:include href="../../attributes/plural_gender_select/case.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  </section>
+
+  <section>
+    <title>Examples</title>
+
+    <section>
+      <title>Plural</title>
+
+      <para>ICU: <programlisting>{file_count, plural,
+       =0 {You deleted no file.}
+       =1 {You deleted one file.}
+    other {You deleted # files.}
+}</programlisting></para>
+
+      <para>XLIFF: <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted no file.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted one file.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>A more compact form (non-XLIFF), to understand what is going on:
+      <programlisting>group @switch(plural:file_count)
+    unit "You deleted no files."                       @case(0)
+    unit "You deleted one file."                       @case(1)
+    unit "You deleted &lt;ph disp="file_count"/&gt; files."  @case(other)</programlisting></para>
+    </section>
+
+    <section>
+      <title>Ordinal</title>
+
+      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="ordinal:place"</emphasis>&gt;
+  &lt;!-- For English ordinals "one" is NOT the same as "1" --&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="one"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;st place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="two"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;nd place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="few"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;rd place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu4" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;th place&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>In a more compact form (non-XLIFF), to understand what is going
+      on: <programlisting>group @switch(ordinal:place)
+    unit "You won #st place"  @case(one)
+    unit "You won #nd place"  @case(two)
+    unit "You won #rd place"  @case(few)
+    unit "You won #th place"  @case(other)</programlisting></para>
+    </section>
+
+    <section>
+      <title>Gender</title>
+
+      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="gender:host_gender"</emphasis>&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="feminine"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You are invited to her party&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="masculine"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You are invited to his party&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You are invited to their party&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>In a more compact form (non-XLIFF), to understand what is going
+      on: <programlisting>group @switch(gender:host_gender)
+    unit "You are invited to her party"    @case(feminine)
+    unit "You are invited to his party"    @case(masculine)
+    unit "You are invited to their party"  @case(other)</programlisting></para>
+
+      <para>Gender also allows for cases other than <code>feminine</code> /
+      <code>masculine</code> / <code>other</code> in order to support
+      languages with <ulink
+      url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#Masculine,_feminine,_and_neuter">more
+      than 3 genders</ulink>.</para>
+    </section>
+
+    <section>
+      <title>Combinations</title>
+
+      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="gender:host_gender plural:guest_count"</emphasis>&gt;
+  &lt;unit id="tu1" <emphasis role="bold">pgs:case="feminine 0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to her party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu2" <emphasis role="bold">pgs:case="feminine 1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to her party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu3" <emphasis role="bold">pgs:case="feminine other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to her party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu4" <emphasis role="bold">pgs:case="masculine 0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to his party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu5" <emphasis role="bold">pgs:case="masculine 1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to his party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu6" <emphasis role="bold">pgs:case="masculine other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="gssssssssssssssssssssssssssssssssssuest_count"/&gt; guests to his party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu7" <emphasis role="bold">pgs:case="other 0"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to their party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu8" <emphasis role="bold">pgs:case="other 1"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to their party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu9" <emphasis role="bold">pgs:case="other other"</emphasis>&gt;
+    &lt;segment&gt;
+      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to their party.&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>In a more compact form (non-XLIFF), to understand what is going
+      on: <programlisting>switch ( [gender:host_gender, plural:guest_count] ) {
+  case [ feminine,     0]: "$host_name did not invite anyone to her party."
+  case [ feminine,     1]: "$host_name invited one guest to her party."
+  case [ feminine, other]: "$host_name invited $guest_count guests to her party."
+  case [masculine,     0]: "$host_name did not invite anyone to his party."
+  case [masculine,     1]: "$host_name invited one guest to his party."
+  case [masculine, other]: "$host_name invited $guest_count guests to his party."
+  case [    other,     0]: "$host_name did not invite anyone to their party."
+  case [    other,     1]: "$host_name invited one guest to their party."
+  case [    other, other]: "$host_name invited $guest_count guests to their party."
+}</programlisting></para>
+    </section>
+  </section>
+
+  <section>
+    <title>Maximizing compatibility</title>
+
+    <para>There are a few things that an implementer can do to help
+    applications that are not aware of this module.</para>
+
+    <section>
+      <title>Generate “translator-friendly” identifiers</title>
+
+      <para>This can be done by combining a “normal” message ID with
+      information from the case.</para>
+
+      <para>Using the short representation (and <code>#</code> for
+      identifiers): <programlisting>unit "$host_name invited @subFlow(tu2 tu3) to @subFlow(tu4 tu5 tu6) party." <emphasis
+            role="bold">#msgid</emphasis>
+group <emphasis role="bold">#g_msgid_plural_gender</emphasis> @switch(plural:guest_count gender:host_gender)
+    group <emphasis role="bold">#g_msgid_plural_guest_count</emphasis> @switch(plural:guest_count)
+        unit "one guest"             <emphasis role="bold">#msgid_guest_count_1</emphasis>         @case(1)
+        unit "$guest_count guests"   <emphasis role="bold">#msgid_guest_count_other</emphasis>     @case(other)
+    group <emphasis role="bold">#g_msgid_gender_host_gender</emphasis> @switch(gender:host_gender)
+        unit: "her"                  <emphasis role="bold">#msgid_host_gender_feminine</emphasis>  @case(feminine)
+        unit: "his"                  <emphasis role="bold">#msgid_host_gender_masculine</emphasis> @case(masculine)
+        unit: "their"                <emphasis role="bold">#msgid_host_gender_other</emphasis>     @case(other)</programlisting></para>
+
+      <para>So if the older system shows the identifiers to the translators
+      then they can get an idea of what is going on.</para>
+
+      <para>Also, using a consistent way of generating identifiers one can
+      improve the leverage.</para>
+
+      <para>TMs that give priority to a text-id match vs text-only match will
+      be able to properly leverage even if the English string is the
+      same.</para>
+
+      <para>For example: <programlisting>&lt;group id="g1" pgs:switch="plural:file_count"&gt;
+  &lt;unit id="<emphasis role="bold">tu1_file_count_1</emphasis>" pgs:case="1"&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted one file&lt;/source&gt;
+      &lt;target xml:lang="ro"&gt;Ați șters un fișier&lt;/target&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="<emphasis role="bold">tu1_file_count_few</emphasis>" pgs:case="few"&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
+      &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; fișiere&lt;/target&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="<emphasis role="bold">tu1_file_count_other</emphasis>" pgs:case="other"&gt;
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
+      &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; de fișiere&lt;/target&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+    </section>
+
+    <section>
+      <title>Keep the same order of the selectors</title>
+
+      <para>By keeping the generated text units in the same order we can
+      improve Translation Memory leveraging that relies on context (the text
+      before and after the current segment).</para>
+
+      <para>Proposed order: <itemizedlist>
+          <listitem>
+            <para>Plural, ordinal <itemizedlist>
+                <listitem>
+                  <para>exact selectors firsts, sorted by numerical value
+                  (<code>=0</code>, <code>=1</code>, <code>=2</code>,
+                  …)</para>
+                </listitem>
+
+                <listitem>
+                  <para>the predefined keywords in this
+                  order:<code>zero</code>, <code>one</code>,
+                  <code>two</code>,<code>few</code>, <code>many</code>,
+                  <code>other</code></para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+
+          <listitem>
+            <para>Gender <itemizedlist>
+                <listitem>
+                  <para>the “free form” selectors in alpha order</para>
+                </listitem>
+
+                <listitem>
+                  <para>followed by the predefined keywords in this
+                  order:<code>feminine</code>, <code>masculine</code>,
+                  <code>other</code></para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+
+          <listitem>
+            <para>Selection <itemizedlist>
+                <listitem>
+                  <para>the selectors in alpha order</para>
+                </listitem>
+              </itemizedlist></para>
+          </listitem>
+        </itemizedlist></para>
+
+      <para>Keeping a consistent order (the one suggested above or a different
+      one) will improve the leveraging of TM tools that rely on context (what
+      is before and after the segment) to improve the result.</para>
+    </section>
+
+    <section>
+      <title>Generate “translator-friendly” notes for plurals</title>
+
+      <para>Native speakers intuitively know what the correct plural form
+      is.</para>
+
+      <para>But will have a difficult time explaining what the rules are. And
+      even fewer will be able to map those rules to the predefined plural
+      keywords (<code>zero</code>, <code>one</code>, <code>two</code>,
+      <code>few</code>, <code>many</code>).</para>
+
+      <para>So generating a note can help a lot.</para>
+
+      <para>Romanian example: <programlisting>&lt;group id="g1" pgs:switch="plural:file_count"&gt;
+  &lt;unit id="tu1_file_count_1" pgs:case="1"&gt;
+    <emphasis role="bold">&lt;notes&gt;
+      &lt;note category="plural_examples"&gt;1&lt;/note&gt;
+    &lt;/notes&gt;</emphasis>
+    &lt;segment&gt;
+      &lt;source&gt;You deleted one file&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu1_file_count_few" pgs:case="few"&gt;
+    <emphasis role="bold">&lt;notes&gt;
+      &lt;note category="plural_examples"&gt;0, 2~16, 102, 1002&lt;/note&gt;
+    &lt;/notes&gt;</emphasis>
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+  &lt;unit id="tu1_file_count_other" pgs:case="other"&gt;
+    <emphasis role="bold">&lt;notes&gt;
+      &lt;note category="plural_examples"&gt;20~35, 100, 1000, 10000, 100000&lt;/note&gt;
+    &lt;/notes&gt;</emphasis>
+    &lt;segment&gt;
+      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
+    &lt;/segment&gt;
+  &lt;/unit&gt;
+&lt;/group&gt;</programlisting></para>
+
+      <para>The examples are available from CLDR, in XML formal, or using the
+      ICU library.</para>
+
+      <para><emphasis role="bold">Warning:</emphasis> these examples are
+      language dependent. This means one cannot just send a single XLIFF to be
+      translated into several languages (see next item).</para>
+    </section>
+
+    <section>
+      <title>Generate separate localization packages for each language</title>
+
+      <para>Depending on the degree of automation this might mean just a small
+      change in a configuration, or a lot of manual work.</para>
+
+      <para>In fact, some companies already use workflows doing this because
+      they pre-populate the <code>&lt;target&gt;</code>, pre-leverage, include
+      translation candidates or glossary info, partial TMs, etc.</para>
+
+      <para>Having such a workflow means that the tools can add the missing
+      plural cases depending on the target language.</para>
+
+      <para>So even if the source language only has <code>=1</code> /
+      <code>other</code> cases, the tooling can add the missing ones
+      (<code>few</code> for Romanian, <code>one</code> / <code>few</code> /
+      <code>many</code> for Russian, etc.)</para>
+
+      <para>The list of selectors needed for each locale are available from
+      CLDR or ICU APIs.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Annex, links</title>
+
+    <para><emphasis role="bold">The ICU MessageFormat explained:</emphasis>
+    <ulink
+    url="http://userguide.icu-project.org/formatparse/messages">http://userguide.icu-project.org/formatparse/messages</ulink></para>
+
+    <para><emphasis role="bold">The CLDR spec for Plural Rules:</emphasis>
+    <ulink
+    url="https://cldr.unicode.org/index/cldr-spec/plural-rules">https://cldr.unicode.org/index/cldr-spec/plural-rules</ulink></para>
+
+    <para><emphasis role="bold">Language Plural Rules (all
+    languages):</emphasis> <ulink
+    url="http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html">http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html</ulink></para>
+
+    <para><emphasis role="bold">CLDR plural files:</emphasis> <ulink
+    url="https://www.unicode.org/Public/cldr/43/">https://www.unicode.org/Public/cldr/43/</ulink>.
+    Version 43 is the current version, but you can navigate to the last
+    version.</para>
+
+    <para>When unzipping the <code>core.zip</code> archive the
+    <code>plurals.xml</code> &amp; <code>ordinals.xml</code> files are in the
+    <code>common/supplemental</code> folder.</para>
+
+    <para><emphasis role="bold">ICU4C APIs:</emphasis> <ulink
+    url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html">https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html</ulink></para>
+
+    <para><emphasis role="bold">ICU4J APIs:</emphasis> <ulink
+    url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html">https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html</ulink></para>
+  </section>
+</section>
