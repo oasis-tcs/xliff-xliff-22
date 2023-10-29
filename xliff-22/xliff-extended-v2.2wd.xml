@@ -14669,45 +14669,63 @@ Date: 04 April 2017 -->
 
       <para><programlisting format="linespecific">&lt;unit id="seg1" <emphasis role="bold">pgs:switch="gender:host_gender plural:guest_count"</emphasis>>
   &lt;segment id="seg1" <emphasis role="bold">pgs:case="feminine 0"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> did not invite anyone to her party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> did not invite
+        anyone to her party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg2" <emphasis role="bold">pgs:case="feminine 1"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> invited one guest to her party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> invited
+        one guest to her party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg3" <emphasis role="bold">pgs:case="feminine other"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> invited &lt;ph id="2" disp="guest_count"/> guests to her party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> invited
+        &lt;ph id="2" disp="guest_count"/> guests to her party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg4" <emphasis role="bold">pgs:case="masculine 0"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> did not invite anyone to his party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> did not invite
+        anyone to his party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg5" <emphasis role="bold">pgs:case="masculine 1"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> invited one guest to his party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> invited
+        one guest to his party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg6" <emphasis role="bold">pgs:case="masculine other"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> invited &lt;ph id="2" disp="gssssssssssssssssssssssssssssssssssuest_count"/> guests to his party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> invited
+        &lt;ph id="2" disp="guest_count"/> guests to his party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg7" <emphasis role="bold">pgs:case="other 0"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> did not invite anyone to their party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> did not invite
+        anyone to their party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg8" <emphasis role="bold">pgs:case="other 1"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> invited one guest to their party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> invited
+        one guest to their party.&lt;/source>
   &lt;/segment>
   &lt;segment id="seg9" <emphasis role="bold">pgs:case="other other"</emphasis>>
-    &lt;source>&lt;ph id="1" disp="host_name"/> invited &lt;ph id="2" disp="guest_count"/> guests to their party.&lt;/source>
+    &lt;source>&lt;ph id="1" disp="host_name"/> invited
+        &lt;ph id="2" disp="guest_count"/> guests to their party.&lt;/source>
   &lt;/segment>
 &lt;/unit></programlisting></para>
 
       <para>In a more compact form (non-XLIFF), to understand what is going
-      on: <programlisting format="linespecific">switch ( [gender:host_gender, plural:guest_count] ) {
-  case [ feminine,     0]: "$host_name did not invite anyone to her party."
-  case [ feminine,     1]: "$host_name invited one guest to her party."
-  case [ feminine, other]: "$host_name invited $guest_count guests to her party."
-  case [masculine,     0]: "$host_name did not invite anyone to his party."
-  case [masculine,     1]: "$host_name invited one guest to his party."
-  case [masculine, other]: "$host_name invited $guest_count guests to his party."
-  case [    other,     0]: "$host_name did not invite anyone to their party."
-  case [    other,     1]: "$host_name invited one guest to their party."
-  case [    other, other]: "$host_name invited $guest_count guests to their party."
+      on: <programlisting format="linespecific">switch ( <emphasis role="bold">[gender:host_gender, plural:guest_count]</emphasis> ) {
+  case <emphasis role="bold">[ feminine,     0]</emphasis>:
+       "$host_name did not invite anyone to her party."
+  case <emphasis role="bold">[ feminine,     1]</emphasis>:
+       "$host_name invited one guest to her party."
+  case <emphasis role="bold">[ feminine, other]</emphasis>:
+       "$host_name invited $guest_count guests to her party."
+  case <emphasis role="bold">[masculine,     0]</emphasis>:
+       "$host_name did not invite anyone to his party."
+  case <emphasis role="bold">[masculine,     1]</emphasis>:
+       "$host_name invited one guest to his party."
+  case <emphasis role="bold">[masculine, other]</emphasis>:
+       "$host_name invited $guest_count guests to his party."
+  case <emphasis role="bold">[    other,     0]</emphasis>:
+       "$host_name did not invite anyone to their party."
+  case <emphasis role="bold">[    other,     1]</emphasis>:
+       "$host_name invited one guest to their party."
+  case <emphasis role="bold">[    other, other]</emphasis>:
+       "$host_name invited $guest_count guests to their party."
 }</programlisting></para>
     </section>
   </section>
@@ -14725,15 +14743,16 @@ Date: 04 April 2017 -->
       information from the case.</para>
 
       <para>Using the short representation (and <code>#</code> for
-      identifiers): <programlisting format="linespecific">segment "$host_name invited @subFlow(tu2 tu3) to @subFlow(tu4 tu5 tu6) party." <emphasis role="bold">#msgid</emphasis>
+      identifiers): <programlisting format="linespecific">segment "$host_name invited @subFlow(tu2 tu3)
+         to @subFlow(tu4 tu5 tu6) party." <emphasis role="bold">#msgid</emphasis>
 unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(plural:guest_count gender:host_gender)</emphasis>
-    unit <emphasis role="bold">#g_msgid_plural_guest_count</emphasis> <emphasis>@switch(plural:guest_count)</emphasis>
-        segment "one guest"             <emphasis role="bold">#msgid_guest_count_1</emphasis>         <emphasis>@case(1)</emphasis>
-        segment "$guest_count guests"   <emphasis role="bold">#msgid_guest_count_other</emphasis>     <emphasis>@case(other)</emphasis>
-    unit <emphasis role="bold">#g_msgid_gender_host_gender</emphasis> <emphasis>@switch(gender:host_gender)</emphasis>
-        segment: "her"                  <emphasis role="bold">#msgid_host_gender_feminine</emphasis>  <emphasis>@case(feminine)</emphasis>
-        segment: "his"                  <emphasis role="bold">#msgid_host_gender_masculine</emphasis> <emphasis>@case(masculine)</emphasis>
-        segment: "their"                <emphasis role="bold">#msgid_host_gender_other</emphasis>     <emphasis>@case(other)</emphasis></programlisting></para>
+  unit <emphasis role="bold">#g_msgid_plural_guest_count</emphasis> <emphasis>@switch(plural:guest_count)</emphasis>
+    segment "one guest"           <emphasis role="bold">#msgid_guest_count_1</emphasis>     <emphasis>@case(1)</emphasis>
+    segment "$guest_count guests" <emphasis role="bold">#msgid_guest_count_other</emphasis> <emphasis>@case(other)</emphasis>
+  unit <emphasis role="bold">#g_msgid_gender_host_gender</emphasis> <emphasis>@switch(gender:host_gender)</emphasis>
+    segment: "her"        <emphasis role="bold">#msgid_host_gender_feminine</emphasis>  <emphasis>@case(feminine)</emphasis>
+    segment: "his"        <emphasis role="bold">#msgid_host_gender_masculine</emphasis> <emphasis>@case(masculine)</emphasis>
+    segment: "their"      <emphasis role="bold">#msgid_host_gender_other</emphasis>     <emphasis>@case(other)</emphasis></programlisting></para>
 
       <para>So if the older system shows the identifiers to the translators
       then they can get an idea of what is going on.</para>
@@ -14752,11 +14771,13 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
   &lt;/segment>
   &lt;segment id="<emphasis role="bold">tu1_file_count_few</emphasis>" pgs:case="few">
     &lt;source>You deleted &lt;ph id="1" disp="file_count"/> files.&lt;/source>
-    &lt;target xml:lang="ro">Ați șters &lt;ph id="1" disp="file_count"/> fișiere.&lt;/target>
+    &lt;target xml:lang="ro">Ați șters
+        &lt;ph id="1" disp="file_count"/> fișiere.&lt;/target>
   &lt;/segment>
   &lt;segment id="<emphasis role="bold">tu1_file_count_other</emphasis>" pgs:case="other">
     &lt;source>You deleted &lt;ph id="1" disp="file_count"/> files.&lt;/source>
-    &lt;target xml:lang="ro">Ați șters &lt;ph id="1" disp="file_count"/> de fișiere.&lt;/target>
+    &lt;target xml:lang="ro">Ați șters
+        &lt;ph id="1" disp="file_count"/> de fișiere.&lt;/target>
   &lt;/segment>
 &lt;/unit></programlisting></para>
     </section>
@@ -14833,9 +14854,12 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
 
       <para>Romanian example: <programlisting format="linespecific">&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count">
   <emphasis role="bold">&lt;notes>
-    &lt;note appliesTo="target" ref="tu1_file_count_1" category="plural_examples">1&lt;/note>
-    &lt;note appliesTo="target" ref="tu1_file_count_few" category="plural_examples">0, 2~16, 102, 1002&lt;/note>
-    &lt;note appliesTo="target" ref="tu1_file_count_other" category="plural_examples">20~35, 100, 1000, 10000, 100000&lt;/note>
+    &lt;note appliesTo="target" ref="tu1_file_count_1"
+        category="plural_examples">1&lt;/note>
+    &lt;note appliesTo="target" ref="tu1_file_count_few"
+        category="plural_examples">0, 2~16, 102, 1002&lt;/note>
+    &lt;note appliesTo="target" ref="tu1_file_count_other"
+        category="plural_examples">20~35, 100, 1000, 10000, 100000&lt;/note>
   &lt;/notes></emphasis>
   &lt;segment id="<emphasis role="bold">tu1_file_count_1</emphasis>" pgs:case="1">
     &lt;source>You deleted one file.&lt;/source>
@@ -14843,11 +14867,13 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
   &lt;/segment>
   &lt;segment id="<emphasis role="bold">tu1_file_count_few</emphasis>" pgs:case="few">
     &lt;source>You deleted &lt;ph id="1" disp="file_count"/> files.&lt;/source>
-    &lt;target xml:lang="ro">Ați șters &lt;ph id="1" disp="file_count"/> fișiere.&lt;/target>
+    &lt;target xml:lang="ro">Ați șters
+        &lt;ph id="1" disp="file_count"/> fișiere.&lt;/target>
   &lt;/segment>
   &lt;segment id="<emphasis role="bold">tu1_file_count_other</emphasis>" pgs:case="other">
     &lt;source>You deleted &lt;ph id="1" disp="file_count"/> files.&lt;/source>
-    &lt;target xml:lang="ro">Ați șters &lt;ph id="1" disp="file_count"/> de fișiere.&lt;/target>
+    &lt;target xml:lang="ro">Ați șters
+        &lt;ph id="1" disp="file_count"/> de fișiere.&lt;/target>
   &lt;/segment>
 &lt;/unit></programlisting></para>
 
