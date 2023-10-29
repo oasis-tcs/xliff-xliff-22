@@ -73,6 +73,12 @@
                     targetptr="version"><code>version</code></olink> attribute. Change approved on
                 January 17<superscript>th</superscript>, 2023.</para>
         </listitem>
+        <listitem>
+            <para>Added new <olink targetdoc="../modules/plural_gender_select/specification.xml"
+                targetptr="plural_gender_select_module">Plural, Gender, and Select Module</olink>.
+            </para>
+            <!-- Add approval date later -->
+        </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
         practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
