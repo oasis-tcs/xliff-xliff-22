@@ -115,7 +115,6 @@
                         <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <olink targetdoc="../../modules/itsm/specification.xml"
                         targetptr="ITS-module">ITS Module</olink> are met.</member>
-
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
                         <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in

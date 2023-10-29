@@ -22,10 +22,10 @@
   <code>select</code>. No other selector keywords are allowed.</para>
 
   <para><emphasis>Used in:</emphasis> <olink
-  targetdoc="../elements/structural/group.xml"
-  targetptr="group"><code>&lt;group&gt;</code></olink>.</para>
+  targetdoc="../elements/structural/unit.xml"
+  targetptr="unit"><code>&lt;unit&gt;</code></olink>.</para>
 
-  <para><emphasis>Example:</emphasis> <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:count,gender:host_gender"</emphasis>&gt;
+  <para><emphasis>Example:</emphasis> <programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="plural:count,gender:host_gender"</emphasis>&gt;
 ...
-&lt;/group&gt;</programlisting></para>
+&lt;/unit&gt;</programlisting></para>
 </section>
