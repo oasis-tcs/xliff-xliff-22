@@ -45,6 +45,12 @@
     <member>- <olink targetdoc="../../attributes/subState.xml"
     targetptr="substate"><code>subState</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
+    <member>- attributes from the namespace
+            <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
+        the <olink targetdoc="../../modules/plural_gender_select/specification.xml"
+            targetptr="plural_gender_select_module">Plural, Gender, and Select Module</olink> are met.</member>
+
   </simplelist>
 
   <!--  The uniqueness scope is described on the id attribute 

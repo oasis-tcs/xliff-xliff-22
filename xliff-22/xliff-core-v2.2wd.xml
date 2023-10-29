@@ -1295,10 +1295,6 @@
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
                             <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS Module</remark> are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>Plural, Gender, and Select Module</remark> are met.</member>
             </simplelist>
         </listitem>
     </itemizedlist>
@@ -1405,7 +1401,6 @@
                         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
                         <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
                     the <remark>ITS Module</remark> are met.</member>
-
                 <member>- attributes from the namespace
                         <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
                         <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
@@ -1446,6 +1441,11 @@
     <member>- <link linkend="state"><code>state</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
     <member>- <link linkend="substate"><code>subState</code></link>, <glossterm>OPTIONAL</glossterm></member>
+
+    <member>- attributes from the namespace
+            <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
+            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
+        the <remark>Plural, Gender, and Select Module</remark> are met.</member>
 
   </simplelist>
 

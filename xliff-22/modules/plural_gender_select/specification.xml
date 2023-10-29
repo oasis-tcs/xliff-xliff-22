@@ -68,150 +68,112 @@
     other {You deleted # files.}
 }</programlisting></para>
 
-      <para>XLIFF: <programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
-  &lt;unit id="tu1" <emphasis role="bold">pgs:case="0"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted no file.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu2" <emphasis role="bold">pgs:case="1"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted one file.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-&lt;/group&gt;</programlisting></para>
+      <para>XLIFF: <programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
+  &lt;segment id="seg1" <emphasis role="bold">pgs:case="0"</emphasis>&gt;
+    &lt;source&gt;You deleted no file.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg2" <emphasis role="bold">pgs:case="1"</emphasis>&gt;
+    &lt;source&gt;You deleted one file.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
+  &lt;/segment&gt;
+&lt;/unit&gt;</programlisting></para>
 
       <para>A more compact form (non-XLIFF), to understand what is going on:
-      <programlisting>group @switch(plural:file_count)
-    unit "You deleted no files."                       @case(0)
-    unit "You deleted one file."                       @case(1)
-    unit "You deleted &lt;ph disp="file_count"/&gt; files."  @case(other)</programlisting></para>
+      <programlisting>unit <emphasis>@switch(plural:file_count)</emphasis>
+    segment "You deleted no files."                       <emphasis>@case(0)</emphasis>
+    segment "You deleted one file."                       <emphasis>@case(1)</emphasis>
+    segment "You deleted &lt;ph disp="file_count"/&gt; files."  <emphasis>@case(other)</emphasis></programlisting></para>
     </section>
 
     <section>
       <title>Ordinal</title>
 
-      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="ordinal:place"</emphasis>&gt;
+      <para><programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="ordinal:place"</emphasis>&gt;
   &lt;!-- For English ordinals "one" is NOT the same as "1" --&gt;
-  &lt;unit id="tu1" <emphasis role="bold">pgs:case="one"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;st place&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu2" <emphasis role="bold">pgs:case="two"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;nd place&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu3" <emphasis role="bold">pgs:case="few"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;rd place&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu4" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;th place&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-&lt;/group&gt;</programlisting></para>
+  &lt;segment id="seg1" <emphasis role="bold">pgs:case="one"</emphasis>&gt;
+    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;st place&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg2" <emphasis role="bold">pgs:case="two"</emphasis>&gt;
+    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;nd place&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg3" <emphasis role="bold">pgs:case="few"</emphasis>&gt;
+    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;rd place&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg4" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;th place&lt;/source&gt;
+  &lt;/segment&gt;
+&lt;/unit&gt;</programlisting></para>
 
       <para>In a more compact form (non-XLIFF), to understand what is going
-      on: <programlisting>group @switch(ordinal:place)
-    unit "You won #st place"  @case(one)
-    unit "You won #nd place"  @case(two)
-    unit "You won #rd place"  @case(few)
-    unit "You won #th place"  @case(other)</programlisting></para>
+      on: <programlisting>unit <emphasis>@switch(ordinal:place)</emphasis>
+    segment "You won #st place"  <emphasis>@case(one)</emphasis>
+    segment "You won #nd place"  <emphasis>@case(two)</emphasis>
+    segment "You won #rd place"  <emphasis>@case(few)</emphasis>
+    segment "You won #th place"  <emphasis>@case(other)</emphasis></programlisting></para>
     </section>
 
     <section>
       <title>Gender</title>
 
-      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="gender:host_gender"</emphasis>&gt;
-  &lt;unit id="tu1" <emphasis role="bold">pgs:case="feminine"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You are invited to her party&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu2" <emphasis role="bold">pgs:case="masculine"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You are invited to his party&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You are invited to their party&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-&lt;/group&gt;</programlisting></para>
+      <para><programlisting>&lt;unit id="seg1" <emphasis role="bold">pgs:switch="gender:host_gender"</emphasis>&gt;
+  &lt;segment id="seg1" <emphasis role="bold">pgs:case="feminine"</emphasis>&gt;
+    &lt;source&gt;You are invited to her party&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg2" <emphasis role="bold">pgs:case="masculine"</emphasis>&gt;
+    &lt;source&gt;You are invited to his party&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg3" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
+    &lt;source&gt;You are invited to their party&lt;/source&gt;
+  &lt;/segment&gt;
+&lt;/unit&gt;</programlisting></para>
 
       <para>In a more compact form (non-XLIFF), to understand what is going
-      on: <programlisting>group @switch(gender:host_gender)
-    unit "You are invited to her party"    @case(feminine)
-    unit "You are invited to his party"    @case(masculine)
-    unit "You are invited to their party"  @case(other)</programlisting></para>
+      on: <programlisting>unit <emphasis>@switch(gender:host_gender)</emphasis>
+    segment "You are invited to her party"    <emphasis>@case(feminine)</emphasis>
+    segment "You are invited to his party"    <emphasis>@case(masculine)</emphasis>
+    segment "You are invited to their party"  <emphasis>@case(other)</emphasis></programlisting></para>
 
       <para>Gender also allows for cases other than <code>feminine</code> /
-      <code>masculine</code> / <code>other</code> in order to support
+      <code>masculine</code> / <code>neuter</code> / <code>other</code> in order to support
       languages with <ulink
-      url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#Masculine,_feminine,_and_neuter">more
+      url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders">more
       than 3 genders</ulink>.</para>
     </section>
 
     <section>
       <title>Combinations</title>
 
-      <para><programlisting>&lt;group id="g1" <emphasis role="bold">pgs:switch="gender:host_gender plural:guest_count"</emphasis>&gt;
-  &lt;unit id="tu1" <emphasis role="bold">pgs:case="feminine 0"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to her party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu2" <emphasis role="bold">pgs:case="feminine 1"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to her party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu3" <emphasis role="bold">pgs:case="feminine other"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to her party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu4" <emphasis role="bold">pgs:case="masculine 0"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to his party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu5" <emphasis role="bold">pgs:case="masculine 1"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to his party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu6" <emphasis role="bold">pgs:case="masculine other"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="gssssssssssssssssssssssssssssssssssuest_count"/&gt; guests to his party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu7" <emphasis role="bold">pgs:case="other 0"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to their party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu8" <emphasis role="bold">pgs:case="other 1"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to their party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu9" <emphasis role="bold">pgs:case="other other"</emphasis>&gt;
-    &lt;segment&gt;
-      &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to their party.&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-&lt;/group&gt;</programlisting></para>
+      <para><programlisting>&lt;unit id="seg1" <emphasis role="bold">pgs:switch="gender:host_gender plural:guest_count"</emphasis>&gt;
+  &lt;segment id="seg1" <emphasis role="bold">pgs:case="feminine 0"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to her party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg2" <emphasis role="bold">pgs:case="feminine 1"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to her party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg3" <emphasis role="bold">pgs:case="feminine other"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to her party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg4" <emphasis role="bold">pgs:case="masculine 0"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to his party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg5" <emphasis role="bold">pgs:case="masculine 1"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to his party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg6" <emphasis role="bold">pgs:case="masculine other"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="gssssssssssssssssssssssssssssssssssuest_count"/&gt; guests to his party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg7" <emphasis role="bold">pgs:case="other 0"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite anyone to their party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg8" <emphasis role="bold">pgs:case="other 1"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited one guest to their party.&lt;/source&gt;
+  &lt;/segment&gt;
+  &lt;segment id="seg9" <emphasis role="bold">pgs:case="other other"</emphasis>&gt;
+    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited &lt;ph id="2" disp="guest_count"/&gt; guests to their party.&lt;/source&gt;
+  &lt;/segment&gt;
+&lt;/unit&gt;</programlisting></para>
 
       <para>In a more compact form (non-XLIFF), to understand what is going
       on: <programlisting>switch ( [gender:host_gender, plural:guest_count] ) {
@@ -241,16 +203,16 @@
       information from the case.</para>
 
       <para>Using the short representation (and <code>#</code> for
-      identifiers): <programlisting>unit "$host_name invited @subFlow(tu2 tu3) to @subFlow(tu4 tu5 tu6) party." <emphasis
+      identifiers): <programlisting>segment "$host_name invited @subFlow(tu2 tu3) to @subFlow(tu4 tu5 tu6) party." <emphasis
             role="bold">#msgid</emphasis>
-group <emphasis role="bold">#g_msgid_plural_gender</emphasis> @switch(plural:guest_count gender:host_gender)
-    group <emphasis role="bold">#g_msgid_plural_guest_count</emphasis> @switch(plural:guest_count)
-        unit "one guest"             <emphasis role="bold">#msgid_guest_count_1</emphasis>         @case(1)
-        unit "$guest_count guests"   <emphasis role="bold">#msgid_guest_count_other</emphasis>     @case(other)
-    group <emphasis role="bold">#g_msgid_gender_host_gender</emphasis> @switch(gender:host_gender)
-        unit: "her"                  <emphasis role="bold">#msgid_host_gender_feminine</emphasis>  @case(feminine)
-        unit: "his"                  <emphasis role="bold">#msgid_host_gender_masculine</emphasis> @case(masculine)
-        unit: "their"                <emphasis role="bold">#msgid_host_gender_other</emphasis>     @case(other)</programlisting></para>
+unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(plural:guest_count gender:host_gender)</emphasis>
+    unit <emphasis role="bold">#g_msgid_plural_guest_count</emphasis> <emphasis>@switch(plural:guest_count)</emphasis>
+        segment "one guest"             <emphasis role="bold">#msgid_guest_count_1</emphasis>         <emphasis>@case(1)</emphasis>
+        segment "$guest_count guests"   <emphasis role="bold">#msgid_guest_count_other</emphasis>     <emphasis>@case(other)</emphasis>
+    unit <emphasis role="bold">#g_msgid_gender_host_gender</emphasis> <emphasis>@switch(gender:host_gender)</emphasis>
+        segment: "her"                  <emphasis role="bold">#msgid_host_gender_feminine</emphasis>  <emphasis>@case(feminine)</emphasis>
+        segment: "his"                  <emphasis role="bold">#msgid_host_gender_masculine</emphasis> <emphasis>@case(masculine)</emphasis>
+        segment: "their"                <emphasis role="bold">#msgid_host_gender_other</emphasis>     <emphasis>@case(other)</emphasis></programlisting></para>
 
       <para>So if the older system shows the identifiers to the translators
       then they can get an idea of what is going on.</para>
@@ -262,32 +224,26 @@ group <emphasis role="bold">#g_msgid_plural_gender</emphasis> @switch(plural:gue
       be able to properly leverage even if the English string is the
       same.</para>
 
-      <para>For example: <programlisting>&lt;group id="g1" pgs:switch="plural:file_count"&gt;
-  &lt;unit id="<emphasis role="bold">tu1_file_count_1</emphasis>" pgs:case="1"&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted one file&lt;/source&gt;
-      &lt;target xml:lang="ro"&gt;Ați șters un fișier&lt;/target&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="<emphasis role="bold">tu1_file_count_few</emphasis>" pgs:case="few"&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
-      &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; fișiere&lt;/target&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="<emphasis role="bold">tu1_file_count_other</emphasis>" pgs:case="other"&gt;
-    &lt;segment&gt;
-      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
-      &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; de fișiere&lt;/target&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-&lt;/group&gt;</programlisting></para>
+      <para>For example: <programlisting>&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
+  &lt;segment id="<emphasis role="bold">tu1_file_count_1</emphasis>" pgs:case="1"&gt;
+    &lt;source&gt;You deleted one file.&lt;/source&gt;
+    &lt;target xml:lang="ro"&gt;Ați șters un fișier.&lt;/target&gt;
+  &lt;/segment&gt;
+  &lt;segment id="<emphasis role="bold">tu1_file_count_few</emphasis>" pgs:case="few"&gt;
+    &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
+    &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; fișiere.&lt;/target&gt;
+  &lt;/segment&gt;
+  &lt;segment id="<emphasis role="bold">tu1_file_count_other</emphasis>" pgs:case="other"&gt;
+    &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
+    &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; de fișiere.&lt;/target&gt;
+  &lt;/segment&gt;
+&lt;/unit&gt;</programlisting></para>
     </section>
 
     <section>
       <title>Keep the same order of the selectors</title>
 
-      <para>By keeping the generated text units in the same order we can
+      <para>By keeping the generated text segments in the same order we can
       improve Translation Memory leveraging that relies on context (the text
       before and after the current segment).</para>
 
@@ -318,7 +274,7 @@ group <emphasis role="bold">#g_msgid_plural_gender</emphasis> @switch(plural:gue
                 <listitem>
                   <para>followed by the predefined keywords in this
                   order:<code>feminine</code>, <code>masculine</code>,
-                  <code>other</code></para>
+                  <code>neuter</code>, <code>other</code></para>
                 </listitem>
               </itemizedlist></para>
           </listitem>
@@ -350,35 +306,35 @@ group <emphasis role="bold">#g_msgid_plural_gender</emphasis> @switch(plural:gue
 
       <para>So generating a note can help a lot.</para>
 
-      <para>Romanian example: <programlisting>&lt;group id="g1" pgs:switch="plural:file_count"&gt;
-  &lt;unit id="tu1_file_count_1" pgs:case="1"&gt;
-    <emphasis role="bold">&lt;notes&gt;
-      &lt;note category="plural_examples"&gt;1&lt;/note&gt;
-    &lt;/notes&gt;</emphasis>
-    &lt;segment&gt;
-      &lt;source&gt;You deleted one file&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu1_file_count_few" pgs:case="few"&gt;
-    <emphasis role="bold">&lt;notes&gt;
-      &lt;note category="plural_examples"&gt;0, 2~16, 102, 1002&lt;/note&gt;
-    &lt;/notes&gt;</emphasis>
-    &lt;segment&gt;
-      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-  &lt;unit id="tu1_file_count_other" pgs:case="other"&gt;
-    <emphasis role="bold">&lt;notes&gt;
-      &lt;note category="plural_examples"&gt;20~35, 100, 1000, 10000, 100000&lt;/note&gt;
-    &lt;/notes&gt;</emphasis>
-    &lt;segment&gt;
-      &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files&lt;/source&gt;
-    &lt;/segment&gt;
-  &lt;/unit&gt;
-&lt;/group&gt;</programlisting></para>
+      <para>The notes refer to the segments, so they need a <code>ref</code> attibute pointing to the segment.
+      And since they contain examples for the target language, no the source,
+      they also need an <code>appliesTo="target"</code> attribute.</para>
+
+      <para>Romanian example: <programlisting>&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
+  <emphasis role="bold">&lt;notes&gt;
+    &lt;note appliesTo="target" ref="tu1_file_count_1" category="plural_examples"&gt;1&lt;/note&gt;
+    &lt;note appliesTo="target" ref="tu1_file_count_few" category="plural_examples"&gt;0, 2~16, 102, 1002&lt;/note&gt;
+    &lt;note appliesTo="target" ref="tu1_file_count_other" category="plural_examples"&gt;20~35, 100, 1000, 10000, 100000&lt;/note&gt;
+  &lt;/notes&gt;</emphasis>
+  &lt;segment id="<emphasis role="bold">tu1_file_count_1</emphasis>" pgs:case="1"&gt;
+    &lt;source&gt;You deleted one file.&lt;/source&gt;
+    &lt;target xml:lang="ro"&gt;Ați șters un fișier.&lt;/target&gt;
+  &lt;/segment&gt;
+  &lt;segment id="<emphasis role="bold">tu1_file_count_few</emphasis>" pgs:case="few"&gt;
+    &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
+    &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; fișiere.&lt;/target&gt;
+  &lt;/segment&gt;
+  &lt;segment id="<emphasis role="bold">tu1_file_count_other</emphasis>" pgs:case="other"&gt;
+    &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
+    &lt;target xml:lang="ro"&gt;Ați șters &lt;ph id="1" disp="file_count"/&gt; de fișiere.&lt;/target&gt;
+  &lt;/segment&gt;
+&lt;/unit&gt;</programlisting></para>
 
       <para>The examples are available from CLDR, in XML formal, or using the
       ICU library.</para>
+
+      <para>A browser friendle table with all the supported rules for all languages, including examples,
+      is available <ulink url="https://www.unicode.org/cldr/charts/43/supplemental/language_plural_rules.html">here</ulink>.</para>
 
       <para><emphasis role="bold">Warning:</emphasis> these examples are
       language dependent. This means one cannot just send a single XLIFF to be
