@@ -15,13 +15,114 @@
     <para>This module provides an XLIFF capability to store information needed
     to represent and process messages with variants. This includes plural
     &amp; gender variants, and a generic select.</para>
+
+    <para>We have all seen messages like this: <emphasis>“You have 12
+    day(s).”</emphasis></para>
+
+    <para>This was a common way to deal with plural in English, but didn’t
+    sound natural in English, and didn’t translate well in other
+    languages.</para>
+
+    <para>Sometimes developers tried to make things more natural with some
+    help from code:</para>
+
+    <programlisting>if (count == 1)
+    message = "You have {count} day"
+else
+    message = "You have {count} days"</programlisting>
+
+    <para>However, this does not work for all languages. The plural rules are
+    different between locales. French uses singular for zero and one
+    (<emphasis>“0 jour”</emphasis>, <emphasis>“1 jour”</emphasis>,
+    <emphasis>“2 jours”</emphasis>), most Slavic languages have four plural
+    forms (Czech: <emphasis>“1 den”</emphasis>, <emphasis>“2 dny”</emphasis>,
+    <emphasis>“1,5 dne”</emphasis>, <emphasis>“5 dní”</emphasis>), Chinese has
+    no plurals at all, etc.</para>
+
+    <para>This sounds very unusual to many English speakers, but it is in fact
+    very similar to the way English handles ordinals:
+    <emphasis>“21<superscript>st</superscript> place”</emphasis>,
+    <emphasis>“32<superscript>nd</superscript> place”</emphasis>,
+    <emphasis>“23<superscript>rd</superscript> place”</emphasis>,
+    <emphasis>“25<superscript>th</superscript> place”</emphasis>.</para>
+
+    <para>The CLDR (Common Locale Data Repository) project collected the
+    plural rules (both cardinal and ordinal) for many languages.</para>
+
+    <para>Many technologies and internationalization libraries already support
+    such advanced plural rules (for example <ulink
+    url="https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html">gettext</ulink>,
+    <ulink
+    url="https://developer.apple.com/documentation/xcode/localizing-strings-that-contain-plurals">macOS
+    and iOS</ulink>, <ulink
+    url="https://developer.android.com/guide/topics/resources/string-resource#Plurals">Android</ulink>,
+    <ulink
+    url="https://unicode-org.github.io/icu/userguide/format_parse/messages/#complex-argument-types">ICU
+    (International Components for Unicode)</ulink>, <ulink
+    url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules">ECMAScript
+    Intl</ulink>, more.</para>
+
+    <para>The main challenge with these kinds of messages for localization
+    (and XLIFF) is how to map between the plural variants, when the source and
+    target language don’t have the same number of variants.</para>
+
+    <para>When the two English forms (<emphasis>“{count} day”</emphasis> /
+    <emphasis>“{count} day”</emphasis>) to four Czech forms
+    (<emphasis>“{count} den”</emphasis>, <emphasis>“{count} dny”</emphasis>,
+    <emphasis>“{count} dne”</emphasis>, <emphasis>“{count} dní”</emphasis>?
+    Or Arabic (5 forms), or Chinese one form?</para>
+
+    <para>This kind of n-to-m mapping is difficult, because many localization
+    systems are designed with a one-to-one mapping in mind (one string in the
+    source language results in one string in the target language).</para>
+
+    <para>Gender represents a similar challenge (when translating
+    <emphasis>“red {item}”</emphasis> the form of “red” should change depending
+    on the gender (and number, and case) of the item.</para>
+
+    <para>Combinations of these two concepts are even more challenging:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para><emphasis>“{host_name} invited {count} guest to
+        <emphasis role="bold">her</emphasis> party”</emphasis></para>
+      </listitem>
+
+      <listitem>
+        <para><emphasis>“{host_name} invited {count} guest to
+        <emphasis role="bold">his</emphasis> party”</emphasis></para>
+      </listitem>
+
+      <listitem>
+        <para><emphasis>“{host_name} invited {count} guest to
+        <emphasis role="bold">their</emphasis> party”</emphasis></para>
+      </listitem>
+
+      <listitem>
+        <para><emphasis>“{host_name} invited {count} guest<emphasis role="bold">s</emphasis> to
+        <emphasis role="bold">her</emphasis> party”</emphasis></para>
+      </listitem>
+
+      <listitem>
+        <para><emphasis>“{host_name} invited {count} guest<emphasis role="bold">s</emphasis> to
+        <emphasis role="bold">his</emphasis> party”</emphasis></para>
+      </listitem>
+
+      <listitem>
+        <para><emphasis>“{host_name} invited {count} guest<emphasis role="bold">s</emphasis> to
+        <emphasis role="bold">their</emphasis> party”</emphasis></para>
+      </listitem>
+    </itemizedlist>
+
+    <para>This XLIFF extension is designed to represent such concepts, already
+    supported by several technologies.</para>
   </section>
 
   <section>
     <title>Module Namespace and Validation Artifacts</title>
 
     <para>The namespace for the Plural, Gender, and Select module is:
-    <code>urn:oasis:names:tc:xliff:pgsm:1.0</code>.</para>
+    <code>urn:oasis:names:tc:xliff:pgs:1.0</code>.</para>
 
     <para>XML Schema for this module is available at <ulink
     url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd">&this-loc;/schemas/plural_gender_select.xsd</ulink>.</para>
@@ -62,7 +163,9 @@
     <section>
       <title>Plural</title>
 
-      <para>ICU: <programlisting>{file_count, plural,
+      <para><ulink
+      url="https://unicode-org.github.io/icu-docs/apidoc/dev/icu4j/com/ibm/icu/text/MessageFormat.html">ICU
+      <code>MessageFormat</code></ulink>: <programlisting>{file_count, plural,
        =0 {You deleted no file.}
        =1 {You deleted one file.}
     other {You deleted # files.}
@@ -136,8 +239,8 @@
     segment "You are invited to their party"  <emphasis>@case(other)</emphasis></programlisting></para>
 
       <para>Gender also allows for cases other than <code>feminine</code> /
-      <code>masculine</code> / <code>neuter</code> / <code>other</code> in order to support
-      languages with <ulink
+      <code>masculine</code> / <code>neuter</code> / <code>other</code> in
+      order to support languages with <ulink
       url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders">more
       than 3 genders</ulink>.</para>
     </section>
@@ -185,31 +288,31 @@
 &lt;/unit&gt;</programlisting></para>
 
       <para>In a more compact form (non-XLIFF), to understand what is going
-      on: <programlisting>switch ( <emphasis role="bold">[gender:host_gender, plural:guest_count]</emphasis> ) {
-  case <emphasis role="bold">[ feminine,     0]</emphasis>:
+      on: <programlisting>switch ( <emphasis role="bold">[gender:host_gender plural:guest_count]</emphasis> ) {
+  case <emphasis role="bold">[ feminine     0]</emphasis>:
        "$host_name did not invite anyone to her party."
-  case <emphasis role="bold">[ feminine,     1]</emphasis>:
+  case <emphasis role="bold">[ feminine     1]</emphasis>:
        "$host_name invited one guest to her party."
-  case <emphasis role="bold">[ feminine, other]</emphasis>:
+  case <emphasis role="bold">[ feminine other]</emphasis>:
        "$host_name invited $guest_count guests to her party."
-  case <emphasis role="bold">[masculine,     0]</emphasis>:
+  case <emphasis role="bold">[masculine     0]</emphasis>:
        "$host_name did not invite anyone to his party."
-  case <emphasis role="bold">[masculine,     1]</emphasis>:
+  case <emphasis role="bold">[masculine     1]</emphasis>:
        "$host_name invited one guest to his party."
-  case <emphasis role="bold">[masculine, other]</emphasis>:
+  case <emphasis role="bold">[masculine other]</emphasis>:
        "$host_name invited $guest_count guests to his party."
-  case <emphasis role="bold">[    other,     0]</emphasis>:
+  case <emphasis role="bold">[    other     0]</emphasis>:
        "$host_name did not invite anyone to their party."
-  case <emphasis role="bold">[    other,     1]</emphasis>:
+  case <emphasis role="bold">[    other     1]</emphasis>:
        "$host_name invited one guest to their party."
-  case <emphasis role="bold">[    other, other]</emphasis>:
+  case <emphasis role="bold">[    other other]</emphasis>:
        "$host_name invited $guest_count guests to their party."
 }</programlisting></para>
     </section>
   </section>
 
   <section>
-    <title>Maximizing compatibility</title>
+    <title>Recommended practices</title>
 
     <para>There are a few things that an implementer can do to help
     applications that are not aware of this module.</para>
@@ -326,11 +429,13 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
 
       <para>So generating a note can help a lot.</para>
 
-      <para>The notes refer to the segments, so they need a <code>ref</code> attibute pointing to the segment.
-      And since they contain examples for the target language, no the source,
-      they also need an <code>appliesTo="target"</code> attribute.</para>
+      <para>The notes refer to the segments, so they need a <code>ref</code>
+      attibute pointing to the segment. And since they contain examples for
+      the target language, no the source, they also need an
+      <code>appliesTo="target"</code> attribute.</para>
 
-      <para>Romanian example: <programlisting>&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
+      <para>Romanian example: <programlisting>&lt;unit id="<emphasis
+            role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
   <emphasis role="bold">&lt;notes&gt;
     &lt;note appliesTo="target" ref="tu1_file_count_1"
         category="plural_examples"&gt;1&lt;/note&gt;
@@ -358,8 +463,9 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
       <para>The examples are available from CLDR, in XML formal, or using the
       ICU library.</para>
 
-      <para>A browser friendle table with all the supported rules for all languages, including examples,
-      is available <ulink url="https://www.unicode.org/cldr/charts/43/supplemental/language_plural_rules.html">here</ulink>.</para>
+      <para>A browser friendle table with all the supported rules for all
+      languages, including examples, is available <ulink
+      url="https://www.unicode.org/cldr/charts/43/supplemental/language_plural_rules.html">here</ulink>.</para>
 
       <para><emphasis role="bold">Warning:</emphasis> these examples are
       language dependent. This means one cannot just send a single XLIFF to be
@@ -372,8 +478,8 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
       <para>Depending on the degree of automation this might mean just a small
       change in a configuration, or a lot of manual work.</para>
 
-      <para>In fact, some companies already use workflows doing this because
-      they pre-populate the <code>&lt;target&gt;</code>, pre-leverage, include
+      <para>Some companies already use workflows doing this because they
+      pre-populate the <code>&lt;target&gt;</code>, pre-leverage, include
       translation candidates or glossary info, partial TMs, etc.</para>
 
       <para>Having such a workflow means that the tools can add the missing
@@ -387,36 +493,5 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
       <para>The list of selectors needed for each locale are available from
       CLDR or ICU APIs.</para>
     </section>
-  </section>
-
-  <section>
-    <title>Annex, links</title>
-
-    <para><emphasis role="bold">The ICU MessageFormat explained:</emphasis>
-    <ulink
-    url="http://userguide.icu-project.org/formatparse/messages">http://userguide.icu-project.org/formatparse/messages</ulink></para>
-
-    <para><emphasis role="bold">The CLDR spec for Plural Rules:</emphasis>
-    <ulink
-    url="https://cldr.unicode.org/index/cldr-spec/plural-rules">https://cldr.unicode.org/index/cldr-spec/plural-rules</ulink></para>
-
-    <para><emphasis role="bold">Language Plural Rules (all
-    languages):</emphasis> <ulink
-    url="http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html">http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html</ulink></para>
-
-    <para><emphasis role="bold">CLDR plural files:</emphasis> <ulink
-    url="https://www.unicode.org/Public/cldr/43/">https://www.unicode.org/Public/cldr/43/</ulink>.
-    Version 43 is the current version, but you can navigate to the last
-    version.</para>
-
-    <para>When unzipping the <code>core.zip</code> archive the
-    <code>plurals.xml</code> &amp; <code>ordinals.xml</code> files are in the
-    <code>common/supplemental</code> folder.</para>
-
-    <para><emphasis role="bold">ICU4C APIs:</emphasis> <ulink
-    url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html">https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html</ulink></para>
-
-    <para><emphasis role="bold">ICU4J APIs:</emphasis> <ulink
-    url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html">https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html</ulink></para>
   </section>
 </section>

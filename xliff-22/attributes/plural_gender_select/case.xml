@@ -26,9 +26,9 @@
    &lt;segment id="seg1" <emphasis role="bold">pgs:case="1 feminine"</emphasis>&gt;...&lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
 
-  <para><emphasis>Constraints:</emphasis> the number of comma-separated items
+  <para><emphasis>Constraints:</emphasis> the number of space-separated items
   (variables) in the <code>switch</code> attribute of the unit <glossterm>MUST</glossterm>
-  match the number of comma-separated values in the <code>case</code> attribute.</para>
+  match the number of space-separated values in the <code>case</code> attribute.</para>
 
   <para>Also, each value in case should also match the type of selector in the
   <code>switch</code> attribute.</para>
