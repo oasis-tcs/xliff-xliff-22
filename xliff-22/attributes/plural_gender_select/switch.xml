@@ -13,7 +13,7 @@
 
   <para><emphasis>Value description:</emphasis> Text.</para>
 
-  <para>The text contains a comma-separated list of items, each item
+  <para>The text contains a space-separated list of items, each item
   containing a selector keyword, followed by colon (<code>:</code>), and followed by
   the variable name used for selection.</para>
 
@@ -25,7 +25,7 @@
   targetdoc="../elements/structural/unit.xml"
   targetptr="unit"><code>&lt;unit&gt;</code></olink>.</para>
 
-  <para><emphasis>Example:</emphasis> <programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="plural:count,gender:host_gender"</emphasis>&gt;
+  <para><emphasis>Example:</emphasis> <programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="plural:count gender:host_gender"</emphasis>&gt;
 ...
 &lt;/unit&gt;</programlisting></para>
 </section>

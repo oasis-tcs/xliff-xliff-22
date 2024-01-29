@@ -667,6 +667,48 @@
             <ulink url="http://www.w3.org/TR/xml-i18n-bp/">http://www.w3.org/TR/xml-i18n-bp/</ulink>
           </citetitle> W3C Working Group.</bibliomixed>
 
+        <bibliomixed id="biblio_icu_mf"><abbrev>ICU MF</abbrev>
+          <title>The ICU MessageFormat explained:</title>
+          <citetitle>
+		    <ulink url="http://userguide.icu-project.org/formatparse/messages">http://userguide.icu-project.org/formatparse/messages</ulink>
+          </citetitle>
+        </bibliomixed>
+
+        <bibliomixed id="biblio_cldr_plural_spec"><abbrev>CLDR Plural Spec</abbrev>
+          <title>The CLDR spec for Plural Rules:</title>
+          <citetitle>
+		    <ulink url="https://cldr.unicode.org/index/cldr-spec/plural-rules">https://cldr.unicode.org/index/cldr-spec/plural-rules</ulink>
+          </citetitle>
+        </bibliomixed>
+
+        <bibliomixed id="biblio_cldr_plural_lang"><abbrev>CLDR Plural Lang</abbrev>
+          <title>Language Plural Rules (all languages):</title>
+          <citetitle>
+			<ulink url="http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html">http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html</ulink>
+          </citetitle>
+        </bibliomixed>
+
+        <bibliomixed id="biblio_cldr_plural"><abbrev>CLDR Plural</abbrev>
+          <title>CLDR plural files (<code>plurals.xml</code> &amp; <code>ordinals.xml</code> in <code>core.zip</code>):</title>
+          <citetitle>
+			<ulink url="https://www.unicode.org/Public/cldr/44/">https://www.unicode.org/Public/cldr/44/</ulink>
+          </citetitle>
+        </bibliomixed>
+
+        <bibliomixed id="biblio_icu4c_api"><abbrev>ICU4C API</abbrev>
+          <title>ICU4C APIs:</title>
+          <citetitle>
+			<ulink url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html">https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html</ulink>
+          </citetitle>
+        </bibliomixed>
+
+        <bibliomixed id="biblio_icu4j_api"><abbrev>ICU4J API</abbrev>
+          <title>ICU4J APIs:</title>
+          <citetitle>
+			<ulink url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html">https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html</ulink>
+          </citetitle>
+        </bibliomixed>
+
       </bibliography>
     </section>
   </section>
