@@ -75,9 +75,13 @@
         </listitem>
         <listitem>
             <para>Added new <olink targetdoc="../modules/plural_gender_select/specification.xml"
-                targetptr="plural_gender_select_module">Plural, Gender, and Select Module</olink>.
-            </para>
+                    targetptr="plural_gender_select_module">Plural, Gender, and Select
+                    Module</olink>. </para>
             <!-- Add approval date later -->
+        </listitem>
+        <listitem>
+            <para>Updated <olink targetdoc="mediaType.xml" targetptr="mediaType">Appendix A</olink>
+                with the official MIME type listed in IANA Media Type Registry </para>
         </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the

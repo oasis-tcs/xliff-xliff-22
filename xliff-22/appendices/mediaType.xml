@@ -8,22 +8,16 @@
 %xinclude;
 ]>
 <appendix role="normative" id="mediaType">
-    <title>Media Type Registration Template for XLIFF Version 2.0 and higher Versions</title>
-    <para>This Appendix is based on the Committee Specification 01 of the <ulink
-        url="http://docs.oasis-open.org/xliff/xliff-media/v2.0/cs01/xliff-media-v2.0-cs01.html"
-        >Media Type Registration Template for XLIFF Version 2.0</ulink> published on 22 September
-        2014, which is also the latest version of the Registration Template, as the TC decided to
-        merge the template (with some necessary editorial updates) with this XLIFF Version &version;
-        specification. Additionally, the Security Considerations have been substantially expanded
-        based on an IESG Expert feedback, as per this archived conversation <ulink
-            url="https://lists.oasis-open.org/archives/xliff/201502/msg00004.html"
-            >https://lists.oasis-open.org/archives/xliff/201502/msg00004.html</ulink>. XLIFF &pversion;
-        was provisionally registered as <code>application/xliff+xml</code> in the <ulink
-            url="https://www.iana.org/assignments/provisional-standard-media-types/provisional-standard-media-types.xhtml"
-            >IANA Provisional Standard Media Type Registry</ulink>.</para>
-    <para>This Appendix content will be used to seek final media type registration for XLIFF Version
-        &pversion; and higher Versions (including this XLIFF Version &version;). </para>
-    
-    <xi:include href="mediaTypeTemplate.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    
+    <title>MIME Type for XLIFF Version 2.0 and Later Releases</title>
+
+    <para>A MIME type (Multipurpose Internet Mail Extensions type) is a two-part identifier for file
+        formats and format content transmitted on the Internet. The MIME type is the mechanism used
+        to tell a client application the type of document being transferred from a server. It is
+        important that servers are set up correctly so that the correct MIME type is transferred
+        with each document.</para>
+
+    <para>XLIFF is registered in the <ulink
+            url="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA Media Types
+            Registry</ulink> as <code>application/xliff+xml</code>.</para>
+
 </appendix>
