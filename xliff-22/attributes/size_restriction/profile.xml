@@ -14,5 +14,5 @@
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/size_restriction/data.xml" targetptr="slr_data"><code>&lt;data&gt;</code></olink>.</para>
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/size_restriction/data.xml" targetptr="slr_data"><code>&lt;data&gt;</code></olink>.</para>
 </section>

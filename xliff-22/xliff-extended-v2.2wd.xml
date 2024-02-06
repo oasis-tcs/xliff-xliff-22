@@ -6742,7 +6742,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="glossentry"><code>&lt;glossEntry></code></link> and <link linkend="translation"><code>&lt;translation></code></link></para>
+  <para><emphasis>Used in:</emphasis> <link linkend="glossentry"><code>&lt;glossEntry></code></link> and <link linkend="translation"><code>&lt;translation></code></link></para>
 <itemizedlist>
   <title>Constraints</title>
   <listitem>
@@ -6788,7 +6788,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="term"><code>&lt;term></code></link>, 
+  <para><emphasis>Used in:</emphasis> <link linkend="term"><code>&lt;term></code></link>, 
   <link linkend="translation"><code>&lt;translation></code></link>, and 
   <link linkend="definition"><code>&lt;definition></code></link>.</para>
   
@@ -7519,7 +7519,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="metadata"><code>&lt;metadata></code></link> and <link linkend="metagroup"><code>&lt;metaGroup></code></link></para>
+  <para><emphasis>Used in:</emphasis> <link linkend="metadata"><code>&lt;metadata></code></link> and <link linkend="metagroup"><code>&lt;metaGroup></code></link></para>
 <itemizedlist>
   <title>Constraints</title>
   <listitem>
@@ -7931,7 +7931,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="res_resourceItem"><code>&lt;resourceItem></code></link> and <link linkend="res_resourceItemRef"><code>&lt;resourceItemRef></code></link></para>
+  <para><emphasis>Used in:</emphasis> <link linkend="res_resourceItem"><code>&lt;resourceItem></code></link> and <link linkend="res_resourceItemRef"><code>&lt;resourceItemRef></code></link></para>
   
 </section>
     <section id="res_xml_lang">
@@ -7961,7 +7961,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="res_resourceItem"><code>&lt;resourceItem></code></link></para>
+  <para><emphasis>Used in:</emphasis> <link linkend="res_resourceItem"><code>&lt;resourceItem></code></link></para>
   <note><para>If you cannot use any of the standard MIME type values as specified above, a new MIME type can be registered according to <ulink url="http://tools.ietf.org/rfc/rfc2048.txt">[RFC
     2048]</ulink>.</para></note>
 
@@ -7975,7 +7975,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> <code>yes</code></para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="res_resourceItem"><code>&lt;resourceItem></code></link></para>
+  <para><emphasis>Used in:</emphasis> <link linkend="res_resourceItem"><code>&lt;resourceItem></code></link></para>
 
 </section>
     <section id="res_href">
@@ -7987,7 +7987,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="res_source"><code>&lt;source></code></link>, <link linkend="res_target"><code>&lt;target></code></link>, and <link linkend="res_reference"><code>&lt;reference></code></link></para>
+  <para><emphasis>Used in:</emphasis> <link linkend="res_source"><code>&lt;source></code></link>, <link linkend="res_target"><code>&lt;target></code></link>, and <link linkend="res_reference"><code>&lt;reference></code></link></para>
   
 </section>
     <section id="res_ref">
@@ -8000,7 +8000,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="res_resourceItemRef"><code>&lt;resourceItemRef></code></link></para>
+  <para><emphasis>Used in:</emphasis> <link linkend="res_resourceItemRef"><code>&lt;resourceItemRef></code></link></para>
   
 <itemizedlist>
   <title>Constraints</title>
@@ -8268,7 +8268,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> empty string</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="slr_profiles"><code>&lt;profiles></code></link>.</para>
+  <para><emphasis>Used in:</emphasis> <link linkend="slr_profiles"><code>&lt;profiles></code></link>.</para>
 </section>
         <section id="slr_general_profile">
   <title>generalProfile</title>
@@ -8280,7 +8280,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> empty string</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="slr_profiles"><code>&lt;profiles></code></link>.</para>
+  <para><emphasis>Used in:</emphasis> <link linkend="slr_profiles"><code>&lt;profiles></code></link>.</para>
 </section>
         <section id="slr_storage">
   <title>storage</title>
@@ -8364,7 +8364,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> <code>none</code></para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="slr_normalization"><code>&lt;normalization></code></link>.</para>
+  <para><emphasis>Used in:</emphasis> <link linkend="slr_normalization"><code>&lt;normalization></code></link>.</para>
 </section>
         <section id="slr_profile">
   <title>profile</title>
@@ -8375,7 +8375,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="slr_data"><code>&lt;data></code></link>.</para>
+  <para><emphasis>Used in:</emphasis> <link linkend="slr_data"><code>&lt;data></code></link>.</para>
 </section>
         <section id="slr_storage_restriction">
   <title>storageRestriction</title>
@@ -12333,7 +12333,7 @@ backslash (<code>\</code>).</para>
     
     <para><emphasis>Value description:</emphasis> Text. </para>
     
-    <para><emphasis>Default value:</emphasis>: default values for this attribute
+    <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
     
     <itemizedlist>
@@ -12415,7 +12415,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Value description:</emphasis>
         The value is a text string, however commas if present separate distinct domain values within the string.</para>
     
-    <para><emphasis>Default value:</emphasis>: default values for this attribute
+    <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
     
     <itemizedlist>
@@ -12480,7 +12480,7 @@ backslash (<code>\</code>).</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><link linkend="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></link> and 
+  <para><emphasis>Used in:</emphasis> <link linkend="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></link> and 
     <link linkend="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></link>.</para>
   <warning>
     <para>Since the ITS Module reuses the W3C namespace <code>http://www.w3.org/2005/11/its</code>
@@ -12599,7 +12599,7 @@ backslash (<code>\</code>).</para>
     
     <para><emphasis>Value description:</emphasis> text string. </para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -12795,7 +12795,7 @@ backslash (<code>\</code>).</para>
     <para>For normative usage description and informative guidance for the above values, see <link linkend="ITS20">[ITS]</link>
         <ulink url="http://www.w3.org/TR/its20/#lqissue-typevalues">http://www.w3.org/TR/its20/#lqissue-typevalues</ulink>.</para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -13183,7 +13183,7 @@ backslash (<code>\</code>).</para>
     <para>The number represents the self reported confidence of the application or service providing
         the <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> metadata, the higher the better.</para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -13975,7 +13975,7 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Value description:</emphasis> IRI</para>
     <para>The IRI is supposed to resolve as human or machine readable <ulink url="http://www.w3.org/TR/its20/#textAnalysis-info-pieces">Entity type / concept class</ulink> information.</para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -13998,7 +13998,7 @@ backslash (<code>\</code>).</para>
     <para>The number represents the self reported confidence of the application or service providing
         the <ulink url="http://www.w3.org/TR/its20/#textanalysis">Text Analysis</ulink> metadata, the higher the better.</para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -14027,7 +14027,7 @@ backslash (<code>\</code>).</para>
     <para>The text string is supposed to be a human or machine redable identifier of a concept within a collection of text analysis concept resources, in the
         sense of an <ulink url="http://www.w3.org/TR/its20/#textAnalysis-info-pieces">identifier of the concept in the collection</ulink>.</para>
 
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
 
 
 
@@ -14053,7 +14053,7 @@ backslash (<code>\</code>).</para>
     <para>The IRI is supposed to reference an external resource for the disambiguated entity in the
         sense of <ulink url="http://www.w3.org/TR/its20/#textAnalysis-info-pieces">identifier of the text analysis target</ulink>.</para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -14077,7 +14077,7 @@ backslash (<code>\</code>).</para>
         analysis concept resources, in the sense of an <ulink url="http://www.w3.org/TR/its20/#textAnalysis-info-pieces"> identifier of the collection
             source</ulink>.</para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -14105,7 +14105,7 @@ backslash (<code>\</code>).</para>
     <para>The number represents the self reported confidence of the application or service providing
         the <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> metadata, the higher the better.</para>
     
-    <para><emphasis>Default value:</emphasis>: undefined</para>
+    <para><emphasis>Default value:</emphasis> undefined</para>
     
     
     
@@ -14269,7 +14269,7 @@ backslash (<code>\</code>).</para>
     
     <para><emphasis>Value description:</emphasis> The value is a text string restricted to the string <code>2.0</code>.</para>
     
-    <para><emphasis>Default value:</emphasis>: default values for this attribute
+    <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
     
     <itemizedlist>
@@ -15236,7 +15236,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
             <section>
                 <title>Extension by custom attributes on <code>&lt;xliff></code>,
                         <code>&lt;file></code>, <code>&lt;group></code>,
-                        <code>&lt;unit></code>,<code>&lt;note></code>,<code>&lt;mrk></code> and
+                        <code>&lt;unit></code>, <code>&lt;note></code>, <code>&lt;mrk></code> and
                         <code>&lt;sm></code></title>
                 <para>Custom attribute extension is likely not as sensitive as embedding of
                     arbitrary XML structures and will not in itself pose any threat except

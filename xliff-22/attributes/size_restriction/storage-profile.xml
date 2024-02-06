@@ -15,5 +15,5 @@
 
   <para><emphasis>Default value:</emphasis> empty string</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/size_restriction/profiles.xml" targetptr="slr_profiles"><code>&lt;profiles&gt;</code></olink>.</para>
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/size_restriction/profiles.xml" targetptr="slr_profiles"><code>&lt;profiles&gt;</code></olink>.</para>
 </section>

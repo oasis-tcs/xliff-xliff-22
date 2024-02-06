@@ -205,7 +205,7 @@
             <section>
                 <title>Extension by custom attributes on <code>&lt;xliff></code>,
                         <code>&lt;file></code>, <code>&lt;group></code>,
-                        <code>&lt;unit></code>,<code>&lt;note></code>,<code>&lt;mrk></code> and
+                        <code>&lt;unit></code>, <code>&lt;note></code>, <code>&lt;mrk></code> and
                         <code>&lt;sm></code></title>
                 <para>Custom attribute extension is likely not as sensitive as embedding of
                     arbitrary XML structures and will not in itself pose any threat except

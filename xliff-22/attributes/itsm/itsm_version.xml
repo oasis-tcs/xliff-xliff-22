@@ -16,7 +16,7 @@
     
     <para><emphasis>Value description:</emphasis> The value is a text string restricted to the string <code>2.0</code>.</para>
     
-    <para><emphasis>Default value:</emphasis>: default values for this attribute
+    <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
     
     <itemizedlist>

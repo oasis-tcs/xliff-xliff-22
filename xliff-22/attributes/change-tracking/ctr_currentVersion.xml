@@ -14,7 +14,7 @@
 
   <para><emphasis>Default value:</emphasis> none</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"><code>&lt;revisions></code></olink>.</para>
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"><code>&lt;revisions></code></olink>.</para>
 
 <itemizedlist>
   <title>Constraints</title>

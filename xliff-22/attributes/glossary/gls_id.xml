@@ -18,7 +18,7 @@
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/glossary/glossentry.xml" targetptr="glossentry"><code>&lt;glossEntry></code></olink> and <olink targetdoc="../../elements/glossary/translation.xml" targetptr="translation"><code>&lt;translation></code></olink></para>
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/glossary/glossentry.xml" targetptr="glossentry"><code>&lt;glossEntry></code></olink> and <olink targetdoc="../../elements/glossary/translation.xml" targetptr="translation"><code>&lt;translation></code></olink></para>
 <itemizedlist>
   <title>Constraints</title>
   <listitem>

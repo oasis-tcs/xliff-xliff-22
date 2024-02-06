@@ -15,7 +15,7 @@
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/glossary/term.xml" targetptr="term"><code>&lt;term></code></olink>, 
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/glossary/term.xml" targetptr="term"><code>&lt;term></code></olink>, 
   <olink targetdoc="../../elements/glossary/translation.xml" targetptr="translation"><code>&lt;translation></code></olink>, and 
   <olink targetdoc="../../elements/glossary/definition.xml" targetptr="definition"><code>&lt;definition></code></olink>.</para>
   
