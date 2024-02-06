@@ -16,13 +16,13 @@
     <orderedlist>
         <listitem id="CoreSchema">
             <para><firstterm>XLIFF Core</firstterm>
-                <link linkend="XMLSchema">[XML Schema]</link>,</para>
+                <olink  targetdoc="../introduction/introduction.xml" targetptr="XMLSchema">[XML Schema]</olink>,</para>
             <para><ulink url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
                 >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink></para>
             
         </listitem>
         <listitem id="XLIFFCatalog">
-            <para><link linkend="XMLCatalogs">[XML Catalog]</link> of <firstterm>XLIFF
+            <para><olink targetdoc="../introduction/introduction.xml" targetptr="XMLCatalogs">[XML Catalog]</olink> of <firstterm>XLIFF
                 Defined</firstterm> XML Schemas,</para>
             <para><ulink url="&this-loc;/schemas/catalog.xml"
                 >&this-loc;/schemas/catalog.xml</ulink></para>

@@ -32,6 +32,8 @@
     +---<ulink url="&this-loc;/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
     |
     +---<ulink url="&this-loc;/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/plural_gender_select.xsd">Plural, Gender, and Select Module</ulink>
   
  
 </programlisting>
