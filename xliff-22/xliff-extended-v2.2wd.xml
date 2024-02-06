@@ -14541,8 +14541,8 @@ else
     <emphasis>“23<superscript>rd</superscript> place”</emphasis>,
     <emphasis>“25<superscript>th</superscript> place”</emphasis>.</para>
 
-    <para>The CLDR (Common Locale Data Repository) project collected the
-    plural rules (both cardinal and ordinal) for many languages.</para>
+    <para>The <ulink url="https://cldr.unicode.org/index/cldr-spec/plural-rules">CLDR (Common Locale Data Repository)
+    project</ulink> collected the plural rules (both cardinal and ordinal) for many languages.</para>
 
     <para>Many technologies and internationalization libraries already support
     such advanced plural rules (for example <ulink url="https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html">gettext</ulink>,
@@ -14939,8 +14939,8 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
 
                 <listitem>
                   <para>the predefined keywords in this
-                  order:<code>zero</code>, <code>one</code>,
-                  <code>two</code>,<code>few</code>, <code>many</code>,
+                  order: <code>zero</code>, <code>one</code>,
+                  <code>two</code>, <code>few</code>, <code>many</code>,
                   <code>other</code></para>
                 </listitem>
               </itemizedlist></para>
@@ -14954,7 +14954,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
 
                 <listitem>
                   <para>followed by the predefined keywords in this
-                  order:<code>feminine</code>, <code>masculine</code>,
+                  order: <code>feminine</code>, <code>masculine</code>,
                   <code>neuter</code>, <code>other</code></para>
                 </listitem>
               </itemizedlist></para>
@@ -14988,8 +14988,8 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
       <para>So generating a note can help a lot.</para>
 
       <para>The notes refer to the segments, so they need a <code>ref</code>
-      attibute pointing to the segment. And since they contain examples for
-      the target language, no the source, they also need an
+      attribute pointing to the segment. And since they contain examples for
+      the target language, not the source, they also need an
       <code>appliesTo="target"</code> attribute.</para>
 
       <para>Romanian example: <programlisting format="linespecific">&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count">
@@ -15020,7 +15020,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
       <para>The examples are available from CLDR, in XML formal, or using the
       ICU library.</para>
 
-      <para>A browser friendle table with all the supported rules for all
+      <para>A browser friendly table with all the supported rules for all
       languages, including examples, is available <ulink url="https://www.unicode.org/cldr/charts/43/supplemental/language_plural_rules.html">here</ulink>.</para>
 
       <para><emphasis role="bold">Warning:</emphasis> these examples are
