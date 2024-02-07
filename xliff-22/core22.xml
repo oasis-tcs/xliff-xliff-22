@@ -90,7 +90,7 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para> Declarative validation artifacts accessible from <ulink url="&this-loc;/schemas/"
+          <para> XML schemas accessible from <ulink url="&this-loc;/schemas/"
               >&this-loc;/schemas/</ulink>
           </para>
         </listitem>

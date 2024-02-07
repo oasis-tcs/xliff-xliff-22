@@ -59,7 +59,7 @@
     </authorgroup>
 
 
-    <pubdate>5 February 2024</pubdate>
+    <pubdate>7 February 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -73,7 +73,7 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para> Declarative validation artifacts accessible from <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/</ulink>
+          <para> XML schemas accessible from <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/</ulink>
           </para>
         </listitem>
       </itemizedlist>
@@ -179,7 +179,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya.
-        5 February 2024. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        7 February 2024. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
