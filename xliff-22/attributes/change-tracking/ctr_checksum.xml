@@ -16,6 +16,6 @@
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"><code>&lt;revision></code></olink>, any XLIFF element that accepts attributes from any namespace.</para>
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"><code>&lt;revision></code></olink>, any XLIFF element that accepts attributes from any namespace.</para>
   
 </section>

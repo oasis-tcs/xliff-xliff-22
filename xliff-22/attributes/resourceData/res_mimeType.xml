@@ -18,7 +18,7 @@
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink></para>
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink></para>
   <note><para>If you cannot use any of the standard MIME type values as specified above, a new MIME type can be registered according to <ulink url="http://tools.ietf.org/rfc/rfc2048.txt">[RFC
     2048]</ulink>.</para></note>
 

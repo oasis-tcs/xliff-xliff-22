@@ -46,5 +46,5 @@
 
   <para><emphasis>Default value:</emphasis> <code>none</code></para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/size_restriction/normalization.xml" targetptr="slr_normalization"><code>&lt;normalization&gt;</code></olink>.</para>
+  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/size_restriction/normalization.xml" targetptr="slr_normalization"><code>&lt;normalization&gt;</code></olink>.</para>
 </section>

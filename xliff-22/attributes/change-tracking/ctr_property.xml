@@ -14,6 +14,6 @@
 
   <para><emphasis>Default value:</emphasis> none</para>
 
-  <para><emphasis>Used in:</emphasis><olink targetdoc="../../elements/change-tracking/item.xml" targetptr="item"><code>&lt;item></code></olink>.</para>
+  <para><emphasis>Used in: </emphasis><olink targetdoc="../../elements/change-tracking/item.xml" targetptr="item"><code>&lt;item></code></olink>.</para>
   
 </section>

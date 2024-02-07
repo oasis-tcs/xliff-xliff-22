@@ -18,7 +18,7 @@
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis><olink
+  <para><emphasis>Used in:</emphasis> <olink
     targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
     ><code>&lt;metadata></code></olink> and <olink
       targetdoc="../elements/metadata/metagroup.xml" targetptr="metagroup"
