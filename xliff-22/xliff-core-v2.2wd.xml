@@ -3729,7 +3729,7 @@
     <section id="type">
   <title>type</title>
   <para>Type - indicates the type of an element.</para>
-  <para><emphasis>Value description:</emphasis> allowed values for this attribute depend on the
+  <para><emphasis>Value description:</emphasis> Allowed values for this attribute depend on the
     element in which it is used.</para>
   <itemizedlist>
     <listitem>

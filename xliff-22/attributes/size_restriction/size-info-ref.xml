@@ -15,7 +15,7 @@
     Otherwise the attribute on the paired <olink targetdoc="../../elements/inline/sc.xml" targetptr="sc"><code>&lt;sc></code></olink>
     element also cover its partner <olink targetdoc="../../elements/inline/ec.xml" targetptr="ec"><code>&lt;ec></code></olink> element.</para>
 
-  <para><emphasis>Value description:</emphasis> a reference to data that provide the same information that could be otherwise put in a
+  <para><emphasis>Value description:</emphasis> A reference to data that provide the same information that could be otherwise put in a
     <olink targetdoc="size-info.xml" targetptr="slr_size_info"><code>sizeInfo</code></olink> attribute. 
   The reference <glossterm>MUST</glossterm> point to an element in a
     <olink targetdoc="../../elements/size_restriction/data.xml" targetptr="slr_data"><code>&lt;data></code></olink> element

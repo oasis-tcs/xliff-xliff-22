@@ -3727,7 +3727,7 @@
     <section id="type">
   <title>type</title>
   <para>Type - indicates the type of an element.</para>
-  <para><emphasis>Value description:</emphasis> allowed values for this attribute depend on the
+  <para><emphasis>Value description:</emphasis> Allowed values for this attribute depend on the
     element in which it is used.</para>
   <itemizedlist>
     <listitem>
@@ -6301,7 +6301,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     
     <para>Match quality - indicates the quality of the <link linkend="target"><code>&lt;target></code></link> child of a <link linkend="match"><code>&lt;match></code></link> element based on an external benchmark or metric.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> undefined</para>
     
@@ -6319,7 +6319,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         <link linkend="candidates_similarity"><code>similarity</code></link> and <link linkend="matchQuality"><code>matchQuality</code></link> attributes based on an externally provided
         algorithm.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> undefined</para>
     
@@ -6409,7 +6409,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
         <link linkend="match"><code>&lt;match></code></link>
         element and the translatable text being matched.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> undefined</para>
     
@@ -8288,7 +8288,7 @@ backslash (<code>\</code>).</para>
   <para>This attribute specifies the normalization form to apply for storage size restrictions. Only
     the normalization forms C and D as specified by the Unicode Consortium are supported, see <ulink url="http://unicode.org/reports/tr15/">Unicode Standard Annex #15</ulink>.</para>
 
-  <para><emphasis>Value description:</emphasis> normalization to apply.</para>
+  <para><emphasis>Value description:</emphasis> Normalization to apply.</para>
   <table>
     <title>Values</title>
     <tgroup cols="2">
@@ -8330,7 +8330,7 @@ backslash (<code>\</code>).</para>
   <para>This attribute specifies the normalization to apply for general size restrictions. Only the
     normalization forms C and D as specified by the Unicode Consortium are supported, see <ulink url="http://unicode.org/reports/tr15/">Unicode Standard Annex #15</ulink>.</para>
 
-  <para><emphasis>Value description:</emphasis> normalization to apply.</para>
+  <para><emphasis>Value description:</emphasis> Normalization to apply.</para>
   <table>
     <title>Values</title>
     <tgroup cols="2">
@@ -8476,7 +8476,7 @@ backslash (<code>\</code>).</para>
     Otherwise the attribute on the paired <link linkend="sc"><code>&lt;sc></code></link>
     element also cover its partner <link linkend="ec"><code>&lt;ec></code></link> element.</para>
 
-  <para><emphasis>Value description:</emphasis> a reference to data that provide the same information that could be otherwise put in a
+  <para><emphasis>Value description:</emphasis> A reference to data that provide the same information that could be otherwise put in a
     <link linkend="slr_size_info"><code>sizeInfo</code></link> attribute. 
   The reference <glossterm>MUST</glossterm> point to an element in a
     <link linkend="slr_data"><code>&lt;data></code></link> element
@@ -12597,7 +12597,7 @@ backslash (<code>\</code>).</para>
         address a specific Localization Quality Issue.</para>
     
     
-    <para><emphasis>Value description:</emphasis> text string. </para>
+    <para><emphasis>Value description:</emphasis> Text string. </para>
     
     <para><emphasis>Default value:</emphasis> undefined</para>
     
@@ -12725,7 +12725,7 @@ backslash (<code>\</code>).</para>
         the higher the severity. Tools are expected to interpret this score within their own severity
         rating system.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> undefined</para>
     
@@ -12756,7 +12756,7 @@ backslash (<code>\</code>).</para>
             <code>locQualityIssueType</code> attribute.</para>
     
     
-    <para><emphasis>Value description:</emphasis> a text string, exactly one value from the
+    <para><emphasis>Value description:</emphasis> A text string, exactly one value from the
         following list:</para>
     <para> <simplelist type="vert">
     
@@ -12893,7 +12893,7 @@ backslash (<code>\</code>).</para>
     <para> This attribute provides the quality rating score pertaining to a structural or inline portion of target text, the higher the number
         the better the quality rating. Tools are expected to interpret this score within their own quality rating system.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
@@ -12952,7 +12952,7 @@ backslash (<code>\</code>).</para>
         <link linkend="itsm_locQualityRatingScore"><code>locQualityRatingScore</code></link> 
         attribute in scope. Scores under the given threshold indicte a quality check fail.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
@@ -13027,7 +13027,7 @@ backslash (<code>\</code>).</para>
         votes or the better margin of positive votes over negative votes. Tools are expected to
         interpret this value within their own quality rating system.</para>
     
-    <para><emphasis>Value description:</emphasis> an Integer.</para>
+    <para><emphasis>Value description:</emphasis> An Integer.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
@@ -13103,7 +13103,7 @@ backslash (<code>\</code>).</para>
     <para> This attribute provides the minimum passing vote threshold for any Localization Quality Rating Votes that are in scope of
         the <link linkend="itsm_locQualityRatingVoteThreshold"><code>locQualityRatingVoteThreshold</code></link> attribute.</para>
     
-    <para><emphasis>Value description:</emphasis> an Integer.</para>
+    <para><emphasis>Value description:</emphasis> An Integer.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
@@ -13179,7 +13179,7 @@ backslash (<code>\</code>).</para>
             <code>mtConfidence</code> attribute.</para>
     
     
-    <para><emphasis>Value description:</emphasis> floating point number between 0 and 1.</para>
+    <para><emphasis>Value description:</emphasis> Floating point number between 0 and 1.</para>
     <para>The number represents the self reported confidence of the application or service providing
         the <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> metadata, the higher the better.</para>
     
@@ -13994,7 +13994,7 @@ backslash (<code>\</code>).</para>
             <code>taConfidence</code> attribute.</para>
     
     
-    <para><emphasis>Value description:</emphasis> floating point number between 0 and 1.</para>
+    <para><emphasis>Value description:</emphasis> Floating point number between 0 and 1.</para>
     <para>The number represents the self reported confidence of the application or service providing
         the <ulink url="http://www.w3.org/TR/its20/#textanalysis">Text Analysis</ulink> metadata, the higher the better.</para>
     
@@ -14023,7 +14023,7 @@ backslash (<code>\</code>).</para>
         attribute.</para>
 
 
-    <para><emphasis>Value description:</emphasis> text string</para>
+    <para><emphasis>Value description:</emphasis> Text string</para>
     <para>The text string is supposed to be a human or machine redable identifier of a concept within a collection of text analysis concept resources, in the
         sense of an <ulink url="http://www.w3.org/TR/its20/#textAnalysis-info-pieces">identifier of the concept in the collection</ulink>.</para>
 
@@ -14072,7 +14072,7 @@ backslash (<code>\</code>).</para>
         attribute.</para>
     
     
-    <para><emphasis>Value description:</emphasis> text string</para>
+    <para><emphasis>Value description:</emphasis> Text string</para>
     <para>The text string is supposed to be a human or machine redable name of a collection of text
         analysis concept resources, in the sense of an <ulink url="http://www.w3.org/TR/its20/#textAnalysis-info-pieces"> identifier of the collection
             source</ulink>.</para>
@@ -14101,7 +14101,7 @@ backslash (<code>\</code>).</para>
             <code>termConfidence</code> attribute.</para>
     
     
-    <para><emphasis>Value description:</emphasis> floating point number between 0 and 1.</para>
+    <para><emphasis>Value description:</emphasis> Floating point number between 0 and 1.</para>
     <para>The number represents the self reported confidence of the application or service providing
         the <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> metadata, the higher the better.</para>
     

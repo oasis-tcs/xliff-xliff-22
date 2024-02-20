@@ -14,7 +14,7 @@
         <olink targetdoc="../elements/structural/match.xml" targetptr="match"><code>&lt;match></code></olink>
         element and the translatable text being matched.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> undefined</para>
     

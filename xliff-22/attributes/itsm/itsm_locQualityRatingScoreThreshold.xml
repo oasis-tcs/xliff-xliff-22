@@ -15,7 +15,7 @@
         <olink targetdoc="itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore"><code>locQualityRatingScore</code></olink> 
         attribute in scope. Scores under the given threshold indicte a quality check fail.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>

@@ -14,7 +14,7 @@
     <para> This attribute provides the quality rating score pertaining to a structural or inline portion of target text, the higher the number
         the better the quality rating. Tools are expected to interpret this score within their own quality rating system.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>
