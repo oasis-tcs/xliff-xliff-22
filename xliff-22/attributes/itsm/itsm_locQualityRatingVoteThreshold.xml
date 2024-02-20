@@ -14,7 +14,7 @@
     <para> This attribute provides the minimum passing vote threshold for any Localization Quality Rating Votes that are in scope of
         the <link linkend="itsm_locQualityRatingVoteThreshold"><code>locQualityRatingVoteThreshold</code></link> attribute.</para>
     
-    <para><emphasis>Value description:</emphasis> an Integer.</para>
+    <para><emphasis>Value description:</emphasis> An Integer.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>

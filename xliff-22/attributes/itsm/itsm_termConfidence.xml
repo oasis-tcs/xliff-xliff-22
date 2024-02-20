@@ -13,7 +13,7 @@
             <code>termConfidence</code> attribute.</para>
     
     
-    <para><emphasis>Value description:</emphasis> floating point number between 0 and 1.</para>
+    <para><emphasis>Value description:</emphasis> Floating point number between 0 and 1.</para>
     <para>The number represents the self reported confidence of the application or service providing
         the <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> metadata, the higher the better.</para>
     

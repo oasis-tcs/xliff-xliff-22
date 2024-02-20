@@ -12,7 +12,7 @@
     normalization forms C and D as specified by the Unicode Consortium are supported, see <ulink
       url="http://unicode.org/reports/tr15/">Unicode Standard Annex #15</ulink>.</para>
 
-  <para><emphasis>Value description:</emphasis> normalization to apply.</para>
+  <para><emphasis>Value description:</emphasis> Normalization to apply.</para>
   <table>
     <title>Values</title>
     <tgroup cols="2">

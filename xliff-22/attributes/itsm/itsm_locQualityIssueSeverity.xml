@@ -15,7 +15,7 @@
         the higher the severity. Tools are expected to interpret this score within their own severity
         rating system.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> undefined</para>
     

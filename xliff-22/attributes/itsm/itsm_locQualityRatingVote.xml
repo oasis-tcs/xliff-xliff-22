@@ -16,7 +16,7 @@
         votes or the better margin of positive votes over negative votes. Tools are expected to
         interpret this value within their own quality rating system.</para>
     
-    <para><emphasis>Value description:</emphasis> an Integer.</para>
+    <para><emphasis>Value description:</emphasis> An Integer.</para>
         
     <para><emphasis>Default value:</emphasis> default values for this attribute
         depend on the element in which it is used:</para>

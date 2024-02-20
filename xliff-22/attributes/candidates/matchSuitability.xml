@@ -24,7 +24,7 @@
                 ><code>matchQuality</code></olink> attributes based on an externally provided
         algorithm.</para>
     
-    <para><emphasis>Value description:</emphasis> a decimal number between 0.0 and 100.0.</para>
+    <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
         
     <para><emphasis>Default value:</emphasis> undefined</para>
     
