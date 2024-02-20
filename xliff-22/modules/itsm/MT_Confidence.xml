@@ -8,7 +8,7 @@
 <section id="MT_Confidence">
   <title>MT Confidence</title>
 
-  <para>communicates the confidence score from a machine translation engine for the accuracy of a translation it has provided
+  <para>Communicates the confidence score from a Machine Translation engine for the accuracy of a translation it has provided
     <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> for details.</para>
   <warning><para>MT Confidence is not intended to provide a score that is comparable among or between Machine
       Translation engines and platforms. This data category does NOT aim to establish any sort of

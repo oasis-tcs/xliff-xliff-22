@@ -15,9 +15,9 @@
         <title>Introduction</title>
 
         <para>The source text of a document can be pre-processed against various translation
-            resources (TM, MT, etc.) to provide translation candidates. This module provides an
-            XLIFF capability to store lists of possible translations along with information about
-            the similarity of the match, the quality of the translation, its provenance, etc.
+            resources (Translation Memory, Machine Translation, etc.) to provide translation candidates.
+            This module provides an XLIFF capability to store lists of possible translations along with
+            information about the similarity of the match, the quality of the translation, its provenance, etc.
         </para>
     </section>
     <section>

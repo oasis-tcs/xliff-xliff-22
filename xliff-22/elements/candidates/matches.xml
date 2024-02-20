@@ -7,7 +7,7 @@
                          ]>
 <section id="matches">
     <title>matches</title>
-    <para>Collection of matches retrieved from any leveraging system (MT, TM, etc.)</para>
+    <para>Collection of matches retrieved from any leveraging system (Machine Translation, Translation Memory, etc.)</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
         <member>- One or more <olink targetdoc="match.xml" targetptr="match"><code>&lt;match></code></olink> elements</member>
