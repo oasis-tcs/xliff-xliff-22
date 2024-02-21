@@ -342,7 +342,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
       <para>Also, using a consistent way of generating identifiers one can
       improve the leverage.</para>
 
-      <para>TMs that give priority to a text-id match vs text-only match will
+      <para>Translation Memories that give priority to a text-id match vs text-only match will
       be able to properly leverage even if the English string is the
       same.</para>
 
@@ -413,7 +413,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
         </itemizedlist></para>
 
       <para>Keeping a consistent order (the one suggested above or a different
-      one) will improve the leveraging of TM tools that rely on context (what
+      one) will improve the leveraging of Translation Memory tools that rely on context (what
       is before and after the segment) to improve the result.</para>
     </section>
 
@@ -481,7 +481,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
 
       <para>Some companies already use workflows doing this because they
       pre-populate the <code>&lt;target&gt;</code>, pre-leverage, include
-      translation candidates or glossary info, partial TMs, etc.</para>
+      translation candidates or glossary info, partial Translation Memories, etc.</para>
 
       <para>Having such a workflow means that the tools can add the missing
       plural cases depending on the target language.</para>

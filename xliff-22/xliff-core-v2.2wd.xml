@@ -4766,8 +4766,8 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
         <para>Another way to add a code is to convert part of the extracted
         text into code. In some cases the inline code can be created after
         extraction, using part of the text content. This can be done, for
-        instance, to get better matches from an existing TM, or better
-        candidates from an MT system.</para>
+        instance, to get better matches from an existing Translation Memory, or better
+        candidates from a Machine Translation system.</para>
 
         <para>For example, it can happen that a tool extracting a Java properties file to XLIFF
         is not sophisticated enough to treat HTML or XML snippets inside
@@ -4889,13 +4889,13 @@ Do &lt;b>cats&lt;/b> eat &lt;b>mice&lt;/b>?</programlisting>
         content. This is likely to be a rare use case. It is equivalent to
         deleting the code, with the addition to place the original data for
         the given code into the content, as text. This can be done, for
-        example, to get better matches from an existing TM, or better
-        candidates from an MT system.</para>
+        example, to get better matches from an existing Translation Memory, or better
+        candidates from a Machine Translation system.</para>
 
         <para>For instance, the following unit has an inline code
         corresponding to a variable place-holder. A tool can
         temporarily treat this variable as text to get better matches from an
-        existing TM.</para>
+        existing Translation Memory.</para>
 
         <programlisting format="linespecific">
 &lt;unit id="1">
