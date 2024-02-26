@@ -57,6 +57,10 @@
 |
 +---<olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> *
   |
+  +---<olink targetdoc="../../elements/structural/notes.xml" targetptr="notes"><code>&lt;notes></code></olink> *
+  | |
+  | +===<olink targetdoc="../../elements/structural/note.xml" targetptr="note"><code>&lt;note></code></olink> ?
+  |
   +---<olink targetdoc="../../elements/resourceData/source.xml" targetptr="res_source"><code>&lt;source></code></olink> ?
   | |
   | +---&lt;other> *
@@ -181,10 +185,13 @@
       module references multiple static images that an editor can make use of as context while translating or reviewing.</para>
 
 <programlisting>
-<!-- &lt;file&gt;&lt;res:resourceData&gt;&lt;res:resourceItem id="r1" mimeType="image/jpeg" context="yes"&gt;&lt;res:source xml:lang="en-us" href="resources\en\registryconfig1.resources.jpg" /&gt;&lt;res:target xml:lang="lb-lu" href="resources\lb\registryconfig1.resources.jpg" /&gt;&lt;res:reference xml:lang="de-de" href="resources\de\registryconfig1.resources.jpg" /&gt;&lt;/res:resourceItem&gt;&lt;res:resourceItem id="r2" mimeType="image/jpeg" context="yes"&gt;&lt;res:source xml:lang="en-us" href="resources\en\registryconfig2.resources.jpg" /&gt;&lt;res:target xml:lang="lb-lu" href="resources\lb\registryconfig2.resources.jpg" /&gt;&lt;/res:resourceItem&gt;&lt;/res:resourceData&gt;&lt;unit id="1"&gt;&lt;segment id="1" state="translated"&gt;&lt;source&gt;Remove Registry Config&lt;/source&gt;&lt;target&gt;Registrierungskonfiguration entfernen&lt;/target&gt;&lt;/segment&gt;&lt;res:resourceData&gt;&lt;res:resourceItemRef ref="r1" /&gt;&lt;res:resourceItemRef ref="r2" /&gt;&lt;/res:resourceData&gt;&lt;/unit&gt;&lt;/file&gt; -->
+<!-- &lt;file&gt;&lt;res:resourceData&gt;&lt;res:resourceItem id="r1" mimeType="image/jpeg" context="yes"&gt;&lt;notes&gt;&lt;note&gt;Registry configuration UI screen shot&lt;/note&gt;&lt;/notes&gt;&lt;res:source xml:lang="en-us" href="resources\en\registryconfig1.resources.jpg" /&gt;&lt;res:target xml:lang="lb-lu" href="resources\lb\registryconfig1.resources.jpg" /&gt;&lt;res:reference xml:lang="de-de" href="resources\de\registryconfig1.resources.jpg" /&gt;&lt;/res:resourceItem&gt;&lt;res:resourceItem id="r2" mimeType="image/jpeg" context="yes"&gt;&lt;res:source xml:lang="en-us" href="resources\en\registryconfig2.resources.jpg" /&gt;&lt;res:target xml:lang="lb-lu" href="resources\lb\registryconfig2.resources.jpg" /&gt;&lt;/res:resourceItem&gt;&lt;/res:resourceData&gt;&lt;unit id="1"&gt;&lt;segment id="1" state="translated"&gt;&lt;source&gt;Remove Registry Config&lt;/source&gt;&lt;target&gt;Registrierungskonfiguration entfernen&lt;/target&gt;&lt;/segment&gt;&lt;res:resourceData&gt;&lt;res:resourceItemRef ref="r1" /&gt;&lt;res:resourceItemRef ref="r2" /&gt;&lt;/res:resourceData&gt;&lt;/unit&gt;&lt;/file&gt; -->
 &lt;file id="f3">
   &lt;res:resourceData>
     &lt;res:resourceItem id="r1" mimeType="image/jpeg" context="yes">
+      &lt;notes>
+        &lt;note>Registry configuration UI screen shot&lt;/note>
+      &lt;/notes>
       &lt;res:source xml:lang="en-us"
           href="resources\en\registryconfig1.resources.jpg" />
       &lt;res:target xml:lang="lb-lu"

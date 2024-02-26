@@ -83,6 +83,13 @@
             <para>Updated <olink targetdoc="mediaType.xml" targetptr="mediaType">Appendix A</olink>
                 with the official MIME type listed in IANA Media Type Registry </para>
         </listitem>
+        <listitem>
+            <para>Allowed an optional <olink targetdoc="../elements/structural/notes.xml"
+                targetptr="notes"><code>&lt;notes></code></olink> element in <olink
+                targetdoc="../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
+                    ><code>&lt;res:resourceItem></code></olink>. Change approved during the meeting held on
+            February 20<superscript>th</superscript>, 2024.</para>
+    </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
         practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of

@@ -13,9 +13,10 @@
     <para><emphasis>Contains:</emphasis></para>
     <para>At least one of the following</para>
     <simplelist>
-        <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink> element followed by</member>
-        <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> element followed by</member>
-        <member>- Zero, one or more <olink targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink> elements</member>
+      <member>- Zero or one <olink targetdoc="../../elements/structural/notes.xml" targetptr="notes"><code>&lt;notes></code></olink> element followed by</member>
+      <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink> element followed by</member>
+      <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> element followed by</member>
+      <member>- Zero, one or more <olink targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink> elements</member>
     </simplelist>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
