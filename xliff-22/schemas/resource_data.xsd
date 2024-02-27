@@ -34,6 +34,7 @@
   <xs:element name="resourceItem">
     <xs:complexType mixed="false">
       <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="xlf:notes"/>
         <xs:element minOccurs="0" maxOccurs="1" ref="res:source"/>
         <xs:element minOccurs="0" maxOccurs="1" ref="res:target"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="res:reference"/>
