@@ -59,7 +59,7 @@
     </authorgroup>
 
 
-    <pubdate>21 February 2024</pubdate>
+    <pubdate>28 February 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -179,7 +179,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya.
-        21 February 2024. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        28 February 2024. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -7585,6 +7585,10 @@ backslash (<code>\</code>).</para>
 |
 +---<link linkend="res_resourceItem"><code>&lt;resourceItem></code></link> *
   |
+  +---<link linkend="notes"><code>&lt;notes></code></link> *
+  | |
+  | +===<link linkend="note"><code>&lt;note></code></link> ?
+  |
   +---<link linkend="res_source"><code>&lt;source></code></link> ?
   | |
   | +---&lt;other> *
@@ -7652,9 +7656,10 @@ backslash (<code>\</code>).</para>
     <para><emphasis>Contains:</emphasis></para>
     <para>At least one of the following</para>
     <simplelist type="vert">
-        <member>- Zero or one <link linkend="res_source"><code>&lt;source></code></link> element followed by</member>
-        <member>- Zero or one <link linkend="res_target"><code>&lt;target></code></link> element followed by</member>
-        <member>- Zero, one or more <link linkend="res_reference"><code>&lt;reference></code></link> elements</member>
+      <member>- Zero or one <link linkend="notes"><code>&lt;notes></code></link> element followed by</member>
+      <member>- Zero or one <link linkend="res_source"><code>&lt;source></code></link> element followed by</member>
+      <member>- Zero or one <link linkend="res_target"><code>&lt;target></code></link> element followed by</member>
+      <member>- Zero, one or more <link linkend="res_reference"><code>&lt;reference></code></link> elements</member>
     </simplelist>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
@@ -8083,6 +8088,9 @@ backslash (<code>\</code>).</para>
 &lt;file id="f3">
   &lt;res:resourceData>
     &lt;res:resourceItem id="r1" mimeType="image/jpeg" context="yes">
+      &lt;notes>
+        &lt;note>Registry configuration UI screen shot&lt;/note>
+      &lt;/notes>
       &lt;res:source xml:lang="en-us"
           href="resources\en\registryconfig1.resources.jpg" />
       &lt;res:target xml:lang="lb-lu"
@@ -15211,6 +15219,10 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
             <para>Updated <link linkend="mediaType">Appendix A</link>
                 with the official MIME type listed in IANA Media Type Registry </para>
         </listitem>
+        <listitem>
+            <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element in <link linkend="res_resourceItem"><code>&lt;res:resourceItem></code></link>. Change approved during the meeting held on
+            February 20<superscript>th</superscript>, 2024.</para>
+    </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
         practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
