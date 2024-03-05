@@ -45,7 +45,7 @@
   &lt;/segment>
 &lt;/unit>        
     </programlisting>
-
+    <!--
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
@@ -59,7 +59,7 @@
             </simplelist>
         </listitem>
     </itemizedlist>
-
+    -->
     <note>
         <para>When the <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
                 ><code>ref</code></olink> attribute points to a <olink
@@ -70,5 +70,8 @@
                     ><code>&lt;source></code></olink> child, unless the optional <olink
                 targetdoc="appliesto.xml" targetptr="appliesto">appliesTo</olink> attribute is set
             to <code>target</code>.</para>
+    </note>
+    <note>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
     </note>
 </section>

@@ -35,6 +35,7 @@
                         ><code>&lt;segment></code></olink> or <olink targetdoc="ignorable.xml"
                     targetptr="ignorable"><code>&lt;ignorable></code></olink>. </para>
         </listitem>
+        <!--
         <listitem>
             <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
                 allowed by the wildcard <code>other</code>:</para>
@@ -45,5 +46,9 @@
                         <glossterm>OPTIONAL</glossterm>.</member>
             </simplelist>
         </listitem>
+        -->
     </itemizedlist>
+    <note>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
+    </note>
 </section>

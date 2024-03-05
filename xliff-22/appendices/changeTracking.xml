@@ -27,14 +27,13 @@
         </listitem>
         <listitem>
             <para>Changed namespace for the core module to
-                    <code>urn:oasis:names:tc:xliff:document:2.2</code></para>
+                    <code>urn:oasis:names:tc:xliff:document:2.2</code>.</para>
         </listitem>
         <listitem>
             <para>Added an optional <olink targetdoc="../attributes/ref.xml" targetptr="ref"
                         ><code>ref</code></olink> attribute to <olink
                     targetdoc="./elements/structural/note.xml" targetptr="note"
-                        ><code>&lt;note></code></olink> element. Change approved on March
-                    15<superscript>th</superscript>, 2022.</para>
+                        ><code>&lt;note></code></olink> element.</para>
         </listitem>
         <listitem>
             <para>Changed the type of <olink targetdoc="../attributes/version.xml"
@@ -45,50 +44,42 @@
             <para>Allowed an optional <olink targetdoc="../elements/structural/notes.xml"
                     targetptr="notes"><code>&lt;notes></code></olink> element at the start of <olink
                     targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
-                        ><code>&lt;xliff></code></olink>. Change approved during the meeting held on
-                August 2<superscript>nd</superscript>, 2022.</para>
+                        ><code>&lt;xliff></code></olink>.</para>
         </listitem>
         <listitem>
             <para>Allowed an optional <olink targetdoc="../elements/metadata/metadata.xml"
                     targetptr="metadata"><code>&lt;mda:metadata></code></olink> element at the start
                 of <olink targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
-                        ><code>&lt;xliff></code></olink>. Change approved during the meeting held on
-                August 2<superscript>nd</superscript>, 2022.</para>
+                        ><code>&lt;xliff></code></olink>.</para>
         </listitem>
         <listitem>
-            <para>Removed references to Schematron, NVDL and Test Suite from this specification.
-                Change approved on September 20<superscript>th</superscript>, 2022.</para>
+            <para>Removed references to Schematron, NVDL and Test Suite from this specification.</para>
 
         </listitem>
         <listitem>
-            <para>Removed the informative Change Tracking Extension. Change approved on November
-                    2<superscript>nd</superscript>, 2022.</para>
+            <para>Removed the informative Change Tracking Extension.</para>
         </listitem>
         <listitem>
-            <para>Renamed Appendix B to "XLIFF Grammar Files (Normative)". Change approved on
-                January 3<superscript>rd</superscript>, 2023.</para>
+            <para>Renamed Appendix B to "XLIFF Grammar Files (Normative)".</para>
         </listitem>
         <listitem>
             <para>Clarified values for <olink targetdoc="../attributes/version.xml"
-                    targetptr="version"><code>version</code></olink> attribute. Change approved on
-                January 17<superscript>th</superscript>, 2023.</para>
+                    targetptr="version"><code>version</code></olink> attribute.</para>
         </listitem>
         <listitem>
             <para>Added new <olink targetdoc="../modules/plural_gender_select/specification.xml"
                     targetptr="plural_gender_select_module">Plural, Gender, and Select
                     Module</olink>. </para>
-            <!-- Add approval date later -->
         </listitem>
         <listitem>
             <para>Updated <olink targetdoc="mediaType.xml" targetptr="mediaType">Appendix A</olink>
-                with the official MIME type listed in IANA Media Type Registry </para>
+                with the official MIME type listed in IANA Media Type Registry.</para>
         </listitem>
         <listitem>
             <para>Allowed an optional <olink targetdoc="../elements/structural/notes.xml"
                 targetptr="notes"><code>&lt;notes></code></olink> element in <olink
                 targetdoc="../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
-                    ><code>&lt;res:resourceItem></code></olink>. Change approved during the meeting held on
-            February 20<superscript>th</superscript>, 2024.</para>
+                    ><code>&lt;res:resourceItem></code></olink>.</para>
     </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the

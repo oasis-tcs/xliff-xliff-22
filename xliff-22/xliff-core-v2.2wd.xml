@@ -58,7 +58,7 @@
       </editor>
     </authorgroup>
 
-    <pubdate>28 February 2024</pubdate>
+    <pubdate>5 March 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -181,7 +181,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya.
-        28 February 2024. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        5 March 2024. Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -1119,16 +1119,11 @@
                 if and only if the <firstterm>XLIFF Document</firstterm> contains <link linkend="target"><code>&lt;target></code></link>
                 elements that are children of <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link>. </para>
         </listitem>
-        <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
-                allowed by the wildcard <code>other</code>:</para>
-            <simplelist type="vert">
-                <member>- the <code><remark>its:version</remark></code> attribute from the
-                    namespace <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>OPTIONAL</glossterm>.</member>
-            </simplelist>
-        </listitem>
+        
     </itemizedlist>
+    <note>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
+    </note>
 </section>
 
     <section id="file">
@@ -1178,7 +1173,6 @@
         <title>Constraints</title>
         <listitem><para>The following <firstterm>XLIFF Module</firstterm> elements are explicitly allowed by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
-                
             <member>- Zero or one <remark><code>&lt;mda:metadata></code></remark> elements</member>
             <member>- Zero or one <remark><code>&lt;res:resourceData></code></remark>
                     element</member>
@@ -1196,31 +1190,12 @@
             <para><firstterm>Module</firstterm> and Extension elements <glossterm>MAY</glossterm> be
                 used in any order.</para>
         </listitem>
-        <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
-                allowed by the wildcard <code>other</code>:</para>
-            <simplelist type="vert">
-                <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
-                    provided that the Constraints specified in the <remark>Format Style Module</remark>
-                    are met.</member>
-                <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>, <glossterm>OPTIONAL</glossterm>,
-                    provided that the Constraints specified in the <remark>Size and Length Restriction Module</remark>
-                    are met.</member>
-                <member>- attributes from the namespace
-                        <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS Module</remark> are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS Module</remark> are met.</member>
-            </simplelist>
-        </listitem>
-
-    
+        
     </itemizedlist>
+    <note>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints
+            specified in the corresponding modules.</para>
+    </note>
 </section>
     
     <section id="skeleton">
@@ -1301,8 +1276,6 @@
             <para>The following <firstterm>XLIFF Module</firstterm> elements are explicitly allowed
                 by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
-                
-
                 <member>- Zero or one <remark><code>&lt;mda:metadata></code></remark>
                     elements</member>
                 <member>- Zero or one <remark><code>&lt;slr:data></code></remark> elements</member>
@@ -1317,49 +1290,25 @@
             <para><firstterm>Module</firstterm> and Extension elements <glossterm>MAY</glossterm> be
                 used in any order.</para>
         </listitem>
-        <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
-                allowed by the wildcard <code>other</code>:</para>
-            <simplelist type="vert">
-                <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
-                    provided that the Constraints specified in the <remark>Format Style Module</remark>
-                    are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>Size and Length Restriction                        Module</remark> are met.</member>
-                <member>- attributes from the namespace
-                        <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS                        Module</remark> are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-                            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS Module</remark> are met.</member>
-            </simplelist>
-        </listitem>
+        
     </itemizedlist>
-
+    <note>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
+    </note>
 </section>
 
     <section id="unit">
     <title>unit</title>
-    <para>Static container for a dynamic structure of elements holding the extracted translatable source text, aligned with the <firstterm>Translated</firstterm> text.</para>
+    <para>Static container for a dynamic structure of elements holding the extracted translatable
+        source text, aligned with the <firstterm>Translated</firstterm> text.</para>
 
     <para><emphasis>Contains:</emphasis></para>
     <simplelist type="vert">
         <member>- elements from other namespaces, <glossterm>OPTIONAL</glossterm></member>
-        <member>- Zero or one
-            <link linkend="notes"><code>&lt;notes></code></link>
-            elements followed by</member>
-        <member>- Zero or one
-            <link linkend="originaldata"><code>&lt;originalData></code></link>
-            element followed by</member>
-        <member>- One or more
-            <link linkend="segment"><code>&lt;segment></code></link>
-            or <link linkend="ignorable"><code>&lt;ignorable></code></link>
-            elements in any order.</member>
+        <member>- Zero or one <link linkend="notes"><code>&lt;notes></code></link> elements followed by</member>
+        <member>- Zero or one <link linkend="originaldata"><code>&lt;originalData></code></link> element followed by</member>
+        <member>- One or more <link linkend="segment"><code>&lt;segment></code></link> or <link linkend="ignorable"><code>&lt;ignorable></code></link> elements in any
+            order.</member>
 
 
 
@@ -1370,7 +1319,8 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist type="vert">
-        <member>- <link linkend="id"><code>id</code></link>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <link linkend="id"><code>id</code></link>,
+                <glossterm>REQUIRED</glossterm></member>
         <member>- <link linkend="name"><code>name</code></link>, <glossterm>OPTIONAL</glossterm></member>
         <member>- <link linkend="canResegment"><code>canResegment</code></link>, <glossterm>OPTIONAL</glossterm></member>
         <member>- <link linkend="translate"><code>translate</code></link>, <glossterm>OPTIONAL</glossterm></member>
@@ -1378,7 +1328,7 @@
         <member>- <link linkend="trgdir"><code>trgDir</code></link>, <glossterm>OPTIONAL</glossterm></member>
         <member>- <link linkend="xml_space"><code>xml:space</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <link linkend="type"><code>type</code></link>, <glossterm>OPTIONAL</glossterm></member>
 
 
 
@@ -1388,70 +1338,36 @@
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>A <link linkend="unit"><code>&lt;unit></code></link> <glossterm>MUST</glossterm> contain at least one
-                <link linkend="segment"><code>&lt;segment></code></link>
-                element.
-            </para>
+            <para>A <link linkend="unit"><code>&lt;unit></code></link>
+                <glossterm>MUST</glossterm> contain at least one <link linkend="segment"><code>&lt;segment></code></link> element. </para>
         </listitem>
         <listitem>
             <para>The following <firstterm>XLIFF Module</firstterm> elements are explicitly allowed
                 by the wildcard <code>other</code>:</para>
             <simplelist type="vert">
-                
-                <member>- Zero or one
-                    <remark><code>&lt;mtc:matches></code></remark>
-                    elements</member>
-                <member>- Zero or one
-                    <remark><code>&lt;gls:glossary></code></remark>
+                <member>- Zero or one <remark><code>&lt;mtc:matches></code></remark> elements</member>
+                <member>- Zero or one <remark><code>&lt;gls:glossary></code></remark>
                     elements</member>
                 <member>- Zero or one <remark><code>&lt;mda:metadata></code></remark>
                     elements</member>
                 <member>- Zero or one <remark><code>&lt;res:resourceData></code></remark>
                     elements </member>
-                <member>- Zero or one <remark><code>&lt;slr:data></code></remark>
-                    elements </member>
-                <member>- Zero or one <remark><code>&lt;val:validation></code></remark>
-                    elements </member>
-                <member>- Zero, one, or more <remark><code>&lt;its:locQualityIssues></code></remark>
-                    elements</member>
-                <member>- Zero, one, or more <remark><code>&lt;its:provenanceRecords></code></remark>
-                    elements</member>
-                
+                <member>- Zero or one <remark><code>&lt;slr:data></code></remark> elements </member>
+                <member>- Zero or one <remark><code>&lt;val:validation></code></remark> elements </member>
+                <member>- Zero, one, or more <remark><code>&lt;its:locQualityIssues></code></remark> elements</member>
+                <member>- Zero, one, or more <remark><code>&lt;its:provenanceRecords></code></remark> elements</member>
+
             </simplelist>
         </listitem>
         <listitem>
             <para><firstterm>Module</firstterm> and Extension elements <glossterm>MAY</glossterm> be
                 used in any order.</para>
         </listitem>
-        <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
-                allowed by the wildcard <code>other</code>:</para>
-            <simplelist type="vert">
-                <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
-                    provided that the Constraints specified in the <remark>Format Style Module</remark>
-                    are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>Size and Length Restriction                        Module</remark> are met.</member>
-                <member>- attributes from the namespace
-                        <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS                        Module</remark> are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>ITS Module</remark> are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <remark>Plural, Gender, and Select Module</remark> are met.</member>
-            </simplelist>
-        </listitem>
         
-        
-        </itemizedlist>
+    </itemizedlist>
+    <note>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
+    </note>
 </section>
     
     <section id="segment">
@@ -1559,22 +1475,13 @@
   &lt;/segment>
 &lt;/unit>        
     </programlisting>
-
-    <itemizedlist>
-        <title>Constraints</title>
-        <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
-                allowed by the wildcard <code>other</code>:</para>
-            <simplelist type="vert">
-                <member>- <remark><code>fs:fs</code></remark>, <glossterm>OPTIONAL</glossterm></member>
-                <member>- <remark><code>fs:subFs</code></remark>, <glossterm>OPTIONAL</glossterm></member>
-            </simplelist>
-        </listitem>
-    </itemizedlist>
-
+    
     <note>
         <para>When the <link linkend="ref"><code>ref</code></link> attribute points to a <link linkend="segment"><code>&lt;segment></code></link> element, by default the <link linkend="note"><code>&lt;note></code></link> content applies to its <link linkend="source"><code>&lt;source></code></link> child, unless the optional <link linkend="appliesto">appliesTo</link> attribute is set
             to <code>target</code>.</para>
+    </note>
+    <note>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
     </note>
 </section>
     
@@ -6167,53 +6074,44 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         </listitem>
         <listitem>
             <para>Changed namespace for the core module to
-                    <code>urn:oasis:names:tc:xliff:document:2.2</code></para>
+                    <code>urn:oasis:names:tc:xliff:document:2.2</code>.</para>
         </listitem>
         <listitem>
-            <para>Added an optional <link linkend="ref"><code>ref</code></link> attribute to <link linkend="note"><code>&lt;note></code></link> element. Change approved on March
-                    15<superscript>th</superscript>, 2022.</para>
+            <para>Added an optional <link linkend="ref"><code>ref</code></link> attribute to <link linkend="note"><code>&lt;note></code></link> element.</para>
         </listitem>
         <listitem>
             <para>Changed the type of <link linkend="version"><code>version</code></link> attribute to an enumeration
                 containing 2.0, 2.1 and 2.2 as valid values.</para>
         </listitem>
         <listitem>
-            <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
-                August 2<superscript>nd</superscript>, 2022.</para>
+            <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element at the start of <link linkend="xliff"><code>&lt;xliff></code></link>.</para>
         </listitem>
         <listitem>
             <para>Allowed an optional <remark><code>&lt;mda:metadata></code></remark> element at the start
-                of <link linkend="xliff"><code>&lt;xliff></code></link>. Change approved during the meeting held on
-                August 2<superscript>nd</superscript>, 2022.</para>
+                of <link linkend="xliff"><code>&lt;xliff></code></link>.</para>
         </listitem>
         <listitem>
-            <para>Removed references to Schematron, NVDL and Test Suite from this specification.
-                Change approved on September 20<superscript>th</superscript>, 2022.</para>
+            <para>Removed references to Schematron, NVDL and Test Suite from this specification.</para>
 
         </listitem>
         <listitem>
-            <para>Removed the informative Change Tracking Extension. Change approved on November
-                    2<superscript>nd</superscript>, 2022.</para>
+            <para>Removed the informative Change Tracking Extension.</para>
         </listitem>
         <listitem>
-            <para>Renamed Appendix B to "XLIFF Grammar Files (Normative)". Change approved on
-                January 3<superscript>rd</superscript>, 2023.</para>
+            <para>Renamed Appendix B to "XLIFF Grammar Files (Normative)".</para>
         </listitem>
         <listitem>
-            <para>Clarified values for <link linkend="version"><code>version</code></link> attribute. Change approved on
-                January 17<superscript>th</superscript>, 2023.</para>
+            <para>Clarified values for <link linkend="version"><code>version</code></link> attribute.</para>
         </listitem>
         <listitem>
             <para>Added new <remark>Plural, Gender, and Select                    Module</remark>. </para>
-            
         </listitem>
         <listitem>
             <para>Updated <link linkend="mediaType">Appendix A</link>
-                with the official MIME type listed in IANA Media Type Registry </para>
+                with the official MIME type listed in IANA Media Type Registry.</para>
         </listitem>
         <listitem>
-            <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element in <remark><code>&lt;res:resourceItem></code></remark>. Change approved during the meeting held on
-            February 20<superscript>th</superscript>, 2024.</para>
+            <para>Allowed an optional <link linkend="notes"><code>&lt;notes></code></link> element in <remark><code>&lt;res:resourceItem></code></remark>.</para>
     </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
