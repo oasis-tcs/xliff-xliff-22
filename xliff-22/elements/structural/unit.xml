@@ -8,7 +8,7 @@
 <section id="unit">
     <title>unit</title>
     <para>Static container for a dynamic structure of elements holding the extracted translatable
-        source text, aligned with the <firstterm>Translated</firstterm> text.</para>
+        source text, aligned with the translated text.</para>
 
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>

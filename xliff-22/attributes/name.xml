@@ -9,7 +9,7 @@
     <title>name</title>
 
     <para>Resource name - the original identifier of the resource corresponding to the
-            <firstterm>Extracted</firstterm>
+            extracted
         <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"
             ><code>&lt;unit></code></olink> or <olink targetdoc="../elements/structural/group.xml"
             targetptr="unit"><code>&lt;group></code></olink>.</para>

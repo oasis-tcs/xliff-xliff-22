@@ -8,8 +8,8 @@
 <section id="res_source">
     <title>source</title>
   <para>References the actual resource data that is either intended for
-    <firstterm>Modification</firstterm>, or to be used as contextual reference during
-    <firstterm>Translation</firstterm>.</para>
+    modification, or to be used as contextual reference during
+    translation.</para>
     <para><emphasis>Contains:</emphasis></para>
     <para>Either</para>
     <simplelist>

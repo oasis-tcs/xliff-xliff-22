@@ -7,34 +7,34 @@
                          ]>
 <section id="itsm_locQualityIssueComment">
     <title>locQualityIssueComment</title>
-    
-    <para>Localization Quality Issue Comment - the <code>locQualityIssueComment</code> attribute
-        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-        defined <code>locQualityIssueComment</code> attribute.</para>
+
+    <para>Localization Quality Issue Comment - the <code>locQualityIssueComment</code> attribute is
+        the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
+            <code>locQualityIssueComment</code> attribute.</para>
     <para> This attribute is intended for human readable comments pertaining to or guidance how to
         address a specific Localization Quality Issue.</para>
-    
-    
+
+
     <para><emphasis>Value description:</emphasis> Text string. </para>
-    
+
     <para><emphasis>Default value:</emphasis> undefined</para>
-    
-    
-    
+
+
+
     <para><emphasis>Used in:</emphasis>
         <olink targetdoc="../../elements/inline/mrk.xml" targetptr="mrk"
-            ><code>&lt;mrk></code></olink> and
-        <olink targetdoc="../../elements/inline/sm.xml"
-            targetptr="sm"><code>&lt;sm></code></olink>, or in <olink targetdoc="../../elements/itsm/itsm_locQualityIssue.xml"
-                targetptr="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></olink>.</para>
-    
-    
-    <para>See the <olink targetdoc="../../modules/itsm/Localization_Quality_Issue.xml" targetptr="lqiAnnotation"
-            >ITS Localization Issue Annotation</olink> for the normative usage description of this
-        attribute when used inline; advanced Constraints follow from that normative usage
-        description.</para>
+            ><code>&lt;mrk></code></olink> and <olink targetdoc="../../elements/inline/sm.xml"
+            targetptr="sm"><code>&lt;sm></code></olink>, or in <olink
+            targetdoc="../../elements/itsm/itsm_locQualityIssue.xml"
+            targetptr="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></olink>.</para>
+
+
+    <para>See the <olink targetdoc="../../modules/itsm/Localization_Quality_Issue.xml"
+            targetptr="lqiAnnotation">ITS Localization Issue Annotation</olink> for the normative
+        usage description of this attribute when used inline; advanced Constraints follow from that
+        normative usage description.</para>
     <para>See <olink targetdoc="../../elements/itsm/itsm_locQualityIssue.xml"
             targetptr="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></olink> for standoff
         usage Constraints.</para>
-    
+
 </section>

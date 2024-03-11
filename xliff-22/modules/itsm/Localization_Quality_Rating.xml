@@ -8,17 +8,21 @@
 <section id="Localization_Quality_Rating">
   <title>Localization Quality Rating</title>
 
-  <para>Expresses results of localization quality assessment in the form of aggreagated
-    ratings, either as scores or as voting results. See <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+  <para>Expresses results of localization quality assessment in the form of aggregated ratings,
+    either as scores or as voting results. See <olink targetdoc="../../xliff22.xml"
+      targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#lqrating">Localization Quality Rating</ulink> for more
     details.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
-    <listitem><para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> use the
-      <olink targetdoc="specification" targetptr="lqrAnnotation">ITS Localization Quality Rating Annotation</olink> to express the <olink
-      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-      <ulink url="http://www.w3.org/TR/its20/#lqrating"
-        >Localization Quality Rating</ulink> data category on inline spans within <firstterm>XLIFF Documents</firstterm>.</para></listitem>
+    <listitem>
+      <para><firstterm>Writers</firstterm>
+        <glossterm>MUST</glossterm> use the <olink targetdoc="specification"
+          targetptr="lqrAnnotation">ITS Localization Quality Rating Annotation</olink> to express
+        the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+        <ulink url="http://www.w3.org/TR/its20/#lqrating">Localization Quality Rating</ulink> data
+        category on inline spans within XLIFF documents.</para>
+    </listitem>
 
   </itemizedlist>
 
@@ -28,7 +32,8 @@
     <para>Localization Quality Rating is usually expressed at structural levels as it normally
       expresses summary rating (scoring or voting) information for larger chunks of text. Rating
       information inherits to lower level elements but can be overridden at lower levels.</para>
-    <para>Attributes <glossterm>MAY</glossterm> be set on <firstterm>XLIFF Core</firstterm> structural elements, so that the following advanced Constraints are met.</para>
+    <para>Attributes <glossterm>MAY</glossterm> be set on <firstterm>XLIFF Core</firstterm>
+      structural elements, so that the following advanced Constraints are met.</para>
     <itemizedlist>
       <title>Constraints</title>
       <listitem>
@@ -42,25 +47,39 @@
 
 
           <listitem>
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore">
-              <code>its:locQualityRatingScore</code></olink>:</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml"
+                targetptr="itsm_locQualityRatingScore"
+                ><code>its:locQualityRatingScore</code></olink>:</para>
             <itemizedlist>
-              <listitem><para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScoreThreshold.xml"
-                targetptr="itsm_locQualityRatingScoreThreshold">
-                <code>its:locQualityRatingScoreThreshold</code></olink> <glossterm>MAY</glossterm> be set or inherited if and only if <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore">
-                  <code>its:locQualityRatingScore</code></olink> is set.</para></listitem>
+              <listitem>
+                <para><olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingScoreThreshold.xml"
+                    targetptr="itsm_locQualityRatingScoreThreshold"
+                      ><code>its:locQualityRatingScoreThreshold</code></olink>
+                  <glossterm>MAY</glossterm> be set or inherited if and only if <olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml"
+                    targetptr="itsm_locQualityRatingScore"
+                    ><code>its:locQualityRatingScore</code></olink> is set.</para>
+              </listitem>
             </itemizedlist>
           </listitem>
 
 
           <listitem>
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVote" targetptr="itsm_locQualityRatingVote">
-              <code>its:locQualityRatingVote</code></olink>:</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVote"
+                targetptr="itsm_locQualityRatingVote"
+              ><code>its:locQualityRatingVote</code></olink>:</para>
             <itemizedlist>
-              <listitem><para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVoteThreshold.xml"
-                targetptr="itsm_locQualityRatingVoteThreshold">
-                <code>its:locQualityRatingVoteThreshold</code></olink> <glossterm>MAY</glossterm> be set or inherited if and only if <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore">
-                  <code>its:locQualityRatingVote</code></olink> is set or inherited.</para></listitem>
+              <listitem>
+                <para><olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingVoteThreshold.xml"
+                    targetptr="itsm_locQualityRatingVoteThreshold"
+                      ><code>its:locQualityRatingVoteThreshold</code></olink>
+                  <glossterm>MAY</glossterm> be set or inherited if and only if <olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml"
+                    targetptr="itsm_locQualityRatingScore"
+                    ><code>its:locQualityRatingVote</code></olink> is set or inherited.</para>
+              </listitem>
             </itemizedlist>
           </listitem>
         </itemizedlist>
@@ -69,8 +88,10 @@
       </listitem>
 
       <listitem>
-        <para>The <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingProfileRef.xml" targetptr="itsm_locQualityRatingProfileRef">
-          <code>its:locQualityRatingProfileRef</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+        <para>The <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingProfileRef.xml"
+            targetptr="itsm_locQualityRatingProfileRef"
+            ><code>its:locQualityRatingProfileRef</code></olink> attribute is
+            <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
     </itemizedlist>
 
@@ -82,45 +103,43 @@
     <title>Inline Elements</title>
 
     <para> Use <code><olink targetdoc="../../elements/inline/mrk.xml" targetptr="mrk"
-        >&lt;mrk></olink></code> or an <code><olink targetdoc="../../elements/inline/sm.xml"
+          >&lt;mrk></olink></code> or an <code><olink targetdoc="../../elements/inline/sm.xml"
           targetptr="sm">&lt;sm/></olink></code> / <code><olink
-          targetdoc="../../elements/inline/em.xml" targetptr="em">&lt;em/></olink></code> pair with the following attributes:
-
-
-      <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingProfileRef.xml" targetptr="itsm_locQualityRatingProfileRef">
-        <code>its:locQualityRatingProfileRef</code></olink>,
-
-      <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore">
-        <code>its:locQualityRatingScore</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScoreThreshold.xml"
-        targetptr="itsm_locQualityRatingScoreThreshold">
-        <code>its:locQualityRatingScoreThreshold</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVote" targetptr="itsm_locQualityRatingVote">
-        <code>its:locQualityRatingVote</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVoteThreshold.xml"
-        targetptr="itsm_locQualityRatingVoteThreshold">
-        <code>its:locQualityRatingVoteThreshold</code></olink>.
-   </para>
+          targetdoc="../../elements/inline/em.xml" targetptr="em">&lt;em/></olink></code> pair with
+      the following attributes: <olink
+        targetdoc="../../attributes/itsm/itsm_locQualityRatingProfileRef.xml"
+        targetptr="itsm_locQualityRatingProfileRef"
+        ><code>its:locQualityRatingProfileRef</code></olink>, <olink
+        targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml"
+        targetptr="itsm_locQualityRatingScore"><code>its:locQualityRatingScore</code></olink>,
+        <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScoreThreshold.xml"
+        targetptr="itsm_locQualityRatingScoreThreshold"
+          ><code>its:locQualityRatingScoreThreshold</code></olink>, <olink
+        targetdoc="../../attributes/itsm/itsm_locQualityRatingVote"
+        targetptr="itsm_locQualityRatingVote"><code>its:locQualityRatingVote</code></olink>, <olink
+        targetdoc="../../attributes/itsm/itsm_locQualityRatingVoteThreshold.xml"
+        targetptr="itsm_locQualityRatingVoteThreshold"
+          ><code>its:locQualityRatingVoteThreshold</code></olink>. </para>
     <para>See the <link linkend="lqrAnnotation">ITS Localization Quality Rating Annotation</link>
       for the normative usage description of those attributes inline.</para>
-      </section>
+  </section>
 
   <section id="lqrAnnotation">
     <title>ITS Localization Quality Rating Annotation</title>
     <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
-      targetptr="ITS20">[ITS]</olink>
-      <ulink url="http://www.w3.org/TR/its20/#lqrating"
-        >Localization Quality Rating</ulink> data category on inline elements.</para>
+        targetptr="ITS20">[ITS]</olink>
+      <ulink url="http://www.w3.org/TR/its20/#lqrating">Localization Quality Rating</ulink> data
+      category on inline elements.</para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">
       <listitem>
-        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
+        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
+          attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-          <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
+            <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
@@ -134,26 +153,39 @@
 
 
           <listitem>
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore">
-              <code>its:locQualityRatingScore</code></olink>:</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml"
+                targetptr="itsm_locQualityRatingScore"
+                ><code>its:locQualityRatingScore</code></olink>:</para>
             <itemizedlist>
-              <listitem><para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScoreThreshold.xml"
-                targetptr="itsm_locQualityRatingScoreThreshold">
-                <code>its:locQualityRatingScoreThreshold</code></olink> <glossterm>MAY</glossterm> be set or inherited if and only if <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore">
-                  <code>its:locQualityRatingScore</code></olink> is set.</para></listitem>
+              <listitem>
+                <para><olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingScoreThreshold.xml"
+                    targetptr="itsm_locQualityRatingScoreThreshold"
+                      ><code>its:locQualityRatingScoreThreshold</code></olink>
+                  <glossterm>MAY</glossterm> be set or inherited if and only if <olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml"
+                    targetptr="itsm_locQualityRatingScore"
+                    ><code>its:locQualityRatingScore</code></olink> is set.</para>
+              </listitem>
             </itemizedlist>
           </listitem>
 
 
           <listitem>
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVote" targetptr="itsm_locQualityRatingVote">
-              <code>its:locQualityRatingVote</code></olink>:</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVote"
+                targetptr="itsm_locQualityRatingVote"
+              ><code>its:locQualityRatingVote</code></olink>:</para>
             <itemizedlist>
-              <listitem><para><olink targetdoc="../../attributes/itsm/itsm_locQualityRatingVoteThreshold.xml"
-                targetptr="itsm_locQualityRatingVoteThreshold">
-                <code>its:locQualityRatingVoteThreshold</code></olink> <glossterm>MAY</glossterm> be set or inherited if and only if
-                <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml" targetptr="itsm_locQualityRatingScore">
-                  <code>its:locQualityRatingVote</code></olink> is set or inherited.</para></listitem>
+              <listitem>
+                <para><olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingVoteThreshold.xml"
+                    targetptr="itsm_locQualityRatingVoteThreshold"
+                      ><code>its:locQualityRatingVoteThreshold</code></olink>
+                  <glossterm>MAY</glossterm> be set or inherited if and only if <olink
+                    targetdoc="../../attributes/itsm/itsm_locQualityRatingScore.xml"
+                    targetptr="itsm_locQualityRatingScore"
+                    ><code>its:locQualityRatingVote</code></olink> is set or inherited.</para>
+              </listitem>
             </itemizedlist>
           </listitem>
         </itemizedlist>
@@ -162,27 +194,32 @@
       </listitem>
 
       <listitem>
-        <para>The <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingProfileRef.xml" targetptr="itsm_locQualityRatingProfileRef">
-          <code>its:locQualityRatingProfileRef</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+        <para>The <olink targetdoc="../../attributes/itsm/itsm_locQualityRatingProfileRef.xml"
+            targetptr="itsm_locQualityRatingProfileRef"
+            ><code>its:locQualityRatingProfileRef</code></olink> attribute is
+            <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
 
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
 
     </itemizedlist>
 
 
 
-    <note><para>This annotation can be in scope of Localization Quality Rating attributes set at structural
-        levels. So for instance a portion of target text with only a score set can inherit threshold
-        and/or rating profile information set at a group or file level. Also summary 0-100 ratings
-        set at higher levels can be for instance overridden with voting set at unit or inline
-        elements. Keep in mind that for a specific portion of text only one can exist a rating or a
-        vote result and these are to be accompanied with different threshhold attributes. </para></note>
+    <note>
+      <para>This annotation can be in scope of Localization Quality Rating attributes set at
+        structural levels. So for instance a portion of target text with only a score set can
+        inherit threshold and/or rating profile information set at a group or file level. Also
+        summary 0-100 ratings set at higher levels can be for instance overridden with voting set at
+        unit or inline elements. Keep in mind that for a specific portion of text only one can exist
+        a rating or a vote result and these are to be accompanied with different threshold
+        attributes. </para>
+    </note>
     <example>
-      <title>Enriching XLIFF Documents with Localization Quality Rating Annotations</title>
+      <title>Enriching XLIFF documents with Localization Quality Rating Annotations</title>
 
       <programlisting>
 &lt;unit id="1">
@@ -202,29 +239,32 @@
 
   <section id="Localization_Quality_Rating_Matches">
     <title>Translation Candidates</title>
-    <para>In the <olink targetdoc="../candidates/specification.xml" targetptr="candidates">Translation Candidates module</olink>,
-      the <link linkend="Localization_Quality_Rating">Localization Quality Rating</link>
-      category attributes <glossterm>MAY</glossterm> be used to express the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-      <ulink url="http://www.w3.org/TR/its20/#lqrating">Localization Quality Rating</ulink> information.</para>
-      
-      <itemizedlist>
-        <title>Constraints</title>
-        <listitem>
-          <para>When used on the <olink targetdoc="../../elements/candidates/match.xml"
+    <para>In the <olink targetdoc="../candidates/specification.xml" targetptr="candidates"
+        >Translation Candidates module</olink>, the <link linkend="Localization_Quality_Rating"
+        >Localization Quality Rating</link> category attributes <glossterm>MAY</glossterm> be used
+      to express the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+      <ulink url="http://www.w3.org/TR/its20/#lqrating">Localization Quality Rating</ulink>
+      information.</para>
+
+    <itemizedlist>
+      <title>Constraints</title>
+      <listitem>
+        <para>When used on the <olink targetdoc="../../elements/candidates/match.xml"
             targetptr="match"><code>&lt;match></code></olink> element, Constraints for <link
             linkend="Localization_Quality_Rating_Structural">Structural Elements</link> apply,
         </para>
-        </listitem>
-        <listitem>
-          <para>When used on eligible descendants of a <olink targetdoc="../../elements/candidates/match.xml"
-            targetptr="match"><code>&lt;match></code></olink> element, Constraints for <link
-              linkend="Localization_Quality_Rating_Inline">Inline Elements</link> apply.</para>
-        </listitem>
-      </itemizedlist>
-      
-      
-    
-    
+      </listitem>
+      <listitem>
+        <para>When used on eligible descendants of a <olink
+            targetdoc="../../elements/candidates/match.xml" targetptr="match"
+              ><code>&lt;match></code></olink> element, Constraints for <link
+            linkend="Localization_Quality_Rating_Inline">Inline Elements</link> apply.</para>
+      </listitem>
+    </itemizedlist>
+
+
+
+
 
 
 

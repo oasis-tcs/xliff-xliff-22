@@ -22,18 +22,17 @@
       <code><olink targetdoc="../elements/structural/note.xml" targetptr="note"
         >&lt;note></olink></code> and the <olink targetdoc="../inline/inline.xml"
         targetptr="commentAnnotation">Comment Annotation</olink> mechanism. This means that the
-      whole data category can be losslessly <firstterm>Extracted</firstterm> from the native format,
-        <firstterm>Merged</firstterm> back to the native format or even round-tripped. However,
-      generic ITS Processors won't be able to fully access the <ulink
-        url="http://www.w3.org/TR/its20/#locNote-datacat">Localization Note</ulink> information
-      encoded in <firstterm>XLIFF Documents</firstterm>.</para>
+      whole data category can be losslessly extracted from the native format, merged back to the
+      native format or even round-tripped. However, generic ITS Processors won't be able to fully
+      access the <ulink url="http://www.w3.org/TR/its20/#locNote-datacat">Localization Note</ulink>
+      information encoded in XLIFF documents.</para>
   </warning>
 
 
   <section id="Localization_Note_Structural">
     <title>Structural Elements</title>
-    <para> Localization Notes present in source content at structural levels are
-        <firstterm>Extracted</firstterm> using the <firstterm>XLIFF Core</firstterm>
+    <para> Localization Notes present in source content at structural levels are extracted using the
+        <firstterm>XLIFF Core</firstterm>
       <code><olink targetdoc="../elements/structural/note.xml" targetptr="note"
         >&lt;note></olink></code> and the <code><olink targetdoc="../elements/structural/note.xml"
           targetptr="note">&lt;note></olink></code> element. ITS attribute <code>locNoteType</code>
@@ -85,21 +84,21 @@
     </example>
     <para><warning>
         <para>The values of the ITS attribute <code>locNoteRef</code> are to be dereferenced during
-            <firstterm>Extraction</firstterm>, so that the Localization Note text can be included
-          verbatim in the XLIFF <code><olink targetdoc="../elements/structural/note.xml"
-              targetptr="note">&lt;note></olink></code> element. A corresponding attribute is NOT
-          provided through the <olink targetptr="ITS-module"
-            targetdoc="../modules/its/specification.xml">ITS Module</olink> to discourage external
-          references from XLIFF Notes. The <code>locNoteRef</code> attribute and its value still can
-          be preserved on <firstterm>Extraction</firstterm> via extensibility, however this
-          information will not have a guaranteed roundtrip protection and the XLIFF Note itself
-          still better include the dereferenced Localization Note text.</para>
+          extraction, so that the Localization Note text can be included verbatim in the XLIFF
+              <code><olink targetdoc="../elements/structural/note.xml" targetptr="note"
+              >&lt;note></olink></code> element. A corresponding attribute is NOT provided through
+          the <olink targetptr="ITS-module" targetdoc="../modules/its/specification.xml">ITS
+            Module</olink> to discourage external references from XLIFF Notes. The
+            <code>locNoteRef</code> attribute and its value still can be preserved on extraction via
+          extensibility, however this information will not have a guaranteed roundtrip protection
+          and the XLIFF Note itself still better include the dereferenced Localization Note
+          text.</para>
       </warning></para>
   </section>
   <section id="Localization_Note_Inline">
     <title>Inline Elements</title>
-    <para> Localization Notes present on inline spans of source content are
-        <firstterm>Extracted</firstterm> using the <firstterm>XLIFF Core</firstterm>
+    <para> Localization Notes present on inline spans of source content are extracted using the
+        <firstterm>XLIFF Core</firstterm>
       <olink targetdoc="../inline/inline.xml" targetptr="annotations">Annotations</olink> mechanism.
       Use <code><olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
         >&lt;mrk></olink></code> or an <code><olink targetdoc="../elements/inline/sm.xml"

@@ -8,21 +8,22 @@
 <section id="Translate">
   <title>Translate</title>
 
-  <para>Indicates whether content is translatable or not. See <olink
-      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-    <ulink url="http://www.w3.org/TR/its20/#trans-datacat">Translate</ulink> for
-    details.</para>
-  <para>ITS data category Translate in source content influences how <firstterm>Extractors</firstterm> prepare source content for <firstterm>Translation</firstterm> via <firstterm>XLIFF Documents</firstterm>.</para>
+  <para>Indicates whether content is translatable or not. See <olink targetdoc="../xliff22.xml"
+      targetptr="ITS20">[ITS]</olink>
+    <ulink url="http://www.w3.org/TR/its20/#trans-datacat">Translate</ulink> for details.</para>
+  <para>ITS data category Translate in source content influences how
+      <firstterm>Extractors</firstterm> prepare source content for translation via <firstterm>XLIFF
+      Documents</firstterm>.</para>
 
   <section id="Translate_Structural">
     <title>Structural Elements</title>
-    <para>
-      Use the <code><olink targetdoc="../attributes/translate.xml" targetptr="translate">translate</olink></code> attribute:</para>
+    <para> Use the <code><olink targetdoc="../attributes/translate.xml" targetptr="translate"
+          >translate</olink></code> attribute:</para>
 
     <example>
       <title>Extraction of Translate at structural levels</title>
 
-    <para>Original:</para>
+      <para>Original:</para>
 
       <programlisting>
 &lt;p translate='yes'>Translatable text&lt;/p>
@@ -30,7 +31,7 @@
  </programlisting>
 
 
-    <para>Extraction:</para>
+      <para>Extraction:</para>
 
 
       <programlisting>
@@ -45,7 +46,7 @@
   &lt;/segment>
 &lt;/unit>
  </programlisting>
-   </example>
+    </example>
 
 
     <para> If an element is not translatable you can also simply not extract it. </para>
@@ -57,15 +58,14 @@
           targetptr="sm">&lt;sm/></olink></code> / <code><olink
           targetdoc="../elements/inline/em.xml" targetptr="em">&lt;em/></olink></code> pair with
         <code>translate='yes|no'</code>. Another option is to extract the non-translatable content
-      as an inline code. However, it is worth noting that <firstterm>Extracting</firstterm>
-      non-translatable text as inline code data can hide important context information from
-      translators, human or machine. The <firstterm>Extraction</firstterm> as code data is
-      preferable if the non-translatable text has purely programmatic purpose and bears no
-      linguistic relationship to the surrounding translatable text.</para>
+      as an inline code. However, it is worth noting that extracting non-translatable text as inline
+      code data can hide important context information from translators, human or machine. The
+      extraction as code data is preferable if the non-translatable text has purely programmatic
+      purpose and bears no linguistic relationship to the surrounding translatable text.</para>
     <example>
       <title>Extraction of non-translatable inline text using Annotation markers</title>
 
-    <para>Original:</para>
+      <para>Original:</para>
 
       <programlisting>
 &lt;p>The  &lt;span translate="no">World Wide Web Consortium&lt;/span> makes the
@@ -75,7 +75,7 @@
       <para>In this case the non-translatable span is a critical part of the content (a brand name)
         and hiding it within a code could potentially cause lot of damage, albeit
         non-translatable.</para>
-        <programlisting>
+      <programlisting>
 &lt;unit id='1'>
   &lt;segment>
     &lt;source>The &lt;pc id='1'/>&lt;mrk id='m1' translate='no'>World Wide Web
@@ -105,7 +105,7 @@
 &lt;/unit>
  </programlisting>
       <para>Protection of non-translatable code as a code is more fool proof. On the other hand, it
-        can hide the nature of the placeholder and it's linguistic relationship to the rest of the
+        can hide the nature of the placeholder and its linguistic relationship to the rest of the
         content from the translators. Therefore, it's advised to use maximum redundancy on the
           <code>&lt;ph></code> to make sure that CAT tools can pickup up something useful to display
         in their editing GUI to the Translator. It's completely another challenge to make an MT

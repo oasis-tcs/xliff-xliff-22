@@ -7,23 +7,24 @@
                          ]>
 <section id="itsm_locQualityRatingScore">
     <title>locQualityRatingScore</title>
-    
-    <para>Localization Quality Rating Score - the <code>locQualityRatingScore</code> attribute
-        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-        defined <code>locQualityRatingScore</code> attribute. </para>
-    <para> This attribute provides the quality rating score pertaining to a structural or inline portion of target text, the higher the number
-        the better the quality rating. Tools are expected to interpret this score within their own quality rating system.</para>
-    
+
+    <para>Localization Quality Rating Score - the <code>locQualityRatingScore</code> attribute is
+        the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
+            <code>locQualityRatingScore</code> attribute. </para>
+    <para> This attribute provides the quality rating score pertaining to a structural or inline
+        portion of target text, the higher the number the better the quality rating. Tools are
+        expected to interpret this score within their own quality rating system.</para>
+
     <para><emphasis>Value description:</emphasis> A decimal number between 0.0 and 100.0.</para>
-        
-    <para><emphasis>Default value:</emphasis> default values for this attribute
-        depend on the element in which it is used:</para>
-    
+
+    <para><emphasis>Default value:</emphasis> default values for this attribute depend on the
+        element in which it is used:</para>
+
     <itemizedlist>
         <listitem>
             <para>When used in <olink targetdoc="../../elements/structural/file.xml"
-                targetptr="file"><code>&lt;file&gt;</code></olink>:</para>
-            
+                    targetptr="file"><code>&lt;file&gt;</code></olink>:</para>
+
             <para>The value is undefined.</para>
         </listitem>
         <listitem>
@@ -58,21 +59,25 @@
                 parent <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"
                         ><code>&lt;mtc:match></code></olink> (which can be undefined).</para>
         </listitem>
-        
-        
-        
+
+
+
     </itemizedlist>
-    
-    <warning><para>The <link linkend="itsm_locQualityRatingScore">locQualityRatingScore</link> attribute is
-            intended to be used in concert with the <olink
+
+    <warning>
+        <para>The <link linkend="itsm_locQualityRatingScore">locQualityRatingScore</link> attribute
+            is intended to be used in concert with the <olink
                 targetdoc="itsm_locQualityRatingProfileRef.xml"
-                targetptr="itsm_locQualityRatingProfileRef">locQualityRatingProfileRef</olink> attribute that is to provide
-        information on the applicable Quality Assessment Model and with the <olink
-            targetdoc="itsm_locQualityRatingScoreThreshold.xml"
-            targetptr="itsm_locQualityRatingScoreThreshold">locQualityRatingScoreThreshold</olink> attribute. Without providng quality assessment model information and/or an acceptance threshold,
-            the score between 0 and 100 is very likely to be useless and not interoperable.</para> </warning>
-    
-    
+                targetptr="itsm_locQualityRatingProfileRef">locQualityRatingProfileRef</olink>
+            attribute that is to provide information on the applicable Quality Assessment Model and
+            with the <olink targetdoc="itsm_locQualityRatingScoreThreshold.xml"
+                targetptr="itsm_locQualityRatingScoreThreshold"
+                >locQualityRatingScoreThreshold</olink> attribute. Without providing quality
+            assessment model information and/or an acceptance threshold, the score between 0 and 100
+            is very likely to be useless and not interoperable.</para>
+    </warning>
+
+
     <para><emphasis>Used in:</emphasis>
         <olink targetdoc="../../elements/structural/file.xml" targetptr="file"
                 ><code>&lt;file></code></olink>, <olink
@@ -81,10 +86,11 @@
             targetdoc="../../elements/structural/unit.xml" targetptr="unit"
             ><code>&lt;unit></code></olink>, <olink targetdoc="../../elements/inline/mrk.xml"
             targetptr="mrk"><code>&lt;mrk></code></olink>, and <olink
-            targetdoc="../../elements/inline/sm.xml" targetptr="sm"><code>&lt;sm></code></olink>.</para>
+            targetdoc="../../elements/inline/sm.xml" targetptr="sm"
+        ><code>&lt;sm></code></olink>.</para>
     <para>See the <olink targetdoc="../../modules/itsm/specifcation.xml" targetptr="lqrAnnotation"
-            >ITS Localization Quality Rating Annotation</olink> for the normative usage description of this
-        attribute when used inline; advanced Constraints follow from that normative usage
+            >ITS Localization Quality Rating Annotation</olink> for the normative usage description
+        of this attribute when used inline; advanced Constraints follow from that normative usage
         description.</para>
     <para>See <olink targetdoc="../../modules/itsm/Localization_Quality_Rating.xml"
             targetptr="Localization_Quality_Rating_Structural"><code>Localization Quality Rating on

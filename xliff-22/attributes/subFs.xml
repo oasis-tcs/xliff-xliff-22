@@ -61,7 +61,7 @@ targetptr="ph"><code>&lt;ph&gt;</code></olink>, <olink targetdoc="../elements/in
 targetptr="pc"><code>&lt;pc&gt;</code></olink>, <olink targetdoc="../elements/inline/mrk.xml"
 targetptr="mrk"><code>&lt;mrk&gt;</code></olink>, and <olink targetdoc="../elements/inline/sm.xml"
 targetptr="sm"><code>&lt;sm&gt;</code></olink>. </para>
-<warning><para>The <link linkend="subFs"><code>subFs</code></link> attribute is not intended to facilitate <firstterm>Merging</firstterm> back into the original format. </para></warning>
+    <warning><para>The <link linkend="subFs"><code>subFs</code></link> attribute is not intended to facilitate merging back into the original format. </para></warning>
 
 <itemizedlist>
 <title>Constraints</title>

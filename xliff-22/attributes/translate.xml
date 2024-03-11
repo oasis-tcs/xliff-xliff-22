@@ -9,7 +9,7 @@
     <title>translate</title>
 
     <para>Translate - indicates whether or not the source text in the scope of the given <code>translate</code> flag is intended
-        for <firstterm>Translation</firstterm>.</para>
+        for translation.</para>
 
     <para><emphasis>Value description:</emphasis> <code>yes</code> or <code>no</code>.</para>
 

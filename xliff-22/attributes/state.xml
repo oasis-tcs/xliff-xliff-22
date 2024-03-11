@@ -22,10 +22,10 @@
     </simplelist>
     <para>The 4 defined states constitute a simple linear state machine that advances in the above
         given order. No particular workflow or process is prescribed, except that the three states
-        more advanced than the default <code>initial</code> assume the existence of a
-            <firstterm>Translation</firstterm> within the segment. One can further specify the state
-        of the <firstterm>Translation</firstterm> using the <olink targetdoc="substate.xml"
-            targetptr="substate"><code>subState</code></olink> attribute.</para>
+        more advanced than the default <code>initial</code> assume the existence of a translation
+        within the segment. One can further specify the state of the translation using the <olink
+            targetdoc="substate.xml" targetptr="substate"><code>subState</code></olink>
+        attribute.</para>
 
     <para><emphasis>Default value:</emphasis>
         <code>initial</code></para>
@@ -39,11 +39,12 @@
         <listitem>
             <para>When the optional <link linkend="state"><code>state</code></link> attribute is
                 added to a <olink targetdoc="../elements/structural/segment.xml" targetptr="segment"
-                    ><code>&lt;segment></code></olink> element, it's value <glossterm>MUST</glossterm> be set to
-                    <code>initial</code> if the element doesn't have a <olink
+                        ><code>&lt;segment></code></olink> element, its value
+                    <glossterm>MUST</glossterm> be set to <code>initial</code> if the element
+                doesn't have a <olink targetdoc="../elements/structural/target.xml"
+                    targetptr="target"><code>&lt;target></code></olink> child. All valid values
+                    <glossterm>MAY</glossterm> be used when a <olink
                     targetdoc="../elements/structural/target.xml" targetptr="target"
-                        ><code>&lt;target></code></olink> child. All valid values <glossterm>MAY</glossterm> be used when a
-                    <olink targetdoc="../elements/structural/target.xml" targetptr="target"
                         ><code>&lt;target></code></olink> child is present. </para>
         </listitem>
         <listitem>

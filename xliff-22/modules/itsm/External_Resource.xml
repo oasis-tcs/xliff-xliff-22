@@ -19,7 +19,7 @@
     <para>External Resource is not to be used at structural levels. If a structural element of the
       original document has <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#externalresource">External Resource</ulink>
-      information associated, it <glossterm>MAY</glossterm> be <firstterm>Extracted</firstterm>
+      information associated, it <glossterm>MAY</glossterm> be extracted
       using the XLIFF Resource Data Module. The <firstterm>Extractor</firstterm> needs to determine
       the media type of the external resource, since this is not available via <olink
         targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
@@ -65,9 +65,10 @@
   </section>
   <section id="External_resource__Inline">
     <title>Inline Elements</title>
-    <para> External resources is <firstterm>Extracted</firstterm> using the XLIFF Resource Data
-      module. Use a <code><olink targetdoc="../elements/resourceData/res_source.xml" targetptr="res_source"
-        >&lt;res:source></olink></code> element as a child of a <code><olink targetdoc="../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
+    <para> External resources are extracted using the XLIFF Resource Data module. Use a <code><olink
+          targetdoc="../elements/resourceData/res_source.xml" targetptr="res_source"
+          >&lt;res:source></olink></code> element as a child of a <code><olink
+          targetdoc="../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
           >&lt;res:resourceItem></olink></code>element.</para>
       <example>
         <title>Extraction of External Resource at inline levels</title>

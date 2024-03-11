@@ -22,26 +22,34 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>- <olink targetdoc="../../attributes/href.xml" targetptr="href"><code>href</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/href.xml" targetptr="href"
+                ><code>href</code></olink>, <glossterm>OPTIONAL</glossterm></member>
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
-    <listitem><para> The attribute <olink targetdoc="../../attributes/href.xml" targetptr="href"
-                    ><code>href</code></olink> is <glossterm>REQUIRED</glossterm> if and only if the
-                    <link linkend="skeleton"><code>&lt;skeleton></code></link> element is empty. </para></listitem>
+        <listitem>
+            <para> The attribute <olink targetdoc="../../attributes/href.xml" targetptr="href"
+                        ><code>href</code></olink> is <glossterm>REQUIRED</glossterm> if and only if
+                the <link linkend="skeleton"><code>&lt;skeleton></code></link> element is empty.
+            </para>
+        </listitem>
     </itemizedlist>
     <itemizedlist>
         <title>Processing Requirements</title>
-        <listitem><para><firstterm>Modifiers</firstterm> and <firstterm>Enrichers</firstterm> processing an
-                    <firstterm>XLIFF Document</firstterm> that contains a <link linkend="skeleton"
+        <listitem>
+            <para><firstterm>Modifiers</firstterm> and <firstterm>Enrichers</firstterm> processing
+                an XLIFF document that contains a <link linkend="skeleton"
                         ><code>&lt;skeleton></code></link> element <glossterm>MUST NOT</glossterm>
-                change that element, its attributes, or its content. </para></listitem>
-        <listitem><para><firstterm>Extractors</firstterm> creating an <firstterm>XLIFF Document</firstterm> with a <link
+                change that element, its attributes, or its content. </para>
+        </listitem>
+        <listitem>
+            <para><firstterm>Extractors</firstterm> creating an XLIFF document with a <link
                     linkend="skeleton"><code>&lt;skeleton></code></link> element
                     <glossterm>MUST</glossterm> leave the <link linkend="skeleton"
                         ><code>&lt;skeleton></code></link> element empty if and only if they specify
                 the attribute <olink targetdoc="../../attributes/href.xml" targetptr="href"
-                        ><code>href</code></olink>.</para></listitem>
+                        ><code>href</code></olink>.</para>
+        </listitem>
     </itemizedlist>
 </section>

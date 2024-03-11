@@ -8,13 +8,15 @@
 <section id="version">
     <title>version</title>
 
-    <para>XLIFF Version - is used to specify the Version of the <firstterm>XLIFF
-            Document</firstterm>. This corresponds to the Version number of the XLIFF specification
-        that the <firstterm>XLIFF Document</firstterm> adheres to. For this specification, the
-        version is <emphasis>2.2</emphasis>.</para>
+    <para>XLIFF Version - is used to specify the version of the <firstterm>XLIFF
+            Document</firstterm>. This corresponds to the version number of the XLIFF specification
+        that the XLIFF document adheres to. For this specification, the version is
+            <emphasis>2.2</emphasis>.</para>
 
     <para><emphasis>Value description:</emphasis> 2.0, 2.1 or 2.2</para>
 
-    <para><emphasis>Used in:</emphasis> <olink targetdoc="../elements/structural/xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink>.</para>
+    <para><emphasis>Used in:</emphasis>
+        <olink targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
+                ><code>&lt;xliff></code></olink>.</para>
 
 </section>

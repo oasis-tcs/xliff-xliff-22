@@ -6,61 +6,61 @@
                          <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED" >
                          ]>
 <section id="itsm_locQualityIssues">
-    <title>locQualityIssues</title>
-    <para>Localization Quality Issues - a standoff wrapper element to group any number of single issue elements related to the same span of source or target content.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <simplelist>
-        <member>- One or more <olink targetdoc="itsm_locQualityIssue.xml" targetptr="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></olink>
-            elements</member>
-        
-    </simplelist>
-  
-  <para><emphasis>Parents:</emphasis></para>
-  
+  <title>locQualityIssues</title>
+  <para>Localization Quality Issues - a standoff wrapper element to group any number of single issue
+    elements related to the same span of source or target content.</para>
+  <para><emphasis>Contains:</emphasis></para>
   <simplelist>
-    <member>- <olink targetdoc="../structural/unit.xml"
-      targetptr="unit"><code>&lt;unit></code></olink></member>
-    
-  </simplelist>
-  
+    <member>- One or more <olink targetdoc="itsm_locQualityIssue.xml"
+        targetptr="itsm_locQualityIssue"><code>&lt;locQualityIssue></code></olink> elements</member>
 
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist>
-      <member>- <olink targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id">
-        <code>xml:id</code>
-      </olink>, <glossterm>REQUIRED</glossterm>
+  </simplelist>
+
+  <para><emphasis>Parents:</emphasis></para>
+
+  <simplelist>
+    <member>- <olink targetdoc="../structural/unit.xml" targetptr="unit"
+        ><code>&lt;unit></code></olink></member>
+
+  </simplelist>
+
+
+  <para><emphasis>Attributes:</emphasis></para>
+  <simplelist>
+    <member>- <olink targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id"
+          ><code>xml:id</code></olink>, <glossterm>REQUIRED</glossterm>
     </member>
-      <!--  not allowed on ITS stand off elements <member>-<olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
+    <!--  not allowed on ITS stand off elements <member>-<olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
         targetptr="itsm_annotatorsRef">
         <code>annotatorsRef</code></olink>,
         <glossterm>OPTIONAL</glossterm></member>-->
-        
-    </simplelist>
+
+  </simplelist>
 
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
       <para>Each <link linkend="itsm_locQualityIssues">locQualityIssues</link> element
-        <glossterm>SHOULD</glossterm> be referenced by at least one <olink
+          <glossterm>SHOULD</glossterm> be referenced by at least one <olink
           targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef.xml"
           targetptr="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></olink> attribute
-        within the same <olink targetdoc="../strcutural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> element as per Constraints
-        for the <olink targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef.xml"
+        within the same <olink targetdoc="../strcutural/unit.xml" targetptr="unit"
+            ><code>&lt;unit></code></olink> element as per Constraints for the <olink
+          targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef.xml"
           targetptr="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></olink>
         attribute.</para>
     </listitem>
   </itemizedlist>
-  
+
 
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
       <para><firstterm>Modifiers</firstterm> detecting an orphaned <link
-        linkend="itsm_locQualityIssues">locQualityIssues</link> element
-        <glossterm>MAY</glossterm> delete that <link linkend="itsm_locQualityIssues"
-          >locQualityIssues</link> element.</para>
+          linkend="itsm_locQualityIssues">locQualityIssues</link> element <glossterm>MAY</glossterm>
+        delete that <link linkend="itsm_locQualityIssues">locQualityIssues</link> element.</para>
     </listitem>
   </itemizedlist>
-    
-    
+
+
 </section>

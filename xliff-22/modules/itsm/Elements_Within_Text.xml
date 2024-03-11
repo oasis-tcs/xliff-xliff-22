@@ -18,7 +18,7 @@
       Text</ulink> data category is used by ITS processors to generate XLIFF documents. This process
     is done by ITS processors, not by XLIFF <firstterm>Writers</firstterm> or other types of XLIFF
     implementations, to understand how to extract source content. The data category is not
-    represented directly in <firstterm>XLIFF Documents</firstterm>.</para>
+    represented directly in XLIFF documents.</para>
   <para>The data category provides three values: <code>yes</code>, <code>no</code> and
       <code>nested</code>. See the <ulink url="http://www.w3.org/TR/its20#within-text-definition"
       >ITS 2.0 specification</ulink> for examples of how to use these values in general XML

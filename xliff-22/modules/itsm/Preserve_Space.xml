@@ -62,7 +62,7 @@
       </note>
     </para>
     <para>Whitespace handling can be also set independently for text segments and ignorable text
-      portions within an <firstterm>Extracted</firstterm> unit and for the source and target
+      portions within an extracted unit and for the source and target
       language within the same <code><olink targetdoc="../elements/structural/segment.xml"
           targetptr="segment">&lt;segment></olink></code> or <code><olink
           targetdoc="../elements/structural/ignorable.xml" targetptr="ignorable"

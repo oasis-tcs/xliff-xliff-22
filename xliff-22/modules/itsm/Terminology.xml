@@ -10,12 +10,11 @@
   <para>Marks terms and optionally associates them with information, such as definitions. See <olink
       targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> for details.</para>
-  <para>ITS Terminology information is useful during <firstterm>Translation</firstterm> and related
-    localization processes. Thus it is beneficial when <firstterm>Extractors</firstterm> preserve
-    the ITS Terminology information in <firstterm>XLIFF Documents</firstterm>.</para>
-  <para>Target language terminology data and metada introduced during the
-      <firstterm>Translation</firstterm> can be <firstterm>Merged</firstterm> back into the target
-    language content in the original format.</para>
+  <para>ITS Terminology information is useful during translation and related localization processes.
+    Thus it is beneficial when <firstterm>Extractors</firstterm> preserve the ITS Terminology
+    information in XLIFF documents.</para>
+  <para>Target language terminology data and metada introduced during the translation can be merged
+    back into the target language content in the original format.</para>
   <para> </para>
   <warning>
     <para>The <firstterm>XLIFF Core</firstterm>
@@ -31,8 +30,7 @@
   <section id="Terminology_Structural">
     <title>Structural Elements</title>
     <para>Even if ITS Terminology metadata appears on structural elements in the source format, this
-      information needs to be <firstterm>Extracted</firstterm> using the <firstterm>XLIFF
-        Core</firstterm>
+      information needs to be extracted using the <firstterm>XLIFF Core</firstterm>
       <olink targetdoc="../inline/inline.xml" targetptr="annotations">Annotations</olink> mechanism.
       Use <code><olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
         >&lt;mrk></olink></code> or an <code><olink targetdoc="../elements/inline/sm.xml"
@@ -58,7 +56,7 @@
   </section>
   <section id="Terminology_Inline">
     <title>Inline Elements</title>
-    <para> Inline Terminology information <glossterm>MAY</glossterm> be <firstterm>Extracted</firstterm> using the
+    <para> Inline Terminology information <glossterm>MAY</glossterm> be extracted using the
         <firstterm>XLIFF Core</firstterm>
       <olink targetdoc="../inline/inline.xml" targetptr="annotations">Annotations</olink> mechanism.
       Use <code><olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
@@ -89,31 +87,30 @@
   <section id="nonTermAnnotation">
     <title>ITS Terminology Annotation</title>
     <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
-      targetptr="ITS20">[ITS]</olink>
+        targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#terminology">Terminology</ulink> data category,
       including the aspects that are not supported via the <firstterm>XLIFF Core</firstterm>
       <olink targetdoc="../inline/inline.xml" targetptr="termAnnotation">Term
-        Annotation</olink>.</para>
+      Annotation</olink>.</para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">
       <listitem>
-        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
+        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
+          attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>REQUIRED</glossterm> and
-          set:</para>
+            ><code>type</code></olink> attribute is <glossterm>REQUIRED</glossterm> and set:</para>
         <itemizedlist spacing="compact">
           <listitem>
             <para>either to <code>its:term-no</code>, which maps to and from the <olink
-              targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
-              <code>term</code> attribute set to <code>no</code>,</para>
+                targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <code>term</code>
+              attribute set to <code>no</code>,</para>
           </listitem>
           <listitem>
             <para>or to <code>term</code>, which maps to and from the <olink
-              targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
-              <code>term</code> attribute set to <code>yes</code>.</para>
+                targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <code>term</code>
+              attribute set to <code>yes</code>.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -125,39 +122,41 @@
           <listitem>
 
             <para>The <olink targetdoc="../../attributes/value.xml" targetptr="value"
-              ><code>value</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and
+                  ><code>value</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and
               contains a short definition of the term that an <firstterm>Extractor</firstterm>
               obtained by dereferencing the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
                 >[ITS]</olink> defined <code>termInfoPointer</code> or added by an
-              <firstterm>Enricher</firstterm>.</para>
+                <firstterm>Enricher</firstterm>.</para>
           </listitem>
           <listitem>
             <para>The <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
-              ><code>ref</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and used to map
-              to and from the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+                ><code>ref</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and used to
+              map to and from the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
               defined <code>termInfoRef</code> attribute.</para>
           </listitem>
         </itemizedlist>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_termConfidence.xml"
-          targetptr="itsm_termConfidence"><code>its:termConfidence</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and  used to map
-          to and from the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-          defined <code>termConfidence</code> attribute.</para>
+            targetptr="itsm_termConfidence"><code>its:termConfidence</code></olink> attribute is
+            <glossterm>OPTIONAL</glossterm> and used to map to and from the <olink
+            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
+            <code>termConfidence</code> attribute.</para>
       </listitem>
       <listitem>
         <para> The <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
-          targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute is
-          <glossterm>REQUIRED</glossterm> if and only if the <olink targetdoc="../../attributes/itsm/itsm_termConfidence.xml"
+            targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute is
+            <glossterm>REQUIRED</glossterm> if and only if the <olink
+            targetdoc="../../attributes/itsm/itsm_termConfidence.xml"
             targetptr="itsm_termConfidence"><code>its:termConfidence</code></olink> attribute is
           present and NOT in scope of another relevant <olink
-            targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
-            targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute, in
-          all other cases it is <glossterm>OPTIONAL</glossterm>. </para>
+            targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
+              ><code>its:annotatorsRef</code></olink> attribute, in all other cases it is
+            <glossterm>OPTIONAL</glossterm>. </para>
       </listitem>
     </itemizedlist>
     <!-- removed by ballot for https://issues.oasis-open.org/browse/XLIFF-57

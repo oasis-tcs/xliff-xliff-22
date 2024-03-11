@@ -8,18 +8,19 @@
 <section id="segment">
   <title>segment</title>
 
-  <para>This element is a container to hold in its aligned pair of children elements the minimum portion of
-    translatable source text and its <firstterm>Translation</firstterm> in the given <olink targetdoc="../../segmentation/segmentation.xml" targetptr="segmentation">Segmentation</olink>.</para>
+  <para>This element is a container to hold in its aligned pair of children elements the minimum
+    portion of translatable source text and its translation in the given <olink
+      targetdoc="../../segmentation/segmentation.xml" targetptr="segmentation"
+    >Segmentation</olink>.</para>
 
   <para><emphasis>Contains:</emphasis></para>
 
   <simplelist>
-    <member>- One <olink targetdoc="source.xml"
-    targetptr="source"><code>&lt;source&gt;</code></olink> element followed
-    by</member>
+    <member>- One <olink targetdoc="source.xml" targetptr="source"
+        ><code>&lt;source&gt;</code></olink> element followed by</member>
 
-    <member>- Zero or one <olink targetdoc="target.xml"
-    targetptr="target"><code>&lt;target&gt;</code></olink> element</member>
+    <member>- Zero or one <olink targetdoc="target.xml" targetptr="target"
+          ><code>&lt;target&gt;</code></olink> element</member>
   </simplelist>
 
   <para><emphasis>Attributes:</emphasis></para>
@@ -27,57 +28,30 @@
   <simplelist>
     <!-- This flag got killed in the August 20 2013 meeting <member>- <olink targetdoc="../../attributes/approved.xml"
       targetptr="approved"><code>approved</code></olink>, <glossterm>REQUIRED</glossterm></member>-->
-    
-    <member>- <olink targetdoc="../../attributes/id.xml"
-    targetptr="id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-    
-    <member>- <olink targetdoc="../../attributes/canResegment.xml"
-      targetptr="canResegment"><code>canResegment</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-<!-- translate was killed on segment to simplify translatability state algorithm and to simplify re-segmentation PRs,
+
+    <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>,
+        <glossterm>OPTIONAL</glossterm></member>
+
+    <member>- <olink targetdoc="../../attributes/canResegment.xml" targetptr="canResegment"
+          ><code>canResegment</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+    <!-- translate was killed on segment to simplify translatability state algorithm and to simplify re-segmentation PRs,
       the expressivity is the same due to inline markers
     <member>- <olink targetdoc="../../attributes/translate.xml"
     targetptr="translate"><code>translate</code></olink>, <glossterm>OPTIONAL</glossterm></member>-->
-    
-    
-    <member>- <olink targetdoc="../../attributes/state.xml"
-    targetptr="state"><code>state</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- <olink targetdoc="../../attributes/subState.xml"
-    targetptr="substate"><code>subState</code></olink>, <glossterm>OPTIONAL</glossterm></member>
 
-    <member>- attributes from the namespace
-            <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
-            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-        the <olink targetdoc="../../modules/plural_gender_select/specification.xml"
-            targetptr="plural_gender_select_module">Plural, Gender, and Select Module</olink> are met.</member>
+    <member>- <olink targetdoc="../../attributes/state.xml" targetptr="state"
+        ><code>state</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+
+    <member>- <olink targetdoc="../../attributes/subState.xml" targetptr="substate"
+          ><code>subState</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+
+    <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
+        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
+        targetdoc="../../modules/plural_gender_select/specification.xml"
+        targetptr="plural_gender_select_module">Plural, Gender, and Select Module</olink> are
+      met.</member>
 
   </simplelist>
 
-  <!--  The uniqueness scope is described on the id attribute 
-  <itemizedlist>
-    <title>Constraints</title>
-
-    <listitem>
-      <para>The value of the <glossterm>OPTIONAL</glossterm> <olink
-      targetdoc="../../attributes/id.xml"
-      targetptr="id"><code>id</code></olink> attribute <glossterm>MUST</glossterm> be unique among
-      all <link linkend="segment"><code>&lt;segment&gt;</code></link> and
-      <olink targetdoc="ignorable.xml"
-      targetptr="ignorable"><code>&lt;ignorable&gt;</code></olink> children of
-      the enclosing <olink targetdoc="unit.xml"
-      targetptr="unit"><code>&lt;unit&gt;</code></olink> element.</para>
-    </listitem>
-    
-  </itemizedlist>-->
-  
-  <!-- This flag got killed in the August 20 2013 meeting 
-  <itemizedlist>
-    <title>Processing Requirements</title>
-    
-    <listitem>
-      <para><firstterm>Mergers</firstterm> <glossterm>MUST NOT</glossterm> <firstterm>Merge</firstterm> back into the original format
-        <link linkend="segment"><code>&lt;segment></code></link> elements with the <olink targetdoc="../../attributes/approved.xml" targetptr="approved"><code>approved</code></olink> flag set to <code>no</code>.</para>
-    </listitem>
-    
-  </itemizedlist>-->
 </section>

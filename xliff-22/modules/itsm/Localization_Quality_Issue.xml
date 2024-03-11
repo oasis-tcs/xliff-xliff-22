@@ -7,7 +7,7 @@
 ]>
 <section id="Localization_Quality_Issue">
   <title>Localization Quality Issue</title>
-<!--Example added at the end of this section for csprd03
+  <!--Example added at the end of this section for csprd03
 annotatorsRef had been addressed already for csprd01
   <para>COMMENT: ADD AN EXAMPLE OF TOOLS ANNOTATION THAT PROCESSES STANDOFF MARKUP, SO THAT THE
     INHERITANCE OF TOOLS ANNOTATION (= RELATED TO THE ACTUAL CONTENT; NOT THE STANDOFF INFORMATION)
@@ -25,8 +25,7 @@ annotatorsRef had been addressed already for csprd01
   <para>Expresses information related to localization quality assessment tasks in the form of
     highlighted issues. See <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink> for more
-    details.
- <!-- Addressed already in csprd01
+    details. <!-- Addressed already in csprd01
     COMMENT: MOST OF THE SECTIONS ARE WRITTEN LIKE EXTRACTION, BUT MOST OF THE CASES ONE
     WORKS WITH THE ITS INFORMATION IN AN XLIFF DOCUMENT! ACTION: CREATE SENTENCE IN INTRO PARAGRAPH
     THAT ITS INFO IS MOSTLY USED IN XLIFF ITSELF. ACTION: CLARIFY IN THE MODULE INTRODUCTION THAT
@@ -36,11 +35,14 @@ annotatorsRef had been addressed already for csprd01
   </para>
   <itemizedlist>
     <title>Processing Requirements</title>
-    <listitem><para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> use the
-      <olink targetdoc="specification" targetptr="lqiAnnotation">ITS Localization Quality Issue Annotation</olink> to express the <olink
-      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-      <ulink url="http://www.w3.org/TR/its20/#lqissue"
-        >Localization Quality Issue</ulink> data category in <firstterm>XLIFF Documents</firstterm>.</para></listitem>
+    <listitem>
+      <para><firstterm>Writers</firstterm>
+        <glossterm>MUST</glossterm> use the <olink targetdoc="specification"
+          targetptr="lqiAnnotation">ITS Localization Quality Issue Annotation</olink> to express the
+          <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+        <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink> data
+        category in XLIFF documents.</para>
+    </listitem>
 
   </itemizedlist>
 
@@ -50,9 +52,9 @@ annotatorsRef had been addressed already for csprd01
     <para>Localization Quality Issue is not to be used at structural levels. If a structural element
       of the original document has <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink>
-      information associated, it <glossterm>MUST</glossterm> be anyway
-        <firstterm>Extracted</firstterm> using the <olink targetdoc="specification"
-        targetptr="lqiAnnotation">ITS Localization Quality Issue Annotation</olink>.
+      information associated, it <glossterm>MUST</glossterm> be anyway extracted using the <olink
+        targetdoc="specification" targetptr="lqiAnnotation">ITS Localization Quality Issue
+        Annotation</olink>.
       <!-- This has been addressed by using xml:id becuase of the switch to the W3C its: for csprd02
       ACTION: HAVE
       FOR THE STANDOFF DATA CATEGORIES (E.G. LQI, LQR, ...) THE GUIDANCE THAT FOR EXTRACTING FROM
@@ -60,10 +62,14 @@ annotatorsRef had been addressed already for csprd01
       IF THERE IS THE SAME ID IN MULTIPLE (HTML) FILES.
     -->
     </para>
-    <note><para> If human reviewers or other QA agents (<firstterm>Enriching Agents</firstterm> from the XLIFF specification point of view), need to insert general comments pertaining to whole structural elements such as paragraphs, sections, or files rather than to specific inline
+    <note>
+      <para> If human reviewers or other QA agents (<firstterm>Enriching Agents</firstterm> from the
+        XLIFF specification point of view), need to insert general comments pertaining to whole
+        structural elements such as paragraphs, sections, or files rather than to specific inline
         portions of source or target content, the <olink targetdoc="../../ITS/Localization_Note.xml"
           targetptr="Localization_Note">Localization Note</olink> data category is more
-        suitable.</para></note>
+        suitable.</para>
+    </note>
 
 
 
@@ -77,60 +83,54 @@ annotatorsRef had been addressed already for csprd01
           targetptr="sm">&lt;sm/></olink></code> / <code><olink
           targetdoc="../../elements/inline/em.xml" targetptr="em">&lt;em/></olink></code> pair with
       the attributes: <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueComment"
-        targetptr="itsm_locQualityIssueComment">
-        <code>its:locQualityIssueComment</code></olink>, <olink
-        targetdoc="../../attributes/itsm/itsm_locQualityIssueEnabled.xml"
-        targetptr="itsm_locQualityIssueEnabled">
-        <code>its:locQualityIssueEnabled</code></olink>, <olink
+        targetptr="itsm_locQualityIssueComment"><code>its:locQualityIssueComment</code></olink>,
+        <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueEnabled.xml"
+        targetptr="itsm_locQualityIssueEnabled"><code>its:locQualityIssueEnabled</code></olink>, <olink
         targetdoc="../../attributes/itsm/itsm_locQualityIssueProfileRef.xml"
-        targetptr="itsm_locQualityIssueProfileRef">
-        <code>its:locQualityIssueProfileRef</code></olink>, <olink
+        targetptr="itsm_locQualityIssueProfileRef"
+        ><code>its:locQualityIssueProfileRef</code></olink>, <olink
         targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
-        targetptr="itsm_locQualityIssuesRef">
-        <code>its:locQualityIssuesRef</code></olink>, <olink
+        targetptr="itsm_locQualityIssuesRef"><code>its:locQualityIssuesRef</code></olink>, <olink
         targetdoc="../../attributes/itsm/itsm_locQualityIssueSeverity.xml"
-        targetptr="itsm_locQualityIssueSeverity">
-        <code>its:locQualityIssueSeverity</code></olink>, and <olink
-        targetdoc="../../attributes/itsm/itsm_locQualityIssueType"
-        targetptr="itsm_locQualityIssueType">
-        <code>its:locQualityIssueType</code></olink>. </para>
-    <para>See the <link linkend="lqiAnnotation">ITS Localization
-        Quality Issue Annotation</link> for the normative usage description of those attributes.
-      </para>
+        targetptr="itsm_locQualityIssueSeverity"><code>its:locQualityIssueSeverity</code></olink>,
+      and <olink targetdoc="../../attributes/itsm/itsm_locQualityIssueType"
+        targetptr="itsm_locQualityIssueType"><code>its:locQualityIssueType</code></olink>. </para>
+    <para>See the <link linkend="lqiAnnotation">ITS Localization Quality Issue Annotation</link> for
+      the normative usage description of those attributes. </para>
     <para>Because the same or overlapping spans of source or target text can be associated with more
       than one quality issue, this category provides its own elements that are to be used at the
       unit level as an alternative to the inline only annotations, especially in cases the inline
-      only annotations would not be expressive enough to capture the issues to be reported. If more than one quality issue applies to the same content the particulars of those issues need to be stored in standoff annotations.</para>
+      only annotations would not be expressive enough to capture the issues to be reported. If more
+      than one quality issue applies to the same content the particulars of those issues need to be
+      stored in standoff annotations.</para>
     <para> For specifics of the standoff annotation, see the <olink
         targetdoc="../../elements/itsm/itsm_locQualityIssue.xml" targetptr="itsm_locQualityIssue"
           ><code>&lt;locQualityIssue></code></olink> and <olink
         targetdoc="../../elements/itsm/itsm_locQualityIssues.xml" targetptr="itsm_locQualityIssues"
           ><code>&lt;locQualityIssues></code></olink> elements and the attributes <olink
         targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
-        targetptr="itsm_locQualityIssuesRef">
-        <code>its:locQualityIssuesRef</code></olink> and <olink
+        targetptr="itsm_locQualityIssuesRef"><code>its:locQualityIssuesRef</code></olink> and <olink
         targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id"
       ><code>id</code></olink>.</para>
   </section>
   <section id="lqiAnnotation">
     <title>ITS Localization Quality Issue Annotation</title>
     <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
-      targetptr="ITS20">[ITS]</olink>
+        targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#lqissue">Localization Quality Issue</ulink> data
-      category.
-      <!-- DONE for csprd01
+      category. <!-- DONE for csprd01
       ACTION: SOROUSH OR OTHERS TO COMPARE THIS TO CONSTRAINTS FOR LQI IN ITS SPEC, SEE
       https://www.w3.org/TR/its20/#lqissueDefs, AND ALIGN AS MUCH AS POSSIBLE. --></para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">
       <listitem>
-        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
+        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
+          attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-          <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
+            <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
@@ -139,8 +139,9 @@ annotatorsRef had been addressed already for csprd01
         <itemizedlist>
           <listitem>
 
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef" targetptr="itsm_locQualityIssuesRef">
-              <code>its:locQualityIssuesRef</code></olink>.</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
+                targetptr="itsm_locQualityIssuesRef"
+              ><code>its:locQualityIssuesRef</code></olink>.</para>
           </listitem>
 
           <listitem>
@@ -150,14 +151,16 @@ annotatorsRef had been addressed already for csprd01
               <para>At least one of the following <glossterm>MUST</glossterm> be set:</para>
               <listitem>
 
-                <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueType" targetptr="itsm_locQualityIssueType">
-                  <code>its:locQualityIssueType</code></olink>,</para>
+                <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueType"
+                    targetptr="itsm_locQualityIssueType"
+                    ><code>its:locQualityIssueType</code></olink>,</para>
               </listitem>
               <listitem>
 
                 <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueComment"
-                  targetptr="itsm_locQualityIssueComment">
-                  <code>its:locQualityIssueComment</code></olink>.</para></listitem>
+                    targetptr="itsm_locQualityIssueComment"
+                    ><code>its:locQualityIssueComment</code></olink>.</para>
+              </listitem>
             </itemizedlist>
 
           </listitem>
@@ -167,25 +170,28 @@ annotatorsRef had been addressed already for csprd01
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
-      <listitem><para>The following attributes <glossterm>MUST NOT</glossterm> be set if and only if <olink
-        targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
-        targetptr="itsm_locQualityIssuesRef">
-        <code>its:locQualityIssuesRef</code></olink> is declared, otherwise all of the following
-        are <glossterm>OPTIONAL</glossterm>:</para>
+      <listitem>
+        <para>The following attributes <glossterm>MUST NOT</glossterm> be set if and only if <olink
+            targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
+            targetptr="itsm_locQualityIssuesRef"><code>its:locQualityIssuesRef</code></olink> is
+          declared, otherwise all of the following are <glossterm>OPTIONAL</glossterm>:</para>
         <itemizedlist>
           <listitem>
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueSeverity.xml" targetptr="itsm_locQualityIssueSeverity">
-              <code>its:locQualityIssueSeverity</code></olink>,</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueSeverity.xml"
+                targetptr="itsm_locQualityIssueSeverity"
+                ><code>its:locQualityIssueSeverity</code></olink>,</para>
           </listitem>
           <listitem>
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueProfileRef.xml" targetptr="itsm_locQualityIssueProfileRef">
-              <code>its:locQualityIssueProfileRef</code></olink>, and</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueProfileRef.xml"
+                targetptr="itsm_locQualityIssueProfileRef"
+                  ><code>its:locQualityIssueProfileRef</code></olink>, and</para>
           </listitem>
           <listitem>
-            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueEnabled.xml" targetptr="itsm_locQualityIssueEnabled">
-              <code>its:locQualityIssueEnabled</code></olink>.</para>
+            <para><olink targetdoc="../../attributes/itsm/itsm_locQualityIssueEnabled.xml"
+                targetptr="itsm_locQualityIssueEnabled"
+                ><code>its:locQualityIssueEnabled</code></olink>.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -194,17 +200,18 @@ annotatorsRef had been addressed already for csprd01
 
 
 
-    <warning><para>Usage of the <olink targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
-          targetptr="itsm_locQualityIssuesRef">
-          <code>its:locQualityIssuesRef</code></olink> attribute implies usage of Localization
-        Quality Issue standoff elements. See <olink
+    <warning>
+      <para>Usage of the <olink targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef"
+          targetptr="itsm_locQualityIssuesRef"><code>its:locQualityIssuesRef</code></olink>
+        attribute implies usage of Localization Quality Issue standoff elements. See <olink
           targetdoc="../../elements/itsm/itsm_locQualityIssues.xml"
           targetptr="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></olink> and <olink
           targetdoc="../../elements/itsm/itsm_locQualityIssue.xml" targetptr="itsm_locQualityIssue"
             ><code>&lt;locQualityIssue></code></olink> for related Constraints and Processing
-        Requirements.</para></warning>
+        Requirements.</para>
+    </warning>
     <example>
-      <title>Enriching XLIFF Documents with Localization Quality Issue Annotations</title>
+      <title>Enriching XLIFF documents with Localization Quality Issue Annotations</title>
       <para><emphasis role="bold">Simple</emphasis> (i.e. without stand off):</para>
       <programlisting>
 &lt;unit id="1"&gt;
@@ -235,13 +242,18 @@ annotatorsRef had been addressed already for csprd01
   &lt;/segment&gt;
 &lt;/unit&gt;
  </programlisting>
-      <para>The <olink targetdoc="../attributes/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute inherits information in the document tree.
-        The attribute <olink targetdoc="../attributes/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> does not relate to standoff information. This is exemplified
-        below. The <code>&lt;mrk id="m1"></code> element has the <code>annotatorsRef</code> information
-        - via <code>tool2</code> - expressed at the <olink targetdoc="../elements/structural/target.xml" targetptr="target"><code>target</code></olink>  element. The <code>tool1</code>
-        <code>annotatorsRef</code> expressed at the <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>unit</code></olink> element does not influence
-        that interpretation and the standoff information in
-        <olink
+      <para>The <olink targetdoc="../attributes/itsm_annotatorsRef.xml"
+          targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute inherits
+        information in the document tree. The attribute <olink
+          targetdoc="../attributes/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
+            ><code>annotatorsRef</code></olink> does not relate to standoff information. This is
+        exemplified below. The <code>&lt;mrk id="m1"></code> element has the
+          <code>annotatorsRef</code> information - via <code>tool2</code> - expressed at the <olink
+          targetdoc="../elements/structural/target.xml" targetptr="target"
+          ><code>target</code></olink> element. The <code>tool1</code>
+        <code>annotatorsRef</code> expressed at the <olink
+          targetdoc="../elements/structural/unit.xml" targetptr="unit"><code>unit</code></olink>
+        element does not influence that interpretation and the standoff information in <olink
           targetdoc="../../elements/itsm/itsm_locQualityIssues.xml"
           targetptr="itsm_locQualityIssues"><code>&lt;locQualityIssues></code></olink>.</para>
       <programlisting>

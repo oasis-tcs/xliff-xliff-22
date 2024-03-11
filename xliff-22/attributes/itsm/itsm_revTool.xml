@@ -31,7 +31,7 @@
         
         <listitem>
             <para>When used in any admissible element WITHOUT the <olink targetdoc="itsm_provenanceRecordsRef.xml" targetptr="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></olink> attribute set:</para>
-            <para>The default values depening on the element in which it is used:</para>
+            <para>The default values depending on the element in which it is used:</para>
               
             
     <itemizedlist>

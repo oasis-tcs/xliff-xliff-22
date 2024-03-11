@@ -27,9 +27,10 @@
           <entry>none</entry>
           <entry>No additional normalization <glossterm>SHOULD</glossterm> be done, content
               <glossterm>SHOULD</glossterm> be used as represented in the document. It is possible
-            that other <firstterm>Agents</firstterm> have already done some type of normalization when <firstterm>Modifying</firstterm> content.
-            This means that this setting could give different results depending on what <firstterm>Agents</firstterm> are
-            used to perform a specific action on the <firstterm>XLIFF Document</firstterm>.</entry>
+            that other <firstterm>Agents</firstterm> have already done some type of normalization
+            when modifying content. This means that this setting could give different results
+            depending on what <firstterm>Agents</firstterm> are used to perform a specific action on
+            the XLIFF document.</entry>
         </row>
         <row>
           <entry>nfc</entry>
@@ -44,7 +45,10 @@
   </table>
 
 
-  <para><emphasis>Default value:</emphasis> <code>none</code></para>
+  <para><emphasis>Default value:</emphasis>
+    <code>none</code></para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/size_restriction/normalization.xml" targetptr="slr_normalization"><code>&lt;normalization&gt;</code></olink>.</para>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/size_restriction/normalization.xml"
+      targetptr="slr_normalization"><code>&lt;normalization&gt;</code></olink>.</para>
 </section>

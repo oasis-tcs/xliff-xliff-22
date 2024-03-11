@@ -74,6 +74,15 @@
         </affiliation>
         <email>rmraya@maxprograms.com</email>
       </editor>
+      <editor>
+        <firstname>Lucía</firstname>
+        <surname>Morado Vázquez</surname>
+        <affiliation>
+          <orgname>University of Geneva</orgname>
+          <address format="linespecific"><email>lucia.morado@unige.ch</email></address>
+        </affiliation>
+        <email>lucia.morado@unige.ch</email>
+      </editor>
     </authorgroup>
 
 
@@ -149,7 +158,7 @@
         <listitem>
           <para>urn:oasis:names:tc:xliff:resourcedata:&bschversion;</para>
         </listitem>
-        
+
         <listitem>
           <para>urn:oasis:names:tc:xliff:sizerestriction:&bschversion;</para>
         </listitem>
@@ -219,8 +228,8 @@
 
       <para><citation>XLIFF-&version;</citation></para>
 
-      <para><emphasis>XLIFF Version &version;</emphasis>. Edited by Rodolfo M. Raya.
-        &pubdate;. &standard;. <ulink url="&this-loc;/&name;-&stage;.html"
+      <para><emphasis>XLIFF Version &version;</emphasis>. Edited by Rodolfo M. Raya. &pubdate;.
+        &standard;. <ulink url="&this-loc;/&name;-&stage;.html"
           >&this-loc;/&name;-&stage;.html</ulink>. Latest version: <ulink
           url="&latest-loc;/&name;.html">&latest-loc;/&name;.html</ulink>. </para>
 
@@ -329,7 +338,8 @@
     <!-- 2.1 modules -->
     <xi:include href="modules/itsm/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <!-- 2.2 and 2.n+1 modules -->
-    <xi:include href="modules/plural_gender_select/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="modules/plural_gender_select/specification.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </section>
 
   <!-- Appendices -->

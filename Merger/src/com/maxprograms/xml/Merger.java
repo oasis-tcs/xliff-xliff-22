@@ -3,6 +3,8 @@ package com.maxprograms.xml;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
 import java.net.URISyntaxException;
 import java.util.Set;
 import java.util.TreeSet;
@@ -20,6 +22,8 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class Merger {
+
+    Logger logger = System.getLogger(Merger.class.getName());
 
     private File input;
     private File output;
@@ -129,6 +133,9 @@ public class Merger {
                             }
                             link.appendChild(childNode);
                         }
+                        if (link.getTextContent().isBlank()) {
+                            logger.log(Level.WARNING, "Empty link: " + toString(link) + "\nfrom: " + toString(child));
+                        }
                         element.insertBefore(link, n);
                     } else {
                         Element remark = doc.createElement("remark");
@@ -138,6 +145,9 @@ public class Merger {
                                 childNode.setTextContent(childNode.getTextContent().replace("\n", ""));
                             }
                             remark.appendChild(childNode);
+                        }
+                        if (remark.getTextContent().isBlank()) {
+                            logger.log(Level.WARNING, "Empty remark: " + toString(child));
                         }
                         element.insertBefore(remark, n);
                     }
@@ -155,5 +165,42 @@ public class Merger {
         Document document = db.parse(file);
         recurse(document, document.getDocumentElement(), file.getParentFile());
         return document.getDocumentElement();
+    }
+
+    private String toString(Element e) {
+        StringBuffer sb = new StringBuffer();
+        sb.append("<");
+        sb.append(e.getTagName());
+        NamedNodeMap attributes = e.getAttributes();
+        for (int i = 0; i < attributes.getLength(); i++) {
+            Node att = attributes.item(i);
+            if ("xmlns:xi".equals(att.getNodeName())) {
+                continue;
+            }
+            sb.append(" ");
+            sb.append(att.getNodeName());
+            sb.append("=\"");
+            sb.append(Writer.replaceQuotes(Writer.cleanString(att.getNodeValue())));
+            sb.append("\"");
+        }
+        NodeList content = e.getChildNodes();
+        if (content.getLength() == 0) {
+            sb.append("/>");
+            return sb.toString();
+        }
+        sb.append(">");
+        for (int i = 0; i < content.getLength(); i++) {
+            Node node = content.item(i);
+            if (node.getNodeType() == Node.ELEMENT_NODE) {
+                sb.append(toString((Element) node));
+            }
+            if (node.getNodeType() == Node.TEXT_NODE) {
+                sb.append(Writer.cleanString(node.getNodeValue()));
+            }
+        }
+        sb.append("</");
+        sb.append(e.getTagName());
+        sb.append(">");
+        return sb.toString();
     }
 }

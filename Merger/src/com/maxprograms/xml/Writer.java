@@ -85,14 +85,14 @@ public class Writer {
         writeString(">");
     }
 
-    private String cleanString(String string) {
+    protected static String cleanString(String string) {
         String result = string.replace("&", "&amp;");
         result = result.replace("<", "&lt;");
         result = result.replace("]]>","]]&gt;");
         return result;
     }
 
-    private String replaceQuotes(String string) {
+    protected static String replaceQuotes(String string) {
         return string.replace("\"", "&quot;");
     }
 }

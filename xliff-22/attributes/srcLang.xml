@@ -7,15 +7,16 @@
                          ]>
 <section id="srcLang">
     <title>srcLang</title>
-    
-    <para>Source language - the code of the language, in which the text to be <firstterm>Translated</firstterm> is
-        expressed.</para>
-    
-    <para><emphasis>Value description:</emphasis> A language code as described in <olink targetdoc="../xliff22.xml"
-        targetptr="bcp47">[BCP 47]</olink>.</para>
-    
-    <para><emphasis>Default value:</emphasis> undefined</para>
-    
-    <para><emphasis>Used in:</emphasis> <olink targetdoc="../elements/structural/xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink>.</para>
-</section>
 
+    <para>Source language - the code of the language, in which the text to be translated is
+        expressed.</para>
+
+    <para><emphasis>Value description:</emphasis> A language code as described in <olink
+            targetdoc="../xliff22.xml" targetptr="bcp47">[BCP 47]</olink>.</para>
+
+    <para><emphasis>Default value:</emphasis> undefined</para>
+
+    <para><emphasis>Used in:</emphasis>
+        <olink targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
+                ><code>&lt;xliff></code></olink>.</para>
+</section>

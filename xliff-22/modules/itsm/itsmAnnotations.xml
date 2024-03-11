@@ -8,7 +8,7 @@
 <section id="itsmAnnotations">
     <title>ITS Mapping Annotations</title>
     <para>This lists all custom Annotations that are needed for <olink targetdoc="../xliff22.xml"
-      targetptr="ITS20">[ITS]</olink> support in <firstterm>XLIFF Documents</firstterm> but are not
+      targetptr="ITS20">[ITS]</olink> support in XLIFF documents but are not
     available through <firstterm>XLIFF Core</firstterm>
     <olink targetdoc="../inline/inline.xml" targetptr="annotations">Annotations</olink> or other
     module specific annotations. Use of <firstterm>XLIFF Core</firstterm>

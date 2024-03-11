@@ -8,17 +8,19 @@
 <section id="Allowed_Characters">
   <title>Allowed Characters</title>
 
-  <para>Used to specify the characters that are permitted in a given piece of content. See <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+  <para>Used to specify the characters that are permitted in a given piece of content. See <olink
+      targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="https://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> for further
     details.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
-    <listitem><para><firstterm>Writers</firstterm>
+    <listitem>
+      <para><firstterm>Writers</firstterm>
         <glossterm>MUST</glossterm> use the <olink targetdoc="specification"
-          targetptr="allowedCharactersAnnotation">ITS Allowed Characters Annotation</olink> to express the
-          <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-        <ulink url="http://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> data category in
-          <firstterm>XLIFF Documents</firstterm>.</para>
+          targetptr="allowedCharactersAnnotation">ITS Allowed Characters Annotation</olink> to
+        express the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+        <ulink url="http://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> data
+        category in XLIFF documents.</para>
       <para>For both structural and inline elements, use <code><olink
             targetdoc="../../elements/inline/mrk.xml" targetptr="mrk">&lt;mrk></olink></code> or an
             <code><olink targetdoc="../../elements/inline/sm.xml" targetptr="sm"
@@ -26,9 +28,10 @@
             targetptr="em">&lt;em/></olink></code> pair with the following attribute: <olink
           targetdoc="../../attributes/itsm/itsm_allowedCharacters.xml"
           targetptr="itsm_allowedCharacters"><code>its:allowedCharacters</code></olink>.</para>
-      <para>See the <link linkend="allowedCharactersAnnotation">ITS Allowed Characters Annotation</link> for
-        the normative usage description of this attribute and the following sections for further
-        details on structural and inline elements.</para></listitem>
+      <para>See the <link linkend="allowedCharactersAnnotation">ITS Allowed Characters
+          Annotation</link> for the normative usage description of this attribute and the following
+        sections for further details on structural and inline elements.</para>
+    </listitem>
 
   </itemizedlist>
 
@@ -94,7 +97,7 @@
   <section id="allowedCharactersAnnotation">
     <title>ITS Allowed Characters Annotation</title>
     <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
-      targetptr="ITS20">[ITS]</olink>
+        targetptr="ITS20">[ITS]</olink>
       <ulink url="https://www.w3.org/TR/its20/#allowedchars">Alllowed Characters</ulink> data
       category.</para>
     <para>Usage:</para>
@@ -107,13 +110,13 @@
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-          <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
+            <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
     </itemizedlist>
 

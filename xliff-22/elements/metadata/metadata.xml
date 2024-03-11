@@ -22,8 +22,8 @@
 
   </simplelist>
   <para><emphasis>Example:</emphasis> Metadata can be used to store XML attribute names and values
-    for <firstterm>XLIFF Documents</firstterm> that do not use a skeleton. The following XML sample
-    contains attributes on the<code> &lt;document></code> and <code>&lt;row></code> elements.</para>
+    for XLIFF documents that do not use a skeleton. The following XML sample contains attributes on
+      the<code> &lt;document></code> and <code>&lt;row></code> elements.</para>
   <programlisting>
 &lt;document version="3" phase="draft">
   &lt;table>

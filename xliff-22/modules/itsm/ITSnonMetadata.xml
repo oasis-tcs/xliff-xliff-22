@@ -9,10 +9,9 @@
   <title>ITS data categories not represented in XLIFF</title>
 
   <para>The following <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data
-    categories can be represented via <firstterm>Extraction</firstterm> and
-      <firstterm>Merging</firstterm> behavior of XLIFF conformant <firstterm>Agents</firstterm>
-    without including any ITS specific metadata in the <firstterm>XLIFF
-    Documents</firstterm>:</para>
+    categories can be represented via extraction and merging behavior of XLIFF conformant
+      <firstterm>Agents</firstterm> without including any ITS specific metadata in the XLIFF
+    documents:</para>
 
   <orderedlist>
     <listitem>
@@ -25,33 +24,34 @@
     <listitem>
       <para><link linkend="its-locale-filter">Locale Filter</link>,</para>
     </listitem>
-        <listitem>
+    <listitem>
       <para><olink targetdoc="Target_Pointer.xml" targetptr="Target_Pointer">Target Pointer</olink>,
         and</para>
     </listitem>
     <listitem>
       <para><link linkend="its-id-value">ID Value</link>.</para>
     </listitem>
-    
-    
-    
-    
-    
+
+
+
+
+
   </orderedlist>
-  
+
   <section id="its-directionality">
     <title>Directionality</title>
     <para>The <ulink url="http://www.w3.org/TR/its20#directionality">Directionality</ulink> data
       category allows the user to specify the base writing direction of blocks, embeddings, and
-      overrides for the Unicode bidirectional algorithm <olink targetdoc="../xliff22.xml" targetptr="uax9">[UAX #9]</olink>. In XLIFF the usage
-      of this data category along the ITS lines is discouraged, since XLIFF provides its own
-      mechanism to specify directionality, see <olink targetptr="BiDi" targetdoc="../inline/inline.xml">Bidirectional Text</olink>.</para>
+      overrides for the Unicode bidirectional algorithm <olink targetdoc="../xliff22.xml"
+        targetptr="uax9">[UAX #9]</olink>. In XLIFF the usage of this data category along the ITS
+      lines is discouraged, since XLIFF provides its own mechanism to specify directionality, see
+        <olink targetptr="BiDi" targetdoc="../inline/inline.xml">Bidirectional Text</olink>.</para>
   </section>
-  
+
   <xi:include href="Elements_Within_Text.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
-  
-  
+
+
+
   <section id="its-locale-filter">
     <title>Locale Filter</title>
     <para>Expresses that a node is only applicable to certain locales. See <olink
@@ -60,29 +60,26 @@
       details.</para>
     <para>It is <glossterm>RECOMMENDED</glossterm> that <ulink
         url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> metadata is fully
-      consumed on <firstterm>Extraction</firstterm>, so that only the relevant source content is
-      present in each <firstterm>XLIFF Document</firstterm> with the <olink
-        targetdoc="../attributes/trgLang.xml" targetptr="trgLang">trgLang</olink> attributes set as
-      per the <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink>
-      metadata.</para>
+      consumed on extraction, so that only the relevant source content is present in each XLIFF
+      document with the <olink targetdoc="../attributes/trgLang.xml" targetptr="trgLang"
+        >trgLang</olink> attributes set as per the <ulink
+        url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> metadata.</para>
     <para>Dependent on workflow specifics and business requirements, this data category can be most
-      of the times fully represented by <firstterm>Extraction</firstterm> and
-        <firstterm>Merging</firstterm> behavior without explicitly representing <ulink
-        url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> metadata in
-        <firstterm>XLIFF Documents</firstterm>. See the <olink targetdoc="Locale_Filter.xml"
-        targetptr="Locale_Filter">Locale Filter</olink> section within the <olink
-        targetptr="itsm_defined_categories" targetdoc="specification.xml">defined categories
-        section</olink> for the normative description of how this metadata can be explicitly
-      represented if necessary.
-      <!--  COMMENT: MAKE CLEAR THAT THERE ARE TWO
+      of the times fully represented by extraction and merging behavior without explicitly
+      representing <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink>
+      metadata in XLIFF documents. See the <olink
+        targetdoc="Locale_Filter.xml" targetptr="Locale_Filter">Locale Filter</olink> section within
+      the <olink targetptr="itsm_defined_categories" targetdoc="specification.xml">defined
+        categories section</olink> for the normative description of how this metadata can be
+      explicitly represented if necessary. <!--  COMMENT: MAKE CLEAR THAT THERE ARE TWO
       HANDLINGS, ONE IS NOT TO REPRESENT THE DATA CATEGORY, THE OTHER IS IN THE MODULE. THE
       EXTRACTION IS FOR ITS PROCESSORS GENERATING XLIFF, THE DIRECT REPRESENTATION IS FOR XLIFF
       PROCESSORS.--></para>
   </section>
-  
+
   <xi:include href="Target_Pointer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
-  
+
+
   <section id="its-id-value">
     <title>ID Value</title>
     <para>The <ulink url="http://www.w3.org/TR/its20#idvalue">ID Value</ulink> data category
@@ -92,14 +89,12 @@
       is an HTML file with id attributes, the attributes could be stored as names (e.g. with the
       XLIFF <code>name</code> attribute) or ids (with the XLIFF <code>id</code> attribute), yet
       being unique per XLIFF <code>file</code> element (not per <firstterm>XLIFF
-        Document</firstterm>).
-      <!-- Example added, comment left for people to check this.
+        Document</firstterm>). <!-- Example added, comment left for people to check this.
         COMMENT: ADD AN EXAMPLE OF
       HOW E.G. HTML ID ATTRIBUTES END UP IN XLIFF 2.1.
-      -->
-      In general the ID Value information is fully consumed by the
-        <firstterm>Extraction/Merge</firstterm> behavior and there is no normative mapping
-      relationship between ID Value as used in native formats and during the XLIFF Roundtrip.</para>
+      --> In general the ID Value information is fully consumed by the extraction/merge
+      behavior and there is no normative mapping relationship between ID Value as used in native
+      formats and during the XLIFF Roundtrip.</para>
     <para>Example - Original: </para>
     <programlisting>
 ...
@@ -117,6 +112,6 @@
 ...
 </programlisting>
   </section>
-  
-  
+
+
 </section>

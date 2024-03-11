@@ -74,6 +74,15 @@
         </affiliation>
         <email>rmraya@maxprograms.com</email>
       </editor>
+      <editor>
+        <firstname>Lucía</firstname>
+        <surname>Morado Vázquez</surname>
+        <affiliation>
+          <orgname>University of Geneva</orgname>
+          <address format="linespecific"><email>lucia.morado@unige.ch</email></address>
+        </affiliation>
+        <email>lucia.morado@unige.ch</email>
+      </editor>
     </authorgroup>
 
     <pubdate>&pubdate;</pubdate>

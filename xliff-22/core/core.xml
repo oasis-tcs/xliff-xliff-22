@@ -11,15 +11,15 @@
 <section id="core">
     <title>The Core Specification</title>
 
-    <para>XLIFF is a bilingual document format designed for containing text that needs
-            <firstterm>Translation</firstterm>, its corresponding translations and auxiliary data
-        that makes the <firstterm>Translation</firstterm> process possible.</para>
+    <para>XLIFF is a bilingual document format designed for containing text that needs translation,
+        its corresponding translations and auxiliary data that makes the translation process
+        possible.</para>
 
-    <para>At creation time, an <firstterm>XLIFF Document</firstterm>
-        <glossterm>MAY</glossterm> contain only text in the source language. Translations expressed
-        in the target language <glossterm>MAY</glossterm> be added at a later time.</para>
+    <para>At creation time, an XLIFF document <glossterm>MAY</glossterm> contain only text in the
+        source language. Translations expressed in the target language <glossterm>MAY</glossterm> be
+        added at a later time.</para>
 
-    <para>The root element of an <firstterm>XLIFF Document</firstterm> is <olink
+    <para>The root element of an XLIFF document is <olink
             targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
                 ><code>&lt;xliff&gt;</code></olink>. It contains a collection of <olink
             targetdoc="../elements/structural/file.xml" targetptr="file"
@@ -154,16 +154,16 @@ Text content that is important</programlisting>
             </listitem>
             <listitem>
                 <para><firstterm>Writers</firstterm>
-                    <glossterm>SHOULD</glossterm> preserve XML Processing Instructions in an
-                        <firstterm>XLIFF Document</firstterm>.</para>
+                    <glossterm>SHOULD</glossterm> preserve XML Processing Instructions in an XLIFF
+                    document.</para>
             </listitem>
         </itemizedlist>
 
         <warning>
-            <para> Please note that <firstterm>Agents</firstterm> using Processing Instructions to
-                implement <firstterm>XLIFF Core</firstterm> or <firstterm>Module</firstterm>
-                features are not compliant XLIFF applications disregarding whether they are
-                otherwise conformant. </para>
+            <para>Note that <firstterm>Agents</firstterm> using Processing Instructions to implement
+                    <firstterm>XLIFF Core</firstterm> or <firstterm>Module</firstterm> features are
+                not compliant XLIFF applications disregarding whether they are otherwise conformant.
+            </para>
         </warning>
         <warning>
             <para>Although this specification encourages XLIFF <firstterm>Agents</firstterm> to

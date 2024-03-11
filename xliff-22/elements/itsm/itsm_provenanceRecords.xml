@@ -6,45 +6,45 @@
                          <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED" >
                          ]>
 <section id="itsm_provenanceRecords">
-    <title>provenanceRecords</title>
-    <para>Provenance Records - a standoff wrapper element to group any number of single Provenance Record elements related to the same span of source or target content.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <simplelist>
-      <member>- One or more <olink targetdoc="itsm_provenanceRecord.xml"
+  <title>provenanceRecords</title>
+  <para>Provenance Records - a standoff wrapper element to group any number of single Provenance
+    Record elements related to the same span of source or target content.</para>
+  <para><emphasis>Contains:</emphasis></para>
+  <simplelist>
+    <member>- One or more <olink targetdoc="itsm_provenanceRecord.xml"
         targetptr="itsm_provenanceRecord"><code>&lt;itsm:provenanceRecord></code></olink>
       elements</member>
-        
-    </simplelist>
-  
-  <para><emphasis>Parents:</emphasis></para>
-  
-  <simplelist>
-    <member>- <olink targetdoc="../structural/unit.xml"
-      targetptr="unit"><code>&lt;unit></code></olink></member>
-    <member>- <olink targetdoc="../structural/group.xml"
-      targetptr="group"><code>&lt;group></code></olink></member>
-    <member>- <olink targetdoc="../structural/file.xml"
-      targetptr="file"><code>&lt;file></code></olink></member>
-  </simplelist>
-  
 
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist>
-      <member>- <olink targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id">
-        <code>xml:id</code>
-      </olink>, <glossterm>REQUIRED</glossterm>
+  </simplelist>
+
+  <para><emphasis>Parents:</emphasis></para>
+
+  <simplelist>
+    <member>- <olink targetdoc="../structural/unit.xml" targetptr="unit"
+        ><code>&lt;unit></code></olink></member>
+    <member>- <olink targetdoc="../structural/group.xml" targetptr="group"
+        ><code>&lt;group></code></olink></member>
+    <member>- <olink targetdoc="../structural/file.xml" targetptr="file"
+        ><code>&lt;file></code></olink></member>
+  </simplelist>
+
+
+  <para><emphasis>Attributes:</emphasis></para>
+  <simplelist>
+    <member>- <olink targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id"
+          ><code>xml:id</code></olink>, <glossterm>REQUIRED</glossterm>
     </member>
-      <!--  not allowed on ITS stand off elements <member>-<olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
+    <!--  not allowed on ITS stand off elements <member>-<olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
         targetptr="itsm_annotatorsRef">
         <code>annotatorsRef</code></olink>,
         <glossterm>OPTIONAL</glossterm></member>-->
-        
-    </simplelist>
-<!-- This Constraint would be too strong as a MUST, it would invalidate XLIFF Documents with orphaned Provenance Records. But this can happen because the references can be removed by core only Modifiers.-->
-<itemizedlist>
-  <title>Constraints</title>
-  <listitem>
-    <para>Each <link linkend="itsm_provenanceRecords">provenanceRecords</link> element
+
+  </simplelist>
+  <!-- This Constraint would be too strong as a MUST, it would invalidate XLIFF documents with orphaned Provenance Records. But this can happen because the references can be removed by core only Modifiers.-->
+  <itemizedlist>
+    <title>Constraints</title>
+    <listitem>
+      <para>Each <link linkend="itsm_provenanceRecords">provenanceRecords</link> element
           <glossterm>SHOULD</glossterm> be referenced by at least one <olink
           targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef.xml"
           targetptr="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></olink> attribute
@@ -52,8 +52,8 @@
         for the <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef.xml"
           targetptr="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></olink>
         attribute.</para>
-  </listitem>
-</itemizedlist>
+    </listitem>
+  </itemizedlist>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
@@ -63,5 +63,5 @@
           >provenanceRecords</link> element.</para>
     </listitem>
   </itemizedlist>
-  
+
 </section>

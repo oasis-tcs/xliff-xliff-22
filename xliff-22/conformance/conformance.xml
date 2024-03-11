@@ -24,25 +24,24 @@
                 </listitem>
                 <listitem>
 
-                    <para>Conformant <firstterm>XLIFF Documents</firstterm>
-                        <glossterm>MUST</glossterm> be valid instances of the official Core XML
-                        Schema (<ulink url="&this-loc;/schemas/xliff_core_&version;.xsd"
-                            >&this-loc;/schemas/xliff_core_2.2.xsd</ulink>) that is a part
-                        of this multipart Work Product.</para>
+                    <para>Conformant XLIFF documents <glossterm>MUST</glossterm> be valid instances
+                        of the official Core XML Schema (<ulink
+                            url="&this-loc;/schemas/xliff_core_&version;.xsd"
+                            >&this-loc;/schemas/xliff_core_2.2.xsd</ulink>) that is a part of this
+                        multipart Work Product.</para>
                 </listitem>
                 <listitem>
 
                     <para> As not all aspects of the XLIFF specification can be expressed in terms
-                        of XML Schemas, conformant <firstterm>XLIFF Documents</firstterm>
-                        <glossterm>MUST</glossterm> also comply with all relevant elements and
-                        attributes definitions, normative usage descriptions, and Constraints
-                        specified in this specification document.</para>
+                        of XML Schemas, conformant XLIFF documents <glossterm>MUST</glossterm> also
+                        comply with all relevant elements and attributes definitions, normative
+                        usage descriptions, and Constraints specified in this specification
+                        document.</para>
                 </listitem>
                 <listitem>
-                    <para><firstterm>XLIFF Documents</firstterm>
-                        <glossterm>MAY</glossterm> contain custom extensions, as defined in the
-                            <olink targetdoc="../extensions/extensions.xml" targetptr="extensions"
-                            >Extension Mechanisms</olink> section. </para>
+                    <para>XLIFF documents <glossterm>MAY</glossterm> contain custom extensions, as
+                        defined in the <olink targetdoc="../extensions/extensions.xml"
+                            targetptr="extensions">Extension Mechanisms</olink> section. </para>
                 </listitem>
             </orderedlist>
         </listitem>
@@ -61,10 +60,9 @@
                             <glossterm>REQUIRED</glossterm> to understand and process non-XLIFF
                         elements or attributes. However, conformant applications
                             <glossterm>SHOULD</glossterm> preserve existing custom extensions when
-                        processing conformant <firstterm>XLIFF Documents</firstterm>, provided that
-                        the elements that contain custom extensions are not removed according to
-                        XLIFF Processing Requirements or the extension's own processing
-                        requirements.</para>
+                        processing conformant XLIFF documents, provided that the elements that
+                        contain custom extensions are not removed according to XLIFF Processing
+                        Requirements or the extension's own processing requirements.</para>
                 </listitem>
                 <listitem>
                     <para>All <firstterm>Agents</firstterm>
@@ -116,16 +114,16 @@
                 </listitem>
                 <listitem>
                     <para>Conformant applications are NOT <glossterm>REQUIRED</glossterm> to support
-                        XLIFF 1.2 or previous Versions. </para>
+                        XLIFF 1.2 or previous versions. </para>
                 </listitem>
             </orderedlist>
         </listitem>
     </orderedlist>
 
     <note>
-        <para><firstterm>XLIFF Documents</firstterm> conformant to this specification are not and
-            cannot be conformant to XLIFF 1.2 or earlier versions. If an application needs to
-            support for whatever business reason both XLIFF 2 and XLIFF 1.2 or earlier, these will
-            need to be supported as separate functionalities. </para>
+        <para>XLIFF documents conformant to this specification are not and cannot be conformant to
+            XLIFF 1.2 or earlier versions. If an application needs to support for whatever business
+            reason both XLIFF 2 and XLIFF 1.2 or earlier, these will need to be supported as
+            separate functionalities. </para>
     </note>
 </section>

@@ -16,35 +16,48 @@
     that resulted in the selected content. See <olink targetdoc="../../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> for more details. </para>
-  <warning><para>Provenance data category is used to record human, tools or organizational producers of
-        <firstterm>Translations</firstterm> or revisions, in other words it records producers of the
-      payload. To record <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> metadata
-      producers, the <olink targetdoc="specification" targetptr="itsToolsReferencing">ITS Tools
-        Referencing</olink> mechanism needs to be used.</para></warning>
+  <warning>
+    <para>Provenance data category is used to record human, tools or organizational producers of
+      translations or revisions, in other words it records producers of the payload. To record
+        <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> metadata producers, the
+        <olink targetdoc="specification" targetptr="itsToolsReferencing">ITS Tools
+        Referencing</olink> mechanism needs to be used.</para>
+  </warning>
   <itemizedlist id="Provenance_Attributes">
     <title>Processing Requirements</title>
-    <listitem><para><firstterm>Writers</firstterm>
-      <glossterm>MUST</glossterm> use the attributes
-      <olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"><code>its:org</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"><code>its:orgRef</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"><code>its:person</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_personRef.xml" targetptr="itsm_personRef"><code>its:personRef</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef.xml" targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml" targetptr="itsm_revOrg"><code>its:revOrg</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_revOrgRef.xml" targetptr="itsm_revOrgRef"><code>its:revOrgRef</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_revPerson.xml" targetptr="itsm_revPerson"><code>its:revPerson</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_revPersonRef.xml" targetptr="itsm_revPersonRef"><code>its:revPersonRef</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_revTool.xml" targetptr="itsm_revTool"><code>its:revTool</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_revToolRef.xml" targetptr="itsm_revToolRef"><code>its:revToolRef</code></olink>,
-      <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"><code>its:tool</code></olink>, and
-      <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"><code>its:toolRef</code></olink>
-      
-       to express the <olink
-          targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+    <listitem>
+      <para><firstterm>Writers</firstterm>
+        <glossterm>MUST</glossterm> use the attributes <olink
+          targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"
+          ><code>its:org</code></olink>, <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml"
+          targetptr="itsm_orgRef"><code>its:orgRef</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"
+            ><code>its:person</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_personRef.xml" targetptr="itsm_personRef"
+            ><code>its:personRef</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef.xml"
+          targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink>,
+          <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml" targetptr="itsm_revOrg"
+            ><code>its:revOrg</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_revOrgRef.xml" targetptr="itsm_revOrgRef"
+            ><code>its:revOrgRef</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_revPerson.xml" targetptr="itsm_revPerson"
+            ><code>its:revPerson</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_revPersonRef.xml" targetptr="itsm_revPersonRef"
+            ><code>its:revPersonRef</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_revTool.xml" targetptr="itsm_revTool"
+            ><code>its:revTool</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_revToolRef.xml" targetptr="itsm_revToolRef"
+            ><code>its:revToolRef</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
+            ><code>its:tool</code></olink>, and <olink
+          targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"
+            ><code>its:toolRef</code></olink> to express the <olink targetdoc="../xliff22.xml"
+          targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> data category in
-          <firstterm>XLIFF Documents</firstterm>.</para>
-    <itemizedlist>
-      <listitem>
+        XLIFF documents.</para>
+      <itemizedlist>
+        <listitem>
           <para>Within the <olink targetdoc="../candidates/specification.xml" targetptr="candidates"
               >Translation Candidates Module</olink>, <firstterm>Enrichers</firstterm>
             <glossterm>MUST</glossterm> map the <olink
@@ -55,81 +68,93 @@
         </listitem>
         <listitem>
           <para><firstterm>Modifiers</firstterm> populating <firstterm>XLIFF Core</firstterm>
-            <olink targetdoc="../../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink> elements 
-            with unmodified content from <olink targetdoc="../../elements/structural/target.xml" targetptr="target"><code>&lt;target></code></olink> children of
-            <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"><code>&lt;mtc:match></code></olink> elements <firstterm>may</firstterm> map the
-            <olink
-              targetdoc="../../attributes/candidates/candidates_origin.xml"
-              targetptr="candidates_origin"><code>mtc:origin</code></olink> onto the 
-            <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"><code>its:tool</code></olink> attribute.            
-                     </para>
-          <itemizedlist>
-            <listitem><para>The <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"><code>its:tool</code></olink> attribute value 
-              <glossterm>MUST</glossterm> be the same as the originating <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"><code>&lt;mtc:match></code></olink> 
+            <olink targetdoc="../../elements/structural/target.xml" targetptr="target"
+                ><code>&lt;target></code></olink> elements with unmodified content from <olink
+              targetdoc="../../elements/structural/target.xml" targetptr="target"
+                ><code>&lt;target></code></olink> children of <olink
+              targetdoc="../../elements/candidates/match.xml" targetptr="match"
+                ><code>&lt;mtc:match></code></olink> elements <firstterm>may</firstterm> map the
               <olink targetdoc="../../attributes/candidates/candidates_origin.xml"
-                targetptr="candidates_origin"><code>mtc:origin</code></olink> value if this is the case.
-            </para></listitem>
+              targetptr="candidates_origin"><code>mtc:origin</code></olink> onto the <olink
+              targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
+                ><code>its:tool</code></olink> attribute. </para>
+          <itemizedlist>
+            <listitem>
+              <para>The <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
+                    ><code>its:tool</code></olink> attribute value <glossterm>MUST</glossterm> be
+                the same as the originating <olink targetdoc="../../elements/candidates/match.xml"
+                  targetptr="match"><code>&lt;mtc:match></code></olink>
+                <olink targetdoc="../../attributes/candidates/candidates_origin.xml"
+                  targetptr="candidates_origin"><code>mtc:origin</code></olink> value if this is the
+                case. </para>
+            </listitem>
           </itemizedlist>
         </listitem>
-      <listitem>
-        <para><firstterm>Modifiers</firstterm>
+        <listitem>
+          <para><firstterm>Modifiers</firstterm>
             <glossterm>MAY</glossterm> store previous versions of subunit content and attributes and
             notes content and attributes in the <olink
               targetdoc="../change-tracking/specification.xml" targetptr="changeTracking_module"
               >Change Tracking Module</olink> elements according to the data model, Constraints,
             Processing Requirements, and usage descriptions of that module.</para>
-        <para>If this was the case the <olink targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"><code>&lt;revision></code></olink> element <glossterm>MUST</glossterm> be extended by the Provenance attributes defined in the ITS Module as needed and the <olink
+          <para>If this was the case the <olink
+              targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"
+                ><code>&lt;revision></code></olink> element <glossterm>MUST</glossterm> be extended
+            by the Provenance attributes defined in the ITS Module as needed and the <olink
               targetdoc="../../attributes/change-tracking/ctr_author.xml" targetptr="ctr_author"
                 ><code>ctr:author</code></olink>
             <glossterm>SHOULD</glossterm> reuse information from the corresponding <olink
               targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
             <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> attributes as
             follows:</para>
-        <itemizedlist>
+          <itemizedlist>
             <listitem>
               <para>space separated list of values</para>
             </listitem>
             <listitem>
               <para>spaces " " and hyphens "-" in values are escaped using slashes "/"</para>
             </listitem>
-          <listitem>
-            <para>each value consists of the attribute name followed by a hyphen, followed by the
+            <listitem>
+              <para>each value consists of the attribute name followed by a hyphen, followed by the
                 ITS attribute value</para>
-          </listitem>
+            </listitem>
             <listitem>
               <para>following attribute names to be used in that order if available:</para>
               <para><simplelist>
-                <member> person</member>
+                  <member> person</member>
                   <member> tool</member>
                   <member> revPerson</member>
                   <member> revTool</member>
-              </simplelist> </para>
+                </simplelist>
+              </para>
             </listitem>
             <listitem>
               <para>other attributes are ignored.</para>
             </listitem>
-        </itemizedlist>
-        
-      </listitem>
-    </itemizedlist>
-      
+          </itemizedlist>
+
+        </listitem>
+      </itemizedlist>
+
     </listitem>
- 
-      
+
+
   </itemizedlist>
-  
+
 
   <section id="Provenance_Structural">
     <title>Structural Elements</title>
     <para>Provenance metadata are more likely to appear on structural elements than on inline
-      elements in source and target documents, therefore Provenance attributes listed in <link linkend="Provenance_Attributes">the above
-        Processing Requirement</link> are allowed on all structural levels.</para>
-    <para>It is possible that Provenance metadata will be <firstterm>Extracted</firstterm> from
-      source content but more likely Provenance metadata will be first introduced into the
-      translated content during the XLIFF based roundtrip.</para>
-    
+      elements in source and target documents, therefore Provenance attributes listed in <link
+        linkend="Provenance_Attributes">the above Processing Requirement</link> are allowed on all
+      structural levels.</para>
+    <para>It is possible that Provenance metadata will be extracted from source content but more
+      likely Provenance metadata will be first introduced into the translated content during the
+      XLIFF based roundtrip.</para>
+
     <example>
-      <title>Provenance metadata added by <firstterm>Modifiers</firstterm> or <firstterm>Enrichers</firstterm> on structural levels</title>
+      <title>Provenance metadata added by <firstterm>Modifiers</firstterm> or
+          <firstterm>Enrichers</firstterm> on structural levels</title>
       <para>In this example a person of the name <code>Honza Novák</code> has been the translator of
         the whole unit content and <code>Franta Kocourek</code> the reviser of the whole
         translation.</para>
@@ -146,20 +171,19 @@
     &lt;/unit>
     ...
 </programlisting>
-      
-       
+
+
     </example>
-    
-    <para>Preserving the Provenance metadata in the target content after
-        <firstterm>Merging</firstterm> the <firstterm>Translations</firstterm> back to the original
-      format can be useful, the metadata could be for instance used in a check in and publishing
-      process within a content management system.</para>
-    
+
+    <para>Preserving the Provenance metadata in the target content after merging the translations
+      back to the original format can be useful, the metadata could be for instance used in a check
+      in and publishing process within a content management system.</para>
+
     <example>
-      <title>Provenance metadata preserved by <firstterm>Mergers</firstterm> in the native format.</title>
+      <title>Provenance metadata preserved by <firstterm>Mergers</firstterm> in the native
+        format.</title>
       <para>In this example the translator and reviser Provenance metadata introduced during the
-        XLIFF roundtrip has been preserved after <firstterm>Merging</firstterm> of the
-          <firstterm>Translations</firstterm> back to HTML.</para>
+        XLIFF roundtrip has been preserved after merging the translations back to HTML.</para>
       <programlisting>
 ...
 &lt;p its-person="Honza Novák" its-rev-person="Franta Kocourek"> Hospodářství
@@ -167,26 +191,26 @@
     je nejasná. &lt;/p>
 ...
 </programlisting>
-      
-      
+
+
     </example>
     <para>If standoff Provenance elements are used at structural levels, these need to occur on the
-      same or an ancestor element of the element where the standoff reference is used. See the <olink
-        targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
-        targetptr="itsm_provenanceRecordsRef">
-        <code>its:provenanceRecordsRef</code></olink> </para>
-    
-    
+      same or an ancestor element of the element where the standoff reference is used. See the
+        <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
+        targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink>
+    </para>
+
+
   </section>
   <section id="Provencance_Inline">
     <title>Inline Elements</title>
-    
+
     <para> Use <code><olink targetdoc="../../elements/inline/mrk.xml" targetptr="mrk"
           >&lt;mrk></olink></code> or an <code><olink targetdoc="../../elements/inline/sm.xml"
           targetptr="sm">&lt;sm/></olink></code> / <code><olink
           targetdoc="../../elements/inline/em.xml" targetptr="em">&lt;em/></olink></code> pair with
-      the Provenance data category attributes listed in <link linkend="Provenance_Attributes">the above
-        Processing Requirement</link>.</para>
+      the Provenance data category attributes listed in <link linkend="Provenance_Attributes">the
+        above Processing Requirement</link>.</para>
     <para>See the <link linkend="provenanceAnnotation">ITS Provenance Annotation</link> for the
       normative usage description of those attributes inline. </para>
     <para>Because the same or overlapping spans of source or target text can be associated with more
@@ -194,15 +218,14 @@
       that are to be used at the unit level as a more expressive alternative to the inline only
       annotations.</para>
     <para> For specifics of the standoff annotation, see the <olink
-      targetdoc="../../elements/itsm/itsm_provenanceRecord.xml" targetptr="itsm_provenanceRecord"
-      ><code>&lt;provenanceRecord></code></olink> and <olink
-        targetdoc="../../elements/itsm/itsm_provenanceRecords.xml" targetptr="itsm_provenanceRecords"
-        ><code>&lt;provenanceRecords></code></olink> elements and the attributes <olink
-          targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
-          targetptr="itsm_provenanceRecordsRef">
-          <code>provenanceRecordsRef</code></olink> and <olink
+        targetdoc="../../elements/itsm/itsm_provenanceRecord.xml" targetptr="itsm_provenanceRecord"
+          ><code>&lt;provenanceRecord></code></olink> and <olink
+        targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
+        targetptr="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></olink> elements and
+      the attributes <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
+        targetptr="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></olink> and <olink
         targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id"
-      ><code>id</code></olink>.</para>  
+      ><code>id</code></olink>.</para>
   </section>
   <section id="provenanceAnnotation">
     <title>ITS Provenance Annotation</title>
@@ -213,57 +236,110 @@
     <para>Usage:</para>
     <itemizedlist spacing="compact">
       <listitem>
-        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-          ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
+        <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
+          attribute is <glossterm>REQUIRED</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-          ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-          <code>its:generic</code>.</para>
-        
+            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
+            <code>its:generic</code>.</para>
+
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-          ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
-            targetptr="itsm_provenanceRecordsRef">
-          <code>its:provenanceRecordsRef</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+            targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink>
+          attribute is <glossterm>OPTIONAL</glossterm>.</para>
       </listitem>
-      <listitem><para>The following attributes <glossterm>MUST NOT</glossterm> be set if and only if <olink
-        targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
-        targetptr="itsm_provenanceRecordsRef">
-        <code>its:provenanceRecordsRef</code></olink> is declared, otherwise at least one the following
-         <glossterm>MUST</glossterm> be set:</para>
+      <listitem>
+        <para>The following attributes <glossterm>MUST NOT</glossterm> be set if and only if <olink
+            targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
+            targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink> is
+          declared, otherwise at least one the following <glossterm>MUST</glossterm> be set:</para>
         <itemizedlist>
-          <listitem><para>	<olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"><code>its:org</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"><code>its:orgRef</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"><code>its:person</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_personRef.xml" targetptr="itsm_personRef"><code>its:personRef</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml" targetptr="itsm_revOrg"><code>its:revOrg</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revOrgRef.xml" targetptr="itsm_revOrgRef"><code>its:revOrgRef</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revPerson.xml" targetptr="itsm_revPerson"><code>its:revPerson</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revPersonRef.xml" targetptr="itsm_revPersonRef"><code>its:revPersonRef</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revTool.xml" targetptr="itsm_revTool"><code>its:revTool</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revToolRef.xml" targetptr="itsm_revToolRef"><code>its:revToolRef</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"><code>its:tool</code></olink>,	</para></listitem>
-          <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"><code>its:toolRef</code></olink>,	</para></listitem>
-          
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"
+                  ><code>its:org</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"
+                  ><code>its:orgRef</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"
+                  ><code>its:person</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_personRef.xml" targetptr="itsm_personRef"
+                  ><code>its:personRef</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml" targetptr="itsm_revOrg"
+                  ><code>its:revOrg</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_revOrgRef.xml" targetptr="itsm_revOrgRef"
+                  ><code>its:revOrgRef</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_revPerson.xml" targetptr="itsm_revPerson"
+                  ><code>its:revPerson</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_revPersonRef.xml"
+                targetptr="itsm_revPersonRef"><code>its:revPersonRef</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_revTool.xml" targetptr="itsm_revTool"
+                  ><code>its:revTool</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_revToolRef.xml"
+                targetptr="itsm_revToolRef"><code>its:revToolRef</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
+                  ><code>its:tool</code></olink>, </para>
+          </listitem>
+          <listitem>
+            <para>
+              <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"
+                  ><code>its:toolRef</code></olink>, </para>
+          </listitem>
+
         </itemizedlist>
       </listitem>
-      
+
     </itemizedlist>
-    
-    
-    
-    <warning><para>Usage of the <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef" targetptr="itsm_provenanceRecordsRef">
-      <code>its:provenanceRecordsRef</code></olink> attribute implies usage of Provenance standoff elements.
-      See <olink targetdoc="../../elements/itsm/itsm_provenanceRecords.xml" targetptr="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></olink>
-      and <olink targetdoc="../../elements/itsm/itsm_provenanceRecord.xml" targetptr="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></olink>
-      for related Constraints and Processing Requirements.</para></warning>
+
+
+
+    <warning>
+      <para>Usage of the <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
+          targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink>
+        attribute implies usage of Provenance standoff elements. See <olink
+          targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
+          targetptr="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></olink> and <olink
+          targetdoc="../../elements/itsm/itsm_provenanceRecord.xml"
+          targetptr="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></olink> for related
+        Constraints and Processing Requirements.</para>
+    </warning>
     <example>
-      <title><firstterm>Enriching</firstterm> <firstterm>XLIFF Documents</firstterm> with Provenance Annotations</title>
+      <title><firstterm>Enriching</firstterm> XLIFF documents with Provenance Annotations</title>
       <para><emphasis role="bold">Inline only</emphasis> (i.e. without stand off):</para>
       <programlisting>
 ...
@@ -291,7 +367,7 @@
         workflow and also each of the attributes can have only one value applied for the given
         span.</para>
       <para><emphasis role="bold">Stand off:</emphasis></para>
-      
+
       <programlisting>
 ...
 &lt;unit id='1'>
@@ -326,7 +402,7 @@
 &lt;/unit>
 ...
 </programlisting>
-    
+
       <para>In this example, multiple records with the same attribute for the same span are
         possible, and if most recent records are stacked on top, it can also help indicate the
         sequence of agents. So both segments were most probably first translated by <code>Microsoft
@@ -340,5 +416,5 @@
         was inline only.</para>
     </example>
   </section>
-  
+
 </section>
