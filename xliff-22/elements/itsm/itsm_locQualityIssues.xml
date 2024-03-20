@@ -44,7 +44,7 @@
           <glossterm>SHOULD</glossterm> be referenced by at least one <olink
           targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef.xml"
           targetptr="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></olink> attribute
-        within the same <olink targetdoc="../strcutural/unit.xml" targetptr="unit"
+        within the same <olink targetdoc="../structural/unit.xml" targetptr="unit"
             ><code>&lt;unit></code></olink> element as per Constraints for the <olink
           targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef.xml"
           targetptr="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></olink>

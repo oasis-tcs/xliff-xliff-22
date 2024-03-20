@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "docbook/docbookx.dtd">
-<article lang="en-US" status="Specification Draft">
+<article lang="en-US" status="Working Draft 01">
   <articleinfo>
     <title>XLIFF Extended Version 2.2</title>
 
@@ -68,7 +68,7 @@
     </authorgroup>
 
 
-    <pubdate>11 March 2024</pubdate>
+    <pubdate>20 March 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -187,8 +187,8 @@
 
       <para><citation>XLIFF-2.2</citation></para>
 
-      <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya. 11 March 2024.
-        Specification Draft. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+      <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya. 20 March 2024.
+        Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -5530,7 +5530,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
           <itemizedlist>
             <listitem>
               <para><firstterm>Modifiers</firstterm>
-                <glossterm>MAY</glossterm> add or modifyi translatable text.</para>
+                <glossterm>MAY</glossterm> add or modify translatable text.</para>
             </listitem>
 
             <listitem>
@@ -5895,7 +5895,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
       implementers can create an arbitrary number of private state machine under their prefix
       authorities. It is advisable to register such authority prefixes with the XLIFF TC and publish
       their documentation.</para>
-    <para>When <firstterm>Mergers</firstterm> need to perform the merege in a non-final state, when
+    <para>When <firstterm>Mergers</firstterm> need to perform the merge in a non-final state, when
       the presence of targets cannot be guaranteed, they are free to create preliminary targets
       again following the <link linkend="contentmodificationwithouttarget">Processing Requirements for Content        Modification Without Target</link></para>
   </section>
@@ -12930,7 +12930,7 @@ backslash (<code>\</code>).</para>
         attribute when used inline; advanced Constraints follow from that normative usage
         description.</para>
     <para>See <link linkend="Localization_Quality_Rating_Structural"><code>Localization Quality Rating on
-                Structural Elements</code></link> for advanced Constraints when used on strcutural
+                Structural Elements</code></link> for advanced Constraints when used on structural
         elements (<link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, and <link linkend="unit"><code>&lt;unit></code></link>).</para>
     <para>See <link linkend="Localization_Quality_Rating_Matches"><code>Localization Quality Rating in
             Translation Candidates Module</code></link> for advanced Constraints when used within the
@@ -13058,7 +13058,7 @@ backslash (<code>\</code>).</para>
     <para>See the <link linkend="lqrAnnotation">ITS Localization Quality Rating Annotation</link> for the normative usage description
         of this attribute when used inline; advanced Constraints follow from that normative usage
         description.</para>
-    <para>See <link linkend="Localization_Quality_Rating_Structural">Localization Quality Rating on            Structural Elements</link> for advanced Constraints when used on strcutural elements
+    <para>See <link linkend="Localization_Quality_Rating_Structural">Localization Quality Rating on        Structural Elements</link> for advanced Constraints when used on structural elements
             (<link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, and <link linkend="unit"><code>&lt;unit></code></link>).</para>
     <para>See <link linkend="Localization_Quality_Rating_Matches">Localization Quality Rating in            Translation Candidates Module</link> for advanced Constraints when used within the
             <link linkend="candidates">Translation Candidates Module</link>.</para>
@@ -13130,7 +13130,7 @@ backslash (<code>\</code>).</para>
         of this attribute when used inline; advanced Constraints follow from that normative usage
         description.</para>
     <para>See <link linkend="Localization_Quality_Rating_Structural"><code>Localization Quality Rating on
-                Structural Elements</code></link> for advanced Constraints when used on strcutural
+                Structural Elements</code></link> for advanced Constraints when used on structural
         elements (<link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, and <link linkend="unit"><code>&lt;unit></code></link>).</para>
     <para>See <link linkend="Localization_Quality_Rating_Matches"><code>Localization Quality Rating in
                 Translation Candidates Module</code></link> for advanced Constraints when used
@@ -13199,7 +13199,7 @@ backslash (<code>\</code>).</para>
         of this attribute when used inline; advanced Constraints follow from that normative usage
         description.</para>
     <para>See <link linkend="Localization_Quality_Rating_Structural"><code>Localization Quality Rating on
-                Structural Elements</code></link> for advanced Constraints when used on strcutural
+                Structural Elements</code></link> for advanced Constraints when used on structural
         elements (<link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, and <link linkend="unit"><code>&lt;unit></code></link>).</para>
     <para>See <link linkend="Localization_Quality_Rating_Matches"><code>Localization Quality Rating in
                 Translation Candidates Module</code></link> for advanced Constraints when used

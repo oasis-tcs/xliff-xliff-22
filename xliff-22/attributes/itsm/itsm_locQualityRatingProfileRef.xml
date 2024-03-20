@@ -86,7 +86,7 @@
         description.</para>
     <para>See <olink targetdoc="../../modules/itsm/Localization_Quality_Rating.xml"
             targetptr="Localization_Quality_Rating_Structural"><code>Localization Quality Rating on
-                Structural Elements</code></olink> for advanced Constraints when used on strcutural
+                Structural Elements</code></olink> for advanced Constraints when used on structural
         elements (<olink targetdoc="../../elements/structural/file.xml" targetptr="file"
                 ><code>&lt;file></code></olink>, <olink
             targetdoc="../../elements/structural/group.xml" targetptr="group"

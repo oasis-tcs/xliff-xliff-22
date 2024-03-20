@@ -693,7 +693,7 @@
       implementers can create an arbitrary number of private state machine under their prefix
       authorities. It is advisable to register such authority prefixes with the XLIFF TC and publish
       their documentation.</para>
-    <para>When <firstterm>Mergers</firstterm> need to perform the merege in a non-final state, when
+    <para>When <firstterm>Mergers</firstterm> need to perform the merge in a non-final state, when
       the presence of targets cannot be guaranteed, they are free to create preliminary targets
       again following the <olink targetdoc="../inline/inline.xml"
         targetptr="contentmodificationwithouttarget">Processing Requirements for Content
