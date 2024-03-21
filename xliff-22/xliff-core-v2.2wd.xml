@@ -67,7 +67,7 @@
       </editor>
     </authorgroup>
 
-    <pubdate>20 March 2024</pubdate>
+    <pubdate>21 March 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -190,7 +190,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya.
-        20 March 2024. Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        21 March 2024. Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -6152,14 +6152,10 @@ Palouse horses&lt;fn>A Palouse horse is the same as
     </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
-        practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
-        the changes have affected the core namespace
-            <code>"urn:oasis:names:tc:xliff:document:2.0"</code> or the <firstterm>XLIFF
-            Core</firstterm>
-        <link linkend="XMLSchema">[XML Schema]</link>, <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink> that expresses its basic
-        grammar and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The
-        changes introduced in version 2.2 are designed to preserve compatibility with versions 2.0
-        and 2.1.</para>
+        practical workings of the previous versions of the <firstterm>XLIFF Core</firstterm> have
+        not been affected. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes
+        introduced in version 2.2 are designed to preserve compatibility with versions 2.0 and
+        2.1.</para>
     <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21">https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
 </appendix>
   <appendix id="acknowledgements" role="informative">
