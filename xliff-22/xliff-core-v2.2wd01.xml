@@ -11,11 +11,11 @@
 
     <productname class="trade">xliff-core</productname>
 
-    <productnumber>wd</productnumber>
+    <productnumber>wd01</productnumber>
 
-    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-v2.2-wd.xml</releaseinfo>
+    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-v2.2-wd01.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-v2.2-wd01.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-v2.2-wd01.xml</releaseinfo>
 
     <releaseinfo role="OASIS-specification-previous-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.html</releaseinfo>
     <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.1/os/xliff-core-v2.1-os.pdf</releaseinfo>
@@ -81,7 +81,7 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para> XML schemas accessible from <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/</ulink>
+          <para> XML schemas accessible from <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/</ulink>
           </para>
         </listitem>
       </itemizedlist>
@@ -190,7 +190,7 @@
       <para><citation>XLIFF-2.2</citation></para>
 
       <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya.
-        21 March 2024. Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/xliff-core-wd.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+        21 March 2024. Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -610,7 +610,7 @@
         </citetitle> (Fifth Edition) W3C Recommendation 26 November 2008.</bibliomixed>
       <bibliomixed id="xml_namespace"><abbrev>XML namespace</abbrev> W3C, <title>Schema document for
           namespace http://www.w3.org/XML/1998/namespace</title>
-        <citetitle><ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink></citetitle> [<edition><ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>]</edition>. at <edition><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink></edition> in
+        <citetitle><ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink></citetitle> [<edition><ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>]</edition>. at <edition><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink></edition> in
         this distribution</bibliomixed>
 
       <bibliomixed id="XMLCatalogs"><abbrev>XML Catalogs</abbrev> Norman Walsh, <title>XML
@@ -734,7 +734,7 @@
                 <listitem>
 
                     <para>Conformant XLIFF documents <glossterm>MUST</glossterm> be valid instances
-                        of the official Core XML Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd</ulink>) that is a part of this
+                        of the official Core XML Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/xliff_core_2.2.xsd</ulink>) that is a part of this
                         multipart Work Product.</para>
                 </listitem>
                 <listitem>
@@ -6022,13 +6022,13 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         <listitem id="CoreSchema">
             <para><firstterm>XLIFF Core</firstterm>
                 <link linkend="XMLSchema">[XML Schema]</link>,</para>
-            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.0.xsd</ulink></para>
+            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/xliff_core_2.0.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/xliff_core_2.0.xsd</ulink></para>
             
         </listitem>
         <listitem id="XLIFFCatalog">
             <para><link linkend="XMLCatalogs">[XML Catalog]</link> of <firstterm>XLIFF
                 Defined</firstterm> XML Schemas,</para>
-            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/catalog.xml</ulink></para>
+            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/catalog.xml</ulink></para>
         </listitem>
         
         <listitem>
@@ -6043,27 +6043,27 @@ Palouse horses&lt;fn>A Palouse horse is the same as
 
 <programlisting format="linespecific">
     
-<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/xliff_core_2.2.xsd"><code>Core XML Schema</code></ulink>
+<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/xliff_core_2.2.xsd"><code>Core XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/glossary.xsd"><code>Glossary Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/glossary.xsd"><code>Glossary Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/fs.xsd"><code>Format Style Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/fs.xsd"><code>Format Style Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/metadata.xsd"><code>Metadata Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/metadata.xsd"><code>Metadata Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/resource_data.xsd"><code>Resource Data Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/resource_data.xsd"><code>Resource Data Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/size_restriction.xsd"><code>Size and Length Restriction Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/size_restriction.xsd"><code>Size and Length Restriction Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/validation.xsd"><code>Validation Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/validation.xsd"><code>Validation Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd">Plural, Gender, and Select Module</ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/plural_gender_select.xsd">Plural, Gender, and Select Module</ulink>
   
  
 </programlisting>
@@ -6087,7 +6087,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         </warning>
         
         <para>Currently the only included third party support schema is <ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>] at
-            <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
+            <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
             distribution.</para>
     </section>
 </appendix>

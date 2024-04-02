@@ -46,7 +46,7 @@
 <!ENTITY bschversion "2.0">
 <!ENTITY cschversion "2.0">
 
-<!ENTITY stage "wd">
+<!ENTITY stage "wd01">
 <!ENTITY pstage "os"> 
 <!ENTITY standard "Working Draft 01">
 <!ENTITY this-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&stage;">
