@@ -148,7 +148,7 @@
             <code>its:generic</code>.</para>
       </listitem>
       <listitem>
-        <para>The the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
+        <para>The <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
           attribute <olink targetdoc="../../attributes/itsm/itsm_mtConfidence"
             targetptr="itsm_mtConfidence"><code>its:mtConfidence</code></olink>
           <glossterm>MUST</glossterm> be set.</para>

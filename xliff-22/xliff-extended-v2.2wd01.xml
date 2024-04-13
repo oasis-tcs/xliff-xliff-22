@@ -68,7 +68,7 @@
     </authorgroup>
 
 
-    <pubdate>21 March 2024</pubdate>
+    <pubdate>13 April 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -187,7 +187,7 @@
 
       <para><citation>XLIFF-2.2</citation></para>
 
-      <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya. 21 March 2024.
+      <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and Lucía Morado Vázquez 13 April 2024.
         Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
@@ -569,7 +569,7 @@
       <bibliomixed id="bib_datetime"><abbrev>NOTE-datetime</abbrev> M. Wolf, C. Wicksteed,
           <title>Date and Time Formats</title>, <citetitle>
           <ulink url="http://www.w3.org/TR/NOTE-datetime">http://www.w3.org/TR/NOTE-datetime</ulink>
-        </citetitle> W3C Note, 15th Setember 1997.</bibliomixed>
+        </citetitle> W3C Note, 15th September 1997.</bibliomixed>
 
       <bibliomixed id="bcp14"><abbrev>BCP 14</abbrev> S. Bradner, <title>Key words for use in RFCs
           to Indicate Requirement Levels</title>, <citetitle>
@@ -2328,7 +2328,7 @@
     <section id="sm">
   <title>sm</title>
 
-  <para>Start marker of an annotation where the spanning marker cannot be used for wellformedness
+  <para>Start marker of an annotation where the spanning marker cannot be used for well-formedness
     reasons.</para>
 
   <para><emphasis>Contains:</emphasis></para>
@@ -2398,7 +2398,7 @@
     <section id="em">
   <title>em</title>
 
-  <para>End marker of an annotation where the spanning marker cannot be used for wellformedness
+  <para>End marker of an annotation where the spanning marker cannot be used for well-formedness
     reasons.</para>
 
   <para><emphasis>Contains:</emphasis></para>
@@ -9486,7 +9486,7 @@ backslash (<code>\</code>).</para>
   <section id="allowedCharactersAnnotation">
     <title>ITS Allowed Characters Annotation</title>
     <para>This is used to fully map to and from the <link linkend="ITS20">[ITS]</link>
-      <ulink url="https://www.w3.org/TR/its20/#allowedchars">Alllowed Characters</ulink> data
+      <ulink url="https://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> data
       category.</para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">
@@ -10902,8 +10902,8 @@ backslash (<code>\</code>).</para>
   <para>ITS Terminology information is useful during translation and related localization processes.
     Thus it is beneficial when <firstterm>Extractors</firstterm> preserve the ITS Terminology
     information in XLIFF documents.</para>
-  <para>Target language terminology data and metada introduced during the translation can be merged
-    back into the target language content in the original format.</para>
+  <para>Target language terminology data and metadata introduced during the translation can be
+    merged back into the target language content in the original format.</para>
   <para> </para>
   <warning>
     <para>The <firstterm>XLIFF Core</firstterm>
@@ -11343,7 +11343,7 @@ backslash (<code>\</code>).</para>
             <code>its:generic</code>.</para>
       </listitem>
       <listitem>
-        <para>The the <link linkend="ITS20">[ITS]</link> defined
+        <para>The <link linkend="ITS20">[ITS]</link> defined
           attribute <link linkend="itsm_mtConfidence"><code>its:mtConfidence</code></link>
           <glossterm>MUST</glossterm> be set.</para>
       </listitem>
@@ -13334,10 +13334,8 @@ backslash (<code>\</code>).</para>
     
     
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
-        <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
-    </para>
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="sm"><code>&lt;sm></code></link>,
+            <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
     
     
     <para>See the <link linkend="provenanceAnnotation">ITS Provenance Annotation</link> for the normative usage description of this attribute on inline elements. Advanced Constraints follow from that normative usage description.</para>
@@ -13404,7 +13402,7 @@ backslash (<code>\</code>).</para>
 
 
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
             <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
 
 
@@ -13470,10 +13468,8 @@ backslash (<code>\</code>).</para>
     
     
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
-        <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
-    </para>
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="sm"><code>&lt;sm></code></link>,
+            <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
     
     
     <para>See the <link linkend="provenanceAnnotation">ITS Provenance Annotation</link> for the normative usage description of this attribute on inline elements. Advanced Constraints follow from that normative usage description.</para>
@@ -13534,7 +13530,7 @@ backslash (<code>\</code>).</para>
     
     
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
         <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
@@ -13558,11 +13554,8 @@ backslash (<code>\</code>).</para>
     
     
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
-        <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
-        
-    </para>
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="sm"><code>&lt;sm></code></link>,
+            <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
     
     <para>See the <link linkend="provenanceAnnotation">ITS Localization Issue Annotation</link> for the normative usage description of this
         attribute inline. </para>
@@ -13587,7 +13580,7 @@ backslash (<code>\</code>).</para>
         
         <listitem>
             <para>In case the <link linkend="itsm_provenanceRecordsRef">provenanceRecordsRef</link>
-                attribute is used on a <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, or <link linkend="unit"><code>&lt;unit></code></link> element, <itemizedlist>
+                attribute is used on a <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, or <link linkend="unit"><code>&lt;unit></code></link> element, <itemizedlist>
                     <listitem>
                         <para>The value of the <link linkend="itsm_provenanceRecordsRef">provenanceRecordsRef</link> attribute <glossterm>MUST</glossterm>
                             be an IRI referencing a <link linkend="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></link> element within the
@@ -13668,7 +13661,7 @@ backslash (<code>\</code>).</para>
 
 
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
             <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
 
 
@@ -13734,10 +13727,8 @@ backslash (<code>\</code>).</para>
     
     
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
-        <link linkend="mrk"><code>&lt;mrk></code></link>,
-        <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
-    </para>
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>, <link linkend="sm"><code>&lt;sm></code></link>,
+            <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
     
     
     <para>See the <link linkend="provenanceAnnotation">ITS Provenance Annotation</link> for the normative usage description of this attribute on inline elements. Advanced Constraints follow from that normative usage description.</para>
@@ -13803,7 +13794,7 @@ backslash (<code>\</code>).</para>
 
 
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
             <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
 
 
@@ -13871,7 +13862,7 @@ backslash (<code>\</code>).</para>
 
 
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
             <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
 
 
@@ -13939,7 +13930,7 @@ backslash (<code>\</code>).</para>
     
     
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, 
         <link linkend="mrk"><code>&lt;mrk></code></link>,
         <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>.
     </para>
@@ -14008,7 +13999,7 @@ backslash (<code>\</code>).</para>
 
 
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
             <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
 
 
@@ -14244,7 +14235,7 @@ backslash (<code>\</code>).</para>
 
 
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
             <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
 
 
@@ -14314,7 +14305,7 @@ backslash (<code>\</code>).</para>
 
 
     <para><emphasis>Used in:</emphasis>
-        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;goup></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
+        <link linkend="file"><code>&lt;file></code></link>, <link linkend="group"><code>&lt;group></code></link>, <link linkend="unit"><code>&lt;unit></code></link>, <link linkend="mrk"><code>&lt;mrk></code></link>,
             <link linkend="sm"><code>&lt;sm></code></link>, <link linkend="itsm_provenanceRecord"><code>&lt;provenanceRecord></code></link>, <link linkend="match"><code>&lt;mtc:match></code></link>, and <remark><code>&lt;ctr:revision></code></remark>. </para>
 
 

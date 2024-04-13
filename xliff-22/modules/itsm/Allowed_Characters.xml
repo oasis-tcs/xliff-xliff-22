@@ -98,7 +98,7 @@
     <title>ITS Allowed Characters Annotation</title>
     <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
         targetptr="ITS20">[ITS]</olink>
-      <ulink url="https://www.w3.org/TR/its20/#allowedchars">Alllowed Characters</ulink> data
+      <ulink url="https://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> data
       category.</para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">

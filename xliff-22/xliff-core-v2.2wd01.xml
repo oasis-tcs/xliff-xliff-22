@@ -67,7 +67,7 @@
       </editor>
     </authorgroup>
 
-    <pubdate>21 March 2024</pubdate>
+    <pubdate>13 April 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -189,8 +189,8 @@
 
       <para><citation>XLIFF-2.2</citation></para>
 
-      <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya.
-        21 March 2024. Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
+      <para><emphasis>XLIFF Version 2.2</emphasis>. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
+        13 April 2024. Working Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd01/xliff-core-wd01.html</ulink>. Latest version: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core.html</ulink>. </para>
 
       
     </legalnotice>
@@ -571,7 +571,7 @@
       <bibliomixed id="bib_datetime"><abbrev>NOTE-datetime</abbrev> M. Wolf, C. Wicksteed,
           <title>Date and Time Formats</title>, <citetitle>
           <ulink url="http://www.w3.org/TR/NOTE-datetime">http://www.w3.org/TR/NOTE-datetime</ulink>
-        </citetitle> W3C Note, 15th Setember 1997.</bibliomixed>
+        </citetitle> W3C Note, 15th September 1997.</bibliomixed>
 
       <bibliomixed id="bcp14"><abbrev>BCP 14</abbrev> S. Bradner, <title>Key words for use in RFCs
           to Indicate Requirement Levels</title>, <citetitle>
@@ -2330,7 +2330,7 @@
     <section id="sm">
   <title>sm</title>
 
-  <para>Start marker of an annotation where the spanning marker cannot be used for wellformedness
+  <para>Start marker of an annotation where the spanning marker cannot be used for well-formedness
     reasons.</para>
 
   <para><emphasis>Contains:</emphasis></para>
@@ -2400,7 +2400,7 @@
     <section id="em">
   <title>em</title>
 
-  <para>End marker of an annotation where the spanning marker cannot be used for wellformedness
+  <para>End marker of an annotation where the spanning marker cannot be used for well-formedness
     reasons.</para>
 
   <para><emphasis>Contains:</emphasis></para>

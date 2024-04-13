@@ -8,7 +8,7 @@
 <section id="sm">
   <title>sm</title>
 
-  <para>Start marker of an annotation where the spanning marker cannot be used for wellformedness
+  <para>Start marker of an annotation where the spanning marker cannot be used for well-formedness
     reasons.</para>
 
   <para><emphasis>Contains:</emphasis></para>

@@ -101,7 +101,7 @@
         <olink targetdoc="../../elements/structural/file.xml" targetptr="file"
                 ><code>&lt;file></code></olink>, <olink
             targetdoc="../../elements/structural/group.xml" targetptr="group"
-            ><code>&lt;goup></code></olink>, <olink targetdoc="../../elements/structural/unit.xml"
+            ><code>&lt;group></code></olink>, <olink targetdoc="../../elements/structural/unit.xml"
             targetptr="unit"><code>&lt;unit></code></olink>, <olink
             targetdoc="../../elements/inline/mrk.xml" targetptr="mrk"><code>&lt;mrk></code></olink>,
             <olink targetdoc="../../elements/inline/sm.xml" targetptr="sm"

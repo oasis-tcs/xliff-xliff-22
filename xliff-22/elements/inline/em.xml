@@ -8,7 +8,7 @@
 <section id="em">
   <title>em</title>
 
-  <para>End marker of an annotation where the spanning marker cannot be used for wellformedness
+  <para>End marker of an annotation where the spanning marker cannot be used for well-formedness
     reasons.</para>
 
   <para><emphasis>Contains:</emphasis></para>

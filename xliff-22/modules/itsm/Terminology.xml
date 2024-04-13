@@ -13,8 +13,8 @@
   <para>ITS Terminology information is useful during translation and related localization processes.
     Thus it is beneficial when <firstterm>Extractors</firstterm> preserve the ITS Terminology
     information in XLIFF documents.</para>
-  <para>Target language terminology data and metada introduced during the translation can be merged
-    back into the target language content in the original format.</para>
+  <para>Target language terminology data and metadata introduced during the translation can be
+    merged back into the target language content in the original format.</para>
   <para> </para>
   <warning>
     <para>The <firstterm>XLIFF Core</firstterm>
