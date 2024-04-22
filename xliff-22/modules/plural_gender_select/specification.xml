@@ -12,128 +12,122 @@
   <section>
     <title>Introduction</title>
 
-    <para>This module provides an XLIFF capability to store information needed
-    to represent and process messages with variants. This includes plural
-    &amp; gender variants, and a generic select.</para>
+    <para>This module provides an XLIFF capability to store information needed to represent and
+      process messages with variants. This includes plural &amp; gender variants, and a generic
+      select.</para>
 
-    <para>We have all seen messages like this: <emphasis>“You have 12
-    day(s).”</emphasis></para>
+    <para>We have all seen messages like this: <emphasis>“You have 12 day(s).”</emphasis></para>
 
-    <para>This was a common way to deal with plural in English, but didn’t
-    sound natural in English, and didn’t translate well in other
-    languages.</para>
+    <para>This was a common way to deal with plural in English, but didn’t sound natural in English,
+      and didn’t translate well in other languages.</para>
 
-    <para>Sometimes developers tried to make things more natural with some
-    help from code:</para>
+    <para>Sometimes developers tried to make things more natural with some help from code:</para>
 
     <programlisting>if (count == 1)
     message = "You have {count} day"
 else
     message = "You have {count} days"</programlisting>
 
-    <para>However, this does not work for all languages. The plural rules are
-    different between locales. French uses singular for zero and one
-    (<emphasis>“0 jour”</emphasis>, <emphasis>“1 jour”</emphasis>,
-    <emphasis>“2 jours”</emphasis>), most Slavic languages have four plural
-    forms (Czech: <emphasis>“1 den”</emphasis>, <emphasis>“2 dny”</emphasis>,
-    <emphasis>“1,5 dne”</emphasis>, <emphasis>“5 dní”</emphasis>), Chinese has
-    no plurals at all, etc.</para>
+    <para>However, this does not work for all languages. The plural rules are different between
+      locales. French uses singular for zero and one (<emphasis>“0 jour”</emphasis>, <emphasis>“1
+        jour”</emphasis>, <emphasis>“2 jours”</emphasis>), most Slavic languages have four plural
+      forms (Czech: <emphasis>“1 den”</emphasis>, <emphasis>“2 dny”</emphasis>, <emphasis>“1,5
+        dne”</emphasis>, <emphasis>“5 dní”</emphasis>), Chinese has no plurals at all, etc.</para>
 
-    <para>This sounds very unusual to many English speakers, but it is in fact
-    very similar to the way English handles ordinals:
-    <emphasis>“21<superscript>st</superscript> place”</emphasis>,
-    <emphasis>“32<superscript>nd</superscript> place”</emphasis>,
-    <emphasis>“23<superscript>rd</superscript> place”</emphasis>,
-    <emphasis>“25<superscript>th</superscript> place”</emphasis>.</para>
+    <para>This sounds very unusual to many English speakers, but it is in fact very similar to the
+      way English handles ordinals: <emphasis>“21<superscript>st</superscript> place”</emphasis>,
+          <emphasis>“32<superscript>nd</superscript> place”</emphasis>,
+          <emphasis>“23<superscript>rd</superscript> place”</emphasis>,
+          <emphasis>“25<superscript>th</superscript> place”</emphasis>.</para>
 
-    <para>The <ulink
-    url="https://cldr.unicode.org/index/cldr-spec/plural-rules">CLDR (Common Locale Data Repository)
-    project</ulink> collected the plural rules (both cardinal and ordinal) for many languages.</para>
+    <para>The <olink targetdoc="../../introduction/introduction.xml"
+        targetptr="biblio_cldr_plural_spec">[CLDR Plural Spec]</olink> project collected the plural
+      rules (both cardinal and ordinal) for many languages.</para>
 
-    <para>Many technologies and internationalization libraries already support
-    such advanced plural rules (for example <ulink
-    url="https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html">gettext</ulink>,
-    <ulink
-    url="https://developer.apple.com/documentation/xcode/localizing-strings-that-contain-plurals">macOS
-    and iOS</ulink>, <ulink
-    url="https://developer.android.com/guide/topics/resources/string-resource#Plurals">Android</ulink>,
-    <ulink
-    url="https://unicode-org.github.io/icu/userguide/format_parse/messages/#complex-argument-types">ICU
-    (International Components for Unicode)</ulink>, <ulink
-    url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules">ECMAScript
-    Intl</ulink>, more.</para>
+    <para>Many technologies and internationalization libraries already support such advanced plural
+      rules, including: <ulink
+        url="https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html"
+        >gettext</ulink>, <ulink
+        url="https://developer.apple.com/documentation/xcode/localizing-strings-that-contain-plurals"
+        >macOS and iOS</ulink>, <ulink
+        url="https://developer.android.com/guide/topics/resources/string-resource#Plurals"
+        >Android</ulink>, <ulink
+        url="https://unicode-org.github.io/icu/userguide/format_parse/messages/#complex-argument-types"
+        >ICU (International Components for Unicode)</ulink> and <ulink
+        url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules"
+        >ECMAScript Intl</ulink>.</para>
 
-    <para>The main challenge with these kinds of messages for localization
-    (and XLIFF) is how to map between the plural variants, when the source and
-    target language don’t have the same number of variants.</para>
+    <para>The main challenge with these kinds of messages for localization (and XLIFF) is how to map
+      between the plural variants, when the source and target language don’t have the same number of
+      variants.</para>
 
-    <para>When the two English forms (<emphasis>“{count} day”</emphasis> /
-    <emphasis>“{count} day”</emphasis>) to four Czech forms
-    (<emphasis>“{count} den”</emphasis>, <emphasis>“{count} dny”</emphasis>,
-    <emphasis>“{count} dne”</emphasis>, <emphasis>“{count} dní”</emphasis>?
-    Or Arabic (5 forms), or Chinese one form?</para>
+    <para>When the two English forms (<emphasis>“{count} day”</emphasis> / <emphasis>“{count}
+        day”</emphasis>) to four Czech forms (<emphasis>“{count} den”</emphasis>, <emphasis>“{count}
+        dny”</emphasis>, <emphasis>“{count} dne”</emphasis>, <emphasis>“{count} dní”</emphasis>? Or
+      Arabic (5 forms), or Chinese one form?</para>
 
-    <para>This kind of n-to-m mapping is difficult, because many localization
-    systems are designed with a one-to-one mapping in mind (one string in the
-    source language results in one string in the target language).</para>
+    <para>This kind of n-to-m mapping is difficult, because many localization systems are designed
+      with a one-to-one mapping in mind (one string in the source language results in one string in
+      the target language).</para>
 
-    <para>Gender represents a similar challenge (when translating
-    <emphasis>“red {item}”</emphasis> the form of “red” should change depending
-    on the gender (and number, and case) of the item.</para>
+    <para>Gender represents a similar challenge (when translating <emphasis>“red {item}”</emphasis>
+      the form of “red” should change depending on the gender (and number, and case) of the
+      item.</para>
 
     <para>Combinations of these two concepts are even more challenging:</para>
 
     <itemizedlist>
       <listitem>
-        <para><emphasis>“{host_name} invited {count} guest to
-        <emphasis role="bold">her</emphasis> party”</emphasis></para>
+        <para><emphasis>“{host_name} invited {count} guest to <emphasis role="bold">her</emphasis>
+            party”</emphasis></para>
       </listitem>
 
       <listitem>
-        <para><emphasis>“{host_name} invited {count} guest to
-        <emphasis role="bold">his</emphasis> party”</emphasis></para>
+        <para><emphasis>“{host_name} invited {count} guest to <emphasis role="bold">his</emphasis>
+            party”</emphasis></para>
       </listitem>
 
       <listitem>
-        <para><emphasis>“{host_name} invited {count} guest to
-        <emphasis role="bold">their</emphasis> party”</emphasis></para>
-      </listitem>
-
-      <listitem>
-        <para><emphasis>“{host_name} invited {count} guest<emphasis role="bold">s</emphasis> to
-        <emphasis role="bold">her</emphasis> party”</emphasis></para>
+        <para><emphasis>“{host_name} invited {count} guest to <emphasis role="bold">their</emphasis>
+            party”</emphasis></para>
       </listitem>
 
       <listitem>
         <para><emphasis>“{host_name} invited {count} guest<emphasis role="bold">s</emphasis> to
-        <emphasis role="bold">his</emphasis> party”</emphasis></para>
+              <emphasis role="bold">her</emphasis> party”</emphasis></para>
       </listitem>
 
       <listitem>
         <para><emphasis>“{host_name} invited {count} guest<emphasis role="bold">s</emphasis> to
-        <emphasis role="bold">their</emphasis> party”</emphasis></para>
+              <emphasis role="bold">his</emphasis> party”</emphasis></para>
+      </listitem>
+
+      <listitem>
+        <para><emphasis>“{host_name} invited {count} guest<emphasis role="bold">s</emphasis> to
+              <emphasis role="bold">their</emphasis> party”</emphasis></para>
       </listitem>
     </itemizedlist>
 
-    <para>This XLIFF extension is designed to represent such concepts, already
-    supported by several technologies.</para>
+    <para>This XLIFF extension is designed to represent such concepts, already supported by several
+      technologies.</para>
   </section>
 
   <section>
     <title>Module Namespace and Validation Artifacts</title>
 
     <para>The namespace for the Plural, Gender, and Select module is:
-    <code>urn:oasis:names:tc:xliff:pgs:1.0</code>.</para>
+        <code>urn:oasis:names:tc:xliff:pgs:1.0</code>.</para>
 
     <para>XML Schema for this module is available at <ulink
-    url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd">&this-loc;/schemas/plural_gender_select.xsd</ulink>.</para>
+        url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd"
+        >&this-loc;/schemas/plural_gender_select.xsd</ulink>.</para>
   </section>
 
   <section>
     <title>Module Fragment Identification Prefix</title>
 
-    <para>The fragment identification prefix for the Plural, Gender, and
-    Select module is: <code>pgs</code>.</para>
+    <para>The fragment identification prefix for the Plural, Gender, and Select module is:
+        <code>pgs</code>.</para>
   </section>
 
   <section>
@@ -145,17 +139,17 @@ else
   <section>
     <title>Module Attributes</title>
 
-    <para>The attributes defined in the Plural, Gender, and Select module are:
-    <olink targetdoc="../../attributes/plural_gender_select/switch.xml"
-    targetptr="pgs_switch"><code>switch</code></olink>, and <olink
-    targetdoc="../../attributes/plural_gender_select/case.xml"
-    targetptr="pgs_case"><code>case</code></olink>.</para>
+    <para>The attributes defined in the Plural, Gender, and Select module are: <olink
+        targetdoc="../../attributes/plural_gender_select/switch.xml" targetptr="pgs_switch"
+          ><code>switch</code></olink>, and <olink
+        targetdoc="../../attributes/plural_gender_select/case.xml" targetptr="pgs_case"
+          ><code>case</code></olink>.</para>
 
     <xi:include href="../../attributes/plural_gender_select/switch.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
     <xi:include href="../../attributes/plural_gender_select/case.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </section>
 
   <section>
@@ -164,15 +158,15 @@ else
     <section>
       <title>Plural</title>
 
-      <para><ulink
-      url="https://unicode-org.github.io/icu-docs/apidoc/dev/icu4j/com/ibm/icu/text/MessageFormat.html">ICU
-      <code>MessageFormat</code></ulink>: <programlisting>{file_count, plural,
+      <para><olink targetdoc="../../introduction/introduction.xml" targetptr="biblio_icu_mf">[ICU
+          MessageFormat]</olink> example: <programlisting>{file_count, plural,
        =0 {You deleted no file.}
        =1 {You deleted one file.}
     other {You deleted # files.}
 }</programlisting></para>
 
-      <para>XLIFF: <programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
+      <para>XLIFF:
+        <programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="plural:file_count"</emphasis>&gt;
   &lt;segment id="seg1" <emphasis role="bold">pgs:case="0"</emphasis>&gt;
     &lt;source&gt;You deleted no file.&lt;/source&gt;
   &lt;/segment&gt;
@@ -185,7 +179,7 @@ else
 &lt;/unit&gt;</programlisting></para>
 
       <para>A more compact form (non-XLIFF), to understand what is going on:
-      <programlisting>unit <emphasis>@switch(plural:file_count)</emphasis>
+        <programlisting>unit <emphasis>@switch(plural:file_count)</emphasis>
     segment "You deleted no files."                       <emphasis>@case(0)</emphasis>
     segment "You deleted one file."                       <emphasis>@case(1)</emphasis>
     segment "You deleted &lt;ph disp="file_count"/&gt; files."  <emphasis>@case(other)</emphasis></programlisting></para>
@@ -210,8 +204,8 @@ else
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
 
-      <para>In a more compact form (non-XLIFF), to understand what is going
-      on: <programlisting>unit <emphasis>@switch(ordinal:place)</emphasis>
+      <para>In a more compact form (non-XLIFF), to understand what is going on:
+        <programlisting>unit <emphasis>@switch(ordinal:place)</emphasis>
     segment "You won #st place"  <emphasis>@case(one)</emphasis>
     segment "You won #nd place"  <emphasis>@case(two)</emphasis>
     segment "You won #rd place"  <emphasis>@case(few)</emphasis>
@@ -233,17 +227,17 @@ else
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
 
-      <para>In a more compact form (non-XLIFF), to understand what is going
-      on: <programlisting>unit <emphasis>@switch(gender:host_gender)</emphasis>
+      <para>In a more compact form (non-XLIFF), to understand what is going on:
+        <programlisting>unit <emphasis>@switch(gender:host_gender)</emphasis>
     segment "You are invited to her party"    <emphasis>@case(feminine)</emphasis>
     segment "You are invited to his party"    <emphasis>@case(masculine)</emphasis>
     segment "You are invited to their party"  <emphasis>@case(other)</emphasis></programlisting></para>
 
-      <para>Gender also allows for cases other than <code>feminine</code> /
-      <code>masculine</code> / <code>neuter</code> / <code>other</code> in
-      order to support languages with <ulink
-      url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders">more
-      than 3 genders</ulink>.</para>
+      <para>Gender also allows for cases other than <code>feminine</code> / <code>masculine</code> /
+          <code>neuter</code> / <code>other</code> in order to support languages with more than 3
+        genders (see <emphasis>"More than three grammatical genders"</emphasis> section at <olink
+          targetdoc="../../introduction/introduction.xml" targetptr="biblio_wikipedia_genders"
+          >[Grammatical Genders]</olink>).</para>
     </section>
 
     <section>
@@ -288,8 +282,8 @@ else
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
 
-      <para>In a more compact form (non-XLIFF), to understand what is going
-      on: <programlisting>switch ( <emphasis role="bold">[gender:host_gender plural:guest_count]</emphasis> ) {
+      <para>In a more compact form (non-XLIFF), to understand what is going on:
+        <programlisting>switch ( <emphasis role="bold">[gender:host_gender plural:guest_count]</emphasis> ) {
   case <emphasis role="bold">[ feminine     0]</emphasis>:
        "$host_name did not invite anyone to her party."
   case <emphasis role="bold">[ feminine     1]</emphasis>:
@@ -315,17 +309,17 @@ else
   <section>
     <title>Recommended practices</title>
 
-    <para>There are a few things that an implementer can do to help
-    applications that are not aware of this module.</para>
+    <para>There are a few things that an implementer can do to help applications that are not aware
+      of this module.</para>
 
     <section>
       <title>Generate “translator-friendly” identifiers</title>
 
-      <para>This can be done by combining a “normal” message ID with
-      information from the case.</para>
+      <para>This can be done by combining a “normal” message ID with information from the
+        case.</para>
 
-      <para>Using the short representation (and <code>#</code> for
-      identifiers): <programlisting>segment "$host_name invited @subFlow(tu2 tu3)
+      <para>Using the short representation (and <code>#</code> for identifiers):
+        <programlisting>segment "$host_name invited @subFlow(tu2 tu3)
          to @subFlow(tu4 tu5 tu6) party." <emphasis role="bold">#msgid</emphasis>
 unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(plural:guest_count gender:host_gender)</emphasis>
   unit <emphasis role="bold">#g_msgid_plural_guest_count</emphasis> <emphasis>@switch(plural:guest_count)</emphasis>
@@ -336,17 +330,17 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
     segment: "his"        <emphasis role="bold">#msgid_host_gender_masculine</emphasis> <emphasis>@case(masculine)</emphasis>
     segment: "their"      <emphasis role="bold">#msgid_host_gender_other</emphasis>     <emphasis>@case(other)</emphasis></programlisting></para>
 
-      <para>So if the older system shows the identifiers to the translators
-      then they can get an idea of what is going on.</para>
+      <para>So if the older system shows the identifiers to the translators then they can get an
+        idea of what is going on.</para>
 
-      <para>Also, using a consistent way of generating identifiers one can
-      improve the leverage.</para>
+      <para>Also, using a consistent way of generating identifiers one can improve the
+        leverage.</para>
 
-      <para>Translation Memories that give priority to a text-id match vs text-only match will
-      be able to properly leverage even if the English string is the
-      same.</para>
+      <para>Translation Memories that give priority to a text-id match vs text-only match will be
+        able to properly leverage even if the English string is the same.</para>
 
-      <para>For example: <programlisting>&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
+      <para>For example:
+        <programlisting>&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
   &lt;segment id="<emphasis role="bold">tu1_file_count_1</emphasis>" pgs:case="1"&gt;
     &lt;source&gt;You deleted one file.&lt;/source&gt;
     &lt;target xml:lang="ro"&gt;Ați șters un fișier.&lt;/target&gt;
@@ -367,24 +361,22 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
     <section>
       <title>Keep the same order of the selectors</title>
 
-      <para>By keeping the generated text segments in the same order we can
-      improve Translation Memory leveraging that relies on context (the text
-      before and after the current segment).</para>
+      <para>By keeping the generated text segments in the same order we can improve Translation
+        Memory leveraging that relies on context (the text before and after the current
+        segment).</para>
 
       <para>Proposed order: <itemizedlist>
           <listitem>
             <para>Plural, ordinal <itemizedlist>
                 <listitem>
-                  <para>exact selectors firsts, sorted by numerical value
-                  (<code>=0</code>, <code>=1</code>, <code>=2</code>,
-                  …)</para>
+                  <para>exact selectors firsts, sorted by numerical value (<code>=0</code>,
+                      <code>=1</code>, <code>=2</code>, …)</para>
                 </listitem>
 
                 <listitem>
-                  <para>the predefined keywords in this
-                  order: <code>zero</code>, <code>one</code>,
-                  <code>two</code>, <code>few</code>, <code>many</code>,
-                  <code>other</code></para>
+                  <para>the predefined keywords in this order: <code>zero</code>, <code>one</code>,
+                      <code>two</code>, <code>few</code>, <code>many</code>,
+                    <code>other</code></para>
                 </listitem>
               </itemizedlist></para>
           </listitem>
@@ -396,9 +388,8 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
                 </listitem>
 
                 <listitem>
-                  <para>followed by the predefined keywords in this
-                  order: <code>feminine</code>, <code>masculine</code>,
-                  <code>neuter</code>, <code>other</code></para>
+                  <para>followed by the predefined keywords in this order: <code>feminine</code>,
+                      <code>masculine</code>, <code>neuter</code>, <code>other</code></para>
                 </listitem>
               </itemizedlist></para>
           </listitem>
@@ -412,31 +403,28 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
           </listitem>
         </itemizedlist></para>
 
-      <para>Keeping a consistent order (the one suggested above or a different
-      one) will improve the leveraging of Translation Memory tools that rely on context (what
-      is before and after the segment) to improve the result.</para>
+      <para>Keeping a consistent order (the one suggested above or a different one) will improve the
+        leveraging of Translation Memory tools that rely on context (what is before and after the
+        segment) to improve the result.</para>
     </section>
 
     <section>
       <title>Generate “translator-friendly” notes for plurals</title>
 
-      <para>Native speakers intuitively know what the correct plural form
-      is.</para>
+      <para>Native speakers intuitively know what the correct plural form is.</para>
 
-      <para>But will have a difficult time explaining what the rules are. And
-      even fewer will be able to map those rules to the predefined plural
-      keywords (<code>zero</code>, <code>one</code>, <code>two</code>,
-      <code>few</code>, <code>many</code>).</para>
+      <para>But will have a difficult time explaining what the rules are. And even fewer will be
+        able to map those rules to the predefined plural keywords (<code>zero</code>,
+          <code>one</code>, <code>two</code>, <code>few</code>, <code>many</code>).</para>
 
       <para>So generating a note can help a lot.</para>
 
-      <para>The notes refer to the segments, so they need a <code>ref</code>
-      attribute pointing to the segment. And since they contain examples for
-      the target language, not the source, they also need an
-      <code>appliesTo="target"</code> attribute.</para>
+      <para>The notes refer to the segments, so they need a <code>ref</code> attribute pointing to
+        the segment. And since they contain examples for the target language, not the source, they
+        also need an <code>appliesTo="target"</code> attribute.</para>
 
-      <para>Romanian example: <programlisting>&lt;unit id="<emphasis
-            role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
+      <para>Romanian example:
+        <programlisting>&lt;unit id="<emphasis role="bold">tu1</emphasis>" pgs:switch="plural:file_count"&gt;
   <emphasis role="bold">&lt;notes&gt;
     &lt;note appliesTo="target" ref="tu1_file_count_1"
         category="plural_examples"&gt;1&lt;/note&gt;
@@ -461,38 +449,35 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
 
-      <para>The examples are available from CLDR, in XML formal, or using the
-      ICU library.</para>
+      <para>The examples are available from CLDR, in XML formal, or using the ICU library.</para>
 
-      <para>A browser friendly table with all the supported rules for all
-      languages, including examples, is available <ulink
-      url="https://www.unicode.org/cldr/charts/43/supplemental/language_plural_rules.html">here</ulink>.</para>
+      <para>A browser friendly table with all the supported rules for all languages, including
+        examples, is available at <olink targetdoc="../../introdcuction/introduction.xml"
+          targetptr="biblio_cldr_plural_lang">[CLDR Plural Lang]</olink>.</para>
 
-      <para><emphasis role="bold">Warning:</emphasis> these examples are
-      language dependent. This means one cannot just send a single XLIFF to be
-      translated into several languages (see next item).</para>
+      <para><emphasis role="bold">Warning:</emphasis> these examples are language dependent. This
+        means one cannot just send a single XLIFF to be translated into several languages (see next
+        item).</para>
     </section>
 
     <section>
       <title>Generate separate localization packages for each language</title>
 
-      <para>Depending on the degree of automation this might mean just a small
-      change in a configuration, or a lot of manual work.</para>
+      <para>Depending on the degree of automation this might mean just a small change in a
+        configuration, or a lot of manual work.</para>
 
-      <para>Some companies already use workflows doing this because they
-      pre-populate the <code>&lt;target&gt;</code>, pre-leverage, include
-      translation candidates or glossary info, partial Translation Memories, etc.</para>
+      <para>Some companies already use workflows doing this because they pre-populate the
+          <code>&lt;target&gt;</code>, pre-leverage, include translation candidates or glossary
+        info, partial Translation Memories, etc.</para>
 
-      <para>Having such a workflow means that the tools can add the missing
-      plural cases depending on the target language.</para>
+      <para>Having such a workflow means that the tools can add the missing plural cases depending
+        on the target language.</para>
 
-      <para>So even if the source language only has <code>=1</code> /
-      <code>other</code> cases, the tooling can add the missing ones
-      (<code>few</code> for Romanian, <code>one</code> / <code>few</code> /
-      <code>many</code> for Russian, etc.)</para>
+      <para>So even if the source language only has <code>=1</code> / <code>other</code> cases, the
+        tooling can add the missing ones (<code>few</code> for Romanian, <code>one</code> /
+          <code>few</code> / <code>many</code> for Russian, etc.)</para>
 
-      <para>The list of selectors needed for each locale are available from
-      CLDR or ICU APIs.</para>
+      <para>The list of selectors needed for each locale are available from CLDR or ICU APIs.</para>
     </section>
   </section>
 </section>

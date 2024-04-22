@@ -436,14 +436,22 @@
           <ulink url="http://www.w3.org/TR/xml-i18n-bp/">http://www.w3.org/TR/xml-i18n-bp/</ulink>
         </citetitle> W3C Working Group.</bibliomixed>
 
-      <bibliomixed id="biblio_icu_mf"><abbrev>ICU MF</abbrev>
-        <title>The ICU MessageFormat explained:</title>
+      <bibliomixed id="biblio_icu_mf"><abbrev>ICU MessageFormat</abbrev>
+        <title>ICU MessageFormat Class</title>
         <citetitle>
-          <ulink url="http://userguide.icu-project.org/formatparse/messages"
-            >http://userguide.icu-project.org/formatparse/messages</ulink>
+          <ulink url="https://unicode-org.github.io/icu/userguide/format_parse/messages/#messageformat"
+            >https://unicode-org.github.io/icu/userguide/format_parse/messages/#messageformat</ulink>
         </citetitle>
       </bibliomixed>
-
+      
+      <bibliomixed id="biblio_wikipedia_genders">
+        <abbrev>Grammatical Genders</abbrev>
+        <title>List of languages by type of grammatical genders</title>
+        <citetitle>
+          <ulink url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders">https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders</ulink>
+        </citetitle>
+      </bibliomixed>
+      
       <bibliomixed id="biblio_cldr_plural_spec"><abbrev>CLDR Plural Spec</abbrev>
         <title>The CLDR spec for Plural Rules:</title>
         <citetitle>

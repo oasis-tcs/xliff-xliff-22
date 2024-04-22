@@ -8,60 +8,59 @@
 <section id="pgs_case">
   <title>case</title>
 
-  <para>Indicates the value(s) that the <code>switch</code> variable(s) should
-  have in order to select the message variant “annotated” with this
-  element.</para>
+  <para>Indicates the value(s) that the <code>switch</code> variable(s) should have in order to
+    select the message variant “annotated” with this element.</para>
 
   <para><emphasis>Value description:</emphasis> Text.</para>
 
-  <para>The text contains a space-separated list of values forming a “tuple”
-  used for selection.</para>
+  <para>The text contains a space-separated list of values forming a “tuple” used for
+    selection.</para>
 
-  <para><emphasis>Used in:</emphasis> <olink
-  targetdoc="../elements/structural/segment.xml"
-  targetptr="segment"><code>&lt;segment&gt;</code></olink>.</para>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../elements/structural/segment.xml" targetptr="segment"
+        ><code>&lt;segment&gt;</code></olink>.</para>
 
-  <para><emphasis>Example:</emphasis> <programlisting>&lt;unit id="tu1" <emphasis
-        role="bold">pgs:switch="plural:count gender:host_gender"</emphasis>&gt;
+  <para><emphasis>Example:</emphasis>
+    <programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="plural:count gender:host_gender"</emphasis>&gt;
    &lt;segment id="seg1" <emphasis role="bold">pgs:case="1 feminine"</emphasis>&gt;...&lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
 
-  <para><emphasis>Constraints:</emphasis> the number of space-separated items
-  (variables) in the <code>switch</code> attribute of the unit <glossterm>MUST</glossterm>
-  match the number of space-separated values in the <code>case</code> attribute.</para>
+  <para><emphasis>Constraints:</emphasis> the number of space-separated items (variables) in the
+      <code>switch</code> attribute of the unit <glossterm>MUST</glossterm> match the number of
+    space-separated values in the <code>case</code> attribute.</para>
 
-  <para>Also, each value in case should also match the type of selector in the
-  <code>switch</code> attribute.</para>
+  <para>Also, each value in case should also match the type of selector in the <code>switch</code>
+    attribute.</para>
 
-  <para><emphasis>Valid matching:</emphasis> <itemizedlist>
+  <para><emphasis>Valid matching:</emphasis>
+    <itemizedlist>
       <listitem>
-        <para><code>plural</code> and <code>ordinal</code>: a
-        <emphasis>numeric_value</emphasis> or a
-        <emphasis>plural_keyword</emphasis> <itemizedlist>
+        <para><code>plural</code> and <code>ordinal</code>: a <emphasis>numeric_value</emphasis> or
+          a <emphasis>plural_keyword</emphasis>
+          <itemizedlist>
             <listitem>
-              <para><emphasis>numeric_value</emphasis>: integer (0, 7, 365) or
-              decimal (3.14) value</para>
+              <para><emphasis>numeric_value</emphasis>: integer (0, 7, 365) or decimal (3.14)
+                value</para>
             </listitem>
 
             <listitem>
-              <para><emphasis>plural_keyword</emphasis>: <code>zero</code>,
-              <code>one</code>, <code>two</code>, <code>few</code>,
-              <code>many</code>, <code>other</code></para>
+              <para><emphasis>plural_keyword</emphasis>: <code>zero</code>, <code>one</code>,
+                  <code>two</code>, <code>few</code>, <code>many</code>, <code>other</code></para>
             </listitem>
           </itemizedlist></para>
       </listitem>
 
       <listitem>
-        <para><code>gender</code>: <code>feminine</code>,
-        <code>masculine</code>, <code>neuter</code>, <code>other</code>, anything else (to handle
-        languages with <ulink
-        url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders">more
-        than 3 grammatical genders</ulink>)</para>
+        <para><code>gender</code>: <code>feminine</code>, <code>masculine</code>,
+            <code>neuter</code>, <code>other</code>, anything else (see <emphasis>"More than three
+            grammatical genders"</emphasis> section at <olink
+            targetdoc="../../introduction/introduction.xml" targetptr="biblio_wikipedia_genders"
+            >[Grammatical Genders]</olink>)</para>
       </listitem>
 
       <listitem>
-        <para><code>select</code>: the values can be anything, or the
-        <code>other</code> keyword</para>
+        <para><code>select</code>: the values can be anything, or the <code>other</code>
+          keyword</para>
       </listitem>
     </itemizedlist></para>
 </section>
