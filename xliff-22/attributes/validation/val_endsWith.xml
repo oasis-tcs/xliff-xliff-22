@@ -8,7 +8,7 @@
 <section id="val_endsWith">
   <title>endsWith</title>
 
-  <para>This rule attribute specifies that a string <glossterm>MUST</glossterm> end with a specific value.</para>
+  <para>This rule attribute specifies that a string MUST end with a specific value.</para>
 
   <para>For example, the following is valid:</para>
 
@@ -39,6 +39,8 @@
 
   <para><emphasis>Default value:</emphasis> none</para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;rule></code></olink></para>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"
+      ><code>&lt;rule></code></olink></para>
 
 </section>

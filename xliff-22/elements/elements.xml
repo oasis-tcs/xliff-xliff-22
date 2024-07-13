@@ -9,7 +9,7 @@
                          ]>
 <section>
     <title>Elements</title>
-    <para>This section contains a description of all elements used in <firstterm>XLIFF Core</firstterm>.</para>
+    <para>This section contains a description of all elements used in XLIFF Core.</para>
     <xi:include href="tree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="structural.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="inline.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

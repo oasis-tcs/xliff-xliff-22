@@ -11,7 +11,7 @@
 <refsynopsisdiv>
 <src:fragment id='annotation.graphic.close.frag'>
 <xsl:param name="annotation.graphic.close"
-   select="'http://docbook.sourceforge.net/release/images/annot-close.png'"/>
+   select="'https://docbook.sourceforge.net/release/images/annot-close.png'"/>
 </src:fragment>
 </refsynopsisdiv>
 

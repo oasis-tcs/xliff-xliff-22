@@ -38,12 +38,11 @@
     <section id="mtc_CoreReuse">
         <title>XLIFF Core Reuse</title>
         <para>The <link linkend="candidates">Translation Candidates Module</link> reuses several
-                <firstterm>XLIFF Core</firstterm> elements, most of them have mandatory <olink
-                targetdoc="../attributes/id.xml" targetptr="id"><code>xlf:id</code></olink>. The
-            uniqueness scopes for the reused <olink targetdoc="../attributes/id.xml" targetptr="id"
-                    ><code>xlf:id</code></olink> attributes are separate from the <firstterm>XLIFF
-                Core</firstterm>. The following states the exact normative Constraints for the
-            validation purposes:</para>
+            XLIFF Core elements, most of them have mandatory <olink targetdoc="../attributes/id.xml"
+                targetptr="id"><code>xlf:id</code></olink>. The uniqueness scopes for the reused
+                <olink targetdoc="../attributes/id.xml" targetptr="id"><code>xlf:id</code></olink>
+            attributes are separate from the XLIFF Core. The following states the exact normative
+            Constraints for the validation purposes:</para>
         <itemizedlist>
             <title>Constraints</title>
             <listitem>
@@ -66,19 +65,18 @@
                     <listitem>
                         <para>The inline elements enclosed by a <olink
                                 targetdoc="../elements/structural/target.xml" targetptr="target"
-                                    ><code>&lt;xlf:target></code></olink> element
-                                <glossterm>MUST</glossterm> use the duplicate <olink
-                                targetdoc="../attributes/id.xml" targetptr="id"
-                                ><code>xlf:id</code></olink> values of their corresponding inline
-                            elements enclosed within the sibling <olink
+                                    ><code>&lt;xlf:target></code></olink> element MUST use the
+                            duplicate <olink targetdoc="../attributes/id.xml" targetptr="id"
+                                    ><code>xlf:id</code></olink> values of their corresponding
+                            inline elements enclosed within the sibling <olink
                                 targetdoc="../elements/structural/source.xml" targetptr="source"
                                     ><code>&lt;xlf:source></code></olink> element if and only if
                             those corresponding elements exist.</para>
                     </listitem>
 
                     <listitem>
-                        <para>Except for the above exception, the value <glossterm>MUST</glossterm>
-                            be unique among all of the above within the enclosing <olink
+                        <para>Except for the above exception, the value MUST be unique among all of
+                            the above within the enclosing <olink
                                 targetdoc="../elements/candidates/match.xml" targetptr="match"
                                     ><code>&lt;match></code></olink> element. </para>
                     </listitem>
@@ -88,7 +86,7 @@
                 <para>When used on <olink targetdoc="../elements/structural/data.xml"
                         targetptr="data"><code>&lt;xlf:data></code></olink> elements reused within
                     the <link linkend="candidates">Translation Candidates Module</link>:</para>
-                <para>The value <glossterm>MUST</glossterm> be unique among all <olink
+                <para>The value MUST be unique among all <olink
                         targetdoc="../elements/structural/data.xml" targetptr="data"
                             ><code>&lt;xlf:data></code></olink>
                     <code>xlf:id</code> attribute values within the enclosing <olink
@@ -111,15 +109,14 @@
                         targetdoc="../elements/inline/ph.xml" targetptr="ph"
                             ><code>&lt;xlf:ph></code></olink> elements reused within the <link
                         linkend="candidates">Translation Candidates Module</link>, their
-                        <code>NMTOKEN</code> values <glossterm>MUST</glossterm> identify <olink
+                        <code>NMTOKEN</code> values MUST identify <olink
                         targetdoc="../elements/structural/data.xml" targetptr="data"
                             ><code>&lt;data></code></olink> elements within the enclosing <olink
                         targetdoc="../elements/candidates/match.xml" targetptr="match"
-                            ><code>&lt;match></code></olink> element. Those attributes
-                        <glossterm>MUST NOT</glossterm> be used without corresponding <olink
-                        targetdoc="../elements/structural/data.xml" targetptr="data"
-                            ><code>&lt;data></code></olink> elements within the enclosing <olink
-                        targetdoc="../elements/candidates/match.xml" targetptr="match"
+                            ><code>&lt;match></code></olink> element. Those attributes MUST NOT be
+                    used without corresponding <olink targetdoc="../elements/structural/data.xml"
+                        targetptr="data"><code>&lt;data></code></olink> elements within the
+                    enclosing <olink targetdoc="../elements/candidates/match.xml" targetptr="match"
                             ><code>&lt;match></code></olink> element. </para>
             </listitem>
         </itemizedlist>
@@ -140,13 +137,13 @@
         <itemizedlist spacing="compact">
             <listitem>
                 <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-                        ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm></para>
+                        ><code>id</code></olink> attribute is REQUIRED</para>
             </listitem>
 
             <listitem>
                 <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-                            ><code>type</code></olink> attribute is <glossterm>REQUIRED</glossterm>
-                    and set to <code>mtc:match</code></para>
+                            ><code>type</code></olink> attribute is REQUIRED and set to
+                        <code>mtc:match</code></para>
             </listitem>
 
 
@@ -157,8 +154,7 @@
 
             <listitem>
                 <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-                            ><code>translate</code></olink> attribute is
-                        <glossterm>OPTIONAL</glossterm></para>
+                            ><code>translate</code></olink> attribute is OPTIONAL</para>
             </listitem>
         </itemizedlist>
 

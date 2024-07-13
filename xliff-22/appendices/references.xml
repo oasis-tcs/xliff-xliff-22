@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+                         
+<!ENTITY % base SYSTEM "../docbook/dbgenent.mod">
+%base;
+
+<!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
+%xinclude;
+]>
+<appendix id="references">
+    <title>References</title>
+
+    <para>This appendix contains the normative and informative references that are used in this
+        document. While any hyperlinks included in this appendix were valid at the time of
+        publication, OASIS cannot guarantee their long-term validity. </para>
+
+    <section>
+        <title>Normative References</title>
+
+        <para>The following documents are referenced in such a way that some or all of their content
+            constitutes requirements of this document.</para>
+
+        <bibliography>
+            <title/>
+            
+            <bibliomixed id="rfc2119"><abbrev>RFC 2119</abbrev> (BCP 14) S. Bradner, <title>Key
+                words for use in RFCs to Indicate Requirement Levels</title>, <citetitle>
+                    <ulink url="https://www.rfc-editor.org/rfc/rfc2119"
+                        >https://www.rfc-editor.org/rfc/rfc2119</ulink>
+                </citetitle> IETF (Internet Engineering Task Force) RFC 2119, March
+                1997.</bibliomixed>
+            
+            <bibliomixed id="rfc8174"><abbrev>RFC 8174</abbrev> B. Leiba, <title>Ambiguity of
+                Uppercase vs Lowercase in RFC 2119 Key Words</title>, <citetitle><ulink
+                    url="https://www.rfc-editor.org/rfc/rfc8174"
+                    >https://www.rfc-editor.org/rfc/rfc8174</ulink></citetitle></bibliomixed>
+            
+            <bibliomixed id="bcp47"><abbrev>BCP 47</abbrev> M. Davis, <title>Tags for Identifying
+                    Languages</title>, <citetitle>
+                    <ulink url="https://www.rfc-editor.org/info/rfc5646"
+                        >https://www.rfc-editor.org/info/rfc5646</ulink>
+                </citetitle> IETF (Internet Engineering Task Force).</bibliomixed>
+
+            <bibliomixed id="HTML5"><abbrev>HTML5</abbrev> Ian Hickos, Robin Berjon, Steve Faulkner,
+                Travis Leithead, Erika Doyle Navara, Edward O'Connor, Silvia Pfeiffer <title>HTML5.
+                    A vocabulary and associated APIs for HTML and XHTML</title>, <citetitle>
+                    <ulink url="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5/</ulink>
+                </citetitle> W3C Recommendation 28 October 2014.</bibliomixed>
+
+            <bibliomixed id="ITS20"><abbrev>ITS</abbrev> David Filip, Shaun McCance, Dave Lewis,
+                Christian Lieske, Arle Lommel, Jirka Kosek, Felix Sasaki, Yves Savourel
+                    <title>Internationalization Tag Set (ITS) Version 2.0</title>, <citetitle>
+                    <ulink url="http://www.w3.org/TR/its20/">http://www.w3.org/TR/its20/</ulink>
+                </citetitle> W3C Recommendation 29 October 2013.</bibliomixed>
+
+            <bibliomixed id="bib_datetime"><abbrev>NOTE-datetime</abbrev> M. Wolf, C. Wicksteed,
+                    <title>Date and Time Formats</title>, <citetitle>
+                    <ulink url="http://www.w3.org/TR/NOTE-datetime"
+                        >http://www.w3.org/TR/NOTE-datetime</ulink>
+                </citetitle> W3C Note, 15th September 1997.</bibliomixed>
+
+            <bibliomixed id="rfc3987"><abbrev>RFC 3987</abbrev> M. Duerst and M. Suignard,
+                    <title>Internationalized Resource Identifiers (IRIs)</title>, <citetitle>
+                    <ulink url="https://www.ietf.org/rfc/rfc3987.txt"
+                        >https://www.ietf.org/rfc/rfc3987.txt</ulink>
+                </citetitle> IETF (Internet Engineering Task Force) RFC 3987, January
+                2005.</bibliomixed>
+
+            <bibliomixed id="rfc7303"><abbrev>RFC 7303</abbrev> H. Thompson and C. Lilley,
+                    <title>XML Media Types</title>, <citetitle>
+                    <ulink url="https://www.tools.ietf.org/html/rfc7303">
+                        https://www.tools.ietf.org/html/rfc7303</ulink>
+                </citetitle> IETF (Internet Engineering Task Force) RFC 7303, July
+                2014.</bibliomixed>
+
+            <bibliomixed id="uax9"><abbrev>UAX #9</abbrev> M. Davis, A. Lanin, A. Glass,
+                    <title>UNICODE BIDIRECTIONAL ALGORITHM</title>, <citetitle>
+                    <ulink url="http://www.unicode.org/reports/tr9/tr9-35.html"
+                        >http://www.unicode.org/reports/tr9/tr9-35.html</ulink>
+                </citetitle> Unicode Bidirectional Algorithm, May 18, 2016.</bibliomixed>
+
+            <bibliomixed id="uax15"><abbrev>UAX #15</abbrev> M. Davis, K. Whistler, <title>UNICODE
+                    NORMALIZATION FORMS</title>, <citetitle>
+                    <ulink url="http://www.unicode.org/reports/tr15/tr15-44.html"
+                        >http://www.unicode.org/reports/tr15/tr15-44.html</ulink>
+                </citetitle> Unicode Normalization Forms, February 24, 2016.</bibliomixed>
+
+            <bibliomixed id="Unicode"><abbrev>Unicode</abbrev> The Unicode Consortium, <title>The
+                    Unicode Standard</title>, <citetitle>
+                    <ulink url="http://www.unicode.org/versions/Unicode9.0.0/"
+                        >http://www.unicode.org/versions/Unicode9.0.0/</ulink>
+                </citetitle> Mountain View, CA: The Unicode Consortium, June 21, 2016.</bibliomixed>
+
+            <bibliomixed id="bib_XML"><abbrev>XML</abbrev> W3C, <title>Extensible Markup Language
+                    (XML) 1.0</title>, <citetitle>
+                    <ulink url="http://www.w3.org/TR/xml/">http://www.w3.org/TR/xml/</ulink>
+                </citetitle> (Fifth Edition) W3C Recommendation 26 November 2008.</bibliomixed>
+            <bibliomixed id="xml_namespace"><abbrev>XML namespace</abbrev> W3C, <title>Schema
+                    document for namespace http://www.w3.org/XML/1998/namespace</title>
+                <citetitle><ulink url="http://www.w3.org/2001/xml.xsd"
+                        >http://www.w3.org/2001/xml.xsd</ulink></citetitle> [<edition><ulink
+                        url="http://www.w3.org/2009/01/xml.xsd"
+                        >http://www.w3.org/2009/01/xml.xsd</ulink>]</edition>. at <edition><ulink
+                        url="&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd"
+                        >&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink></edition>
+                in this distribution</bibliomixed>
+
+            <bibliomixed id="XMLCatalogs"><abbrev>XML Catalogs</abbrev> Norman Walsh, <title>XML
+                    Catalogs</title>, <citetitle>
+                    <ulink
+                        url="https://www.oasis-open.org/committees/download.php/14809/xml-catalogs.html"
+                        >https://www.oasis-open.org/committees/download.php/14809/xml-catalogs.html</ulink>
+                </citetitle> OASIS Standard V1.1, 07 October 2005.</bibliomixed>
+
+
+            <bibliomixed id="XMLSchema"><abbrev>XML Schema</abbrev> W3C, <title>XML Schema</title>,
+                    <citetitle> refers to the two part standard comprising <link
+                        linkend="XMLSchema1">[XML Schema Structures]</link> and <link
+                        linkend="XMLSchema2">[XML Schema Datatypes]</link>
+                </citetitle> (Second Editions) W3C Recommendations 28 October 2004.</bibliomixed>
+
+            <bibliomixed id="XMLSchema2"><abbrev>XML Schema Datatypes</abbrev> W3C, <title>XML
+                    Schema Part 2: Datatypes</title>, <citetitle>
+                    <ulink url="http://www.w3.org/TR/xmlschema-2/"
+                        >http://www.w3.org/TR/xmlschema-2/</ulink>
+                </citetitle> (Second Edition) W3C Recommendation 28 October 2004.</bibliomixed>
+
+            <bibliomixed id="XMLSchema1"><abbrev>XML Schema Structures</abbrev> W3C, <title>XML
+                    Schema Part 1: Structures</title>, <citetitle>
+                    <ulink url="https://www.w3.org/TR/xmlschema-1/"
+                        >https://www.w3.org/TR/xmlschema-1/</ulink>
+                </citetitle> (Second Edition) W3C Recommendation 28 October 2004.</bibliomixed>
+
+
+        </bibliography>
+    </section>
+
+    <section>
+        <title>Informative References</title>
+
+        <para>The following referenced documents are not required for the application of this
+            document but may assist the reader with regard to a particular subject area.</para>
+
+        <bibliography>
+            <title/>
+
+            <bibliomixed id="biblio_ldml"><abbrev>LDML</abbrev>
+                <title>Unicode Locale Data Markup Language</title>
+                <citetitle>
+                    <ulink url="http://unicode.org/reports/tr35/"
+                        >http://unicode.org/reports/tr35/</ulink>
+                </citetitle></bibliomixed>
+            <!-- chnaged the SRX link to Unicode, since GALA moved it for no apparent reason and didn't keep URI -->
+            <bibliomixed id="biblio_srx"><abbrev>SRX</abbrev>
+                <title>Segmentation Rules eXchange</title>
+                <citetitle>
+                    <ulink url="http://www.unicode.org/uli/pas/srx/"
+                        >http://www.unicode.org/uli/pas/srx/</ulink>
+                </citetitle></bibliomixed>
+
+            <bibliomixed id="uax29"><abbrev>UAX #29</abbrev> M. Davis, <title>UNICODE TEXT
+                    SEGMENTATION</title>, <citetitle>
+                    <ulink url="http://www.unicode.org/reports/tr29/"
+                        >http://www.unicode.org/reports/tr29/</ulink>
+                </citetitle> Unicode text Segmentation.</bibliomixed>
+
+            <bibliomixed id="biblio_xmli18nbp"><abbrev>XML I18N BP</abbrev>
+                <title>Best Practices for XML Internationalization</title>, 13 February 2008, <citetitle>
+                    <ulink url="http://www.w3.org/TR/xml-i18n-bp/"
+                        >http://www.w3.org/TR/xml-i18n-bp/</ulink>
+                </citetitle> W3C Working Group.</bibliomixed>
+
+            <bibliomixed id="biblio_icu_mf"><abbrev>ICU MessageFormat</abbrev>
+                <title>ICU MessageFormat Class</title>
+                <citetitle>
+                    <ulink
+                        url="https://unicode-org.github.io/icu/userguide/format_parse/messages/#messageformat"
+                        >https://unicode-org.github.io/icu/userguide/format_parse/messages/#messageformat</ulink>
+                </citetitle>
+            </bibliomixed>
+
+            <bibliomixed id="biblio_wikipedia_genders">
+                <abbrev>Grammatical Genders</abbrev>
+                <title>List of languages by type of grammatical genders</title>
+                <citetitle>
+                    <ulink
+                        url="https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders"
+                        >https://en.wikipedia.org/wiki/List_of_languages_by_type_of_grammatical_genders#More_than_three_grammatical_genders</ulink>
+                </citetitle>
+            </bibliomixed>
+
+            <bibliomixed id="biblio_cldr_plural_spec"><abbrev>CLDR Plural Spec</abbrev>
+                <title>The CLDR spec for Plural Rules:</title>
+                <citetitle>
+                    <ulink url="https://cldr.unicode.org/index/cldr-spec/plural-rules"
+                        >https://cldr.unicode.org/index/cldr-spec/plural-rules</ulink>
+                </citetitle>
+            </bibliomixed>
+
+            <bibliomixed id="biblio_cldr_plural_lang"><abbrev>CLDR Plural Lang</abbrev>
+                <title>Language Plural Rules (all languages):</title>
+                <citetitle>
+                    <ulink
+                        url="http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+                        >http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html</ulink>
+                </citetitle>
+            </bibliomixed>
+
+            <bibliomixed id="biblio_cldr_plural"><abbrev>CLDR Plural</abbrev>
+                <title>CLDR plural files (<code>plurals.xml</code> &amp; <code>ordinals.xml</code>
+                    in <code>core.zip</code>):</title>
+                <citetitle>
+                    <ulink url="https://www.unicode.org/Public/cldr/44/"
+                        >https://www.unicode.org/Public/cldr/44/</ulink>
+                </citetitle>
+            </bibliomixed>
+
+            <bibliomixed id="biblio_icu4c_api"><abbrev>ICU4C API</abbrev>
+                <title>ICU4C APIs:</title>
+                <citetitle>
+                    <ulink
+                        url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html"
+                        >https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/classicu_1_1PluralRules.html</ulink>
+                </citetitle>
+            </bibliomixed>
+
+            <bibliomixed id="biblio_icu4j_api"><abbrev>ICU4J API</abbrev>
+                <title>ICU4J APIs:</title>
+                <citetitle>
+                    <ulink
+                        url="https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html"
+                        >https://unicode-org.github.io/icu-docs/apidoc/released/icu4j/com/ibm/icu/text/PluralRules.html</ulink>
+                </citetitle>
+            </bibliomixed>
+
+        </bibliography>
+    </section>
+
+</appendix>

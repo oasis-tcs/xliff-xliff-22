@@ -8,9 +8,9 @@
 <section id="External_Resource">
   <title>External Resource</title>
 
-  <para>Indicates that a node represents or references potentially translatable data in a resource outside the document. Examples of such resources are external images and audio or video files.
-     See <olink
-      targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+  <para>Indicates that a node represents or references potentially translatable data in a resource
+    outside the document. Examples of such resources are external images and audio or video files.
+    See <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
     <ulink url="https://www.w3.org/TR/its20/#externalresource">External Resource</ulink> for
     details.</para>
 
@@ -19,10 +19,9 @@
     <para>External Resource is not to be used at structural levels. If a structural element of the
       original document has <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#externalresource">External Resource</ulink>
-      information associated, it <glossterm>MAY</glossterm> be extracted
-      using the XLIFF Resource Data Module. The <firstterm>Extractor</firstterm> needs to determine
-      the media type of the external resource, since this is not available via <olink
-        targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+      information associated, it MAY be extracted using the XLIFF Resource Data Module. The
+      Extractor needs to determine the media type of the external resource, since this is not
+      available via <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#externalresource">External Resource</ulink>
       information.</para>
 
@@ -30,7 +29,7 @@
     <example>
       <title>Extraction of External Resource at structural levels</title>
 
-    <para>Original:</para>
+      <para>Original:</para>
 
       <programlisting>
 &lt;its:rules version="2.0" xmlns:its="http://www.w3.org/2005/11/its"
@@ -46,7 +45,7 @@
  </programlisting>
 
 
-    <para>Extraction:</para>
+      <para>Extraction:</para>
 
 
       <programlisting>
@@ -58,7 +57,7 @@
 &lt;/res:resourceData>
 ...
 </programlisting>
-   </example>
+    </example>
 
 
 
@@ -70,11 +69,11 @@
           >&lt;res:source></olink></code> element as a child of a <code><olink
           targetdoc="../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
           >&lt;res:resourceItem></olink></code>element.</para>
-      <example>
-        <title>Extraction of External Resource at inline levels</title>
-    <para>Original:</para>
+    <example>
+      <title>Extraction of External Resource at inline levels</title>
+      <para>Original:</para>
 
-    <programlisting>
+      <programlisting>
 &lt;!doctype html>
 &lt;html lang="en">
   &lt;head>
@@ -96,10 +95,10 @@
  </programlisting>
 
 
-    <para>Extraction:</para>
+      <para>Extraction:</para>
 
 
-    <programlisting>
+      <programlisting>
 &lt;unit id="1">
   &lt;segment>
     &lt;source>Text for the image&lt;/source>
@@ -117,7 +116,7 @@
   &lt;/segment>
 &lt;/unit>
 </programlisting>
-        </example>
+    </example>
 
   </section>
 

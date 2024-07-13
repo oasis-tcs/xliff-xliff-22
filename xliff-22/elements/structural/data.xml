@@ -6,52 +6,37 @@
 <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
 ]>
 <section id="data">
-  <title>data</title>
+    <title>data</title>
 
-  <para>Storage for the original data of an inline code.</para>
+    <para>Storage for the original data of an inline code.</para>
 
-  <para><emphasis>Contains:</emphasis></para>
+    <para><emphasis>Contains:</emphasis></para>
 
-  <simplelist>
-    <member>- Non-translatable text</member>
+    <simplelist>
+        <member>- Non-translatable text</member>
 
-    <member>- Zero, one or more <olink targetdoc="../inline/cp.xml"
-    targetptr="cp"><code>&lt;cp&gt;</code></olink> elements.</member>
-  </simplelist>
+        <member>- Zero, one or more <olink targetdoc="../inline/cp.xml" targetptr="cp"
+                    ><code>&lt;cp&gt;</code></olink> elements.</member>
+    </simplelist>
 
-  <para>Non-translatable text and <olink targetdoc="../inline/cp.xml" targetptr="cp"
-        ><code>&lt;cp&gt;</code></olink> elements <glossterm>MAY</glossterm> appear in any
-    order.</para>
+    <para>Non-translatable text and <olink targetdoc="../inline/cp.xml" targetptr="cp"
+                ><code>&lt;cp&gt;</code></olink> elements MAY appear in any order.</para>
 
-  <para><emphasis>Attributes:</emphasis></para>
+    <para><emphasis>Attributes:</emphasis></para>
 
-  <simplelist>
-    <member>- <olink targetdoc="../../attributes/id.xml"
-    targetptr="id"><code>id</code></olink>, <glossterm>REQUIRED</glossterm></member>
+    <simplelist>
+        <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>,
+            REQUIRED</member>
 
-    <member>- <olink targetdoc="../../attributes/dir.xml"
-    targetptr="dir"><code>dir</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-    
-    <member>- <olink targetdoc="../../attributes/xml_space.xml" targetptr="xml_space"
-          ><code>xml:space</code></olink>, <glossterm>OPTIONAL</glossterm>, the value is restricted
-      to <code>preserve</code> on this element</member>
-	
-	
+        <member>- <olink targetdoc="../../attributes/dir.xml" targetptr="dir"
+                ><code>dir</code></olink>, OPTIONAL</member>
 
-  </simplelist>
+        <member>- <olink targetdoc="../../attributes/xml_space.xml" targetptr="xml_space"
+                    ><code>xml:space</code></olink>, OPTIONAL, the value is restricted to
+                <code>preserve</code> on this element</member>
 
-  <!-- now, id MUST be unique within all ids of the enclosing unit, the Constraint is on the attribute 
-  <itemizedlist>
-    <title>Constraints</title>
 
-    <listitem>
-      <para>The value of the <olink targetdoc="../../attributes/id.xml"
-      targetptr="id"><code>id</code></olink> attribute <glossterm>MUST</glossterm> be unique among
-      all <link linkend="data"><code>&lt;data&gt;</code></link> children of
-      the enclosing <olink targetdoc="originaldata.xml"
-      targetptr="originaldata"><code>&lt;originalData&gt;</code></olink>
-      element.</para>
-    </listitem>
-  </itemizedlist>
-  -->
+
+    </simplelist>
+
 </section>

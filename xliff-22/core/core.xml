@@ -15,9 +15,8 @@
         its corresponding translations and auxiliary data that makes the translation process
         possible.</para>
 
-    <para>At creation time, an XLIFF document <glossterm>MAY</glossterm> contain only text in the
-        source language. Translations expressed in the target language <glossterm>MAY</glossterm> be
-        added at a later time.</para>
+    <para>At creation time, an XLIFF document MAY contain only text in the source language.
+        Translations expressed in the target language MAY be added at a later time.</para>
 
     <para>The root element of an XLIFF document is <olink
             targetdoc="../elements/structural/xliff.xml" targetptr="xliff"
@@ -45,15 +44,13 @@
             <title/>
 
             <listitem>
-                <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
-                        Document</firstterm> that contains <firstterm>XLIFF-defined</firstterm>
-                    elements and attributes that it cannot handle <glossterm>MUST</glossterm>
-                    preserve those elements and attributes.</para>
+                <para>An Agent processing a valid XLIFF Document that contains XLIFF-defined
+                    elements and attributes that it cannot handle MUST preserve those elements and
+                    attributes.</para>
             </listitem>
             <listitem>
-                <para>An <firstterm>Agent</firstterm> processing a valid <firstterm>XLIFF
-                        Document</firstterm> that contains custom elements and attributes that it
-                    cannot handle <glossterm>SHOULD</glossterm> preserve those elements and
+                <para>An Agent processing a valid XLIFF Document that contains custom elements and
+                    attributes that it cannot handle SHOULD preserve those elements and
                     attributes.</para>
             </listitem>
 
@@ -67,7 +64,7 @@
         <title>CDATA sections</title>
 
         <para>CDATA sections (<code>&lt;![CDATA[...]]&gt;</code>) are allowed in XLIFF content, but
-            on output they <glossterm>MAY</glossterm> be changed into normal escaped content.</para>
+            on output they MAY be changed into normal escaped content.</para>
 
         <para>Note that avoiding CDATA sections is considered a best practice from the
             internationalization viewpoint <olink targetdoc="../introduction/introduction.xml"
@@ -77,13 +74,11 @@
             <title>Processing Requirements</title>
 
             <listitem>
-                <para><firstterm>Agents</firstterm>
-                    <glossterm>MUST</glossterm> process CDATA sections.</para>
+                <para>Agents MUST process CDATA sections.</para>
             </listitem>
 
             <listitem>
-                <para><firstterm>Writers</firstterm>
-                    <glossterm>MAY</glossterm> preserve the original CDATA sections.</para>
+                <para>Writers MAY preserve the original CDATA sections.</para>
             </listitem>
         </itemizedlist>
     </section>
@@ -122,15 +117,13 @@ Text content that is important</programlisting>
             <title>Processing Requirements</title>
 
             <listitem>
-                <para><firstterm>Agents</firstterm>
-                    <glossterm>MUST</glossterm> ignore XML comments. That is the XLIFF parsed
-                    content is the same whether or not there is an XML comment in the
+                <para>Agents MUST ignore XML comments. That is the XLIFF
+                    parsed content is the same whether or not there is an XML comment in the
                     document.</para>
             </listitem>
 
             <listitem>
-                <para><firstterm>Writers</firstterm>
-                    <glossterm>MAY</glossterm> preserve XML comments on output.</para>
+                <para>Writers MAY preserve XML comments on output.</para>
             </listitem>
         </itemizedlist>
     </section>
@@ -147,26 +140,24 @@ Text content that is important</programlisting>
         <itemizedlist>
             <title>Processing Requirements</title>
             <listitem>
-                <para><firstterm>Agents</firstterm>
-                    <glossterm>MUST NOT</glossterm> use Processing Instructions as a means to
-                    implement a feature already specified in <firstterm>XLIFF Core</firstterm> or
-                        <firstterm>Modules</firstterm>.</para>
+                <para>Agents MUST NOT use Processing Instructions as a means
+                    to implement a feature already specified in XLIFF Core or
+                        Modules.</para>
             </listitem>
             <listitem>
-                <para><firstterm>Writers</firstterm>
-                    <glossterm>SHOULD</glossterm> preserve XML Processing Instructions in an XLIFF
-                    document.</para>
+                <para>Writers SHOULD preserve XML Processing Instructions in
+                    an XLIFF document.</para>
             </listitem>
         </itemizedlist>
 
         <warning>
-            <para>Note that <firstterm>Agents</firstterm> using Processing Instructions to implement
-                    <firstterm>XLIFF Core</firstterm> or <firstterm>Module</firstterm> features are
+            <para>Note that Agents using Processing Instructions to implement
+                    XLIFF Core or Module features are
                 not compliant XLIFF applications disregarding whether they are otherwise conformant.
             </para>
         </warning>
         <warning>
-            <para>Although this specification encourages XLIFF <firstterm>Agents</firstterm> to
+            <para>Although this specification encourages XLIFF Agents to
                 preserve XML Processing Instructions, it is not and cannot be, for valid processing
                 reasons, an absolute protection and it is for instance highly unlikely that
                 Processing Instructions could survive an XLIFF roundtrip at the <olink

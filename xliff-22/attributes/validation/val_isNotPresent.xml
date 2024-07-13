@@ -8,9 +8,9 @@
 <section id="val_isNotPresent">
   <title>isNotPresent</title>
 
-  <para>This rule attribute specifies that a string <glossterm>MUST NOT</glossterm> be present in the target text.</para>
+  <para>This rule attribute specifies that a string MUST NOT be present in the target text.</para>
   <para>For example, the following is valid:</para>
-<programlisting>
+  <programlisting>
 &lt;unit id="1"&gt;
   &lt;val:validation&gt;
     &lt;val:rule isNotPresent="store" /&gt;
@@ -21,8 +21,8 @@
   &lt;/segment&gt;
 &lt;/unit&gt;
  </programlisting>
- <para>Whereas the following is invalid:</para>
-<programlisting>
+  <para>Whereas the following is invalid:</para>
+  <programlisting>
 &lt;unit id="1"&gt;
   &lt;val:validation&gt;
     &lt;val:rule isNotPresent="store" /&gt;
@@ -35,6 +35,8 @@
  </programlisting>
   <para><emphasis>Value description:</emphasis> Text.</para>
   <para><emphasis>Default value:</emphasis> none</para>
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;rule></code></olink></para>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"
+      ><code>&lt;rule></code></olink></para>
 
 </section>

@@ -25,7 +25,7 @@
 
     <listitem>
       <para>The value of the <olink targetdoc="gls_ref.xml" targetptr="gls_ref"
-          ><code>ref</code></olink> attribute <glossterm>MUST</glossterm> point to a span of text
+          ><code>ref</code></olink> attribute MUST point to a span of text
         within the same <olink targetdoc="../elements/structural/unit.xml" targetptr="unit"
             ><code>&lt;unit></code></olink> element, where the enclosing <olink
           targetdoc="../elements/glossary/glossary.xml" targetptr="glossary"

@@ -13,20 +13,27 @@
 
   <para><emphasis>Value description:</emphasis> Text.</para>
   <para>Characters left parenthesis <code>(</code> (U+0028), right parenthesis <code>)</code>
-    (U+0029), and quotation mark <code>"</code> (U+0022) <glossterm>MUST</glossterm> be escaped by
-    enclosing within a pair of quotation marks, <code>"</code> (U+0022). The value
-    <glossterm>MUST</glossterm> follow this pattern: <code>"(string)(integer)"</code>.
-    </para><para> For example: In this <code>occurrences="(&amp;nbsp;&amp;nbsp;)(0)"</code>, the value patern
+    (U+0029), and quotation mark <code>"</code> (U+0022) MUST be escaped by enclosing within a pair
+    of quotation marks, <code>"</code> (U+0022). The value MUST follow this pattern:
+      <code>"(string)(integer)"</code>. </para>
+  <para> For example: In this <code>occurrences="(&amp;nbsp;&amp;nbsp;)(0)"</code>, the value patern
     prohibits any occurences of two non-breaking spaces next to each other. Here
       <code>occurrences="(:)(1)"</code>, exactly one occurrence of the colon is enforced.</para>
 
   <para><emphasis>Default value:</emphasis> none</para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;val:rule></code></olink></para>
-  
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"
+        ><code>&lt;val:rule></code></olink></para>
+
   <itemizedlist>
     <title>Processing Requirements</title>
-    <listitem><para>The target text <glossterm>MUST</glossterm> contain the <code>integer</code> number of occurences of the <code>string</code> as specified in <olink targetdoc="../../attributes/validation/val_occurrences.xml" targetptr="val_occurrences"><code>occurrences</code></olink>.</para></listitem>
+    <listitem>
+      <para>The target text MUST contain the <code>integer</code> number of occurences of the
+          <code>string</code> as specified in <olink
+          targetdoc="../../attributes/validation/val_occurrences.xml" targetptr="val_occurrences"
+            ><code>occurrences</code></olink>.</para>
+    </listitem>
   </itemizedlist>
-  
+
 </section>

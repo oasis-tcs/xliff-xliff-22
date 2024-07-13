@@ -14,6 +14,7 @@
     </simplelist>
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>- <olink targetdoc="../../atributes/meta_type.xml" targetptr="meta_type"><code>type</code></olink>, <glossterm>REQUIRED</glossterm></member>
+        <member>- <olink targetdoc="../../atributes/meta_type.xml" targetptr="meta_type"
+                    ><code>type</code></olink>, REQUIRED</member>
     </simplelist>
 </section>

@@ -11,9 +11,8 @@
   <para>Indicates whether content is translatable or not. See <olink targetdoc="../xliff22.xml"
       targetptr="ITS20">[ITS]</olink>
     <ulink url="http://www.w3.org/TR/its20/#trans-datacat">Translate</ulink> for details.</para>
-  <para>ITS data category Translate in source content influences how
-      <firstterm>Extractors</firstterm> prepare source content for translation via <firstterm>XLIFF
-      Documents</firstterm>.</para>
+  <para>ITS data category Translate in source content influences how Extractors prepare source
+    content for translation via XLIFF Documents.</para>
 
   <section id="Translate_Structural">
     <title>Structural Elements</title>

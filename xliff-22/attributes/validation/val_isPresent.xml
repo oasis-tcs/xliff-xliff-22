@@ -8,7 +8,8 @@
 <section id="val_isPresent">
   <title>isPresent</title>
 
-  <para>This rule attribute specifies that a string <glossterm>MUST</glossterm> be present in the target text <emphasis>at least once</emphasis>.</para>
+  <para>This rule attribute specifies that a string MUST be present in the target text <emphasis>at
+      least once</emphasis>.</para>
   <para>For example, the following is valid:</para>
 
   <programlisting>
@@ -23,7 +24,7 @@
 &lt;/unit&gt;
  </programlisting>
   <para>Whereas the following is invalid:</para>
-    <programlisting>
+  <programlisting>
 &lt;unit id="1"&gt;
   &lt;val:validation&gt;
     &lt;val:rule isPresent="loja" /&gt;
@@ -38,16 +39,20 @@
       targetdoc="../../attributes/val_isPresent.xml" targetptr="val_isPresent"
         ><code>isPresent</code></olink> to produce the following results:</para>
   <simplelist>
-<member>isPresent=”loja” - loja is found in the target text at least once.</member>
-<member>isPresent=”loja” occurs=”1” - loja is found in the target text exactly once.</member>
-<member>isPresent=”loja” existsInSource=”yes” - loja is found in both source and target text the same number of times.</member>
-<member>isPresent=”loja” existsInSource=”yes” occurs=”1” - loja is found in both source and target text and occurs in target text exactly once.</member>
-</simplelist>
+    <member>isPresent=”loja” - loja is found in the target text at least once.</member>
+    <member>isPresent=”loja” occurs=”1” - loja is found in the target text exactly once.</member>
+    <member>isPresent=”loja” existsInSource=”yes” - loja is found in both source and target text the
+      same number of times.</member>
+    <member>isPresent=”loja” existsInSource=”yes” occurs=”1” - loja is found in both source and
+      target text and occurs in target text exactly once.</member>
+  </simplelist>
 
-    <para><emphasis>Value description:</emphasis> Text.</para>
+  <para><emphasis>Value description:</emphasis> Text.</para>
 
   <para><emphasis>Default value:</emphasis> none</para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;rule></code></olink></para>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"
+      ><code>&lt;rule></code></olink></para>
 
 </section>

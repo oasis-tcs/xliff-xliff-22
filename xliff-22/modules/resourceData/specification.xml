@@ -10,25 +10,27 @@
 ]>
 <section id="resourceData_module">
   <title>Resource Data Module</title>
-    <section>
-      <title>Introduction</title>
-      <para>The Resource Data module provides a mechanism for referencing external resource data that <glossterm>MAY</glossterm> need
-        to be modified or used as contextual reference during translation.</para>
-    </section>
   <section>
-        <title>Module Namespace and Validation Artifacts</title>
-        <para>The namespace for the Resource Data module is: <code>urn:oasis:names:tc:xliff:resourcedata:2.0</code></para>
+    <title>Introduction</title>
+    <para>The Resource Data module provides a mechanism for referencing external resource data that
+      MAY need to be modified or used as contextual reference during translation.</para>
+  </section>
+  <section>
+    <title>Module Namespace and Validation Artifacts</title>
+    <para>The namespace for the Resource Data module is:
+        <code>urn:oasis:names:tc:xliff:resourcedata:2.0</code></para>
     <para>XML Schema for this module is available at <ulink
-      url="&this-loc;/schemas/resource_data.xsd"
+        url="&this-loc;/schemas/resource_data.xsd"
       >&this-loc;/schemas/resource_data.xsd</ulink>.</para>
-    </section>
+  </section>
 
   <section>
     <title>Module Fragment Identification Prefix</title>
-    <para>The fragment identification prefix for the Resource Data module is: <code>res</code></para>
+    <para>The fragment identification prefix for the Resource Data module is:
+      <code>res</code></para>
   </section>
 
-    <section>
+  <section>
     <title>Module Elements</title>
     <para>The elements defined in the Resource Data module are: <olink
         targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"
@@ -43,14 +45,15 @@
           ><code>&lt;target></code></olink>, and <olink
         targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"
           ><code>&lt;reference></code></olink>. </para>
-<section><!-- gen. 20140318 -->
-  <title>Tree Structure</title>
-  <para>Legend:</para>
-  <simplelist type="vert">
-    <member>? = zero or one</member>
-    <member>* = zero, one or more</member>
-  </simplelist>
-  <programlisting format="linespecific">
+    <section>
+      <!-- gen. 20140318 -->
+      <title>Tree Structure</title>
+      <para>Legend:</para>
+      <simplelist type="vert">
+        <member>? = zero or one</member>
+        <member>* = zero, one or more</member>
+      </simplelist>
+      <programlisting format="linespecific">
 <olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
 |
 +---<olink targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink> *
@@ -73,10 +76,10 @@
 
 
   </programlisting>
-</section>
+    </section>
     <xi:include href="../../elements/resourceData/resourceData.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
-          <xi:include href="../../elements/resourceData/resourceItemRef.xml"
+    <xi:include href="../../elements/resourceData/resourceItemRef.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="../../elements/resourceData/resourceItem.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -88,7 +91,7 @@
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </section>
 
-    <section>
+  <section>
     <title>Module Attributes</title>
     <para>The attributes defined in the Resource Data module are: <olink
         targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id"
@@ -100,12 +103,12 @@
           ><code>context</code></olink>, <olink
         targetdoc="../../attributes/resourceData/res_href.xml" targetptr="res_href"
           ><code>href</code></olink>, and <olink
-        targetdoc="../../attributes/resourceData/res_ref.xml"
-        targetptr="res_ref"><code>ref</code></olink>. </para>
+        targetdoc="../../attributes/resourceData/res_ref.xml" targetptr="res_ref"
+        ><code>ref</code></olink>. </para>
     <xi:include href="../../attributes/resourceData/res_id.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="../../attributes/resourceData/res_xml_lang.xml"
-	  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="../../attributes/resourceData/res_mimeType.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="../../attributes/resourceData/res_context.xml"
@@ -116,21 +119,30 @@
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </section>
 
-    <section>
-      <title>Examples</title>
+  <section>
+    <title>Examples</title>
 
-      <para>In this example, the <olink targetdoc="../../elements/resourceData/res_resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
-      module at <olink targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink> level references external XML that contains resource data
-      for a user interface control. The control is the container for the text “Load Registry Config” and needs to be resized to accommodate the increased length of
-      the string due to translation. The <olink targetdoc="../../elements/resourceItemRef/res_resourceItemRef.xml" targetptr="res_resourceData"><code>&lt;resourceItemRef></code></olink>
-      element contained in the <olink targetdoc="../../elements/resourceData/res_resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
-      module at <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> level provides the reference between them.
-      The name attribute of the <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> element could serve as the key for
-      an editor to associate <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink> and
-      <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> text with the resource data contained in the referenced
+    <para>In this example, the <olink targetdoc="../../elements/resourceData/res_resourceData.xml"
+        targetptr="res_resourceData"><code>&lt;resourceData></code></olink> module at <olink
+        targetdoc="../../elements/structural/file.xml" targetptr="file"
+        ><code>&lt;file></code></olink> level references external XML that contains resource data
+      for a user interface control. The control is the container for the text “Load Registry Config”
+      and needs to be resized to accommodate the increased length of the string due to translation.
+      The <olink targetdoc="../../elements/resourceItemRef/res_resourceItemRef.xml"
+        targetptr="res_resourceData"><code>&lt;resourceItemRef></code></olink> element contained in
+      the <olink targetdoc="../../elements/resourceData/res_resourceData.xml"
+        targetptr="res_resourceData"><code>&lt;resourceData></code></olink> module at <olink
+        targetdoc="../../elements/structural/unit.xml" targetptr="unit"
+        ><code>&lt;unit></code></olink> level provides the reference between them. The name
+      attribute of the <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"
+          ><code>&lt;unit></code></olink> element could serve as the key for an editor to associate
+        <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"
+          ><code>&lt;source></code></olink> and <olink
+        targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
+          ><code>&lt;target></code></olink> text with the resource data contained in the referenced
       XML and display it for modification.</para>
 
-<programlisting>
+    <programlisting>
 <!-- &lt;file&gt;&lt;res:resourceData&gt;&lt;res:resourceItem id="r1" mimeType="text/xml" context="no"&gt;&lt;res:source href="resources\en\registryconfig.resources.xml" /&gt;&lt;res:target href="resources\de\registryconfig.resources.xml" /&gt;&lt;/res:resourceItem&gt;&lt;/res:resourceData&gt;&lt;unit id="1" name="130;WIN_DLG_CTRL_"&gt;&lt;segment id="1" state="translated"&gt;&lt;source&gt;Load Registry Config&lt;/source&gt;&lt;target&gt;Registrierungskonfiguration laden&lt;/target&gt;&lt;/segment&gt;&lt;res:resourceData&gt;&lt;res:resourceItemRef ref="r1" /&gt;&lt;/res:resourceData&gt;&lt;/unit&gt;&lt;/file&gt; -->
 &lt;file id="f1">
   &lt;res:resourceData>
@@ -151,11 +163,14 @@
 &lt;/file>
  </programlisting>
 
-      <para>In this example, the <olink targetdoc="../../elements/resourceData/res_resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
-      module at the <olink targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink> level contains elements from another
-      namespace (abc), which could be displayed for modification in an editor that understands how to process the namespace.</para>
+    <para>In this example, the <olink targetdoc="../../elements/resourceData/res_resourceData.xml"
+        targetptr="res_resourceData"><code>&lt;resourceData></code></olink> module at the <olink
+        targetdoc="../../elements/structural/unit.xml" targetptr="unit"
+        ><code>&lt;unit></code></olink> level contains elements from another namespace (abc), which
+      could be displayed for modification in an editor that understands how to process the
+      namespace.</para>
 
-<programlisting>
+    <programlisting>
 <!-- &lt;file&gt;&lt;unit id="1"&gt;&lt;segment id="1" state="translated"&gt;&lt;source&gt;Load Registry Config&lt;/source&gt;&lt;target&gt;Registrierungskonfiguration laden&lt;/target&gt;&lt;/segment&gt;&lt;res:resourceData&gt;&lt;res:resourceItem id="r1" context="no"&gt;&lt;res:source&gt;&lt;abc:resourceType&gt;button&lt;/abc:resourceType&gt;&lt;abc:resourceHeight&gt;40&lt;/abc:resourceHeight&gt;&lt;abc:resourceWidth&gt;75&lt;/abc:resourceWidth&gt;&lt;/res:source&gt;&lt;res:target&gt;&lt;abc:resourceType&gt;button&lt;/abc:resourceType&gt;&lt;abc:resourceHeight&gt;40&lt;/abc:resourceHeight&gt;&lt;abc:resourceWidth&gt;150&lt;/abc:resourceWidth&gt;&lt;/res:target&gt;&lt;/res:resourceItem&gt;&lt;/res:resourceData&gt;&lt;/unit&gt;&lt;/file&gt; -->
 &lt;file id="f2" xmlns:abc="urn:abc">
   &lt;unit id="1">
@@ -181,10 +196,12 @@
 &lt;/file>
  </programlisting>
 
-      <para>In this example, the <olink targetdoc="../../elements/resourceData/res_resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink>
-      module references multiple static images that an editor can make use of as context while translating or reviewing.</para>
+    <para>In this example, the <olink targetdoc="../../elements/resourceData/res_resourceData.xml"
+        targetptr="res_resourceData"><code>&lt;resourceData></code></olink> module references
+      multiple static images that an editor can make use of as context while translating or
+      reviewing.</para>
 
-<programlisting>
+    <programlisting>
 <!-- &lt;file&gt;&lt;res:resourceData&gt;&lt;res:resourceItem id="r1" mimeType="image/jpeg" context="yes"&gt;&lt;notes&gt;&lt;note&gt;Registry configuration UI screen shot&lt;/note&gt;&lt;/notes&gt;&lt;res:source xml:lang="en-us" href="resources\en\registryconfig1.resources.jpg" /&gt;&lt;res:target xml:lang="lb-lu" href="resources\lb\registryconfig1.resources.jpg" /&gt;&lt;res:reference xml:lang="de-de" href="resources\de\registryconfig1.resources.jpg" /&gt;&lt;/res:resourceItem&gt;&lt;res:resourceItem id="r2" mimeType="image/jpeg" context="yes"&gt;&lt;res:source xml:lang="en-us" href="resources\en\registryconfig2.resources.jpg" /&gt;&lt;res:target xml:lang="lb-lu" href="resources\lb\registryconfig2.resources.jpg" /&gt;&lt;/res:resourceItem&gt;&lt;/res:resourceData&gt;&lt;unit id="1"&gt;&lt;segment id="1" state="translated"&gt;&lt;source&gt;Remove Registry Config&lt;/source&gt;&lt;target&gt;Registrierungskonfiguration entfernen&lt;/target&gt;&lt;/segment&gt;&lt;res:resourceData&gt;&lt;res:resourceItemRef ref="r1" /&gt;&lt;res:resourceItemRef ref="r2" /&gt;&lt;/res:resourceData&gt;&lt;/unit&gt;&lt;/file&gt; -->
 &lt;file id="f3">
   &lt;res:resourceData>
@@ -219,7 +236,7 @@
 &lt;/file>
  </programlisting>
 
-    </section>
+  </section>
 
 
 </section>

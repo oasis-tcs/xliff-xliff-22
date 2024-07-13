@@ -142,7 +142,7 @@
 <xsl:param name="dingbat.font.family" select="'serif'"/>
 <xsl:param name="double.sided" select="0"/>
 <xsl:param name="draft.mode" select="'maybe'"/>
-<xsl:param name="draft.watermark.image" select="'http://docbook.sourceforge.net/release/images/draft.png'"/>
+<xsl:param name="draft.watermark.image" select="'https://docbook.sourceforge.net/release/images/draft.png'"/>
 
 <xsl:param xmlns:fo="http://www.w3.org/1999/XSL/Format" name="ebnf.assignment">
   <fo:inline font-family="{$monospace.font.family}">

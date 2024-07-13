@@ -13,13 +13,19 @@
     MIME specification; e.g. mimeType="text/xml" indicates the resource data is a text file of XML
     format.</para>
 
-  <para><emphasis>Value description:</emphasis> A MIME type. An existing MIME type <glossterm>MUST</glossterm> be used from
-    a <ulink url="http://www.iana.org/assignments/media-types">list of standard values</ulink>.</para>
+  <para><emphasis>Value description:</emphasis> A MIME type. An existing MIME type MUST be used from
+    a <ulink url="http://www.iana.org/assignments/media-types">list of standard
+    values</ulink>.</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink></para>
-  <note><para>If you cannot use any of the standard MIME type values as specified above, a new MIME type can be registered according to <ulink url="http://tools.ietf.org/rfc/rfc2048.txt">[RFC
-    2048]</ulink>.</para></note>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
+        ><code>&lt;resourceItem></code></olink></para>
+  <note>
+    <para>If you cannot use any of the standard MIME type values as specified above, a new MIME type
+      can be registered according to <ulink url="http://tools.ietf.org/rfc/rfc2048.txt">[RFC
+        2048]</ulink>.</para>
+  </note>
 
 </section>

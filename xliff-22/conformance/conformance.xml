@@ -16,32 +16,28 @@
             <orderedlist>
                 <title> Document Conformance</title>
                 <listitem>
-                    <para>XLIFF is an XML vocabulary, therefore conformant <firstterm>XLIFF
-                            Documents</firstterm>
-                        <glossterm>MUST</glossterm> be well formed and valid <olink
-                            targetdoc="../xliff22.xml" targetptr="bib_XML">[XML]</olink>
-                        documents.</para>
+                    <para>XLIFF is an XML vocabulary, therefore conformant XLIFF Documents MUST be
+                        well formed and valid <olink targetdoc="../xliff22.xml" targetptr="bib_XML"
+                            >[XML]</olink> documents.</para>
                 </listitem>
                 <listitem>
 
-                    <para>Conformant XLIFF documents <glossterm>MUST</glossterm> be valid instances
-                        of the official Core XML Schema (<ulink
-                            url="&this-loc;/schemas/xliff_core_&version;.xsd"
+                    <para>Conformant XLIFF documents MUST be valid instances of the official Core
+                        XML Schema (<ulink url="&this-loc;/schemas/xliff_core_&version;.xsd"
                             >&this-loc;/schemas/xliff_core_2.2.xsd</ulink>) that is a part of this
                         multipart Work Product.</para>
                 </listitem>
                 <listitem>
 
                     <para> As not all aspects of the XLIFF specification can be expressed in terms
-                        of XML Schemas, conformant XLIFF documents <glossterm>MUST</glossterm> also
-                        comply with all relevant elements and attributes definitions, normative
-                        usage descriptions, and Constraints specified in this specification
-                        document.</para>
+                        of XML Schemas, conformant XLIFF documents MUST also comply with all
+                        relevant elements and attributes definitions, normative usage descriptions,
+                        and Constraints specified in this specification document.</para>
                 </listitem>
                 <listitem>
-                    <para>XLIFF documents <glossterm>MAY</glossterm> contain custom extensions, as
-                        defined in the <olink targetdoc="../extensions/extensions.xml"
-                            targetptr="extensions">Extension Mechanisms</olink> section. </para>
+                    <para>XLIFF documents MAY contain custom extensions, as defined in the <olink
+                            targetdoc="../extensions/extensions.xml" targetptr="extensions"
+                            >Extension Mechanisms</olink> section. </para>
                 </listitem>
             </orderedlist>
         </listitem>
@@ -49,50 +45,38 @@
             <orderedlist>
                 <title> Application Conformance</title>
                 <listitem>
-                    <para>XLIFF <firstterm>Writers</firstterm>
-                        <glossterm>MUST</glossterm> create conformant <firstterm>XLIFF
-                            Documents</firstterm> to be considered XLIFF compliant.</para>
+                    <para>XLIFF Writers MUST create conformant XLIFF Documents to be considered
+                        XLIFF compliant.</para>
                 </listitem>
                 <listitem>
-                    <para>
-                        <firstterm>Agents</firstterm> processing conformant <firstterm>XLIFF
-                            Documents</firstterm> that contain custom extensions are not
-                            <glossterm>REQUIRED</glossterm> to understand and process non-XLIFF
-                        elements or attributes. However, conformant applications
-                            <glossterm>SHOULD</glossterm> preserve existing custom extensions when
-                        processing conformant XLIFF documents, provided that the elements that
-                        contain custom extensions are not removed according to XLIFF Processing
-                        Requirements or the extension's own processing requirements.</para>
+                    <para> Agents processing conformant XLIFF Documents that contain custom
+                        extensions are not REQUIRED to understand and process non-XLIFF elements or
+                        attributes. However, conformant applications SHOULD preserve existing custom
+                        extensions when processing conformant XLIFF documents, provided that the
+                        elements that contain custom extensions are not removed according to XLIFF
+                        Processing Requirements or the extension's own processing
+                        requirements.</para>
                 </listitem>
                 <listitem>
-                    <para>All <firstterm>Agents</firstterm>
-                        <glossterm>MUST</glossterm> comply with Processing Requirements for
-                        otherwise unspecified <firstterm>Agents</firstterm> or without a
-                        specifically set target <firstterm>Agent</firstterm>.</para>
+                    <para>All Agents MUST comply with Processing Requirements for otherwise
+                        unspecified Agents or without a specifically set target Agent.</para>
                 </listitem>
 
                 <listitem>
-                    <para> Specialized <firstterm>Agents</firstterm> defined in this specification -
-                        this is <firstterm>Extractor</firstterm>, <firstterm>Merger</firstterm>,
-                            <firstterm>Writer</firstterm>, <firstterm>Modifier</firstterm>, and
-                            <firstterm>Enricher</firstterm>
-                        <firstterm>Agents</firstterm> - <glossterm>MUST</glossterm> comply with the
-                        Processing Requirements targeting their specifically defined type of
-                            <firstterm>Agent</firstterm> on top of Processing Requirements targeting
-                        all <firstterm>Agents</firstterm> as per point c. above.</para>
+                    <para> Specialized Agents defined in this specification - this is Extractor,
+                        Merger, Writer, Modifier, and Enricher Agents - MUST comply with the
+                        Processing Requirements targeting their specifically defined type of Agent
+                        on top of Processing Requirements targeting all Agents as per point c.
+                        above.</para>
                 </listitem>
                 <listitem>
                     <para>XLIFF is a format explicitly designed for exchanging data among various
-                            <firstterm>Agents</firstterm>. Thus, a conformant XLIFF application
-                            <glossterm>MUST</glossterm> be able to accept <firstterm>XLIFF
-                            Documents</firstterm> it had written after those <firstterm>XLIFF
-                            Documents</firstterm> were <firstterm>Modified</firstterm> or
-                            <firstterm>Enriched</firstterm> by a different application, provided
-                        that:</para>
+                        Agents. Thus, a conformant XLIFF application MUST be able to accept XLIFF
+                        Documents it had written after those XLIFF Documents were Modified or
+                        Enriched by a different application, provided that:</para>
                     <orderedlist>
                         <listitem>
-                            <para>The processed files are conformant <firstterm>XLIFF
-                                    Documents</firstterm>,</para>
+                            <para>The processed files are conformant XLIFF Documents,</para>
                         </listitem>
                         <listitem>
                             <para>in a state compliant with all relevant Processing
@@ -109,12 +93,11 @@
             <orderedlist>
                 <title> Backwards Compatibility</title>
                 <listitem>
-                    <para>Conformant applications are <glossterm>REQUIRED</glossterm> to support
-                        XLIFF 2.0 and 2.1.</para>
+                    <para>Conformant applications are REQUIRED to support XLIFF 2.0, 2.1 and 2.2.</para>
                 </listitem>
                 <listitem>
-                    <para>Conformant applications are NOT <glossterm>REQUIRED</glossterm> to support
-                        XLIFF 1.2 or previous versions. </para>
+                    <para>Conformant applications are NOT REQUIRED to support XLIFF 1.2 or previous
+                        versions. </para>
                 </listitem>
             </orderedlist>
         </listitem>
@@ -123,7 +106,7 @@
     <note>
         <para>XLIFF documents conformant to this specification are not and cannot be conformant to
             XLIFF 1.2 or earlier versions. If an application needs to support for whatever business
-            reason both XLIFF 2 and XLIFF 1.2 or earlier, these will need to be supported as
+            reason both XLIFF 2.x and XLIFF 1.2 or earlier, these will need to be supported as
             separate functionalities. </para>
     </note>
 </section>

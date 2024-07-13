@@ -19,21 +19,19 @@
   <para><emphasis>Parents:</emphasis></para>
 
   <simplelist>
-    <member><olink targetdoc="structural/data.xml"
-    targetptr="data"><code>&lt;data&gt;</code></olink>, <olink
-    targetdoc="mrk.xml" targetptr="mrk"><code>&lt;mrk&gt;</code></olink>,
-    <olink targetdoc="structural/source.xml"
-    targetptr="source"><code>&lt;source&gt;</code></olink>, <olink
-    targetdoc="structural/target.xml"
-    targetptr="target"><code>&lt;target&gt;</code></olink> and <olink
-    targetdoc="pc.xml" targetptr="pc"><code>&lt;pc&gt;</code></olink></member>
+    <member><olink targetdoc="structural/data.xml" targetptr="data"
+        ><code>&lt;data&gt;</code></olink>, <olink targetdoc="mrk.xml" targetptr="mrk"
+          ><code>&lt;mrk&gt;</code></olink>, <olink targetdoc="structural/source.xml"
+        targetptr="source"><code>&lt;source&gt;</code></olink>, <olink
+        targetdoc="structural/target.xml" targetptr="target"><code>&lt;target&gt;</code></olink> and
+        <olink targetdoc="pc.xml" targetptr="pc"><code>&lt;pc&gt;</code></olink></member>
   </simplelist>
 
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist>
-    <member>- <olink targetdoc="../../attributes/hex.xml"
-    targetptr="hex"><code>hex</code></olink>, <glossterm>REQUIRED</glossterm></member>
+    <member>- <olink targetdoc="../../attributes/hex.xml" targetptr="hex"><code>hex</code></olink>,
+      REQUIRED</member>
 
 
   </simplelist>
@@ -55,13 +53,13 @@
     <title>Processing Requirements</title>
 
     <listitem>
-      <para><firstterm>Writers</firstterm> <glossterm>MUST</glossterm> encode all invalid XML characters of the content
-      using <link linkend="cp"><code>&lt;cp&gt;</code></link>.</para>
+      <para>Writers MUST encode all invalid XML characters of the content using <link linkend="cp"
+            ><code>&lt;cp&gt;</code></link>.</para>
     </listitem>
 
     <listitem>
-      <para><firstterm>Writers</firstterm> <glossterm>MUST NOT</glossterm> encode valid XML characters of the content using
-      <link linkend="cp"><code>&lt;cp&gt;</code></link>.</para>
+      <para>Writers MUST NOT encode valid XML characters of the content using <link linkend="cp"
+            ><code>&lt;cp&gt;</code></link>.</para>
     </listitem>
   </itemizedlist>
 </section>

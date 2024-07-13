@@ -15,8 +15,7 @@
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Writers</firstterm>
-        <glossterm>MUST</glossterm> use the <olink targetdoc="specification"
+      <para>Writers MUST use the <olink targetdoc="specification"
           targetptr="taAnnotation">ITS Text Analysis Annotation</olink> to express the <olink
           targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#textanalysis">Text Analysis</ulink> data category in
@@ -31,8 +30,8 @@
     <para>Text Analysis is not to be used at structural levels. If a structural element of the
       original document has <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#textanalysis">Text Analysis</ulink> information
-      associated, it <glossterm>MAY</glossterm> be extracted using the <link linkend="taAnnotation"
-        >ITS Text Analysis Annotation</link>.</para>
+      associated, it MAY be extracted using the <link linkend="taAnnotation">ITS Text Analysis
+        Annotation</link>.</para>
 
 
     <example>
@@ -96,16 +95,16 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
-          attribute is <glossterm>REQUIRED</glossterm>.</para>
+          attribute is REQUIRED.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-            <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is OPTIONAL and set to
+          <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
-        <para>At least one of the following <glossterm>MUST</glossterm> be set:</para>
+        <para>At least one of the following MUST be set:</para>
 
         <itemizedlist>
           <listitem>
@@ -132,32 +131,25 @@
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is OPTIONAL.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_taConfidence.xml"
             targetptr="itsm_taConfidence"><code>its:taConfidence</code></olink> attribute is
-            <glossterm>OPTIONAL</glossterm> and used to map to and from the <olink
-            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
-            <code>taConfidence</code> attribute.</para>
+          OPTIONAL and used to map to and from the <olink targetdoc="../xliff22.xml"
+            targetptr="ITS20">[ITS]</olink> defined <code>taConfidence</code> attribute.</para>
       </listitem>
       <listitem>
         <para> The <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
             targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute is
-            <glossterm>REQUIRED</glossterm> if and only if the <olink
-            targetdoc="../../attributes/itsm/itsm_taConfidence.xml" targetptr="itsm_taConfidence"
-              ><code>its:taConfidence</code></olink> attribute is present and not in scope of
-          another relevant <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
-            targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute, in all
-          other cases it is <glossterm>OPTIONAL</glossterm>. </para>
+          REQUIRED if and only if the <olink targetdoc="../../attributes/itsm/itsm_taConfidence.xml"
+            targetptr="itsm_taConfidence"><code>its:taConfidence</code></olink> attribute is present
+          and not in scope of another relevant <olink
+            targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
+              ><code>its:annotatorsRef</code></olink> attribute, in all other cases it is OPTIONAL.
+        </para>
       </listitem>
     </itemizedlist>
-    <!-- removed by ballot for https://issues.oasis-open.org/browse/XLIFF-57
-    <warning><para>This annotation can be syntactically in scope of a relevant <olink
-          targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
-            ><code>its:annotatorsRef</code></olink> attribute, while it still fails to resolve with
-        the intended value. This can happen if more than one disambiguation providers were
-        used.</para></warning>-->
     <example>
       <title>Extraction of ITS Text Analytics metadata in scope of the <olink
           targetdoc="specification.xml" targetptr="toolsAnnotation">ITS tools

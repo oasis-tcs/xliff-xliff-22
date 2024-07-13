@@ -30,38 +30,38 @@
 
   <simplelist>
     <member>- <olink targetdoc="../../attributes/cancopy.xml" targetptr="cancopy"
-          ><code>canCopy</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+          ><code>canCopy</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/candelete.xml" targetptr="cancopy"
-          ><code>canDelete</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+          ><code>canDelete</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/canreorder.xml" targetptr="canreorder"
-          ><code>canReorder</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+          ><code>canReorder</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/copyof.xml" targetptr="copyof"
-        ><code>copyOf</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+        ><code>copyOf</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/disp.xml" targetptr="disp"
-        ><code>disp</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+        ><code>disp</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/equiv.xml" targetptr="equiv"
-        ><code>equiv</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+        ><code>equiv</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>,
-        <glossterm>REQUIRED</glossterm>.</member>
+      REQUIRED.</member>
 
     <member>- <olink targetdoc="../../attributes/dataref.xml" targetptr="dataref"
-          ><code>dataRef</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+          ><code>dataRef</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/subflows.xml" targetptr="subflows"
-          ><code>subFlows</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+          ><code>subFlows</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/subtype.xml" targetptr="subtype"
-          ><code>subType</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+          ><code>subType</code></olink>, OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/type.xml" targetptr="type"
-        ><code>type</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
+        ><code>type</code></olink>, OPTIONAL</member>
+    <member>- attributes from other namespaces, OPTIONAL</member>
 
 
   </simplelist>
@@ -85,33 +85,31 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly allowed by
-        the wildcard <code>other</code>:</para>
+      <para>The following XLIFF Module attributes are explicitly allowed by the wildcard
+          <code>other</code>:</para>
       <simplelist>
         <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:fs:2.0</code>,
-            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
+          OPTIONAL, provided that the Constraints specified in the <olink
             targetdoc="modules/fs/fs.xml" targetptr="fs-mod">Format Style Module</olink> are
           met.</member>
         <member>- attributes from the namespace
-            <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-            <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
-            targetdoc="modules/size_restriction/specification.xml"
+            <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>, OPTIONAL, provided that the
+          Constraints specified in the <olink targetdoc="modules/size_restriction/specification.xml"
             targetptr="size_restriction_module">Size and Length Restriction Module</olink> are
           met.</member>
         <!-- may need to allow ITSM at a later stage, but not needed by now 7th Aug, 2015.   ITS storage size would use the slr provsions 18th Jan 2017-->
       </simplelist>
     </listitem>
     <listitem>
-      <para>No other attributes <glossterm>MUST</glossterm> be used.</para>
+      <para>No other attributes MUST be used.</para>
     </listitem>
 
   </itemizedlist>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Extractors</firstterm>
-        <glossterm>MUST NOT</glossterm> use the <link linkend="ph"><code>&lt;ph></code></link>
-        element to represent spanning codes.</para>
+      <para>Extractors MUST NOT use the <link linkend="ph"><code>&lt;ph></code></link> element to
+        represent spanning codes.</para>
       <para><emphasis>Rationale:</emphasis> Using a standalone placeholder code for a spanning code
         does not allow for controlling the span (for instance tag order and data integrity) when
         modifying inline content and is in <emphasis>direct contradiction</emphasis> to the business
@@ -125,9 +123,8 @@
   <note>
     <para>It is possible although not advised to use <link linkend="ph">&lt;ph></link> to mask non
       translatable inline content. The preferred way of protecting portions of inline content from
-      translation is the <firstterm>Core</firstterm>
-      <olink targetptr="translateAnnotation">Translate Annotation</olink>. See also discussion in
-      the <olink targetptr="Translate_Inline">ITS Module section on representing translatability
-        inline</olink>. </para>
+      translation is the Core <olink targetptr="translateAnnotation">Translate Annotation</olink>.
+      See also discussion in the <olink targetptr="Translate_Inline">ITS Module section on
+        representing translatability inline</olink>. </para>
   </note>
 </section>

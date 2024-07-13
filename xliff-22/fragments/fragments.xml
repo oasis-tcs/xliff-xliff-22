@@ -8,9 +8,8 @@
 <section id="fragid">
   <title>Fragment Identification</title>
   <para>Because XLIFF documents do not follow the usual behavior of XML documents when it comes to
-    element identifiers, this specification defines how <firstterm>Agents</firstterm>
-    <glossterm>MUST</glossterm> interpret the fragment identifiers in IRIs pointing to XLIFF
-    documents.</para>
+    element identifiers, this specification defines how Agents MUST interpret the fragment
+    identifiers in IRIs pointing to XLIFF documents.</para>
   <note>
     <para>Note that some identifiers may change during the localization process. For example <olink
         targetdoc="../elements/structural/data.xml" targetptr="data"><code>&lt;data></code></olink>
@@ -19,7 +18,7 @@
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>A fragment identifier <glossterm>MUST</glossterm> match the following format:</para>
+      <para>A fragment identifier MUST match the following format:</para>
       <programlisting>
 &lt;expression>      ::= "#" ["/"] &lt;selector>
                       {&lt;selectorSeparator> &lt;selector>}
@@ -30,12 +29,11 @@
 &lt;selectorSeparator>  ::= "/"</programlisting>
     </listitem>
     <listitem>
-      <para>There <glossterm>MUST NOT</glossterm> be two identical prefixes in the
-        expression.</para>
+      <para>There MUST NOT be two identical prefixes in the expression.</para>
     </listitem>
     <listitem>
-      <para>When used, the following selectors <glossterm>MUST</glossterm> be declared in this
-        order: file selector, group selector and unit selector.</para>
+      <para>When used, the following selectors MUST be declared in this order: file selector, group
+        selector and unit selector.</para>
     </listitem>
     <listitem>
       <para>The selectors for modules or extensions, <olink
@@ -48,21 +46,19 @@
             ><code>&lt;data></code></olink> have the following constraints:</para>
       <itemizedlist>
         <listitem>
-          <para>Only one of them <glossterm>MAY</glossterm> be used in the expression.</para>
+          <para>Only one of them MAY be used in the expression.</para>
         </listitem>
         <listitem>
-          <para>The one used <glossterm>MUST</glossterm> be the last selector of the
-            expression.</para>
+          <para>The one used MUST be the last selector of the expression.</para>
         </listitem>
       </itemizedlist>
     </listitem>
   </itemizedlist>
   <warning>
     <para>Note that due to the above Constraints, referencing fragments using third party namespaces
-      within <firstterm>Modules</firstterm> or extensions (including but not limited to
-        <firstterm>XLIFF Core</firstterm> or the Metadata Module) is not possible. This is to
-      restrict the complexity of the fragment identification mechanism, as it would otherwise have
-      potentially unlimited depth.</para>
+      within Modules or extensions (including but not limited to XLIFF Core or the Metadata Module)
+      is not possible. This is to restrict the complexity of the fragment identification mechanism,
+      as it would otherwise have potentially unlimited depth.</para>
   </warning>
   <section>
     <title>Selectors for Core Elements</title>
@@ -160,22 +156,19 @@
     <itemizedlist>
       <title>Constraints</title>
       <listitem>
-        <para>The prefix of a module or an extension <glossterm>MUST</glossterm> be an NMTOKEN
-          longer than 1 character and <glossterm>MUST</glossterm> be defined in the module or
-          extension specification.</para>
+        <para>The prefix of a module or an extension MUST be an NMTOKEN longer than 1 character and
+          MUST be defined in the module or extension specification.</para>
       </listitem>
       <listitem>
-        <para>The prefix of a module or an extension <glossterm>MUST</glossterm> be registered with
-          the XLIFF TC.</para>
+        <para>The prefix of a module or an extension MUST be registered with the XLIFF TC.</para>
       </listitem>
       <listitem>
-        <para>A given module or extension namespace URI <glossterm>MUST</glossterm> be associated
-          with a single prefix.</para>
+        <para>A given module or extension namespace URI MUST be associated with a single
+          prefix.</para>
       </listitem>
       <listitem>
-        <para>A prefix <glossterm>MAY</glossterm> be associated with more than one namespace URI (to
-          allow for example different versions of a given module or extension to use the same
-          prefix).</para>
+        <para>A prefix MAY be associated with more than one namespace URI (to allow for example
+          different versions of a given module or extension to use the same prefix).</para>
       </listitem>
     </itemizedlist>
     <para>See also the <olink targetdoc="../extensions/extensions.xml" targetptr="ext-constraints"

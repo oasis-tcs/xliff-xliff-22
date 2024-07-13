@@ -6211,7 +6211,7 @@ on how their <sgmltag class="attribute">status</sgmltag> attribute is set.
 
 <refsynopsisdiv>
 <programlisting id="draft.watermark.image.frag">
-&lt;xsl:param name="draft.watermark.image" select="'http://docbook.sourceforge.net/release/images/draft.png'"&gt;&lt;/xsl:param&gt;
+&lt;xsl:param name="draft.watermark.image" select="'https://docbook.sourceforge.net/release/images/draft.png'"&gt;&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 

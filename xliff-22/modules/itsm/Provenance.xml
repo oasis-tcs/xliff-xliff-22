@@ -26,11 +26,10 @@
   <itemizedlist id="Provenance_Attributes">
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Writers</firstterm>
-        <glossterm>MUST</glossterm> use the attributes <olink
-          targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"
-          ><code>its:org</code></olink>, <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml"
-          targetptr="itsm_orgRef"><code>its:orgRef</code></olink>, <olink
+      <para>Writers MUST use the attributes <olink targetdoc="../../attributes/itsm/itsm_org.xml"
+          targetptr="itsm_org"><code>its:org</code></olink>, <olink
+          targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"
+            ><code>its:orgRef</code></olink>, <olink
           targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"
             ><code>its:person</code></olink>, <olink
           targetdoc="../../attributes/itsm/itsm_personRef.xml" targetptr="itsm_personRef"
@@ -59,31 +58,30 @@
       <itemizedlist>
         <listitem>
           <para>Within the <olink targetdoc="../candidates/specification.xml" targetptr="candidates"
-              >Translation Candidates Module</olink>, <firstterm>Enrichers</firstterm>
-            <glossterm>MUST</glossterm> map the <olink
+              >Translation Candidates Module</olink>, Enrichers MUST map the <olink
               targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
                 ><code>its:tool</code></olink> attribute onto the <olink
               targetdoc="../../attributes/candidates/candidates_origin.xml"
               targetptr="candidates_origin"><code>mtc:origin</code></olink> attribute.</para>
         </listitem>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> populating <firstterm>XLIFF Core</firstterm>
-            <olink targetdoc="../../elements/structural/target.xml" targetptr="target"
+          <para>Modifiers populating XLIFF Core <olink
+              targetdoc="../../elements/structural/target.xml" targetptr="target"
                 ><code>&lt;target></code></olink> elements with unmodified content from <olink
               targetdoc="../../elements/structural/target.xml" targetptr="target"
                 ><code>&lt;target></code></olink> children of <olink
               targetdoc="../../elements/candidates/match.xml" targetptr="match"
-                ><code>&lt;mtc:match></code></olink> elements <firstterm>may</firstterm> map the
-              <olink targetdoc="../../attributes/candidates/candidates_origin.xml"
+                ><code>&lt;mtc:match></code></olink> elements MAY map the <olink
+              targetdoc="../../attributes/candidates/candidates_origin.xml"
               targetptr="candidates_origin"><code>mtc:origin</code></olink> onto the <olink
               targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
                 ><code>its:tool</code></olink> attribute. </para>
           <itemizedlist>
             <listitem>
               <para>The <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
-                    ><code>its:tool</code></olink> attribute value <glossterm>MUST</glossterm> be
-                the same as the originating <olink targetdoc="../../elements/candidates/match.xml"
-                  targetptr="match"><code>&lt;mtc:match></code></olink>
+                    ><code>its:tool</code></olink> attribute value MUST be the same as the
+                originating <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"
+                    ><code>&lt;mtc:match></code></olink>
                 <olink targetdoc="../../attributes/candidates/candidates_origin.xml"
                   targetptr="candidates_origin"><code>mtc:origin</code></olink> value if this is the
                 case. </para>
@@ -91,20 +89,18 @@
           </itemizedlist>
         </listitem>
         <listitem>
-          <para><firstterm>Modifiers</firstterm>
-            <glossterm>MAY</glossterm> store previous versions of subunit content and attributes and
-            notes content and attributes in the <olink
-              targetdoc="../change-tracking/specification.xml" targetptr="changeTracking_module"
-              >Change Tracking Module</olink> elements according to the data model, Constraints,
-            Processing Requirements, and usage descriptions of that module.</para>
+          <para>Modifiers MAY store previous versions of subunit content and attributes and notes
+            content and attributes in the <olink targetdoc="../change-tracking/specification.xml"
+              targetptr="changeTracking_module">Change Tracking Module</olink> elements according to
+            the data model, Constraints, Processing Requirements, and usage descriptions of that
+            module.</para>
           <para>If this was the case the <olink
               targetdoc="../../elements/change-tracking/revision.xml" targetptr="revision"
-                ><code>&lt;revision></code></olink> element <glossterm>MUST</glossterm> be extended
-            by the Provenance attributes defined in the ITS Module as needed and the <olink
+                ><code>&lt;revision></code></olink> element MUST be extended by the Provenance
+            attributes defined in the ITS Module as needed and the <olink
               targetdoc="../../attributes/change-tracking/ctr_author.xml" targetptr="ctr_author"
-                ><code>ctr:author</code></olink>
-            <glossterm>SHOULD</glossterm> reuse information from the corresponding <olink
-              targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+                ><code>ctr:author</code></olink> SHOULD reuse information from the corresponding
+              <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
             <ulink url="http://www.w3.org/TR/its20/#provenance">Provenance</ulink> attributes as
             follows:</para>
           <itemizedlist>
@@ -153,8 +149,7 @@
       XLIFF based roundtrip.</para>
 
     <example>
-      <title>Provenance metadata added by <firstterm>Modifiers</firstterm> or
-          <firstterm>Enrichers</firstterm> on structural levels</title>
+      <title>Provenance metadata added by Modifiers or Enrichers on structural levels</title>
       <para>In this example a person of the name <code>Honza Novák</code> has been the translator of
         the whole unit content and <code>Franta Kocourek</code> the reviser of the whole
         translation.</para>
@@ -180,8 +175,7 @@
       in and publishing process within a content management system.</para>
 
     <example>
-      <title>Provenance metadata preserved by <firstterm>Mergers</firstterm> in the native
-        format.</title>
+      <title>Provenance metadata preserved by Mergers in the native format.</title>
       <para>In this example the translator and reviser Provenance metadata introduced during the
         XLIFF roundtrip has been preserved after merging the translations back to HTML.</para>
       <programlisting>
@@ -237,28 +231,28 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
-          attribute is <glossterm>REQUIRED</glossterm>.</para>
+          attribute is REQUIRED.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-            <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is OPTIONAL and set to
+          <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is OPTIONAL.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
             targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink>
-          attribute is <glossterm>OPTIONAL</glossterm>.</para>
+          attribute is OPTIONAL.</para>
       </listitem>
       <listitem>
-        <para>The following attributes <glossterm>MUST NOT</glossterm> be set if and only if <olink
+        <para>The following attributes MUST NOT be set if and only if <olink
             targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef"
             targetptr="itsm_provenanceRecordsRef"><code>its:provenanceRecordsRef</code></olink> is
-          declared, otherwise at least one the following <glossterm>MUST</glossterm> be set:</para>
+          declared, otherwise at least one the following MUST be set:</para>
         <itemizedlist>
           <listitem>
             <para>
@@ -339,7 +333,7 @@
         Constraints and Processing Requirements.</para>
     </warning>
     <example>
-      <title><firstterm>Enriching</firstterm> XLIFF documents with Provenance Annotations</title>
+      <title>Enriching XLIFF documents with Provenance Annotations</title>
       <para><emphasis role="bold">Inline only</emphasis> (i.e. without stand off):</para>
       <programlisting>
 ...

@@ -15,8 +15,7 @@
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Writers</firstterm>
-        <glossterm>MUST</glossterm> use the <olink targetdoc="specification"
+      <para>Writers MUST use the <olink targetdoc="specification"
           targetptr="allowedCharactersAnnotation">ITS Allowed Characters Annotation</olink> to
         express the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#allowedchars">Allowed Characters</ulink> data
@@ -106,17 +105,17 @@
         <para>The <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined <olink
             targetdoc="../../attributes/itsm_allowedCharacters.xml"
             targetptr="itsm_allowedCharacters"><code>its:allowedCharacters</code></olink> attribute
-          is <glossterm>REQUIRED</glossterm>.</para>
+          is REQUIRED.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-            <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is OPTIONAL and set to
+          <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is OPTIONAL.</para>
       </listitem>
     </itemizedlist>
 

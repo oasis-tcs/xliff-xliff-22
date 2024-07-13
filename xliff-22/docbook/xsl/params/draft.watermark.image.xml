@@ -10,7 +10,7 @@
 
 <refsynopsisdiv>
 <src:fragment id='draft.watermark.image.frag'>
-<xsl:param name="draft.watermark.image" select="'http://docbook.sourceforge.net/release/images/draft.png'"/>
+<xsl:param name="draft.watermark.image" select="'https://docbook.sourceforge.net/release/images/draft.png'"/>
 </src:fragment>
 </refsynopsisdiv>
 

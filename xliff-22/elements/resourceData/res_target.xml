@@ -6,24 +6,28 @@
                          <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED" >
                          ]>
 <section id="res_target">
-    <title>target</title>
-    <para>References the localized counterpart of the sibling <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink> element.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <para>Either</para>
-    <simplelist>
-        <member>- elements from other namespaces</member>
-    </simplelist>
-    <para>or</para>
-    <simplelist>
-        <member>- is empty.</member>
-    </simplelist>
+  <title>target</title>
+  <para>References the localized counterpart of the sibling <olink
+      targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"
+        ><code>&lt;source></code></olink> element.</para>
+  <para><emphasis>Contains:</emphasis></para>
+  <para>Either</para>
+  <simplelist>
+    <member>- elements from other namespaces</member>
+  </simplelist>
+  <para>or</para>
+  <simplelist>
+    <member>- is empty.</member>
+  </simplelist>
 
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_href.xml" targetptr="res_href"><code>href</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_xml_lang.xml" targetptr="res_xml_lang"><code>xml:lang</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-       <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
-    </simplelist>
+  <para><emphasis>Attributes:</emphasis></para>
+  <simplelist>
+    <member>- <olink targetdoc="../../attributes/resourceData/res_href.xml" targetptr="res_href"
+          ><code>href</code></olink>, OPTIONAL</member>
+    <member>- <olink targetdoc="../../attributes/resourceData/res_xml_lang.xml"
+        targetptr="res_xml_lang"><code>xml:lang</code></olink>, OPTIONAL</member>
+    <member>- attributes from other namespaces, OPTIONAL</member>
+  </simplelist>
 
 
   <itemizedlist>
@@ -31,15 +35,19 @@
 
     <listitem>
 
-      <para>The attribute <olink targetdoc="../../attributes/resourceData/res_href.xml" targetptr="res_href"><code>href</code></olink>
-        is <glossterm>REQUIRED</glossterm> if and only if
-    <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> is empty.</para>
+      <para>The attribute <olink targetdoc="../../attributes/resourceData/res_href.xml"
+          targetptr="res_href"><code>href</code></olink> is REQUIRED if and only if <olink
+          targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
+            ><code>&lt;target></code></olink> is empty.</para>
     </listitem>
 
     <listitem>
-      <para>When the <glossterm>OPTIONAL</glossterm> <olink targetdoc="../../attributes/res_resourceData/xml_lang.xml" targetptr="res_xml_lang"><code>xml:lang</code></olink>
-        attribute is present, its value <glossterm>MUST</glossterm> be equal to the value of the
-        <olink targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink> attribute of the enclosing <olink targetdoc="../../elements/structural/xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink> element.</para>
+      <para>When the OPTIONAL <olink targetdoc="../../attributes/res_resourceData/xml_lang.xml"
+          targetptr="res_xml_lang"><code>xml:lang</code></olink> attribute is present, its value
+        MUST be equal to the value of the <olink targetdoc="../../attributes/trgLang.xml"
+          targetptr="trgLang"><code>trgLang</code></olink> attribute of the enclosing <olink
+          targetdoc="../../elements/structural/xliff.xml" targetptr="xliff"
+          ><code>&lt;xliff></code></olink> element.</para>
     </listitem>
 
   </itemizedlist>
@@ -48,48 +56,51 @@
 
 
     <listitem>
-      <para>When the <olink targetdoc="../../attributes/resourceData/res_context.xml" targetptr="res_context"><code>context</code></olink>
-        attribute of <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink>
-        is set to <code>yes</code>:</para>
+      <para>When the <olink targetdoc="../../attributes/resourceData/res_context.xml"
+          targetptr="res_context"><code>context</code></olink> attribute of <olink
+          targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
+            ><code>&lt;resourceItem></code></olink> is set to <code>yes</code>:</para>
       <itemizedlist>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> create <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> if not already present.</para>
+          <para>Modifiers MAY create <olink targetdoc="../../elements/resourceData/res_target.xml"
+              targetptr="res_target"><code>&lt;target></code></olink> if not already present.</para>
         </listitem>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>SHOULD NOT</glossterm> change <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink>.</para>
+          <para>Modifiers SHOULD NOT change <olink
+              targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
+                ><code>&lt;target></code></olink>.</para>
         </listitem>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> remove <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink>.</para>
+          <para>Modifiers MAY remove <olink targetdoc="../../elements/resourceData/res_target.xml"
+              targetptr="res_target"><code>&lt;target></code></olink>.</para>
         </listitem>
       </itemizedlist>
     </listitem>
 
     <listitem>
-      <para>When the <olink targetdoc="../../attributes/resourceData/res_context.xml" targetptr="res_context"><code>context</code></olink>
-        attribute of <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink>
-        is set to <code>no</code>:</para>
+      <para>When the <olink targetdoc="../../attributes/resourceData/res_context.xml"
+          targetptr="res_context"><code>context</code></olink> attribute of <olink
+          targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
+            ><code>&lt;resourceItem></code></olink> is set to <code>no</code>:</para>
       <itemizedlist>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> create
-            <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink>
-            if not already present.</para>
+          <para>Modifiers MAY create <olink targetdoc="../../elements/resourceData/res_target.xml"
+              targetptr="res_target"><code>&lt;target></code></olink> if not already present.</para>
         </listitem>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> leave
-            <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> unchanged.</para>
+          <para>Modifiers MAY leave <olink targetdoc="../../elements/resourceData/res_target.xml"
+              targetptr="res_target"><code>&lt;target></code></olink> unchanged.</para>
         </listitem>
         <listitem>
-          <para><firstterm>Modifiers</firstterm> <glossterm>MAY</glossterm> change
-            <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink>.</para>
+          <para>Modifiers MAY change <olink targetdoc="../../elements/resourceData/res_target.xml"
+              targetptr="res_target"><code>&lt;target></code></olink>.</para>
         </listitem>
         <listitem>
-          <para><firstterm>Modifiers</firstterm>
-            <glossterm>MAY</glossterm> replace an existing <olink
+          <para>Modifiers MAY replace an existing <olink
               targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
                 ><code>&lt;target></code></olink>, i.e. the previously populated <olink
               targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
-                ><code>&lt;target></code></olink>
-            <glossterm>MUST NOT</glossterm> be left blank.</para>
+                ><code>&lt;target></code></olink> MUST NOT be left blank.</para>
         </listitem>
       </itemizedlist>
     </listitem>

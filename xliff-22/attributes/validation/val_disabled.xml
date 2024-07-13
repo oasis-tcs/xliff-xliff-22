@@ -8,18 +8,19 @@
 <section id="val_disabled">
   <title>disabled</title>
 
-  <para>This rule attribute determines whether a rule <glossterm>MUST</glossterm> or <glossterm>MUST NOT</glossterm> be applied within the scope of its enclosing element. For example, a rule
-    defined at the <olink targetdoc="../../elements/structural/file.xml" targetptr="file"
-        ><code>&lt;file></code></olink> level can be disabled at the <olink
-      targetdoc="../../elements/structural/unit.xml" targetptr="unit"><code>&lt;unit></code></olink>
-    level.</para>
+  <para>This rule attribute determines whether a rule MUST or MUST NOT be applied within the scope
+    of its enclosing element. For example, a rule defined at the <olink
+      targetdoc="../../elements/structural/file.xml" targetptr="file"><code>&lt;file></code></olink>
+    level can be disabled at the <olink targetdoc="../../elements/structural/unit.xml"
+      targetptr="unit"><code>&lt;unit></code></olink> level.</para>
   <para>This attribute is provided to allow for overriding execution of rules set at higher levels,
     see <olink targetdoc="../../elements/validation/validation.xml" targetptr="validation"
         ><code>&lt;val:validation></code></olink>.</para>
 
-  <para>In the following example, the isNotPresent rule is applied in its entirety to the first unit, but not to the second.</para>
+  <para>In the following example, the isNotPresent rule is applied in its entirety to the first
+    unit, but not to the second.</para>
 
-<programlisting>
+  <programlisting>
 &lt;file id="f1"&gt;
   &lt;val:validation&gt;
     &lt;val:rule isPresent="store" /&gt;
@@ -42,10 +43,14 @@
 &lt;/file&gt;
  </programlisting>
 
-  <para><emphasis>Value description:</emphasis> <code>yes</code> or <code>no</code></para>
+  <para><emphasis>Value description:</emphasis>
+    <code>yes</code> or <code>no</code></para>
 
-  <para><emphasis>Default value:</emphasis> <code>no</code></para>
+  <para><emphasis>Default value:</emphasis>
+    <code>no</code></para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;rule></code></olink></para>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"
+      ><code>&lt;rule></code></olink></para>
 
 </section>

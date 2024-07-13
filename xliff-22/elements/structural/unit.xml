@@ -12,7 +12,7 @@
 
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
-        <member>- elements from other namespaces, <glossterm>OPTIONAL</glossterm></member>
+        <member>- elements from other namespaces, OPTIONAL</member>
         <member>- Zero or one <olink targetdoc="notes.xml" targetptr="notes"
                 ><code>&lt;notes></code></olink> elements followed by</member>
         <member>- Zero or one <olink targetdoc="originaldata.xml" targetptr="originaldata"
@@ -32,38 +32,38 @@
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
         <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>,
-                <glossterm>REQUIRED</glossterm></member>
+            REQUIRED</member>
         <member>- <olink targetdoc="../../attributes/name.xml" targetptr="name"
-                ><code>name</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                ><code>name</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/canResegment.xml" targetptr="canResegment"
-                    ><code>canResegment</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>canResegment</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-                    ><code>translate</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>translate</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/srcdir.xml" targetptr="srcdir"
-                    ><code>srcDir</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>srcDir</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/trgdir.xml" targetptr="trgdir"
-                    ><code>trgDir</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>trgDir</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/xml_space.xml" targetptr="xml_space"
-                    ><code>xml:space</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>xml:space</code></olink>, OPTIONAL</member>
 
         <member>- <olink targetdoc="../../attributes/type.xml" targetptr="type"
-                ><code>type</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                ><code>type</code></olink>, OPTIONAL</member>
 
 
 
-        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
+        <member>- attributes from other namespaces, OPTIONAL</member>
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>A <link linkend="unit"><code>&lt;unit></code></link>
-                <glossterm>MUST</glossterm> contain at least one <olink targetdoc="segment.xml"
-                    targetptr="segment"><code>&lt;segment></code></olink> element. </para>
+            <para>A <link linkend="unit"><code>&lt;unit></code></link> MUST contain at least one
+                    <olink targetdoc="segment.xml" targetptr="segment"
+                    ><code>&lt;segment></code></olink> element. </para>
         </listitem>
         <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> elements are explicitly allowed
-                by the wildcard <code>other</code>:</para>
+            <para>The following XLIFF Module elements are explicitly allowed by the wildcard
+                    <code>other</code>:</para>
             <simplelist>
                 <member>- Zero or one <olink targetdoc="matches.xml" targetptr="matches"
                             ><code>&lt;mtc:matches></code></olink> elements</member>
@@ -90,45 +90,11 @@
             </simplelist>
         </listitem>
         <listitem>
-            <para><firstterm>Module</firstterm> and Extension elements <glossterm>MAY</glossterm> be
-                used in any order.</para>
+            <para>Module and Extension elements MAY be used in any order.</para>
         </listitem>
-        <!--
-        <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
-                allowed by the wildcard <code>other</code>:</para>
-            <simplelist>
-                <member>- attributes from the namespace
-                    <code>urn:oasis:names:tc:xliff:fs:2.0</code>, <glossterm>OPTIONAL</glossterm>,
-                    provided that the Constraints specified in the <olink
-                        targetdoc="modules/fs/fs.xml" targetptr="fs-mod">Format Style Module</olink>
-                    are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <olink targetdoc="modules/size_restriction/specification.xml"
-                        targetptr="size_restriction_module">Size and Length Restriction
-                        Module</olink> are met.</member>
-                <member>- attributes from the namespace <code>http://www.w3.org/2005/11/its</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <olink targetdoc="modules/itsm/specification.xml" targetptr="ITS-module">ITS
-                        Module</olink> are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:itsm:2.1</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <olink targetdoc="../../modules/itsm/specification.xml"
-                        targetptr="ITS-module">ITS Module</olink> are met.</member>
-                <member>- attributes from the namespace
-                        <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
-                        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in
-                    the <olink targetdoc="../../modules/plural_gender_select/specification.xml"
-                        targetptr="plural_gender_select_module">Plural, Gender, and Select
-                        Module</olink> are met.</member>
-            </simplelist>
-        </listitem>
-        -->
     </itemizedlist>
     <note>
-        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints
+            specified in the corresponding modules.</para>
     </note>
 </section>

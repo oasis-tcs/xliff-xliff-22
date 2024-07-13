@@ -18,9 +18,8 @@
   <warning>
     <para> There is a one-to-one mapping for all parts of the <ulink
         url="http://www.w3.org/TR/its20/#locNote-datacat">Localization Note</ulink> information to
-      and from the <firstterm>XLIFF Core</firstterm>
-      <code><olink targetdoc="../elements/structural/note.xml" targetptr="note"
-        >&lt;note></olink></code> and the <olink targetdoc="../inline/inline.xml"
+      and from the XLIFF Core <code><olink targetdoc="../elements/structural/note.xml"
+          targetptr="note">&lt;note></olink></code> and the <olink targetdoc="../inline/inline.xml"
         targetptr="commentAnnotation">Comment Annotation</olink> mechanism. This means that the
       whole data category can be losslessly extracted from the native format, merged back to the
       native format or even round-tripped. However, generic ITS Processors won't be able to fully
@@ -32,14 +31,13 @@
   <section id="Localization_Note_Structural">
     <title>Structural Elements</title>
     <para> Localization Notes present in source content at structural levels are extracted using the
-        <firstterm>XLIFF Core</firstterm>
-      <code><olink targetdoc="../elements/structural/note.xml" targetptr="note"
-        >&lt;note></olink></code> and the <code><olink targetdoc="../elements/structural/note.xml"
+      XLIFF Core <code><olink targetdoc="../elements/structural/note.xml" targetptr="note"
+          >&lt;note></olink></code> and the <code><olink targetdoc="../elements/structural/note.xml"
           targetptr="note">&lt;note></olink></code> element. ITS attribute <code>locNoteType</code>
-      is mapped onto the <firstterm>XLIFF Core</firstterm> attribute <olink
-        targetdoc="../attributes/priority.xml" targetptr="priority"><code>priority</code></olink>.
-      The value <code>alert</code> is mapped onto priority <code>1</code>. The value
-        <code>description</code> is mapped onto any of the integers <code>2-10</code>.</para>
+      is mapped onto the XLIFF Core attribute <olink targetdoc="../attributes/priority.xml"
+        targetptr="priority"><code>priority</code></olink>. The value <code>alert</code> is mapped
+      onto priority <code>1</code>. The value <code>description</code> is mapped onto any of the
+      integers <code>2-10</code>.</para>
 
     <example>
       <title>Extraction of a Localization note at a structural level</title>
@@ -98,10 +96,9 @@
   <section id="Localization_Note_Inline">
     <title>Inline Elements</title>
     <para> Localization Notes present on inline spans of source content are extracted using the
-        <firstterm>XLIFF Core</firstterm>
-      <olink targetdoc="../inline/inline.xml" targetptr="annotations">Annotations</olink> mechanism.
-      Use <code><olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
-        >&lt;mrk></olink></code> or an <code><olink targetdoc="../elements/inline/sm.xml"
+      XLIFF Core <olink targetdoc="../inline/inline.xml" targetptr="annotations">Annotations</olink>
+      mechanism. Use <code><olink targetdoc="../elements/inline/mrk.xml" targetptr="mrk"
+          >&lt;mrk></olink></code> or an <code><olink targetdoc="../elements/inline/sm.xml"
           targetptr="sm">&lt;sm/></olink></code> / <code><olink
           targetdoc="../elements/inline/em.xml" targetptr="em">&lt;em/></olink></code> pair with
         <code>type="comment"</code>. See <olink targetdoc="../inline/inline.xml"

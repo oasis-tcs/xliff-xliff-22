@@ -6,27 +6,31 @@
 <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
 ]>
 <section id="slr_normalization">
-    <title>normalization</title>
-    <para>This element is used to hold the attributes specifying the normalization form to apply to
+  <title>normalization</title>
+  <para>This element is used to hold the attributes specifying the normalization form to apply to
     storage and size restrictions defined in the standard profiles.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <simplelist>
-        <member>This element is always empty.</member>
-    </simplelist>
+  <para><emphasis>Contains:</emphasis></para>
+  <simplelist>
+    <member>This element is always empty.</member>
+  </simplelist>
 
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist>
-        <member>- <olink targetdoc="../../attributes/size_restriction/general.xml" targetptr="slr_general"><code>general</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/size_restriction/storage.xml" targetptr="slr_storage"><code>storage</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-    </simplelist>
+  <para><emphasis>Attributes:</emphasis></para>
+  <simplelist>
+    <member>- <olink targetdoc="../../attributes/size_restriction/general.xml"
+        targetptr="slr_general"><code>general</code></olink>, OPTIONAL</member>
+    <member>- <olink targetdoc="../../attributes/size_restriction/storage.xml"
+        targetptr="slr_storage"><code>storage</code></olink>, OPTIONAL</member>
+  </simplelist>
 
-    <itemizedlist>
+  <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para>If this element is not present no normalization <glossterm>SHOULD</glossterm> be performed for the standard profiles.</para>
+      <para>If this element is not present no normalization SHOULD be performed for the standard
+        profiles.</para>
     </listitem>
     <listitem>
-      <para>Other profiles <glossterm>MAY</glossterm> use this element in its specified form but <glossterm>MUST NOT</glossterm> add new extensions to it.</para>
+      <para>Other profiles MAY use this element in its specified form but MUST NOT add new
+        extensions to it.</para>
     </listitem>
   </itemizedlist>
 

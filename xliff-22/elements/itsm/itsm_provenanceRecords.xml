@@ -32,20 +32,14 @@
   <para><emphasis>Attributes:</emphasis></para>
   <simplelist>
     <member>- <olink targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id"
-          ><code>xml:id</code></olink>, <glossterm>REQUIRED</glossterm>
-    </member>
-    <!--  not allowed on ITS stand off elements <member>-<olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
-        targetptr="itsm_annotatorsRef">
-        <code>annotatorsRef</code></olink>,
-        <glossterm>OPTIONAL</glossterm></member>-->
-
+          ><code>xml:id</code></olink>, REQUIRED </member>
   </simplelist>
   <!-- This Constraint would be too strong as a MUST, it would invalidate XLIFF documents with orphaned Provenance Records. But this can happen because the references can be removed by core only Modifiers.-->
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>Each <link linkend="itsm_provenanceRecords">provenanceRecords</link> element
-          <glossterm>SHOULD</glossterm> be referenced by at least one <olink
+      <para>Each <link linkend="itsm_provenanceRecords">provenanceRecords</link> element SHOULD be
+        referenced by at least one <olink
           targetdoc="../../attributes/itsm/itsm_provenanceRecordsRef.xml"
           targetptr="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></olink> attribute
         from the common parent element or one of the common parent's descendants as per Constraints
@@ -57,9 +51,8 @@
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Modifiers</firstterm> detecting an orphaned <link
-          linkend="itsm_provenanceRecords">provenanceRecords</link> element
-          <glossterm>MAY</glossterm> delete that <link linkend="itsm_provenanceRecords"
+      <para>Modifiers detecting an orphaned <link linkend="itsm_provenanceRecords"
+          >provenanceRecords</link> element MAY delete that <link linkend="itsm_provenanceRecords"
           >provenanceRecords</link> element.</para>
     </listitem>
   </itemizedlist>

@@ -31,18 +31,16 @@
     <note>
       <para>Because XLIFF documents are normally source-monolingual, whole paragraphs in the source
         document that are not in the main source language are generally not to be extracted. If
-        there is a need to extract such content into a single <firstterm>XLIFF
-        Documents</firstterm>, the XLIFF output has to use the inline <olink
-          targetdoc="../../inline/inline.xml" targetptr="annotations">Annotations</olink> mechanism
-        together with the <link linkend="langAnnotation"> ITS Language Information
-        Annotation</link>, because the structurally set or inherited source language is constrained
-        by the <firstterm>XLIFF Core</firstterm>
-        <olink targetdoc="../attributes/srcLang.xml" targetptr="srcLang"
-          ><code>srcLang</code></olink> attribute value. Analogically, the structurally set target
-        language is constrained by the <olink targetdoc="../attributes/trgLang.xml"
-          targetptr="trgLang"><code>trgLang</code></olink> attribute value. Thus also paragraphs
-        other than in the main target language have to be annotated inline using the same
-        mechanism.</para>
+        there is a need to extract such content into a single XLIFF Documents, the XLIFF output has
+        to use the inline <olink targetdoc="../../inline/inline.xml" targetptr="annotations"
+          >Annotations</olink> mechanism together with the <link linkend="langAnnotation"> ITS
+          Language Information Annotation</link>, because the structurally set or inherited source
+        language is constrained by the XLIFF Core <olink targetdoc="../attributes/srcLang.xml"
+          targetptr="srcLang"><code>srcLang</code></olink> attribute value. Analogically, the
+        structurally set target language is constrained by the <olink
+          targetdoc="../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>
+        attribute value. Thus also paragraphs other than in the main target language have to be
+        annotated inline using the same mechanism.</para>
     </note>
   </section>
   <section id="Language_Information_Inline">
@@ -52,22 +50,20 @@
       languages is NOT used inline in source formats. Still there are use cases for mixed language
       use inline, like referencing non-localized UI or hardware elements, discussing foreign
       vocabulary or analyzing poetry in the original language using short inline examples. These
-      scenarios cannot be fully supported with <firstterm>XLIFF Core</firstterm> only.</para>
+      scenarios cannot be fully supported with XLIFF Core only.</para>
     <para>In case the inline elements in other than the main language are not supposed to be
       translated (e.g. referenced non localized UI or hardware elements), they can be marked as not
-      translatable using the <firstterm>XLIFF Core</firstterm>
-      <olink targetdoc="../inline/inline.xml" targetptr="translateAnnotation">Translate
-        annotation</olink>. However, the specific Language Information would not be readily
-      accessible during the roundtrip if not combined with the Language Information Annotation
-      defined here in the ITS Module.</para>
+      translatable using the XLIFF Core <olink targetdoc="../inline/inline.xml"
+        targetptr="translateAnnotation">Translate annotation</olink>. However, the specific Language
+      Information would not be readily accessible during the roundtrip if not combined with the
+      Language Information Annotation defined here in the ITS Module.</para>
     <note>
       <para>If there is a need to make the different language information available throughout the
         roundtrip, the XLIFF output has to use the inline <olink targetdoc="../../inline/inline.xml"
           targetptr="annotations">Annotations</olink> mechanism together with the <link
           linkend="langAnnotation"> ITS Language Information Annotation</link>, because the
-        structurally set and thus inherited inline source language is constrained by the
-          <firstterm>XLIFF Core</firstterm>
-        <olink targetdoc="../attributes/srcLang.xml" targetptr="srcLang"
+        structurally set and thus inherited inline source language is constrained by the XLIFF Core
+          <olink targetdoc="../attributes/srcLang.xml" targetptr="srcLang"
           ><code>srcLang</code></olink> attribute value. Analogically, the structurally set (and
         inline inherited) target language is constrained by the <olink
           targetdoc="../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>
@@ -120,30 +116,30 @@
     <para>This is used to fully map to and from the <olink targetdoc="../xliff22.xml"
         targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/its20/#language-information">Language Information</ulink>
-      data category, including full inline support that cannot be provided via the <firstterm>XLIFF
-        Core</firstterm> due to normative Constraints. </para>
+      data category, including full inline support that cannot be provided via the XLIFF Core due to
+      normative Constraints. </para>
     <para>Usage:</para>
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
-          attribute is <glossterm>REQUIRED</glossterm>.</para>
+          attribute is REQUIRED.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_lang.xml" targetptr="itsm_lang"
-              ><code>itsm:lang</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
+              ><code>itsm:lang</code></olink> attribute is REQUIRED.</para>
       </listitem>
 
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-            <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is OPTIONAL and set to
+          <code>its:generic</code>.</para>
 
       </listitem>
 
 
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is OPTIONAL.</para>
       </listitem>
     </itemizedlist>
     <example>

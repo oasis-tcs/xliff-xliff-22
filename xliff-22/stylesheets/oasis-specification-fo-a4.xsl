@@ -61,7 +61,7 @@
   <l:l10n language="en">
     <l:context name="title-numbered">
       <l:template name="appendix" text="Appendix&#160;%n&#160;%t"/>
-      <l:template name="article/appendix" text="%n&#160;%t"/>
+      <l:template name="article/appendix" text="%n.&#160;%t"/>
       <l:template name="bridgehead" text="%n&#160;%t"/>
       <l:template name="chapter" text="Chapter&#160;%n&#160;%t"/>
       <l:template name="sect1" text="%n&#160;%t"/>
@@ -385,17 +385,17 @@
         Specification URIs
       </fo:block>
       <xsl:call-template name="spec-uri-group">
-        <xsl:with-param name="header">This version:</xsl:with-param>
+        <xsl:with-param name="header">This stage:</xsl:with-param>
         <xsl:with-param name="uris" 
            select="$locations[starts-with(@role,'OASIS-specification-this')]"/>
       </xsl:call-template>
       <xsl:call-template name="spec-uri-group">
-        <xsl:with-param name="header">Previous version:</xsl:with-param>
+        <xsl:with-param name="header">Previous stage:</xsl:with-param>
         <xsl:with-param name="uris" 
        select="$locations[starts-with(@role,'OASIS-specification-previous')]"/>
       </xsl:call-template>
       <xsl:call-template name="spec-uri-group">
-        <xsl:with-param name="header">Latest version:</xsl:with-param>
+        <xsl:with-param name="header">Latest stage:</xsl:with-param>
         <xsl:with-param name="uris" 
          select="$locations[starts-with(@role,'OASIS-specification-latest')]"/>
       </xsl:call-template>

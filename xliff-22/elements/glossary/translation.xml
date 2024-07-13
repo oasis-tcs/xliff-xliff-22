@@ -7,9 +7,11 @@
                          ]>
 <section id="translation">
     <title>translation</title>
-    <para>A translation of the sibling <olink targetdoc="term.xml" targetptr="term"><code>&lt;term></code></olink>
-        element expressed in the target language of the enclosing
-        <olink targetdoc="../structural/xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink> element. Multiple translations can be specified as synonyms.</para>
+    <para>A translation of the sibling <olink targetdoc="term.xml" targetptr="term"
+                ><code>&lt;term></code></olink> element expressed in the target language of the
+        enclosing <olink targetdoc="../structural/xliff.xml" targetptr="xliff"
+                ><code>&lt;xliff></code></olink> element. Multiple translations can be specified as
+        synonyms.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
         <member>- Text</member>
@@ -17,10 +19,13 @@
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-      <member>- <olink targetdoc="../../attributes/glossary/gls_id.xml" targetptr="gls_id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-        <member> - <olink targetdoc="../../attributes/glossary/gls_ref.xml" targetptr="gls_ref"><code>ref</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-        <member>- <olink targetdoc="../../attributes/glossary/gls_source.xml" targetptr="gls_source"><code>source</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-      <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
+        <member>- <olink targetdoc="../../attributes/glossary/gls_id.xml" targetptr="gls_id"
+                    ><code>id</code></olink>, OPTIONAL</member>
+        <member> - <olink targetdoc="../../attributes/glossary/gls_ref.xml" targetptr="gls_ref"
+                    ><code>ref</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/glossary/gls_source.xml" targetptr="gls_source"
+                    ><code>source</code></olink>, OPTIONAL</member>
+        <member>- attributes from other namespaces, OPTIONAL</member>
     </simplelist>
 
 </section>

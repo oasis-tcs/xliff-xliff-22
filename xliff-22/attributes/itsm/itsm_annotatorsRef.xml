@@ -113,19 +113,6 @@
                 <ulink url="https://www.w3.org/TR/its20/#its-tool-annotation">Tools
                     Annotation</ulink>.</para>
         </listitem>
-        <!--  <listitem>
-            <para>When resolving any actual local value of the <link linkend="itsm_annotatorsRef"
-                        ><code>annotatorsRef</code></link> attribute,
-                    <firstterm>Modifiers</firstterm> and <firstterm>Enrichers</firstterm>
-                <glossterm>MUST</glossterm> combine the actual set value with all default values
-                inherited from higher levels as follows:</para>
-            <para>On any given node, the information provided by this mechanism is a space-separated
-                list of the accumulated references found in the <link linkend="itsm_annotatorsRef"
-                        ><code>annotatorsRef</code></link> attributes declared in the enclosing
-                elements and sorted by <link linkend="categoryIdentifiers">data category
-                    identifiers</link>. For each data category, the IRI part is the one of the
-                inner-most declaration.</para>
-        </listitem>-->
     </itemizedlist>
     <para>See the <olink targetdoc="../../modules/itsm/specifcation.xml" targetptr="toolsAnnotation"
             >ITS Tools Annotation</olink> for the normative usage description of this attribute

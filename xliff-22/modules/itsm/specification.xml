@@ -17,47 +17,45 @@
         >Inline Annotations</olink> (normative usage descriptions for attributes on inline
       annotation markers), attributes and elements that are needed to map <olink
         targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data categories using only
-        <firstterm>XLIFF-defined</firstterm> elements and attributes. The module also defines an
-      external rules file to be used by generic ITS processors working with <firstterm>XLIFF
-        Documents</firstterm>. This module only defines attributes and annotations that are not
-      available through <firstterm>XLIFF Core</firstterm> or other <firstterm>Modules</firstterm>.
-      This module specification also contains normative provisions for mapping of <olink
+      XLIFF-defined elements and attributes. The module also defines an external rules file to be
+      used by generic ITS processors working with XLIFF Documents. This module only defines
+      attributes and annotations that are not available through XLIFF Core or other Modules. This
+      module specification also contains normative provisions for mapping of <olink
         targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data categories and features that
-      are available via XLIFF <firstterm>Core</firstterm> and other modules (<olink
-        targetdoc="ITSInCore.xml" targetptr="ITSInCore">ITS data categories available through XLIFF
-        Core and other Modules</olink> and <olink targetdoc="ITSPartialOverlap.xml"
+      are available via XLIFF Core and other modules (<olink targetdoc="ITSInCore.xml"
+        targetptr="ITSInCore">ITS data categories available through XLIFF Core and other
+        Modules</olink> and <olink targetdoc="ITSPartialOverlap.xml" targetptr="ITSPartialOverlap"
+        >ITS data categories that have a partial overlap with XLIFF features</olink>) or other
+      Modules outside of the ITS Module (<olink targetdoc="ITSPartialOverlap.xml"
         targetptr="ITSPartialOverlap">ITS data categories that have a partial overlap with XLIFF
-        features</olink>) or other <firstterm>Modules</firstterm> outside of the ITS Module (<olink
-        targetdoc="ITSPartialOverlap.xml" targetptr="ITSPartialOverlap">ITS data categories that
-        have a partial overlap with XLIFF features</olink>). Finally, an overview of data categories
-      is provided where the information is or can be fully expressed by extraction behavior and
-      therefore those categories or their parts (sub-categories) cannot be represented as metadata
-      within XLIFF documents (<olink targetdoc="ITSnonMetadata.xml" targetptr="ITSnonMetadata">ITS
-        data categories that do not represent metadata after extraction of content into
-        XLIFF</olink>).</para>
+        features</olink>). Finally, an overview of data categories is provided where the information
+      is or can be fully expressed by extraction behavior and therefore those categories or their
+      parts (sub-categories) cannot be represented as metadata within XLIFF documents (<olink
+        targetdoc="ITSnonMetadata.xml" targetptr="ITSnonMetadata">ITS data categories that do not
+        represent metadata after extraction of content into XLIFF</olink>).</para>
     <note>
       <para>This module specification chiefly describes how the <olink targetdoc="../xliff22.xml"
           targetptr="ITS20">[ITS]</olink> data categories need to be expressed within XLIFF
         documents. Some data categories are typically extracted from native source formats, others
-        would be first injected into XLIFF documents by <firstterm>Enriching Agents</firstterm> and
-        might be useful or not in the target content after merging back to the native format in the
-        target natural language. For all ITS data categories that can be encoded within XLIFF
-        documents, there is an important XLIFF specific distinction between structural and inline
-        elements in XLIFF. Some categories can only be expressed inline in XLIFF documents. Others
-        can be also expressed on structural markup levels; in such a case, inheritance (or not) from
-        the XLIFF structural levels is important. Nevertheless, even the inline only ITS data
-        categories can be in scope of <link linkend="itsToolsReferencing">ITS Tools
-          Referencing</link> that can be set on structural levels and possible inheritance of
-        relevant <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
-          targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> values needs to be
-        always checked by implementers.</para>
+        would be first injected into XLIFF documents by Enriching Agents and might be useful or not
+        in the target content after merging back to the native format in the target natural
+        language. For all ITS data categories that can be encoded within XLIFF documents, there is
+        an important XLIFF specific distinction between structural and inline elements in XLIFF.
+        Some categories can only be expressed inline in XLIFF documents. Others can be also
+        expressed on structural markup levels; in such a case, inheritance (or not) from the XLIFF
+        structural levels is important. Nevertheless, even the inline only ITS data categories can
+        be in scope of <link linkend="itsToolsReferencing">ITS Tools Referencing</link> that can be
+        set on structural levels and possible inheritance of relevant <olink
+          targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
+            ><code>its:annotatorsRef</code></olink> values needs to be always checked by
+        implementers.</para>
     </note>
     <warning id="pseudo-spanWarning">
       <para>There is an important scope difference between attributes from the namespace
-          <code>http://www.w3.org/2005/11/its</code> as implemented in <firstterm>XLIFF
-          Documents</firstterm> and as defined in the <olink targetdoc="../xliff22.xml"
-          targetptr="ITS20">[ITS]</olink> specification itself. This affects all ITS attributes that
-        can be used on inline spans. In XLIFF, spans delimited by the well-formed <code><olink
+          <code>http://www.w3.org/2005/11/its</code> as implemented in XLIFF Documents and as
+        defined in the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+        specification itself. This affects all ITS attributes that can be used on inline spans. In
+        XLIFF, spans delimited by the well-formed <code><olink
             targetdoc="../elements/inline/mrk.xml" targetptr="mrk">&lt;mrk></olink></code> are
         always equivalent and interchangeable with pseudo-spans delimited by <code><olink
             targetdoc="../elements/inline/sm.xml" targetptr="sm">&lt;sm/></olink></code> /
@@ -78,11 +76,10 @@
         documents is between the start marker <code>&lt;sm id="1"/></code> and its corresponding end
         marker <code>&lt;em startRef="1"/></code>. </para>
       <para>Implementers who wish to better access <olink targetdoc="../xliff22.xml"
-          targetptr="ITS20">[ITS]</olink> data categories information within <firstterm>XLIFF
-          Documents</firstterm> can implement an additional capability in their ITS Processors to
-        detect spans like this one <code>&lt;sm id="1"/>span of text&lt;em startRef="1"/></code>
-        without going into any more XLIFF specific features and becoming full fledged XLIFF
-          <firstterm>Agents</firstterm>.</para>
+          targetptr="ITS20">[ITS]</olink> data categories information within XLIFF Documents can
+        implement an additional capability in their ITS Processors to detect spans like this one
+          <code>&lt;sm id="1"/>span of text&lt;em startRef="1"/></code> without going into any more
+        XLIFF specific features and becoming full fledged XLIFF Agents.</para>
     </warning>
   </section>
   <section>
@@ -128,18 +125,17 @@
           <listitem>
             <para>In cases where any of the above specified global rules identifies an empty <olink
                 targetdoc="../../elements/inline/sm.xml" targetptr="sm"><code>&lt;sm></code></olink>
-              element, conformant ITS Processors <glossterm>SHOULD</glossterm> be able identify the
-              closing <olink targetdoc="../../elements/inline/em.xml" targetptr="em"
-                  ><code>&lt;em></code></olink> marker and process the relevant ITS data category as
-              applied on the span delimited by those corresponding empty markers.</para>
+              element, conformant ITS Processors SHOULD be able identify the closing <olink
+                targetdoc="../../elements/inline/em.xml" targetptr="em"><code>&lt;em></code></olink>
+              marker and process the relevant ITS data category as applied on the span delimited by
+              those corresponding empty markers.</para>
           </listitem>
         </itemizedlist>
 
       </listitem>
 
       <listitem>
-        <para>Conformant <firstterm>Agents</firstterm>
-          <glossterm>MUST</glossterm> be XLIFF Conformant in the sense of XLIFF <olink
+        <para>Conformant Agents MUST be XLIFF Conformant in the sense of XLIFF <olink
             targetptr="ApplicationConformance" targetdoc="../conformance/conformance.xml"
             >Application Conformance</olink> and also implement at least one <olink
             targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data category defined in the
@@ -153,28 +149,23 @@
         <para>In particular:</para>
         <itemizedlist>
           <listitem>
-            <para>Conformant <firstterm>Extractors</firstterm>
-              <glossterm>MUST</glossterm> be capable of extracting at least one of the above
+            <para>Conformant Extractors MUST be capable of extracting at least one of the above
               specified ITS data categories from a source format and encode it in a resulting
               conformant XLIFF document with ITS Module based metadata. </para>
           </listitem>
           <listitem>
-            <para> Conformant <firstterm>Enrichers</firstterm>
-              <glossterm>MUST</glossterm> be capable of <firstterm>Enriching</firstterm> XLIFF
-              documents with at least one of the above specified ITS data categories.</para>
+            <para> Conformant Enrichers MUST be capable of Enriching XLIFF documents with at least
+              one of the above specified ITS data categories.</para>
           </listitem>
           <listitem>
-            <para>Conformant <firstterm>Modifiers</firstterm>
-              <glossterm>MUST</glossterm> be capable of updating at least one of the above specified
-              ITS data categories according to its own Constraints and Processing Requirements as
-              specified in the ITS Module.</para>
+            <para>Conformant Modifiers MUST be capable of updating at least one of the above
+              specified ITS data categories according to its own Constraints and Processing
+              Requirements as specified in the ITS Module.</para>
           </listitem>
           <listitem>
-            <para>Conformant <firstterm>Mergers</firstterm>
-              <glossterm>MUST</glossterm> be capable of merging metadata of at least one of the
+            <para>Conformant Mergers MUST be capable of merging metadata of at least one of the
               above specified ITS data categories back to the respective native format (with full
-              knowledge of the <firstterm>Extraction</firstterm> mechanism) in the target natural
-              language.</para>
+              knowledge of the Extraction mechanism) in the target natural language.</para>
           </listitem>
         </itemizedlist>
 
@@ -186,11 +177,6 @@
   <section id="itsToolsReferencing">
     <title>ITS Tools Referencing</title>
     <para>
-      <!--  This is now addressed in the Note below COMMENT: MAKE CLEAR IF EACH ITS DATA CATEGORY NEEDS TO IMPLEMENT ANNOTATORS REF SUPPORT.
-      FELIX TO CHECK IN ITS SPEC - A.REF MAY BE ONLY MANADATORY FOR THREE DATA CATEGORIES. dF:
-      Although mandatory for only MT Confidence and conditionally mandatroy for a few more, it can
-      be provided by any other data category, so the mechanism is needed..</para>
-    <para>-->
       <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
       <ulink url="http://www.w3.org/TR/2013/REC-its20-20131029/#its-tool-annotation
         ">Tools Annotation</ulink> mechanism provides a way to record tools that produced
@@ -199,11 +185,8 @@
       <para>This mechanism is reserved for recording producers of ITS metadata. General provenance
         information can be recorded using the <olink targetdoc="Provenance.xml"
           targetptr="Provenance">Provenance</olink> data category mapping defined in this Module.
-          <!--  CTR demoted: If
-      an <firstterm>Agent</firstterm> records the revision history of previous versions, they need do this using the
-          <olink targetptr="changeTracking_module" targetdoc="../change-tracking/specification.xml"
-          >Change Tracking Module</olink>, possibly extended with ITS Module. --><olink
-          targetdoc="Provenance.xml" targetptr="Provenance">Provenance</olink> metadata. </para>
+          <olink targetdoc="Provenance.xml" targetptr="Provenance">Provenance</olink> metadata.
+      </para>
     </warning>
     <note>
       <para>The <link linkend="itsToolsReferencing">ITS Tools Referencing</link> mechanism has to be
@@ -222,17 +205,16 @@
           Tools Referencing</link> mechanism. It is nevertheless advised that the relevant ITS
         Tooling metadata is extracted where available and modified when the relevant ITS data
         category information changes during the XLIFF document processing. Finally, all conformant
-          <firstterm>Agents</firstterm> and ITS Processors need to be able to compute the <link
-          linkend="itsToolsReferencing">ITS Tools Referencing</link> information in case this has
-        been provided by other conformant <firstterm>Agents</firstterm> earlier in the workflow as
-        per the <link linkend="ITS-module">ITS Module</link>
+        Agents and ITS Processors need to be able to compute the <link linkend="itsToolsReferencing"
+          >ITS Tools Referencing</link> information in case this has been provided by other
+        conformant Agents earlier in the workflow as per the <link linkend="ITS-module">ITS
+          Module</link>
         <link linkend="ITSM_Conformance">Conformance</link> section.</para>
     </note>
     <itemizedlist>
       <title>Processing Requirements</title>
       <listitem>
-        <para><firstterm>Writers</firstterm>
-          <glossterm>MUST</glossterm> use the attribute <olink
+        <para>Writers MUST use the attribute <olink
             targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
               ><code>its:annotatorsRef</code></olink> to express the information provided through
           the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
@@ -250,25 +232,25 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"
-              ><code>id</code></olink> attribute is <glossterm>REQUIRED</glossterm>.</para>
+              ><code>id</code></olink> attribute is REQUIRED.</para>
         </listitem>
         <listitem>
           <para>The <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
               targetptr="itsm_annotatorsRef"><code>its:annotatorsRef</code></olink> attribute is
-              <glossterm>REQUIRED</glossterm>.</para>
+            REQUIRED.</para>
         </listitem>
 
         <listitem>
           <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-              ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-              <code>its:generic</code>.</para>
+              ><code>type</code></olink> attribute is OPTIONAL and set to
+            <code>its:generic</code>.</para>
 
         </listitem>
 
 
         <listitem>
           <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-                ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+                ><code>translate</code></olink> attribute is OPTIONAL.</para>
         </listitem>
       </itemizedlist>
 
@@ -281,8 +263,7 @@
     <para>The following <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data
       categories are fully specified within this module:</para>
     <itemizedlist>
-      <!-- moved to non-metadata section
-      <listitem><para><olink targetdoc="Elements_Within_Text.xml" targetptr="Elements_Within_Text">Elements Within Text</olink></para></listitem>-->
+
       <listitem>
         <para><olink targetdoc="Allowed_Characters.xml" targetptr="Allowed_Characters">Allowed
             Characters</olink></para>

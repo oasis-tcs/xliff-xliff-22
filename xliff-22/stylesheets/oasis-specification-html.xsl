@@ -269,17 +269,17 @@
       </dt>
     </dl>
     <xsl:call-template name="spec-uri-group">
-      <xsl:with-param name="header">This version:</xsl:with-param>
+      <xsl:with-param name="header">This stage:</xsl:with-param>
       <xsl:with-param name="uris" 
            select="$locations[starts-with(@role,'OASIS-specification-this')]"/>
     </xsl:call-template>
     <xsl:call-template name="spec-uri-group">
-      <xsl:with-param name="header">Previous version:</xsl:with-param>
+      <xsl:with-param name="header">Previous stage:</xsl:with-param>
       <xsl:with-param name="uris" 
        select="$locations[starts-with(@role,'OASIS-specification-previous')]"/>
     </xsl:call-template>
     <xsl:call-template name="spec-uri-group">
-      <xsl:with-param name="header">Latest version:</xsl:with-param>
+      <xsl:with-param name="header">Latest stage:</xsl:with-param>
       <xsl:with-param name="uris" 
          select="$locations[starts-with(@role,'OASIS-specification-latest')]"/>
     </xsl:call-template>
@@ -846,7 +846,7 @@
 
     <l:context name="title-numbered">
       <l:template name="appendix" text="Appendix&separator;%n&separator;%t"/>
-      <l:template name="article/appendix" text="%n&separator;%t"/>
+      <l:template name="article/appendix" text="%n.&separator;%t"/>
       <l:template name="bridgehead" text="%n&separator;%t"/>
       <l:template name="chapter" text="Chapter&separator;%n&separator;%t"/>
       <l:template name="sect1" text="%n&separator;%t"/>

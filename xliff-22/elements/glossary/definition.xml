@@ -19,9 +19,9 @@
   </para>
   <simplelist>
     <member>
-      - <olink targetdoc="../../attributes/glossary/gls_source.xml" targetptr="gls_source"><code>source</code></olink>, <glossterm>OPTIONAL</glossterm>
+      - <olink targetdoc="../../attributes/glossary/gls_source.xml" targetptr="gls_source"><code>source</code></olink>, OPTIONAL
     </member>
-    <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
+    <member>- attributes from other namespaces, OPTIONAL</member>
   </simplelist>
 
 </section>

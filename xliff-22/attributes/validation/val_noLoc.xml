@@ -15,13 +15,17 @@
 
   <para><emphasis>Default value:</emphasis> none</para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;rule></code></olink></para>
-  
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"
+      ><code>&lt;rule></code></olink></para>
+
   <itemizedlist>
     <title>Processing Requirements</title>
-    <listitem><para>The target text <glossterm>MUST</glossterm> contain the string specified by the value of <olink
+    <listitem>
+      <para>The target text MUST contain the string specified by the value of <olink
           targetdoc="../../attributes/validation/val_noLoc.xml" targetptr="val_noLoc"
-            ><code>noLoc</code></olink>.</para></listitem>
+            ><code>noLoc</code></olink>.</para>
+    </listitem>
   </itemizedlist>
-  
+
 </section>

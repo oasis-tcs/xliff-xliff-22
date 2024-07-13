@@ -7,7 +7,7 @@
 <!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
 %xinclude;
 ]>
-<appendix role="informative" id="acknowledgements">
+<appendix id="acknowledgements">
     <title>Acknowledgements</title>
     <para>The following individuals have participated in the creation of this specification and are
         gratefully acknowledged:</para>

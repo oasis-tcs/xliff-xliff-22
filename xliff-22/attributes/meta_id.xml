@@ -10,34 +10,30 @@
 
   <para>Identifier - a character string used to identify a <olink
       targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
-        ><code>&lt;metadata></code></olink> or <olink
-      targetdoc="../elements/metadata/metagroup.xml" targetptr="metagroup"
-        ><code>&lt;metaGroup></code></olink> element.</para>
+      ><code>&lt;metadata></code></olink> or <olink targetdoc="../elements/metadata/metagroup.xml"
+      targetptr="metagroup"><code>&lt;metaGroup></code></olink> element.</para>
 
   <para><emphasis>Value description:</emphasis> NMTOKEN</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis> <olink
-    targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
-    ><code>&lt;metadata></code></olink> and <olink
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
+        ><code>&lt;metadata></code></olink> and <olink
       targetdoc="../elements/metadata/metagroup.xml" targetptr="metagroup"
-      ><code>&lt;metaGroup></code></olink></para>
-<itemizedlist>
-  <title>Constraints</title>
-  <listitem>
-    <para>The values of <link linkend="meta_id"><code>id</code></link> attributes <glossterm>MUST</glossterm> be unique among all <olink
-      targetdoc="../elements/metadata/metagroup.xml" targetptr="metagroup"
-      ><code>&lt;metaGroup></code></olink> 
-      and <olink
-        targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
-        ><code>&lt;metadata></code></olink> elements within the given enclosing 
-      <olink
-        targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
-        ><code>&lt;metadata></code></olink> element.
-    </para>
-  </listitem>
-</itemizedlist>  
+        ><code>&lt;metaGroup></code></olink></para>
+  <itemizedlist>
+    <title>Constraints</title>
+    <listitem>
+      <para>The values of <link linkend="meta_id"><code>id</code></link> attributes MUST be unique
+        among all <olink targetdoc="../elements/metadata/metagroup.xml" targetptr="metagroup"
+            ><code>&lt;metaGroup></code></olink> and <olink
+          targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
+            ><code>&lt;metadata></code></olink> elements within the given enclosing <olink
+          targetdoc="../elements/metadata/metadata.xml" targetptr="metadata"
+            ><code>&lt;metadata></code></olink> element. </para>
+    </listitem>
+  </itemizedlist>
 
 
 </section>

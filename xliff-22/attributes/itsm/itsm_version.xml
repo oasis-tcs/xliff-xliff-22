@@ -27,7 +27,7 @@
         </listitem>
         
         <listitem>
-            <para>When used in any other admissible <firstterm>XLIFF Core</firstterm> structural element (<olink targetdoc="../../elements/structural/file.xml"
+            <para>When used in any other admissible XLIFF Core structural element (<olink targetdoc="../../elements/structural/file.xml"
                 targetptr="file"><code>&lt;file&gt;</code></olink>, <olink targetdoc="../../elements/structural/group.xml"
                 targetptr="group"><code>&lt;group></code></olink> or <olink targetdoc="../../elements/structural/unit.xml"
                     targetptr="unit"><code>&lt;unit></code></olink>):</para>

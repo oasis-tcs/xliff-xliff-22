@@ -10,8 +10,8 @@
 
     <para>State - indicates the state of the translation of a segment.</para>
 
-    <para><emphasis>Value description:</emphasis> The value <glossterm>MUST</glossterm> be set to
-        one of the following values:</para>
+    <para><emphasis>Value description:</emphasis> The value MUST be set to one of the following
+        values:</para>
 
     <simplelist>
         <member><code>initial</code> - indicates the segment is in its initial state.</member>
@@ -39,27 +39,25 @@
         <listitem>
             <para>When the optional <link linkend="state"><code>state</code></link> attribute is
                 added to a <olink targetdoc="../elements/structural/segment.xml" targetptr="segment"
-                        ><code>&lt;segment></code></olink> element, its value
-                    <glossterm>MUST</glossterm> be set to <code>initial</code> if the element
-                doesn't have a <olink targetdoc="../elements/structural/target.xml"
-                    targetptr="target"><code>&lt;target></code></olink> child. All valid values
-                    <glossterm>MAY</glossterm> be used when a <olink
+                        ><code>&lt;segment></code></olink> element, its value MUST be set to
+                    <code>initial</code> if the element doesn't have a <olink
                     targetdoc="../elements/structural/target.xml" targetptr="target"
+                        ><code>&lt;target></code></olink> child. All valid values MAY be used when a
+                    <olink targetdoc="../elements/structural/target.xml" targetptr="target"
                         ><code>&lt;target></code></olink> child is present. </para>
         </listitem>
         <listitem>
-            <para><firstterm>Writers</firstterm> updating the attribute <link linkend="state"
-                        ><code>state</code></link>
-                <glossterm>MUST</glossterm> also update or delete <olink targetdoc="subState.xml"
-                    targetptr="substate"><code>subState</code></olink>.</para>
+            <para>Writers updating the attribute <link linkend="state"><code>state</code></link>
+                MUST also update or delete <olink targetdoc="subState.xml" targetptr="substate"
+                        ><code>subState</code></olink>.</para>
         </listitem>
     </itemizedlist>
 
     <note>
-        <para><link linkend="state"><code>state</code></link> is an <glossterm>OPTIONAL</glossterm>
-            attribute of segments with a default value and segmentation can change as the XLIFF
-            roundtrip progresses, hence implementers don't have to make explicit use of the
-            attribute. However setting of the attribute is advantageous if a workflow needs to make
-            use of Advanced Validation methods.</para>
+        <para><link linkend="state"><code>state</code></link> is an OPTIONAL attribute of segments
+            with a default value and segmentation can change as the XLIFF roundtrip progresses,
+            hence implementers don't have to make explicit use of the attribute. However setting of
+            the attribute is advantageous if a workflow needs to make use of Advanced Validation
+            methods.</para>
     </note>
 </section>

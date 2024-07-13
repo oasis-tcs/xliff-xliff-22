@@ -10,8 +10,7 @@
   <title>ITS data categories that have a partial overlap with XLIFF features</title>
 
   <para>The following <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> data
-    categories are partially covered with <firstterm>XLIFF Core</firstterm> or
-      <firstterm>Modules</firstterm> other than the <olink
+    categories are partially covered with XLIFF Core or Modules other than the <olink
       targetdoc="../modules/its/specification.xml" targetptr="ITS-module">ITS Module</olink>:</para>
 
   <orderedlist>
@@ -66,15 +65,15 @@
       <listitem>
         <para>The <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
           <ulink url="https://www.w3.org/TR/its20/#storagesize">Storage Size data category</ulink>
-          <glossterm>MAY</glossterm> be expressed as an Extended profile within the <olink
+          MAY be expressed as an Extended profile within the <olink
             targetdoc="../size_restriction/specification.xml" targetptr="size_restriction_module"
-            >Size and Length Restriction Module</olink>. No other parts of XLIFF
-            <glossterm>MUST</glossterm> be extended to support this data category.</para>
+            >Size and Length Restriction Module</olink>. No other parts of XLIFF MUST be extended to
+          support this data category.</para>
       </listitem>
     </itemizedlist>
     <note>
-      <para>An <firstterm>XLIFF-defined</firstterm> common profile could be made part of this module
-        in a future version of XLIFF.</para>
+      <para>An XLIFF-defined common profile could be made part of this module in a future version of
+        XLIFF.</para>
     </note>
   </section>
 

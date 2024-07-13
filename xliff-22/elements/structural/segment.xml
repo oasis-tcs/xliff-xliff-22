@@ -26,28 +26,18 @@
   <para><emphasis>Attributes:</emphasis></para>
 
   <simplelist>
-    <!-- This flag got killed in the August 20 2013 meeting <member>- <olink targetdoc="../../attributes/approved.xml"
-      targetptr="approved"><code>approved</code></olink>, <glossterm>REQUIRED</glossterm></member>-->
-
     <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>,
-        <glossterm>OPTIONAL</glossterm></member>
+      OPTIONAL</member>
 
     <member>- <olink targetdoc="../../attributes/canResegment.xml" targetptr="canResegment"
-          ><code>canResegment</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-    <!-- translate was killed on segment to simplify translatability state algorithm and to simplify re-segmentation PRs,
-      the expressivity is the same due to inline markers
-    <member>- <olink targetdoc="../../attributes/translate.xml"
-    targetptr="translate"><code>translate</code></olink>, <glossterm>OPTIONAL</glossterm></member>-->
-
-
+          ><code>canResegment</code></olink>, OPTIONAL</member>
     <member>- <olink targetdoc="../../attributes/state.xml" targetptr="state"
-        ><code>state</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-
+        ><code>state</code></olink>, OPTIONAL</member>
     <member>- <olink targetdoc="../../attributes/subState.xml" targetptr="substate"
-          ><code>subState</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+          ><code>subState</code></olink>, OPTIONAL</member>
 
-    <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:pgs:1.0</code>,
-        <glossterm>OPTIONAL</glossterm>, provided that the Constraints specified in the <olink
+    <member>- attributes from the namespace <code>urn:oasis:names:tc:xliff:pgs:1.0</code>, OPTIONAL,
+      provided that the Constraints specified in the <olink
         targetdoc="../../modules/plural_gender_select/specification.xml"
         targetptr="plural_gender_select_module">Plural, Gender, and Select Module</olink> are
       met.</member>

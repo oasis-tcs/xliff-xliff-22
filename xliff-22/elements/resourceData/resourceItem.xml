@@ -6,40 +6,52 @@
                          <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED" >
                          ]>
 <section id="res_resourceItem">
-    <title>resourceItem</title>
-    <para>Container for specific resource data that is either intended for
-      modification, or to be used as contextual reference during
-      translation.</para>
-    <para><emphasis>Contains:</emphasis></para>
-    <para>At least one of the following</para>
-    <simplelist>
-      <member>- Zero or one <olink targetdoc="../../elements/structural/notes.xml" targetptr="notes"><code>&lt;notes></code></olink> element followed by</member>
-      <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink> element followed by</member>
-      <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"><code>&lt;target></code></olink> element followed by</member>
-      <member>- Zero, one or more <olink targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"><code>&lt;reference></code></olink> elements</member>
-    </simplelist>
-    <para><emphasis>Attributes:</emphasis></para>
-    <simplelist>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id"><code>id</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-      <member>- <olink targetdoc="../../attributes/resourceData/res_context.xml" targetptr="res_context"><code>context</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-       <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
+  <title>resourceItem</title>
+  <para>Container for specific resource data that is either intended for modification, or to be used
+    as contextual reference during translation.</para>
+  <para><emphasis>Contains:</emphasis></para>
+  <para>At least one of the following</para>
+  <simplelist>
+    <member>- Zero or one <olink targetdoc="../../elements/structural/notes.xml" targetptr="notes"
+          ><code>&lt;notes></code></olink> element followed by</member>
+    <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_source.xml"
+        targetptr="res_source"><code>&lt;source></code></olink> element followed by</member>
+    <member>- Zero or one <olink targetdoc="../../elements/resourceData/res_target.xml"
+        targetptr="res_target"><code>&lt;target></code></olink> element followed by</member>
+    <member>- Zero, one or more <olink targetdoc="../../elements/resourceData/reference.xml"
+        targetptr="res_reference"><code>&lt;reference></code></olink> elements</member>
+  </simplelist>
+  <para><emphasis>Attributes:</emphasis></para>
+  <simplelist>
+    <member>- <olink targetdoc="../../attributes/resourceData/res_mimeType.xml"
+        targetptr="res_mimeType"><code>mimeType</code></olink>, OPTIONAL</member>
+    <member>- <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id"
+          ><code>id</code></olink>, OPTIONAL</member>
+    <member>- <olink targetdoc="../../attributes/resourceData/res_context.xml"
+        targetptr="res_context"><code>context</code></olink>, OPTIONAL</member>
+    <member>- attributes from other namespaces, OPTIONAL</member>
 
-    </simplelist>
+  </simplelist>
   <itemizedlist>
     <title>Constraints</title>
-    <listitem><para>The <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"
-            ><code>mimeType</code></olink> attribute is <glossterm>REQUIRED</glossterm> if <olink
+    <listitem>
+      <para>The <olink targetdoc="../../attributes/resourceData/res_mimeType.xml"
+          targetptr="res_mimeType"><code>mimeType</code></olink> attribute is REQUIRED if <olink
           targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
             ><code>&lt;target></code></olink> and <olink
           targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"
             ><code>&lt;source></code></olink> child elements are empty, otherwise it is
-          <glossterm>OPTIONAL</glossterm>.</para></listitem>
+        OPTIONAL.</para>
+    </listitem>
     <listitem>
-      <para>The value of the <glossterm>OPTIONAL</glossterm> <olink targetdoc="../../attributes/resourceData/res_id.xml" targetptr="res_id">id</olink> attribute
-        <glossterm>MUST</glossterm> be unique among all <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink>
-        and <olink targetdoc="../../elements/resourceData/resourceItemRef.xml" targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink>
-        elements of the enclosing <olink targetdoc="../../elements/resourceData/resourceData.xml" targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
+      <para>The value of the OPTIONAL <olink targetdoc="../../attributes/resourceData/res_id.xml"
+          targetptr="res_id">id</olink> attribute MUST be unique among all <olink
+          targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
+            ><code>&lt;resourceItem></code></olink> and <olink
+          targetdoc="../../elements/resourceData/resourceItemRef.xml"
+          targetptr="res_resourceItemRef"><code>&lt;resourceItemRef></code></olink> elements of the
+        enclosing <olink targetdoc="../../elements/resourceData/resourceData.xml"
+          targetptr="res_resourceData"><code>&lt;resourceData></code></olink> element.</para>
     </listitem>
   </itemizedlist>
 
@@ -47,39 +59,45 @@
     <title>Processing Requirements</title>
 
     <listitem>
-      <para>If a <firstterm>Modifier</firstterm> does not understand how to process the <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink> attribute, or the file it references, the <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> element <glossterm>MAY</glossterm>
-        be ignored, but still <glossterm>MUST</glossterm> be preserved.</para>
+      <para>If a Modifier does not understand how to process the <olink
+          targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"
+            ><code>mimeType</code></olink> attribute, or the file it references, the <olink
+          targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
+            ><code>&lt;resourceItem></code></olink> element MAY be ignored, but still MUST be
+        preserved.</para>
     </listitem>
 
     <listitem>
-      <para>The <olink targetdoc="../../attributes/resourceData/res_mimeType.xml" targetptr="res_mimeType"><code>mimeType</code></olink> attribute <glossterm>SHOULD</glossterm> only be modified or removed if the referenced files are modified or removed.</para>
+      <para>The <olink targetdoc="../../attributes/resourceData/res_mimeType.xml"
+          targetptr="res_mimeType"><code>mimeType</code></olink> attribute SHOULD only be modified
+        or removed if the referenced files are modified or removed.</para>
     </listitem>
 
     <listitem>
-      <para>For each instance of <olink targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> containing only <olink targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"><code>&lt;source></code></olink>:</para>
+      <para>For each instance of <olink targetdoc="../../elements/resourceData/resourceItem.xml"
+          targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> containing only <olink
+          targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"
+            ><code>&lt;source></code></olink>:</para>
 
-        <itemizedlist>
-          <listitem>
-            <para><firstterm>Modifiers</firstterm>
-            <glossterm>MAY</glossterm> leave <olink
-              targetdoc="../../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
-                ><code>&lt;resourceItem></code></olink> unchanged, i.e. they are not <glossterm>REQUIRED</glossterm> to
-            create <olink targetdoc="../../elements/resourceData/res_target.xml"
-              targetptr="res_target"><code>&lt;target></code></olink> or <olink
-              targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"
-                ><code>&lt;reference></code></olink>.</para>
-          </listitem>
-          <listitem>
-            <para><firstterm>Modifiers</firstterm>
-            <glossterm>MAY</glossterm> create <olink
+      <itemizedlist>
+        <listitem>
+          <para>Modifiers MAY leave <olink targetdoc="../../elements/resourceData/resourceItem.xml"
+              targetptr="res_resourceItem"><code>&lt;resourceItem></code></olink> unchanged, i.e.
+            they are not REQUIRED to create <olink
               targetdoc="../../elements/resourceData/res_target.xml" targetptr="res_target"
                 ><code>&lt;target></code></olink> or <olink
+              targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"
+                ><code>&lt;reference></code></olink>.</para>
+        </listitem>
+        <listitem>
+          <para>Modifiers MAY create <olink targetdoc="../../elements/resourceData/res_target.xml"
+              targetptr="res_target"><code>&lt;target></code></olink> or <olink
               targetdoc="../../elements/resourceData/reference.xml" targetptr="res_reference"
                 ><code>&lt;reference></code></olink> as a siblings of <olink
               targetdoc="../../elements/resourceData/res_source.xml" targetptr="res_source"
                 ><code>&lt;source></code></olink>.</para>
-          </listitem>
-        </itemizedlist>
+        </listitem>
+      </itemizedlist>
 
     </listitem>
 

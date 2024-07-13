@@ -15,50 +15,45 @@
   <para>This section describes how the <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale
       Filter</ulink> information can be represented inline in XLIFF documents if necessary. However,
     it is preferable that this data category is fully consumed by extraction/merge behavior as
-      <glossterm>RECOMMENDED</glossterm> in the section on <olink targetdoc="ITSnonMetadata.xml"
+    RECOMMENDED in the section on <olink targetdoc="ITSnonMetadata.xml"
       targetptr="its-locale-filter">ITS data categories that are not explicitly represented</olink>
     in XLIFF documents.</para>
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Writers</firstterm>
-        <glossterm>MUST</glossterm> use the <olink targetdoc="specification.xml"
+      <para>Writers MUST use the <olink targetdoc="specification.xml"
           targetptr="localeFilterAnnotation">ITS Locale Filter Annotation</olink> to express the
           <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> data category in
         XLIFF documents that don't have set the target locale.</para>
     </listitem>
     <listitem>
-      <para><firstterm>Writers</firstterm>
-        <glossterm>MUST</glossterm> use the <firstterm>XLIFF Core</firstterm>
-        <olink targetdoc="../../inline/inline.xml" targetptr="translateAnnotation">Translate
-          Annotation</olink> to express the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
-          >[ITS]</olink>
+      <para>Writers MUST use the XLIFF Core <olink targetdoc="../../inline/inline.xml"
+          targetptr="translateAnnotation">Translate Annotation</olink> to express the <olink
+          targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> data category in
         XLIFF documentswith the target locale set.
         <!-- Explained in the next sentence.. COMMENT: re-word this so that structural elements
         are also covered.--></para>
     </listitem>
     <listitem>
-      <para><firstterm>Modifiers</firstterm>
-        <glossterm>MUST</glossterm> remove the <olink targetdoc="specification.xml"
+      <para>Modifiers MUST remove the <olink targetdoc="specification.xml"
           targetptr="localeFilterAnnotation">ITS Locale Filter Annotation</olink> and replace it
-        with the <firstterm>XLIFF Core</firstterm>
-        <olink targetdoc="../inline/inline.xml" targetptr="translateAnnotation">Translate
-          Annotation</olink> when setting the <olink targetdoc="../../attributes/trgLang.xml"
-          targetptr="trgLang"><code>trgLang</code></olink> or when receiving an <firstterm>XLIFF
-          Documents</firstterm> with <olink targetdoc="../../attributes/trgLang.xml"
+        with the XLIFF Core <olink targetdoc="../inline/inline.xml" targetptr="translateAnnotation"
+          >Translate Annotation</olink> when setting the <olink
+          targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>
+        or when receiving an XLIFF Documents with <olink targetdoc="../../attributes/trgLang.xml"
           targetptr="trgLang"><code>trgLang</code></olink> set.</para>
     </listitem>
   </itemizedlist>
   <para><warning>
-      <para>Core only <firstterm>Modifiers</firstterm> might have invalidated the <olink
-          targetdoc="specification.xml" targetptr="localeFilterAnnotation">ITS Locale Filter
-          Annotation</olink> by setting the <olink targetdoc="../../attributes/trgLang.xml"
-          targetptr="trgLang"><code>trgLang</code></olink>. Although, this is addressed by the above
-        PR, <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
+      <para>Core only Modifiers might have invalidated the <olink targetdoc="specification.xml"
+          targetptr="localeFilterAnnotation">ITS Locale Filter Annotation</olink> by setting the
+          <olink targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"
+          ><code>trgLang</code></olink>. Although, this is addressed by the above PR, <olink
+          targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="https://www.w3.org/TR/its20/#LocaleFilter">Locale Filter</ulink> capable
-          <firstterm>Modifiers</firstterm> are strongly advised to better set the <olink
+        Modifiers are strongly advised to better set the <olink
           targetdoc="../../attributes/trgLang.xml" targetptr="trgLang"><code>trgLang</code></olink>
         as soon as known and perform the above specified annotations' transformation rather than to
         assume that other tools downstream will be capable of interpreting the <olink
@@ -79,15 +74,11 @@
     on structural and inline elements.</para>
 
 
-
-
-
-
   <section id="Locale_Filter_Structural">
     <title>Structural Elements</title>
-    <para>When the target locale in XLIFF is undefined, the locale filter data category
-        <glossterm>MAY</glossterm> be extracted using the <link linkend="localeFilterAnnotation">ITS
-        Locale Filter Annotation</link>.</para>
+    <para>When the target locale in XLIFF is undefined, the locale filter data category MAY be
+      extracted using the <link linkend="localeFilterAnnotation">ITS Locale Filter
+      Annotation</link>.</para>
 
 
     <example>
@@ -211,26 +202,24 @@
       <listitem>
         <para>The <olink targetdoc="../../attributes/localeFilterList.xml"
             targetptr="itsm_localeFilterList"><code>localeFilterList</code></olink> attribute is
-            <glossterm>REQUIRED</glossterm> and used to map to and from the <olink
-            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
-            <code>localeFilterList</code> attribute.</para>
+          REQUIRED and used to map to and from the <olink targetdoc="../xliff22.xml"
+            targetptr="ITS20">[ITS]</olink> defined <code>localeFilterList</code> attribute.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-            <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is OPTIONAL and set to
+          <code>its:generic</code>.</para>
 
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_localeFilterType.xml"
             targetptr="itsm_localeFilterType"><code>its:localeFilterType</code></olink> attribute is
-            <glossterm>OPTIONAL</glossterm> and used to map to and from the <olink
-            targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
-            <code>localeFilterList</code> attribute.</para>
+          OPTIONAL and used to map to and from the <olink targetdoc="../xliff22.xml"
+            targetptr="ITS20">[ITS]</olink> defined <code>localeFilterList</code> attribute.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is OPTIONAL.</para>
       </listitem>
     </itemizedlist>
 

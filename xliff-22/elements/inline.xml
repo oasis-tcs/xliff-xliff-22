@@ -8,7 +8,7 @@
 <section id="inlineelements">
   <title>Inline Elements</title>
 
-    <para>The <firstterm>XLIFF Core</firstterm> inline elements at the <olink targetdoc="structural/source.xml" targetptr="source"
+    <para>The XLIFF Core inline elements at the <olink targetdoc="structural/source.xml" targetptr="source"
         ><code>&lt;source&gt;</code></olink> or <olink targetdoc="structural/target.xml"
       targetptr="target"><code>&lt;target&gt;</code></olink> level are: <olink
       targetdoc="inline/cp.xml" targetptr="cp"><code>&lt;cp&gt;</code></olink>, <olink

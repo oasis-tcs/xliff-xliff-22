@@ -84,12 +84,10 @@
       </listitem>
    </orderedlist>
    <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
-      practical workings of the <firstterm>XLIFF Core</firstterm> hasn't been affected and none of
-      the changes have affected the core namespace
-         <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code> or the <firstterm>XLIFF
-         Core</firstterm>
-      <olink targetdoc="../xliff22.xml" targetptr="XMLSchema">[XML Schema]</olink>, <ulink
-         url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
+      practical workings of the XLIFF Core hasn't been affected and none of the changes have
+      affected the core namespace <code>"urn:oasis:names:tc:xliff:document:&bschversion;"</code> or
+      the XLIFF Core <olink targetdoc="../xliff22.xml" targetptr="XMLSchema">[XML Schema]</olink>,
+         <ulink url="&this-loc;/schemas/xliff_core_&bschversion;.xsd"
          >&this-loc;/schemas/xliff_core_&bschversion;.xsd</ulink> that expresses its basic grammar
       and structure. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes
       introduced in version 2.2 are designed to preserve compatibility with versions 2.0 and

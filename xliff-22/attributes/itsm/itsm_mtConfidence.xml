@@ -7,69 +7,75 @@
                          ]>
 <section id="itsm_mtConfidence">
     <title>mtConfidence</title>
-    
+
     <para>Machine Translation Confidence - the <code>mtConfidence</code> attribute is the <olink
             targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
             <code>mtConfidence</code> attribute.</para>
-    
-    
+
+
     <para><emphasis>Value description:</emphasis> Floating point number between 0 and 1.</para>
     <para>The number represents the self reported confidence of the application or service providing
-        the <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> metadata, the higher the better.</para>
-    
+        the <ulink url="http://www.w3.org/TR/its20/#mtconfidence">MT Confidence</ulink> metadata,
+        the higher the better.</para>
+
     <para><emphasis>Default value:</emphasis> undefined</para>
-    
-    
-    
+
+
+
     <para><emphasis>Used in:</emphasis>
         <olink targetdoc="../../elements/inline/mrk.xml" targetptr="mrk"
-            ><code>&lt;mrk></code></olink>, and
-        <olink targetdoc="../../elements/inline/sm.xml"
+            ><code>&lt;mrk></code></olink>, and <olink targetdoc="../../elements/inline/sm.xml"
             targetptr="sm"><code>&lt;sm></code></olink>.</para>
-    
+
     <itemizedlist>
         <title>Constraints</title>
-        <listitem><para>When the attribute <link linkend="itsm_mtConfidence"><code>mtConfidence</code></link> is
-                set, the element where it is set <glossterm>MUST</glossterm> be in the scope of an
-                    <olink targetdoc="itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"
-                        ><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
-                            >Data category
-                            identifier</ulink> part of exactly one list value equal to the string
-                    <code>mt-confidence</code>.</para></listitem>
+        <listitem>
+            <para>When the attribute <link linkend="itsm_mtConfidence"
+                    ><code>mtConfidence</code></link> is set, the element where it is set MUST be in
+                the scope of an <olink targetdoc="itsm_annotatorsRef.xml"
+                    targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with
+                the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink
+                    url="https://www.w3.org/TR/its20/#datacategories-overview">Data category
+                    identifier</ulink> part of exactly one list value equal to the string
+                    <code>mt-confidence</code>.</para>
+        </listitem>
     </itemizedlist>
-    <para>See the <olink targetdoc="../../modules/itsm/MT_Confidence.xml" targetptr="MTConfidenceAnnotation">ITS MT Confidence Annotation</olink> for the full normative usage description of this attribute. Other advanced Constraints follow from that normative usage description.</para>
+    <para>See the <olink targetdoc="../../modules/itsm/MT_Confidence.xml"
+            targetptr="MTConfidenceAnnotation">ITS MT Confidence Annotation</olink> for the full
+        normative usage description of this attribute. Other advanced Constraints follow from that
+        normative usage description.</para>
     <itemizedlist>
         <title>Processing Requirements</title>
         <listitem>
-            <para><firstterm>Writers</firstterm>
-                <glossterm>MUST</glossterm> use the <olink
-                    targetdoc="../candidates/matchQuality.xml" targetptr="matchQuality"
-                        ><code>mtc:matchQuality</code></olink> attribute to express the <link
-                    linkend="itsm_mtConfidence"><code>MTConfidence</code></link> attribute on an
-                    <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"
-                        ><code>&lt;mtc:match></code></olink> element.</para>
+            <para>Writers MUST use the <olink targetdoc="../candidates/matchQuality.xml"
+                    targetptr="matchQuality"><code>mtc:matchQuality</code></olink> attribute to
+                express the <link linkend="itsm_mtConfidence"><code>MTConfidence</code></link>
+                attribute on an <olink targetdoc="../../elements/candidates/match.xml"
+                    targetptr="match"><code>&lt;mtc:match></code></olink> element.</para>
             <itemizedlist>
                 <listitem>
-                    <para>The floating point number between 0 and 1 <glossterm>MUST</glossterm> be expressed as
-                        a decimal number between 0.0 and 100.0 [%].</para>
+                    <para>The floating point number between 0 and 1 MUST be expressed as a decimal
+                        number between 0.0 and 100.0 [%].</para>
                 </listitem>
                 <listitem>
-                    <para>The <olink
-                        targetdoc="../candidates/matchQuality.xml" targetptr="matchQuality"
-                        ><code>mtc:matchQuality</code></olink> attribute  used by the <firstterm>Writer</firstterm> to express the <link
-                            linkend="itsm_mtConfidence"><code>MTConfidence</code></link> attribute <glossterm>MUST</glossterm> be in scope of an <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml" targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
-                                >Data category
-                                identifier</ulink> part of exactly one list value equal to the string
-                        <code>mt-confidence</code>.</para>
+                    <para>The <olink targetdoc="../candidates/matchQuality.xml"
+                            targetptr="matchQuality"><code>mtc:matchQuality</code></olink> attribute
+                        used by the Writer to express the <link linkend="itsm_mtConfidence"
+                                ><code>MTConfidence</code></link> attribute MUST be in scope of an
+                            <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
+                            targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink>
+                        attribute with the <olink targetdoc="../../xliff22.xml" targetptr="ITS20"
+                            >[ITS]</olink><ulink
+                            url="https://www.w3.org/TR/its20/#datacategories-overview">Data category
+                            identifier</ulink> part of exactly one list value equal to the string
+                            <code>mt-confidence</code>.</para>
                 </listitem>
             </itemizedlist>
         </listitem>
         <listitem>
-            <para><firstterm>Modifiers</firstterm>
-                <glossterm>MAY</glossterm> use this <link linkend="itsm_mtConfidence"
-                        ><code>MTConfidence</code></link> attribute, when populating the
-                    <firstterm>XLIFF Core</firstterm>
-                <olink targetdoc="../../structural/target.xml" targetptr="target"
+            <para>Modifiers MAY use this <link linkend="itsm_mtConfidence"
+                    ><code>MTConfidence</code></link> attribute, when populating the XLIFF Core
+                    <olink targetdoc="../../structural/target.xml" targetptr="target"
                         ><code>&lt;target></code></olink> elements with exact unmodified MT matches
                 from <olink targetdoc="../../elements/candidates/match.xml" targetptr="match"
                         ><code>&lt;mtc:match></code></olink> elements with the <olink
@@ -77,17 +83,17 @@
                         ><code>mtc:matchQuality</code></olink> attribute set and in scope of an
                     <olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
                     targetptr="itsm_annotatorsRef"><code>annotatorsRef</code></olink> attribute with
-                the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink url="https://www.w3.org/TR/its20/#datacategories-overview"
-                    >Data category
+                the <olink targetdoc="../../xliff22.xml" targetptr="ITS20">[ITS]</olink><ulink
+                    url="https://www.w3.org/TR/its20/#datacategories-overview">Data category
                     identifier</ulink> part of exactly one list value equal to the string
                     <code>mt-confidence</code>.</para>
             <itemizedlist>
                 <listitem>
-                    <para>The decimal number between 0.0 and 100.0 [%] <glossterm>MUST</glossterm> be expressed as
-                        a floating point number between 0 and 1.</para>
+                    <para>The decimal number between 0.0 and 100.0 [%] MUST be expressed as a
+                        floating point number between 0 and 1.</para>
                 </listitem>
             </itemizedlist>
         </listitem>
     </itemizedlist>
-    
+
 </section>

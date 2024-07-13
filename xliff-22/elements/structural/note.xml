@@ -13,7 +13,8 @@
                 ><code>&lt;target></code></olink>, <olink targetdoc="unit.xml" targetptr="unit"
                 ><code>&lt;unit></code></olink>, <olink targetdoc="group.xml" targetptr="group"
                 ><code>&lt;group></code></olink>, <olink targetdoc="file.xml" targetptr="file"
-                ><code>&lt;file></code></olink> or <olink targetdoc="xliff.xml" targetptr="xliff"><code>&lt;xliff></code></olink> elements.</para>
+                ><code>&lt;file></code></olink> or <olink targetdoc="xliff.xml" targetptr="xliff"
+                ><code>&lt;xliff></code></olink> elements.</para>
     <para><emphasis>Contains:</emphasis></para>
     <simplelist>
         <member>- Text</member>
@@ -21,16 +22,16 @@
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
         <member>- <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>,
-                <glossterm>OPTIONAL</glossterm></member>
+            OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/appliesto.xml" targetptr="appliesto"
-                    ><code>appliesTo</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>appliesTo</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/category.xml" targetptr="category"
-                    ><code>category</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>category</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/priority.xml" targetptr="priority"
-                    ><code>priority</code></olink>, <glossterm>OPTIONAL</glossterm></member>
+                    ><code>priority</code></olink>, OPTIONAL</member>
         <member>- <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
-                ><code>ref</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-        <member>- attributes from other namespaces, <glossterm>OPTIONAL</glossterm></member>
+                ><code>ref</code></olink>, OPTIONAL</member>
+        <member>- attributes from other namespaces, OPTIONAL</member>
     </simplelist>
 
     <para><emphasis>Example:</emphasis></para>
@@ -45,21 +46,6 @@
   &lt;/segment>
 &lt;/unit>        
     </programlisting>
-    <!--
-    <itemizedlist>
-        <title>Constraints</title>
-        <listitem>
-            <para>The following <firstterm>XLIFF Module</firstterm> attributes are explicitly
-                allowed by the wildcard <code>other</code>:</para>
-            <simplelist>
-                <member>- <olink targetdoc="../../attributes/fs.xml" targetptr="fs"
-                            ><code>fs:fs</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-                <member>- <olink targetdoc="../../attributes/subFs.xml" targetptr="subFs"
-                            ><code>fs:subFs</code></olink>, <glossterm>OPTIONAL</glossterm></member>
-            </simplelist>
-        </listitem>
-    </itemizedlist>
-    -->
     <note>
         <para>When the <olink targetdoc="../../attributes/ref.xml" targetptr="ref"
                 ><code>ref</code></olink> attribute points to a <olink
@@ -72,6 +58,7 @@
             to <code>target</code>.</para>
     </note>
     <note>
-        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints specified in the corresponding modules.</para>
+        <para>The use of attributes from XLIFF modules MUST be in accordance with the constraints
+            specified in the corresponding modules.</para>
     </note>
 </section>

@@ -8,18 +8,26 @@
 <section id="ctr_ref">
   <title>ref</title>
 
-  <para>Reference - Holds a reference to a single instance of an element that has
-    multiple instances within the enclosing element.</para>
+  <para>Reference - Holds a reference to a single instance of an element that has multiple instances
+    within the enclosing element.</para>
 
-  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff22.xml" targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para>
+  <para><emphasis>Value description:</emphasis> An <olink targetdoc="../../xliff22.xml"
+      targetptr="XMLSchema2">[XML Schema Datatypes]</olink> NMTOKEN</para>
 
   <para><emphasis>Default value:</emphasis> undefined</para>
 
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"><code>&lt;revisions></code></olink></para>
-  
-<itemizedlist>
-  <title>Constraints</title>
-  <listitem><para> The value of the <link linkend="ctr_ref"><code>ref</code></link> attribute <glossterm>MUST</glossterm> be the value of the <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink> attribute of a single instance of an element that is a multiple instance within the enclosing element.</para></listitem>
-</itemizedlist>
-  
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/change-tracking/revisions.xml" targetptr="revisions"
+        ><code>&lt;revisions></code></olink></para>
+
+  <itemizedlist>
+    <title>Constraints</title>
+    <listitem>
+      <para> The value of the <link linkend="ctr_ref"><code>ref</code></link> attribute MUST be the
+        value of the <olink targetdoc="../../attributes/id.xml" targetptr="id"
+          ><code>id</code></olink> attribute of a single instance of an element that is a multiple
+        instance within the enclosing element.</para>
+    </listitem>
+  </itemizedlist>
+
 </section>

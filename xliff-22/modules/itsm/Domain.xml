@@ -14,11 +14,9 @@
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Writers</firstterm>
-        <glossterm>MUST</glossterm> use the attribute <olink
-          targetdoc="../../attributes/itsm/itsm_domains.xml" targetptr="itsm_domains"
-            ><code>itsm:domains</code></olink> to express the <olink targetdoc="../xliff22.xml"
-          targetptr="ITS20">[ITS]</olink>
+      <para>Writers MUST use the attribute <olink targetdoc="../../attributes/itsm/itsm_domains.xml"
+          targetptr="itsm_domains"><code>itsm:domains</code></olink> to express the <olink
+          targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
         <ulink url="http://www.w3.org/TR/its20/#domain">Domain</ulink> data category in XLIFF
         documents.</para>
     </listitem>
@@ -103,25 +101,24 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>The <olink targetdoc="../../attributes/id.xml" targetptr="id"><code>id</code></olink>
-          attribute is <glossterm>REQUIRED</glossterm>.</para>
+          attribute is REQUIRED.</para>
       </listitem>
       <listitem>
         <para>The <olink targetdoc="../../attributes/itsm/itsm_domains.xml" targetptr="itsm_domains"
-              ><code>itsm:domains</code></olink> attribute is
-          <glossterm>REQUIRED</glossterm>.</para>
+              ><code>itsm:domains</code></olink> attribute is REQUIRED.</para>
       </listitem>
 
       <listitem>
         <para>The <olink targetdoc="../../attributes/type.xml" targetptr="type"
-            ><code>type</code></olink> attribute is <glossterm>OPTIONAL</glossterm> and set to
-            <code>its:generic</code>.</para>
+            ><code>type</code></olink> attribute is OPTIONAL and set to
+          <code>its:generic</code>.</para>
 
       </listitem>
 
 
       <listitem>
         <para>The <olink targetdoc="../../attributes/translate.xml" targetptr="translate"
-              ><code>translate</code></olink> attribute is <glossterm>OPTIONAL</glossterm>.</para>
+              ><code>translate</code></olink> attribute is OPTIONAL.</para>
       </listitem>
     </itemizedlist>
     <example>

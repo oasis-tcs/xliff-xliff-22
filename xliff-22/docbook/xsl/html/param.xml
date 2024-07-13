@@ -2102,7 +2102,7 @@ on how their <sgmltag class="attribute">status</sgmltag> attribute is set.
 
 <refsynopsisdiv>
 <programlisting id="draft.watermark.image.frag">
-&lt;xsl:param name="draft.watermark.image" select="'http://docbook.sourceforge.net/release/images/draft.png'"&gt;&lt;/xsl:param&gt;
+&lt;xsl:param name="draft.watermark.image" select="'https://docbook.sourceforge.net/release/images/draft.png'"&gt;&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 
@@ -5424,7 +5424,7 @@ parameter will be included in the document.</para>
 
 <refsynopsisdiv>
 <programlisting id="annotation.graphic.open.frag">
-&lt;xsl:param name="annotation.graphic.open" select="'http://docbook.sourceforge.net/release/images/annot-open.png'"&gt;&lt;/xsl:param&gt;
+&lt;xsl:param name="annotation.graphic.open" select="'https://docbook.sourceforge.net/release/images/annot-open.png'"&gt;&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 
@@ -5448,7 +5448,7 @@ annotations.</para>
 
 <refsynopsisdiv>
 <programlisting id="annotation.graphic.close.frag">
-&lt;xsl:param name="annotation.graphic.close" select="'http://docbook.sourceforge.net/release/images/annot-close.png'"&gt;&lt;/xsl:param&gt;
+&lt;xsl:param name="annotation.graphic.close" select="'https://docbook.sourceforge.net/release/images/annot-close.png'"&gt;&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 

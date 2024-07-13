@@ -13,7 +13,7 @@
 
 <programlisting>
     
-<ulink url="&this-loc;/schemas/xliff_core_&version;.xsd"><code>Core XML Schema</code></ulink>
+<ulink url="&this-loc;/schemas/xliff_core_2.2.xsd"><code>Core XML Schema</code></ulink>
     |
     +---<ulink url="&this-loc;/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
     |

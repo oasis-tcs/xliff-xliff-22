@@ -28,20 +28,14 @@
   <para><emphasis>Attributes:</emphasis></para>
   <simplelist>
     <member>- <olink targetdoc="../../attributes/itsm/itsm_id.xml" targetptr="itsm_id"
-          ><code>xml:id</code></olink>, <glossterm>REQUIRED</glossterm>
-    </member>
-    <!--  not allowed on ITS stand off elements <member>-<olink targetdoc="../../attributes/itsm/itsm_annotatorsRef.xml"
-        targetptr="itsm_annotatorsRef">
-        <code>annotatorsRef</code></olink>,
-        <glossterm>OPTIONAL</glossterm></member>-->
-
+          ><code>xml:id</code></olink>, REQUIRED </member>
   </simplelist>
 
   <itemizedlist>
     <title>Constraints</title>
     <listitem>
-      <para>Each <link linkend="itsm_locQualityIssues">locQualityIssues</link> element
-          <glossterm>SHOULD</glossterm> be referenced by at least one <olink
+      <para>Each <link linkend="itsm_locQualityIssues">locQualityIssues</link> element SHOULD be
+        referenced by at least one <olink
           targetdoc="../../attributes/itsm/itsm_locQualityIssuesRef.xml"
           targetptr="itsm_locQualityIssuesRef"><code>locQualityIssuesRef</code></olink> attribute
         within the same <olink targetdoc="../structural/unit.xml" targetptr="unit"
@@ -56,9 +50,9 @@
   <itemizedlist>
     <title>Processing Requirements</title>
     <listitem>
-      <para><firstterm>Modifiers</firstterm> detecting an orphaned <link
-          linkend="itsm_locQualityIssues">locQualityIssues</link> element <glossterm>MAY</glossterm>
-        delete that <link linkend="itsm_locQualityIssues">locQualityIssues</link> element.</para>
+      <para>Modifiers detecting an orphaned <link linkend="itsm_locQualityIssues"
+          >locQualityIssues</link> element MAY delete that <link linkend="itsm_locQualityIssues"
+          >locQualityIssues</link> element.</para>
     </listitem>
   </itemizedlist>
 

@@ -19,9 +19,9 @@
         <listitem>
             <para>Produced two versions of the specification: </para>
             <simplelist>
-                <member><emphasis>Core</emphasis>: simplified version that does not include optional
-                    modules.</member>
-                <member><emphasis>Extended</emphasis>: complete version, including all
+                <member><emphasis>Part 1: Core</emphasis> - simplified version that does not include
+                    optional modules.</member>
+                <member><emphasis>Part 2: Extended</emphasis> - complete version, including all
                     modules.</member>
             </simplelist>
         </listitem>
@@ -53,14 +53,16 @@
                         ><code>&lt;xliff></code></olink>.</para>
         </listitem>
         <listitem>
-            <para>Removed references to Schematron, NVDL and Test Suite from this specification.</para>
+            <para>Removed references to Schematron, NVDL and Test Suite from this
+                specification.</para>
 
         </listitem>
         <listitem>
-            <para>Removed the informative Change Tracking Extension.</para>
+            <para>Updated import references to XLIFF Core Schema in <code>matches.xsd</code>,
+                    <code>resource_data.xsd</code> and <code>validation.xsd</code>.</para>
         </listitem>
         <listitem>
-            <para>Renamed Appendix B to "XLIFF Grammar Files (Normative)".</para>
+            <para>Removed the informative Change Tracking Extension.</para>
         </listitem>
         <listitem>
             <para>Added new <olink targetdoc="../modules/plural_gender_select/specification.xml"
@@ -68,22 +70,23 @@
                     Module</olink>. </para>
         </listitem>
         <listitem>
-            <para>Updated <olink targetdoc="mediaType.xml" targetptr="mediaType">Appendix A</olink>
+            <para>Updated <olink targetdoc="mediaType.xml" targetptr="mediaType">Appendix B</olink>
                 with the official MIME type listed in IANA Media Type Registry.</para>
         </listitem>
         <listitem>
             <para>Allowed an optional <olink targetdoc="../elements/structural/notes.xml"
-                targetptr="notes"><code>&lt;notes></code></olink> element in <olink
-                targetdoc="../elements/resourceData/resourceItem.xml" targetptr="res_resourceItem"
-                    ><code>&lt;res:resourceItem></code></olink>.</para>
-    </listitem>
+                    targetptr="notes"><code>&lt;notes></code></olink> element in <olink
+                    targetdoc="../elements/resourceData/resourceItem.xml"
+                    targetptr="res_resourceItem"><code>&lt;res:resourceItem></code></olink>.</para>
+        </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
-        practical workings of the previous versions of the <firstterm>XLIFF Core</firstterm> have
-        not been affected. All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes
-        introduced in version 2.2 are designed to preserve compatibility with versions 2.0 and
-        2.1.</para>
-    <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink
-            url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21"
-            >https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
+        practical workings of the previous versions of the XLIFF Core have not been affected.</para>
+    <para>All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes introduced in
+        version 2.2 are designed to preserve compatibility with versions 2.0 and 2.1.</para>
+    <note>
+        <para>NVDL and Schematron files used in previous versions of XLIFF are available at <ulink
+                url="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21"
+                >https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</ulink>.</para>
+    </note>
 </appendix>

@@ -10,10 +10,13 @@
 
   <para>property – Indicates the type of revision data.</para>
 
-  <para><emphasis>Value description:</emphasis> The value <glossterm>MUST</glossterm> be either <code>content</code> to signify the content of an element, or the name of the attribute relating to the revision data.</para>
+  <para><emphasis>Value description:</emphasis> The value MUST be either <code>content</code> to
+    signify the content of an element, or the name of the attribute relating to the revision
+    data.</para>
 
   <para><emphasis>Default value:</emphasis> none</para>
 
-  <para><emphasis>Used in: </emphasis><olink targetdoc="../../elements/change-tracking/item.xml" targetptr="item"><code>&lt;item></code></olink>.</para>
-  
+  <para><emphasis>Used in: </emphasis><olink targetdoc="../../elements/change-tracking/item.xml"
+      targetptr="item"><code>&lt;item></code></olink>.</para>
+
 </section>

@@ -26,8 +26,8 @@
 &lt;/unit&gt;</programlisting></para>
 
   <para><emphasis>Constraints:</emphasis> the number of space-separated items (variables) in the
-      <code>switch</code> attribute of the unit <glossterm>MUST</glossterm> match the number of
-    space-separated values in the <code>case</code> attribute.</para>
+      <code>switch</code> attribute of the unit MUST match the number of space-separated values in
+    the <code>case</code> attribute.</para>
 
   <para>Also, each value in case should also match the type of selector in the <code>switch</code>
     attribute.</para>

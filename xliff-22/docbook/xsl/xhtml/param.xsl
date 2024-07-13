@@ -65,8 +65,8 @@ div.annotation-close { position: absolute;
                      }
 </xsl:param>
 <xsl:param name="annotation.js" select="'http://docbook.sourceforge.net/release/script/AnchorPosition.js             http://docbook.sourceforge.net/release/script/PopupWindow.js'"/>
-<xsl:param name="annotation.graphic.open" select="'http://docbook.sourceforge.net/release/images/annot-open.png'"/>
-<xsl:param name="annotation.graphic.close" select="'http://docbook.sourceforge.net/release/images/annot-close.png'"/>
+<xsl:param name="annotation.graphic.open" select="'https://docbook.sourceforge.net/release/images/annot-open.png'"/>
+<xsl:param name="annotation.graphic.close" select="'https://docbook.sourceforge.net/release/images/annot-close.png'"/>
 <xsl:param name="annotation.support" select="0"/>
 <xsl:param name="appendix.autolabel" select="'A'"/>
 <xsl:param name="author.othername.in.middle" select="1"/>
@@ -103,7 +103,7 @@ div.annotation-close { position: absolute;
 <xsl:param name="default.table.width" select="''"/>
 <xsl:param name="default.table.frame" select="'all'"/>
 <xsl:param name="draft.mode" select="'maybe'"/>
-<xsl:param name="draft.watermark.image" select="'http://docbook.sourceforge.net/release/images/draft.png'"/>
+<xsl:param name="draft.watermark.image" select="'https://docbook.sourceforge.net/release/images/draft.png'"/>
 <xsl:param name="ebnf.table.bgcolor" select="'#F5DCB3'"/>
 <xsl:param name="ebnf.table.border" select="1"/>
 <xsl:param name="ebnf.assignment">

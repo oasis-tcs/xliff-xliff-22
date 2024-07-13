@@ -7,18 +7,18 @@
                          ]>
 <section id="itsm_provenanceRecordsRef">
     <title>provenanceRecordsRef</title>
-    
-    <para>Provenance Records Standoff Reference - the <code>provenanceRecordsRef</code> attribute
-        is the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink>
-        defined <code>provenanceRecordsRef</code> attribute.</para>
+
+    <para>Provenance Records Standoff Reference - the <code>provenanceRecordsRef</code> attribute is
+        the <olink targetdoc="../xliff22.xml" targetptr="ITS20">[ITS]</olink> defined
+            <code>provenanceRecordsRef</code> attribute.</para>
     <para>This attribute references the collection of Provenance Records that pertain to the content
         span or structural element content from where the reference is declared.</para>
-    
+
     <para><emphasis>Value description:</emphasis> IRI</para>
-        
+
     <para><emphasis>Default value:</emphasis> undefined.</para>
-    
-    
+
+
     <para><emphasis>Used in:</emphasis>
         <olink targetdoc="../../elements/structural/file.xml" targetptr="file"
                 ><code>&lt;file></code></olink>, <olink
@@ -32,15 +32,16 @@
                 ><code>&lt;mtc:match></code></olink>, and <olink
             targetdoc="../../elements/itms/revision.xml" targetptr="revision"
                 ><code>&lt;ctr:revision></code></olink>. </para>
-    
-    <para>See the <olink targetdoc="../../modules/itsm/Provenance.xml" targetptr="provenanceAnnotation"
-            >ITS Localization Issue Annotation</olink> for the normative usage description of this
-        attribute inline. </para>
+
+    <para>See the <olink targetdoc="../../modules/itsm/Provenance.xml"
+            targetptr="provenanceAnnotation">ITS Localization Issue Annotation</olink> for the
+        normative usage description of this attribute inline. </para>
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
             <para>Multiple <link linkend="itsm_provenanceRecordsRef">provenanceRecordsRef</link>
-                attributes <glossterm>MAY</glossterm> reference the same <olink targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
+                attributes MAY reference the same <olink
+                    targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                     targetptr="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></olink>
                 element.</para>
         </listitem>
@@ -52,9 +53,8 @@
                     ><code>&lt;sm></code></olink> element, <itemizedlist>
                     <listitem>
                         <para>The value of the <link linkend="itsm_provenanceRecordsRef"
-                                >provenanceRecordsRef</link> attribute <glossterm>MUST</glossterm>
-                            be an IRI referencing a <olink
-                                targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
+                                >provenanceRecordsRef</link> attribute MUST be an IRI referencing a
+                                <olink targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                                 targetptr="itsm_provenanceRecords"
                                     ><code>&lt;provenanceRecords></code></olink> element within the
                             innermost enclosing <olink
@@ -66,9 +66,9 @@
                                     ><code>&lt;ctr:revision></code></olink>element. </para>
                     </listitem>
                 </itemizedlist></para>
-            
+
         </listitem>
-        
+
         <listitem>
             <para>In case the <link linkend="itsm_provenanceRecordsRef">provenanceRecordsRef</link>
                 attribute is used on a <olink targetdoc="../../elements/structural/file.xml"
@@ -79,30 +79,29 @@
                         ><code>&lt;unit></code></olink> element, <itemizedlist>
                     <listitem>
                         <para>The value of the <link linkend="itsm_provenanceRecordsRef"
-                                >provenanceRecordsRef</link> attribute <glossterm>MUST</glossterm>
-                            be an IRI referencing a <olink
-                                targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
+                                >provenanceRecordsRef</link> attribute MUST be an IRI referencing a
+                                <olink targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                                 targetptr="itsm_provenanceRecords"
                                     ><code>&lt;provenanceRecords></code></olink> element within the
                             same element or its ancestor element. </para>
                     </listitem>
                 </itemizedlist></para>
-            
+
         </listitem>
-        
+
     </itemizedlist>
     <itemizedlist>
         <title>Processing Requirements</title>
         <listitem>
-            <para><firstterm>Modifiers</firstterm> removing the last <link
-                    linkend="itsm_provenanceRecordsRef"><code>provenanceRecordsRef</code></link>
-                attribute referencing a <olink targetptr="itsm_provenanceRecords"
+            <para>Modifiers removing the last <link linkend="itsm_provenanceRecordsRef"
+                        ><code>provenanceRecordsRef</code></link> attribute referencing a <olink
+                    targetptr="itsm_provenanceRecords"
                     targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
-                        ><code>provenanceRecords</code></olink> element <glossterm>MUST</glossterm>
-                delete that <olink targetptr="itsm_provenanceRecords"
+                        ><code>provenanceRecords</code></olink> element MUST delete that <olink
+                    targetptr="itsm_provenanceRecords"
                     targetdoc="../../elements/itsm/itsm_provenanceRecords.xml"
                         ><code>provenanceRecords</code></olink> element.</para>
         </listitem>
-        
+
     </itemizedlist>
 </section>

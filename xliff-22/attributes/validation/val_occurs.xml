@@ -10,13 +10,13 @@
 
   <para>This rule attribute is used with the <olink targetdoc="../../attributes/val_isPresent.xml"
       targetptr="val_isPresent"><code>isPresent</code></olink> rule attribute to specify the exact
-    number of times a string <glossterm>MUST</glossterm> be present in the target text. When this
-    rule attribute is not used, then the string <glossterm>MUST</glossterm> be present in the target
-    text <emphasis>at least once</emphasis>.</para>
+    number of times a string MUST be present in the target text. When this rule attribute is not
+    used, then the string MUST be present in the target text <emphasis>at least
+    once</emphasis>.</para>
 
-   <para>For example, the following is valid:</para>
+  <para>For example, the following is valid:</para>
 
-<programlisting>
+  <programlisting>
 &lt;unit id="1"&gt;
   &lt;val:validation&gt;
     &lt;val:rule isPresent="loja" occurs="2" /&gt;
@@ -28,7 +28,7 @@
 &lt;/unit&gt;
  </programlisting>
   <para>Whereas the following is invalid:</para>
-<programlisting>
+  <programlisting>
 &lt;unit id="1"&gt;
   &lt;val:validation&gt;
     &lt;val:rule isPresent="loja" occurs="2" /&gt;
@@ -42,6 +42,8 @@
 
   <para><emphasis>Value description:</emphasis> A number of 1 or greater.</para>
   <para><emphasis>Default value:</emphasis> none</para>
-  <para><emphasis>Used in:</emphasis> <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"><code>&lt;rule></code></olink></para>
+  <para><emphasis>Used in:</emphasis>
+    <olink targetdoc="../../elements/validation/rule.xml" targetptr="rule"
+      ><code>&lt;rule></code></olink></para>
 
 </section>

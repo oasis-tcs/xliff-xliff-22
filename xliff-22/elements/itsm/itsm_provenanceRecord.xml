@@ -14,61 +14,124 @@
     <simplelist>
         <member>This element is always empty.</member>
     </simplelist>
-    
+
     <para><emphasis>Parents:</emphasis></para>
-    
+
     <simplelist>
-        <member>- <olink targetdoc="itsm_provenanceRecords.xml"
-            targetptr="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></olink></member>
-        
+        <member>- <olink targetdoc="itsm_provenanceRecords.xml" targetptr="itsm_provenanceRecords"
+                    ><code>&lt;provenanceRecords></code></olink></member>
+
     </simplelist>
-    
+
 
     <para><emphasis>Attributes:</emphasis></para>
     <simplelist>
-        <member>-	<olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"><code>its:org</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"><code>its:orgRef</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"><code>its:person</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_personRef.xml" targetptr="itsm_personRef"><code>its:personRef</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml" targetptr="itsm_revOrg"><code>its:revOrg</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_revOrgRef.xml" targetptr="itsm_revOrgRef"><code>its:revOrgRef</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_revPerson.xml" targetptr="itsm_revPerson"><code>its:revPerson</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_revPersonRef.xml" targetptr="itsm_revPersonRef"><code>its:revPersonRef</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_revTool.xml" targetptr="itsm_revTool"><code>its:revTool</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_revToolRef.xml" targetptr="itsm_revToolRef"><code>its:revToolRef</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"><code>its:tool</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        <member>-	        <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"><code>its:toolRef</code></olink>,	<glossterm>OPTIONAL</glossterm></member>
-        
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"
+                    ><code>its:org</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"
+                    ><code>its:orgRef</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"
+                    ><code>its:person</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_personRef.xml"
+                targetptr="itsm_personRef"><code>its:personRef</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml" targetptr="itsm_revOrg"
+                    ><code>its:revOrg</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_revOrgRef.xml"
+                targetptr="itsm_revOrgRef"><code>its:revOrgRef</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_revPerson.xml"
+                targetptr="itsm_revPerson"><code>its:revPerson</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_revPersonRef.xml"
+                targetptr="itsm_revPersonRef"><code>its:revPersonRef</code></olink>,
+            OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_revTool.xml" targetptr="itsm_revTool"
+                    ><code>its:revTool</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_revToolRef.xml"
+                targetptr="itsm_revToolRef"><code>its:revToolRef</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
+                    ><code>its:tool</code></olink>, OPTIONAL</member>
+        <member>- <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"
+                    ><code>its:toolRef</code></olink>, OPTIONAL</member>
+
     </simplelist>
 
     <itemizedlist>
         <title>Constraints</title>
         <listitem>
-            <para>At least one of the following <glossterm>MUST</glossterm> be set:</para>
+            <para>At least one of the following MUST be set:</para>
             <itemizedlist>
-                <listitem><para>	<olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"><code>its:org</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"><code>its:orgRef</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_person.xml" targetptr="itsm_person"><code>its:person</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_personRef.xml" targetptr="itsm_personRef"><code>its:personRef</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml" targetptr="itsm_revOrg"><code>its:revOrg</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revOrgRef.xml" targetptr="itsm_revOrgRef"><code>its:revOrgRef</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revPerson.xml" targetptr="itsm_revPerson"><code>its:revPerson</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revPersonRef.xml" targetptr="itsm_revPersonRef"><code>its:revPersonRef</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revTool.xml" targetptr="itsm_revTool"><code>its:revTool</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_revToolRef.xml" targetptr="itsm_revToolRef"><code>its:revToolRef</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"><code>its:tool</code></olink>,	</para></listitem>
-                <listitem><para>	        <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml" targetptr="itsm_toolRef"><code>its:toolRef</code></olink>,	</para></listitem>
-                
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"
+                                ><code>its:org</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_orgRef.xml"
+                            targetptr="itsm_orgRef"><code>its:orgRef</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_person.xml"
+                            targetptr="itsm_person"><code>its:person</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_personRef.xml"
+                            targetptr="itsm_personRef"><code>its:personRef</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_revOrg.xml"
+                            targetptr="itsm_revOrg"><code>its:revOrg</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_revOrgRef.xml"
+                            targetptr="itsm_revOrgRef"><code>its:revOrgRef</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_revPerson.xml"
+                            targetptr="itsm_revPerson"><code>its:revPerson</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_revPersonRef.xml"
+                            targetptr="itsm_revPersonRef"><code>its:revPersonRef</code></olink>,
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_revTool.xml"
+                            targetptr="itsm_revTool"><code>its:revTool</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_revToolRef.xml"
+                            targetptr="itsm_revToolRef"><code>its:revToolRef</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_tool.xml" targetptr="itsm_tool"
+                                ><code>its:tool</code></olink>, </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <olink targetdoc="../../attributes/itsm/itsm_toolRef.xml"
+                            targetptr="itsm_toolRef"><code>its:toolRef</code></olink>, </para>
+                </listitem>
+
             </itemizedlist>
         </listitem>
-            
-            
+
+
     </itemizedlist>
-        
-       <itemizedlist>
-            
-       <title>Processing Requirements</title>
-                <listitem><para> For all <firstterm>Agents</firstterm>, when any of the attributes <olink
+
+    <itemizedlist>
+
+        <title>Processing Requirements</title>
+        <listitem>
+            <para> For all Agents, when any of the attributes <olink
                     targetdoc="../../attributes/itsm/itsm_org.xml" targetptr="itsm_org"
                         ><code>its:org</code></olink>, <olink
                     targetdoc="../../attributes/itsm/itsm_orgRef.xml" targetptr="itsm_orgRef"
@@ -99,6 +162,7 @@
                     targetptr="provenanceAnnotation">ITS Provenance Annotation</olink>, from which
                 their enclosing <olink targetdoc="itsm_provenanceRecords.xml"
                     targetptr="itsm_provenanceRecords"><code>&lt;provenanceRecords></code></olink>
-                element is referenced. </para></listitem>
+                element is referenced. </para>
+        </listitem>
     </itemizedlist>
 </section>
