@@ -17,7 +17,7 @@
 
     <releaseinfo role="track">Standards Track Work Product</releaseinfo>
 
-    <productname>&name;</productname>
+    <productname>&exname;</productname>
 
     <productnumber>&stage;</productnumber>
 
