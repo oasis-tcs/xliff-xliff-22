@@ -208,14 +208,16 @@
         provided in separate plain text files. In the event of a discrepancy between any such plain
         text file and display content in the Work Product's prose narrative document(s), the content
         in the separate plain text file prevails. Key words: </para>
-
+    </legalnotice>
+    
+    <legalnotice role="keywords">
+      <title>Key words</title>
       <para>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD
         NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
         interpreted as described in BCP 14 <olink targetdoc="appendices/references.xml"
           targetptr="rfc2119">[RFC2119]</olink> and <olink targetdoc="appendices/references.xml"
           targetptr="rfc8174">[RFC8174]</olink> when, and only when, they appear in all capitals, as
         shown here.</para>
-
     </legalnotice>
 
     <legalnotice role="citation">
@@ -237,11 +239,6 @@
       <title>Notices</title>
 
       <para>Copyright © OASIS Open &pubyear;. All Rights Reserved.</para>
-
-      <para>All capitalized terms in the following text have the meanings assigned to them in the
-        OASIS Intellectual Property Rights Policy (the "OASIS IPR Policy"). The full <ulink
-          url="https://www.oasis-open.org/policies-guidelines/ipr">Policy</ulink> may be found at
-        the OASIS website.</para>
 
       <para>Distributed under the terms of the OASIS IPR Policy, [<ulink
           url="https://www.oasis-open.org/policies-guidelines/ipr/"

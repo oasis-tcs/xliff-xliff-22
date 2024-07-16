@@ -9,8 +9,8 @@
 ]>
 <appendix id="coreValidation">
     <title>XLIFF Grammar Files</title>
-    <para>The basic grammar and structure of XLIFF &version; is defined using ten (10) XML Schemas
-        and one (1) XML catalog. The module schemas are specifically referenced from their
+    <para>The basic grammar and structure of XLIFF &version; is defined using several XML Schemas
+        and one XML catalog. The module schemas are specifically referenced from their
         respective modules.</para>
 
     <orderedlist>

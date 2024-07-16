@@ -62,7 +62,7 @@
       </editor>
     </authorgroup>
 
-    <pubdate>13 July 2024</pubdate>
+    <pubdate>16 July 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -172,7 +172,10 @@
         provided in separate plain text files. In the event of a discrepancy between any such plain
         text file and display content in the Work Product's prose narrative document(s), the content
         in the separate plain text file prevails. Key words: </para>
-
+    </legalnotice>
+    
+    <legalnotice role="keywords">
+      <title>Key words</title>
       <para>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD
         NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
         interpreted as described in BCP 14 <link linkend="rfc2119">[RFC2119]</link> and <link linkend="rfc8174">[RFC8174]</link> when, and only when, they appear in all capitals, as
@@ -185,7 +188,7 @@
       <para>When referencing this document, the following citation format should be used:</para>
       <para><emphasis role="strong">[XLIFF-2.2-part2]</emphasis></para>
       <para>XLIFF Version 2.2 Part 2:Extended. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
-        13 July 2024. OASIS Committee Specification Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-extended-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-extended-csd01.html</ulink>.
+        16 July 2024. OASIS Committee Specification Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-extended-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-extended-csd01.html</ulink>.
         Latest stage <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-extended.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-extended.html</ulink>.
       </para>
     </legalnotice>
@@ -195,10 +198,6 @@
       <title>Notices</title>
 
       <para>Copyright © OASIS Open 2024. All Rights Reserved.</para>
-
-      <para>All capitalized terms in the following text have the meanings assigned to them in the
-        OASIS Intellectual Property Rights Policy (the "OASIS IPR Policy"). The full <ulink url="https://www.oasis-open.org/policies-guidelines/ipr">Policy</ulink> may be found at
-        the OASIS website.</para>
 
       <para>Distributed under the terms of the OASIS IPR Policy, [<ulink url="https://www.oasis-open.org/policies-guidelines/ipr/">https://www.oasis-open.org/policies-guidelines/ipr/</ulink>]. For complete copyright
         information please see the full Notices section in an Appendix below.</para>
@@ -14807,8 +14806,8 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
 </appendix>
   <appendix id="coreValidation">
     <title>XLIFF Grammar Files</title>
-    <para>The basic grammar and structure of XLIFF 2.2 is defined using ten (10) XML Schemas
-        and one (1) XML catalog. The module schemas are specifically referenced from their
+    <para>The basic grammar and structure of XLIFF 2.2 is defined using several XML Schemas
+        and one XML catalog. The module schemas are specifically referenced from their
         respective modules.</para>
 
     <orderedlist continuation="restarts" inheritnum="ignore">
