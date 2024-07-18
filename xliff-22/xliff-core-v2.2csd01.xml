@@ -62,7 +62,7 @@
       </editor>
     </authorgroup>
 
-    <pubdate>16 July 2024</pubdate>
+    <pubdate>18 July 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -187,7 +187,7 @@
       <para>When referencing this document, the following citation format should be used:</para>
       <para><emphasis role="strong">[XLIFF-2.2-part1]</emphasis></para>
       <para>XLIFF Version 2.2 Part 1:Core. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
-        16 July 2024. OASIS Committee Specification Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html</ulink>.
+        18 July 2024. OASIS Committee Specification Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html</ulink>.
         Latest stage <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html</ulink>.
       </para>
     </legalnotice>
@@ -216,6 +216,48 @@
 
   <para><emphasis>All text is normative unless otherwise labeled.</emphasis>
   </para>
+
+  <section id="newSinceLast">
+    <title>Changes from earlier Versions</title>
+    <para>XLIFF 2.2 has two main significant differences from the previous version published (XLIFF
+      2.1):</para>
+
+    <orderedlist continuation="restarts" inheritnum="ignore">
+      <listitem>
+        <para> XLIFF 2.2 is presented in two separate documents:</para>
+        <itemizedlist>
+          <listitem>
+            <para><emphasis>XLIFF Version 2.2. Part 1: Core</emphasis> presents the XLIFF core,
+              which is the minimum set of XML elements and attributes required to create a valid
+              XLIFF file.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis>XLIFF Version 2.2. Part 2: Extended</emphasis> presents the XLIFF core as
+              well as the optional modules that were created to store information about specific
+              processes. For example, the <remark>Translation Candidates Module</remark> was designed to store
+              translation suggestions and their associated metadata.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>In previous versions of XLIFF, the specification was always presented in a single
+          document. This change in the presentation mode was introduced to produce a simplified
+          version (<emphasis>Part 1: Core</emphasis>) of the specification that would be easier to
+          use, especially for those agents who are not interested in implementing the optional
+          modules.</para>
+      </listitem>
+      <listitem>
+        <para>XLIFF 2.2 includes the new <remark>Plural, Gender, and Select Module</remark>, which
+          was designed to store information needed to represent and process messages with variants.
+          The new module description can be found in the document XLIFF Version 2.2. Part 2:
+          Extended.</para>
+      </listitem>
+    </orderedlist>
+    <para>For a detailed list of changes made between version 2.1 and the current version (2.2)
+      please see the <link linkend="specChangeTracking">Specification Change Tracking</link> section in Appendix
+      D.</para>
+    <para>Note that all changes introduced in version 2.2 were designed to maintain compatibility
+      with versions 2.0 and 2.1.</para>
+  </section>
 
   <section id="definitions">
     <title>Definition of terms</title>

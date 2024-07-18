@@ -209,7 +209,7 @@
         text file and display content in the Work Product's prose narrative document(s), the content
         in the separate plain text file prevails. Key words: </para>
     </legalnotice>
-    
+
     <legalnotice role="keywords">
       <title>Key words</title>
       <para>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD
@@ -259,7 +259,6 @@
       functionality.</para>
 
     <!--Module includes-->
-    <!-- 2.0 modules come first. Even if a module is deprecated, the spec should keep a placeholder, so that modules are numbered presistently in all 2.x versions-->
     <xi:include href="modules/candidates/specification.xml"
       xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="modules/glossary/specification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
