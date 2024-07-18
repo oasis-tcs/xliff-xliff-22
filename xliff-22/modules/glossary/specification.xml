@@ -134,7 +134,7 @@
   &lt;/gls:glossary>
   &lt;segment>
     &lt;source>Press the &lt;mrk id="m1" type="term">TAB key&lt;/mrk>.&lt;/source>
-    &lt;target>Drücken Sie die &lt;mrk id="m1" type="term">TAB-TASTE&lt;/mrk>. &lt;/target>
+    &lt;target>Drücken Sie die &lt;mrk id="m1" type="term">TAB-TASTE&lt;/mrk>.&lt;/target>
   &lt;/segment>
 &lt;/unit>
  </programlisting>

@@ -6252,7 +6252,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
   &lt;/gls:glossary>
   &lt;segment>
     &lt;source>Press the &lt;mrk id="m1" type="term">TAB key&lt;/mrk>.&lt;/source>
-    &lt;target>Drücken Sie die &lt;mrk id="m1" type="term">TAB-TASTE&lt;/mrk>. &lt;/target>
+    &lt;target>Drücken Sie die &lt;mrk id="m1" type="term">TAB-TASTE&lt;/mrk>.&lt;/target>
   &lt;/segment>
 &lt;/unit>
  </programlisting>
@@ -13845,9 +13845,10 @@ Date: 04 April 2017 -->
   &lt;!-- Each unit in the file element shows one ITS data category. -->
   &lt;!-- The its:annotatorsRef attribute inherits through the whole file
       but is only relevant for some elements-->
-  &lt;file id="f1" its:annotatorsRef="allowed-characters|http://example.com/myAllowedCharactersAnnotationTool
-                terminology|http://example.com/mytermTool
-                localization-quality-issue|http://example.com/anotherQualityChecker">
+  &lt;file id="f1" 
+        its:annotatorsRef="allowed-characters|http://example.com/myAllowedCharactersAnnotationTool
+        terminology|http://example.com/mytermTool
+        localization-quality-issue|http://example.com/anotherQualityChecker">
     &lt;unit id="u1">
       &lt;its:locQualityIssues xml:id="lqi1">
         &lt;its:locQualityIssue locQualityIssueType="misspelling"
@@ -13914,8 +13915,8 @@ Date: 04 April 2017 -->
         &lt;source>This is the content&lt;/source>
         &lt;target>
           &lt;mrk id="m3" type="its:generic" its:locQualityIssuesRef="#its=lqi1"
-              its:annotatorsRef="localization-quality-issue|http://example.com/myQualityChecker">c'es
-              le contenu&lt;/mrk>
+           its:annotatorsRef="localization-quality-issue|http://qa.com/Checker">
+             c'esle contenu&lt;/mrk>
         &lt;/target>
       &lt;/segment>
 
@@ -13941,14 +13942,16 @@ Date: 04 April 2017 -->
         &lt;/source>
       &lt;/segment>
 
-      &lt;!-- Example for terminology data category, expressed via native XLIFF markup -->
+      &lt;!-- Example for terminology data category, expressed via native 
+           XLIFF markup -->
 
       &lt;segment>
         &lt;source>This is a &lt;mrk id="m6" type="comment" ref="#n=1">
             motherboard&lt;/mrk>.&lt;/source>
       &lt;/segment>
 
-      &lt;!-- Example for terminology data category, expressed via native XLIFF markup, but with its:termConfidence attribute -->
+      &lt;!-- Example for terminology data category, expressed via native XLIFF 
+          markup, but with its:termConfidence attribute -->
 
       &lt;segment>
         &lt;source>Text with a &lt;pc id="3">&lt;mrk id="m7" type="term"
