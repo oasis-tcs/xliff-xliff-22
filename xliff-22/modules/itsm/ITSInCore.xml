@@ -4,7 +4,6 @@
 <!ENTITY % xinclude SYSTEM "../../docbook/xinclude.mod">
 %xinclude;
 <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED">
-<!ENTITY version "2.1">
 ]>
 <section id="ITSInCore">
   <title>ITS data categories available through XLIFF Core and other Modules</title>

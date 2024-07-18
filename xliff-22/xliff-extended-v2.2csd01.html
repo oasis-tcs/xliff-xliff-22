@@ -2496,7 +2496,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
         fragment identification and authority prefix which is <code class="code">its</code>.</p></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a name="ITSM_Conformance"></a>4.8.4 Conformance to the ITS Module Specification</h4></div></div></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>Some ITS data categories like <a href="https://www.w3.org/TR/its20/#trans-datacat" target="_top">Translate</a> are supported natively by XLIFF. Other data categories are not
         supported by XLIFF because they are focusing on source content and not XLIFF content. The
         below conformance statement is only relevant for data categories for which the usage in
-        XLIFF 2.1 is normatively defined in this XLIFF 2.1 <a href="#ITS-module" title="4.8 ITS Module">ITS
+        XLIFF 2.2 is normatively defined in this XLIFF 2.2 <a href="#ITS-module" title="4.8 ITS Module">ITS
           Module</a>. Like in the <a href="#ITS20">[ITS]</a> 2.0 specification, there is no interrelation between data
         categories.</p></div><div class="itemizedlist"><p class="title"><i>Processing Requirements</i></p><ul type="disc"><li><div class="itemizedlist"><ul type="circle"><li><p>In cases where any of the above specified global rules identifies an empty <a href="#sm" title="3.2.3.7 sm"><code class="code">&lt;sm&gt;</code></a>
               element, conformant ITS Processors SHOULD be able identify the closing <a href="#em" title="3.2.3.8 em"><code class="code">&lt;em&gt;</code></a>
@@ -2672,7 +2672,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 &lt;p its-locale-filter-list='fr'&gt;Text A&lt;/p&gt;
 &lt;p its-locale-filter-list='ja'&gt;Text B&lt;/p&gt;
  </pre><p>Extraction:</p><pre class="programlisting">
-&lt;xliff srcLang="en" version="2.1"&gt;
+&lt;xliff srcLang="en" version="2.2"&gt;
   ...
   &lt;unit id="1"&gt;
     &lt;segment&gt;
@@ -2694,7 +2694,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 &lt;p its-locale-filter-list='fr'&gt;Text A&lt;/p&gt;
 &lt;p its-locale-filter-list='ja'&gt;Text B&lt;/p&gt;
  </pre><p>Extraction:</p><pre class="programlisting">
-&lt;xliff srcLang="en" trgLang="fr" version="2.1"&gt;
+&lt;xliff srcLang="en" trgLang="fr" version="2."&gt;
   ...
   &lt;unit id="1" translate="yes"&gt;
     &lt;segment&gt;
@@ -2711,7 +2711,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 &lt;p&gt;Text &lt;span its-locale-filter-list='fr'
     its-locale-filter-type='exclude'&gt;text&lt;/span&gt;&lt;/p&gt;
  </pre><p>Extraction:</p><pre class="programlisting">
-&lt;xliff srcLang="en" version="2.1"&gt;
+&lt;xliff srcLang="en" version="2.2"&gt;
   ...
   &lt;unit id="1"&gt;
     &lt;segment&gt;
@@ -2726,7 +2726,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 &lt;p&gt;Text &lt;span its-locale-filter-list='fr' its-locale-filter-type='exclude'&gt;
     text&lt;/span&gt;&lt;/p&gt;
  </pre><p>Extraction:</p><pre class="programlisting">
-&lt;xliff srcLang="en" trgLang="fr" version="2.1"...&gt;
+&lt;xliff srcLang="en" trgLang="fr" version="2.2"...&gt;
   ...
   &lt;unit id="1"&gt;
     &lt;segment&gt;
@@ -3131,7 +3131,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
     <span class="bold"><strong>&lt;/p&gt;</strong></span>
   <span class="bold"><strong>&lt;/body&gt;</strong></span>
 <span class="bold"><strong>&lt;/html&gt;</strong></span>     </pre><p>Extraction:</p><pre class="programlisting">
-&lt;xliff version="2.1" srcLang="EN"&gt;
+&lt;xliff version="2.2" srcLang="EN"&gt;
   &lt;file id=1&gt;
     &lt;unit id='1'&gt;
       &lt;notes&gt;
@@ -3400,7 +3400,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
         preserved throughout merging back to the original format, for instance for data analytic
         purposes or to color code the raw MTed target text for the end user based on the MT
         Confidence scores.</p></div></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h5 class="title"><a name="Storage_Size"></a>4.8.7.5 Storage Size</h5></div></div></div><p>Mapping for this metadata category has not been specified in XLIFF Version
-      2.1</p><div class="itemizedlist"><p class="title"><i>Processing Requirements</i></p><ul type="disc"><li><p>The <a href="#ITS20">[ITS]</a>
+      2.2</p><div class="itemizedlist"><p class="title"><i>Processing Requirements</i></p><ul type="disc"><li><p>The <a href="#ITS20">[ITS]</a>
           <a href="https://www.w3.org/TR/its20/#storagesize" target="_top">Storage Size data category</a>
           MAY be expressed as an Extended profile within the <a href="#size_restriction_module" title="4.6 Size and Length Restriction Module">Size and Length Restriction Module</a>. No other parts of XLIFF MUST be extended to
           support this data category.</p></li></ul></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>An XLIFF-defined common profile could be made part of this module in a future version of
@@ -3570,7 +3570,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
     understand how to extract source content. The data category is not represented directly in XLIFF
     documents.</p><p>The data category provides three values: <code class="code">yes</code>, <code class="code">no</code> and
       <code class="code">nested</code>. See the <a href="http://www.w3.org/TR/its20#within-text-definition" target="_top">ITS 2.0 specification</a> for examples of how to use these values in general XML
-    vocabularies or in HTML. The below examples show how to deal with the values in XLIFF. </p><div class="section" lang="en-US"><div class="titlepage"><div><div><h6 class="title"><a name="d0e17632"></a>4.8.9.2.1 Elements Within Text Value <code class="code">Yes</code></h6></div></div></div><p>The element needs to be mapped to one of the XLIFF 2.1 inline elements: &lt;pc&gt;,
+    vocabularies or in HTML. The below examples show how to deal with the values in XLIFF. </p><div class="section" lang="en-US"><div class="titlepage"><div><div><h6 class="title"><a name="d0e17632"></a>4.8.9.2.1 Elements Within Text Value <code class="code">Yes</code></h6></div></div></div><p>The element needs to be mapped to one of the XLIFF 2.2 inline elements: &lt;pc&gt;,
       &lt;sc&gt;/&lt;ec&gt; or &lt;ph&gt;, while its content is extracted.</p><p>Example for using <code class="code">pc</code> - Original: </p><pre class="programlisting">
 ...
 &lt;p&gt;This paragraph contains &lt;span its-within-text="yes"&gt;a spanned part
@@ -3658,7 +3658,8 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 &lt;/unit&gt;
 ...
 </pre><p>All the sub-flows and the <code class="code">unit</code> element which invokes them have to be in the
-      same <code class="code">file</code> element. </p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h6 class="title"><a name="d0e17707"></a>4.8.9.2.3 Elements Within Text Value <code class="code">No</code></h6></div></div></div><p>In XLIFF 2.1 such element content should be stored in separate <code class="code">unit</code> elements. </p><p>Example - Original: </p><pre class="programlisting">
+      same <code class="code">file</code> element. </p></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h6 class="title"><a name="d0e17707"></a>4.8.9.2.3 Elements Within Text Value <code class="code">No</code></h6></div></div></div><p>In XLIFF 2.2, such element content should be stored in separate <code class="code">unit</code>
+      elements. </p><p>Example - Original: </p><pre class="programlisting">
 ...
 &lt;ul&gt;
   &lt;li&gt;First sentence&lt;/li&gt;
@@ -4253,7 +4254,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
         <a href="#unit" title="3.2.2.5 unit"><code class="code">&lt;unit&gt;</code></a>, <a href="#mrk" title="3.2.3.6 mrk"><code class="code">&lt;mrk&gt;</code></a>, <a href="#sm" title="3.2.3.7 sm"><code class="code">&lt;sm&gt;</code></a>,
         <a href="#match" title="4.1.6.3 match"><code class="code">&lt;mtc:match&gt;</code></a>, <a href="#itsm_locQualityIssue" title="4.8.11.2 locQualityIssue"><code class="code">&lt;its:locQualityIssue&gt;</code></a>, <a href="#itsm_locQualityIssues" title="4.8.11.3 locQualityIssues"><code class="code">&lt;its:locQualityIssues&gt;</code></a>, <a href="#itsm_provenanceRecord" title="4.8.11.4 provenanceRecord"><code class="code">&lt;its:provenanceRecord&gt;</code></a>, and <a href="#itsm_provenanceRecords" title="4.8.11.5 provenanceRecords"><code class="code">&lt;its:provenanceRecords&gt;</code></a>.</p></div></div><div class="section" lang="en-US"><div class="titlepage"><div><div><h4 class="title"><a name="d0e23291"></a>4.8.13 Example file</h4></div></div></div><div class="example"><a name="d0e23294"></a><p class="title"><i>Example 28. ITS Data Categories Example</i></p><p>The following example file includes markup related to several ITS 2.0 data
         categories.</p><pre class="programlisting">&lt;!-- xliff-its-example.xlf: Example file that shows several features of
-using ITS 2.0 as part of XLIFF 2.1
+using ITS 2.0 as part of XLIFF 2.2
 Version: 0.2.1 
 Date: 04 April 2017 --&gt;
 
@@ -4856,7 +4857,7 @@ unit <span class="bold"><strong>#g_msgid_plural_gender</strong></span> <span cla
                     <code class="code">resource_data.xsd</code> and <code class="code">validation.xsd</code>.</p></li><li><p>Removed the informative Change Tracking Extension.</p></li><li><p>Added new <a href="#plural_gender_select_module" title="4.9 Plural, Gender, and Select Module">Plural, Gender, and Select                    Module</a>. </p></li><li><p>Updated <a href="#mediaType" title="Appendix B. MIME Type for XLIFF Version 2.0 and Later Releases (Normative)">Appendix B</a>
                 with the official MIME type listed in IANA Media Type Registry.</p></li><li><p>Allowed an optional <a href="#notes" title="3.2.2.8 notes"><code class="code">&lt;notes&gt;</code></a> element in <a href="#res_resourceItem" title="4.5.4.4 resourceItem"><code class="code">&lt;res:resourceItem&gt;</code></a>.</p></li></ol></div><p>In spite of the above mentioned changes, fixes, clarifications, and additions, the
         practical workings of the previous versions of the XLIFF Core have not been affected.</p><p>All valid XLIFF 2.0 and 2.1 files are valid XLIFF 2.2 files. The changes introduced in
-        version 2.2 are designed to preserve compatibility with versions 2.0 and 2.1.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>NVDL and Schematron files used in previous versions of XLIFF are available at <a href="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21" target="_top">https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</a>.</p></div></div><div class="appendix" lang="en-US"><h2 class="title" style="clear: both"><a name="acknowledgements"></a>Appendix E. Acknowledgements</h2><p>The following individuals have participated in the creation of this specification and are
+        version 2.2 are designed to maintain compatibility with versions 2.0 and 2.1.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>NVDL and Schematron files used in previous versions of XLIFF are available at <a href="https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21" target="_top">https://github.com/oasis-tcs/xliff-xliff-22/tree/master/xliff-21</a>.</p></div></div><div class="appendix" lang="en-US"><h2 class="title" style="clear: both"><a name="acknowledgements"></a>Appendix E. Acknowledgements</h2><p>The following individuals have participated in the creation of this specification and are
         gratefully acknowledged:</p><div class="itemizedlist"><ul type="disc" compact><li><p>Filip, David - Huawei Technologies Co., Ltd. </p></li><li><p>Morado V&aacute;zquez, Luc&iacute;a - University of Geneva </p></li><li><p>Nita, Mihai - Google Inc.</p></li><li><p>Raya, Rodolfo M. - Individual </p></li><li><p>Schnabel, Bryan - Individual </p></li><li><p>Souto Pico, Manuel - cApStAn SA</p></li><li><p>Umaoka, Yoshito - IBM </p></li></ul></div></div><div class="appendix" lang="en-US"><h2 class="title" style="clear: both"><a name="notices"></a>Appendix F. Notices</h2><p>Copyright &copy; OASIS Open 2024. All Rights Reserved.</p><p>All capitalized terms in the following text have the meanings assigned to them in the
         OASIS Intellectual Property Rights Policy (the "OASIS IPR Policy"). The full <a href="https://www.oasis-open.org/policies-guidelines/ipr/" target="_top">Policy</a> may be found at
         the OASIS website: [<a href="https://www.oasis-open.org/policies-guidelines/ipr/" target="_top">https://www.oasis-open.org/policies-guidelines/ipr/</a>].</p><p>This document and translations of it may be copied and furnished to others, and derivative

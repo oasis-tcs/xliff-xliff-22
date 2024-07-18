@@ -111,13 +111,13 @@
           >Translate</ulink> are supported natively by XLIFF. Other data categories are not
         supported by XLIFF because they are focusing on source content and not XLIFF content. The
         below conformance statement is only relevant for data categories for which the usage in
-        XLIFF 2.1 is normatively defined in this XLIFF 2.1 <link linkend="ITS-module">ITS
+        XLIFF 2.2 is normatively defined in this XLIFF 2.2 <link linkend="ITS-module">ITS
           Module</link>. Like in the <olink targetdoc="../xliff22.xml" targetptr="ITS20"
           >[ITS]</olink> 2.0 specification, there is no interrelation between data
         categories.</para>
     </note>
 
-    <!-- The contents of this paragrap should now be covered in the above Note and the below PRs <para>An implementation of the ITS Module needs to implement at least one of the ITS 2.0 data categories for which the usage in XLIFF 2.1 is normatively defined in the ITS Module. Like in the ITS 2.0 specification, there is no interrelation between data categories. The implementation MUST take into account the processing expectations for ITS markup, as defined in the ITS 2.0 specification (link to https://www.w3.org/TR/its20/#conformance-product-processing-expectations) , that is, the conformance clauses 2-1, 2-2, 2-3 and 2-4 in the ITS 2.0 specifications.</para>-->
+   
     <itemizedlist>
       <title>Processing Requirements</title>
       <listitem>
@@ -554,7 +554,7 @@
       <para>The following example file includes markup related to several ITS 2.0 data
         categories.</para>
       <programlisting>&lt;!-- xliff-its-example.xlf: Example file that shows several features of
-using ITS 2.0 as part of XLIFF 2.1
+using ITS 2.0 as part of XLIFF 2.2
 Version: 0.2.1 
 Date: 04 April 2017 -->
 

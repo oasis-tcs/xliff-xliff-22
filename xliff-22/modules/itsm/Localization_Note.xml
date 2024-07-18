@@ -142,7 +142,7 @@
 <emphasis role="bold">&lt;/html&gt;</emphasis>     </programlisting>
       <para>Extraction:</para>
       <programlisting>
-&lt;xliff version="2.1" srcLang="EN">
+&lt;xliff version="2.2" srcLang="EN">
   &lt;file id=1>
     &lt;unit id='1'>
       &lt;notes>
