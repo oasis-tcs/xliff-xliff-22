@@ -159,8 +159,7 @@
 
       <para>TC members should send comments on this document to the TC's email list. Others should
         send comments to the TC's public comment list, after subscribing to it by following the
-        instructions at the <ulink url="http://oasis-open.org/committees/tc_home.php?wg_abbrev=xliff">"Send A
-          Comment"</ulink> button on the TC's web page at <ulink url="http://oasis-open.org/committees/tc_home.php?wg_abbrev=xliff">http://oasis-open.org/committees/tc_home.php?wg_abbrev=xliff</ulink>.</para>
+        instructions at <ulink url="https://groups.oasis-open.org/communities/community-home?CommunityKey=f7b70a54-5dd7-4ea9-9d6f-018dce262ff9">https://groups.oasis-open.org/communities/community-home?CommunityKey=f7b70a54-5dd7-4ea9-9d6f-018dce262ff9</ulink></para>
 
       <para>This document is provided under the <ulink url="https:https://www.oasis-open.org/policies-guidelines/ipr/#RF-Rand">RF on RAND
           Terms</ulink> Mode of the <ulink url="https://www.oasis-open.org/policies-guidelines/ipr/">OASIS IPR Policy</ulink>, the mode chosen when the Technical Committee was established.
@@ -10853,8 +10852,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
 
   <section id="Storage_Size">
     <title>Storage Size</title>
-    <para>Mapping for this metadata category has not been specified in XLIFF Version
-      2.2</para>
+    <para>Mapping for this metadata category has not been specified in XLIFF Version 2.2</para>
     <itemizedlist>
       <title>Processing Requirements</title>
       <listitem>

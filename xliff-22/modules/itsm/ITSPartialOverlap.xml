@@ -57,8 +57,7 @@
 
   <section id="Storage_Size">
     <title>Storage Size</title>
-    <para>Mapping for this metadata category has not been specified in XLIFF Version
-      &version;</para>
+    <para>Mapping for this metadata category has not been specified in XLIFF Version 2.2</para>
     <itemizedlist>
       <title>Processing Requirements</title>
       <listitem>
