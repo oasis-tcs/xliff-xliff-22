@@ -177,12 +177,6 @@ else
     &lt;source&gt;You deleted &lt;ph id="1" disp="file_count"/&gt; files.&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
-
-      <para>A more compact form (non-XLIFF), to understand what is going on:
-        <programlisting>unit <emphasis>@switch(plural:file_count)</emphasis>
-    segment "You deleted no files."                       <emphasis>@case(0)</emphasis>
-    segment "You deleted one file."                       <emphasis>@case(1)</emphasis>
-    segment "You deleted &lt;ph disp="file_count"/&gt; files."  <emphasis>@case(other)</emphasis></programlisting></para>
     </section>
 
     <section>
@@ -203,13 +197,6 @@ else
     &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;th place&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
-
-      <para>In a more compact form (non-XLIFF), to understand what is going on:
-        <programlisting>unit <emphasis>@switch(ordinal:place)</emphasis>
-    segment "You won #st place"  <emphasis>@case(one)</emphasis>
-    segment "You won #nd place"  <emphasis>@case(two)</emphasis>
-    segment "You won #rd place"  <emphasis>@case(few)</emphasis>
-    segment "You won #th place"  <emphasis>@case(other)</emphasis></programlisting></para>
     </section>
 
     <section>
@@ -226,12 +213,6 @@ else
     &lt;source&gt;You are invited to their party&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
-
-      <para>In a more compact form (non-XLIFF), to understand what is going on:
-        <programlisting>unit <emphasis>@switch(gender:host_gender)</emphasis>
-    segment "You are invited to her party"    <emphasis>@case(feminine)</emphasis>
-    segment "You are invited to his party"    <emphasis>@case(masculine)</emphasis>
-    segment "You are invited to their party"  <emphasis>@case(other)</emphasis></programlisting></para>
 
       <para>Gender also allows for cases other than <code>feminine</code> / <code>masculine</code> /
           <code>neuter</code> / <code>other</code> in order to support languages with more than 3
@@ -281,28 +262,6 @@ else
         &lt;ph id="2" disp="guest_count"/&gt; guests to their party.&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
-
-      <para>In a more compact form (non-XLIFF), to understand what is going on:
-        <programlisting>switch ( <emphasis role="bold">[gender:host_gender plural:guest_count]</emphasis> ) {
-  case <emphasis role="bold">[ feminine     0]</emphasis>:
-       "$host_name did not invite anyone to her party."
-  case <emphasis role="bold">[ feminine     1]</emphasis>:
-       "$host_name invited one guest to her party."
-  case <emphasis role="bold">[ feminine other]</emphasis>:
-       "$host_name invited $guest_count guests to her party."
-  case <emphasis role="bold">[masculine     0]</emphasis>:
-       "$host_name did not invite anyone to his party."
-  case <emphasis role="bold">[masculine     1]</emphasis>:
-       "$host_name invited one guest to his party."
-  case <emphasis role="bold">[masculine other]</emphasis>:
-       "$host_name invited $guest_count guests to his party."
-  case <emphasis role="bold">[    other     0]</emphasis>:
-       "$host_name did not invite anyone to their party."
-  case <emphasis role="bold">[    other     1]</emphasis>:
-       "$host_name invited one guest to their party."
-  case <emphasis role="bold">[    other other]</emphasis>:
-       "$host_name invited $guest_count guests to their party."
-}</programlisting></para>
     </section>
   </section>
 
