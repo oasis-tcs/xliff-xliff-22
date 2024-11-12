@@ -10,13 +10,13 @@
 
     <productnumber>csd01</productnumber>
 
-    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.xml</releaseinfo>
+    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.xml</releaseinfo>
 
-    <releaseinfo role="OASIS-specification-latest-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.xml</releaseinfo>
+    <releaseinfo role="OASIS-specification-latest-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.xml</releaseinfo>
 
     <releaseinfo role="committee"><ulink url="https://www.oasis-open.org/committees/xliff/">OASIS
         XLIFF TC</ulink></releaseinfo>
@@ -76,10 +76,10 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para>XLIFF Version 2.2. Part 1: Core. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html</ulink></para>
+          <para>XLIFF Version 2.2. Part 1: Core. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-core-v2.2-csd01-part1.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-core-v2.2-csd01-part1.html</ulink></para>
         </listitem>
         <listitem>
-          <para>XLIFF Version 2.2. Part 2: Extended. (this document) <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html</ulink></para>
+          <para>XLIFF Version 2.2. Part 2: Extended. (this document) <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.html</ulink></para>
         </listitem>
         <listitem>
           <para>XML schemas: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/</ulink>
@@ -186,11 +186,12 @@
       <title>Citation format</title>
       <para>When referencing this document, the following citation format should be used:</para>
       <para><emphasis role="strong">[XLIFF-2.2-part2]</emphasis></para>
-      <para>XLIFF Version 2.2 Part 2: Extended. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
-        18 July 2024. OASIS Committee Specification Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html</ulink>.
-        Latest stage <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html</ulink>.
+      <para>XLIFF Version 2.2 Part 2:Extended. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
+        18 July 2024. OASIS Committee Specification Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.html</ulink>.
+        Latest stage <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.html</ulink>.
       </para>
     </legalnotice>
+
 
     <legalnotice role="notices">
       <title>Notices</title>

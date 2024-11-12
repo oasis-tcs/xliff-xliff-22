@@ -10,17 +10,17 @@
 
     <productnumber>csd02</productnumber>
 
-    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part1-core-csd02.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part1-core-csd02.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part1-core-csd02.xml</releaseinfo>
+    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-core-v2.2-csd02-part1.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-core-v2.2-csd02-part1.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-core-v2.2-csd02-part1.xml</releaseinfo>
 
     <releaseinfo role="OASIS-specification-previous-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-core-v2.2-csd01-part1.html</releaseinfo>
     <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-core-v2.2-csd01-part1.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-core-v2.2-csd01-part1.xml</releaseinfo>
     
-    <releaseinfo role="OASIS-specification-latest-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.xml</releaseinfo>
+    <releaseinfo role="OASIS-specification-latest-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.xml</releaseinfo>
 
     <releaseinfo role="committee"><ulink url="https://www.oasis-open.org/committees/xliff/">OASIS
         XLIFF TC</ulink></releaseinfo>
@@ -71,10 +71,10 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para>XLIFF Version 2.2. Part 1: Core. (this document) <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd02.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd02.html</ulink></para>
+          <para>XLIFF Version 2.2. Part 1: Core. (this document) <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part1-core-csd02.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part1-core-csd02.html</ulink></para>
         </listitem>
         <listitem>
-          <para>XLIFF Version 2.2. Part 2: Extended. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd02.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd02.html</ulink></para>
+          <para>XLIFF Version 2.2. Part 2: Extended. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part2-extended-csd02.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part2-extended-csd02.html</ulink></para>
         </listitem>
         <listitem>
           <para>XML schemas: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/</ulink>
@@ -5968,7 +5968,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
   <appendix id="revisionHistory" role="informative">
     <title>Appendix D. Revision History</title>
     <table>
-        <title>Revisions</title>
+        <title>Tracking of changes in response to the 1<superscript>st</superscript> Public Review</title>
         <tgroup cols="4">
             <thead>
                 <row>

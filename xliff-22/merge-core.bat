@@ -1,1 +1,1 @@
-java -cp lib\merger.jar com.maxprograms.xml.Merger xliff-v2.2-part1-core-csd02.xml
+java -cp lib\merger.jar com.maxprograms.xml.Merger xliff-core-v2.2-csd02-part1.xml
