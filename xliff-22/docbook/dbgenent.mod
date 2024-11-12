@@ -46,13 +46,13 @@
 <!ENTITY bschversion "2.0">
 <!ENTITY cschversion "2.0">
 
-<!ENTITY stage "csd01">
-<!ENTITY pstage "os"> 
-<!ENTITY standard "Committee Specification Draft 01">
+<!ENTITY stage "csd02">
+<!ENTITY pstage "csd01"> 
+<!ENTITY standard "Committee Specification Draft 02">
 <!ENTITY this-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;/&stage;">
 <!ENTITY previous-loc "https://docs.oasis-open.org/xliff/xliff-core/v&pversion;/&pstage;">
 <!ENTITY latest-loc "https://docs.oasis-open.org/xliff/xliff-core/v&version;">
-<!ENTITY pubdate "18 July &pubyear;">
+<!ENTITY pubdate "12 November &pubyear;">
 <!ENTITY pubyear "2024">
 <!ENTITY releaseinfo "Standards Track Work Product">
 <!-- End of XLIFF V2.x publishing entities -->

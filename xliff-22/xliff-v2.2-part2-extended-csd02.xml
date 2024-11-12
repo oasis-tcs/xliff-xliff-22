@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "docbook/docbookx.dtd">
-<article lang="en-US" status="Committee Specification Draft 01">
+<article lang="en-US" status="Committee Specification Draft 02">
   <articleinfo>
     <title>XLIFF Version 2.2. Part 2: Extended</title>
 
@@ -8,12 +8,16 @@
 
     <productname class="trade">xliff-extended</productname>
 
-    <productnumber>csd01</productnumber>
+    <productnumber>csd02</productnumber>
 
-    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.xml</releaseinfo>
+    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part2-extended-csd02.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part2-extended-csd02.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part2-extended-csd02.xml</releaseinfo>
 
+    <releaseinfo role="OASIS-specification-previous-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-extended-v2.2-csd01-part2.xml</releaseinfo>
+    
     <releaseinfo role="OASIS-specification-latest-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-latest">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.xml</releaseinfo>
@@ -31,15 +35,6 @@
           <address format="linespecific"><email>lucia.morado@unige.ch</email></address>
         </affiliation>
         <email>lucia.morado@unige.ch</email>
-      </othercredit>
-      <othercredit role="chair">
-        <firstname>Yoshito</firstname>
-        <surname>Umaoka</surname>
-        <affiliation>
-          <orgname><ulink url="https://www.ibm.com/us-en">IBM</ulink></orgname>
-          <address format="linespecific"><email>yoshito_umaoka@us.ibm.com</email></address>
-        </affiliation>
-        <email>yoshito_umaoka@us.ibm.com</email>
       </othercredit>
       <editor>
         <firstname>Rodolfo M.</firstname>
@@ -62,7 +57,7 @@
       </editor>
     </authorgroup>
 
-    <pubdate>18 July 2024</pubdate>
+    <pubdate>12 November 2024</pubdate>
 
     <copyright>
       <year>2024</year>
@@ -76,13 +71,13 @@
 
       <itemizedlist spacing="compact">
         <listitem>
-          <para>XLIFF Version 2.2. Part 1: Core. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd01.html</ulink></para>
+          <para>XLIFF Version 2.2. Part 1: Core. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd02.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-csd02.html</ulink></para>
         </listitem>
         <listitem>
-          <para>XLIFF Version 2.2. Part 2: Extended. (this document) <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html</ulink></para>
+          <para>XLIFF Version 2.2. Part 2: Extended. (this document) <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd02.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd02.html</ulink></para>
         </listitem>
         <listitem>
-          <para>XML schemas: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/</ulink>
+          <para>XML schemas: <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/</ulink>
           </para>
         </listitem>
       </itemizedlist>
@@ -187,7 +182,7 @@
       <para>When referencing this document, the following citation format should be used:</para>
       <para><emphasis role="strong">[XLIFF-2.2-part2]</emphasis></para>
       <para>XLIFF Version 2.2 Part 2: Extended. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
-        18 July 2024. OASIS Committee Specification Draft 01. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part2-extended-csd01.html</ulink>.
+        12 November 2024. OASIS Committee Specification Draft 02. <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part2-extended-csd02.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/xliff-v2.2-part2-extended-csd02.html</ulink>.
         Latest stage <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html</ulink>.
       </para>
     </legalnotice>
@@ -5508,7 +5503,7 @@ Palouse horses&lt;fn>A Palouse horse is the same as
         <title>Module Namespace and Validation Artifacts</title>
         <para>The namespace for the Translation Candidates module is:
                 <code>urn:oasis:names:tc:xliff:matches:2.0</code></para>
-        <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/matches.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/matches.xsd</ulink>.</para>
+        <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/matches.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/matches.xsd</ulink>.</para>
 
 
     </section>
@@ -6017,7 +6012,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
     <title>Module Namespace and Validation Artifacts</title>
     <para>The namespace for the Glossary module is:
         <code>urn:oasis:names:tc:xliff:glossary:2.0</code></para>
-    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/glossary.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/glossary.xsd</ulink>.</para>
+    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/glossary.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/glossary.xsd</ulink>.</para>
   </section>
 
   <section>
@@ -6273,7 +6268,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
         <title>Module Namespace and Validation Artifacts</title>
         <para>The namespace for the Format style module is:
                 <code>urn:oasis:names:tc:xliff:fs:2.0</code></para>
-        <para>XML Schema is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/fs.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/fs.xsd</ulink> .</para>
+        <para>XML Schema is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/fs.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/fs.xsd</ulink> .</para>
 
     </section>
     <section>
@@ -6760,7 +6755,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
         <title>Module Namespace and Validation Artifacts</title>
         <para>The namespace for the Metadata module is:
                 <code>urn:oasis:names:tc:xliff:metadata:2.0</code></para>
-        <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/metadata.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/metadata.xsd</ulink>.</para>
+        <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/metadata.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/metadata.xsd</ulink>.</para>
     </section>
     <section>
         <title>Module Fragment Identification Prefix</title>
@@ -6993,7 +6988,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
     <title>Module Namespace and Validation Artifacts</title>
     <para>The namespace for the Resource Data module is:
         <code>urn:oasis:names:tc:xliff:resourcedata:2.0</code></para>
-    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/resource_data.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/resource_data.xsd</ulink>.</para>
+    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/resource_data.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/resource_data.xsd</ulink>.</para>
   </section>
 
   <section>
@@ -7573,7 +7568,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
         <title>Module Namespace and Validation Artifacts</title>
         <para>The namespace for the Size and Length restriction module is:
                 <code>urn:oasis:names:tc:xliff:sizerestriction:2.0</code></para>
-        <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/size_restriction.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/size_restriction.xsd</ulink>.</para>
+        <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/size_restriction.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/size_restriction.xsd</ulink>.</para>
     </section>
 
     <section>
@@ -8129,7 +8124,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
     <title>Module Namespace and Validation Artifacts</title>
     <para>The namespace for the Validation module is:
         <code>urn:oasis:names:tc:xliff:validation:2.0</code></para>
-    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/validation.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/validation.xsd</ulink>.</para>
+    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/validation.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/validation.xsd</ulink>.</para>
   </section>
 
   <section>
@@ -8697,7 +8692,7 @@ description. For example, 'Microsoft Translator Hub' or 'tm-client123-v456', or 
     <title>Module Namespace and Validation Artifacts</title>
     <para>The namespaces for the ITS module are: <code>http://www.w3.org/2005/11/its</code> and
         <code>urn:oasis:names:tc:xliff:itsm:2.1</code>.</para>
-    <para>XML Schemas for this module are available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/its.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/its.xsd</ulink> and <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/itsm.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/itsm.xsd</ulink>. </para>
+    <para>XML Schemas for this module are available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/its.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/its.xsd</ulink> and <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/itsm.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/itsm.xsd</ulink>. </para>
     <note>
       <para>Although setting and usage of prefixes for namespaces in XML is arbitrary, we are using
           <code>its:</code> for the <code>http://www.w3.org/2005/11/its</code> namespace and
@@ -14054,7 +14049,7 @@ else
       variants.</para>
 
     <para>When the two English forms (<emphasis>“{count} day”</emphasis> / <emphasis>“{count}
-        day”</emphasis>) to four Czech forms (<emphasis>“{count} den”</emphasis>, <emphasis>“{count}
+        days”</emphasis>) to four Czech forms (<emphasis>“{count} den”</emphasis>, <emphasis>“{count}
         dny”</emphasis>, <emphasis>“{count} dne”</emphasis>, <emphasis>“{count} dní”</emphasis>? Or
       Arabic (5 forms), or Chinese one form?</para>
 
@@ -14110,7 +14105,7 @@ else
     <para>The namespace for the Plural, Gender, and Select module is:
         <code>urn:oasis:names:tc:xliff:pgs:1.0</code>.</para>
 
-    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/plural_gender_select.xsd</ulink>.</para>
+    <para>XML Schema for this module is available at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/plural_gender_select.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/plural_gender_select.xsd</ulink>.</para>
   </section>
 
   <section>
@@ -14236,12 +14231,6 @@ else
     &lt;source>You deleted &lt;ph id="1" disp="file_count"/> files.&lt;/source>
   &lt;/segment>
 &lt;/unit></programlisting></para>
-
-      <para>A more compact form (non-XLIFF), to understand what is going on:
-        <programlisting format="linespecific">unit <emphasis>@switch(plural:file_count)</emphasis>
-    segment "You deleted no files."                       <emphasis>@case(0)</emphasis>
-    segment "You deleted one file."                       <emphasis>@case(1)</emphasis>
-    segment "You deleted &lt;ph disp="file_count"/> files."  <emphasis>@case(other)</emphasis></programlisting></para>
     </section>
 
     <section>
@@ -14262,13 +14251,6 @@ else
     &lt;source>You won &lt;ph id="1" disp="place"/>th place&lt;/source>
   &lt;/segment>
 &lt;/unit></programlisting></para>
-
-      <para>In a more compact form (non-XLIFF), to understand what is going on:
-        <programlisting format="linespecific">unit <emphasis>@switch(ordinal:place)</emphasis>
-    segment "You won #st place"  <emphasis>@case(one)</emphasis>
-    segment "You won #nd place"  <emphasis>@case(two)</emphasis>
-    segment "You won #rd place"  <emphasis>@case(few)</emphasis>
-    segment "You won #th place"  <emphasis>@case(other)</emphasis></programlisting></para>
     </section>
 
     <section>
@@ -14285,12 +14267,6 @@ else
     &lt;source>You are invited to their party&lt;/source>
   &lt;/segment>
 &lt;/unit></programlisting></para>
-
-      <para>In a more compact form (non-XLIFF), to understand what is going on:
-        <programlisting format="linespecific">unit <emphasis>@switch(gender:host_gender)</emphasis>
-    segment "You are invited to her party"    <emphasis>@case(feminine)</emphasis>
-    segment "You are invited to his party"    <emphasis>@case(masculine)</emphasis>
-    segment "You are invited to their party"  <emphasis>@case(other)</emphasis></programlisting></para>
 
       <para>Gender also allows for cases other than <code>feminine</code> / <code>masculine</code> /
           <code>neuter</code> / <code>other</code> in order to support languages with more than 3
@@ -14338,28 +14314,6 @@ else
         &lt;ph id="2" disp="guest_count"/> guests to their party.&lt;/source>
   &lt;/segment>
 &lt;/unit></programlisting></para>
-
-      <para>In a more compact form (non-XLIFF), to understand what is going on:
-        <programlisting format="linespecific">switch ( <emphasis role="bold">[gender:host_gender plural:guest_count]</emphasis> ) {
-  case <emphasis role="bold">[ feminine     0]</emphasis>:
-       "$host_name did not invite anyone to her party."
-  case <emphasis role="bold">[ feminine     1]</emphasis>:
-       "$host_name invited one guest to her party."
-  case <emphasis role="bold">[ feminine other]</emphasis>:
-       "$host_name invited $guest_count guests to her party."
-  case <emphasis role="bold">[masculine     0]</emphasis>:
-       "$host_name did not invite anyone to his party."
-  case <emphasis role="bold">[masculine     1]</emphasis>:
-       "$host_name invited one guest to his party."
-  case <emphasis role="bold">[masculine other]</emphasis>:
-       "$host_name invited $guest_count guests to his party."
-  case <emphasis role="bold">[    other     0]</emphasis>:
-       "$host_name did not invite anyone to their party."
-  case <emphasis role="bold">[    other     1]</emphasis>:
-       "$host_name invited one guest to their party."
-  case <emphasis role="bold">[    other other]</emphasis>:
-       "$host_name invited $guest_count guests to their party."
-}</programlisting></para>
     </section>
   </section>
 
@@ -14553,7 +14507,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
                 <listitem>
 
                     <para>Conformant XLIFF documents MUST be valid instances of the official Core
-                        XML Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/xliff_core_2.2.xsd</ulink>) that is a part of this
+                        XML Schema (<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/xliff_core_2.2.xsd</ulink>) that is a part of this
                         multipart Work Product.</para>
                 </listitem>
                 <listitem>
@@ -14720,7 +14674,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
                 </citetitle> (Fifth Edition) W3C Recommendation 26 November 2008.</bibliomixed>
             <bibliomixed id="xml_namespace"><abbrev>XML namespace</abbrev> W3C, <title>Schema
                     document for namespace http://www.w3.org/XML/1998/namespace</title>
-                <citetitle><ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink></citetitle> [<edition><ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>]</edition>. at <edition><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink></edition>
+                <citetitle><ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink></citetitle> [<edition><ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>]</edition>. at <edition><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink></edition>
                 in this distribution</bibliomixed>
 
             <bibliomixed id="XMLCatalogs"><abbrev>XML Catalogs</abbrev> Norman Walsh, <title>XML
@@ -14855,12 +14809,12 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
     <orderedlist continuation="restarts" inheritnum="ignore">
         <listitem id="CoreSchema">
             <para>XLIFF Core <link linkend="XMLSchema">[XML Schema]</link>,</para>
-            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/xliff_core_2.2.xsd</ulink></para>
+            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/xliff_core_2.2.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/xliff_core_2.2.xsd</ulink></para>
 
         </listitem>
         <listitem id="XLIFFCatalog">
             <para><link linkend="XMLCatalogs">[XML                    Catalog]</link> of XLIFF Defined XML Schemas,</para>
-            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/catalog.xml</ulink></para>
+            <para><ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/catalog.xml">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/catalog.xml</ulink></para>
         </listitem>
 
         <listitem>
@@ -14874,27 +14828,27 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
 
 <programlisting format="linespecific">
     
-<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/xliff_core_2.2.xsd"><code>Core XML Schema</code></ulink>
+<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/xliff_core_2.2.xsd"><code>Core XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/glossary.xsd"><code>Glossary Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/glossary.xsd"><code>Glossary Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/fs.xsd"><code>Format Style Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/fs.xsd"><code>Format Style Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/metadata.xsd"><code>Metadata Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/metadata.xsd"><code>Metadata Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/resource_data.xsd"><code>Resource Data Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/resource_data.xsd"><code>Resource Data Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/size_restriction.xsd"><code>Size and Length Restriction Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/size_restriction.xsd"><code>Size and Length Restriction Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/validation.xsd"><code>Validation Module XML Schema</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/validation.xsd"><code>Validation Module XML Schema</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
     |
-    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/plural_gender_select.xsd">Plural, Gender, and Select Module</ulink>
+    +---<ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/plural_gender_select.xsd">Plural, Gender, and Select Module</ulink>
   
  
 </programlisting>
@@ -14918,7 +14872,7 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
         </warning>
 
         <para>Currently the only included third party support schema is <ulink url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>]
-            at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
+            at <ulink url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd02/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
             distribution.</para>
     </section>
 </appendix>
@@ -14968,7 +14922,11 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
                     <code>resource_data.xsd</code> and <code>validation.xsd</code>.</para>
         </listitem>
         <listitem>
-            <para>Removed the informative Change Tracking Extension.</para>
+            <para>Removed the informative Change Tracking Extension. This module had been already
+                demoted in the previous XLIFF version (2.1) but left in the specification for
+                informative purposes. During the development of XLIFF 2.2, the TC did not work on
+                this item. Therefore a decision was taken to remove it completely from the current
+                specification to reduce its volume.</para>
         </listitem>
         <listitem>
             <para>Added new <link linkend="plural_gender_select_module">Plural, Gender, and Select                    Module</link>. </para>
@@ -15018,6 +14976,43 @@ unit <emphasis role="bold">#g_msgid_plural_gender</emphasis> <emphasis>@switch(p
         </listitem>
     </itemizedlist>
     
+</appendix>
+  <appendix id="revisionHistory" role="informative">
+    <title>Appendix D. Revision History</title>
+    <table>
+        <title>Revisions</title>
+        <tgroup cols="4">
+            <thead>
+                <row>
+                    <entry>Revision</entry>
+                    <entry>Date</entry>
+                    <entry>Editor</entry>
+                    <entry>Changes Made</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>CSD02</entry>
+                    <entry>12 November, 2024</entry>
+                    <entry>Rodolfo M. Raya</entry>
+                    <entry>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Updated <link linkend="specChangeTracking">Specification Change                                        Tracking</link> appendix with additional information about
+                                    the removal of the informative Change Tracking Extension.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Removed compact form (non-XLIFF) examples from <link linkend="plural_gender_select_module">Plural, Gender, and                                        Select Module</link> module to avoid potential confusions.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Corrected link to grammar file in <link linkend="plural_gender_select_module">Plural, Gender, and                                    Select Module</link>.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
 </appendix>
   <appendix id="notices">
     <title>Notices</title>

@@ -62,7 +62,11 @@
                     <code>resource_data.xsd</code> and <code>validation.xsd</code>.</para>
         </listitem>
         <listitem>
-            <para>Removed the informative Change Tracking Extension.</para>
+            <para>Removed the informative Change Tracking Extension. This module had been already
+                demoted in the previous XLIFF version (2.1) but left in the specification for
+                informative purposes. During the development of XLIFF 2.2, the TC did not work on
+                this item. Therefore a decision was taken to remove it completely from the current
+                specification to reduce its volume.</para>
         </listitem>
         <listitem>
             <para>Added new <olink targetdoc="../modules/plural_gender_select/specification.xml"

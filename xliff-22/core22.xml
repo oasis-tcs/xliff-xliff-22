@@ -28,6 +28,13 @@
     <releaseinfo role="OASIS-specification-this"
       >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part1-core-&stage;.xml</releaseinfo>
 
+    <releaseinfo role="OASIS-specification-previous-authoritative"
+      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&pstage;/xliff-core-v2.2-&pstage;-part1.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous"
+      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&pstage;/xliff-core-v2.2-&pstage;-part1.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-previous"
+      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&pstage;/xliff-core-v2.2-&pstage;-part1.xml</releaseinfo>
+    
     <releaseinfo role="OASIS-specification-latest-authoritative"
       >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html</releaseinfo>
     <releaseinfo role="OASIS-specification-latest"
@@ -48,15 +55,6 @@
           <address format="linespecific"><email>lucia.morado@unige.ch</email></address>
         </affiliation>
         <email>lucia.morado@unige.ch</email>
-      </othercredit>
-      <othercredit role="chair">
-        <firstname>Yoshito</firstname>
-        <surname>Umaoka</surname>
-        <affiliation>
-          <orgname><ulink url="https://www.ibm.com/us-en">IBM</ulink></orgname>
-          <address format="linespecific"><email>yoshito_umaoka@us.ibm.com</email></address>
-        </affiliation>
-        <email>yoshito_umaoka@us.ibm.com</email>
       </othercredit>
       <editor>
         <firstname>Rodolfo M.</firstname>
@@ -224,8 +222,8 @@
       <para><emphasis role="strong">[XLIFF-2.2-part1]</emphasis></para>
       <para>XLIFF Version 2.2 Part 1:Core. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
         &pubdate;. OASIS &standard;. <ulink
-          url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-&stage;.html"
-          >https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd01/xliff-v2.2-part1-core-&stage;.html</ulink>.
+          url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part1-core-&stage;.htmls"
+          >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part1-core-&stage;.html</ulink>.
         Latest stage <ulink
           url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html"
           >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html</ulink>.
@@ -258,6 +256,7 @@
   <xi:include href="appendices/grammars.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="appendices/changeTracking.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="appendices/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="appendices/revisionHistory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="appendices/notices.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 </article>

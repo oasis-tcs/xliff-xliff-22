@@ -62,7 +62,7 @@ else
       variants.</para>
 
     <para>When the two English forms (<emphasis>“{count} day”</emphasis> / <emphasis>“{count}
-        day”</emphasis>) to four Czech forms (<emphasis>“{count} den”</emphasis>, <emphasis>“{count}
+        days”</emphasis>) to four Czech forms (<emphasis>“{count} den”</emphasis>, <emphasis>“{count}
         dny”</emphasis>, <emphasis>“{count} dne”</emphasis>, <emphasis>“{count} dní”</emphasis>? Or
       Arabic (5 forms), or Chinese one form?</para>
 
@@ -119,7 +119,7 @@ else
         <code>urn:oasis:names:tc:xliff:pgs:1.0</code>.</para>
 
     <para>XML Schema for this module is available at <ulink
-        url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/wd/schemas/plural_gender_select.xsd"
+      url="&this-loc;/schemas/plural_gender_select.xsd"
         >&this-loc;/schemas/plural_gender_select.xsd</ulink>.</para>
   </section>
 
