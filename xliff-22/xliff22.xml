@@ -92,13 +92,13 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>XLIFF Version 2.2. Part 1: Core. <ulink
-            url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part1-core-&stage;.html"
-            >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part1-core-&stage;.html</ulink></para>
+              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-core-v2.2-&stage;-part1.html"
+              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-core-v2.2-&stage;-part1.html</ulink></para>
         </listitem>
         <listitem>
           <para>XLIFF Version 2.2. Part 2: Extended. (this document) <ulink
-            url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part2-extended-&stage;.html"
-            >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part2-extended-&stage;.html</ulink></para>
+              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-extended-v2.2-&stage;-part2.html"
+              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-extended-v2.2-&stage;-part2.html</ulink></para>
         </listitem>
         <listitem>
           <para>XML schemas: <ulink
