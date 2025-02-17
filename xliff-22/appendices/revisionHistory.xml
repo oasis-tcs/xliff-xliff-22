@@ -7,10 +7,11 @@
 <!ENTITY % xinclude SYSTEM "../docbook/xinclude.mod">
 %xinclude;
 ]>
-<appendix role="informative" id="revisionHistory">
-    <title>Appendix D. Revision History</title>
+<appendix id="revisionHistory">
+    <title>Revision History</title>
     <table>
-        <title>Tracking of changes in response to the 1<superscript>st</superscript> Public Review</title>
+        <title>Tracking of changes in response to the 1<superscript>st</superscript> Public
+            Review</title>
         <tgroup cols="4">
             <thead>
                 <row>
@@ -37,13 +38,51 @@
                                 <para>Removed compact form (non-XLIFF) examples from <olink
                                         targetdoc="../modules/plural_gender_select/specification.xml"
                                         targetptr="plural_gender_select_module">Plural, Gender, and
-                                        Select Module</olink> module to avoid potential confusions.</para>
+                                        Select Module</olink> module to avoid potential
+                                    confusions.</para>
                             </listitem>
                             <listitem>
                                 <para>Corrected link to grammar file in <olink
-                                    targetdoc="../modules/plural_gender_select/specification.xml"
-                                    targetptr="plural_gender_select_module">Plural, Gender, and
-                                    Select Module</olink>.</para>
+                                        targetdoc="../modules/plural_gender_select/specification.xml"
+                                        targetptr="plural_gender_select_module">Plural, Gender, and
+                                        Select Module</olink>.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+    <table>
+        <title>Tracking of changes in response to the 2<superscript>nd</superscript> Public
+            Review</title>
+        <tgroup cols="4">
+            <thead>
+                <row>
+                    <entry>Revision</entry>
+                    <entry>Date</entry>
+                    <entry>Editor</entry>
+                    <entry>Changes Made</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>CSD03</entry>
+                    <entry>17 February, 2025</entry>
+                    <entry>Rodolfo M. Raya</entry>
+                    <entry>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Updated <olink targetdoc="./changeTracking.xml"
+                                        targetptr="specChangeTracking">Specification Change
+                                        Tracking</olink> to add the removal of third-party XML
+                                    Schemas from this specification.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Corrected links to third-party XML Schemas in the grammar
+                                    files listed in <olink targetdoc="./grammars.xml"
+                                        targetptr="coreValidation">XLIFF Grammar
+                                    Files</olink>.</para>
                             </listitem>
                         </itemizedlist>
                     </entry>

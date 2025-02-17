@@ -34,29 +34,36 @@
     </orderedlist>
 
 
-    <xi:include href="../core/tree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-    <section>
-        <title>Support Schemas</title>
-        <para>Third party support schemas that are normatively referenced from this specification or
-            from the machine readable artifacts that are a part of this multipart product are
-            distributed along with the XLIFF-defined schemas in a subfolder named
-                <code>informativeCopiesOf3rdPartySchemas</code> and further subdivided in folders
-            according to the owner/maintainer of the schema.</para>
-        <warning>
-            <para>Schema copies in this sub-folder are provided solely for implementers convenience
-                and are NOT a part of the OASIS multipart product. These schemas belong to their
-                respective owners and their use is governed by their owners' respective IPR
-                policies. The support schemas are organized in folders per owner/maintainer. It is
-                the implementer's sole responsibility to ensure that their local copies of all
-                schemas are the appropriate up to date versions.</para>
-        </warning>
-
-        <para>Currently the only included third party support schema is <ulink
-                url="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</ulink> [<ulink
-                url="http://www.w3.org/2009/01/xml.xsd">http://www.w3.org/2009/01/xml.xsd</ulink>]
-            at <ulink url="&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd"
-                >&this-loc;/schemas/informativeCopiesOf3rdPartySchemas/w3c/xml.xsd</ulink> in this
-            distribution.</para>
+    <section id="schema_tree">
+        <title>XML Schemas Tree</title>
+        
+        <programlisting>
+    
+<ulink url="&this-loc;/schemas/xliff_core_2.2.xsd"><code>Core XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/matches.xsd"><code>Candidates Module XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/glossary.xsd"><code>Glossary Module XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/fs.xsd"><code>Format Style Module XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/metadata.xsd"><code>Metadata Module XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/resource_data.xsd"><code>Resource Data Module XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/size_restriction.xsd"><code>Size and Length Restriction Module XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/validation.xsd"><code>Validation Module XML Schema</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/its.xsd"><code>ITS Module XML Schema (W3C namespace subset)</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/itsm.xsd"><code>ITS Module XML Schema (additional attributes)</code></ulink>
+    |
+    +---<ulink url="&this-loc;/schemas/plural_gender_select.xsd">Plural, Gender, and Select Module</ulink>
+  
+ 
+</programlisting>
+        
     </section>
+
 </appendix>

@@ -83,6 +83,11 @@
                     targetdoc="../elements/resourceData/resourceItem.xml"
                     targetptr="res_resourceItem"><code>&lt;res:resourceItem></code></olink>.</para>
         </listitem>
+        <listitem>
+            <para>Removed references to third-party XML Schemas from <olink
+                    targetdoc="./grammars.xml" targetptr="coreValidation">XLIFF Grammar
+                    Files</olink>.</para>
+        </listitem>
     </orderedlist>
     <para>In spite of the above mentioned changes, fixes, clarifications, and additions, the
         practical workings of the previous versions of the XLIFF Core have not been affected.</para>
