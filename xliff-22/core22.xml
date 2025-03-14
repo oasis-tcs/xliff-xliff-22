@@ -22,11 +22,11 @@
     <productnumber>&stage;</productnumber>
 
     <releaseinfo role="OASIS-specification-this-authoritative"
-      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-core-v2.2-&stage;-part1.html</releaseinfo>
+      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.html</releaseinfo>
     <releaseinfo role="OASIS-specification-this"
-      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-core-v2.2-&stage;-part1.pdf</releaseinfo>
+      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.pdf</releaseinfo>
     <releaseinfo role="OASIS-specification-this"
-      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-core-v2.2-&stage;-part1.xml</releaseinfo>
+      >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.xml</releaseinfo>
 
     <releaseinfo role="OASIS-specification-previous-authoritative"
       >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&pstage;/xliff-core-v2.2-&pstage;-part1.html</releaseinfo>
@@ -92,18 +92,18 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>XLIFF Version 2.2. Part 1: Core. (this document) <ulink
-              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-core-v2.2-&stage;-part1.html"
-              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-core-v2.2-&stage;-part1.html</ulink></para>
+              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.html"
+              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-core-v2.2-part1.html</ulink></para>
         </listitem>
         <listitem>
           <para>XLIFF Version 2.2. Part 2: Extended. <ulink
-              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-extended-v2.2-&stage;-part2.html"
-              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-extended-v2.2-&stage;-part2.html</ulink></para>
+              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.html"
+              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.html</ulink></para>
         </listitem>
         <listitem>
           <para>XML schemas: <ulink
-              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/schemas/"
-              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/schemas/</ulink>
+              url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/"
+              >https://docs.oasis-open.org/xliff/xliff-core/v2.2/schemas/</ulink>
           </para>
         </listitem>
       </itemizedlist>
@@ -222,8 +222,8 @@
       <para><emphasis role="strong">[XLIFF-2.2-part1]</emphasis></para>
       <para>XLIFF Version 2.2 Part 1:Core. Edited by Rodolfo M. Raya and Lucía Morado Vázquez
         &pubdate;. OASIS &standard;. <ulink
-          url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part1-core-&stage;.htmls"
-          >https://docs.oasis-open.org/xliff/xliff-core/v2.2/&stage;/xliff-v2.2-part1-core-&stage;.html</ulink>.
+          url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.htmls"
+          >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html</ulink>.
         Latest stage <ulink
           url="https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html"
           >https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part1-core.html</ulink>.
