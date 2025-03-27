@@ -10,9 +10,9 @@
 
     <productnumber>cs</productnumber>
 
-    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.html</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.pdf</releaseinfo>
-    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-extended-v2.2-part2.xml</releaseinfo>
+    <releaseinfo role="OASIS-specification-this-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/cs01/xliff-extended-v2.2-cs01-part2.html</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/cs01/xliff-extended-v2.2-cs01-part2.pdf</releaseinfo>
+    <releaseinfo role="OASIS-specification-this">https://docs.oasis-open.org/xliff/xliff-core/v2.2/cs01/xliff-extended-v2.2-cs01-part2.xml</releaseinfo>
 
     <releaseinfo role="OASIS-specification-previous-authoritative">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd03/xliff-extended-v2.2-csd03-part2.html</releaseinfo>
     <releaseinfo role="OASIS-specification-previous">https://docs.oasis-open.org/xliff/xliff-core/v2.2/csd03/xliff-extended-v2.2-csd03-part2.pdf</releaseinfo>
@@ -154,7 +154,7 @@
 
       <para>TC members should send comments on this document to the TC's email list. Others should
         send comments to the TC's public comment list, after subscribing to it by following the
-        instructions at <ulink url="https://groups.oasis-open.org/communities/community-home?CommunityKey=f7b70a54-5dd7-4ea9-9d6f-018dce262ff9">https://groups.oasis-open.org/communities/community-home?CommunityKey=f7b70a54-5dd7-4ea9-9d6f-018dce262ff9</ulink></para>
+        instructions at <ulink url="https://groups.oasis-open.org/communities/tc-community-home2?CommunityKey=3d0f1f56-8477-4b53-9b14-018dc7d3eecf">https://groups.oasis-open.org/communities/tc-community-home2?CommunityKey=3d0f1f56-8477-4b53-9b14-018dc7d3eecf</ulink></para>
 
       <para>This document is provided under the <ulink url="https:https://www.oasis-open.org/policies-guidelines/ipr/#RF-Rand">RF on RAND
           Terms</ulink> Mode of the <ulink url="https://www.oasis-open.org/policies-guidelines/ipr/">OASIS IPR Policy</ulink>, the mode chosen when the Technical Committee was established.
