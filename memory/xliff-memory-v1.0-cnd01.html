@@ -1,0 +1,456 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Use XLIFF to Store Translation Memory Data Version 1.0</title>
+    <style>
+        body {
+            font-family: arial, helvetica, sans-serif;
+            margin: 8px;
+            margin-left: 3pc;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #0b5394;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </head>
+    <body>
+        <p><a href="https://www.oasis-open.org/"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNzciIGhlaWdodD0iNTYiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iMy44NDklIiB5MT0iNTAuMjUlIiB4Mj0iOTYuMjk4JSIgeTI9IjQ5LjcwMSUiIGlkPSJhIj48c3RvcCBzdG9wLWNvbG9yPSIjODBFOEZGIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzIxNDhFNCIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgeDE9IjIuNzk4JSIgeTE9IjUwLjMwMiUiIHgyPSI5Ny4wNSUiIHkyPSI0OS43NDclIiBpZD0iYiI+PHN0b3Agc3RvcC1jb2xvcj0iIzgwRThGRiIgb2Zmc2V0PSIwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiMyMTQ4RTQiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTS4wMDIgMEMwIC4wNjIgMCAuMTI1IDAgLjE4N2MwIDMuODkyIDEuMTk3IDcuNTEgMy4yNCAxMC41MDNhMTguNzM4IDE4LjczOCAwIDAwMy4wODUgMy40OTcgMTguNTQ5IDE4LjU0OSAwIDAwMTIuMzE2IDQuNjY2YzEuNjk2IDAgMy4yODguNDU4IDQuNjYgMS4yNTNhOS4zNDMgOS4zNDMgMCAwMTQuNjYgOC4wOCA5LjMgOS4zIDAgMDEtMi4wNDkgNS44MzIgMjMuMjcxIDIzLjI3MSAwIDAxOC4xMyA0LjY3MiAxOC41NzcgMTguNTc3IDAgMDAzLjI0LTEwLjUwM2MwLTguNjgyLTUuOTUxLTE2LTEzLjk4MS0xOC4wNzdhMTguNjIzIDE4LjYyMyAwIDAwLTQuNjYtLjU5IDkuMzAxIDkuMzAxIDAgMDEtNy4yNzItMy41MDJBOS4zIDkuMyAwIDAxOS4zMi4xODdjMC0uMDYyIDAtLjEyNS4wMDQtLjE4N0guMDAyeiIgZmlsbD0idXJsKCNhKSIvPjxwYXRoIGQ9Ik0wIDI4LjE4N2MwIDguNjgyIDUuOTUgMTUuOTk5IDEzLjk4IDE4LjA3NiAxLjQ5LjM4NSAzLjA1Mi41OSA0LjY2LjU5YTkuMzAxIDkuMzAxIDAgMDE3LjI3MiAzLjUwMkE5LjMxIDkuMzEgMCAwMTI3Ljk2IDU2aDkuMzJhMTguNTc3IDE4LjU3NyAwIDAwLTMuMjM3LTEwLjMxNyAxOC43NDMgMTguNzQzIDAgMDAtMy4wODUtMy40OTZBMTguNTQ5IDE4LjU0OSAwIDAwMTguNjQgMzcuNTJhOS4yNjYgOS4yNjYgMCAwMS00LjY2LTEuMjUzIDkuMzQzIDkuMzQzIDAgMDEtNC42Ni04LjA4IDkuMyA5LjMgMCAwMTIuMDQ4LTUuODMyIDIzLjI4IDIzLjI4IDAgMDEtOC4xMy00LjY3MkExOC41NzcgMTguNTc3IDAgMDAwIDI4LjE4NyIgZmlsbD0idXJsKCNiKSIvPjxwYXRoIGQ9Ik02MC41NDEgMTQuNTE0Yy03LjY5MiAwLTEzLjkyOCA2LjI0NS0xMy45MjggMTMuOTQ3IDAgNy43MDMgNi4yMzYgMTMuOTQ4IDEzLjkyOCAxMy45NDggNy42OTMgMCAxMy45MjktNi4yNDUgMTMuOTI5LTEzLjk0OCAwLTcuNzAyLTYuMjM2LTEzLjk0Ny0xMy45MjktMTMuOTQ3bTAgNC44MzZjNS4wMTcgMCA5LjA5OSA0LjA4OCA5LjA5OSA5LjExMSAwIDUuMDI1LTQuMDgyIDkuMTEyLTkuMDk5IDkuMTEycy05LjA5OC00LjA4Ny05LjA5OC05LjExMmMwLTUuMDIzIDQuMDgxLTkuMTEgOS4wOTgtOS4xMW0yNS4xNjQgMTMuMjMxaDguOTYzbC00LjQ4Mi0xMC45ODgtNC40ODEgMTAuOTg4em0tOC44MSA5LjM2M0w4OC4xNCAxNC45NzhoNC4wOTVsMTEuMjQzIDI2Ljk2N2gtNS4xbC0yLjIwMi01LjM3OEg4NC4xOThsLTIuMjAyIDUuMzc4aC01LjF6bTMzLjA3My03Ljk3YzEuMzkgMi43NDcgMy42MzEgNC4xMDEgNi43NiA0LjEwMSAzLjM2MiAwIDQuNTYtMS43OCA0LjU2LTMuNTIgMC0xLjItLjQyNS0yLjAxMy0xLjU0NS0yLjc0OC0xLjEyLS43NzQtMS45MzMtMS4xMjItMy45NDEtMS44NTctMi40NzMtLjkyOC0zLjkwMy0xLjYyNS01LjQ0OC0yLjg2My0xLjU0NS0xLjI3Ny0yLjI4LTMuMDE4LTIuMjgtNS4zIDAtMi4xNjcuODEyLTMuOTA4IDIuMzk2LTUuMjYyIDEuNjIyLTEuMzU0IDMuNTkzLTIuMDEyIDUuOTUtMi4wMTIgMy42NyAwIDYuNDUyIDEuNDcgOC4zMDcgNC4zNzJsLTMuNDQgMi4zNmMtMS4wNDItMS41ODYtMi42MjYtMi4zOTktNC43OS0yLjM5OS0yLjEyNSAwLTMuNjcgMS4yLTMuNjcgMi44NjMgMCAxLjEyMi40NjMgMS42NjQgMS4xMiAyLjMyMS40MjUuMzEgMS41MDcuNzc0IDIuMDEgMS4wNDVsMS4zOS41NDIgMS41ODQuNjE5YzIuNTUgMS4wNDUgNC4zNjYgMi4xNjcgNS40ODcgMy4zNjYgMS4xMiAxLjIgMS43IDIuODI0IDEuNyA0LjgzNiAwIDQuNzU5LTMuMjg1IDcuOTctOS40MjggNy45Ny00Ljk4NCAwLTguNjU0LTIuMzIxLTEwLjM1NC02LjE1MWwzLjYzMi0yLjI4M3ptMjIuNTYyIDcuOTdoNC44M1YxNC45NzhoLTQuODN6bTE0LjM3Mi03Ljk3YzEuMzkgMi43NDcgMy42MzIgNC4xMDEgNi43NjEgNC4xMDEgMy4zNjIgMCA0LjU2LTEuNzggNC41Ni0zLjUyIDAtMS4yLS40MjYtMi4wMTMtMS41NDYtMi43NDgtMS4xMi0uNzc0LTEuOTMyLTEuMTIyLTMuOTQxLTEuODU3LTIuNDczLS45MjgtMy45MDItMS42MjUtNS40NDgtMi44NjMtMS41NDUtMS4yNzctMi4yNzktMy4wMTgtMi4yNzktNS4zIDAtMi4xNjcuODExLTMuOTA4IDIuMzk1LTUuMjYyIDEuNjIzLTEuMzU0IDMuNTkzLTIuMDEyIDUuOTUtMi4wMTIgMy42NyAwIDYuNDUzIDEuNDcgOC4zMDcgNC4zNzJsLTMuNDM5IDIuMzZjLTEuMDQzLTEuNTg2LTIuNjI3LTIuMzk5LTQuNzktMi4zOTktMi4xMjYgMC0zLjY3MSAxLjItMy42NzEgMi44NjMgMCAxLjEyMi40NjQgMS42NjQgMS4xMiAyLjMyMS40MjUuMzEgMS41MDcuNzc0IDIuMDEgMS4wNDVsMS4zOS41NDIgMS41ODUuNjE5YzIuNTUgMS4wNDUgNC4zNjUgMi4xNjcgNS40ODYgMy4zNjYgMS4xMiAxLjIgMS43IDIuODI0IDEuNyA0LjgzNiAwIDQuNzU5LTMuMjg0IDcuOTctOS40MjcgNy45Ny00Ljk4NCAwLTguNjU1LTIuMzIxLTEwLjM1NC02LjE1MWwzLjYzMS0yLjI4M3ptMzkuNDU1LTE5LjQ2MWMtNy42OTIgMC0xMy45MjggNi4yNDUtMTMuOTI4IDEzLjk0NyAwIDcuNzAzIDYuMjM2IDEzLjk0OCAxMy45MjggMTMuOTQ4IDcuNjkzIDAgMTMuOTI5LTYuMjQ1IDEzLjkyOS0xMy45NDggMC03LjcwMi02LjIzNi0xMy45NDctMTMuOTI5LTEzLjk0N20wIDMuMDE4YzYuMDE5IDAgMTAuOTE1IDQuOTAzIDEwLjkxNSAxMC45MyAwIDYuMDI2LTQuODk2IDEwLjkzLTEwLjkxNSAxMC45My02LjAxOCAwLTEwLjkxNC00LjkwNC0xMC45MTQtMTAuOTMgMC02LjAyNyA0Ljg5Ni0xMC45MyAxMC45MTQtMTAuOTNtMjQuNTEzIDExLjA2NWg1LjQ4N2MxLjUwNyAwIDIuNzgyLS41MDMgMy43ODYtMS41NDggMS4wNDQtMS4wNDQgMS41NDYtMi4zMjEgMS41NDYtMy44NjkgMC0xLjU0Ny0uNTAyLTIuODI0LTEuNTQ2LTMuODY5LTEuMDA0LTEuMDQ0LTIuMjgtMS41NDctMy43ODYtMS41NDdoLTUuNDg2djEwLjgzM3ptLTMuMDEzIDEzLjM0OFYxNC45NzhoOC42MTZjMi4yOCAwIDQuMjUuNzc0IDUuODM0IDIuMzYgMS41ODQgMS41NDggMi4zOTYgMy40ODIgMi4zOTYgNS44NDIgMCAyLjM2LS44MTIgNC4yOTUtMi4zOTYgNS44ODEtMS41ODQgMS41NDgtMy41NTQgMi4zMjItNS44MzQgMi4zMjJoLTUuNjAydjEwLjU2MmgtMy4wMTR6bTI0LjA3IDBWMTQuOTc4aDE1LjIyMnYyLjc4NkgyMzQuOTR2OC41NWgxMS40NzVWMjkuMUgyMzQuOTR2MTAuMDZoMTIuNDh2Mi43ODV6bTIzLjE0MyAwVjE0Ljk3OGgyLjYyNmwxNi4yNjYgMjEuNTl2LTIxLjU5aDMuMDE0djI2Ljk2N2gtMi40MzRsLTE2LjQ2LTIxLjgyMXYyMS44MjF6IiBmaWxsPSIjMEEyNTQwIi8+PC9nPjwvc3ZnPg==" alt="OASIS" border="0" width="290pt"></a></p>
+        <hr>
+<h1 id="use-xliff-to-store-translation-memory-data-version-10">Use XLIFF
+to Store Translation Memory Data Version 1.0</h1>
+<h2 id="committee-note-draft-01">Committee Note Draft 01</h2>
+<h2 id="9-june-2025">9 June 2025</h2>
+<h3 id="this-version">This version</h3>
+<ul>
+<li>[ link to authoritative version of the published document ]
+(Authoritative)</li>
+<li>[ links to one or more other versions of the published document
+(e.g., MD, PDF, Word, HTML, etc.) ]</li>
+</ul>
+<h3 id="previous-version">Previous version</h3>
+<ul>
+<li>[ link to authoritative version of the published document ]
+(Authoritative)</li>
+<li>[ links to one or more other versions of the published document
+(e.g., MD, PDF, Word, HTML, etc.) ]</li>
+</ul>
+<h3 id="latest-version">Latest version</h3>
+<ul>
+<li>[ link to authoritative version of the published document ]
+(Authoritative)</li>
+<li>[ links to one or more other versions of the published document
+(e.g., MD, PDF, Word, HTML, etc.) ]</li>
+</ul>
+<h3 id="technical-committee">Technical Committee</h3>
+<p><a
+href="https://groups.oasis-open.org/communities/tc-community-home2?CommunityKey=3d0f1f56-8477-4b53-9b14-018dc7d3eecf">OASIS
+XLIFF TC</a></p>
+<h3 id="chairs">Chairs</h3>
+<ul>
+<li>Dr. Lucía Morado Vázquez (<a
+href="mailto:lucia.morado@unige.ch"><span>lucia.morado@unige.ch</span></a>),
+<a href="https://www.unige.ch/en/">University of Geneva</a></li>
+<li>Yoshito Umaoka (<a
+href="mailto:y.umaoka@gmail.com"><span>y.umaoka@gmail.com</span></a>),
+Individual</li>
+</ul>
+<h3 id="secretaries">Secretaries</h3>
+<ul>
+<li>Rodolfo M. Raya (<a
+href="mailto:rmraya@maxprograms.com"><span>rmraya@maxprograms.com</span></a>),
+<a href="https://maxprograms.com">Maxprograms</a></li>
+</ul>
+<h3 id="editors">Editors</h3>
+<ul>
+<li>Rodolfo M. Raya (<a
+href="mailto:rmraya@maxprograms.com"><span>rmraya@maxprograms.com</span></a>),
+<a href="https://maxprograms.com">Maxprograms</a></li>
+</ul>
+<h3 id="abstract">Abstract</h3>
+<p>[ Document abstract ]</p>
+<h3 id="citation-format">Citation Format</h3>
+<p>When referencing this document, the following citation format should
+be used:</p>
+<ul>
+<li>[ The full reference for this document in IEEE reference format
+]</li>
+</ul>
+<h3 id="related-work">Related Work</h3>
+<p>This document replaces or supersedes:</p>
+<ul>
+<li>[ The full reference to the related document in IEEE reference
+format ]</li>
+</ul>
+<p>This document is related to:</p>
+<ul>
+<li>[ The full reference to the related document in IEEE reference
+format ]</li>
+</ul>
+<h2 id="license-document-status-and-notices">License, Document Status,
+and Notices</h2>
+<p>Copyright © OASIS Open 2025. All Rights Reserved. For license and
+copyright information, and complete status, please see Annex A which
+contains the License, Document Status and Notices.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#1-scope">1 Scope</a></li>
+<li><a href="#2-definitions-and-acronyms">2 Definitions and Acronyms</a>
+<ul>
+<li><a href="#2.1-definitions">2.1 Definitions</a>
+<ul>
+<li><a href="#2.1.1-terms-defined-elsewhere">2.1.1 Terms Defined
+Elsewhere</a></li>
+<li><a href="#2.1.2-terms-defined-in-this-document">2.1.2 Terms Defined
+in this Document</a></li>
+</ul></li>
+<li><a href="#2.2-abbreviations-and-acronyms">2.2 Abbreviations and
+Acronyms</a></li>
+</ul></li>
+<li><a href="#3-document-conventions">3 Document Conventions</a>
+<ul>
+<li><a href="#3.1-key-words">3.1 Key Words</a></li>
+<li><a href="#3.2-typographical-conventions">3.2 Typographical
+Conventions</a></li>
+</ul></li>
+<li><a href="#4-introduction">4 Introduction</a>
+<ul>
+<li><a
+href="#4.1-any-additional-introduction-subsections-that-are-needed">4.1
+Any Additional Introduction Subsections That are Needed</a></li>
+<li><a href="#4.2-changes-from-the-previous-version">4.2 Changes From
+the Previous Version</a></li>
+</ul></li>
+<li><a href="#5-level-1-section-header">5 Level 1 Section Header</a>
+<ul>
+<li><a href="#5.1-level-2-section-header">5.1 Level 2 Section Header</a>
+<ul>
+<li><a href="#5.1.1-level-3-section-header">5.1.1 Level 3 Section
+Header</a>
+<ul>
+<li><a href="#5.1.1.1-level-4-section-header">5.1.1.1 Level 4 Section
+Header</a>
+<ul>
+<li><a href="#5.1.1.1.1-level-5-section-header">5.1.1.1.1 Level 5
+Section Header</a>
+<ul>
+<li><a href="#5.1.1.1.1.1-level-6-section-header">5.1.1.1.1.1 Level 6
+Section Header</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#6-additional-sections-as-needed">6 Additional Sections as
+Needed</a></li>
+<li><a href="#7-safety,-security,-and-data-protection-considerations">7
+Safety, Security, and Data Protection Considerations</a></li>
+<li><a href="#8-conformance">8 Conformance</a></li>
+<li><a href="#annex-a-license,-document-status-and-notices">Annex A
+License, Document Status and Notices</a>
+<ul>
+<li><a href="#a.1-document-status">A.1 Document Status</a></li>
+<li><a href="#a.2-license-and-notices">A.2 License and Notices</a></li>
+</ul></li>
+<li><a href="#annex-b-references">Annex B References</a>
+<ul>
+<li><a href="#b.1-normative-references">B.1 Normative
+References</a></li>
+<li><a href="#b.2-informative-references">B.2 Informative
+References</a></li>
+</ul></li>
+<li><a href="#annex-c-additional-annex-as-needed">Annex C Additional
+Annex as Needed</a>
+<ul>
+<li><a href="#c.1-subsection-title">C.1 Subsection Title</a></li>
+<li><a href="#c.1.1-sub-subsection">C.1.1 Sub-subsection</a></li>
+</ul></li>
+<li><a href="#appendix-1-acknowledgments">Appendix 1 Acknowledgments</a>
+<ul>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#special-thanks">Special Thanks</a></li>
+<li><a href="#participants">Participants</a></li>
+</ul></li>
+<li><a href="#appendix-2-changes-from-previous-version">Appendix 2
+Changes From Previous Version</a>
+<ul>
+<li><a href="#revision-history">Revision History</a></li>
+</ul></li>
+<li><a href="#appendix-3-additional-appendix-as-needed">Appendix 3
+Additional Appendix as Needed</a>
+<ul>
+<li><a href="#subsection-title">Subsection Title</a></li>
+</ul></li>
+<li><a href="#sub-subsection">Sub-subsection</a></li>
+</ul>
+<hr />
+<h1 id="1-scope">1 Scope</h1>
+<p>&lt;</p>
+<p>What is the purpose and scope of this document? Best practices:</p>
+<ul>
+<li>Expect this text to be reused in multiple other places to explain
+the document in summary form.</li>
+<li>This is not the TC or OP scope (which is an IPR and rules boundary);
+rather, this section is the summary intended purpose of this
+document.</li>
+<li>Short is better; four paragraphs or less is recommended.</li>
+<li>If use of this spec is deliberately created to rely on or complement
+another standard, consider briefly mentioning that here as context.</li>
+<li>To the extent that discussion of the larger context of the spec, or
+its history, or the circumstances that led to its creation or revision,
+are necessary, they belong in the Introduction, not here.</li>
+</ul>
+<p>&gt;</p>
+<hr />
+<h1 id="2-definitions-and-acronyms">2 Definitions and Acronyms</h1>
+<h2 id="21-definitions">2.1 Definitions</h2>
+<h3 id="211-terms-defined-elsewhere">2.1.1 Terms Defined Elsewhere</h3>
+<p>This document uses the following terms defined elsewhere:</p>
+<ul>
+<li>Term 1: [Reference]: optional quoted definition.</li>
+<li>Term 2: [Reference]: optional quoted definition.</li>
+<li>etc</li>
+</ul>
+<h3 id="212-terms-defined-in-this-document">2.1.2 Terms Defined in this
+Document</h3>
+<p>This document defines the following terms:</p>
+<ul>
+<li>Term 1: some definition.</li>
+<li>Term 2: some definition.</li>
+<li>etc</li>
+</ul>
+<h2 id="22-abbreviations-and-acronyms">2.2 Abbreviations and
+Acronyms</h2>
+<p>This document uses the following abbreviations and acronyms:</p>
+<ul>
+<li>Term 1: expanded form.</li>
+<li>Term 2: expanded form.</li>
+<li>etc</li>
+</ul>
+<hr />
+<h1 id="3-document-conventions">3 Document Conventions</h1>
+<h2 id="31-typographical-conventions">3.1 Typographical Conventions</h2>
+<p>&lt; Describe any standards or typographical conventions that were
+followed when writing this document, such as fonts or highlighting that
+have special significance. If there are no typographical conventions
+than one is to put "None". &gt;</p>
+<hr />
+<h1 id="4-introduction">4 Introduction</h1>
+<p>&lt; Any introductory text that is needed to explain this document,
+including any discussion of the larger context of the document, or its
+history, or the circumstances that led to its creation or revision, as
+necessary. &gt;</p>
+<h2 id="41-any-additional-introduction-subsections-that-are-needed">4.1
+Any Additional Introduction Subsections That are Needed</h2>
+<p>&lt; Any needed text &gt;</p>
+<h2 id="42-changes-from-the-previous-version">4.2 Changes From the
+Previous Version</h2>
+<p>&lt; This section is <strong>REQUIRED</strong> and
+<strong>MUST</strong> be the last numbered subsection in this section.
+&gt; The list of changes from the previous version and any revision
+history can be found in Appendix 2.</p>
+<hr />
+<h1 id="5-level-1-section-header">5 Level 1 Section Header</h1>
+<h2 id="51-level-2-section-header">5.1 Level 2 Section Header</h2>
+<h3 id="511-level-3-section-header">5.1.1 Level 3 Section Header</h3>
+<h4 id="5111-level-4-section-header">5.1.1.1 Level 4 Section Header</h4>
+<h5 id="51111-level-5-section-header">5.1.1.1.1 Level 5 Section
+Header</h5>
+<h6 id="511111-level-6-section-header">5.1.1.1.1.1 Level 6 Section
+Header</h6>
+<hr />
+<h1 id="6-additional-sections-as-needed">6 Additional Sections as
+Needed</h1>
+<hr />
+<h1 id="7-safety-security-and-data-protection-considerations">7 Safety,
+Security, and Data Protection Considerations</h1>
+<p>&lt;</p>
+<p>This section is <strong>OPTIONAL</strong> and if present
+<strong>MUST</strong> be the last numbered section in the document. This
+section contains information about safety, security, data protection,
+and privacy considerations. These can be divided up into separate
+subsections as desired. Any other considerations <strong>MAY</strong>
+also be added.</p>
+<p>&gt;</p>
+<hr />
+<h1 id="annex-a-license-document-status-and-notices">Annex A License,
+Document Status and Notices</h1>
+<p>(This annex forms an integral part of this document.)</p>
+<h2 id="a1-document-status">A.1 Document Status</h2>
+<p>This document was last revised or approved by the [ full project name
+e.g., OASIS Collaborative Automated Course of Action Operations (CACAO)
+for Cyber Security TC ] on the above date. The level of approval is also
+listed above. Check the "Latest version" location noted above for
+possible later revisions of this document. Any other numbered Versions
+and other technical work produced by the Technical Committee (TC) are
+listed at [ project publication page e.g., <a
+href="https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=cacao\#technical">https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=cacao\#technical</a>
+].</p>
+<p>TC members should send comments on this document to the TC's email
+list. Others should send comments to the TC's public comment list, after
+subscribing to it by following the comment instructions at the TC's
+comments list web page at [ e.g. <a
+href="https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cacao">https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cacao</a>
+]</p>
+<h2 id="a2-license-and-notices">A.2 License and Notices</h2>
+<p>Copyright © OASIS Open 202[ 5 ]. All Rights Reserved.</p>
+<p>All capitalized terms in the following text have the meanings
+assigned to them in the OASIS Intellectual Property Rights Policy (the
+"OASIS IPR Policy"). The full Policy, which governs the licensure of
+this document, may be found at the OASIS website: [<a
+href="https://www.oasis-open.org/policies-guidelines/ipr/">https://www.oasis-open.org/policies-guidelines/ipr/</a>]</p>
+<p>This document and translations of it may be copied and furnished to
+others, and derivative works that comment on or otherwise explain it or
+assist in its implementation may be prepared, copied, published, and
+distributed, in whole or in part, without restriction of any kind,
+provided that the above copyright notice and this section are included
+on all such copies and derivative works. However, this document itself
+may not be modified in any way, including by removing the copyright
+notice or references to OASIS, except as needed for the purpose of
+developing any document or deliverable produced by an OASIS Technical
+Committee (in which case the rules applicable to copyrights, as set
+forth in the OASIS IPR Policy, must be followed) or as required to
+translate it into languages other than English.</p>
+<p>The limited permissions granted above are perpetual and will not be
+revoked by OASIS or its successors or assigns, as provided in the OASIS
+IPR Policy.</p>
+<p>This document and the information contained herein is provided on an
+"AS IS" basis and OASIS DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE
+INFORMATION HEREIN WILL NOT INFRINGE ANY OWNERSHIP RIGHTS OR ANY IMPLIED
+WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. OASIS
+AND ITS MEMBERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THIS DOCUMENT OR ANY
+PART THEREOF.</p>
+<p>The name "OASIS" is a trademark of OASIS, the owner and developer of
+this document, and should be used only to refer to the organization and
+its official outputs. OASIS welcomes reference to, and implementation
+and use of, its documents, while reserving the right to enforce its
+marks against misleading uses. Please see [<a
+href="https://www.oasis-open.org/policies-guidelines/trademark/">https://www.oasis-open.org/policies-guidelines/trademark/</a>]
+for guidance.</p>
+<hr />
+<h1 id="annex-b-bibliography">Annex B Bibliography</h1>
+<p>(This annex forms an integral part of this document.)</p>
+<p>This section contains the informative references that are used in
+this document.</p>
+<p>Informative references are either specific or non-specific. For
+specific references, only the cited version applies. For non-specific
+references, the latest version of the reference document (including any
+amendments) applies. While any hyperlinks included in this section were
+valid at the time of publication, OASIS cannot guarantee their long term
+validity.</p>
+<h2 id="b1-informative-references">B.1 Informative References</h2>
+<p>The following referenced documents are not required for the
+application of this document but may assist the reader with regard to a
+particular subject area.</p>
+<p><strong>[Reference 1]</strong> Reference Details</p>
+<p><strong>[Reference 2]</strong> Reference Details</p>
+<hr />
+<h1 id="annex-c-additional-annex-as-needed">Annex C Additional Annex as
+Needed</h1>
+<p>(This annex forms an integral part of this document.)</p>
+<h2 id="c1-subsection-title">C.1 Subsection Title</h2>
+<h3 id="c11-sub-subsection">C.1.1 Sub-subsection</h3>
+<hr />
+<h1 id="appendix-1-acknowledgments">Appendix 1 Acknowledgments</h1>
+<p>(This appendix does not form an integral part of this document and is
+informational.)</p>
+<p>&lt;</p>
+<p>All parts in this appendix are optional to the TC. Individuals or
+companies, past or present, may request that their name and/or
+affiliation is not included in this list.</p>
+<p>&gt;</p>
+<h2 id="leadership">Leadership</h2>
+<p>The following individuals have had significant leadership positions
+during the development of this document, not just this version of the
+document, and they are gratefully acknowledged:</p>
+<p>&lt;</p>
+<p>This section <strong>SHOULD</strong> include the leadership (chairs,
+sub committees chairs, secretaries, editors, etc.) of this document, and
+not just for this version of the document, even if they are no longer
+members of the TC.</p>
+<p>&gt;</p>
+<ul>
+<li>Chairs
+<ul>
+<li>Position, First Name Last Name, Company, [optional time frames]</li>
+</ul></li>
+<li>Secretaries
+<ul>
+<li>Position, First Name Last Name, Company, [optional time frames]</li>
+</ul></li>
+<li>Editors
+<ul>
+<li>Position, First Name Last Name, Company, [optional time frames]</li>
+</ul></li>
+</ul>
+<h2 id="special-thanks">Special Thanks</h2>
+<p>The following individuals have made substantial contributions to this
+document, not just this version of the document, and their contributions
+are gratefully acknowledged:</p>
+<p>&lt;</p>
+<p>This section <strong>SHOULD</strong> include individuals that have
+made significant contributions to this document, and not just this
+version of the document, even if they are no longer members of the TC or
+were never members of the TC but sent in a contribution through one of
+the public comment methods.</p>
+<p>&gt;</p>
+<ul>
+<li>First Name Last Name, Company</li>
+</ul>
+<h2 id="participants">Participants</h2>
+<p>The following individuals were members of this committee during the
+creation of this document, not just this version of the document, and
+their contributions are gratefully acknowledged:</p>
+<ul>
+<li>First Name Last Name, Company</li>
+</ul>
+<hr />
+<h1 id="appendix-2-changes-from-previous-version">Appendix 2 Changes
+From Previous Version</h1>
+<p>(This appendix does not form an integral part of this document and is
+informational.)</p>
+<p>&lt;</p>
+<p>The appendix <strong>SHOULD</strong> contain any explanatory text
+about the reason for this version including any major changes. The level
+of detail that is included in this appendix is up to the editors and
+chairs of the TC to determine. This appendix is
+<strong>REQUIRED</strong>, if there are no changes then one is to put
+"None." In addition to any descriptive text, all major changes
+<strong>SHOULD</strong> be in a bulleted list so that reviewers and
+implementers can easily understand what they need to know.</p>
+<p>&gt;</p>
+<ul>
+<li>Change 1</li>
+<li>Change 2</li>
+</ul>
+<h2 id="revision-history">Revision History</h2>
+<ul>
+<li>&lt; Date in yyyy-mm-dd format &gt;, &lt; Revision number &gt;</li>
+<li>&lt; Date in yyyy-mm-dd format &gt;, &lt; Revision number &gt;</li>
+</ul>
+<hr />
+<h1 id="appendix-3-additional-appendix-as-needed">Appendix 3 Additional
+Appendix as Needed</h1>
+<p>(This appendix does not form an integral part of this document and is
+informational.)</p>
+<h2 id="subsection-title">Subsection Title</h2>
+<h3 id="sub-subsection">Sub-subsection</h3>
+<p>&lt; The following centered line represents the end of the document
+&gt;<br />
+________________________________________</p>
+
+    </body>
+    </html>
