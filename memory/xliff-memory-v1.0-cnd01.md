@@ -1,8 +1,8 @@
-# Use XLIFF to Store Translation Memory Data Version 1.0
+# XLIFF Translation Memory Version 1.0
 
 ## Committee Note Draft 01
 
-## 9 June 2025
+## 5 July 2025
 
 ### This version
 
@@ -54,7 +54,13 @@ This document replaces or supersedes:
 
 This document is related to:
 
-- [ The full reference to the related document in IEEE reference format ]
+- [XLIFF-2.2-part2]
+
+  XLIFF Version 2.2 Part 2: Extended. Edited by Rodolfo M. Raya and Lucía Morado Vázquez 13 March 2025. OASIS Committee Specification. https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html. Latest stage https://docs.oasis-open.org/xliff/xliff-core/v2.2/xliff-v2.2-part2-extended.html.
+
+- [TXM 1.4b]
+
+  Translation Memory eXchange (TMX) Version 1.4b. Edited by Yves Savourel. OSCAR Recommendation, 26 April 2005. [https://web.archive.org/web/20060528180452/http://www.lisa.org/standards/tmx/tmx.html](https://web.archive.org/web/20060528180452/http://www.lisa.org/standards/tmx/tmx.html).
 
 ## License, Document Status, and Notices
 
@@ -66,34 +72,34 @@ Copyright © OASIS Open 2025. All Rights Reserved.  For license and copyright in
 
 - [1 Scope](#1-scope)
 - [2 Definitions and Acronyms](#2-definitions-and-acronyms)
-  - [2.1 Definitions](#2.1-definitions)
-    - [2.1.1 Terms Defined Elsewhere](#2.1.1-terms-defined-elsewhere)
-    - [2.1.2 Terms Defined in this Document](#2.1.2-terms-defined-in-this-document)
-  - [2.2 Abbreviations and Acronyms](#2.2-abbreviations-and-acronyms)
+  - [2.1 Definitions](#21-definitions)
+    - [2.1.1 Terms Defined Elsewhere](#211-terms-defined-elsewhere)
+    - [2.1.2 Terms Defined in this Document](#212-terms-defined-in-this-document)
+  - [2.2 Abbreviations and Acronyms](#22-abbreviations-and-acronyms)
 - [3 Document Conventions](#3-document-conventions)
-  - [3.1 Key Words](#3.1-key-words)
-  - [3.2 Typographical Conventions](#3.2-typographical-conventions)
+  - [3.1 Key Words](#31-key-words)
+  - [3.2 Typographical Conventions](#32-typographical-conventions)
 - [4 Introduction](#4-introduction)
-  - [4.1 Any Additional Introduction Subsections That are Needed](#4.1-any-additional-introduction-subsections-that-are-needed)
-  - [4.2 Changes From the Previous Version](#4.2-changes-from-the-previous-version)
+  - [4.1 Any Additional Introduction Subsections That are Needed](#41-any-additional-introduction-subsections-that-are-needed)
+  - [4.2 Changes From the Previous Version](#42-changes-from-the-previous-version)
 - [5 Level 1 Section Header](#5-level-1-section-header)
-  - [5.1 Level 2 Section Header](#5.1-level-2-section-header)
-    - [5.1.1 Level 3 Section Header](#5.1.1-level-3-section-header)
-      - [5.1.1.1 Level 4 Section Header](#5.1.1.1-level-4-section-header)
-        - [5.1.1.1.1 Level 5 Section Header](#5.1.1.1.1-level-5-section-header)
-          - [5.1.1.1.1.1 Level 6 Section Header](#5.1.1.1.1.1-level-6-section-header)
+  - [5.1 Level 2 Section Header](#51-level-2-section-header)
+    - [5.1.1 Level 3 Section Header](#511-level-3-section-header)
+      - [5.1.1.1 Level 4 Section Header](#5111-level-4-section-header)
+        - [5.1.1.1.1 Level 5 Section Header](#51111-level-5-section-header)
+          - [5.1.1.1.1.1 Level 6 Section Header](#511111-level-6-section-header)
 - [6 Additional Sections as Needed](#6-additional-sections-as-needed)
-- [7 Safety, Security, and Data Protection Considerations](#7-safety,-security,-and-data-protection-considerations)
+- [7 Safety, Security, and Data Protection Considerations](#7-safety-security-and-data-protection-considerations)
 - [8 Conformance](#8-conformance)
-- [Annex A License, Document Status and Notices](#annex-a-license,-document-status-and-notices)
-  - [A.1 Document Status](#a.1-document-status)
-  - [A.2 License and Notices](#a.2-license-and-notices)
+- [Annex A License, Document Status and Notices](#annex-a-license-document-status-and-notices)
+  - [A.1 Document Status](#a1-document-status)
+  - [A.2 License and Notices](#a2-license-and-notices)
 - [Annex B References](#annex-b-references)
-  - [B.1 Normative References](#b.1-normative-references)
-  - [B.2 Informative References](#b.2-informative-references)
+  - [B.1 Normative References](#b1-normative-references)
+  - [B.2 Informative References](#b2-informative-references)
 - [Annex C Additional Annex as Needed](#annex-c-additional-annex-as-needed)
-  - [C.1 Subsection Title](#c.1-subsection-title)
-  - [C.1.1 Sub-subsection](#c.1.1-sub-subsection)
+  - [C.1 Subsection Title](#c1-subsection-title)
+  - [C.1.1 Sub-subsection](#c11-sub-subsection)
 - [Appendix 1 Acknowledgments](#appendix-1-acknowledgments)
   - [Leadership](#leadership)
   - [Special Thanks](#special-thanks)
@@ -127,6 +133,12 @@ Best practices:
 
 ## 2.1 Definitions
 
+- Source text: The original text that is to be translated into another language.
+- Target text: The translated text that corresponds to the source text.
+- Translation unit: A pair of source text and target text that represents a single translation entry.
+- Translation memory: A database that stores translation units, allowing for the reuse of previously translated content to improve translation efficiency and consistency.
+- Segment: A portion of text that is treated as a single unit for translation purposes, which can be a sentence, phrase, or any other meaningful text unit.
+
 ### 2.1.1 Terms Defined Elsewhere
 
 This document uses the following terms defined elsewhere:
@@ -155,7 +167,9 @@ This document uses the following abbreviations and acronyms:
 
 # 3 Document Conventions
 
-## 3.1 Typographical Conventions
+## 3.1 Key Words
+
+## 3.2 Typographical Conventions
 
 \< Describe any standards or typographical conventions that were followed when writing this document, such as fonts or highlighting that have special significance. If there are no typographical conventions than one is to put "None". \>
 
@@ -204,15 +218,19 @@ This section is **OPTIONAL** and if present **MUST** be the last numbered sectio
 
 ---
 
+# 8 Conformance
+
+---
+
 # Annex A License, Document Status and Notices
 
 (This annex forms an integral part of this document.)
 
 ## A.1 Document Status
 
-This document was last revised or approved by the [ full project name e.g., OASIS Collaborative Automated Course of Action Operations (CACAO) for Cyber Security TC ] on the above date. The level of approval is also listed above. Check the "Latest version" location noted above for possible later revisions of this document. Any other numbered Versions and other technical work produced by the Technical Committee (TC) are listed at [ project publication page e.g., https://www.oasis-open.org/committees/tc\_home.php?wg\_abbrev=cacao\#technical ].
+This document was last revised or approved by the OASIS XLIFF TC on the above date. The level of approval is also listed above. Check the "Latest version" location noted above for possible later revisions of this document. Any other numbered Versions and other technical work produced by the Technical Committee (TC) are listed at [https://groups.oasis-open.org/communities/tc-community-home2?CommunityKey=3d0f1f56-8477-4b53-9b14-018dc7d3eecf#technical](https://groups.oasis-open.org/communities/tc-community-home2?CommunityKey=3d0f1f56-8477-4b53-9b14-018dc7d3eecf#technical).
 
-TC members should send comments on this document to the TC's email list. Others should send comments to the TC's public comment list, after subscribing to it by following the comment instructions at the TC's comments list web page at [ e.g. https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=cacao ]
+TC members should send comments on this document to the TC's email list. Others should send comments to the TC's public comment list, after subscribing to it by following the comment instructions at the TC's comments list web page at [https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=xliff](https://www.oasis-open.org/committees/comments/index.php?wg_abbrev=xliff)
 
 ## A.2 License and Notices
 
@@ -230,7 +248,7 @@ The name "OASIS" is a trademark of OASIS, the owner and developer of this docume
 
 ---
 
-# Annex B Bibliography
+# Annex B References
 
 (This annex forms an integral part of this document.)
 
@@ -238,7 +256,9 @@ This section contains the informative references that are used in this document.
 
 Informative references are either specific or non-specific. For specific references, only the cited version applies. For non-specific references, the latest version of the reference document (including any amendments) applies. While any hyperlinks included in this section were valid at the time of publication, OASIS cannot guarantee their long term validity.
 
-## B.1 Informative References
+## B.1 Normative References
+
+## B.2 Informative References
 
 The following referenced documents are not required for the application of this document but may assist the reader with regard to a particular subject area.
 
@@ -262,40 +282,26 @@ The following referenced documents are not required for the application of this 
 
 (This appendix does not form an integral part of this document and is informational.)
 
-\<
-
-All parts in this appendix are optional to the TC. Individuals or companies, past or present, may request that their name and/or affiliation is not included in this list.
-
-\>
-
 ## Leadership
 
 The following individuals have had significant leadership positions during the development of this document, not just this version of the document, and they are gratefully acknowledged:
 
-\<
+- Chairs
+  - Dr. Lucía Morado Vázquez, [University of Geneva](https://www.unige.ch/en/)
+  - Yoshito Umaoka, Individual
 
-This section **SHOULD** include the leadership (chairs, sub committees chairs, secretaries, editors, etc.) of this document, and not just for this version of the document, even if they are no longer members of the TC.
+- Secretaries
+  - Rodolfo M. Raya, [Maxprograms](https://maxprograms.com)
 
-\>
-
-- Chairs  
-  - Position, First Name Last Name, Company, [optional time frames]  
-- Secretaries  
-  - Position, First Name Last Name, Company, [optional time frames]  
-- Editors  
-  - Position, First Name Last Name, Company, [optional time frames]
+- Editors
+  - Rodolfo M. Raya, [Maxprograms](https://maxprograms.com)
 
 ## Special Thanks
 
 The following individuals have made substantial contributions to this document, not just this version of the document, and their contributions are gratefully acknowledged:
 
-\<
-
-This section **SHOULD** include individuals that have made significant contributions to this document, and not just this version of the document, even if they are no longer members of the TC or were never members of the TC but sent in a contribution through one of the public comment methods.
-
-\>
-
-- First Name Last Name, Company
+- Mihai Niță, [Google LLC](https://www.google.com/)
+- Mathijs Sonnemans, Individual
 
 ## Participants
 
