@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" version="2.2" srcLang="en" trgLang="fr">
+ <notes>
+  <note>note for entire XLIFF file</note>
+ </notes>
+ <file id="f1">
+  <notes>
+   <note>note for file</note>
+  </notes>
+  <group id='g1'>
+   <notes>
+    <note>note for group</note>
+   </notes>
+   <unit id="1">
+    <notes>
+     <note>note for unit</note>
+     <note ref="#s1">note for segment s1</note>
+    </notes>
+    <segment id="s1">
+     <source><sc id='1' isolated='yes'/>Sentence 1.</source>
+     <target><sc id='1' isolated='yes'/>Phrase 1.</target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

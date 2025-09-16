@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.1" xmlns="urn:oasis:names:tc:xliff:document:2.2" srcLang="en" trgLang="fr"
+   xmlns:its="http://www.w3.org/2005/11/its" its:version="2.2">
+   <file id="f1">
+      <unit id="u1">
+         <segment>
+            <source><mrk id="m1" type="its:generic"
+                  its:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                  its:taIdentRef="http://dbpedia.org/resource/Arizona">Arizona</mrk></source>
+         </segment>
+         <segment>
+            <source><sm id="sm1" type="its:generic"
+                  its:taClassRef="http://nerd.eurecom.fr/ontology#Place"
+                  its:taIdentRef="http://dbpedia.org/resource/Arizona"/>Arizona<em startRef="sm1"
+               /></source>
+         </segment>
+      </unit>
+   </file>
+</xliff>
