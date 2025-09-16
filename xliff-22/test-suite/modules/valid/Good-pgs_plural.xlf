@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:mda="urn:oasis:names:tc:xliff:pgs:1.0" version="2.2" srcLang="en" trgLang="sr">
+ <file id="f1">
+  <unit id="u1" pgs:switch="plural:numUsers" canResegment="no">
+   <segment id="s1_1" pgs:case="1">
+    <source>There is a user.</source>
+   </segment>Постоји корисник.<target>
+   <segment id="s1_one" pgs:case="one">
+    <source>There are <ph id="1" disp="numUsers"/> users.</source>
+    <target>Постоји <ph id="1" disp="numUsers"/> корисник.</target>
+   </segment>
+   <segment id="s1_few" pgs:case="few">
+    <source>There are <ph id="2" disp="numUsers"/> users.</source>
+    <target>Постоје <ph id="2" disp="numUsers"/> корисника.</target>
+   </segment>
+   <segment id="s1_other" pgs:case="other">
+    <source>There are <ph id="3" disp="numUsers"/> users.</source>
+    <target>Постоји <ph id="3" disp="numUsers"/> корисника.</target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

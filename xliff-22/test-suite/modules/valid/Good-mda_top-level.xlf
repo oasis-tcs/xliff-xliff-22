@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0" version="2.2" srcLang="en">
+ <mda:metadata>
+  <mda:metaGroup>
+    <meta type="project">Project X</meta>
+    <meta type="revision">2.0.3</meta>
+  </mda:metaGroup>
+ </mda:metadata>
+ <file id="f1">
+  <unit id="u1">
+   <segment id="s1">
+    <source>Overview of Project X</source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

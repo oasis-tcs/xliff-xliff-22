@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.2" version="2.2" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <notes>
+   <!-- needs parsed as an alert that applies to the whole file -->
+   <note id="1">note for file</note>
+   <!-- needs parsed as an alert that applies to the whole file -->
+   <note id="7" priority="1">another highest priority note for file</note>
+   <!-- needs parsed as an alert that applies to all source content within file -->
+   <note id="2" appliesTo="source">note for all source content within file</note>
+   <!-- needs parsed as an alert that applies to all target content within file -->
+   <note id="3" appliesTo="target">note for all target content within file</note>
+   <!-- needs parsed as a description that applies to the whole file -->
+   <note id="4" priority="2">lower priority note for file</note>
+   <!-- needs parsed as a description that applies to all source content within file -->
+   <note id="5" priority="3" appliesTo="source">lower priority note for all source content within file</note>
+   <!-- needs parsed as a description that applies to all target content within file -->
+   <note id="6" appliesTo="target" priority="3">lower priority note for all target content within file</note>
+   <!-- needs parsed as a description that applies to the whole file -->
+   <note id="8" priority="10">lowest priority note for file</note>
+  </notes>
+  <group id='g1'>
+   <notes>
+    <!-- needs parsed as an alert that applies to the whole group -->
+    <note id="1">note for group</note>
+    <!-- needs parsed as an alert that applies to the whole group -->
+    <note id="7" priority="1">another highest priority note for group</note>
+    <!-- needs parsed as an alert that applies to all source content within group -->
+    <note id="2" appliesTo="source">note for all source content within group</note>
+    <!-- needs parsed as an alert that applies to all target content within group -->
+    <note id="3" appliesTo="target">note for all target content within group</note>
+    <!-- needs parsed as a description that applies to the whole group -->
+    <note id="4" priority="2">lower priority note for group</note>
+    <!-- needs parsed as a description that applies to all source content within group -->
+    <note id="5" priority="3" appliesTo="source">lower priority note for all source content within group</note>
+    <!-- needs parsed as a description that applies to all target content within group -->
+    <note id="6" appliesTo="target" priority="3">lower priority note for all target content within group</note>
+    <!-- needs parsed as a description that applies to the whole group -->
+    <note id="8" priority="10">lowest priority note for group</note>
+   </notes>
+   <unit id="1">
+    <notes>
+     <!-- needs parsed as an alert that applies to the whole unit -->
+     <note id="1">note for unit</note>
+     <!-- needs parsed as an alert that applies to the whole unit -->
+     <note id="7" priority="1">another highest priority note for unit</note>
+     <!-- needs parsed as an alert that applies to all source content within unit -->
+     <note id="2" appliesTo="source">note for all source content within unit</note>
+     <!-- needs parsed as an alert that applies to all target content within unit -->
+     <note id="3" appliesTo="target">note for all target content within unit</note>
+     <!-- needs parsed as a description that applies to the whole unit -->
+     <note id="4" priority="2">lower priority note for unit</note>
+     <!-- needs parsed as a description that applies to all source content within unit -->
+     <note id="5" priority="3" appliesTo="source">lower priority note for all source content within unit</note>
+     <!-- needs parsed as a description that applies to all target content within unit -->
+     <note id="6" appliesTo="target" priority="3">lower priority note for all target content within unit</note>
+     <!-- needs parsed as a description that applies to the whole unit -->
+     <note id="8" priority="10">lowest priority note for unit</note>
+     <!-- cannot be parsed by generic ITS processors, is an alert that applies to the span delimited with &lt;mrk id="3"> -->
+     <note id="9" >note content for the inline comment delimited with &lt;mrk id="3"></note>
+     <!-- cannot be parsed by generic ITS processors, is a description that applies to the span delimited with &lt;mrk id="5"> -->
+     <note id="10" priority="7">lower priority note content for the inline comment delimited with &lt;mrk id="5"></note>
+    </notes>
+    <segment id="s1">
+     <source><mrk id="5" type="comment" ref="#n=10"><sc id='1' isolated='yes'/>Sentence 1.</mrk></source>
+     <target><sc id='1' isolated='yes'/>Phrase 1.</target>
+    </segment>
+    <segment id="s2">
+     <source><mrk id="3" type="comment" ref="#n=9"><sc id='2' isolated='yes'/>Sentence 2.</mrk></source>
+     <!-- @value should be parsed as a description applying to the span delimited with &lt;mrk id="4"> -->
+     <target><mrk id="4" type="comment" value="an inline comment applying just to the delimited target span"><sc id='2' isolated='yes'/>Phrase 2.</mrk></target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>
