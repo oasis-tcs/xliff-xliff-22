@@ -185,16 +185,16 @@ else
       <para><programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="ordinal:place"</emphasis>&gt;
   &lt;!-- For English ordinals "one" is NOT the same as "1" --&gt;
   &lt;segment id="seg1" <emphasis role="bold">pgs:case="one"</emphasis>&gt;
-    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;st place&lt;/source&gt;
+    &lt;source&gt;You won &lt;ph id="ph1" disp="place"/&gt;st place&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg2" <emphasis role="bold">pgs:case="two"</emphasis>&gt;
-    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;nd place&lt;/source&gt;
+    &lt;source&gt;You won &lt;ph id="ph2" disp="place"/&gt;nd place&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg3" <emphasis role="bold">pgs:case="few"</emphasis>&gt;
-    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;rd place&lt;/source&gt;
+    &lt;source&gt;You won &lt;ph id="ph3" disp="place"/&gt;rd place&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg4" <emphasis role="bold">pgs:case="other"</emphasis>&gt;
-    &lt;source&gt;You won &lt;ph id="1" disp="place"/&gt;th place&lt;/source&gt;
+    &lt;source&gt;You won &lt;ph id="ph4" disp="place"/&gt;th place&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
     </section>
@@ -202,7 +202,7 @@ else
     <section>
       <title>Gender</title>
 
-      <para><programlisting>&lt;unit id="seg1" <emphasis role="bold">pgs:switch="gender:host_gender"</emphasis>&gt;
+      <para><programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="gender:host_gender"</emphasis>&gt;
   &lt;segment id="seg1" <emphasis role="bold">pgs:case="feminine"</emphasis>&gt;
     &lt;source&gt;You are invited to her party&lt;/source&gt;
   &lt;/segment&gt;
@@ -224,42 +224,42 @@ else
     <section>
       <title>Combinations</title>
 
-      <para><programlisting>&lt;unit id="seg1" <emphasis role="bold">pgs:switch="gender:host_gender plural:guest_count"</emphasis>&gt;
+      <para><programlisting>&lt;unit id="tu1" <emphasis role="bold">pgs:switch="gender:host_gender plural:guest_count"</emphasis>&gt;
   &lt;segment id="seg1" <emphasis role="bold">pgs:case="feminine 0"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite
+    &lt;source&gt;&lt;ph id="ph1" disp="host_name"/&gt; did not invite
         anyone to her party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg2" <emphasis role="bold">pgs:case="feminine 1"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited
+    &lt;source&gt;&lt;ph id="ph2" disp="host_name"/&gt; invited
         one guest to her party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg3" <emphasis role="bold">pgs:case="feminine other"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited
-        &lt;ph id="2" disp="guest_count"/&gt; guests to her party.&lt;/source&gt;
+    &lt;source&gt;&lt;ph id="ph3" disp="host_name"/&gt; invited
+        &lt;ph id="ph4" disp="guest_count"/&gt; guests to her party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg4" <emphasis role="bold">pgs:case="masculine 0"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite
+    &lt;source&gt;&lt;ph id="ph5" disp="host_name"/&gt; did not invite
         anyone to his party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg5" <emphasis role="bold">pgs:case="masculine 1"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited
+    &lt;source&gt;&lt;ph id="ph6" disp="host_name"/&gt; invited
         one guest to his party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg6" <emphasis role="bold">pgs:case="masculine other"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited
-        &lt;ph id="2" disp="guest_count"/&gt; guests to his party.&lt;/source&gt;
+    &lt;source&gt;&lt;ph id="ph7" disp="host_name"/&gt; invited
+        &lt;ph id="ph8" disp="guest_count"/&gt; guests to his party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg7" <emphasis role="bold">pgs:case="other 0"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; did not invite
+    &lt;source&gt;&lt;ph id="ph9" disp="host_name"/&gt; did not invite
         anyone to their party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg8" <emphasis role="bold">pgs:case="other 1"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited
+    &lt;source&gt;&lt;ph id="ph10" disp="host_name"/&gt; invited
         one guest to their party.&lt;/source&gt;
   &lt;/segment&gt;
   &lt;segment id="seg9" <emphasis role="bold">pgs:case="other other"</emphasis>&gt;
-    &lt;source&gt;&lt;ph id="1" disp="host_name"/&gt; invited
-        &lt;ph id="2" disp="guest_count"/&gt; guests to their party.&lt;/source&gt;
+    &lt;source&gt;&lt;ph id="ph11" disp="host_name"/&gt; invited
+        &lt;ph id="ph12" disp="guest_count"/&gt; guests to their party.&lt;/source&gt;
   &lt;/segment&gt;
 &lt;/unit&gt;</programlisting></para>
     </section>
