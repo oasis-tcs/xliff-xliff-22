@@ -3,6 +3,8 @@ package com.maxprograms.xml;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.HashMap;
@@ -22,6 +24,11 @@ import org.xml.sax.SAXException;
 
 public class CatalogParser implements EntityResolver {
 
+    private static final String ENTITY_EXPANSION_LIMIT_PROPERTY = "jdk.xml.entityExpansionLimit";
+    private static final String ENTITY_EXPANSION_LIMIT_ATTRIBUTE = "http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit";
+
+    Logger logger = System.getLogger(CatalogParser.class.getName());
+
     Map<String, String> systemMap;
     Map<String, String> publicMap;
     File base;
@@ -31,6 +38,7 @@ public class CatalogParser implements EntityResolver {
         publicMap = new HashMap<>();
         base = catalog.getParentFile();
         DocumentBuilderFactory builder = DocumentBuilderFactory.newInstance();
+        configureEntityExpansionLimit(builder);
         DocumentBuilder db = builder.newDocumentBuilder();
         Document document = db.parse(catalog);
         Element root = document.getDocumentElement();
@@ -51,6 +59,19 @@ public class CatalogParser implements EntityResolver {
                     publicMap.put(publicId, uri);
                 }
             }
+        }
+    }
+
+    private void configureEntityExpansionLimit(DocumentBuilderFactory factory) {
+        try {
+            factory.setAttribute(ENTITY_EXPANSION_LIMIT_ATTRIBUTE, "0");
+        } catch (IllegalArgumentException e) {
+            logger.log(Level.WARNING, "Unable to set parser entity expansion limit attribute", e);
+        }
+        try {
+            System.setProperty(ENTITY_EXPANSION_LIMIT_PROPERTY, "0");
+        } catch (SecurityException e) {
+            logger.log(Level.WARNING, "Unable to set system entity expansion limit property", e);
         }
     }
 
@@ -82,11 +103,11 @@ public class CatalogParser implements EntityResolver {
                 file = new File(uriFile);
                 if (file.exists()) {
                     return new InputSource(new FileInputStream(file));
-                }    
+                }
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
-            
+
         }
         return null;
     }

@@ -23,6 +23,9 @@ import org.xml.sax.SAXException;
 
 public class Merger {
 
+    private static final String ENTITY_EXPANSION_LIMIT_PROPERTY = "jdk.xml.entityExpansionLimit";
+    private static final String ENTITY_EXPANSION_LIMIT_ATTRIBUTE = "http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit";
+
     Logger logger = System.getLogger(Merger.class.getName());
 
     private File input;
@@ -49,7 +52,21 @@ public class Merger {
         input = new File(inputFile);
         output = new File(outputFile);
         builder = DocumentBuilderFactory.newInstance();
+        configureEntityExpansionLimit(builder);
         ids = new TreeSet<>();
+    }
+
+    private void configureEntityExpansionLimit(DocumentBuilderFactory factory) {
+        try {
+            factory.setAttribute(ENTITY_EXPANSION_LIMIT_ATTRIBUTE, "0");
+        } catch (IllegalArgumentException e) {
+            logger.log(Level.WARNING, "Unable to set parser entity expansion limit attribute", e);
+        }
+        try {
+            System.setProperty(ENTITY_EXPANSION_LIMIT_PROPERTY, "0");
+        } catch (SecurityException e) {
+            logger.log(Level.WARNING, "Unable to set system entity expansion limit property", e);
+        }
     }
 
     public void run()
